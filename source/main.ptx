@@ -46,13 +46,7 @@
           These are copies of the in-class activities distributed during the semester.
         </p>
       </introduction>
-
-      <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
-      <xi:include href="./activities/01-Section1.1.ptx"/>
-      <xi:include href="./activities/02-Section1.2.ptx"/>
-      <xi:include href="./activities/03-SecondSection1.2.ptx"/>
-      <xi:include href="./activities/05-Section1.4.ptx"/>
+    
 
       <xi:include href="./activities/01-Section1-1.ptx"/>
       <xi:include href="./activities/02-Section1-2.ptx"/>
