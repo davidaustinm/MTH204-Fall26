@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Final Review, Part I</title>
+
+  <exercise>
+    <introduction>
+      <p>Consider the vectors
+<md>
+\vvec_1=\threevec2{-1}0, \hspace*{24pt}
+\vvec_2=\threevec122, \hspace*{24pt}
+\vvec_3=\threevec502, \hspace*{24pt}.
+</md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What does it mean to say that a vector <m>\bvec</m> is a linear
+  combination of the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\bvec=\threevec054</m> a linear combination of <m>\vvec_1</m>,
+  <m>\vvec_2</m>, and <m>\vvec_3</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In how many ways can <m>\bvec</m> be
+  written as a linear combination of these three vectors?  If more
+  than one, demonstrate two ways in which <m>\bvec</m> is a linear
+  combination of the vectors.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Do the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m> span <m>\real^3</m>?  If
+  not, find a vector that is not in <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>A = \begin{bmatrix}\vvec_1 \amp \vvec_2 \amp \vvec_3 \end{bmatrix}</m>,
+  write the solution set of the equation <m>A\xvec = \bvec</m> in vector
+  parametric form.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Remember that <m>\col(A)</m> is the subspace that is the span of the
+  columns of <m>A</m>.  Find a basis for <m>\col(A)</m> and explain why your set
+  is a basis.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the dimension of <m>\col(A)</m> and for which <m>p</m> is
+  <m>\col(A)</m> a subspace of <m>\real^p</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is the matrix <m>A</m> invertible?  Explain your response.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If a vector <m>\bvec</m> is in <m>\col(A)</m>, what can you say about the set
+  of solutions to the equation <m>A\xvec = \bvec</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>We earlier defined the <em>rank</em> of a matrix <m>A</m> to be the
+  number of pivot positions in <m>A</m>.  Suppose that <m>A</m> is a <m>3\times4</m>
+  matrix.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\rank(A) = 3</m>, what can you say about <m>\col(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\rank(A) = 1</m>, what can you say about <m>\col(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Give an example of a <m>3\times4</m> matrix <m>A</m> whose rank is <m>1</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>A</m> is a <m>10\times15</m> matrix.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What is the largest
+  possible value for <m>\rank(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\rank(A)</m> is this largest possible value, what can you say about
+  <m>\col(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>B</m> is a <m>12\times10</m> matrix, what is the largest possible
+  value of <m>\rank(B)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\rank(B)</m> is this largest possible value, what can you say about
+  <m>\col(B)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>C</m> is a <m>14\times n</m> matrix and <m>\col(C)=\real^{14}</m>, what can
+  you conclude about <m>n</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

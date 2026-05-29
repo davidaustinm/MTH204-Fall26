@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 2.4 - Linear independence</title>
+  <objectives>
+    <ul>
+      <li><p>What does it mean for a set of vectors to be linearly dependent? Linearly independent?</p></li>
+      <li><p>What is the maximum number of vectors in <m>\mathbb{R}^m</m> that can be linearly dependent?</p></li>
+      <li><p>When there is a non-trivial solution to the homogeneous equation <m>A\xvec=\zerovec</m>, what can you say about the columns of the matrix <m>A</m> (in terms of linear dependence/independence)?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <md>A =
+  \left[
+    \begin{array}{ccc}
+      3 \amp 2 \amp 0 \\
+      -1 \amp 0 \amp -2 \\
+      2 \amp 1 \amp 1 \\
+    \end{array}
+  \right]
+  </md>
+  whose columns are the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>[label=(\alph*)]</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Give a parametric description of the solution space to the
+    equation <m>A\xvec = \zerovec</m>. (This equation is called ``homogeneous" because of the <m>\zerovec</m>.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find one set of nonzero weights <m>c_1</m>, <m>c_2</m>, <m>c_3</m> such that
+    <md>
+    c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 = \zerovec.
+    </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use these weights to show that one of the vectors can be
+    written as a linear combination of the others.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>
+    are linearly dependent.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Do the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m> span
+    <m>\real^3</m>?  (Hint: Use part (a).)</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>A</m> is any matrix, explain why the homogeneous equation
+  <m>A\xvec=\zerovec</m> is consistent.  For instance, is there a vector
+  you can guarantee is a solution?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What condition on the pivots of <m>A</m> guarantees that there is
+  solution to the homogeneous equation <m>A\xvec=\zerovec</m> besides the
+  solution <m>\xvec=\zerovec</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In the example above, we saw that having a nonzero solution to
+  the homogeneous equation <m>A\xvec=\zerovec</m> enabled us to conclude
+  that the columns of <m>A</m> are linearly dependent.  What condition on
+  the pivots of <m>A</m> will guarantee that the columns of <m>A</m> are
+  linearly dependent?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <m>A=
+  \left[
+    \begin{array}{ccc}
+      0 \amp -1 \amp 1 \\
+      1 \amp 3 \amp -1 \\
+    \end{array}
+  \right]
+  </m>
+  whose columns are <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>[label=(\alph*)]</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Sketch the vectors below.  Do you think the vectors are
+    linearly independent or linearly dependent?</p>
+        <p>\includegraphics{empty-4.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain how we know that there is a nonzero solution to the
+    homogeneous equation <m>A\xvec=\zerovec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a nonzero solution to the homogeneous solution
+    <m>A\xvec=\zerovec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use this solution to express one of the vectors as a linear
+    combination of the others.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>[label=(\alph*)]</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What condition on the pivots of a matrix <m>A</m> will guarantee that its columns
+    are linearly independent?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> are linearly
+    independent vectors in <m>\real^9</m>.  What can you say about the
+    number of vectors in this set?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the smallest number of vectors that can span
+    <m>\real^{13}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the largest number of vectors in <m>\real^{13}</m> that are
+    linearly independent?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that a set of vectors in <m>\real^{13}</m> is linearly
+    independent and spans <m>\real^{13}</m>.  What can you say about the
+    number of vectors?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

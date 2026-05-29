@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Final Review, Part II</title>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that you have an augmented matrix representing a
+  linear system and its reduced row echelon form.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>How can you tell
+  whether the system is consistent or not?  Give an example of a
+  matrix in reduced row echelon form that represents an inconsistent
+  system and explain why it's inconsistent.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does it mean if you have a row of all zeroes in the reduced row
+  echelon form of an augmented matrix representing a linear system?
+  Explain your response.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that the linear system has infinitely many solutions.  What
+  do you know about the reduced row echelon form of its augmented
+  matrix?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If possible, give an example of a <m>3\times 4</m> matrix in reduced row
+  echelon form that represents a linear system with exactly one
+  solution.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If possible, give an example of a <m>4\times 3</m> matrix in reduced row
+  echelon form that represents a linear system with exactly one
+  solution.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Consider the matrix
+  <m>A = \begin{bmatrix}
+    2 \amp -4 \amp 1 \amp 5 \\
+    -1 \amp 2 \amp 2 \amp 0 \\
+    0 \amp 0 \amp 2 \amp 2 \\
+  \end{bmatrix}
+  </m>.</p>
+    </introduction>
+    <task workspace="1.5in">
+      <statement>
+        <p>Write the solution to the equation <m>A\xvec = \zerovec</m> in vector
+  parametric form.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does it mean for a set of vectors to be linearly dependent?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a nonzero vector that is a solution to the equation
+  <m>A\xvec=\zerovec</m> and use it to write
+  <md>
+  c_1\vvec_1 + c_2 \vvec_2 + c_3\vvec_3 + c_4\vvec_4 = \zerovec
+  </md>
+  where <m>\vvec_1,\ldots,\vvec_4</m> are the columns of <m>A</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Rearrange this expression to demonstrate that this set of vectors is
+  linearly dependent.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the dimension of <m>\nul(A)</m> and what is a basis for this
+  subspace?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Determine whether the following statements are true or false and
+  explain your thinking.</p>
+    </introduction>
+    <task workspace="0.8in">
+      <statement>
+        <p>The columns of a <m>10\times20</m> matrix are linearly dependent.</p>
+      </statement>
+    </task>
+    <task workspace="0.8in">
+      <statement>
+        <p>The columns of a <m>10\times20</m> matrix span <m>\real^{10}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>A</m> is a <m>4\times3</m> matrix and the equation <m>A\xvec =
+  \fourvec1000</m> has a unique solution, then the columns of <m>A</m> are
+  linearly independent.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>A</m> is a <m>4\times4</m> matrix and the equation <m>A\xvec =
+  \fourvec1000</m> has a unique solution, then the columns of <m>A</m> are
+  span <m>\real^4</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>A</m> is a <m>4\times4</m> matrix and the equation <m>A\xvec =
+  \fourvec1000</m> has a unique solution, then <m>\det(A)\neq 0</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>A</m> is the matrix whose columns are <m>\vvec_1</m> and
+  <m>\vvec_2</m> as shown below.</p>
+      <p>\includegraphics{figures/32-basis.eps}</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Indicate the vector <m>A\twovec{-2}{2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the vectors <m>\xvec</m> that solve the equation <m>A\xvec = \bvec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\vvec_1</m> and <m>\vvec_2</m> form a basis <m>\bcal</m> for
+  <m>\real^2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Indicate the vector for which <m>\coords{\xvec}{\bcal} = \twovec14</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>\coords{\bvec}{\bcal}</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

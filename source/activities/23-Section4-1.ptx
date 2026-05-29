@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 4.1  - An introduction to eigenvectors and eigenvalues</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:
+\begin{enumerate}
+\item What is an eigenvector? How can we find the associated eigenvalue?
+\item Given a vector and a matrix, how do we know if that vector is an eigenvector of the given matrix?
+\item What happens geoemetrically when <m>\xvec</m> is an eigenvector of <m>A</m>?﻿﻿
+\item If v is an eigenvector of <m>A</m> with eigenvalue k, what is <m>A^2v</m>? What is <m>A^{100}v</m>?
+\item Why are eigenvectors useful?﻿﻿﻿
+\end{enumerate}</p>
+    </introduction>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>If <m>A</m> is an <m>n\times n</m> matrix, we say that a nonzero vector <m>\vvec</m>
+is an <em>eigenvector</em> of <m>A</m> with associated <em>eigenvalue</em> <m>\lambda</m> if
+<md>
+A\vvec = \lambda \vvec.
+</md></p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>Go to <c>http://gvsu.edu/s/0Ja</c> where you will find an
+  interactive diagram that allows you to choose a matrix <m>A</m> using the
+  sliders along the top.  The red vector <m>\vvec</m> may be moved by
+  clicking in the head of the vector and dragging it to a new
+  location.  The vector <m>A\vvec</m> will appear in outline.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Choose the matrix
+  <m>A=
+  \left[
+    \begin{array}{cc}
+      1 \amp 2 \\
+      2 \amp 1 \\
+    \end{array}
+  \right]
+  </m>.  Move the red vector <m>\vvec</m> so that the eigenvector condition
+  holds.  What is the eigenvector <m>\vvec</m> and what is the associated
+  eigenvalue?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>By algebraically computing <m>A\vvec</m>, verify that your vector <m>\vvec</m>
+  is an eigenvector.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If you multiply your eigenvector <m>\vvec</m> by the scalar 2, do you
+  still have an eigenvector?  If so, what is the associated
+  eigenvector?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Are you able to find another linearly independent eigenvector
+  <m>\vvec</m>?  If so, what is the eigenvector and what is the associated
+  eigenvalue?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\lambda</m> is a scalar, what is the geometric relationship
+  between <m>\vvec</m> and <m>\lambda\vvec</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>A\vvec = \lambda\vvec</m>, what is the geometric relationship
+  between <m>\vvec</m> and <m>A\vvec</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.25in">
+    <statement>
+      <p>Now consider the matrix
+  <m>A=
+  \left[
+    \begin{array}{cc}
+      0 \amp -1 \\
+      1 \amp 0 \\
+    \end{array}
+  \right]</m>.  Use the diagram to describe any eigenvectors and their
+  associated eigenvalues.  What geometric transformation does this
+  matrix perform on vectors?  How does this explain the presence of
+  any eigenvectors?</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <m>A =
+  \left[
+    \begin{array}{cc}
+      7 \amp 6 \\
+      6 \amp -2 \\
+    \end{array}
+  \right]
+  </m>.</p>
+    </introduction>
+    <task workspace="1.25in">
+      <statement>
+        <p>Find the product <m>A\vvec_1</m> to verify that <m>\vvec_1 = \twovec21</m> is
+  an eigenvector of <m>A</m>. What is the associated eigenvalue <m>\lambda</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Find the product <m>A\vvec_2</m> to verify that <m>\vvec_2 = \twovec{-1}{2}</m> is a an eigenvector of <m>A</m>. What is the associated eigenvalue <m>\lambda</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>A^{20} \vvec_1</m>? What is <m>A^{20}\vvec_2</m>? (Can do this easily by hand if you don't simplify!)</p>
+        <p>So why do we care about any of this?  Good question.  It helps to 
+  remember that matrix multiplication satisfies the linearity condition:
+  <md>
+  A\left(c_1\vvec_1 + c_2\vvec_2\right) = c_1A\vvec_1 + c_2A\vvec_2.
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Express the vector <m>\xvec = \twovec30</m> as a linear combination
+  of <m>\vvec_1</m> and <m>\vvec_2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Using the linearity of matrix multiplication, and the expression you just found for <m>x</m> in terms of <m>\vvec_1</m> and <m>\vvec_2</m>, and your knowledge of <m>A\vvec_1</m> and <m>A\vvec_2</m>, to write
+  <m>A\xvec</m>.</p>
+        <p>Right now this might seem like a really complicated way to do matrix vector multiplication. But using these steps we can find <m>A^{20}x</m> without much trouble.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use the strategy from part (e) to find <m>A^{20}\xvec</m>.  Don't simplify.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

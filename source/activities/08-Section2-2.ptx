@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 2.2 - Matrix multiplication and linear combinations</title>
+  <objectives>
+    <ul>
+      <li><p>What is the connection between the operation <m>A\xvec</m> where <m>A</m> is a matrix and <m>\xvec</m> is a vector and linear combinations?</p></li>
+      <li><p>How do solutions to the matrix equation <m>A\xvec = \bvec</m> (where <m>A</m> is a matrix and <m>\bvec</m> is a vector) correspond to solutions of a certain linear system?</p></li>
+      <li><p>When can two matrices be multiplied? What will the dimension of their product be?</p></li>
+      <li><p>How do we view matrix multiplication as encoding a linear combination? How do we compute matrix products?</p></li>
+      <li><p>How do we get Sage to do matrix multiplication?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Find the matrix product</p>
+      <p><m>
+  \ds
+  \left[
+    \begin{array}{cccc}
+      1 \amp 2 \amp 0 \amp -1 \\
+      2 \amp 4 \amp -3 \amp -2 \\
+      -1 \amp -2 \amp 6 \amp 1 \\
+    \end{array}
+  \right]
+  \fourvec31{-1}1
+  </m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>A</m> is the matrix
+  <md>
+  A =
+  \left[
+    \begin{array}{ccc}
+      3 \amp -1 \amp 0 \\
+      0 \amp -2 \amp 4 \\
+      2 \amp 1 \amp 5 \\
+      1 \amp 0 \amp 3 \\
+    \end{array}
+  \right].
+  </md>
+  If <m>A\xvec</m> is defined, what is the dimension of the vector <m>\xvec</m>?
+  What is the dimension of <m>A\xvec</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>A vector whose entries are all zero is denoted by
+  <m>\zerovec</m>.  If <m>A</m> is a matrix, what is the
+  product <m>A\zerovec</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that
+  <m>I =
+  \left[
+    \begin{array}{rrr}
+      1 \amp 0 \amp 0 \\
+      0 \amp 1 \amp 0 \\
+      0 \amp 0 \amp 1 \\
+    \end{array}
+  \right]
+  </m>
+  and that <m>\xvec=\threevec{x_1}{x_2}{x_3}</m>.  Find the product
+  <m>I\xvec</m>
+  and explain why <m>I</m> is called the
+  <em>identity matrix</em>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose we write the matrix <m>A</m> in terms of its columns
+  as 
+  <md>
+  A =
+  \left[
+    \begin{array}{rrrr}
+      \vvec_1 \amp \vvec_2 \amp \ldots \amp \vvec_n \\
+    \end{array}
+  \right].
+  </md>
+  If the vector
+  <m>\evec_1 =
+  \left[
+    \begin{array}{r} 1 \\ 0 \\ \vdots \\ 0
+    \end{array}
+  \right]</m>, what is the product
+  <m>A\evec_1</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that
+  <md>
+  A =
+  \left[
+    \begin{array}{rrrr}
+      1 \amp 2 \\
+      -1 \amp 1 \\
+    \end{array}
+  \right],
+  \bvec = \left[
+    \begin{array}{r}
+      6 \\ 0
+    \end{array}
+  \right].
+  </md>
+  Is there a vector <m>\xvec</m> such that <m>A\xvec = \bvec</m>?  Explain your
+  process for answering this question clearly. Hint: Use <m>\xvec = \twovec{x_1}{x_2}</m> and write out <m>A\xvec</m> as a linear combination.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that <m>A</m> is the matrix
+  <md>
+  A = \left[
+    \begin{array}{rrrr}
+      1 \amp 2 \amp 0 \amp -1 \\
+      2 \amp 4 \amp -3 \amp -2 \\
+      -1 \amp -2 \amp 6 \amp 1 \\
+    \end{array}
+  \right]
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Describe the solution space to the equation
+  <m>
+  A\xvec = \threevec{-1}15.
+  </m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Describe the solution space to the equation
+  <m>
+  A\xvec = \threevec36{-3}.
+  </m></p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

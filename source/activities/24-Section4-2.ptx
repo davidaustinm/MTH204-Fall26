@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 4.2. - Finding eigenvectors and eigenvalues</title>
+  <objectives>
+    <introduction>
+      <p>\begin{enumerate}
+\item What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix?
+\item What is the multiplicity of an eigenvalue?
+\item What is an eigenspace and how do we find it?
+
+
+\end{enumerate}</p>
+    </introduction>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>If <m>A</m> is an <m>n\times n</m> matrix, we can rewrite the condition
+<m>A\vvec = \lambda\vvec</m> as
+<md>
+(A-\lambda I)\vvec = \zerovec.
+</md>
+We will now practice finding eigenvalues <m>\lambda</m> and eigenvectors
+<m>\vvec</m>.</p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>If <m>\vvec</m> is an eigenvector of <m>A</m> with associated eigenvalue
+  <m>\lambda</m>, then <m>\vvec</m> is a nonzero solution to the homogeneous
+  equation <m>(A-\lambda I)\xvec = \zerovec</m>.</p>
+    </introduction>
+    <task workspace=".7in">
+      <statement>
+        <p>What does this imply
+  about the pivot positions of the matrix <m>A-\lambda I</m>?</p>
+      </statement>
+    </task>
+    <task workspace=".7in">
+      <statement>
+        <p>What does this say about the invertibility of <m>A-\lambda I</m>?</p>
+      </statement>
+    </task>
+    <task workspace=".7in">
+      <statement>
+        <p>What does this say about the determinant <m>\det(A-\lambda I)</m>? We call <m>\det(A-\lambda I)</m> the <em>characteristic polynomial</em>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <m>A =
+  \left[
+    \begin{array}{cc}
+      1 \amp 2 \\
+      2 \amp 1 \\
+    \end{array}
+  \right]
+  </m> and construct the matrix
+  <md>
+  A - \lambda I =
+  \left[
+    \begin{array}{cc}
+      1 \amp 2 \\
+      2 \amp 1 \\
+    \end{array}
+  \right]
+  -\lambda
+  \left[
+    \begin{array}{cc}
+      1 \amp 0 \\
+      0 \amp 1 \\
+    \end{array}
+  \right]
+  =
+  \left[
+    \begin{array}{cc}
+      1 \amp 2 \\
+      2 \amp 1 \\
+    \end{array}
+  \right]
+  -
+  \left[
+    \begin{array}{cc}
+      \lambda \amp 0 \\
+      0 \amp \lambda \\
+    \end{array}
+  \right]
+  =
+  \left[
+    \begin{array}{cc}
+      1-\lambda \amp 2 \\
+      2 \amp 1-\lambda \\
+    \end{array}
+  \right].
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find the determinant <m>\det(A-\lambda I)</m> and then find the values
+  <m>\lambda</m> such that <m>\det(A-\lambda I) = 0</m>.  These are the
+  eigenvalues of <m>A</m>.</p>
+        <p>We call <m>\det(A-\lambda I) = 0</m> the <em>characteristic equation</em>.  The solutions to the characteristic equation in this case are <m>\lambda =
+  3</m> and <m>\lambda = -1</m>.  These are the eigenvalues of <m>A</m>.  Now let's
+  find the eigenvectors, which are the solutions to the equation
+  <m>(A-\lambda I)\xvec = \zerovec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Start with <m>\lambda = 3</m>, which gives us the matrix <m>A-3I</m>.  Find
+  the solutions to the homogeneous equation <m>(A-3I)\xvec = \zerovec</m>.
+  These will be the eigenvectors corresponding to <m>\lambda = 3</m>.  (In Sage you can enter A - 3<m>*</m>identity<m>\_</m>matrix(2)  to get <m>A-3I</m>.)</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Now use <m>\lambda = -1</m>, which gives us the matrix <m>A+I</m>.  Find the
+  solutions to the homogeneous equation <m>(A+I)\xvec = \zerovec</m>.
+  These will be the eigenvectors corresponding to <m>\lambda = -1</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Go to <c>http://gvsu.edu/s/0Ja</c> and verify that you have found the
+  eigenvectors and eigenvalues for <m>A</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>We will call the set of all eigenvectors corresponding to an
+  eigenvalue <m>\lambda</m> the <em>eigenspace</em> of <m>A</m> corresponding to
+  <m>\lambda</m> and denote it by <m>E_\lambda</m>.  Notice that
+  <m>E_\lambda = \nul(A-\lambda I)</m>, the null space of <m>A-\lambda I</m>.
+  For the matrix <m>A</m>, what are <m>\dim E_3</m> and <m>\dim E_{-1}</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Let's now find the eigenvectors and eigenvalues of
+  <m>A =
+  \left[
+    \begin{array}{cc}
+      2 \amp 1 \\
+      0 \amp 2 \\
+    \end{array}
+  \right]
+  </m>.</p>
+    </introduction>
+    <task workspace="4in">
+      <statement>
+        <p>Find the eigenvalues by solving the equation <m>\det(A-\lambda I) =
+  0</m>, then find a basis for the eigenspaces <m>E_\lambda</m> for each
+  eigenvalue <m>\lambda</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Note you should get that <m>\lambda=2</m> is a ``double root" of the characteristic polynomial. So we say <m>\lambda = 2</m> is an eigenvalue of multiplicity 2. You can check your results again using the interactive figure.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Is it possible to form a basis of <m>\mathbb{R}^2</m> consisting of eigenvectors of <m>A</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Consider the matrix <m>A=\left[\begin{array}{cc} 0 \amp -1\\1\amp0\end{array}\right]</m>, and find its eigenvalues and eigenvectors.  Verify your results again with the interactive figure.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Remember that the determinant of a triangular matrix, such as
+  <m>
+  A =
+  \left[
+    \begin{array}{ccc}
+      -2 \amp 1 \amp 2 \\
+      0 \amp -1 \amp 3 \\
+      0 \amp 0 \amp 3 \\
+    \end{array}
+  \right]
+  </m>,
+  is the product of the diagonal entries.  What does this say about
+  the eigenvalues of a triangular matrix?</p>
+    </statement>
+  </exercise>
+
+</worksheet>

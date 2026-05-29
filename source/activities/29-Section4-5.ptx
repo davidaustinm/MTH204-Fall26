@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 4.5 - Markov chains</title>
+  <objectives>
+    <ul>
+      <li><p>What is a stochastic matrix? What is a probability vector?</p></li>
+      <li><p>What is a Markov chain? What is a steady state vector for a Markov chain?</p></li>
+      <li><p>What does the Perron-Frobenius theorem say and why is it so useful?</p></li>
+    </ul>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>Here is some terminology:</p>
+    <ul>
+      <li><p>A <em>probability vector</em> is a vector with nonnegative entries
+  that add to 1, like <m>\threevec{0.3}{0.2}{0.5}</m>.</p></li>
+      <li><p>A <em>stochastic matrix</em> is a square matrix in which every
+  column is a probability vector.</p></li>
+    </ul>
+  </introduction>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Here's a typical stochastic matrix, like the ones we have been
+  considering:
+  <md>A = \begin{bmatrix}
+    0.2 \amp 0.4 \\
+    0.8 \amp 0.6 \\
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>A</m> is a stochastic matrix.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Verify that <m>\vvec_1=\twovec12</m> and <m>\vvec_2=\twovec{-1}1</m> are
+  eigenvectors and find their associated eigenvalues.</p>
+        <p>It turns out that <m>\lambda=1</m> is always an eigenvalue of a
+  stochastic matrix and that all the eigenvalues satisfy <m>|\lambda|
+  \leq 1</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find a diagonalization <m>A=PDP^{-1}</m> and then find <m>\lim_{k\to\infty}
+  A^k</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose that <m>\xvec_0</m> is a probability vector, which means that the
+  two entries in <m>\xvec_0</m> add to 1.  What is <m>\lim_{k\to\infty}
+  A^k\xvec_0</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's check this out in Sage.  Define a probability vector <c>x0</c>
+  and let's look at how <m>\xvec_0</m> evolves under repeated
+  multiplication by <m>A</m>.  The following code prints <m>\xvec_1,
+  \xvec_2, \ldots, \xvec_{20}</m>.</p>
+        <p>\begin{verbatim}
+x = vector([1,0])
+for i in range(20):
+    x = A*x
+    print(x)  
+\end{verbatim}</p>
+        <p>What do you notice happens to the vectors <m>\xvec_k</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What happens if you try a different initial probability vector
+  <m>\xvec_0</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>The sequence of vectors <m>\xvec_0, \xvec_1, \ldots</m> where <m>\xvec_{k+1}=Ax_k</m> is called a <term>\em
+    Markov chain</term>.  (You've been doing Markov Chains for awhile!)  We see here that <em>any</em> probability vector
+  converges to a unique probability vector <m>\qvec =
+  \twovec{1/3}{2/3}</m>. We say <m>\qvec</m> is a {\bf {\emph {steady-state}}} vector if <m>A\qvec = \qvec</m>.  What does the steady-state vector tell you about the dynamical system?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Now consider the stochastic matrix
+  <m>B = \begin{bmatrix}
+    0 \amp 1 \amp 0 \\
+    0 \amp 0 \amp 1 \\
+    1 \amp 0 \amp 0 \\
+  \end{bmatrix}</m>.
+  Since <m>B</m> is stochastic, <m>\lambda =1</m> should be an eigenvalue.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Verify that <m>\lambda=1</m> is an eigenvalue and find a basis for its corresponding eigenspace.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What happens when you create a Markov chain with this matrix?  Try
+  different initial probability vectors <m>\xvec_0</m>.</p>
+      </statement>
+    </task>
+    <conclusion>
+      <p>An important question arises: if <m>A</m> is a stochastic matrix and <m>x_k</m> is a Markov chain, does <m>x_k</m> converge to a steady-state vector?</p>
+    </conclusion>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Here's an important theorem called the <em>Perron-Frobenius
+    theorem</em>:
+  \begin{quote}
+    <em>If <m>A</m> is a stochastic matrix and either (a) all the entries of
+      <m>A</m> are positive or (b) all the entries of some power <m>A^k</m> are
+      positive, then <m>\dim E_1 = 1</m> and all other eigenvalues satisfy
+      <m>|\lambda| &lt; 1</m>.  This means that any Markov chain will converge
+      to a unique probability vector <m>\qvec</m>. 
+    </em> 
+  \end{quote}
+   (If all entries of <m>A^k</m> are strictly positive for some power <m>k</m> of <m>A</m>, then <m>A</m> is called a <term>\em positive</term> matrix.)</p>
+    </introduction>
+    <task workspace=".5in">
+      <statement>
+        <p>Which of the following stochastic matrices satisfy the hypothesis of
+  the Perron-Frobenius theorem?
+  <md>
+  A = \begin{bmatrix}
+    0.2 \amp 0.4 \\
+    0.8 \amp 0.6 \\
+  \end{bmatrix},~~~
+  B = \begin{bmatrix}
+    0 \amp 1 \amp 0 \\
+    0 \amp 0 \amp 1 \\
+    1 \amp 0 \amp 0 \\
+  \end{bmatrix}.
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For which of those matrices does any Markov chain converge to a
+  unique probability vector <m>\qvec</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <md>
+  B = \begin{bmatrix}
+    \frac{5}{6} \amp \frac{1}{3} \amp \frac{1}{3} \\
+    \frac{1}{6} \amp \frac{8}{15} \amp \frac{2}{15} \\
+    0 \amp \frac{2}{15} \amp \frac{8}{15}
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Does <m>B</m> satisfy the hypothesis of the Perron-Frobenius theorem?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the eigenvalues of <m>B</m>.  How do these eigenvalues confirm the
+  statement of the Perron-Frobenius theorem?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a basis for <m>E_1</m> (you might want to multiply it by a scalar so
+  that every entry is an integer).</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What will be the unique stationary vector
+  <m>\qvec</m> to which any Markov chain converges?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Using Sage, verify that any Markov chain converges to <m>\qvec</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

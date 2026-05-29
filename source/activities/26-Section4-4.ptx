@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 4.4 - Dynamical Systems</title>
+  <objectives>
+    <introduction>
+      <p>Why is having a basis of eigenvectors useful?</p>
+    </introduction>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>Suppose we have two species <m>R</m> and <m>S</m> that interact with one
+  another and that we record the change in their populations from year
+  to year. When we begin our study, the populations, measured in
+  thousands, are <m>R_0</m> and <m>S_0</m>; after <m>k</m> years, the populations are
+  <m>R_k</m> and <m>S_k</m>.</p>
+    <p>Knowing the populations in one year, we find their populations the
+  next year:
+  <md>
+  \begin{aligned}
+    R_{k+1}\amp= 0.9R_k + 0.8S_k \\
+    S_{k+1}\amp= 0.2R_k + 0.9S_k. \\
+  \end{aligned}
+  </md>
+  We will combine the populations into a vector
+  <m>\xvec_k=\twovec{R_k}{S_k}</m> and write
+  <m>\xvec_{k+1}=A\xvec_k</m> where
+  <md>
+  A =
+  \left[
+    \begin{array}{cc}
+      0.9 \amp 0.8 \\
+      0.2 \amp 0.9 \\
+    \end{array}
+  \right].</md></p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Verify that
+	<md> {\bf v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \qquad {\bf v}_2 = \begin{bmatrix} -2 \\ \s1 \end{bmatrix} </md>
+	are eigenvectors of <m>A</m> and find their respective eigenvalues.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that initially <m>{\bf x}_0 = \begin{bmatrix} 2 \\ 3 \end{bmatrix}</m>. Write <m>{\bf x}_0</m> as a linear combination of eigenvectors <m>{\bf v}_1</m> and <m>{\bf v}_2</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Write the vectors <m>{\bf x}_1</m>, <m>{\bf x}_2</m>, and <m>{\bf x}_3</m> as a linear combination of eigenvectors <m>{\bf v}_1</m> and <m>{\bf v}_2</m>. Use linearity of matrix multiplication!  (If you have powers of eigenvalues, might I suggest not simplifying those... You should have <m>\vvec_1</m> and <m>\vvec_2</m> in your answers.)</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Do you see a pattern?  Can you find a formula for some general <m>\xvec_{k}</m> as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>?  Hint: there might be powers of <m>k</m> in your answer</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>When <m>k</m> becomes very large (that is <m>k\rightarrow \infty</m>), what part of the expression for <m>\xvec_k</m> goes to 0?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>When <m>k</m> becomes very large (that is <m>k\rightarrow\infty</m>), what happens to the ratio of the populations <m>R_k/S_k</m>?  (Recall <m>\xvec_k = \twovec{R_k}{S_k}</m>.)</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If we begin instead with <m>{\bf x}_0 = \begin{bmatrix} 4 \\ 4 \end{bmatrix}</m> what eventually happens to the ratio <m>R_k/S_k</m> as <m>k</m> becomes very large?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Explain what happens to the ratio <m>R_k/S_k</m> as <m>k</m> becomes very large no matter what the initial populations are.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>After a very long time, by approximately what factor does the population of <m>R</m> grow every year? By approximately what factor does the population of <m>S</m> grow every year?</p>
+      <p>Note that if <m>R_k</m> and <m>S_k</m> didn't live in the same region we would have <m>R_{k+1}= 0.9R_k</m> and <m>S_{k+1} = .9S_k</m> which would mean both populations would eventually go extinct. Instead, these species are ``cooperative" which means they benefit from each other (these are the ``off diagonal" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Challenge: Can you give an example of a dynamic system in which species <m>R</m> and <m>S</m> are competitive, that is both compete for resources and ``hurt'' the other species instead of benefiting them?  Can you give an example of a ``predator-prey'' dynamic system in which species <m>R</m> is the prey, and species <m>S</m> is the predator?  (Who would benefit from interactions, and who wouldn't in that case?)</p>
+    </statement>
+  </exercise>
+
+</worksheet>

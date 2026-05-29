@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Review / Extra Practice</title>
+
+  <exercise>
+    <introduction>
+      <p>You can/should use Sage!</p>
+    </introduction>
+    <task workspace="1.5in">
+      <statement>
+        <p>Describe the solution space to the linear system:
+  <md>
+  \begin{alignedat}{5}
+    2x_1 \amp {}-{} \amp x_2 \amp {}{} \amp \amp {}+{} \amp 3x_4 \amp {}={} \amp 6 \\
+    x_1 \amp {}{} \amp \amp {}+{} \amp 3x_3 \amp {}-{} \amp x_4 \amp {}={} \amp 6 \\
+    2x_1 \amp {}{} \amp \amp {}+{} \amp x_3 \amp {}+{} \amp 3x_4 \amp {}={} \amp 7 \\
+  \end{alignedat}
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1.2in">
+      <statement>
+        <p>Describe the solution space to the vector equation
+  <md>
+  \left[
+    \begin{array}{cccc}
+      2 \amp -1 \amp 0 \amp 3 \\
+      1 \amp 0 \amp 3 \amp -1 \\
+      2 \amp 0 \amp 1 \amp 3 \\
+    \end{array}
+  \right]
+  \xvec = \threevec667.
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that
+  <md>
+  \vvec_1=\threevec212, \hspace*{24pt}
+  \vvec_2=\threevec{-1}00, \hspace*{24pt}
+  \vvec_3=\threevec031, \hspace*{24pt}
+  \vvec_4=\threevec3{-1}3, \hspace*{24pt}
+  \bvec=\threevec667.
+  </md>
+  Can <m>\bvec</m> be written as a linear combination of <m>\vvec_1</m>,
+  <m>\vvec_2</m>, <m>\vvec_3</m>, and <m>\vvec_4</m>?  If so, find one set of
+  weights.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>\bvec</m> in <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Are <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m>, and <m>\vvec_4</m> linearly dependent?  Explain your thinking.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Describe <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>.  Explain your thinking.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Give a condition on the pivots</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>[label=(\alph*)]</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>of an augmented matrix such that the associated linear system
+    is not consistent.</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>of an augmented matrix such that the associated linear system
+    has a unique solution.</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>of a matrix <m>A</m> such that <m>A\xvec=\bvec</m> is
+    consistent for any vector <m>\bvec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>of a <m>10\times10</m> matrix <m>A</m> such that the homogeneous
+    equation <m>A\xvec = \zerovec</m> has a unique solution.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Explain why the columns of a matrix are linearly dependent if the matrix has a
+column without a pivot.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>What is the smallest number of vectors that span <m>\real^{1234}</m>?
+  Explain your thinking.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Determine if the following matrix is in reduced row echelon
+  form.  If not, perform a sequence of row operations to put it in
+  reduced row echelon form (without using any computational device).
+  Then give a description of the solution space of the associated
+  linear system.</p>
+      <p><m>\ds
+  \left[
+    \begin{array}{cccc|c}
+      0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+      -1 \amp 2 \amp 0 \amp 0 \amp 3 \\
+      0 \amp 1 \amp 0 \amp 1 \amp -2 \\
+    \end{array}
+  \right]
+  </m></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the 2-dimensional vectors <m>\vvec</m> and <m>\wvec</m> shown
+  below.</p>
+      <p>\begin{center}
+    \includegraphics{review-fig}
+  \end{center}</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Sketch the linear combination <m>a\vvec + b\wvec</m> with weights <m>a=-3</m>
+  and <m>b=2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Can the vector <m>\twovec{3}{-3}</m> be written as a linear combination
+  of <m>\vvec</m> and <m>\wvec</m>?  If so, how?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Determine whether the following statements are true or false 
+  including a justification for your response.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>[label=(\alph*)]</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m> and <m>\vvec_4</m> are vectors
+    in <m>\real^3</m>, then their span is <m>\real^3</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose that the span of <m>\vvec_1,\vvec_2,\ldots,\vvec_{27}</m>
+    is <m>\real^{27}</m>.  Then every vector in <m>\real^{27}</m> can be written
+    as a linear combination of <m>\vvec_1,\vvec_2,\ldots,\vvec_{27}</m>
+    is <m>\real^{27}</m> in exactly one way.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>\bvec</m> is a linear combination of the vectors <m>\vvec_1</m>,
+    <m>\vvec_2</m>, and <m>\vvec_3</m>, then the equation
+    <md>
+    \left[
+      \begin{array}{ccc}
+        \vvec_1 \amp \vvec_2 \amp \vvec_3 \\
+      \end{array}
+    \right]
+    \xvec = \bvec
+    </md>
+    is consistent.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the <m>2\times 2</m> matrix that rotates vectors by <m>180^\circ</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace=".5in">
+      <statement>
+        <p>If a set of vectors in <m>\real^{19}</m> span <m>\real^{19}</m> what can you say about the number of vectors in the set?</p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>If a set of vectors in <m>\real^{19}</m> are linearly independent what can you say about the number of vectors in the set?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose <m>T: \real^3 \to \real^4</m> is a matrix transformation defined by a matrix <m>A</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What are the dimensions of A?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose 
+	<md>T\left(\begin{bmatrix} 1 \\ 0 \\ 0  \end{bmatrix}\right) = \begin{bmatrix} \s1 \\ \s2 \\ \s5  \\ -7 \end{bmatrix} ,\qquad
+	T\left(\begin{bmatrix} 0 \\ 1 \\ 0  \end{bmatrix}\right) = \begin{bmatrix} \s 9 \\ \s 4 \\ -2 \\ \s 1 \end{bmatrix}, \qquad \text{ and }\qquad
+	T\left(\begin{bmatrix} 0 \\ 0 \\ 1  \end{bmatrix}\right) = \begin{bmatrix} -3 \\ \s 9 \\ \s 4 \\ -2 \end{bmatrix}.</md>
+	Find the matrix <m>A</m> that defines the linear transformation.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find <m>T\left( \begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix}\right)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

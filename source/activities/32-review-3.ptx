@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Final Review, Part III</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>A</m> is a <m>3\times2</m> matrix and that
+  <m>A\twovec10 = \threevec{-2}{1}4</m> and <m>A\twovec01 = \threevec11{-2}</m>.
+  What is <m>A\twovec2{-3}</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that <m>B</m> is a <m>2\times2</m> matrix and that
+  <md>
+  B\twovec23 = \twovec10,~~~B\twovec11 = \twovec01.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>B^{-1}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a solution to the equation <m>B\xvec=\twovec4{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the matrix <m>B</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let <m>C</m> be the matrix
+  <m>C = \begin{bmatrix}
+    3 \amp 2 \amp 0 \\
+    k \amp -1 \amp 1 \\
+    1 \amp 2 \amp 2 \\
+      \end{bmatrix}</m></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>For what values of <m>k</m> is the matrix <m>C</m>
+ invertible?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For what values of <m>k</m> do the columns span <m>\real^3</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For what values of <m>k</m> are the columns linearly independent?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <task workspace="1in">
+      <statement>
+        <p>What does it mean for <m>\vvec</m> to be an eigenvector of a matrix
+  <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace=".5in">
+      <statement>
+        <p>Why do we only discuss eigenvectors for square matrices?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For what value of <m>k</m> is <m>\lambda=3</m> an eigenvalue of the matrix
+  <m>\begin{bmatrix}
+    2 \amp 3 \\
+    -2 \amp k
+  \end{bmatrix}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For that value of <m>k</m>, find a basis for the eigenspace <m>E_3</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>A</m> is a <m>2\times2</m> matrix having eigenvectors
+  <m>\vvec_1 = \twovec21</m> and <m>\vvec_2=\twovec31</m> and eigenvalues
+  <m>\lambda_1=4</m> and <m>\lambda_2=-2</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Write the vector <m>\twovec10</m> as a linear combination of
+  eigenvectors.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the vector <m>A\twovec10</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>In the same way, write the vector <m>\twovec01</m> as a linear
+  combination of eigenvectors.  Then find the vector <m>A\twovec01</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the matrix <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>A</m> diagonalizable?  If so, find the matrices <m>P</m> and <m>D</m> and
+  verify that <m>A=PDP^{-1}</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 2.1 - Vectors and Linear Combinations</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>How do we multiply a vector by a scalar? How do we add two vectors?</p></li>
+      <li><p>How do we picture vector addition and scalar multiplication geometrically?</p></li>
+      <li><p>What is a linear combination of vectors?</p></li>
+    </ul>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>Visit the web site <c>gvsu.edu/s/0Je</c> where you find an interactive
+figure you can use to investigate linear combinations.  We will
+consider the vectors
+<md>
+\vvec=\twovec21, \wvec=\twovec12
+</md>
+and consider linear combinations <m>c\vvec+d\wvec</m> (which is shown in red).</p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>The weight <m>d</m> is initially set to 0 in the interactive figure. Explain what happens as you
+  vary <m>c</m> with <m>d=0</m>?  How is this related to scalar multiplication?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>What is the linear combination of <m>\vvec</m> and <m>\wvec</m> when <m>c=1</m>
+  and <m>d=-2</m>?  You may find this result using the interactive figure, but you
+  should also verify it by computing the linear combination.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Can the vector <m>\twovec00</m> be expressed as a linear combination
+  of <m>\vvec</m> and <m>\wvec</m>? If so, what are weights <m>c</m> and <m>d</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.2in">
+    <statement>
+      <p>Use the interactive figure to determine whether the vector <m>\twovec{-3}{0}</m>
+  can be expressed as a linear combination of <m>\vvec</m> and <m>\wvec</m>? If so,
+  what are weights <m>c</m> and <m>d</m>? How could you use the grey diamond-like background grid to determine this?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.2in">
+    <statement>
+      <p>Verify the result from the previous part by algebraically
+  substituting the weights <m>c</m> and <m>d</m> and the vectors <m>\vvec</m> and <m>\wvec</m> and 
+  checking you get <m>\twovec{-3}{0}</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.2in">
+    <statement>
+      <p>Can the vector <m>\twovec{1.3}{-1.7}</m> be expressed as a linear
+  combination of <m>\vvec</m> and <m>\wvec</m>? (Use the diagram, how to do this algebraically is on the next page.)</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Can you find any two-dimensional vectors that cannot be expressed
+  as linear combinations of <m>\vvec</m> and <m>\wvec</m>?</p>
+      <p>\section*{Linear Combinations and Linear Systems}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>There's an important connection between linear combinations and linear systems. Suppose we want to write the vector <m>\twovec{1.3}{-1.7}</m> as a linear combination of <m>\vvec = \twovec{2}{1}</m> and <m>\wvec = \twovec{1}{2}</m>. Then we want to solve
+  	<md> c  \twovec{2}{1} + d \twovec{1}{2} = \twovec{1.3}{-1.7}.</md>
+Simplifying the left side we find 
+	<md> \twovec{2c+1d}{1c + 2d}= \twovec{1.3}{-1.7}.</md>
+In other words, we need <m>2c+1d = 1.3</m> and <m>1c+2d = -1.7</m>. This is just a linear system. Use Sage to solve this linear system.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Use the process from the previous problem to write <m>\twovec{15.2}{7.1}</m> as a linear combination of <m>\vvec</m> and <m>\wvec</m>. Use Sage!</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector
+<md>\begin{bmatrix}
+111 \\
+140\\
+1.2
+\end{bmatrix}</md></p>
+      <p>One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Write the vector describing the nutritional content of Cocoa Puffs.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you eat <m>a</m> servings of Frosted Flakes and <m>b</m> servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the vectors <m>\vvec=\twovec{-1}1</m> and <m>\wvec=\twovec{2}{-2} </m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Sketch the two vectors on the grid below.</p>
+        <p>\begin{center}
+\includegraphics{empty-4.eps}
+\end{center}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What do you notice about the two vectors? Can you relate them algebraically?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Can you write <m>\uvec=\twovec{3}{0}</m> as a linear combination of <m>\vvec</m> and <m>\wvec</m>? Think geometrically for this question.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now thinking algebraically, what do you get when you find the reduced row echelon form of <m>[ \vvec \,\,\, \wvec \mid \uvec]</m>. Why should you expect an inconsistent system?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

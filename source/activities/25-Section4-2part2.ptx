@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 4.2. - Finding eigenvectors and eigenvalues</title>
+  <objectives>
+    <introduction>
+      <p>\begin{enumerate}
+
+
+
+\item How do we know if the eigenvectors of an <m>n\times n</m> matrix form a basis for <m>\mathbb{R}^n</m>?
+
+\end{enumerate}</p>
+    </introduction>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>If <m>A</m> is an <m>m\times m</m> matrix, we would like to know if there is a
+basis of <m>\real^m</m> consisting of eigenvectors of <m>A</m>.</p>
+    <p>Remember:</p>
+    <ul>
+      <li><p>The eigenvalues of <m>A</m> are the roots of the charactertic
+  polynomial <m>\det(A-\lambda I) = 0</m>.</p></li>
+      <li><p>The set of eigenvectors associated to <m>\lambda</m> forms the
+  eigenspace <m>E_\lambda</m>, which is the solution space of the equation
+  <m>(A-\lambda I)\xvec=\zerovec</m> or, in other words,
+  <m>E_\lambda = \nul(A-\lambda I)</m>.</p></li>
+    </ul>
+    <p><term>Handy:</term>Here's a handy Sage command.  If <c>A</c> is a square matrix,
+  then <c>A.fcp('x')</c> will tell you the ``factored characteristic
+  polynomial'' expressed in terms of a variable <c>x</c>.</p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <m>\begin{bmatrix} 0 \amp -1 \\ 4 \amp -4 \\ \end{bmatrix}</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What is its
+  factored characteristic polynomial?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What are the eigenvalues of <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Find a basis for each eigenspace of this matrix.  What is the
+  dimension of each eigenspace?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is there a basis
+  of <m>\real^2</m> consisting of eigenvectors?  If so, what is one such basis?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace=".7in">
+    <introduction>
+      <p>Consider the matrix
+  <md>
+  A = \begin{bmatrix}
+    -1 \amp 0 \amp 2 \\
+    -2 \amp -2 \amp -4 \\
+    0 \amp 0 \amp -2 \\
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find factored characteristic polynomial of <m>A</m>.</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>For each eigenvalue, find a basis for its associated eigenspace and
+  state its dimension.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is there a basis for <m>\real^3</m> consisting of eigenvectors of <m>A</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Now consider the matrix
+  <md>
+  B = \begin{bmatrix}
+    -5 \amp -2 \amp -6 \\
+    -2 \amp -2 \amp -4 \\
+    2 \amp 1 \amp 2 \\
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find factored characteristic polynomial of <m>B</m>.</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>For each eigenvalue, find a basis for its associated eigenspace and
+  its dimension.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is there a basis for <m>\real^3</m> consisting of eigenvectors of <m>B</m>?
+  If so, what is one such basis?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Remember that the determinant of a triangular matrix, such as
+  <m>
+  A =
+  \begin{bmatrix}
+    2 \amp -4 \amp -19 \\
+    0 \amp 4 \amp 7 \\
+    0 \amp 0 \amp -3
+  \end{bmatrix}
+  </m>,
+  is the product of the diagonal entries.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What does this say about
+  the eigenvalues of a triangular matrix?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What are the eigenvalues of this matrix <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>Find a basis for each of the eigenspaces and state their dimensions.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is there a basis of <m>\real^3</m> consisting of eigenvectors of <m>A</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that the factored characteristic polynomial of a matrix
+  <m>C</m> is
+  <md>(2-\lambda)(4-\lambda)(6-\lambda)(13-\lambda).
+  </md>
+  If <m>C</m> is an <m>m\times m</m> matrix, what is <m>m</m>?</p>
+      <p>Based on the examples we've seen, do you think there will be a basis
+  of <m>\real^m</m> consisting
+  of eigenvectors of <m>C</m></p>
+    </statement>
+  </exercise>
+
+</worksheet>

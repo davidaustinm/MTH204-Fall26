@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 2.1 - Vectors and Linear Combinations Part 2</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>What is the connection between linear combinations and solutions to linear systems?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let's look at the vectors
+<md>\vvec_1 = \fourvec{4}021, \vvec_2 = \fourvec1{-3}31,\vvec_3 = \fourvec{-2}110, \bvec = \fourvec012{-2}.</md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>One thing we can do is ask if <m>\bvec</m> can be expressed as a linear combination of <m>\vvec_1, \vvec_2, \vvec_3</m> with weights <m>c_1, c_2, c_3</m>.  Write out the equation for that linear combination.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>We can rephrase this question by writing a linear system for the weights <m>c_1, c_2, c_3</m>.  Solve this linear system (use Sage!).</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Can <m>\bvec</m> be written as a linear combination of <m>\vvec_1, \vvec_2, \vvec_3</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Consider the following linear system:
+<md>\begin{array}{ccccc}
+3x_1 \amp+ 2x_1 \amp- x_3 \amp=\amp 4\\
+x_1\amp\amp + 2x_3 \amp=\amp 0\\
+-x_1\amp-x_2\amp3x_3\amp=\amp1
+\end{array}</md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Identify the vectors <m>\vvec_1, \vvec_2, \vvec_3,</m> and <m>\bvec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Rephrase the question ``Is this linear system consistent?" by asking ``Can <m>\bvec</m> be expressed as a linear combination of <m>\vvec_1, \vvec_2,</m> and <m>\vvec_3</m>?"  What's the answer to this question?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>In previous math classes, you have probably seen the fact that, if we are given two points in the plane, then there is a unique line passing through both of them.  We will begin with four points as shown on the left below, and try to find a polynomial that passes through these four points as shown on the right below.</p>
+      <p>\includegraphics[scale=.4]{polypic}</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>A degree three polynomial can be written
+<md>p(x) = a+bx+cx^2+dx^3</md>
+where <m>a, b, c,</m> and <m>d</m> are coefficients that we would like to determine.  Since we want the polynomial to pass through the point <m>(3,1)</m>, we should require that
+<md>p(3) = a+3b + 9c + 27d = 1</md>
+and thus we obtain a linear equation for coefficients <m>a, b, c</m>, and <m>d</m>.  Write the three other linear equations by requiring that the polynomial passes through the four points in the graph on the previous page.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Identify the vectors <m>\vvec_1, \vvec_2, \vvec_3, \vvec_4</m> and <m>\bvec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Rephrase the question ``Is this linear system consistent?" by asking ``Can <m>\bvec</m> be expressed as a linear combination of <m>\vvec_1, \vvec_2, \vvec_3</m> and <m>\vvec_4</m>?"  What's the answer to this question?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What if we added the point <m>(4,3)</m>?  How would the vectors change?  Would the answer to the last question change?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 3.1 - Invertibility - Part 2</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>Given a matrix, how can one use row reduction to tell if the matrix is invertible?</p></li>
+      <li><p>How can we use the inverse of a matrix <m>A</m> to solve <m>Ax=b</m>.</p></li>
+      <li><p>How do we find the inverse of a matrix using row reduction?</p></li>
+      <li><p>How do we find the inverse of a matrix using Sage?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose <md>A = \left[\begin{array}{ccc} 1\amp0\amp-2\\ 1\amp-1\amp0 \\ -1\amp2\amp1  \end{array}\right].</md></p>
+      <p>If <m>B =  \left[\bvec_1 \ \bvec_2 \  \bvec_3 \right]</m> is the inverse of <m>A</m>, we could solve the following three equations separately to find the columns of <m>B</m>: \\
+    <md>A\bvec_1 = \evec_1=\threevec100, \ \ \  A\bvec_2 = \evec_2=\threevec010, \ \ \ A\bvec_3 = \evec_3=\threevec001.</md> But, we may as well solve them at the
+    same time.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>To do this, build the augmented matrix
+    <md>
+    \left[
+      \begin{array}{c|c}
+        A \amp I \\
+      \end{array}
+    \right]
+    </md>
+    and find the reduced row echelon form.  How does this produce <m>B =
+    A^{-1}</m>?   Note:  In Sage, you may create the <m>3\times3</m> identity matrix by
+  <c>identity\_matrix(3)</c>.  You may augment
+  <m>B</m> using <c>B.augment(identity\_matrix(3))</c></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use <m>B= A^{-1}</m> to solve the equation <m>A\xvec = \threevec723</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+  <md>
+  B =
+  \left[
+    \begin{array}{ccc}
+      -3 \amp 2 \amp -2 \\
+      1 \amp 0 \amp 3 \\
+      1 \amp 2 \amp -2 \\
+    \end{array}
+  \right].
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why the matrix <m>B</m> is invertible.  (Think about row reducing.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the inverse <m>B^{-1}</m>.  Note: In Sage, you may find the inverse of a matrix 
+  <c>B</c> using <c>B.inverse()</c> or \begin{verbatim}B^(-1)\end{verbatim}.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Using <m>A</m> from problem 1 and <m>B</m> from this problem, is <m>AB</m> invertible?  If so, what is its inverse?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find <m>A^{-1}B^{-1}</m> and <m>B^{-1}A^{-1}</m>.  Which one is the same as <m>(AB)^{-1}</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <introduction>
+      <p>Suppose <m>A</m> and <m>B</m> are invertible <m>n\times n</m> matrices.</p>
+    </introduction>
+    <task workspace="1.5in">
+      <statement>
+        <p>Explain why <m>(AB)^{-1} = B^{-1}A^{-1}</m> by simplifying
+  <md>(AB)(B^{-1}A^{-1})</md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why the product of two invertible <m>n\times n</m> matrices is always invertible.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that <m>A</m> is a <m>7\times7</m> matrix whose columns are linearly independent.  Can you guarantee that <m>A</m> is invertible?  Explain.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p><em>If time:</em> A matrix <m>A</m> is lower triangular if all its entries above the diagonal are zero. A matrix <m>A</m> is upper triangular if all of its entries below the diagonal are zero. E.g., <m>L</m> is lower triangular and <m>U</m> is upper triangular:
+    	<md> L = \begin{bmatrix}
+	* \amp0 \amp0\amp0\\
+	* \amp* \amp0 \amp0\\
+	* \amp* \amp* \amp0\\
+	* \amp* \amp* \amp*
+	\end{bmatrix}	\qquad
+	U = \begin{bmatrix}
+	* \amp* \amp* \amp*\\
+	0 \amp* \amp* \amp*\\
+	0 \amp0 \amp* \amp*\\
+	0 \amp0 \amp0 \amp*
+	\end{bmatrix}.</md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Which of the two  triangular matrices below are invertible?
+<md>\left[\begin{array}{ccc}1\amp0\amp7\\0\amp-2\amp5\\0\amp0\amp-9  \end{array}\right], ~~~  \left[\begin{array}{ccc} 1\amp0\amp7\\ 0\amp-2\amp5\\0\amp0\amp0 \end{array}\right]</md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

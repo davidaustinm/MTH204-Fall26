@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Include common macros etc: -->
+  <xi:include href="./docinfo.ptx" />
+  <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
+  <book>
+    <title>Course Name (change me)</title>
+
+    <subtitle>MATH xxx Semester 20xx</subtitle>
+
+    <!-- Optional: include frontmatter with author info and date -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <chapter xml:id="course-documents">
+      <title>Course Documents</title>
+
+      <!-- Course syllabus -->
+      <xi:include href="./syllabus/syllabus.ptx" />
+      <!-- Other documents could go here, like a schedule, project description, etc. -->
+    </chapter>
+
+    <chapter xml:id="course-notes">
+      <title>Course Notes</title>
+
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      </introduction>
+
+      <xi:include href="./notes/week01.ptx"/>
+      <xi:include href="./notes/week02.ptx"/>
+      <!-- etc. -->
+
+    </chapter>
+
+
+    <chapter xml:id="activities">
+      <title>In-Class Activities</title>
+
+      <introduction>
+        <p>
+          These are copies of the in-class activities distributed during the semester.
+        </p>
+      </introduction>
+
+      <!-- Remove the example and replace with your own activities -->
+      <xi:include href="./activities/01-intro-activity.ptx"/>
+      <xi:include href="./activities/01-Section1.1.ptx"/>
+      <xi:include href="./activities/02-Section1.2.ptx"/>
+      <xi:include href="./activities/03-SecondSection1.2.ptx"/>
+      <xi:include href="./activities/05-Section1.4.ptx"/>
+
+      <xi:include href="./activities/01-Section1-1.ptx"/>
+      <xi:include href="./activities/02-Section1-2.ptx"/>
+      <xi:include href="./activities/03-Section1-2Part2.ptx"/>
+      <xi:include href="./activities/04-Section1-3LAB.ptx"/>
+      <xi:include href="./activities/05-Section1-4.ptx"/>
+      <xi:include href="./activities/06-Section2-1.ptx"/>
+      <xi:include href="./activities/07-Section2-1Part2.ptx"/>
+      <xi:include href="./activities/08-Section2-2.ptx"/>
+      <xi:include href="./activities/09-Section2-3.ptx"/>
+      <xi:include href="./activities/10-Section2-3-Part2.ptx"/>
+      <xi:include href="./activities/11-Section2-4.ptx"/>
+      <xi:include href="./activities/12-Section2-4-Part2.ptx"/>
+      <xi:include href="./activities/13-Section2-5.ptx"/>
+      <xi:include href="./activities/14-review.ptx"/>
+      <xi:include href="./activities/15-Section2-6.ptx"/>
+      <xi:include href="./activities/16-Section3-1.ptx"/>
+      <xi:include href="./activities/17-Section3-1-Part2.ptx"/>
+      <xi:include href="./activities/18-Section3-2.ptx"/>
+      <xi:include href="./activities/19-Section3-2-Part2.ptx"/>
+      <xi:include href="./activities/20-Section3-4.ptx"/>
+      <xi:include href="./activities/21-Section3-4Part2.ptx"/>
+      <xi:include href="./activities/22-Section3-5.ptx"/>
+      <xi:include href="./activities/23-Section4-1.ptx"/>
+      <xi:include href="./activities/24-Section4-2.ptx"/>
+      <xi:include href="./activities/25-Section4-2part2.ptx"/>
+      <xi:include href="./activities/26-Section4-4.ptx"/>
+      <xi:include href="./activities/27-Section4-3.ptx"/>
+      <xi:include href="./activities/28-BigPicture.ptx"/>
+      <xi:include href="./activities/29-Section4-5.ptx"/>
+      <xi:include href="./activities/30-review-1.ptx"/>
+      <xi:include href="./activities/31-review-2.ptx"/>
+      <xi:include href="./activities/32-review-3.ptx"/>
+    </chapter>
+
+    <chapter xml:id="handouts">
+      <title>Handouts</title>
+      <!-- Include handouts -->
+      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
+    </chapter>
+
+    <chapter xml:id="homework">
+      <title>Homework</title>
+
+      <!-- Include homework files -->
+      <!--<xi:include href="./homework/homework01.ptx"/>-->
+
+    </chapter>
+
+    <!-- Include additional chapters for other categories -->
+
+    </book>
+  </pretext>

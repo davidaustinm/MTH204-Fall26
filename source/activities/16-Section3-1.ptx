@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 3.1 - Invertibility</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>Given a matrix, how can one use row reduction to tell if the matrix is invertible?</p></li>
+      <li><p>How can we use the inverse of a matrix <m>A</m> to solve <m>Ax=b</m>.</p></li>
+      <li><p>How do we find the inverse of a matrix using row reduction?</p></li>
+      <li><p>How do we find the inverse of a matrix using Sage?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrices
+  <md>
+  A =
+  \left[
+    \begin{array}{ccc}
+      1 \amp 0 \amp 2 \\
+      2 \amp 2 \amp 1 \\
+      1 \amp 1 \amp 1 \\
+    \end{array}\right],
+  \hspace*{24pt}
+  B =
+  \left[
+    \begin{array}{ccc}
+      1 \amp 2 \amp -4 \\
+      -1 \amp -1 \amp 3 \\
+      0 \amp -1 \amp 2 \\
+    \end{array}\right].
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>[label=(\alph*)]</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Define these matrices in Sage.  What is the product <m>AB</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>A</m> invertible?  If so, what is its inverse <m>A^{-1}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the product <m>BA</m>?  Is <m>B</m> invertible?  If so, what is its inverse <m>B^{-1}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the solution to the equation <m>A\xvec =
+    \threevec{4}{-1}{4}</m> using <m>A^{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Remember that the product of matrices usually depends on the
+    order in which you multiply;  that is, if <m>C</m> and <m>D</m> are
+    matrices, it usually happens that <m>CD \neq DC</m>.  In this example,
+    does it appear that order matters when talking about inverses?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let's begin with the matrix
+    <m>
+    A = \mattwo1213
+    </m>.
+    We would like to know if its invertible; in other words, we'd like to know if we can find a matrix <m>B</m> such that <m>AB=I</m>.  Let's denote <m>B</m> by
+    <m>B = \left[
+      \begin{array}{cc} \bvec_1 \amp \bvec_2
+        \\ \end{array}\right].
+    </m>
+    This means that we need to solve
+    <md>
+    AB =A\left[ \begin{array}{cc} \bvec_1 \amp \bvec_2
+    \end{array}\right] =  \left[
+      \begin{array}{cc}
+        A\bvec_1 \amp A\bvec_2 \\
+      \end{array}
+    \right]
+    = I =  \left[
+      \begin{array}{cc}
+        \evec_1 \amp \evec_2 \\
+      \end{array}
+    \right] = \mattwo1001 ,
+    </md>
+    where <m>\evec_1</m> and <m>\evec_2</m> are the columns of the identity matrix.
+    We therefore have the two equations
+    <md>
+    A\bvec_1 = \evec_1=\twovec10, \hspace*{24pt}
+    A\bvec_2 = \evec_2=\twovec01
+    </md>
+    that we can solve for <m>\bvec_1</m> and <m>\bvec_2</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Using Gaussian elimination, solve the equation <m>A\bvec_1 = \twovec10</m> to find <m>\bvec_1</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Using Gaussian elimination, solve the equation <m>A\bvec_2 = \twovec01</m> to find <m>\bvec_2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the matrix <m>B</m>.  Is it true <m>AB = I</m>? (Can do this with Sage.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>A</m> invertible?  If so, what is <m>A^{-1}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>C = \mattwo{-2}14{-2}</m>, what happens when you try to apply this process to find <m>C^{-1}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's go back to <m>A = \mattwo1213</m>. 
+ Solve <m>Ax = \twovec14</m> using Gaussian Elimination.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use the matrix <m>B</m> you found above and find the product <m>B\twovec14</m>.  What does this have to do with the solution to the equation <m>Ax = \twovec14</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use the matrix <m>B</m> to solve the equation <m>Ax = \twovec3{14}</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose <m>A</m> is an <m>n\times n</m> matrix.  We've seen that, if <m>A</m> is invertible with inverse <m>B</m>, then
+  <m>A\xvec = \bvec</m> has the solution <m>\xvec = B\bvec</m>.    
+  This means that the equation <m>A\xvec = \bvec</m> is consistent for
+  every vector <m>\bvec</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What does this imply about the span of the
+  columns of <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does this imply about the pivot
+  positions of <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Since <m>A</m> is a square matrix---that is, <m>A</m> has the same number of
+  rows and columns---what is the reduced row echelon form of <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What can you say about the linear independence/dependence of the
+  columns of <m>A</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Take
+  <md>
+  A=\begin{bmatrix} 1 \amp 2 \\ 1 \amp 3 \\ \end{bmatrix},~~~   C = \begin{bmatrix}
+    -2 \amp 1 \\
+    4 \amp -2 \\
+  \end{bmatrix},~~~
+  </md>
+  Find the reduced row echelon form of these matrices.  What does this
+  tell you about the invertibility of these two matrices?</p>
+    </statement>
+  </exercise>
+
+</worksheet>

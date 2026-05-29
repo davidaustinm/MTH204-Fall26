@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 4.3 - Diagonalizability</title>
+  <objectives>
+    <introduction>
+      <p>\begin{enumerate}
+\item What does it mean for <m>A</m> to be diagonalizable?  How do we find the diagonalization of a matrix <m>A</m>?
+\item If <m>A</m> is a diagonalizable matrix, what happens to <m>A^k</m>?
+\item If <m>A</m> is a diagonalizable matrix, what happens to <m>\lim_{k\rightarrow\infty}A^k</m>?
+\end{enumerate}</p>
+    </introduction>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>A</m> is a <m>2\times2</m> matrix with one eigenvector
+  <m>\vvec_1</m> having eigenvalue <m>2</m> and a second eigenvector <m>\vvec_2</m>
+  having eigenvalue <m>-5</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>A\vvec_1</m> and <m>A\vvec_2</m> expressed
+  in terms of <m>\vvec_1</m> and <m>\vvec_2</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's build the following matrices:
+  <md>
+  P = \begin{bmatrix}
+    \vvec_1 \amp \vvec_2
+  \end{bmatrix},
+  ~~~
+  D = \begin{bmatrix}
+    2 \amp 0 \\
+    0 \amp -5 \\
+  \end{bmatrix}.
+  </md>
+  (Note <m>D</m> is made up of the eigenvalues!) What do you find if you multiply
+  <m>AP = A\begin{bmatrix}\vvec_1 \amp \vvec_2 \end{bmatrix}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What do you find if you multiply <m>PD = \begin{bmatrix}\vvec_1 \amp
+    \vvec_2 \end{bmatrix}\begin{bmatrix} 2 \amp 0 \\ 0 \amp
+    -5 \end{bmatrix}</m>.</p>
+      </statement>
+    </task>
+    <task workspace=".9in">
+      <statement>
+        <p>Explain why <m>AP = PD</m> and why it follows that <m>A = PDP^{-1}</m>.</p>
+      </statement>
+    </task>
+    <conclusion>
+      <p>Anytime we have an <m>m\times m</m> matrix <m>A</m> and a basis for <m>\real^m</m>
+  consisting of eigenvectors of <m>A</m>, if we build the matrix of
+  eigenvectors <m>P</m> and the diagonal matrix <m>D</m> like this:
+  <md>
+  P = \begin{bmatrix} \vvec_1 \amp \vvec_2 \amp \ldots \amp
+    \vvec_m \end{bmatrix},
+  ~~~
+  D = \begin{bmatrix}
+    \lambda_1 \amp 0 \amp \ldots \amp 0 \\
+    0 \amp \lambda_2 \amp \ldots \amp 0 \\
+    \vdots \amp \vdots \amp \ddots \amp \vdots \\
+    0 \amp 0 \amp \ldots \amp \lambda_m \\
+  \end{bmatrix}
+  </md>
+  then <m>A = PDP^{-1}</m> and we say that <m>A</m> is <em>diagonalizable</em>.</p>
+    </conclusion>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Remember that our favorite matrix <m>A = \begin{bmatrix} 1 \amp 2 \\
+    2 \amp 1 \\ \end{bmatrix}</m> has eigenvectors <m>\vvec_1 = \twovec11</m>
+  with eigenvalue 3 and <m>\vvec_2 = \twovec{-1}1</m> with eigenvalue
+  <m>-1</m>.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>Construct the matrices <m>P</m> and <m>D</m> and verify that
+  <m>A=PDP^{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's now consider
+  <md>
+  A^2 = (PDP^{-1})(PDP^{-1}).
+  </md>
+  By regrouping the terms in the product, explain why <m>A^2 =
+  PD^2P^{-1}</m>.  What does this say about the eigenvalues and
+  eigenvectors of <m>A^2</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What about <m>A^k</m> for some power <m>k</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's now consider the inverse <m>A^{-1} = (PDP^{-1})^{-1}</m>.  Simplify
+  this expression using the fact that <m>(BC)^{-1} = C^{-1}B^{-1}</m> (that is when we take the inverse of a product, the order switches).
+  What does this say about the eigenvalues and eigenvectors of
+  <m>A^{-1}</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let's use a previous example with the distribution of trucks at two
+  locations <m>P</m> and <m>Q</m>, and look at the stochastic matrix
+  <md>
+  A = \begin{bmatrix} 0.8 \amp 0.6 \\
+    0.2 \amp 0.4 \\
+  \end{bmatrix}</md>
+  and notice that it has eigenvectors <m>\vvec_1=\twovec31</m> with eigenvalue
+  <m>1</m> and <m>\vvec_2 = \twovec{-1}{1}</m> with eigenvalue 0.2.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Construct the matrices <m>P</m> and <m>D</m> so that <m>A = PDP^{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Remember that we were interested in looking at what happens to <m>A^k</m>
+  as <m>k</m> grows to be very large.  Since we have <m>A^k = PD^kP^{-1}</m>,
+  what happens to <m>D^k</m> as <m>k</m> grows very large.  In calculus speak,
+  what is <m>\lim_{k\to\infty} D^k</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does this say about <m>\lim_{k\to\infty} A^k</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that there are a total of 1000 trucks so that the initial
+  state vector <m>\xvec_0 = \twovec PQ</m> where <m>P+Q = 1000</m>.  What
+  happens to the distribution of cars after a very long time
+  <m>\lim_{k\to\infty} A^k \xvec_0 = \lim_{k\to\infty} A^k\twovec PQ</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that a matrix <m>B</m> is diagonalizable so that <m>B =
+  PDP^{-1}</m>.  Use the properties of determinants to explain why
+  <m>\det(B)</m> is equal to the product of the eigenvalues.</p>
+      <p>It turns out
+  this is true for any square matrix, diagonalizable or not!</p>
+    </statement>
+  </exercise>
+
+</worksheet>

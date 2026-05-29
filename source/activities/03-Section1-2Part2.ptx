@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 1.2 - Reduced row echelon form (Part 2)</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>When is a matrix in reduced row echelon form?</p></li>
+      <li><p>Describe how to put a matrix in reduced row echelon from.</p></li>
+      <li><p>How do we use the reduced row echelon form to determine the solution space?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Consider each of the following augmented matrices.  In the class prep you determined if these were in reduced row echelon form.  If a matrix is not in reduced row echelon form, either (a) perform a
+  sequence of scaling, interchange, and replacement operations to
+  obtain a row equivalent matrix that is in reduced row echelon form or (b) use Sage to find the row reduced echelon form.
+  Then use the reduced row echelon matrix to determine whether there
+  is a single solution, infinitely many solutions, or no solutions.
+  If there are infinitely many, identify free and basic variables.</p>
+      <p><m>\ds
+  \left[
+    \begin{array}{rrr|r}
+      2 \amp 0 \amp 4 \amp -8 \\
+      0 \amp 1 \amp 3 \amp 2 \\
+    \end{array}
+  \right]
+  </m></p>
+      <p><m>\ds
+  \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 0 \amp -1 \\
+      0 \amp 1 \amp 0 \amp 3 \\
+      0 \amp 0 \amp 1 \amp 1 \\
+    \end{array}
+  \right]
+  </m></p>
+      <p><m>\ds
+  \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 4 \amp 2 \\
+      0 \amp 1 \amp 3 \amp 2 \\
+      0 \amp 0 \amp 0 \amp 1 \\
+    \end{array}
+  \right]
+  </m></p>
+      <p><m>
+  \left[
+    \begin{array}{rrr|r}
+      0 \amp 1 \amp 3 \amp 2 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+      1 \amp 0 \amp 4 \amp 2 \\
+    \end{array}
+  \right]
+  </m></p>
+      <p><m>\ds
+  \left[
+    \begin{array}{rrr|r}
+      1 \amp 2 \amp -1 \amp 2 \\
+      0 \amp 1 \amp -2 \amp 0 \\
+      0 \amp 0 \amp 1 \amp 1 \\
+    \end{array}
+  \right]
+  </m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that the reduced row echelon form of a matrix looks like
+  <m>\ds
+  \left[
+    \begin{array}{rrrr|r}
+      1 \amp * \amp 0 \amp * \amp * \\
+      0 \amp 0 \amp 1 \amp * \amp * \\
+      0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+    \end{array}
+  \right].
+  </m>
+  What, if anything, does the last row tell you about the solution
+  space?</p>
+      <p>Suppose that the reduced row echelon form of a matrix looks like
+  <m>\ds
+  \left[
+    \begin{array}{rrrr|r}
+      1 \amp * \amp 0 \amp * \amp * \\
+      0 \amp 0 \amp 1 \amp * \amp * \\
+      0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right].
+  </m>
+  What, if anything, does the last row tell you about the solution
+  space?</p>
+      <p>If a linear system has no solutions, how can you tell by looking at
+  the reduced row echelon form of its augmented matrix.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Consider the system of linear equations:</p>
+      <p><m>\ds
+  \begin{alignedat}{4}
+    x \amp  {}+{}  \amp 2y \amp  {}-{}  \amp z \amp  {}={}  \amp 2 \\
+    -2x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 4z \amp  {}={}  \amp -4 \\
+    x \amp {}-{} \amp 2y \amp  {}-{}  \amp 6z \amp  {}={}  \amp 3 \\
+  \end{alignedat}
+  </m></p>
+      <p>Form the associated augmented matrix and perform Gaussian
+  elimination (or use Sage) to find its reduced row echelon form.  What does this
+  tell you about the solution space of the system?</p>
+    </statement>
+  </exercise>
+
+</worksheet>

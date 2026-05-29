@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 3.5 - Subspaces of <m>\real^p</m></title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>What is the definition of a subspace? How can we tell if something is a subspace?</p></li>
+      <li><p>What is the dimension of a subspace? How do we find it?</p></li>
+      <li><p>How do we find the null space of a matrix?</p></li>
+      <li><p>How do we find the column space of a matrix?</p></li>
+      <li><p>What is the relationship between the dimension of the column space and the dimension of the null space?</p></li>
+    </ul>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>The first subspace we'll look at is called
+  the <term>\em column space</term> of <m>A</m> and denoted as <m>\col(A)</m>.  It's just
+  the span of the columns of <m>A</m>:
+  <md>
+  \col(A) = \laspan{\vvec_1, \vvec_2,
+  \vvec_3, \vvec_4}.
+  </md></p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>Consider the matrix
+<md>
+A = \begin{bmatrix}
+  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  2 \amp -1 \amp 2 \amp 3 \\
+  1 \amp 0 \amp 0 \amp 2 \\
+  -2 \amp 2 \amp -4 \amp -2 \\
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+  1 \amp 0 \amp 0 \amp 2 \\
+  0 \amp 1 \amp -2 \amp 1 \\
+  0 \amp 0 \amp 0 \amp 0 \\
+\end{bmatrix}
+</md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Are the vectors <m>\vvec_1,\ldots,\vvec_4</m> linearly independent or
+  dependent?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Write <m>\vvec_3</m> and <m>\vvec_4</m> as a linear combination of <m>\vvec_1</m>
+  and <m>\vvec_2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\col(A) = \laspan{\vvec_1, \vvec_2, \vvec_3, \vvec_4} =
+  \laspan{\vvec_1, \vvec_2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\vvec_1</m> and <m>\vvec_2</m> form a linearly independent set
+  of vectors.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Since <m>\vvec_1</m> and <m>\vvec_2</m> span <m>\col(A)</m> and are linearly
+  independent, we say they form a basis for <m>\col(A)</m>.  The <term>\em dimension</term> of a subspace <m>S</m> is denoted <m>\dim S</m> and is the number of vectors in a basis for that subspace.  <m>\col(A)</m> is a subspace of <m>\real^3</m> - What is the dimension of <m>\col(A)</m> (<m>\dim \col(A)</m>), and what geometrical shape does it form in <m>\real^3</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose we have a matrix
+  <md>
+  B = \begin{bmatrix}
+    \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
+  \end{bmatrix}
+  \sim
+  \begin{bmatrix}
+    1 \amp -2 \amp 0 \amp 3 \amp 0 \\
+    0 \amp 0 \amp 1 \amp -1 \amp 0 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace=".7in">
+      <statement>
+        <p>What is the shape of <m>B</m>;  that is, how many rows and columns does
+  it have?</p>
+      </statement>
+    </task>
+    <task workspace=".7in">
+      <statement>
+        <p>Is <m>\laspan{\bvec_1} = \laspan{\fourvec1000}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In this case, the column space <m>\col(B) = \laspan{\bvec_1, \bvec_2,
+    \bvec_3, \bvec_4, \bvec_5}</m>.  Are these five vectors linearly
+  independent?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How can we form a basis for <m>\col(B)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Complete the sentence:  <m>\col(B)</m> is a
+    \underline{}-dimensional subspace of <m>\real^p</m> where
+    <m>p=</m> \underline{}.</p>
+      </statement>
+    </task>
+    <conclusion>
+
+    </conclusion>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Generally speaking, what is the relationship between the
+  dimension <m>\col(C)</m> and the number of pivots in <m>C</m>?</p>
+      <p>The second subspace we'll look at is called the <term>\em null
+    space</term> of <m>A</m> and denoted <m>\nul(A)</m>.  It's just the solution set
+  of the equation <m>A\xvec = \zerovec</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Let's now go back to the matrix <m>A</m> at the top of the first
+  page, rewritten here:   <md>
+A = \begin{bmatrix}
+  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  2 \amp -1 \amp 2 \amp 3 \\
+  1 \amp 0 \amp 0 \amp 2 \\
+  -2 \amp 2 \amp -4 \amp -2 \\
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+  1 \amp 0 \amp 0 \amp 2 \\
+  0 \amp 1 \amp -2 \amp 1 \\
+  0 \amp 0 \amp 0 \amp 0 \\
+\end{bmatrix}
+</md></p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>Write the solution set to the equation <m>A\xvec = \zerovec</m> as a
+  parametric description.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use this parametric description to find two vectors <m>\wvec_1</m> and
+  <m>\wvec_2</m> for which <m>\nul(A) = \laspan{\wvec_1,\wvec_2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\wvec_1</m> and <m>\wvec_2</m> form a linearly independent set
+  of vectors.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Do <m>\wvec_1</m> and <m>\wvec_2</m> form a basis for <m>\nul(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In this case, since vectors in <m>\nul(A)</m> are in <m>\real^4</m>, <m>\nul(A)</m> is a subspace of <m>\real^4</m>.  What is the dimension of <m>\nul(A)</m>, that is what is <m>\dim \nul(A)</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Let's go back to the matrix <m>B</m>, rewritten below
+  <md>
+  B = \begin{bmatrix}
+    \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
+  \end{bmatrix}
+  \sim
+  \begin{bmatrix}
+    1 \amp -2 \amp 0 \amp 3 \amp 0 \\
+    0 \amp 0 \amp 1 \amp -1 \amp 0 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find a basis for <m>\nul(B)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Complete the sentence:  <m>\nul(B)</m> is a
+    \underline{}-dimensional subspace of <m>\real^p</m> where
+    <m>p=</m> \underline{}.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>C</m> is a <m>50\times 100</m> matrix with 30 pivots.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p><m>\col(C)</m> is a
+    \underline{}-dimensional subspace of <m>\real^p</m> where
+    <m>p=</m> \underline{}.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\nul(C)</m> is a
+    \underline{}-dimensional subspace of <m>\real^p</m> where
+    <m>p=</m> \underline{}.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>The <em>rank</em> of a matrix <m>A</m>, denoted, <m>\text{rank}(A)</m> is the number of pivot positions of <m>A</m>.</p>
+    </introduction>
+    <task workspace=".3in">
+      <statement>
+        <p>What is the relationship between the rank of a matrix <m>A</m> and the dimension of <m>\col(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Say <m>A</m> is an <m>m\times n</m> matrix. Fill in the blank:
+		<md> \dim \nul(A) + \dim \col(A) = \underline{\hspace{.5in}} </md></p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

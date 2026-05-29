@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>What operations can we do to a system of linear equations to get a new system that has the same solutions?</p></li>
+      <li><p>What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?</p></li>
+      <li><p>What is an algorithm for doing Gaussian elimination?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Working with augmented matrices:</p>
+    </introduction>
+    <task workspace="3in">
+      <statement>
+        <p>Write the augmented matrix for the following system of equations
+  and perform Gaussian elimination to describe the solution space
+  of the system of equations in as much detail as you can.</p>
+        <p><m>\ds
+  \begin{alignedat}{4}
+    x \amp  {}+{}  \amp 2y \amp  {}-{}  \amp z \amp  {}={}  \amp 1 \\
+    3x \amp  {}+{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 7 \\
+    -x \amp  \amp  \amp  {}+{}  \amp 4z \amp  {}={}  \amp -3 \\
+  \end{alignedat}
+  </m></p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose that you have a system of linear equations in the
+  unknowns <m>x</m> and <m>y</m> whose
+  augmented matrix is row equivalent to 
+  <md>
+  \left[
+    \begin{array}{rr|r}
+      1 \amp 0 \amp 3 \\ 
+      0 \amp 1 \amp 0 \\ 
+      0 \amp 0 \amp 0 \\
+    \end{array}
+  \right].
+  </md>
+  Write the system of linear equations corresponding to the
+  augmented matrix.  Then describe the solution set of the
+  system of equations in as much detail as you can.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that you have a system of linear equations in the
+  unknowns <m>x</m> and <m>y</m>
+  whose
+  augmented matrix is row equivalent to 
+  <md>
+  \left[
+    \begin{array}{rr|r}
+      1 \amp 0 \amp 3 \\ 
+      0 \amp 1 \amp 0 \\ 
+      0 \amp 0 \amp 1 \\
+    \end{array}
+  \right].
+  </md>
+  Write the system of linear equations corresponding to the
+  augmented matrix.  Then describe the solution set of the
+  system of equations in as much detail as you can.</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>Suppose that the augmented matrix of a system of linear
+   equations has the following shape where <m>*</m> could be
+   any real number.
+   <md>
+   \left[
+     \begin{array}{rrrrr|r}
+       * \amp * \amp * \amp * \amp * \amp * \\ 
+       * \amp * \amp * \amp * \amp * \amp * \\ 
+       * \amp * \amp * \amp * \amp * \amp * \\ 
+     \end{array}
+   \right].
+   </md>
+   How many equations are there in this system and how many
+   unknowns?</p>
+        <p>Based on our work in Section 1.1,
+   do you think it's possible that this
+   system has exactly one solution, infinitely many
+   solutions, or no solutions?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="3in">
+    <statement>
+      <p>Practice with Gaussian elimination: For each of the following linear systems, form an associated
+  augmented matrix and determine whether there is exactly one
+  solution, infinitely many, or none.</p>
+      <p><m>\ds
+  \begin{alignedat}{4}
+    x \amp  {}+{}  \amp y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 1 \\
+    2x \amp  {}-{}  \amp y \amp  {}-{}  \amp 2z \amp  {}={}  \amp 2 \\
+    -x \amp  {}+{}  \amp y \amp  {}+{}  \amp z \amp  {}={}  \amp 0 \\
+  \end{alignedat}
+  </m></p>
+      <p><m>\ds
+  \begin{alignedat}{4}
+    -x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp -1 \\
+    2x \amp  {}+{}  \amp 4y \amp  {}-{}  \amp z \amp  {}={}  \amp 5 \\
+    x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 3 \\
+  \end{alignedat}
+  </m></p>
+      <p><m>\ds
+  \begin{alignedat}{4}
+    -x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp -1 \\
+    2x \amp  {}+{}  \amp 4y \amp  {}-{}  \amp z \amp  {}={}  \amp 5 \\
+    x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 2 \\
+  \end{alignedat}
+  </m></p>
+    </statement>
+  </exercise>
+
+</worksheet>

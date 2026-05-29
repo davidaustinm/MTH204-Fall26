@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 1.4 - Pivots and their influence on solution spaces</title>
+  <objectives>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>What's a free variable? What's a basic variable?</p></li>
+      <li><p>What is a pivot position?</p></li>
+      <li><p>What is a consistent system?</p></li>
+      <li><p>How can you tell that a linear system is inconsistent using the pivot positions of the corresponding augmented matrix?</p></li>
+      <li><p>How can you tell a linear system has infinitely many solutions based on the pivot positions of the corresponding coefficient matrix?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Shown below are three augmented matrices in reduced row echelon
+  form.  For each matrix, identify the pivot positions and describe
+  the solution space in <em>parametric form</em> (if any solutions exist).</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p><m>
+  \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 0 \amp 3 \\
+      0 \amp 1 \amp 0 \amp 0 \\
+      0 \amp 0 \amp 1 \amp -2 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+  </m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>
+  \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 2 \amp 3 \\
+      0 \amp 1 \amp -1 \amp 0 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+  </m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>
+  \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 2 \amp 0 \\
+      0 \amp 1 \amp -1 \amp 0 \\
+      0 \amp 0 \amp 0 \amp 1 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+  </m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace=".5in">
+    <statement>
+      <p>Each of these augmented matrices above has a row in
+  which each entry is zero.  What, if anything, does the
+  presence of such a row tell us about the solution space to the
+  linear system?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Give an example of a <m>3\times5</m> augmented matrix
+  in reduced row echelon form that represents a consistent
+  system.  Indicate the pivot positions in your matrix and
+  explain why these pivot positions guarantee a consistent
+  system.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Give an example of a <m>3\times5</m> augmented matrix in
+  reduced row echelon form that represents an inconsistent
+  system.  Indicate the pivot positions in your matrix and
+  explain why these pivot positions guarantee an inconsistent
+  system.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.1in">
+    <statement>
+      <p>How do the pivot positions <term>in an augmented matrix</term> determine whether a linear system is
+  consistent or not?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose we have a linear system for
+  which the <em>coefficient</em> matrix has the following
+  reduced row echelon form. (The coefficient matrix is where we just don't write the last column of the augmented matrix, just the coefficients of the variables <m>x_1,\dots, x_n</m>.)
+  <md>
+  \left[
+    \begin{array}{rrrrr}
+      1 \amp 0 \amp 0 \amp 0 \amp -1 \\
+      0 \amp 1 \amp 0 \amp 0 \amp 2  \\
+      0 \amp 0 \amp 1 \amp 0 \amp 0  \\
+      0 \amp 0 \amp 0 \amp 1 \amp -3 \\
+    \end{array}
+  \right]
+  </md>
+  Even though we don't have any information about the right-hand side
+  of the equations, what can you say about the consistency of the
+  linear system?  Explain your thinking.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>The following augmented matrix is in reduced row echelon form.</p>
+      <p><m>
+  \left[
+    \begin{array}{rrrrr|r}
+      1 \amp -2 \amp 0 \amp 4 \amp 0 \amp 2 \\
+      0 \amp 0 \amp 1 \amp 3 \amp 0 \amp -1 \\
+      0 \amp 0 \amp 0 \amp 0 \amp 1 \amp 4 \\
+      0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+  </m></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Describe the solution space in parametric form.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In the solution set a variable is called a <em>free variable</em> if there is no restriction on that value. All other variables are called <em>basic variables</em>. Identify the basic and free variables.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What's the connection between pivot positions and basic/free variables?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If possible, give an example of a <m>3\times5</m>
+  augmented matrix that corresponds to a system of linear equations
+  having a unique solution. If it is not possible, explain why.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If possible, give an example of a <m>5\times3</m>
+  augmented matrix that corresponds to a system of linear equations
+  having a unique solution. If it is not possible, explain why.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>What condition on the pivot positions guarantees that a system of
+  linear equations has a unique solution?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If a system of linear equations has a unique solution, what can we
+  say about the relationship between the number of equations and the
+  number of unknowns?  Use the concept of pivot positions to explain
+  your thinking.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>For what values of the parameter <m>k</m>  is the following system consistent? For which of those values is the solution unique?
+	\begin{eqnarray*}
+	-x_1 + 2x_2 &amp;=3\\
+	2x_1 -4x_2 &amp;=k
+	\end{eqnarray*}
+ .</p>
+    </statement>
+  </exercise>
+
+</worksheet>

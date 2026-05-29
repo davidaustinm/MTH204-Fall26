@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 3.2 - Bases and Coordinate Systems - Part 2</title>
+  <objectives>
+    <ul>
+      <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
+      <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
+      <li><p>How do we think about non-standard bases geometrically?</p></li>
+    </ul>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>Recall: if <m>\bcal = \{\vvec_1, \vvec_2, \ldots, \vvec_n\}</m> is a basis for <m>\real^n</m>, then if <md>\xvec = c_1\vvec_1+c_2\vvec_2 + \cdots + c_n\vvec_n,</md> then
+  <md>
+  \coords{\xvec}{\bcal} = \left[\begin{array}{c}{c_1}\\{c_2}\\ \vdots \\ c_n\end{array}\right].
+  </md>
+That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\bcal}</m> is the vector of coefficients (weights) of the linear combination of the vectors in the basis <m>\bcal</m> that equals <m>\xvec</m>.</p>
+  </introduction>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>\bcal</m> is the basis for <m>\real^2</m> consisting of
+  the vectors <m>\vvec_1=\twovec21</m> and
+  <m>\vvec_2=\twovec12</m>.  Let's form the matrix
+  <md>P_{\bcal}=\left[\begin{array}{cc}\vvec_1 \amp \vvec_2 \\ \end{array}\right]
+  =\mattwo2112.</md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>P_{\bcal}\coords{\xvec}{\bcal} = \xvec</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a matrix <m>B</m> such that <m>B\xvec = \coords{\xvec}{\bcal}</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="0.7in">
+    <introduction>
+      <p>Computers represent colors using a  <em>color
+    model</em>.  The simplest is the <m>RGB</m> color
+  model, which represents colors as a 3-dimensional vector
+  <m>\threevec RGB</m> describing how much red <m>R</m>, green <m>G</m>, and blue <m>B</m>
+  to mix together to create a color.  These quantities are represented
+  internally with 8 bytes so, in practice, the range of values is
+  <m>0</m> to <m>255</m> for each color, <m>R</m>, <m>G</m>, and <m>B</m>.</p>
+      <p>A second color model is <m>YC_bC_r</m>, which is known as the <em>luminance-chrominance</em> color model.  We introduce the
+  basis <m>\bcal</m> consisting of vectors
+  <md>
+  \vvec_1 = \threevec 111, \hspace*{24pt}
+  \vvec_2 = \threevec 0{-0.34413}{1.77200}, \hspace*{24pt}
+  \vvec_3 = \threevec {1.40200}{-0.71414}0,
+  </md>
+  and define
+  <md>
+  \coords{\threevec RGB}{\bcal} = \threevec Y{C_b}{C_r}</md>
+  The quantity <m>Y</m> is called the <em>luminance</em> and measures the
+  brightness of the color, <m>C_b</m> is the blue chrominance and measures
+  how much blue is mixed in, and <m>C_r</m> is the red chrominance and
+  measures how much red is mixed in.  The ranges of values are
+  <md>
+  \begin{aligned}
+    0 \amp \leq Y \leq 255 \\
+    -127.5 \amp \leq C_b \leq 127.5 \\
+    -127.5 \amp \leq C_r \leq 127.5 \\
+  \end{aligned}
+  </md></p>
+      <p>Go to {<c>http://gvsu.edu/s/0Jc</c>} where you will find some
+  figures to experiment with color models.  Remember that <m>R</m>, <m>G</m>,
+  <m>B</m>, and <m>Y</m> run between 0 and 255 while <m>C_b</m> and <m>C_r</m> run between
+  -127.5 and 127.5.</p>
+    </introduction>
+    <task workspace="0.5in">
+      <statement>
+        <p>What happens when <m>G=0</m> and <m>B=0</m> (pushed all the way to the
+  left) and <m>R</m> is allowed to vary?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What happens when <m>R=0</m> and <m>G=0</m> (pushed all the way to the
+  left) and <m>B</m> is allowed to vary?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What vector represents black in the <m>RGB</m> color model?  What vector
+  represents white?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What happens when <m>C_b=0</m> and <m>C_r=0</m> (kept in the center) and
+  <m>Y</m> is allowed to vary?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What happens when <m>Y=0</m> (pushed left) and <m>C_r=0</m> (kept in the
+  center) and <m>C_b</m> is allowed to increase from 0 to 127.5?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What vector represents black in the <m>YC_bC_r</m> color model?  What
+  vector represents white?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the matrix <m>P_{\bcal}</m> that converts <m>\threevec
+  Y{C_b}{C_r}</m> into <m>\threevec RGB</m> (that is <m>P_{\bcal}\threevec{Y}{C_b}{C_r}=\threevec RGB</m>).  
+  You may want to give this
+  a name in Sage;  that is,
+  <c>Pb = matrix(...)</c>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the matrix that
+  converts <m>\threevec RGB</m> into <m>YC_bC_r</m>.  You may also want to give this a name in Sage.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the <m>YC_bC_r</m> coordinates for the following colors and
+  use the diagrams to check that the two representations agree.</p>
+        <p><md>
+  \threevec RGB = \threevec{255}00, \hspace*{24pt}
+  \threevec RGB = \threevec0{255}0, \hspace*{24pt}
+  \threevec RGB = \threevec{255}{255}{255}
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the <m>RGB</m> coordinates for the following colors and
+  use the diagrams to check that the two representations agree.</p>
+        <p><md>
+  \threevec Y{C_b}{C_r} = \threevec {128}00, \hspace*{24pt}
+  \threevec Y{C_b}{C_r} = \threevec {128}{60}0, \hspace*{24pt}
+  \threevec Y{C_b}{C_r} = \threevec {128}0{60}.
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Write an expression for the luminance <m>Y</m> as it depends on
+  <m>R</m>, <m>G</m>, and <m>B</m>.  Explain how the luminance represents the
+  brightness of the color.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Write an expression for the blue chrominance <m>C_b</m> in terms of
+  <m>R</m>, <m>G</m>, and <m>B</m>.  Explain how the blue chrominance measures the
+  amount of blue in the color.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

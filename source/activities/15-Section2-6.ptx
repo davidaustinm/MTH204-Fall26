@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 2.6 - The geometry of matrix transformations</title>
+  <objectives>
+    <ul>
+      <li><p>What is the matrix for a transformation that scales horizontally by a factor of <m>a</m> and vertically by a factor of <m>b</m>?</p></li>
+      <li><p>What is the matrix for a transformation that rotates counterclockwise by an angle <m>\theta</m>?</p></li>
+      <li><p>How can you find the matrix associated with the composition of two matrix transformations?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Matrix transformation perform geometric operations. Go to <c>gvsu.edu/s/0Jf</c> to
+study the effect that various matrix transformations have on the plane. On the left
+is the plane before the transformation; on the right is the plane after the transformation.</p>
+      <p>Describe the geometric effect of the matrix transformations defined by</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p><m>A = \left[\begin{array}{cc}2 \amp 0 \\ 0 \amp 1\end{array}\right]</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>A = \left[\begin{array}{cc}2 \amp 0 \\ 0 \amp 2\end{array}\right]</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>A = \left[\begin{array}{cc}1 \amp 1 \\ 0 \amp 1\end{array}\right]</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>A = \left[\begin{array}{cc}-1 \amp 0 \\ 0 \amp 1\end{array}\right]</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>A = \left[\begin{array}{cc}1 \amp 0 \\ 0 \amp 0\end{array}\right]</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>A = \left[\begin{array}{cc}1 \amp -1 \\ -2 \amp 2\end{array}\right]</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Find the matrix <m>A</m> that defines the transformation <m>T</m> that scales all vectors horizontally by <m>3</m> and vertically by <m>5</m>. You can go to   <c>gvsu.edu/s/0Jf</c>  to check your work (with smaller numbers)!</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In general, what is the matrix that that will define the transformation that scales all vectors horizontally by <m>a</m> and vertically by <m>b</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>All of the transformations in this question have the form <m>T: \real^2 \to \real^2</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find the matrix of the transformation that has no effect on vectors; that is, <m>T(\xvec) = \xvec</m>. We call this matrix the identity and denote it by <m>I</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the matrix <m>B</m> of the transformation that reflects vectors in <m>\real^2</m>
+ over the line <m>y=x</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the result of composing the reflection you found in the previous part with itself; that is, what is the effect of reflecting in the line <m>y=x</m>  and then reflecting in this line again. Provide a geometric explanation for your result as well as an algebraic one obtained by multiplying matrices.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>More composing transformations.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find the matrix <m>C</m> that rotates vectors counterclockwise in the plane by <m>90^\circ</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the matrix that results from composing a <m>90^\circ</m> rotation with itself. Explain the geometric meaning of this operation. Find the matrix that results from composing a 
+<m>90^\circ</m> rotation with itself four times; that is, if <m>T</m> is the matrix transformation that rotates vectors by <m>90^\circ</m> find the matrix for <m>T\circ T \circ T \circ T</m>. Explain why your result makes sense geometrically.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Compare the result of rotating by <m>90^\circ</m>  and then reflecting over the line  <m>y=x</m>
+ to the result of first reflecting over <m>y=x</m> and then rotating <m>90^\circ</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Do matrix transformations ``commute"? That is, if <m>S</m> and <m>T</m> are two transformations, is <m>S\circ T = T\circ S</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Explain why the matrix that rotates vectors counterclockwise by an angle <m>\theta</m> is 
+<md>\begin{bmatrix}
+\cos\theta \amp-\sin\theta\\
+\sin\theta \amp\cos\theta
+\end{bmatrix}.</md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

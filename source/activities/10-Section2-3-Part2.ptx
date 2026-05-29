@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Section 2.3 - The Span of a Set of Vectors - Part 2</title>
+  <objectives>
+    <ul>
+      <li><p>What is the span of a set of vectors and how do we denote it?</p></li>
+      <li><p>How can we determine if a vector is in the span of another set of vectors?</p></li>
+      <li><p>How do we know if the span of a set of vectors <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is <m>\mathbb{R}^m</m> using the pivots of the matrix <m>[\vvec_1 \vvec_2 \vvec_3 \dots \vvec_n]</m>?</p></li>
+      <li><p>How many vectors must you have to span <m>\mathbb{R}^m</m>?</p></li>
+    </ul>
+  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Consider the vectors
+  <md>
+  \vvec_1=\threevec2{-1}0,~~~
+  \vvec_2=\threevec113,~~~
+  \vvec_3=\threevec3{-3}{-3}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Is the vector <m>\threevec5{-4}{-3}</m> in
+  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How about <m>\threevec84{11}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.65in">
+      <statement>
+        <p>How many pivot positions does the matrix
+  <m>\begin{bmatrix}\vvec_1\amp\vvec_2\amp\vvec_3\end{bmatrix}</m> have?</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3}</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now suppose that <m>\vvec_4 = \threevec132</m>.
+  Is the vector <m>\threevec5{-4}{-3}</m> in
+  <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>?  Notice that you
+  already determined whether this vector is in
+  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How about <m>\threevec84{11}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How many pivot positions does the matrix
+  <m>\begin{bmatrix}\vvec_1\amp\vvec_2\amp\vvec_3\amp\vvec_4\end{bmatrix}</m> have?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that you have a set of vectors
+  <m>\vvec_1,\ldots,\vvec_{10}</m> whose span is <m>\real^{8}</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What is the
+  shape of the matrix whose columns are these 10 vectors?  That is,
+  how many rows and columns does this matrix have?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What do you know about the pivot positions of this matrix?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How many pivot positions are there?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose you find a matrix <m>A</m> such that <m>A\xvec = \bvec</m> is
+  consistent for every vector <m>\bvec</m>.  What does this imply about the
+  pivots of <m>A</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that you have a matrix whose columns form a set of vectors
+  <m>\vvec_1,\ldots,\vvec_n</m> whose span is <m>\real^{8}</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What do you know about the pivot positions of this matrix?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How many pivot positions are there?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the smallest possible number of vectors <m>n</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Can a set of 27 vectors span <m>\real^{30}</m>?  Explain why or why not.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the vectors from the first problem:
+  <md>
+  \vvec_1=\threevec2{-1}0,~~~
+  \vvec_2=\threevec113,~~~
+  \vvec_3=\threevec3{-3}{-3}.
+  </md>
+  You should have found
+  <md>
+  \begin{bmatrix}
+    2 \amp 1 \amp 3 \\
+    -1 \amp 1 \amp -3 \\
+    0 \amp 3 \amp -3
+  \end{bmatrix}
+  \sim
+  \begin{bmatrix}
+    1 \amp 0 \amp 2 \\
+    0 \amp 1 \amp -1 \\
+    0 \amp 0 \amp 0
+  \end{bmatrix}.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Explain how to write <m>\vvec_3</m> as a linear combination of <m>\vvec_1</m>
+  and <m>\vvec_2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain how a linear combination <m>c_1\vvec_1 + c_2\vvec_2 +
+  c_3\vvec_3</m> can be rewritten as a linear combination of just
+  <m>\vvec_1</m> and <m>\vvec_2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\span{\vvec_1,\vvec_2,\vvec_3} =
+  \span{\vvec_1,\vvec_2}</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

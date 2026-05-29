@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Make Connections - Eigen Review</title>
+  <objectives>
+    <introduction>
+      <p>\begin{enumerate}
+\item How do eigenvalues relate to the invertibility of a matrix?
+\end{enumerate}</p>
+    </introduction>
+  </objectives>
+  <introduction>
+    <p>\\</p>
+    <p>Two convenient Sage tools.  If <c>A</c> is a square matrix, then</p>
+    <ul>
+      <li><p><c>A.eigenvalues()</c> gives a list of the eigenvalues, and</p></li>
+      <li><p><c>(A - lambda*identity\_matrix(n)).right\_kernel()</c> gives a basis
+  of the null space <m>\nul(A-\lambda I)</m> if <m>n</m> is the number of rows and
+  columns of <m>A</m> and <m>\lambda</m> is an eigenvalue.  How does this help you find eigenvectors?</p></li>
+    </ul>
+  </introduction>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Consider the matrix
+  <m>A = \begin{bmatrix}
+    -2 \amp 8 \\
+    2 \amp -2 \\
+  \end{bmatrix}</m>.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>Find the eigenvalues of <m>A</m> and a basis for each of the eigenspaces.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Is <m>A</m> diagonalizable?  If so, find <m>P</m> and <m>D</m> and verify 
+  that <m>A = PDP^{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a diagonalization of <m>A^3</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a diagonalization of <m>A^{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find <m>\det(A)</m> and explain why <m>\det(A)</m> equals the product of the
+  eigenvalues of <m>A</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>We know that the eigenvalues of <m>A</m> are the roots of the
+  characteristic equation <m>\det(A-\lambda I) = 0</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\lambda = 0</m>
+  is an eigenvalue, what does this say about <m>\det(A)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does this say about the invertibility of <m>A</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How do the eigenvalues of a matrix tell us about its invertibility?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Last class we looked at the transition matrix 
+<m>A=\left[\begin{array}{cc}0.8\amp0.6\\0.2\amp0.4\end{array}\right]</m>
+  applied to trucks at two locations.  We wanted to know the long-term
+  behavior of an initial state <m>\xvec_0</m> that evolves as
+  <m>\xvec_{k+1}=A\xvec_k</m>.  In other words, what happened to
+  <m>A^k\xvec_0</m> as <m>k</m> grows large.   We found that <m>A</m> had eigenvalues <m>1</m> and <m>0.2</m>, and the <m>\lim_{k\rightarrow\infty} A^k = \left[\begin{array}{cc}0.75\amp0.75\\0.25\amp0.25\end{array}\right]</m>.  So if we start with 1000 trucks total so that <m>P+Q=1000</m>, then in the long-term we have 
+  <md>\lim_{k\rightarrow\infty} A^k = \left[\begin{array}{cc}0.75\amp0.75\\0.25\amp0.25\end{array}\right]\twovec{P}{Q} = P\twovec{0.75}{0.25}+Q\twovec{0.75}{0.25} = 1000\twovec{0.75}{0.25} =\twovec{750}{250},
+  </md>
+  so there will be 750 trucks at location <m>P</m> and 250 at location <m>Q</m>.</p>
+      <p>Let's look at a different transition matrix:
+ <m>B = \begin{bmatrix}
+    0 \amp 1 \\
+    1 \amp 0 \\
+  \end{bmatrix}</m>.</p>
+    </introduction>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the eigenvalues of <m>B</m> and bases for its
+  eigenspaces.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a diagonalization of <m>B</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What happens when you look at <m>B^k</m> as <m>k</m> grows?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is different about the eigenvalues of <m>A</m> and <m>B</m> that distinguishes the long-term behavior?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>
