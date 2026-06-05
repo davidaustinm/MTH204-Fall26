@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>Section 1.1 - What can we expect</title>
+  <title>Section 1.1- What can we expect</title>
   
 
   <exercise workspace="1in">
@@ -14,8 +14,8 @@
       <p>We'll now consider linear systems in two variables: By a <em>system of linear equations</em> or a <em>linear system</em>, we mean a set of linear equations written in a common set of unknowns.</p>
     </introduction>
 
-    <p> Does this work? </p>
     
+
     <task workspace="1in">
       <statement>
         <p>As a warmup we saw a few ``linear systems" in two variables, e.g., <m>-x + y = 1</m> and <m>2x - y = 1</m> is a linear system in the two variables <m>x</m> and <m>y</m>. We can visualize a linear system in two variables as a collection of lines in the plane. A solution to the linear system is a point that satisfies both equations, which is the same as saying where the two lines intersect. Here are the ways we say that lines can intersect.</p>
@@ -97,16 +97,18 @@
     </task>
   </exercise>
 
+
   <outcomes>
-    <p>
-      <p>Make sure you can answer the following questions (at least for 2 and 3 variables):</p>
-    </p>
+     <introduction>
+     <p> Make sure you can answer the following questions (at least for 2 and 3 variables): </p> 
+    </introduction>
     <ul>
       <li><p>What is a linear equation?</p></li>
       <li><p>What is a system of linear equations? What does it mean for a list of numbers to be a solution to a system of linear equations? Can you answer the second question both algebraically and geometrically?</p></li>
       <li><p>How many solutions can we expect for a system of linear equations?</p></li>
       <li><p>How does this number of solutions typically change as we add more equations?</p></li>
     </ul>
+
   </outcomes>
 
 </worksheet>
