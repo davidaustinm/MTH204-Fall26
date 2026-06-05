@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</title>
-  <objectives>
-    <introduction>
-      <p>Make sure you can answer the following questions:</p>
-    </introduction>
-    <ul>
-      <li><p>What operations can we do to a system of linear equations to get a new system that has the same solutions?</p></li>
-      <li><p>What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?</p></li>
-      <li><p>What is an algorithm for doing Gaussian elimination?</p></li>
-    </ul>
-  </objectives>
+
 
   <exercise>
     <introduction>
@@ -121,5 +112,16 @@
   </m></p>
     </statement>
   </exercise>
+
+  <outcomes>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>What operations can we do to a system of linear equations to get a new system that has the same solutions?</p></li>
+      <li><p>What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?</p></li>
+      <li><p>What is an algorithm for doing Gaussian elimination?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>
