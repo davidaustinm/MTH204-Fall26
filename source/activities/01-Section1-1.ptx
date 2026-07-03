@@ -2,6 +2,11 @@
 <worksheet>
   <title>Section 1.1- What can we expect</title>
   
+   <exercise workspace="1in">
+    <statement>
+      <p>Motivation: The Grand Rapids Children's Museum charges $12 admission for adults and $5 admission for children (ages 3-17). One day, they know the revenue was $900 and the total number of people was 110, but your boss isn't sure how many children and how many adults.  Is there only one answer? Can you figure it out? </p>
+      </statement>
+  </exercise>
 
   <exercise workspace="1in">
     <statement>
@@ -95,6 +100,28 @@
       equations?</p>
       </statement>
     </task>
+  </exercise>
+
+   <exercise workspace="1in">
+    <statement>
+      <p>Here's a couple of important definitions from your <url href="https://gvsu.edu/s/1rw" visual="gvsu.edu/s/1rw">textbook</url>:</p>
+    <p>
+      <em>Definition 1.1.7</em> A linear equation in the unknowns <m>x_1, x_2, \hdots, x_n</m> may be written in the form 
+      <md>
+        a_1x_1 + a_2x_2 + \hdots + a_nx_n = b,
+      </md>
+      where <m>a_1, a_2, \hdots, a_n</m> are real numbers knowns as <em>coefficients</em>. We also 
+      say that <m>x_1, x_2, \hdots, x_n</m> are the <em>variables</em> in the equation.
+      </p>
+      <p>
+        By a <em>system of linear equations</em> or a <em>linear system</em>, we mean a set of 
+        linear equations written in a common set of unknowns.
+        </p>
+        <p>
+      <em>Definition 1.1.8.</em> A <em>solution</em> to a linear system is simply a set of numbers 
+      <m>x_1 = s_1, x_2 = s_2, \hdots, x_n = s_n</m> that satisfy all the equations in the system.
+    </p>
+    </statement>
   </exercise>
 
 
