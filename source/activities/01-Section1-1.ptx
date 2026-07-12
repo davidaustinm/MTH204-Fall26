@@ -222,7 +222,7 @@ As we add more equations, it is less likely to have common intersections and thu
         <p>
           Yes, it is possible that there are no solutions to a system of two equations in three variables. This can happen if the two planes represented by the equations are parallel and do not intersect. 
         </p>
-          <image>
+          <image width = "25%">
 <shortdescription>Two paralell planes have no points of intersection and represent a system in three variables and two equations that does not have a solution.</shortdescription>
 <prefigure xmlns="https://prefigure.org" label="paralell_planes">
 <diagram xmlns="https://prefigure.org"
