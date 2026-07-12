@@ -1,27 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Introduction Activity - Color Wheel</title>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="activity-01-intro-activity">
-  <title>Introduction Activity</title>
-
-  <!-- Optional introduction -->
   <introduction>
     <p>
-      This is the introduction to the activity.
+      Go to the website: <url href="https://trycolors.com/mixer" visual="trycolors.com/mixer">trycolors.com/mixer</url>. Play around with the colors. Not you can add more of a color by clicking on it, or less of it by clicking the minus sign below it.
     </p>
-    <image source = "Images/204_Section1.1_Figure1.png" width = "60%">
-      <shortdescription> This diagram shows three different configurations of two lines in the plane</shortdescription>
-      
-    </image>
   </introduction>
 
-  <!-- Exercises start here. -->
   <exercise workspace="2in">
     <statement>
       <p>
-        This is the first exercise.
+        Can you get any color you want to?
       </p>
     </statement>
+    <solution>
+      <p>
+        Sure! "Span is all colors."
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Using only Yellow and Red, what colors can you get?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Yellows, oranges, and reds -- you can't get all of them.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Using only Yellow, Red, and Blue, what colors can you get? What colors can't you
+get?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In theory, these are primary colors, so you should be able to get all of them.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        What color do you get if you use 1 Yellow, 2 Red, and 2 Blue? What about 1 Yellow,
+2 Red, and 3 Blue?
+      </p>
+    </statement>
+    <solution>
+      <p>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Using Yellow, Blue, and Green, can you get the color Green in more than one way?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Using only Yellow and Blue, how many Yellow and Blue do you need to get the
+following color:
+      </p>
+<image>
+<shortdescription>Two parallel lines are shown, which demonstrates the fact that a set of two equations in two unknowns may have no solutions.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="jade">
+<diagram dimensions="(300,300)" margins="5"
+         xmlns="https://prefigure.org">
+  <coordinates bbox="(0,0,10,10)">
+    <image lower-left="(0,0)" dimensions="(10,10)"
+           source="activities/images/01-intro-jade.png">
+    </image>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>
+      <p>
+        Is there more than one way to get this color?
+      </p>
+
+    </statement>
+    <solution>
+      <p>
+        Yes! You would use 3 yellows and 8 blues.  You could also 6 yellows and 16 blues.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Is there a difference in color if you have 1 of each, Red, White, and Black, or 2 of
+each (Red, White, and Black)?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        No difference! Both will create the same color.
+      </p>
+    </solution>
   </exercise>
 
 </worksheet>
