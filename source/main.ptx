@@ -6,9 +6,9 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Course Name (change me)</title>
+    <title>Linear Algebra 1</title>
 
-    <subtitle>MATH xxx Semester 20xx</subtitle>
+    <subtitle>MATH 204 Fall 2026</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
@@ -47,7 +47,7 @@
         </p>
       </introduction>
     
-
+      <xi:include href="./activities/01-intro-activity.ptx"/>
       <xi:include href="./activities/01-Section1-1.ptx"/>
       <xi:include href="./activities/02-Section1-2.ptx"/>
       <xi:include href="./activities/03-Section1-2Part2.ptx"/>
