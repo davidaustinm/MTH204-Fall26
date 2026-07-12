@@ -47,7 +47,7 @@
         </p>
       </introduction>
     
-      <xi:include href="./activities/01-intro-activity.ptx"/>
+      <xi:include href="./activities/00-intro-activity.ptx"/>
       <xi:include href="./activities/01-Section1-1.ptx"/>
       <xi:include href="./activities/02-Section1-2.ptx"/>
       <xi:include href="./activities/03-Section1-2Part2.ptx"/>
