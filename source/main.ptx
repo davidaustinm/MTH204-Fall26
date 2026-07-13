@@ -54,7 +54,7 @@
       <xi:include href="./activities/04-Section1-3LAB.ptx"/>
       <xi:include href="./activities/05-Section1-4.ptx"/>
       <xi:include href="./activities/06-Section2-1.ptx"/>
-      <xi:include href="./activities/07-Section2-1Part2.ptx"/>
+     <!-- <xi:include href="./activities/07-Section2-1Part2.ptx"/> -->
       <xi:include href="./activities/08-Section2-2.ptx"/>
       <xi:include href="./activities/09-Section2-3.ptx"/>
       <xi:include href="./activities/10-Section2-3-Part2.ptx"/>
