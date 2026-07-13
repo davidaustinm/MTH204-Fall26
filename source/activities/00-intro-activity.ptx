@@ -60,7 +60,7 @@ get?
       </p>
       <image>
 <shortdescription>Color mixer results for 1 Yellow, 2 Red, and 2 Blue.</shortdescription>
-<prefigure xmlns="https://prefigure.org" label="00-intro_2">
+<prefigure xmlns="https://prefigure.org" label="00-intro_1">
 <diagram dimensions="(300,300)" margins="5"
          xmlns="https://prefigure.org">
   <coordinates bbox="(0,0,10,10)">
