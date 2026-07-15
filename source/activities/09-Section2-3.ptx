@@ -1,137 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 2.3 - The Span of a Set of Vectors</title>
-  <objectives>
+  
+<definition>
+  <statement>
+    <p>
+      The <em>span</em> of a set of vectors <m>\vvec_1, \vvec_2, \ldots, \vvec_n</m>
+      is the set of all linear combinations that can be formed from the vectors.
+    </p>
+    <p>
+      Alternatively, if <m>{A = \left[\vvec_1 \,\,\, \vvec_2 \,\,\, \cdots \,\,\, \vvec_n\right],}</m>
+      then the span of the vectors consists of all vectors <m>\bvec</m> for which the equation
+      <m>A\xvec = \bvec</m> is consistent.
+    </p>
+  </statement>
+</definition>
+
+  <exercise>
+    <introduction>
+      <p>
+        <term>The setting:</term> You are a young traveler, leaving home for the first time. Your parents
+        want to help you on your journey, so just before your departure, they give you two gifts.
+        Specifically, they give you two forms of transportation: a hoverboard and a magic carpet. Your parents
+        inform you that the hoverboard and the magic carpet have restrictions in how they operate.
+      </p>
+      <p>
+        <term>Hoverboard's Restrictions:</term> We denote the restriction on the hoverboard's movement 
+        by the vector <m>\vvec = \twovec{3}{1}</m>. By this we mean that if the hoverboard traveled
+        "forward" for one hour, it would move along a "diagonal" path that would result in a displacement
+        of 3 miles East and 1 mile North of its starting location.  You can also put it in reverse - after one
+        hour you'd be 3 miles West and 1 mile South.
+      </p>
+      <p>
+        <term>Magic Carpet's Restrictions:</term> We denote the restriction on the magic carpet's movement 
+        by the vector <m>\wvec = \twovec{1}{2}</m>. By this we mean that if the magic carpet traveled
+        "forward" for one hour, it would move along a "diagonal" path that would result in a displacement
+        of 1 mile East and 2 miles North of its starting location.  You can also take this in reverse as well.
+      </p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Use the tape to mark the origin and <m>x</m> and <m>y</m> axis.  Each tile is one unit. You've made a "floor plane."</p>
+      </statement>
+      <solution>
+        <p>
+        (INCLUDE A PICTURE HERE OF THE FLOOR! Or maybe Prefigure picture?)
+      </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Travel with the hoverboard for one hour, and then travel with the magic carpet forward for one hour. Where do you end up?</p>
+      </statement>
+      <solution>
+        <p>
+          (INCLUDE A PICTURE HERE OF THE FLOOR! Or maybe Prefigure picture?) <m>\twovec{3}{1} + \twovec{1}{2} = \twovec{4}{3}</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now do the opposite - travel with the magic carpet forward for one hour, and then travel with the hoverboard 
+          forward for one hour. Where do you end up? What does this say about <m>\vvec+\wvec</m> vs. <m>\wvec+\vvec</m>?
+          Does this hold in general?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          (INCLUDE A PICTURE HERE OF THE FLOOR! Or maybe Prefigure picture?) <m>\twovec{1}{2} + \twovec{3}{1} = \twovec{4}{3}</m>.
+          So, <m>\vvec + \wvec = \wvec + \vvec</m> and this holds in general!
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Where do you end up if you travel in the reverse direction on your magic carpet for 1.5 hours?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          (INCLUDE A PICTURE HERE OF THE FLOOR! Or maybe Prefigure picture?) <m>(-1.5)\twovec{1}{2} = \twovec{-1.5}{-3}</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          You lost your magic carpet. Starting at the origin and using just your hoverboard, can you get
+          to your friend's house at <m>\twovec{-6}{-2}</m>? Can you get to the grocery store at <m>\twovec{2}{4}</m>?
+          How would you describe the collection of places you can get to? (I.e., is it a point or a line or all of <m>\mathbb{R}^2</m>?)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To get to your friend's house, you need to travel backwards for 2 hours.
+          <m>(-2)\twovec{3}{1} = \twovec{-6}{-2}</m>. But, you can't get to the grocery store
+          because there is no value <m>x</m> such that <m>x\twovec{3}{1} = \twovec{3x}{x} = \twovec{2}{4}</m>.
+          Therefore, <m>\twovec{3x}{x} \neq \twovec{2}{4}</m> for any <m>x</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Good news, you're back at the origin, and you have both your magic carpet and your hoverboard. You want to go visit the wise man,
+          Old Man Gauss, who lives in a cabin that is 107 miles East and 64 miles North of your home. Is it possible to get there?
+          If so, express how using a linear combination/vector notation. If not, explain why not. Is there more than one way to get there?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To answer this, let's set up a linear combination and solve the corresponding linear system! First,
+          <md>
+            x_1\twovec{3}{1} + x_2\twovec{1}{2} = \twovec{107}{64}.
+          </md>
+          Then, 
+          <md>
+            \left[
+    \begin{array}{rr|r}
+      3 \amp  1 \amp 107 \\
+      1 \amp  2 \amp 64 \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{rr|r}
+      1 \amp  0 \amp 30 \\
+      0 \amp  1 \amp 17 \\
+    \end{array}
+  \right]
+          </md>
+          So, 30 hours on the hoverboard and 17 on the magic carpet will get you there!
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Old Man Gauss now tries to hide somewhere you can't visit him. Is there somewhere he could hide? How would you describe a collection of places you can get to?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          He can't hide. Consider the augmented system <md>
+            \left[
+    \begin{array}{rr|r}
+      3 \amp  1 \amp x \\
+      1 \amp  2 \amp y \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{rr|r}
+      1 \amp  0 \amp * \\
+      0 \amp  1 \amp * \\
+    \end{array}
+  \right]</md>
+        This system is always consistent and therefore, always has a solutions! We can get anywhere in <m>\mathbb{R}^2</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Your cousin also gets a magic carpet and a hoverboard from your aunt and uncle. His magic carpet also travels in the direction
+          <m>\vvec = \twovec{3}{1}</m>, but his hoverboard travels in the direction <m>\uvec = \twovec{6}{2}</m>.  Use your 
+          "floor plane" to determine where your cousin can go.  Can Old Man Gauss hide from your friend?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          My cousin can only travel along a line since <m>\vvec</m> and <m>\uvec</m> are scalar multiples
+          of each other. Specifically, my cousin only travels along the line <m>{y = \frac{1}{3}x}</m>.
+        </p>
+        <image>
+<shortdescription>Graph of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m> going through the 3 given points.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="09-2-3_1">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>f(x)=(1/3)*x</definition>
+  <coordinates bbox="(-2,-2,8,4)">
+    <grid-axes xlabel="x" ylabel="y"/>
+    <graph function="f"/>
+    <point p="(3,1)" alignment="nw">
+      <m>(3,1)</m>
+    </point>
+    <point p="(6,2)" alignment="nw">
+      <m>(6,2)</m>
+    </point>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Let's put some more technical terms to the magic carpet/hoverboard scenario. Recall the following movement:
+        <ul>
+          <li><p>You and your cousin's hoverboard travel in the direction <m>\vvec = \twovec{3}{1}</m>.</p></li>
+          <li><p>Your magic carpet can move in the direction <m>\wvec = \twovec{1}{2}</m>.</p></li>
+          <li><p>Your cousin's magic carpet can move in the direction <m>\uvec = \twovec{6}{2}</m>.</p></li>
+        </ul>
+      </p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>
+          Describe the set of vectors that result from linear combinations of <m>\vvec</m> and <m>\wvec</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All of <m>\mathbb{R}^2</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Describe the set of vectors that result from linear combinations of <m>\vvec</m> and <m>\uvec</m>.</p>
+      </statement>
+      <solution>
+        <p>
+          A line, with the slope 1/3, going through the origin.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is Span<m>\{\vvec,\wvec\}</m>? Try to describe geometrically and algebraically.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Geometrically, this is all of <m>\mathbb{R}^2</m>.  Algebraically, this is 
+          <m>{a\twovec{3}{1} + b\twovec{1}{2}}</m> for any real number <m>a, b</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          What is Span<m>\{\vvec,\uvec\}</m>? Try to describe geometrically and algebraically.
+        </p>
+      </statement>
+      <solution>
+      <p>
+          Geometrically, this is a line.  Algebraically, this is 
+          <m>{a\twovec{3}{1}}</m> for any real number <m>a</m>. Note,
+          that we don't need the <m>\uvec</m> because it is a scalar multiple of <m>\vvec</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          For what vectors <m>\bvec</m> does the matrix equation <m>\left[
+    \begin{array}{rr}
+      3 \amp 1  \\
+      1 \amp 2 \\
+    \end{array}
+  \right]\xvec = \bvec</m> have a solution?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All vectors in <m>\mathbb{R}^2</m>.  
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          For what vectors <m>\bvec</m> does the matrix equation <m>\left[
+    \begin{array}{rr}
+      3 \amp 6  \\
+      1 \amp 2 \\
+    \end{array}
+  \right]\xvec = \bvec</m> have a solution?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          All vectors <m>\bvec = \twovec{3x}{x}</m> for any value <m>x</m> (a line). 
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          How many pivots does the matrix <m>\left[
+    \begin{array}{rr}
+      3 \amp 1  \\
+      1 \amp 2 \\
+    \end{array}
+  \right]</m> have? How might this be related to your answer for Span<m>\{\vvec,\wvec\}</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The row
+          reduced echelon form of <m>\left[
+    \begin{array}{rr}
+      3 \amp 1  \\
+      1 \amp 2 \\
+    \end{array}
+  \right]</m> is the identity matrix, which means that the system is always consistent,
+  no matter what <m>\bvec</m> is.  There is a pivot in every row!
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          How many pivots does the matrix <m>\left[
+    \begin{array}{rr}
+      3 \amp 6  \\
+      1 \amp 2 \\
+    \end{array}
+  \right]</m> have? How might this be related to your answer for Span<m>\{\vvec,\uvec\}</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The row
+          reduced echelon form of <m>\left[
+    \begin{array}{rr}
+      3 \amp 1  \\
+      1 \amp 2 \\
+    \end{array}
+  \right]</m> is <m>\left[
+    \begin{array}{rr}
+      1 \amp 2  \\
+      0 \amp 0 \\
+    \end{array}
+  \right]</m>, which means that there is only 1 pivot and thus, not always a solution.
+  For some <m>\bvec</m> there could be a pivot in the rightmost column of the augmented matrix
+  for the corresponding linear system, thus resulting in no solution.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+  
+  <outcomes>
     <ul>
       <li><p>What is the span of a set of vectors and how do we denote it?</p></li>
       <li><p>How can we determine if a vector is in the span of another set of vectors?</p></li>
-      <li><p>How do we know if the span of a set of vectors <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is <m>\mathbb{R}^m</m> using the pivots of the matrix <m>[\vvec_1 \vvec_2 \vvec_3 \dots \vvec_n]</m>?</p></li>
+      <li><p>How do we know if the span of a set of vectors <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is <m>\mathbb{R}^m</m> using the pivots of the matrix <m>[\vvec_1 \,\,\, \vvec_2 \,\,\, \vvec_3 \,\,\, \dots \,\,\, \vvec_n]</m>?</p></li>
     </ul>
-  </objectives>
-
-  <exercise>
-    <introduction>
-      <p>Let's start in 2-dimensions, and suppose that   
-<md>
-  \vvec_1=\twovec11,~~~
-  \vvec_2=\twovec{-3}{-3},~~~
-  \vvec_3=\twovec14.
-  </md></p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Is <m>\twovec66</m> in the span of <m>\vvec_1</m> and <m>\vvec_2</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Is <m>\twovec45</m> in the span of <m>\vvec_1</m> and <m>\vvec_2</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Give a geometric description of the span of <m>\vvec_1</m> and <m>\vvec_2</m>, denoted <m>\span{\vvec_1,\vvec_2}</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Can <m>\twovec45</m> be expressed as a linear combination of <m>\vvec_1</m> and <m>\vvec_3</m>?  Is <m>\twovec45</m> in the span of <m>\vvec_1</m> and <m>\vvec_3</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Give a geometric description of the span of <m>\vvec_1</m> and <m>\vvec_3</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>For what vectors <m>\bvec</m> does the equation \ \ \ \
-  <m>
-  \begin{bmatrix}
-    1 \amp 1 \\
-    1 \amp 4 \\
-  \end{bmatrix} \xvec = \bvec
-  </m> \ \ \ \ 
-  have a solution?  Explain your thinking.</p>
-      </statement>
-    </task>
-  </exercise>
-
-  <exercise>
-    <introduction>
-      <p>Now we'll look at the span of sets of vectors in <m>\real^3</m>.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Consider the vector <m>\vvec =\threevec121</m>.  Give a geometric
-  description of <m>\laspan\{\vvec\}</m> and a rough sketch of the span
-  below.</p>
-        <p>\includegraphics[scale=.9]{coordinates-3d}</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Now consider the vectors
-  <md>
-  \evec_1 = \threevec100,~~~
-  \evec_2 = \threevec010.
-  </md>
-  Give a geometric description of <m>\laspan\{\evec_1,\evec_2\}</m> and a
-  rough sketch of the span below.</p>
-        <p>\includegraphics[scale=.9]{coordinates-3d}</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Let's look at this situation algebraically.  If we write
-  <m>\bvec=\threevec{b_1}{b_2}{b_3}</m>, what condition on the components
-  of <m>\bvec</m> must be satisfied if the equation
-  <md>
-  \begin{bmatrix}
-    1 \amp 0 \\
-    0 \amp 1 \\
-    0 \amp 0 \\
-  \end{bmatrix}
-  \xvec = \bvec
-  </md>
-  is consistent?  What condition on the components of <m>\bvec</m> must be
-  satisfied for <m>\bvec</m> to be in the span of <m>\evec_1</m> and <m>\evec_2</m>?</p>
-      </statement>
-    </task>
-  </exercise>
-
-  <exercise>
-    <introduction>
-      <p>Consider the vectors
-  <md>
-  \vvec_1 = \threevec11{-1},~~~
-  \vvec_2 = \threevec021,~~~
-  \vvec_3 = \threevec1{-2}4.
-  </md></p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Is the vector <m>\threevec4{-3}{-1}</m> in
-  <m>\laspan\{\vvec_1,\vvec_2,\vvec_3\}</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the reduced row echelon form of the matrix
-  <m>\begin{bmatrix}
-    \vvec_1 \amp \vvec_2 \amp \vvec_3
-  \end{bmatrix}
-  </m>?  You should be able to find this using your work from the last
-  question.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What do the pivot positions of this matrix tell you about
-  <m>\laspan\{\vvec_1,\vvec_2,\vvec_3\}</m>?  Give a geometric description
-  of <m>\laspan\{\vvec_1,\vvec_2,\vvec_3\}</m>.</p>
-      </statement>
-    </task>
-  </exercise>
+  </outcomes>
 
 </worksheet>
