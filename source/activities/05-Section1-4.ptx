@@ -438,6 +438,19 @@
     This yields a unique solution of <m>(a,b,c) = (-1/2, -3/2, 14)</m>, giving the
     degree two polynomial of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m>.
   </p>
+  <sage>
+<input>
+A = matrix(3,4,[1,1,1,12,
+                4,2,1,9,
+                9,3,1,5])
+A.rref()
+</input>
+<output>
+[1 0 0 -1/2]
+[0 1 0 -3/2]
+[0 0 1 14]
+</output>
+</sage>
   <image>
 <shortdescription>Graph of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m> going through the 3 given points.</shortdescription>
 <prefigure xmlns="https://prefigure.org" label="05-1-4_1">

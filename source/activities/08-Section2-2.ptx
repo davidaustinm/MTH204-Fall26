@@ -275,7 +275,8 @@
         </p>
         <sage>
 <input>
-A = matrix(3,2,[-2,0,3,1,4,2])
+A = matrix(3,2,[-2,0,3,
+                1,4,2])
 v = vector([-2,3])
 w = vector([1,2])
 print(A*(3*v))
@@ -300,7 +301,8 @@ print(3*(A*v))
         </p>
         <sage>
 <input>
-A = matrix(3,2,[-2,0,3,1,4,2])
+A = matrix(3,2,[-2,0,3,
+                1,4,2])
 v = vector([-2,3])
 w = vector([1,2])
 print(A*(v+w))
@@ -573,8 +575,11 @@ print(A*w+A*v)
       <solution>
         <sage>
 <input>
-A = matrix(2,3,[1,3,2,-3,4,-1])
-B = matrix(3,2,[3,0,1,2,-2,-1])
+A = matrix(2,3,[1,3,2,
+              -3,4,-1])
+B = matrix(3,2,[3,0,
+                1,2,
+              -2,-1])
 A*B
 </input>
 <output>
@@ -601,8 +606,11 @@ A*B
         </p>
           <sage>
 <input>
-A = matrix(2,3,[1,3,2,-3,4,-1])
-B = matrix(3,2,[3,0,1,2,-2,-1])
+A = matrix(2,3,[1,3,2,
+              -3,4,-1])
+B = matrix(3,2,[3,0,
+                1,2,
+              -2,-1])
 B*A
 </input>
 <output>
@@ -664,8 +672,10 @@ B*A
       </p>
         <sage>
 <input>
-A = matrix(2,2,[1,2,-2,-4])
-B = matrix(2,2,[2,-4,-1,2])
+A = matrix(2,2,[1,2,
+              -2,-4])
+B = matrix(2,2,[2,-4,
+                -1,2])
 A*B
 </input>
 <output>
