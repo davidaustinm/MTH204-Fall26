@@ -1,14 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 2.3 - The Span of a Set of Vectors - Part 2</title>
-  <objectives>
-    <ul>
-      <li><p>What is the span of a set of vectors and how do we denote it?</p></li>
-      <li><p>How can we determine if a vector is in the span of another set of vectors?</p></li>
-      <li><p>How do we know if the span of a set of vectors <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is <m>\mathbb{R}^m</m> using the pivots of the matrix <m>[\vvec_1 \vvec_2 \vvec_3 \dots \vvec_n]</m>?</p></li>
-      <li><p>How many vectors must you have to span <m>\mathbb{R}^m</m>?</p></li>
-    </ul>
-  </objectives>
+
+  <exercise>
+    <introduction>
+      <p>Let's start in 2-dimensions, and suppose that   
+<md>
+  \vvec_1=\twovec11,~~~
+  \vvec_2=\twovec{-3}{-3},~~~
+  \vvec_3=\twovec14.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>\twovec66</m> in the span of <m>\vvec_1</m> and <m>\vvec_2</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is <m>\twovec45</m> in the span of <m>\vvec_1</m> and <m>\vvec_2</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Give a geometric description of the span of <m>\vvec_1</m> and <m>\vvec_2</m>, denoted <m>\span{\vvec_1,\vvec_2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Can <m>\twovec45</m> be expressed as a linear combination of <m>\vvec_1</m> and <m>\vvec_3</m>?  Is <m>\twovec45</m> in the span of <m>\vvec_1</m> and <m>\vvec_3</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Give a geometric description of the span of <m>\vvec_1</m> and <m>\vvec_3</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For what vectors <m>\bvec</m> does the equation 
+  <md>
+  \begin{bmatrix}
+    1 \amp 1 \\
+    1 \amp 4 \\
+  \end{bmatrix} \xvec = \bvec
+  </md>  
+  have a solution?  Explain your thinking.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Now we'll look at the span of sets of vectors in <m>\real^3</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Consider the vector <m>\vvec =\threevec121</m>.  Give a geometric
+  description of <m>\laspan\vvec</m> and a rough sketch of the span
+  below.
+  (INCLUDE A BLANK GRID/GRAPH HERE!)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Geometrically, this is a line! (NEED VISUAL HERE)
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now consider the vectors
+  <md>
+  \evec_1 = \threevec100,~~~
+  \evec_2 = \threevec010.
+  </md>
+  Give a geometric description of <m>\laspan{\evec_1,\evec_2}</m> and a
+  rough sketch of the span below. (NEED BLANK GRAPH HERE OR MAYBE JUST AXES?)</p>
+      </statement>
+      <solution>
+        <p>
+          Geometrically, this is the <m>xy</m>-plane! (NEED VISUAL HERE)
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's look at this situation algebraically.  If we write
+  <m>\bvec=\threevec{b_1}{b_2}{b_3}</m>, what condition on the components
+  of <m>\bvec</m> must be satisfied if the equation
+  <md>
+  \begin{bmatrix}
+    1 \amp 0 \\
+    0 \amp 1 \\
+    0 \amp 0 \\
+  \end{bmatrix}
+  \xvec = \bvec
+  </md>
+  is consistent?  What condition on the components of <m>\bvec</m> must be
+  satisfied for <m>\bvec</m> to be in the span of <m>\evec_1</m> and <m>\evec_2</m>?</p>
+      </statement>
+      <solution>
+        <p>
+          First, because of the last row of zeros in the coefficient matrix (which is in row reduced echelon form),
+          it must be true that <m>b_3 = 0</m> in order for the system to be consistent.  There are no restrictions 
+          on <m>b_1</m> or <m>b_2</m>.
+          </p>
+          <p>
+          Algebraically, to see if <m>\bvec</m> is in the span of <m>\evec_1</m> and <m>\evec_2</m>, let <m>\xvec = \twovec{x_1}{x_2}</m>.  
+          We consider
+          <md>
+            x_1\threevec{1}{0}{0} + x_2\threevec{0}{1}{0} = \threevec{x_1}{x_2}{0}.
+          </md>
+          This shows again that it must be that <m>b_3 = 0</m>, but there are no conditions on <m>b_1</m> or <m>b_2</m> in order to 
+          have a consistent system.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the vectors
+  <md>
+  \vvec_1 = \threevec11{-1},~~~
+  \vvec_2 = \threevec021,~~~
+  \vvec_3 = \threevec1{-2}4.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Is the vector <m>\threevec4{-3}{-1}</m> in
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>?</p>
+      </statement>
+      <solution>
+        <p>
+          Consider the augmented system
+          <md>
+            \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 1 \amp 4 \\ 
+      1 \amp 2 \amp -2 \amp -3 \\ 
+      -1 \amp 1 \amp 4 \amp -1 \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 0 \amp 3 \\ 
+      0 \amp 1 \amp 0 \amp -2 \\ 
+      0 \amp 0 \amp 1 \amp 1 \\
+    \end{array}
+  \right]
+          </md>
+          This result shows the system is consistent with a unique solution.  Therefore,
+          it is true that the vector <m>\threevec{4}{-3}{-1}</m> is in the Span and 
+          <m>{3\vvec_1 - 2\vvec_2 + \vvec_3 = \threevec{4}{-3}{-1}}</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the reduced row echelon form of the matrix
+  <m>\begin{bmatrix}
+    \vvec_1 \amp \vvec_2 \amp \vvec_3
+  \end{bmatrix}
+  </m>?  You should be able to find this using your work from the last
+  question.</p>
+      </statement>
+      <solution>
+        <p>
+          From the previous question we saw that <m>\begin{bmatrix}
+    \vvec_1 \amp \vvec_2 \amp \vvec_3
+  \end{bmatrix} \sim I_3</m>. 
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What do the pivot positions of this matrix tell you about
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>?  Give a geometric description
+  of <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+      </statement>
+      <solution>
+        <p>
+          There is a pivot in every row, which means that there is always a solution to 
+          <m>\begin{bmatrix}
+    \vvec_1 \amp \vvec_2 \amp \vvec_3
+  \end{bmatrix}\xvec = \bvec</m>.  Geometrically, this means that <m>\laspan{\vvec_1,\vvec_2,\vvec_3} = \mathbb{R}^3</m>.
+        </p>
+      </solution>
+    </task>
+  </exercise>
 
   <exercise>
     <introduction>
@@ -24,22 +205,81 @@
         <p>Is the vector <m>\threevec5{-4}{-3}</m> in
   <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>?</p>
       </statement>
+      <solution>
+        <p>
+          We have the following augmented system:
+          <md>
+            \left[
+    \begin{array}{rrr|r}
+      2 \amp 1 \amp 3 \amp 5 \\ 
+      -1 \amp 1 \amp -3 \amp -4 \\ 
+      0 \amp 3 \amp -3 \amp -3 \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 2 \amp 3 \\ 
+      0 \amp 1 \amp -1 \amp -1 \\ 
+      0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+          </md>
+          This system is consistent! Therefore, <m>\threevec5{-4}{-3}</m> is in the
+  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>. There is a free variable, so there are infinitely many solutions.
+  One such solution/linear combination is: <m>3\vvec_1 - \vvec_2 = \threevec5{-4}{-3}</m>. Another
+  is <m>{\vvec_1 + \vvec_2 = \threevec5{-4}{-3}}</m>.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>How about <m>\threevec84{11}</m>?</p>
       </statement>
+      <solution>
+        <p>
+          We have the following augmented system:
+          <md>
+            \left[
+    \begin{array}{rrr|r}
+      2 \amp 1 \amp 3 \amp 8 \\ 
+      -1 \amp 1 \amp -3 \amp 4 \\ 
+      0 \amp 3 \amp -3 \amp 11 \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 2 \amp 0 \\ 
+      0 \amp 1 \amp -1 \amp 0 \\ 
+      0 \amp 0 \amp 0 \amp 1 \\
+    \end{array}
+  \right]
+          </md>
+          This system is inconsistent! Therefore, <m>\threevec8{4}{11}</m> is NOT in the
+  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>. 
+        </p>
+      </solution>
     </task>
     <task workspace="0.65in">
       <statement>
         <p>How many pivot positions does the matrix
   <m>\begin{bmatrix}\vvec_1\amp\vvec_2\amp\vvec_3\end{bmatrix}</m> have?</p>
       </statement>
+      <solution>
+        <p>
+          From the coefficient matrix component of the two previous augmented systems,
+          we can see that there are 2 pivots to the matrix <m>\begin{bmatrix}\vvec_1\amp\vvec_2\amp\vvec_3\end{bmatrix}</m>.
+        </p>
+      </solution>
     </task>
     <task workspace="0.75in">
       <statement>
         <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3}</m></p>
       </statement>
+      <solution>
+        <p>
+          Because there are two pivots, there is a relationship between the three vectors such
+          that <m>\span{\vvec_1,\vvec_2,\vvec_3} = \span{\vvec_1,\vvec_2}</m> and, geometrically, is
+          a plane.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
@@ -49,22 +289,66 @@
   already determined whether this vector is in
   <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
       </statement>
+      <solution>
+        <p>
+          Yes, if <m>\threevec{5}{-4}{-3}</m> is in <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>,
+          then it is in <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>. This is because we can 
+          always choose the coefficient in front of the <m>\vvec_4</m> to be 0 in order to have a
+          linear combination.  If a vector is added to the span, vectors already determined to be in 
+          the smaller span will continue to be in the larger span.  However, if vectors are removed
+          from a span such that it is smaller, this conclusion can not be made.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>How about <m>\threevec84{11}</m>?</p>
       </statement>
+      <solution>
+        <p>
+          Even though this solution was not previously in the <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>, it could
+          be that it is in <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>.  We have to check!
+        <md>
+            \left[
+    \begin{array}{rrr|r}
+      2 \amp 1 \amp 3 \amp 1 \amp 8 \\ 
+      -1 \amp 1 \amp -3 \amp 3 \amp 4 \\ 
+      0 \amp 3 \amp -3 \amp 2 \amp 11 \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{rrr|r}
+      1 \amp 0 \amp 2 \amp 0 \amp 2 \\ 
+      0 \amp 1 \amp -1 \amp 0 \amp 3 \\ 
+      0 \amp 0 \amp 0 \amp 1 \amp 1\\
+    \end{array}
+  \right]
+          </md>
+          This is a consistent system and due to the presence of free variables, has infinitely many
+          solutions.  One such solution is <m>{2\vvec_1 + 3\vvec_2 + \vvec_4 = \threevec{8}{4}{11}}</m>.
+          Therefore, <m>\threevec84{11}</m> is in the <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>How many pivot positions does the matrix
   <m>\begin{bmatrix}\vvec_1\amp\vvec_2\amp\vvec_3\amp\vvec_4\end{bmatrix}</m> have?</p>
       </statement>
+      <solution>
+        <p>
+          As seen in the previous solution, there are 3 pivots.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m></p>
       </statement>
+      <solution>
+        <p>
+          Since there are 3 pivots, this means that geometrically the span is equivalent to <m>\mathbb{R}^3</m>.
+        </p>
+      </solution>
     </task>
   </exercise>
 
@@ -79,16 +363,84 @@
   shape of the matrix whose columns are these 10 vectors?  That is,
   how many rows and columns does this matrix have?</p>
       </statement>
+      <solution>
+        <p>
+          The 10 vectors make up the columns, so we know the number of columns is 10.
+          If the set of these vectors span <m>\real^{8}</m>, then each of the vectors must have
+          8 elements and live in <m>\real^{8}</m>.  Thus, the number of rows is 8. This means
+          that the size of the matrix is <m>8\times 10</m>.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>What do you know about the pivot positions of this matrix?</p>
       </statement>
+      <solution>
+        <p>
+          There is a pivot in every row (but, not every column).
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>How many pivot positions are there?</p>
       </statement>
+      <solution>
+        <p>
+          8 pivots.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that you have a matrix whose columns form a set of vectors
+  <m>\vvec_1,\ldots,\vvec_{n}</m> whose span is <m>\real^{8}</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What do you know about the pivot positions of this matrix</p>
+      </statement>
+      <solution>
+        <p>
+          There's a pivot in every row.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How many pivot positions are there?</p>
+      </statement>
+      <solution>
+        <p>
+          8 pivots.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the smallest possible number of vectors <m>n</m>?</p>
+      </statement>
+      <solution>
+        <p>
+          Because we have 8 pivots, there is at most one pivot in every column, which
+          means that <m>n \geq 8</m>. If there were fewer than 8 columns, we could not have
+          8 pivots.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Can a set of 27 vectors span <m>\mathbb{R}^{30}</m>? Explain why or why not.</p>
+      </statement>
+      <solution>
+        <p>
+          No! A <m>30\times 27</m> matrix can only have at maximum 27 pivots and we would need
+          30 pivots (one in every row) to span <m>\mathbb{R}^{30}</m>.
+        </p>
+      </solution>
     </task>
   </exercise>
 
@@ -98,33 +450,11 @@
   consistent for every vector <m>\bvec</m>.  What does this imply about the
   pivots of <m>A</m>?</p>
     </statement>
-  </exercise>
-
-  <exercise>
-    <introduction>
-      <p>Suppose that you have a matrix whose columns form a set of vectors
-  <m>\vvec_1,\ldots,\vvec_n</m> whose span is <m>\real^{8}</m>.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>What do you know about the pivot positions of this matrix?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>How many pivot positions are there?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the smallest possible number of vectors <m>n</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Can a set of 27 vectors span <m>\real^{30}</m>?  Explain why or why not.</p>
-      </statement>
-    </task>
+    <solution>
+        <p>
+          There is a pivot in every row.
+        </p>
+      </solution>
   </exercise>
 
   <exercise>
@@ -155,6 +485,14 @@
         <p>Explain how to write <m>\vvec_3</m> as a linear combination of <m>\vvec_1</m>
   and <m>\vvec_2</m>.</p>
       </statement>
+      <solution>
+        <p>
+          We can consider the column corresponding to <m>\vvec_3</m> to be the augmented
+          column, then representing the linear combination of <m>{x_1\vvec_1 + x_2\vvec_2 = \vvec_3}</m>.
+          Therefore, with the row reduced echelon form give, we have that 
+          <m>{\vvec_3 = 2\vvec_1 - \vvec_2}</m>.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
@@ -162,13 +500,41 @@
   c_3\vvec_3</m> can be rewritten as a linear combination of just
   <m>\vvec_1</m> and <m>\vvec_2</m>.</p>
       </statement>
+      <solution>
+        <p>
+          <md>
+            c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 = c_1\vvec_1 + c_2\vvec_2 + c_3(2\vvec_1 - \vvec_2) \\
+            \phantom{c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3} = c_1\vvec_1 + 2c_3\vvec_1 + c_2\vvec_2 - c_3\vvec_2 \\
+            \phantom{c_1\vvec_1 + c_2\vvec_2 + 1\vvec_3} = (c_1+2c_3)\vvec_1 + (c_2-c_3)\vvec_2 \\
+          </md>
+          Here, since <m>c_1, c_2, c_3</m> are any constants, then <m>c_1+2c_3</m>
+          is also just a constant, as well as <m>c_2-c_3</m>.  Therefore, this is 
+          a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Explain why <m>\span{\vvec_1,\vvec_2,\vvec_3} =
   \span{\vvec_1,\vvec_2}</m>.</p>
       </statement>
+      <solution>
+        <p>
+          Any vector that can be written as a linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>,
+          and <m>\vvec_3</m> can be written as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>!
+          So, <m>{\span{\vvec_1,\vvec_2,\vvec_3} = \span{\vvec_1,\vvec_2}}</m>.
+        </p>
+      </solution>
     </task>
   </exercise>
+
+  <outcomes>
+    <ul>
+      <li><p>What is the span of a set of vectors and how do we denote it?</p></li>
+      <li><p>How can we determine if a vector is in the span of another set of vectors?</p></li>
+      <li><p>How do we know if the span of a set of vectors <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is <m>\mathbb{R}^m</m> using the pivots of the matrix <m>[\vvec_1 \vvec_2 \vvec_3 \dots \vvec_n]</m>?</p></li>
+      <li><p>How many vectors must you have to span <m>\mathbb{R}^m</m>?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>
