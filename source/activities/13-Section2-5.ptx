@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 2.5 - Matrix transformations</title>
-  <objectives>
-    <ul>
-      <li><p>What is a matrix transformation?</p></li>
-      <li><p>Given an <m>m\times n</m> matrix <m>A</m> and defining <m>T(\xvec) = A\xvec</m>, what are the dimensions of the inputs for <m>T</m>? For the outputs?</p></li>
-      <li><p>Given <m>T(\evec_j)</m> for each <m>j</m>, how can we determine <m>A</m>?</p></li>
-      <li><p>How can matrix transformations be interpreted geometrically?</p></li>
-    </ul>
-  </objectives>
 
   <exercise>
     <introduction>
-      <p>Consider the matrix transformation <m>T(\xvec) = A\xvec</m> where 
-  <m>
+      <p>Consider the matrix transformation <m>T(\xvec) = A\xvec</m> where </p>
+      <p>
+      <md>
   A =
   \left[
     \begin{array}{cccc}
@@ -22,24 +15,66 @@
       -2 \amp 1 \amp 4 \amp -4 \\
     \end{array}
   \right].
-  </m></p>
+  </md></p>
     </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>[label=(\alph*)]</p>
-      </statement>
-    </task>
     <task workspace="1in">
       <statement>
         <p>What is the dimension of the vectors <m>\xvec</m> that are input
     into <m>T</m>?  What is the dimension of the vectors <m>T(\xvec)</m> that
     are output from <m>T</m>?</p>
       </statement>
+      <solution>
+        <p>
+          <m>\xvec</m> is the input to T and is in <m>\mathbb{R}^4</m>, which 
+          matches the number of columns of <m>A</m>.
+        </p>
+        <p>
+          <m>A\xvec</m> is the output from T and is in <m>\mathbb{R}^3</m>, which 
+          matches the number of rows of <m>A</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>
+          If we describe this transformation as <m>T: \mathbb{R}^n \rightarrow \mathbb{R}^m</m>,
+          what are the values of <m>n</m> and <m>m</m> and how do they relate to the shape of <m>A</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here, <m>n = 4</m> and <m>m = 3</m> such that <m>T: \mathbb{R}^4 \rightarrow \mathbb{R}^3</m>.
+          <m>n</m> is the number of columns of <m>A</m> and <m>m</m> is the number of rows.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Describe all the vectors for which <m>T(\xvec) = \zerovec</m>.</p>
       </statement>
+      <solution>
+        <p>
+          We consider the augmented system corresponding to <m>A\xvec = \zerovec</m>:
+          <md>
+  \left[
+    \begin{array}{cccc|c}
+      3 \amp 3 \amp -2 \amp 1 \amp 0 \\
+      0 \amp 2 \amp 1 \amp -3 \amp 0 \\
+      -2 \amp 1 \amp 4 \amp -4 \amp 0 \\
+    \end{array}
+  \right] \sim \left[
+    \begin{array}{cccc|c}
+      1 \amp 0 \amp 0 \amp 3 \amp 0 \\
+      0 \amp 1 \amp 0 \amp -2 \amp 0 \\
+      0 \amp 0 \amp 1 \amp 1 \amp 0 \\
+    \end{array}
+  \right]
+  </md>
+  which yields the parametric representation of the solution of <m>x_1 = -3x_4</m>, <m>x_2 = 2x_4</m>,
+  <m>x_3 = -x_4</m>, and <m>x_4</m> is free.  Thus, the vectors for which <m>{T(\xvec) = \zerovec}</m>
+  are <m>\xvec = \fourvec{-3t}{2t}{-t}{t}</m> for <m>t \in \mathbb{R}</m>.
+        </p>
+      </solution>
     </task>
   </exercise>
 
@@ -47,14 +82,41 @@
     <statement>
       <p>If <m>B</m> is the matrix <m>B = [ \vvec_1 \quad \vvec_2]</m> and <m>T(\xvec) = B\xvec</m>, what is <m>T\left( \twovec01 \right)</m> in terms of the vectors <m>\vvec_1</m> and <m>\vvec_2</m>?</p>
     </statement>
+    <solution>
+        <p>
+          <md>
+            T\left(\twovec{0}{1}\right) = B\twovec{0}{1} = 0\vvec_1 + 1\vvec_2 = \vvec_2
+          </md>
+          <md>
+            T\left(\twovec{1}{0}\right) = B\twovec{1}{0} = 1\vvec_1 + 0\vvec_2 = \vvec_1
+          </md>
+        </p>
+      </solution>
   </exercise>
 
   <exercise workspace="1in">
     <statement>
       <p>Suppose that <m>C</m> is a <m>3\times 2</m> matrix and that <m>T(\xvec) = C \xvec</m>. If 
-		<md> T\left( \twovec10 \right) = \threevec3{-1}1; T\left( \twovec01 \right) = \threevec22{-1},</md>
+		<md> T\left( \twovec10 \right) = \threevec3{-1}1; \,\,\, T\left( \twovec01 \right) = \threevec22{-1},</md>
 		what is the matrix <m>C</m>?</p>
     </statement>
+    <solution>
+      <p>
+        We saw in the previous question that <m>T\left( \twovec10 \right)</m> pulls out the first
+        column of the matrix representing the linear transformation and <m>T\left( \twovec01 \right)</m>
+        yields the second column.  Thus,
+        <md>
+         C =
+  \left[
+    \begin{array}{cc}
+      3 \amp 2  \\
+      -1 \amp 2  \\
+      1 \amp -1  \\
+    \end{array}
+  \right]. 
+        </md>
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="1in">
@@ -62,6 +124,156 @@
       <p>More generally we'll write 
 		<md>\evec_1 = \begin{bmatrix} 1 \\ 0 \\ 0 \\ \vdots \\ 0 \end{bmatrix} ; \evec_2 = \begin{bmatrix} 0 \\ 1 \\ 0\\ \vdots \\ 0 \end{bmatrix} ; \dots ; \evec_n = \begin{bmatrix} 0 \\ 0 \\ 0 \\ \vdots \\1 \end{bmatrix}. </md> If you are given <m>T(\evec_1), T(\evec_2),\dots T(\evec_n)</m> for a transofrmation <m>T(\xvec) = A \xvec</m>, how can you write the matrix <m>A</m>?</p>
     </statement>
+    <solution>
+      <p>
+        <md>
+          A = \left[T(\evec_1) \,\,\, T(\evec_2) \,\,\, \cdots \,\,\, T(\evec_n)\right]
+        </md>
+      </p>
+    </solution>
+  </exercise>
+
+  <proposition>
+    <statement>
+      <p>
+        If <m>T: \mathbb{R}^n \rightarrow \mathbb{R}^m</m> is a matrix transformation given by
+        <m>T(\xvec) = A\xvec</m>, then the matrix <m>A</m> has columns <m>T(\evec_j)</m>; that is,
+        <md>
+          A = \left[T(\evec_1) \,\,\, T(\evec_2) \,\,\, \cdots \,\,\, T(\evec_n)\right]
+        </md>
+      </p>
+    </statement>
+  </proposition>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Many geometric operations can be described as matrix
+    transformations.  Suppose, for instance, that we want to describe
+    the geometric transformation <m>T</m> that rotates vectors in the plane
+    counterclockwise by <m>90^\circ</m>, as shown below.  Then <m>T(\xvec) = A\xvec</m> where
+    <m>A</m> is a <m>2\times2</m> matrix.</p>
+    <image width="50%">
+<shortdescription>A vector and its linear transformation.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="13-2-5_1">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>x=(2,3)</definition>
+  <definition>Rx=(-3,2)</definition>
+  <coordinates bbox="(-4,-4,4,4)">
+    <grid-axes decorations="no"/>
+    <vector v="x" alignment="se" stroke ="blue">
+      <m>{\mathbf x}</m>
+    </vector>
+    <vector v="Rx" alignment="nw" stroke ="blue">
+      <m>T(\mathbf{x})</m>
+    </vector>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>
+      </introduction>
+      <task workspace="1in">
+      <statement>
+        <p>What is <m>T\left(\twovec10\right)</m> and <m>T\left(\twovec01\right)</m>?
+    Use these vectors to find the matrix <m>A</m>.</p>
+      </statement>
+      <solution>
+      <p>
+        <md>
+          T\left(\twovec10\right) = \twovec{0}{1}
+        </md>
+        <md>
+          T\left(\twovec01\right) = \twovec{-1}{0}
+        </md>
+        Therefore,
+        <md>
+          A = \begin{bmatrix}
+          0 \amp -1 \\
+          1 \amp 0 \\
+          \end{bmatrix}
+        </md>
+      </p>
+    </solution>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What vector results when we rotate <m>\twovec{-4}{5}</m>
+    counterclockwise by <m>90^\circ</m>?</p>
+      </statement>
+      <solution>
+      <p>
+        Using the matrix <m>A</m> determined by part (a) above, we have that
+        <md>
+          T\left(\twovec{-4}{5}\right) = \begin{bmatrix}
+          0 \amp -1 \\
+          1 \amp 0 \\
+          \end{bmatrix}\twovec{-4}{5} \\
+          \hspace{6.5cm} = (-4)\twovec{0}{1} + 5\twovec{-1}{0} = \twovec{-5}{-4}.
+        </md>
+      </p>
+    </solution>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the <m>2\times2</m> matrix <m>A</m> that reflects vectors across the
+    horizontal axis as shown below.  What is the result of reflecting <m>\twovec{-4}{5}</m>
+    across the horizontal axis? Use the matrix <m>A</m>, then verify your answer makes sense by thinking geometrically.</p>
+  <image width="50%">
+<shortdescription>A vector and its linear transformation.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="13-2-5_2">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>x=(2,3)</definition>
+  <definition>Tx=(2,-3)</definition>
+  <coordinates bbox="(-5,-5,5,5)">
+    <grid-axes decorations="no"/>
+    <vector v="x" alignment="se" stroke ="blue">
+      <m>{\mathbf x}</m>
+    </vector>
+    <vector v="Tx" alignment="ne" stroke ="blue">
+      <m>T(\mathbf{x})</m>
+    </vector>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>  
+  </statement>
+  <solution>
+    <p>
+      To find the corresponding matrix <m>B</m> that represents this linear transformation, 
+      we consider the affect of <m>T</m> on <m>\evec_1</m> and <m>\evec_2</m>.
+      <md>
+        T\left(\twovec{1}{0}\right) = \twovec{1}{0} \\
+        T\left(\twovec{0}{1}\right) = \twovec{0}{-1} \\
+      </md>
+      This gives a <m>B</m> matrix of <m>B = \begin{bmatrix} 1 \amp 0 \\ 0 \amp -1 \end{bmatrix}.</m>
+      Then, let's see the result of applying this linear transformation to <m>\twovec{-4}{5}</m>.
+      <md>
+        \begin{bmatrix}
+          1 \amp 0 \\
+          0 \amp -1 \\
+          \end{bmatrix}\twovec{-4}{5} = (-4)\twovec{1}{0} + 5\twovec{0}{-1} = \twovec{-4}{-5}.
+      </md>
+    </p>
+    <image width="50%">
+<shortdescription>A vector and its linear transformation.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="13-2-5_3">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>x=(-4,5)</definition>
+  <definition>Tx=(-4,-5)</definition>
+  <coordinates bbox="(-6,-6,6,6)">
+    <grid-axes decorations="no"/>
+    <vector v="x" alignment="sw" stroke ="blue">
+      <m>{\mathbf x}</m>
+    </vector>
+    <vector v="Tx" alignment="nw" stroke ="blue">
+      <m>T(\mathbf{x})</m>
+    </vector>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>  
+  </solution>
   </exercise>
 
   <exercise>
@@ -69,22 +281,38 @@
       <p>Suppose that we work for a company that produces baked goods,
   including cakes, donuts, and eclairs. Our company operates two
   plants, Plant 1 and Plant 2. In one hour of operation,</p>
+  <p>
       <ul>
         <li><p>Plant 1 produces 10 cakes, 50 donuts, and 30 eclairs.</p></li>
         <li><p>Plant 2 produces 20 cakes, 30 donuts, and 30 eclairs.</p></li>
       </ul>
+    </p>
     </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>[label=(\alph*)]</p>
-      </statement>
-    </task>
     <task workspace="1.3in">
       <statement>
         <p>If plant 1 operates for <m>x_1</m> hours and plant 2 for <m>x_2</m>
       hours, how many cakes <m>C</m> do they produce in total?  How many
       donuts <m>D</m>?  How many eclairs <m>E</m>?</p>
       </statement>
+      <solution>
+        <p>
+          For each plant we want to multiply the rate of production of each dessert
+          by the number of hours of operation.  This yields the following for Plant 1:
+          <md>
+            C_1 = 10x_1 \,\,\,\,\, D_1 = 50x_1 \,\,\,\,\, E_1 = 30x_1.
+          </md>
+          And, for Plant 2, we have:
+          <md>
+            C_2 = 20x_2 \,\,\,\,\, D_2 = 30x_2 \,\,\,\,\, E_2 = 30x_2.
+          </md>
+          To find the total amount accross both plants, we have the following set of equations:
+          <md>
+            C = C_1 + C_2 = 10x_1 + 20x_2 \\
+            D = D_1 + D_2 = 50x_1 + 30x_2 \\
+            E = E_1 + E_2 = 30x_1 + 30x_2 \\
+          </md>
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
@@ -96,18 +324,61 @@
       produced when the the fist plant runs for <m>x_1</m> hours and the second plant runs for <m>x_2</m> hours.  If
       <m>T(\xvec) = A\xvec</m>, what are the dimensions of <m>A</m>?</p>
       </statement>
+      <solution>
+        <p>
+          <m>A</m> is size <m>3\times 2</m> because the number of rows in the input is 2 and
+          the number of rows in the output is 3.  The size of <m>A</m> has its number of rows as
+          the number of rows of the output and the number of columns as the number of rows of the input.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Find the vector <m>T\left(\twovec 10\right)</m> and the vector
       <m>T\left(\twovec 01\right)</m>.  Then write the matrix <m>A</m>.</p>
       </statement>
+      <solution>
+        <p>
+          <md>
+            T\left(\twovec 10\right) = \threevec{10}{50}{30}
+          </md>
+          and corresponds to the coefficients of <m>x_1</m>.
+          <md>
+            T\left(\twovec 01\right) = \threevec{20}{30}{30}
+          </md>
+          and corresponds to the coefficients of <m>x_2</m>.
+          This yields a matrix <m>A</m> of:
+          <md>
+            A = \begin{bmatrix}10 \amp 20 \\ 50 \amp 30 \\ 30 \amp 30 \\ \end{bmatrix}.
+          </md>
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>If we operate plant 1 for 40 hours and plant 2 for 50 hours,
       how many baked goods have we produced? Try to use the matrix <m>A</m> from part (c) here.</p>
       </statement>
+      <solution>
+        <p>
+          This set-up translates to the following matrix-vector multiplication:
+          <md>
+            \begin{bmatrix}10 \amp 20 \\ 50 \amp 30 \\ 30 \amp 30 \\ \end{bmatrix}\twovec{40}{50} = \threevec{1400}{3500}{2700}.
+          </md>
+        </p>
+        <sage>
+<input>
+A = matrix(3, 2, [10, 20,
+                  50, 30,
+                  30, 30])
+v = vector([40,50])
+A*v
+</input>
+<output>
+(1400, 3500, 2700)
+</output>
+</sage>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
@@ -115,64 +386,151 @@
       1500 cakes, 4700 donuts, and 3300 eclairs.  Is it possible to
       meet this order?  If so, how long should the two plants operate?</p>
       </statement>
+      <solution>
+        <p>
+          We want to try and find the vector <m>\xvec</m> such that <m>A\xvec = \threevec{1500}{4700}{3300}</m>.
+          Using Sage, 
+        </p>
+        <sage>
+<input>
+A = matrix(3, 2, [10, 20,
+                  50, 30,
+                  30, 30])
+B = A.augment(vector([1500, 4700, 3300]))
+print(B)
+B.rref()
+</input>
+<output>
+[  10   20 1500]
+[  50   30 4700]
+[  30   30 3300]
+[1 0 70]
+[0 1 40]
+[0 0  0]
+</output>
+</sage>
+<p>
+  This gives a solution vector of <m>\xvec = \twovec{x_1}{x_2} = \twovec{70}{40}</m>.  This 
+  means that Plat 1 should operate for 70 hours and Plant 2 for 40 hours.
+</p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Suppose that</p>
+        <p>
         <ul>
           <li><p>Each cake requires 4 units of flour and 2 units of
         sugar.</p></li>
           <li><p>Each donut requires 1 unit of flour and 1 unit of sugar.</p></li>
           <li><p>Each eclair requires 1 unit of flour and 2 units of sugar.</p></li>
         </ul>
+      </p>
         <p>Suppose we make <m>C</m> cakes, <m>D</m> donuts, and <m>E</m> eclairs.  How
       many units <m>F</m> of flour and units <m>S</m> of sugar are required?</p>
       </statement>
+      <solution>
+        <p>
+          <md>
+            F = 4C + 1D + 1E \\
+            S = 2C + 1D + 2E \\
+          </md>
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Write a matrix <m>B</m> that defines the matrix transformation
-      <m>R\left(\threevec CDE\right) = \twovec FS</m>.</p>
+      <m>{R\left(\threevec CDE\right) = \twovec FS}</m>.</p>
       </statement>
+      <solution>
+        <p>
+          To find the matrix <m>B</m>, we want to look at the transformation <m>R</m> 
+          acting on the vectors <m>\evec_1, \evec_2,</m> and <m>\evec_3</m>.
+          <md>
+            R\left(\threevec 100\right) = \twovec{4}{2},
+          </md>
+          where the resulting vector represents the coefficient of <m>C</m> for the flour (<m>F</m>) and sugar (<m>S</m>).
+          Similarly, we have
+          <md>
+            R\left(\threevec 010\right) = \twovec{1}{1} \\
+            R\left(\threevec 001\right) = \twovec{1}{2}
+          </md>
+          which yields a <m>B</m> matrix of
+          <md>
+            B = \begin{bmatrix} 4 \amp 1 \amp 1 \\ 2 \amp 1 \amp 2 \end{bmatrix}.
+          </md>
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>If plant 1 operates for 30 hours and plant 2 for 20 hours,
       how many units of flour and sugar are required?</p>
       </statement>
+      <solution>
+        <p>
+          To find the amount of flour and sugar, we first need to find the resulting amounts of 
+          cakes, donuts, and eclairs.  Then, we can transform this information into the amount of flour and sugar.
+          This means we first need to matrix multiply by <m>A</m> and then multiply by <m>B</m>.
+          <md>
+            B\left(A\twovec{30}{20}\right) = \twovec{6400}{6500}.
+          </md>
+        </p>
+        <sage>
+<input>
+A = matrix(3, 2, [10, 20,
+                  50, 30,
+                  30, 30])
+B = matrix(2, 3, [4, 1, 1
+                  2, 1, 2])
+v = vector([30,20])
+B*A*v
+</input>
+<output>
+(6400, 6500)
+</output>
+</sage>
+<p>So, 6400 units of flour and 6500 units of sugar are needed.</p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Find the matrix that represents the transformation
-      <m>P\left(\twovec{x_1}{x_2}\right) = \twovec FS</m> that represents the
+      <m>{P\left(\twovec{x_1}{x_2}\right) = \twovec FS}</m> that represents the
       ingredients needed when the plants are operated for
       <m>\twovec{x_1}{x_2}</m> hours.</p>
       </statement>
+      <solution>
+        <p>
+          The matrix <m>P</m> represents the combination of the action of first multiplying
+          by <m>A</m> and then multiplying by <m>B</m>.  Therefore, <m>P = BA</m>
+        </p>
+        <sage>
+<input>
+A = matrix(3, 2, [10, 20,
+                  50, 30,
+                  30, 30])
+B = matrix(2, 3, [4, 1, 1,
+                  2, 1, 2])
+P = B*A
+</input>
+<output>
+[120 140]
+[130 130]
+</output>
+</sage>
+      </solution>
     </task>
   </exercise>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Many geometric operations can be described as matrix
-    transformations.  Suppose, for instance, that we want to describe
-    the geometric transformation <m>T</m> that rotates vectors in the plane
-    counterclockwise by <m>90^\circ</m>, as shown below.  Then <m>T(\xvec) = A\xvec</m> where
-    <m>A</m> is a <m>2\times2</m> matrix.\\
-      \includegraphics{figures/14-rot.eps}   \\</p>
-      <p>What is <m>T\left(\twovec10\right)</m> and <m>T\left(\twovec01\right)</m>?
-    Use these vectors to find the matrix <m>A</m>.</p>
-      <p>What vector results when we rotate <m>\twovec{-4}{5}</m>
-    counterclockwise by <m>90^\circ</m>?</p>
-    </statement>
-  </exercise>
-
-  <exercise workspace="1in">
-    <statement>
-      <p>Find the <m>2\times2</m> matrix <m>A</m> that reflects vectors across the
-    horizontal axis as shown below.  What is the result of reflecting <m>\twovec{-4}{5}</m>
-    across the horizontal axis? Use the matrix <m>A</m>, then verify your answer makes sense by thinking geometrically.\\
-      \includegraphics{figures/14-refl.eps}\\</p>
-    </statement>
-  </exercise>
+  <outcomes>
+    <ul>
+      <li><p>What is a matrix transformation?</p></li>
+      <li><p>Given an <m>m\times n</m> matrix <m>A</m> and defining <m>T(\xvec) = A\xvec</m>, what are the dimensions of the inputs for <m>T</m>? For the outputs?</p></li>
+      <li><p>Given <m>T(\evec_j)</m> for each <m>j</m>, how can we determine <m>A</m>?</p></li>
+      <li><p>How can matrix transformations be interpreted geometrically?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>
