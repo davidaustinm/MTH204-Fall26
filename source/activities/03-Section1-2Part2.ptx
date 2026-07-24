@@ -473,6 +473,19 @@
                 </md>
                 This system is consistent with one solution - <m>(-1,1,-1)</m>.
             </p>
+            <sage>
+                <input>
+A = matrix(3,4,[1,2,-1,2,
+                -2,-2,4,-4,
+                1,-2,-6,3])
+A.rref()
+                </input>
+                <output>
+[1 0 0 -1]
+[0 1 0 1]
+[0 0 1 -1]
+                </output>
+            </sage>
         </solution>
     </exercise>
 
