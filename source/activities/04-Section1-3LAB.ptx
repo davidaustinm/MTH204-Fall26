@@ -1,172 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<worksheet>
-  <title>Lab 1, Due: September 18, 2020</title>
-  <introduction>
-    <p>\input epsf.sty</p>
-    <p>\\ 
- \\</p>
-    <p><term>Instructions:</term> Complete the following exercises in
-your groups. For the write up:</p>
-    <ul>
-      <li><p>You should type up your report (a google docs version is available on Blackboard).</p></li>
-      <li><p>Include screenshots of your work in Sage.</p></li>
-      <li><p>You only need to hand in one report for your group. Only include the names of students who contributed.</p></li>
-      <li><p>This lab is graded out of 20 points. Each problem will be graded out of 5 points - you earn 5 points by including your reasoning, following all directions, and making only minor errors. There's a bonus problem for 2 points at the end.</p></li>
-    </ul>
-    <p>There is a page of Sage cells available at
-<c>http://gvsu.edu/s/0Ng</c></p>
-  </introduction>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>Consider the system of linear equations:
-  <md>
-  \begin{alignedat}{4}
+<worksheet>
+    <title>Lab 1, Due: September , 2026</title>
+
+    <introduction>
+        <p>
+            <term>Instructions:</term> Complete the following exercises in your
+            groups.
+            For the write up:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        You should type up your report (a google docs version is
+                        available on Blackboard).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Include screenshots of your work in Sage.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        You only need to hand in one report for your group.
+                        Only include the names of students who contributed.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This lab is graded out of 20 points.
+                        Each problem will be graded out of 5 points - you earn 5
+                        points by including your reasoning, following all
+                        directions, and making only minor errors.
+                        There's a bonus problem for 2 points at the end.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            There is a page of Sage cells available
+            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+        </p>
+    </introduction>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Consider the system of linear equations:
+                <md>
+                    \begin{alignedat}{4}
     x \amp {}+{} \amp 2y \amp {}-{} \amp z \amp {}={} \amp 1 \\
     3x \amp {}+{} \amp 2y \amp {}+{} \amp 2z \amp {}={} \amp 7 \\
     -x \amp \amp \amp {}+{} \amp 4z \amp {}={} \amp -3 \\
   \end{alignedat}
-  </md>
-  Write this system as an augmented matrix and use Sage to
-  find a description of the solution space. (Include a screenshot of your work in Sage.)</p>
-    </statement>
-  </exercise>
+                </md>
+                Write this system as an augmented matrix and use Sage to find a
+                description of the solution space.
+                (Include a screenshot of your work in Sage.)
+            </p>
+        </statement>
+    </exercise>
 
-  <exercise>
-    <introduction>
-      <p>Shown below is the traffic pattern in the downtown area of
-    a large city.  The figures give the number of cars per hour
-    traveling along each road.  Any car that drives into an
-    intersection must also leave the intersection.  This means that
-    the number of cars entering an intersection in an hour is equal to
-    the number of cars leaving the intersection.</p>
-      <p>\begin{center}
-      \includegraphics{traffic-a.eps}
-    \end{center}</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Write a system of equations for 
-    the quantities <m>x</m>, <m>y</m>, <m>z</m>, and <m>w</m>
-    and describe the set of solutions (use a Sage cell!) Is there a single solution,
-    infinitely many solutions, or no solutions? (Hint: the intersection where 650, <m>y</m> and <m>z</m> meet gives us that <m>650 = x+ y</m> - do you see why?) Explain how you set up the equations and include a screenshot of your work in Sage.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Explain why you would expect infinitely many solutions for this
-    particular traffic pattern.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the smallest amount of traffic flowing through
-    <m>x</m>? Explain.</p>
-      </statement>
-    </task>
-  </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Shown below is the traffic pattern in the downtown area of a
+                large city.
+                The figures give the number of cars per hour traveling along
+                each road.
+                Any car that drives into an intersection must also leave the
+                intersection.
+                This means that the number of cars entering an intersection in
+                an hour is equal to the number of cars leaving the intersection.
+            </p>
 
-  <exercise>
-    <introduction>
-      <p>A typical problem in thermodynamics is to determine the
-  temperature distribution across a thin plate if you know the
-  temperature around the boundary.  Assume, for instance, that the
-  plate represents a cross section of a metal beam with negligible
-  heat flow in the direction perpendicular to the plate.  Let <m>T_1,
-  \ldots, T_6</m> be the temperatures at the six nodes inside the beam.
-  The temperature at a node is approximately the average of the four
-  nearest nodes: for instance,
-  <md> T_1 = (10 + 15 + T_2 + T_4)/4 ~~~\hbox{ or } ~~~4T_1 - T_2 - T_4 =
-  25.</md></p>
-      <p>\begin{center}
-    \includegraphics{heat.eps}
-  \end{center}</p>
-      <p>In the real world, the approximation becomes better the closer the
-  points are together or as we add more and more into the grid.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Set up a system of linear equations to find the temperature inside
-  the plate. Explain how you obtained this system.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Solve your equations to find the temperatures
-  inside the plate. Use Sage - include a screenshot of your work.</p>
-        <p><em>Helpful Sage hint:</em>  If you have a matrix
-  <c>B</c> containing rational entries (e.g. fractions), you can obtain
-  a decimal approximation using <c>B.numerical\_approx(digits=4)</c>.
-  You may, of course, change 4 to any other appropriate value.</p>
-      </statement>
-    </task>
-  </exercise>
+            <image source="images/04-traffic_patterns.png" width="50%">
+                <shortdescription>
+                    Traffic pattern in the downtown area of a large city.
+                </shortdescription>
+            </image>
+        </introduction>
 
-  <exercise>
-    <introduction>
-      <p>This exercise is about balancing chemical reactions.</p>
-      <p>Chemists denote a molecule of water as
-  <m>\text{H}_2\text{O}</m>, which means it is composed of two
-  atoms of hydrogen (H) and one atom of oxygen (O).
-  The process by which hydrogen is burned is described by the
-  chemical reaction
-  <md>
-  x\thinspace \text{H}_2 + y\thinspace\text{O}_2 \to
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Write a system of equations for the quantities <m>x</m>,
+                    <m>y</m>, <m>z</m>, and <m>w</m> and describe the set of
+                    solutions (use a Sage cell).
+                    Is there a single solution, infinitely many solutions, or no
+                    solutions?
+                    (Hint: the intersection where 650, <m>x</m>, and <m>y</m>
+                    meet gives us that <m>650 = x + y</m>- do you see why?)
+                    Explain how you set up the equations and include a
+                    screenshot of your work in Sage.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain why you would expect infinitely many solutions for
+                    this particular traffic pattern.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the smallest amount of traffic flowing through
+                    <m>x</m>?
+                    Explain.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                A typical problem in thermodynamics is to determine the
+                temperature distribution across a thin plate if you know the
+                temperature around the boundary.
+                Assume, for instance, that the plate represents a cross section
+                of a metal beam with negligible heat flow in the direction
+                perpendicular to the plate.
+                Let <m>T_1,
+  \ldots, T_6</m> be the temperatures at the six
+                nodes inside the beam.
+                The temperature at a node is approximately the average of the
+                four nearest nodes: for instance,
+                <md>
+                    T_1 = (10 + 15 + T_2 + T_4)/4 \,\,\,\,\,\, \textrm{or} \,\,\,\,\,\, 4T_1 - T_2 - T_4 =
+  25.
+                </md>
+            </p>
+
+            <image source="images/04-thermo.png" width="50%">
+                <shortdescription>
+                    Representation of nodes on a beam and their corresponding
+                    temperatures.
+                </shortdescription>
+            </image>
+
+            <p>
+                In the real world, the approximation becomes better the closer
+                the points are together or as we add more and more into the
+                grid.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Set up a system of linear equations to find the temperature
+                    inside the plate.
+                    Explain how you obtained this system.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Solve your equations to find the temperatures inside the
+                    plate.
+                    Use Sage - include a screenshot of your work.
+                </p>
+
+                <p>
+                    <em>Helpful Sage hint:</em> If you have a matrix <c>B</c>
+                    containing rational entries (e.g.
+                    fractions), you can obtain a decimal approximation using
+                    <c>B.numerical_approx(digits=4)</c>.
+                    You may, of course, change 4 to any other appropriate value.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                This exercise is about balancing chemical reactions.
+            </p>
+
+            <p>
+                Chemists denote a molecule of water as
+                <m>\text{H}_2\text{O}</m>, which means it is composed of two
+                atoms of hydrogen (H) and one atom of oxygen (O).
+                The process by which hydrogen is burned is described by the
+                chemical reaction
+                <md>
+                    x\thinspace \text{H}_2 + y\thinspace\text{O}_2 \to
   z\thinspace \text{H}_2\text{O}
-  </md>
-  This means that <m>x</m> molecules of hydrogen
-  <m>\text{H}_2</m> combine with <m>y</m> molecules of
-  oxygen <m>\text{O}_2</m> to produce <m>z</m> water molecules.
-  The number of hydrogen atoms is the same before and after
-  the reaction;  the same is true of the oxygen atoms.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>How many hydrogen atoms are there before the
-  reaction?  How many hydrogen atoms are there after the
-  reaction?  Find a linear equation in <m>x</m>,
-  <m>y</m>, and <m>z</m> by equating these quantities.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find a second linear equation in <m>x</m>, <m>y</m>, and <m>z</m>
-  by equating the number of
-  oxygen atoms before and after the reaction.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Describe the solutions of this linear system.
-  Why would you expect infinitely many solutions when balancing a
-  chemical reaction?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>In this chemical setting, <m>x</m>, <m>y</m>, and <m>z</m>
-  should be positive integers.  Find
-  the solution where <m>x</m>, <m>y</m>, and <m>z</m>
-  are the smallest possible positive integers.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>(For a bonus 2 points) Consider the reaction where potassium permanganate and manganese
-  sulfate combine with water to produce manganese dioxide, potassium
-  sulfate, and sulfuric acid:
-  <md>
-  x_1\thinspace \mbox{K}\mbox{Mn}\mbox{O}_4 + 
+                </md>
+                This means that <m>x</m> molecules of hydrogen <m>\text{H}_2</m>
+                combine with <m>y</m> molecules of oxygen <m>\text{O}_2</m> to
+                produce <m>z</m> water molecules.
+                The number of hydrogen atoms is the same before and after the
+                reaction; the same is true of the oxygen atoms.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    How many hydrogen atoms are there before the reaction?
+                    How many hydrogen atoms are there after the reaction?
+                    Find a linear equation in <m>x</m>, <m>y</m>, and <m>z</m>
+                    by equating these quantities.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find a second linear equation in <m>x</m>, <m>y</m>, and
+                    <m>z</m> by equating the number of oxygen atoms before and
+                    after the reaction.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Describe the solutions of this linear system.
+                    Why would you expect infinitely many solutions when
+                    balancing a chemical reaction?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    In this chemical setting, <m>x</m>, <m>y</m>, and <m>z</m>
+                    should be positive integers.
+                    Find the solution where <m>x</m>, <m>y</m>, and <m>z</m> are
+                    the smallest possible positive integers.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    (For a bonus 2 points) Consider the reaction where potassium
+                    permanganate and manganese sulfate combine with water to
+                    produce manganese dioxide, potassium sulfate, and sulfuric
+                    acid:
+                    <md>
+                        x_1\thinspace \mbox{K}\mbox{Mn}\mbox{O}_4 + 
   x_2\thinspace \mbox{Mn}\mbox{S}\mbox{O}_4 + 
   x_3\thinspace \mbox{H}_2\mbox{O} \to
   x_4\thinspace \mbox{Mn}\mbox{O}_2 + 
   x_5\thinspace \mbox{K}_2\mbox{S}\mbox{O}_4 + 
   x_6\thinspace \mbox{H}_2\mbox{S}\mbox{O}_4.
-  </md>
-  As in the previous exercise, find the appropriate values for
-  <m>x_1,x_2,\ldots, x_6</m> to balance the chemical reaction.</p>
-      </statement>
-    </task>
-  </exercise>
-
+                    </md>
+                    As in the previous exercise, find the appropriate values for
+                    <m>x_1,x_2,\ldots, x_6</m> to balance the chemical reaction.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>

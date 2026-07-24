@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<worksheet>
-  <title>Section 1.4 - Pivots and their influence on solution spaces</title>
 
-  <exercise>
-    <introduction>
-      <p>Shown below are three augmented matrices in reduced row echelon
-  form.  For each matrix, identify the pivot positions and describe
-  the solution space in <em>parametric form</em> (if any solutions exist).</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p><m>
+<worksheet>
+    <title>Section 1.4 - Pivots and their influence on solution spaces</title>
+
+    <exercise>
+        <introduction>
+            <p>
+                Shown below are three augmented matrices in reduced row echelon
+                form.
+                For each matrix, identify the pivot positions and describe the
+                solution space in <em>parametric form</em> (if any solutions
+                exist).
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>
   \left[
     \begin{array}{rrr|r}
       1 \amp 0 \amp 0 \amp 3 \\
@@ -19,19 +26,40 @@
       0 \amp 0 \amp 0 \amp 0 \\
     \end{array}
   \right]
-  </m></p>
-      </statement>
-      <solution>
-        <p>
-          There are three pivots located in the 1st row and 1st column, 2nd row and 2nd column, and 3rd row and 3rd column.
-          The solution in parametric form is <m>x_1 = 3</m>, <m>x_2 = 0</m>, and <m>x_3 = -2</m>. This means that there is one
-          unique solution of <m>{(x_1,x_2,x_3) = (3,0,-2)}</m>.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>
+  </m>
+                </p>
+            </statement>
+
+            <solution component="05-solutions">
+                <p>
+                    <m>
+  \left[
+    \begin{array}{rrr|r}
+      \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 3 \\
+      0 \amp \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \\
+      0 \amp 0 \amp \textbf{\textcolor{blue}{1}} \amp -2 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+  </m>
+                </p>
+
+                <p>
+                    There are three pivots located in the 1st row and 1st
+                    column, 2nd row and 2nd column, and 3rd row and 3rd column.
+                    See bold blue entries above.
+                    The solution in parametric form is <m>x_1 = 3</m>,
+                    <m>x_2 = 0</m>, and <m>x_3 = -2</m>.
+                    This means that there is one unique solution of
+                    <m>{(x_1,x_2,x_3) = (3,0,-2)}</m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>
   \left[
     \begin{array}{rrr|r}
       1 \amp 0 \amp 2 \amp 3 \\
@@ -40,27 +68,51 @@
       0 \amp 0 \amp 0 \amp 0 \\
     \end{array}
   \right]
-  </m></p>
-      </statement>
-      <solution>
-        <p>
-          There are two pivots located in the 1st row and 1st column and 2nd row and 2nd column.
-          Reading from the matrix, we have the following system of equations:
-          <md>\ds
+  </m>
+                </p>
+            </statement>
+
+            <solution component="05-solutions">
+                <p>
+                    <m>
+  \left[
+    \begin{array}{rrr|r}
+      \textbf{\textcolor{blue}{1}} \amp 0 \amp 2 \amp 3 \\
+      0 \amp \textbf{\textcolor{blue}{1}} \amp -1 \amp 0 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+      0 \amp 0 \amp 0 \amp 0 \\
+    \end{array}
+  \right]
+  </m>
+                </p>
+
+                <p>
+                    There are two pivots located in the 1st row and 1st column
+                    and 2nd row and 2nd column.
+                    See bold blue entries above.
+                    Reading from the matrix, we have the following system of
+                    equations:
+                    <md>
+                        \ds
   \begin{alignedat}{4}
-    x_1 \amp {}+{} 2x_3 \amp  {}={}  \amp 3 \\
-    x_2 \amp  {}-{} \phantom{2}x_3 \amp  {}={}  \amp 0 \\
+    x_1 \amp {}+{} \amp 2x_3 \amp  {}={}  \amp 3 \\
+    x_2 \amp  {}-{} \amp x_3 \amp  {}={}  \amp 0 \\
   \end{alignedat}
-  </md>
-  where <m>x_3</m> is free since there is no pivot in the column corresponding to that variable.  Writing these equations
-  in parametric form we then have: <m>{x_1 = -2x_3 + 3}</m> and <m>x_2 = x_3</m>.  Due to <m>x_3</m> being free,
-  this system of equations has infinitely many solutions.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>
+                    </md>
+                    where <m>x_3</m> is free since there is no pivot in the
+                    column corresponding to that variable.
+                    Writing these equations in parametric form we then have:
+                    <m>{x_1 = -2x_3 + 3}</m> and <m>x_2 = x_3</m>.
+                    Due to <m>x_3</m> being free, this system of equations has
+                    infinitely many solutions.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>
   \left[
     \begin{array}{rrr|r}
       1 \amp 0 \amp 2 \amp 0 \\
@@ -69,111 +121,165 @@
       0 \amp 0 \amp 0 \amp 0 \\
     \end{array}
   \right]
-  </m></p>
-      </statement>
-      <solution>
-        <p>
-          There are three pivots located in the 1st row and 1st column, 2nd row and 2nd column and 3rd row and 4th column.
-          This system has no solutions due to the third row, which has a pivot in the rightmost column of the augmented matrix.  This third row yields the equation <m>0*x_3 = 1</m>, which
-          is not mathematically possible.  Therefore, there are no solutions. 
-        </p>
-      </solution>
-    </task>
-  </exercise>
+  </m>
+                </p>
+            </statement>
 
-  <exercise workspace=".5in">
-    <statement>
-      <p>Each of these augmented matrices above has a row in
-  which each entry is zero.  What, if anything, does the
-  presence of such a row tell us about the solution space to the
-  linear system?</p>
-    </statement>
-    <solution>
-      <p>
-        Since all possibilities for the number of solutions (one, zero, or infinite) appear when there is a 
-        row of all zeros, we can't make any conclusions. When having a full row of zeros, one can only make
-        conclusions about the number of solutions when the size of the matrix, the number of pivots, and the location of the pivots are known.
-        For example, in Problem 1(a) above, every column of the coefficient matrix has a pivot, indicating one solution -- therefore,
-        the row of zeros has no impact on whether the system is consistent/inconsistent. For Problem 1(b) above, the row
-        of zeros removes one of the pivots from the coefficient matrix, which introduces a free variable.  Therefore,
-        this row of zeros has an impact of creating an infinite solution set. We also see above in Problem 1(c) that there can be a row 
-        of all zeros and also a row that leads to an inconsistent system.
-      </p>
-    </solution>
-  </exercise>
-
-  <exercise workspace="1.5in">
-    <statement>
-      <p>Give an example of a <m>3\times5</m> augmented matrix
-  in reduced row echelon form that represents a consistent
-  system.  Indicate the pivot positions in your matrix and
-  explain why these pivot positions guarantee a consistent
-  system.</p>
-    </statement>
-    <solution>
-      <p><md>
+            <solution component="05-solutions">
+                <p>
+                    <m>
   \left[
-    \begin{array}{rrrr|r}
-      1 \amp 0 \amp 0 \amp 0 \amp 3 \\
-      0 \amp 1 \amp 0 \amp 0 \amp 4\\
-      0 \amp 0 \amp 0 \amp 1 \amp 5 \\
+    \begin{array}{rrr|r}
+      \textbf{\textcolor{blue}{1}} \amp 0 \amp 2 \amp 0 \\
+      0 \amp \textbf{\textcolor{blue}{1}} \amp -1 \amp 0 \\
+      0 \amp 0 \amp 0 \amp \textbf{\textcolor{blue}{1}} \\
+      0 \amp 0 \amp 0 \amp 0 \\
     \end{array}
   \right]
-  </md></p>
-      <p>
-        In this sample matrix, there is a pivot in every row of the coefficient
-        matrix and there is no pivot in the rightmost column of the augmented matrix.
-        Therefore, this system is consistent.
-      </p>
-    </solution>
-  </exercise>
+  </m>
+                </p>
 
-  <exercise workspace="1.5in">
-    <statement>
-      <p>Give an example of a <m>3\times5</m> augmented matrix in
-  reduced row echelon form that represents an inconsistent
-  system.  Indicate the pivot positions in your matrix and
-  explain why these pivot positions guarantee an inconsistent
-  system.</p>
-    </statement>
-    <solution>
-      <p><md>
-  \left[
+                <p>
+                    There are three pivots located in the 1st row and 1st
+                    column, 2nd row and 2nd column and 3rd row and 4th column.
+                    See bold blue entries above.
+                    This system has no solutions due to the third row, which has
+                    a pivot in the rightmost column of the augmented matrix.
+                    This third row yields the equation <m>0*x_3 = 1</m>, which
+                    is not mathematically possible.
+                    Therefore, there are no solutions.
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace=".5in">
+        <statement>
+            <p>
+                Each of these augmented matrices above has a row in which each
+                entry is zero.
+                What, if anything, does the presence of such a row tell us about
+                the solution space to the linear system?
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                Since all possibilities for the number of solutions (one, zero,
+                or infinite) appear when there is a row of all zeros, we can't
+                make any conclusions.
+                When having a full row of zeros, one can only make conclusions
+                about the number of solutions when the size of the matrix, the
+                number of pivots, and the location of the pivots are known.
+                For example, in Problem 1(a) above, every column of the
+                coefficient matrix has a pivot, indicating one solution --
+                therefore, the row of zeros has no impact on whether the system
+                is consistent/inconsistent.
+                For Problem 1(b) above, the row of zeros removes one of the
+                pivots from the coefficient matrix, which introduces a free
+                variable.
+                Therefore, this row of zeros has an impact of creating an
+                infinite solution set.
+                We also see above in Problem 1(c) that there can be a row of all
+                zeros and also a row that leads to an inconsistent system.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1.5in">
+        <statement>
+            <p>
+                Give an example of a <m>3\times5</m> augmented matrix in reduced
+                row echelon form that represents a consistent system.
+                Indicate the pivot positions in your matrix and explain why
+                these pivot positions guarantee a consistent system.
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                <md>
+                    \left[
     \begin{array}{rrrr|r}
-      1 \amp 0 \amp 0 \amp 0 \amp 0 \\
-      0 \amp 1 \amp 0 \amp 0 \amp 0\\
-      0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+      \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 0 \amp 3 \\
+      0 \amp \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 4\\
+      0 \amp 0 \amp 0 \amp \textbf{\textcolor{blue}{1}} \amp 5 \\
     \end{array}
   \right]
-  </md></p>
-      <p>
-        In this sample matrix, there is a pivot the rightmost column of the augmented matrix.
-        This represents an equation of <m>0 = 1</m>, or more specifically, <m>{0x_1+0x_2+0x_3+0x_4=1}</m>,
-        which has no solutions (inconsistent).
-      </p>
-    </solution>
-  </exercise>
+                </md>
+            </p>
 
-  <exercise workspace="1.1in">
-    <statement>
-      <p>How do the pivot positions <term>in an augmented matrix</term> determine whether a linear system is
-  consistent or not?</p>
-    </statement>
-    <solution>
-      <p>
-        If there is a pivot in the last column, then the system is inconsistent (no solutions).
-        If there is no pivot in the last column, then the system is consistent (1 or infinitely many solutions).
-      </p>
-    </solution>
-  </exercise>
+            <p>
+                In this sample matrix, there is a pivot in every row of the
+                coefficient matrix and there is no pivot in the rightmost column
+                of the augmented matrix.
+                Therefore, this system is consistent.
+            </p>
+        </solution>
+    </exercise>
 
-  <exercise workspace="1.5in">
-    <statement>
-      <p>Suppose we have a linear system for
-  which the <em>coefficient</em> matrix has the following
-  reduced row echelon form. (The coefficient matrix is where we just don't write the last column of the augmented matrix, just the coefficients of the variables <m>{x_1,\dots, x_n}</m>.)
-  <md>
-  \left[
+    <exercise workspace="1.5in">
+        <statement>
+            <p>
+                Give an example of a <m>3\times5</m> augmented matrix in reduced
+                row echelon form that represents an inconsistent system.
+                Indicate the pivot positions in your matrix and explain why
+                these pivot positions guarantee an inconsistent system.
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                <md>
+                    \left[
+    \begin{array}{rrrr|r}
+      \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 0 \amp 0 \\
+      0 \amp \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 0\\
+      0 \amp 0 \amp 0 \amp 0 \amp \textbf{\textcolor{blue}{1}} \\
+    \end{array}
+  \right]
+                </md>
+            </p>
+
+            <p>
+                In this sample matrix, there is a pivot the rightmost column of
+                the augmented matrix.
+                This represents an equation of <m>0 = 1</m>, or more
+                specifically, <m>{0x_1+0x_2+0x_3+0x_4=1}</m>, which has no
+                solutions (inconsistent).
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1.1in">
+        <statement>
+            <p>
+                How do the pivot positions <term>in an augmented matrix</term>
+                determine whether a linear system is consistent or not?
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                If there is a pivot in the last column, then the system is
+                inconsistent (no solutions).
+                If there is no pivot in the last column, then the system is
+                consistent (1 or infinitely many solutions).
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1.5in">
+        <statement>
+            <p>
+                Suppose we have a linear system for which the
+                <em>coefficient</em> matrix has the following reduced row
+                echelon form.
+                (The coefficient matrix is where we just don't write the last
+                column of the augmented matrix, just the coefficients of the
+                variables <m>{x_1,\dots, x_n}</m>.)
+                <md>
+                    \left[
     \begin{array}{rrrrr}
       1 \amp 0 \amp 0 \amp 0 \amp -1 \\
       0 \amp 1 \amp 0 \amp 0 \amp 2  \\
@@ -181,27 +287,50 @@
       0 \amp 0 \amp 0 \amp 1 \amp -3 \\
     \end{array}
   \right]
-  </md>
-  Even though we don't have any information about the right-hand side
-  of the equations, what can you say about the consistency of the
-  linear system?  Explain your thinking.</p>
-    </statement>
-    <solution>
-      <p>
-        This system is consistent regardless of the right hand side of the equation.
-        This is because there is a pivot in every row (namely 1st row and column, 2nd row and column,
-        3rd row and column, and 4th row and column), which means that there aren't any more
-        possible pivots for this system.  Hence, there can't be a pivot in the augmented column.  Therefore,
-        by Problem 5, the system is consistent.
-      </p>
-    </solution>
-  </exercise>
+                </md>
+                Even though we don't have any information about the right-hand
+                side of the equations, what can you say about the consistency of
+                the linear system?
+                Explain your thinking.
+            </p>
+        </statement>
 
-  <exercise>
-    <introduction>
-      <p>The following augmented matrix is in reduced row echelon form.</p>
-      <p><md>
-  \left[
+        <solution component="05-solutions">
+            <p>
+                <md>
+                    \left[
+    \begin{array}{rrrrr}
+      \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 0 \amp -1 \\
+      0 \amp \textbf{\textcolor{blue}{1}} \amp 0 \amp 0 \amp 2  \\
+      0 \amp 0 \amp \textbf{\textcolor{blue}{1}} \amp 0 \amp 0  \\
+      0 \amp 0 \amp 0 \amp \textbf{\textcolor{blue}{1}} \amp -3 \\
+    \end{array}
+  \right]
+                </md>
+            </p>
+
+            <p>
+                This system is consistent regardless of the right hand side of
+                the equation.
+                This is because there is a pivot in every row (namely 1st row
+                and column, 2nd row and column, 3rd row and column, and 4th row
+                and column -- see bold blue entries above), which means that
+                there aren't any more possible pivots for this system.
+                Hence, there can't be a pivot in the augmented column.
+                Therefore, by Problem 5, the system is consistent.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                The following augmented matrix is in reduced row echelon form.
+            </p>
+
+            <p>
+                <md>
+                    \left[
     \begin{array}{rrrrr|r}
       1 \amp -2 \amp 0 \amp 4 \amp 0 \amp 2 \\
       0 \amp 0 \amp 1 \amp 3 \amp 0 \amp -1 \\
@@ -209,87 +338,122 @@
       0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 \\
     \end{array}
   \right]
-  </md></p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Describe the solution space in parametric form.</p>
-      </statement>
-      <solution>
-        <p>
-          The equations from the matrix are:
-          <md>\ds
+                </md>
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Describe the solution space in parametric form.
+                </p>
+            </statement>
+
+            <solution component="05-solutions">
+                <p>
+                    The equations from the matrix are:
+                    <md>
+                        \ds
   \begin{alignedat}{4}
-    x_1  {}-{} 2x_2 {}+{} 4x_4 \amp   {}={} \amp  2 \\
-   \phantom{2}x_3 {}+{} 3x_4 \amp  {}={} \amp -1 \\
-    x_5 \amp   {}={} \amp  4 \\
-  \end{alignedat} 
-  </md>
-  This leads to the parametric form of:
-  <md>\ds
+     x_1  {}-{} 2x_2 {}+{} 4x_4 \amp   {}={} \amp  2 \\
+     x_3 {}+{} 3x_4 \amp  {}={} \amp -1 \\
+     x_5 \amp   {}={} \amp  4 \\
+  \end{alignedat}
+                    </md>
+                    This leads to the parametric form of:
+                    <md>
+                        \ds
   \begin{alignedat}{4}
     x_1 \amp {}={} 2x_2 - 4x_4 + 2 \\
     x_3 \amp {}={} -3x_4 - 1 \\
     x_5 \amp {}={} 4 \\
-  \end{alignedat} 
-  </md>
-  where <m>x_2, x_4</m> are free.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>In the solution set a variable is called a <em>free variable</em> if there is no restriction on that value. All other variables are called <em>basic variables</em>. Identify the basic and free variables.</p>
-      </statement>
-      <solution>
-        <p>
-          The free variables are: <m>x_2, x_4</m>.
-        </p>
-        <p>
-          The basic variables are: <m>x_1, x_3, x_5</m>.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What's the connection between pivot positions and basic/free variables?</p>
-      </statement>
-      <solution>
-        <p>
-          A variable is basic if the corresponding column has a pivot.  Otherwise, it is a free variable.
-        </p>
-      </solution>
-    </task>
-  </exercise>
+  \end{alignedat}
+                    </md>
+                    where <m>x_2, x_4</m> are free.
+                </p>
+            </solution>
+        </task>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>If possible, give an example of a <m>3\times5</m>
-  augmented matrix that corresponds to a system of linear equations
-  having a unique solution. If it is not possible, explain why.</p>
-    </statement>
-    <solution>
-      <p>
-        This is impossible since there can only be 3 pivot positions (since there are only 3 rows).
-        However, a <m>3\times5</m> augmented matrix corresponds to having 4 variables.
-        In order to have a unique solution, there much be a pivot in every column, with the
-        number of pivots equalling the number of variables.
-      </p>
-    </solution>
-  </exercise>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    In the solution set a variable is called a
+                    <em>free variable</em> if there is no restriction on that
+                    value.
+                    All other variables are called <em>basic variables</em>.
+                    Identify the basic and free variables.
+                </p>
+            </statement>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>If possible, give an example of a <m>5\times3</m>
-  augmented matrix that corresponds to a system of linear equations
-  having a unique solution. If it is not possible, explain why.</p>
-    </statement>
-    <solution>
-      <p>
-        This is possible! 
-      </p>
-      <p><md>
-  \left[
+            <solution component="05-solutions">
+                <p>
+                    The free variables are: <m>x_2, x_4</m>.
+                </p>
+
+                <p>
+                    The basic variables are: <m>x_1, x_3, x_5</m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What's the connection between pivot positions and basic/free
+                    variables?
+                </p>
+            </statement>
+
+            <solution component="05-solutions">
+                <p>
+                    A variable is basic if the corresponding column has a pivot.
+                    Otherwise, it is a free variable.
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                If possible, give an example of a <m>3\times5</m> augmented
+                matrix that corresponds to a system of linear equations having a
+                unique solution.
+                If it is not possible, explain why.
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                This is impossible since there can only be 3 pivot positions
+                (since there are only 3 rows).
+                However, a <m>3\times5</m> augmented matrix corresponds to
+                having 4 variables.
+                In order to have a unique solution, there much be a pivot in
+                every column, with the number of pivots equalling the number of
+                variables.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                If possible, give an example of a <m>5\times3</m> augmented
+                matrix that corresponds to a system of linear equations having a
+                unique solution.
+                If it is not possible, explain why.
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                This is possible!
+            </p>
+
+            <p>
+                <md>
+                    \left[
     \begin{array}{rr|r}
       1 \amp  0 \amp 2 \\
       0 \amp  1 \amp 3 \\
@@ -298,129 +462,156 @@
       0 \amp  0 \amp 0 \\
     \end{array}
   \right]
-  </md></p>
-  <p>
-    This yields the unique solution <m>{(x_1,x_2) = (2,3)}</m>.
-  </p>
-    </solution>
-  </exercise>
+                </md>
+            </p>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>What condition on the pivot positions guarantees that a system of
-  linear equations has a unique solution?</p>
-    </statement>
-    <solution>
-      <p>
-        If there is a pivot position in every column corresponding to a variable
-        (this does not include the last column of an augmented matrix), there is a 
-        unique solution.
-      </p>
-    </solution>
-  </exercise>
+            <p>
+                This yields the unique solution <m>{(x_1,x_2) = (2,3)}</m>.
+            </p>
+        </solution>
+    </exercise>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>If a system of linear equations has a unique solution, what can we
-  say about the relationship between the number of equations and the
-  number of unknowns?  Use the concept of pivot positions to explain
-  your thinking.</p>
-    </statement>
-    <solution>
-      <p>
-        There must be at least as many rows as columns in the coefficient matrix
-        because this will allow for a pivot position in every column.  Therefore,
-        it must be that the number of equations is greater than or equal to the number of variables.
-      </p>
-    </solution>
-  </exercise>
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                What condition on the pivot positions guarantees that a system
+                of linear equations has a unique solution?
+            </p>
+        </statement>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>For what values of the parameter <m>k</m>  is the following system consistent? For which of those values is the solution unique?
-      </p>
-      <p>
-      <md>\ds
+        <solution component="05-solutions">
+            <p>
+                If there is a pivot position in every column corresponding to a
+                variable (this does not include the last column of an augmented
+                matrix), there is a unique solution.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                If a system of linear equations has a unique solution, what can
+                we say about the relationship between the number of equations
+                and the number of unknowns?
+                Use the concept of pivot positions to explain your thinking.
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                There must be at least as many rows as columns in the
+                coefficient matrix because this will allow for a pivot position
+                in every column.
+                Therefore, it must be that the number of equations is greater
+                than or equal to the number of variables.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                For what values of the parameter <m>k</m> is the following
+                system consistent?
+                For which of those values is the solution unique?
+            </p>
+
+            <p>
+                <md>
+                    \ds
   \begin{alignedat}{4}
     -x_1 {}+{} 2x_2 \amp {}={} \amp  3 \\
     2x_1 {}-{} 4x_2 \amp  {}={} \amp k \\
-  \end{alignedat} 
-  </md>
-</p>
-    </statement>
-    <solution>
-      <p>
-        First, we use Gaussian elimination to get the matrix in row reduced echelon form:
-      </p>
-      <p>
-      <md>
-  \left[
+  \end{alignedat}
+                </md>
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                First, we use Gaussian elimination to get the matrix in row
+                reduced echelon form:
+            </p>
+
+            <p>
+                <md>
+                    <mrow>
+                    \left[
     \begin{array}{rr|r}
       -1 \amp  2 \amp 3 \\
       2 \amp  -4 \amp k \\
     \end{array}
-  \right] \stackrel{(-1*R1) \rightarrow R1}{\widetilde{\phantom{10298392}}} \left[
+  \right] \amp \xrightarrow{(-1*R1) \rightarrow R1} \amp \left[
     \begin{array}{rr|r}
       1 \amp  -2 \amp -3 \\
       2 \amp  -4 \amp k \\
     \end{array}
-  \right] 
-      </md>
-    </p>
-    <p>
-      <md>
-   \phantom{\left[
-    \begin{array}{rr|r}
-      -1 \amp  2 \amp 3 \\
-      2 \amp  -4 \amp k \\
-    \end{array}
-  \right]} \stackrel{(R2-2*R1) \rightarrow R2}{\widetilde{\phantom{10298392}}} \left[
+  \right]
+                </mrow>
+                    <mrow>
+                    \amp \xrightarrow{(R2 - 2*R1) \rightarrow R2} \amp \left[
     \begin{array}{rr|r}
       1 \amp  -2 \amp -3 \\
       0 \amp  0 \amp k+6 \\
     \end{array}
   \right]
-  </md>
-</p>
-      <p>
-        In order to have a consistent system, there can be no pivot in the rightmost column.
-        Therefore, this system is consistent when <m>k+6 = 0 \Rightarrow k = -6</m>. 
-        There will never be a unique solution because there is no pivot in the second column.
-        As long as <m>k = -6</m>, there are infinitely many solutions.
-      </p>
-    </solution>
-  </exercise>
+                </mrow>
+                </md>
+            </p>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Say we have <m>(1,12)</m>, <m>(2,9)</m>, and <m>(3,5)</m>.  Find a polynomial
-        of degree 2 of the form
-        <md>
-          f(x) = ax^2 + bx + c
-        </md>
-        whose graph passes through these points.
-      </p>
-    </statement>
-    <solution>
-      <p>
-        For all of the given points <m>(x,y)</m>, we want it to be true that <m>f(x) = y</m>.  
-        However, we also have that <m>{f(x) = ax^2 + bx + c}</m>.  Combining these elements, we have the 
-        following system of equations:
-      </p>
-      <p>
-      <md>\ds
+            <p>
+                In order to have a consistent system, there can be no pivot in
+                the rightmost column.
+                Therefore, this system is consistent when
+                <m>k+6 = 0 \Rightarrow k = -6</m>.
+                There will never be a unique solution because there is no pivot
+                in the second column.
+                As long as <m>k = -6</m>, there are infinitely many solutions.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                Say we have <m>(1,12)</m>, <m>(2,9)</m>, and <m>(3,5)</m>.
+                Find a polynomial of degree 2 of the form
+                <md>
+                    f(x) = ax^2 + bx + c
+                </md>
+                whose graph passes through these points.
+            </p>
+        </statement>
+
+        <solution component="05-solutions">
+            <p>
+                For all of the given points <m>(x,y)</m>, we want it to be true
+                that <m>f(x) = y</m>.
+                However, we also have that <m>{f(x) = ax^2 + bx + c}</m>.
+                Combining these elements, we have the following system of
+                equations:
+            </p>
+
+            <p>
+                <md>
+                    \ds
   \begin{alignedat}{4}
     12 \amp {}={} \amp f(1) \amp {}={} \amp a*1 {}+{} b*1 {}+{} c  \\
     9 \amp {}={} \amp f(2) \amp {}={} \amp a*4 {}+{} b*2 {}+{} c  \\
     5 \amp {}={} \amp f(3) \amp {}={} \amp a*9 {}+{} b*3 {}+{} c  \\
-  \end{alignedat} 
-  </md>
-</p>
-<p>
-  We then have the corresponding augmented matrix, on which we can perform Gaussian Elimination to find the solution:
-</p>
-<p><md>
-  \left[
+  \end{alignedat}
+                </md>
+            </p>
+
+            <p>
+                We then have the corresponding augmented matrix, on which we can
+                perform Gaussian Elimination to find the solution:
+            </p>
+
+            <p>
+                <md>
+                    \left[
     \begin{array}{rrr|r}
       1 \amp  1 \amp 1 \amp 12 \\
       4 \amp  2 \amp 1 \amp 9 \\
@@ -433,60 +624,108 @@
       0 \amp  0 \amp 1 \amp 14 \\
     \end{array}
   \right]
-  </md></p>
-  <p>
-    This yields a unique solution of <m>(a,b,c) = (-1/2, -3/2, 14)</m>, giving the
-    degree two polynomial of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m>.
-  </p>
-  <sage>
-<input>
+                </md>
+            </p>
+
+            <p>
+                This yields a unique solution of
+                <m>(a,b,c) = (-1/2, -3/2, 14)</m>, giving the degree two
+                polynomial of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m>.
+            </p>
+            <sage>
+                <input>
 A = matrix(3,4,[1,1,1,12,
                 4,2,1,9,
                 9,3,1,5])
 A.rref()
-</input>
-<output>
+                </input>
+                <output>
 [1 0 0 -1/2]
 [0 1 0 -3/2]
 [0 0 1 14]
-</output>
-</sage>
-  <image>
-<shortdescription>Graph of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m> going through the 3 given points.</shortdescription>
-<prefigure xmlns="https://prefigure.org" label="05-1-4_1">
-<diagram dimensions="(300,300)" margins="5">
-  <definition>f(x)=-x^2/2-3*x/2+14</definition>
-  <definition>a = 1</definition>
-  <coordinates bbox="(-15,-15,15,20)">
-    <grid-axes xlabel="x" ylabel="f(x)"/>
-    <graph function="f"/>
-    <point p="(1,12)" alignment="ne" fill="orange">
-      <m>(1,12)</m>
-    </point>
-    <point p="(2,9)" alignment="ne" fill="orange">
-      <m>(2,9)</m>
-    </point>
-    <point p="(3,5)" alignment="ne" fill="orange">
-      <m>(3,5)</m>
-    </point>
-  </coordinates>
-</diagram>
-</prefigure>
-</image>
-    </solution>
-  </exercise>
+                </output>
+            </sage>
 
-  <outcomes>
-    <introduction>
-      <p>Make sure you can answer the following questions:</p>
-    </introduction>
-    <ul>
-      <li><p>What's a free variable? What's a basic variable?</p></li>
-      <li><p>What is a pivot position?</p></li>
-      <li><p>What is a consistent system?</p></li>
-      <li><p>How can you tell that a linear system is inconsistent using the pivot positions of the corresponding augmented matrix?</p></li>
-      <li><p>How can you tell a linear system has infinitely many solutions based on the pivot positions of the corresponding coefficient matrix?</p></li>
-    </ul>
-  </outcomes>
+            <image>
+                <shortdescription>
+                    Graph of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m>
+                    going through the 3 given points.
+                </shortdescription>
+                <prefigure xmlns="https://prefigure.org" label="05-1-4_1">
+                    <diagram dimensions="(300,300)" margins="5">
+                        <definition>
+                            f(x)=-x^2/2-3*x/2+14
+                        </definition>
 
+                        <definition>
+                            a = 1
+                        </definition>
+                        <coordinates bbox="(-15,-15,15,20)">
+                            <grid-axes xlabel="x" ylabel="f(x)"/>
+                            <graph function="f"/>
+                            <point p="(1,12)" alignment="ne" fill="orange">
+                                <m>
+                                    (1,12)
+                                </m>
+                            </point>
+                            <point p="(2,9)" alignment="ne" fill="orange">
+                                <m>
+                                    (2,9)
+                                </m>
+                            </point>
+                            <point p="(3,5)" alignment="ne" fill="orange">
+                                <m>
+                                    (3,5)
+                                </m>
+                            </point>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+        </solution>
+    </exercise>
+
+    <outcomes>
+        <introduction>
+            <p>
+                Make sure you can answer the following questions:
+            </p>
+        </introduction>
+
+        <ul>
+            <li>
+                <p>
+                    What's a free variable?
+                    What's a basic variable?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    What is a pivot position?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    What is a consistent system?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How can you tell that a linear system is inconsistent using
+                    the pivot positions of the corresponding augmented matrix?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How can you tell a linear system has infinitely many
+                    solutions based on the pivot positions of the corresponding
+                    coefficient matrix?
+                </p>
+            </li>
+        </ul>
+    </outcomes>
 </worksheet>

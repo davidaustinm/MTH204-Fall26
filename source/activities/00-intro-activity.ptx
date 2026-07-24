@@ -1,170 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>Introduction Activity - Color Wheel</title>
+    <title>Introduction Activity - Color Wheel</title>
 
-  <introduction>
-    <p>
-      Go to the website: <url href="https://trycolors.com/mixer" visual="trycolors.com/mixer">trycolors.com/mixer</url>. Play around with the colors. Not you can add more of a color by clicking on it, or less of it by clicking the minus sign below it.
-    </p>
-  </introduction>
+    <introduction>
+        <p>
+            Go to this
+            <url href="https://trycolors.com/mixer" visual="trycolors.com/mixer">website</url>.
+            Play around with the colors.
+            Not you can add more of a color by clicking on it, or less of it by
+            clicking the minus sign below it.
+        </p>
+    </introduction>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        Can you get any color you want to?
-      </p>
-    </statement>
-    <solution>
-      <p>
-        Sure! "Span is all colors."
-      </p>
-    </solution>
-  </exercise>
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Can you get any color you want to?
+            </p>
+        </statement>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        Using only Yellow and Red, what colors can you get?
-      </p>
-    </statement>
-    <solution>
-      <p>
-        Yellows, oranges, and reds -- you can't get all of them.
-      </p>
-    </solution>
-  </exercise>
+        <solution component="00-solutions">
+            <p>
+                Sure!
+                "Span is all colors."
+            </p>
+        </solution>
+    </exercise>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        Using only Yellow, Red, and Blue, what colors can you get? What colors can't you
-get?
-      </p>
-    </statement>
-    <solution>
-      <p>
-        In theory, these are primary colors, so you should be able to get all of them.
-      </p>
-    </solution>
-  </exercise>
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Using only Yellow and Red, what colors can you get?
+            </p>
+        </statement>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        What color do you get if you use 1 Yellow, 2 Red, and 2 Blue? What about 1 Yellow,
-2 Red, and 3 Blue?
-      </p>
-    </statement>
-    <solution>
-      <p> With 1 Yellow, 2 Red, and 2 Blue, you get the color Copper Rust with hex #994C44.
-      </p>
-      <image>
-<shortdescription>Color mixer results for 1 Yellow, 2 Red, and 2 Blue.</shortdescription>
-<prefigure xmlns="https://prefigure.org" label="00-intro_1">
-<diagram dimensions="(300,300)" margins="5"
-         xmlns="https://prefigure.org">
-  <coordinates bbox="(0,0,10,10)">
-    <image lower-left="(0,0)" dimensions="(10,10)"
-           source="images/01-intro-rust.png">
-           <label anchor="(0,10)" alignment="se">
-        A picture of the color Copper Rust with hex #994C44.
-      </label>
-    </image>
-    </coordinates>
-</diagram>
-</prefigure>
-</image>
-    <p> With 1 Yellow, 2 Red, and 3 Blue, you get the color Ferra with hex #804B56.
-      </p>
-      <image>
-<shortdescription>Color mixer results for 1 Yellow, 2 Red, and 3 Blue.</shortdescription>
-<prefigure xmlns="https://prefigure.org" label="00-intro_2">
-<diagram dimensions="(300,300)" margins="5"
-         xmlns="https://prefigure.org">
-  <coordinates bbox="(0,0,10,10)">
-    <image lower-left="(0,0)" dimensions="(10,10)"
-           source="images/01-intro-ferra.png">
-           <label anchor="(0,10)" alignment="se">
-        A picture of the color Ferra with hex #804B56.
-      </label>
-    </image>
-  </coordinates>
-</diagram>
-</prefigure>
-</image>
-    </solution>
-  </exercise>
+        <solution component="00-solutions">
+            <p>
+                Yellows, oranges, and reds -- you can't get all of them.
+            </p>
+        </solution>
+    </exercise>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        Using Yellow, Blue, and Green, can you get the color Green in more than one way?
-      </p>
-    </statement>
-  </exercise>
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Using only Yellow, Red, and Blue, what colors can you get?
+                What colors can't you get?
+            </p>
+        </statement>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        Using only Yellow and Blue, how many Yellow and Blue do you need to get the
-following color:
-      </p>
-<image>
-<shortdescription>Color mixer for Jade with hex #46747C.</shortdescription>
-<prefigure xmlns="https://prefigure.org" label="00-intro_3">
-<diagram dimensions="(300,300)" margins="5"
-         xmlns="https://prefigure.org">
-  <coordinates bbox="(0,0,10,10)">
-    <image lower-left="(0,0)" dimensions="(10,10)"
-           source="images/01-intro-jade.png">
-           <label anchor="(0,10)" alignment="se">
-        A picture of the color Jade with hex #46747C.
-      </label>
-    </image>
-  </coordinates>
-</diagram>
-</prefigure>
-</image>
-      <p>
-        Is there more than one way to get this color?
-      </p>
+        <solution component="00-solutions">
+            <p>
+                In theory, these are primary colors, so you should be able to
+                get all of them.
+            </p>
+        </solution>
+    </exercise>
 
-    </statement>
-    <solution>
-      <p>
-        Yes! You would use 3 yellows and 8 blues.  You could also use 6 yellows and 16 blues.
-      </p>
-    </solution>
-  </exercise>
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                What color do you get if you use 1 Yellow, 2 Red, and 2 Blue?
+                What about 1 Yellow, 2 Red, and 3 Blue?
+            </p>
+        </statement>
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        Is there a difference in color if you have 1 of each, Red, White, and Black, or 2 of
-each (Red, White, and Black)?
-      </p>
-    </statement>
-    <solution>
-      <p>
-        No difference! Both will create the same color.
-      </p>
-      <image>
-<shortdescription>Color mixer for both 1 or 2 of each, Red, White, and Black.</shortdescription>
-<prefigure xmlns="https://prefigure.org" label="00-intro_4">
-<diagram dimensions="(300,300)" margins="5"
-         xmlns="https://prefigure.org">
-  <coordinates bbox="(0,0,10,10)">
-    <image lower-left="(0,0)" dimensions="(10,10)"
-           source="images/01-intro-matrix.png">
-           <label anchor="(0,10)" alignment="se">
-        A picture of the color Matrix with hex #AA5555.
-      </label>
-    </image>
-  </coordinates>
-</diagram>
-</prefigure>
-</image>
-    </solution>
-  </exercise>
+        <solution component="00-solutions">
+            <p>
+                With 1 Yellow, 2 Red, and 2 Blue, you get the color Copper Rust
+                with hex #994C44.
+            </p>
 
+            <image source="images/00-intro-rust.png">
+                <shortdescription>
+                    Color mixer results for 1 Yellow, 2 Red, and 2 Blue.
+                </shortdescription>
+            </image>
+
+            <p>
+                With 1 Yellow, 2 Red, and 3 Blue, you get the color Ferra with
+                hex #804B56.
+            </p>
+
+            <image source="images/00-intro-ferra.png">
+                <shortdescription>
+                    Color mixer results for 1 Yellow, 2 Red, and 3 Blue.
+                </shortdescription>
+            </image>
+        </solution>
+    </exercise>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Using Yellow, Blue, and Green, can you get the color Green in
+                more than one way?
+            </p>
+        </statement>
+        <solution component="00-solutions">
+            <p>
+              One could make the argument either way! 
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Using only Yellow and Blue, how many Yellow and Blue do you need
+                to get the following color:
+            </p>
+
+            <image source="images/00-intro-jade.png">
+                <shortdescription>
+                    Color mixer for Jade with hex #46747C.
+                </shortdescription>
+            </image>
+
+            <p>
+                Is there more than one way to get this color?
+            </p>
+        </statement>
+
+        <solution component="00-solutions">
+            <p>
+                Yes!
+                You would use 3 yellows and 8 blues.
+                You could also use 6 yellows and 16 blues.
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Is there a difference in color if you have 1 of each, Red,
+                White, and Black, or 2 of each (Red, White, and Black)?
+            </p>
+        </statement>
+
+        <solution component="00-solutions">
+            <p>
+                No difference!
+                Both will create the same color.
+            </p>
+
+            <image source="images/00-intro-matrix.png">
+                <shortdescription>
+                    Color mixer for both 1 or 2 of each, Red, White, and Black.
+                </shortdescription>
+            </image>
+        </solution>
+    </exercise>
 </worksheet>
