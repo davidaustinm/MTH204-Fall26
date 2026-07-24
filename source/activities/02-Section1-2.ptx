@@ -1,127 +1,801 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</title>
+    <title>
+        Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)
+    </title>
 
+    <exercise>
+        <introduction>
+            <p>
+                Determine whether the following matrix manipulations (A) must
+                keep or (B) could change the solution set for the corresponding
+                linear system.
+            </p>
+        </introduction>
 
-  <exercise>
-    <introduction>
-      <p>Working with augmented matrices:</p>
-    </introduction>
-    <task workspace="3in">
-      <statement>
-        <p>Write the augmented matrix for the following system of equations
-  and perform Gaussian elimination to describe the solution space
-  of the system of equations in as much detail as you can.</p>
-        <p><m>\ds
-  \begin{alignedat}{4}
-    x \amp  {}+{}  \amp 2y \amp  {}-{}  \amp z \amp  {}={}  \amp 1 \\
-    3x \amp  {}+{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 7 \\
-    -x \amp  \amp  \amp  {}+{}  \amp 4z \amp  {}={}  \amp -3 \\
+        <task workspace="3in">
+            <statement>
+                <p>
+                    Swapping two rows, for example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    4 \amp 5 \amp 6 \\
+                    1 \amp 2 \amp 3 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
   \end{alignedat}
-  </m></p>
-      </statement>
-    </task>
-    <task workspace="1.5in">
-      <statement>
-        <p>Suppose that you have a system of linear equations in the
-  unknowns <m>x</m> and <m>y</m> whose
-  augmented matrix is row equivalent to 
-  <md>
-  \left[
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (A) same exact system!
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    Swapping two columns, for example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    2 \amp 1 \amp 3 \\
+                    5 \amp 4 \amp 6 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  2x \amp  {}+{}  \amp y \amp  {}={}  \amp 3 \\
+    5x \amp  {}+{}  \amp 4y \amp  {}={}  \amp 6 \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (B) changes the names of the variables, so the solution is
+                    reversed.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Add a constant to every term of a row, for example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    1 + 6 \amp 2 + 6 \amp 3 + 6 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  7x \amp  {}+{}  \amp 8y \amp  {}={}  \amp 9 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (B) this is adding <m>6x + 6y</m> to the left, but only
+                    <m>6</m> to the right.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    Multiply a row by a nonzero constant, for example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    3 \amp 6 \amp 9 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  3x \amp  {}+{}  \amp 6y \amp  {}={}  \amp 9 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (A) multiplying an equation by a constant doesn't change the
+                    line.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    Add a constant multiple of one row to another row, for
+                    example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 + 3 \amp 5 + 6 \amp 6 + 9 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  ?x \amp  {}+{}  \amp ?y \amp  {}={}  \amp ? \\
+  ?x \amp  {}+{}  \amp ?y \amp  {}={}  \amp ? \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (A) adding the same thing to both sides still includes the
+                    original line, so we don't lose/change any of the
+                    constraints on the variables <m>x</m> and <m>y</m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    Replace a column with zeros, for example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    1 \amp 0 \amp 3 \\
+                    4 \amp 0 \amp 6 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  ?x \amp  {}+{}  \amp ?y \amp  {}={}  \amp ? \\
+  ?x \amp  {}+{}  \amp ?y \amp  {}={}  \amp ? \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (B) takes <m>y</m> out of the equation; there are no
+                    solutions.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    Replace a row with zeros (i.e., multiply a row by zero), for
+                    example:
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+                    \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    4 \amp 5 \amp 6 \\
+                    \end{array}\right] \sim \left[\begin{array}{rr|r}
+                    1 \amp 2 \amp 3 \\
+                    0 \amp 0 \amp 0 \\
+                    \end{array}\right]
+                    </md>
+                    <md>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 3 \\
+    4x \amp  {}+{}  \amp 5y \amp  {}={}  \amp 6 \\
+  \end{alignedat} \,\,\, \rightarrow \,\,\, \begin{alignedat}{3}
+  ?x \amp  {}+{}  \amp ?y \amp  {}={}  \amp ? \\
+  ?x \amp  {}+{}  \amp ?y \amp  {}={}  \amp ? \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    (B) we lose a constraint on the variables <m>x</m> and
+                    <m>y</m> from the equation <m>4x+5y=6</m>.
+                    The equation <m>0x+0y=0</m> has all <m>x</m> and <m>y</m>
+                    values as solutions.
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <p>
+        The following are called the "Elementary Row Operations." These are
+        things we can do to an augmented matrix and not change the solution set.
+        <ol>
+            <li>
+                Swap two rows, for example <m>R_1 \leftrightarrow R_2</m>:
+                <md>
+                    \left[\begin{array}{rr|r}
+  1 \amp 2 \amp 3 \\
+  4 \amp 5 \amp 6 \\
+  \end{array}\right] \sim \left[\begin{array}{rr|r}
+  4 \amp 5 \amp 6 \\
+  1 \amp 2 \amp 3 \\
+  \end{array}\right]
+                </md>
+            </li>
+
+            <li>
+                Multiply a row by a nonzero constant, for example,
+                <m>2R_1 \rightarrow R_1</m>:
+                <md>
+                    \left[\begin{array}{rr|r}
+  1 \amp 2 \amp 3 \\
+  4 \amp 5 \amp 6 \\
+  \end{array}\right] \sim \left[\begin{array}{rr|r}
+  2(1) \amp 2(2) \amp 2(3) \\
+  4 \amp 5 \amp 6 \\
+  \end{array}\right]
+                </md>
+            </li>
+
+            <li>
+                Add a constant multiple of one row to another row, for example,
+                <m>{(R_2 + (-4)R_1) \rightarrow R_2}</m>:
+                <md>
+                    \left[\begin{array}{rr|r}
+  1 \amp 2 \amp 3 \\
+  4 \amp 5 \amp 6 \\
+  \end{array}\right] \sim \left[\begin{array}{rr|r}
+  1 \amp 2 \amp 3 \\
+  4 + (-4)(1) \amp 5 + (-4)(2) \amp 6 + (-4)(3) \\
+  \end{array}\right]
+                </md>
+            </li>
+        </ol>
+        Observe that we will use the following notation: (Combination of old
+        rows) <m>\rightarrow</m> (New row).
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Working with augmented matrices:
+            </p>
+        </introduction>
+
+        <task workspace="3in">
+            <statement>
+                <p>
+                    Write the augmented matrix for the following system of
+                    equations and perform Gaussian elimination to describe the
+                    solution space of the system of equations in as much detail
+                    as you can.
+                </p>
+
+                <p>
+                    <md>
+                        \ds
+  \begin{alignedat}{4}
+    x \amp  {}+{}  \amp y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 1 \\
+    2x \amp  {}-{}  \amp y \amp  {}-{}  \amp 2z \amp  {}={}  \amp 2 \\
+    -x \amp  {}+{}  \amp y  \amp  {}+{}  \amp z \amp  {}={}  \amp 0 \\
+  \end{alignedat}
+                    </md>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    2 \amp -1 \amp -2 \amp 2 \\
+                    -1 \amp 1 \amp 1 \amp 0 \\
+                  \end{array}\right] \amp \xrightarrow{(-2R1+R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    0 \amp -3 \amp -6 \amp 0 \\
+                    -1 \amp 1 \amp 1 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1+R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    0 \amp -3 \amp -6 \amp 0 \\
+                    0 \amp 2 \amp 3 \amp 1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(\frac{-1}{3})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    0 \amp 1 \amp 2 \amp 0 \\
+                    0 \amp 2 \amp 3 \amp 1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R3 + (-2)R2) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    0 \amp 1 \amp 2 \amp 0 \\
+                    0 \amp 0 \amp -1 \amp 1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(-1)(R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    0 \amp 1 \amp 2 \amp 0 \\
+                    0 \amp 0 \amp 1 \amp -1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R2 + (-2)R3) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 2 \amp 1 \\
+                    0 \amp 1 \amp 0 \amp 2 \\
+                    0 \amp 0 \amp 1 \amp -1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1 + (-2)R3) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 1 \amp 0 \amp 3 \\
+                    0 \amp 1 \amp 0 \amp 2 \\
+                    0 \amp 0 \amp 1 \amp -1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1 + (-1)R2) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 0 \amp 0 \amp 1 \\
+                    0 \amp 1 \amp 0 \amp 2 \\
+                    0 \amp 0 \amp 1 \amp -1 \\
+                  \end{array}\right]
+                  </mrow>
+                    </md>
+                    This yields the solution <m>x = 1</m>, <m>y = 2</m>, and
+                    <m>z = -1</m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    Suppose that you have a system of linear equations in the
+                    unknowns <m>x</m> and <m>y</m> whose augmented matrix is row
+                    equivalent to
+                    <md>
+                        \left[
     \begin{array}{rr|r}
       1 \amp 0 \amp 3 \\ 
       0 \amp 1 \amp 0 \\ 
       0 \amp 0 \amp 0 \\
     \end{array}
   \right].
-  </md>
-  Write the system of linear equations corresponding to the
-  augmented matrix.  Then describe the solution set of the
-  system of equations in as much detail as you can.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Suppose that you have a system of linear equations in the
-  unknowns <m>x</m> and <m>y</m>
-  whose
-  augmented matrix is row equivalent to 
-  <md>
-  \left[
+                    </md>
+                    Write the system of linear equations corresponding to the
+                    augmented matrix.
+                    Then describe the solution set of the system of equations in
+                    as much detail as you can.
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    The corresponding linear system is:
+                    <md>
+                        \ds
+  \begin{alignedat}{4}
+    1x \amp  {}+{}  \amp 0y {}={}  \amp 3 \\
+    0x \amp  {}+{}  \amp 1y {}={}  \amp 0 \\
+    0x \amp  {}+{}  \amp 0y {}={}  \amp 0 \\
+  \end{alignedat}
+                    </md>
+                    which yields the solution <m>x = 3</m> and <m>y = 0</m>.
+                    This solution is a point, <m>(3,0)</m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose that you have a system of linear equations in the
+                    unknowns <m>x</m> and <m>y</m> whose augmented matrix is row
+                    equivalent to
+                    <md>
+                        \left[
     \begin{array}{rr|r}
       1 \amp 0 \amp 3 \\ 
       0 \amp 1 \amp 0 \\ 
       0 \amp 0 \amp 1 \\
     \end{array}
   \right].
-  </md>
-  Write the system of linear equations corresponding to the
-  augmented matrix.  Then describe the solution set of the
-  system of equations in as much detail as you can.</p>
-      </statement>
-    </task>
-    <task workspace="0.75in">
-      <statement>
-        <p>Suppose that the augmented matrix of a system of linear
-   equations has the following shape where <m>*</m> could be
-   any real number.
-   <md>
-   \left[
+                    </md>
+                    Write the system of linear equations corresponding to the
+                    augmented matrix.
+                    Then describe the solution set of the system of equations in
+                    as much detail as you can.
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    The corresponding linear system is:
+                    <md>
+                        \ds
+  \begin{alignedat}{4}
+    1x \amp  {}+{}  \amp 0y {}={}  \amp 3 \\
+    0x \amp  {}+{}  \amp 1y {}={}  \amp 0 \\
+    0x \amp  {}+{}  \amp 0y {}={}  \amp 1 \\
+  \end{alignedat}
+                    </md>
+                    which yields no solutions.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    Suppose that the augmented matrix of a system of linear
+                    equations has the following shape where <m>*</m> could be
+                    any real number.
+                    <md>
+                        \left[
      \begin{array}{rrrrr|r}
        * \amp * \amp * \amp * \amp * \amp * \\ 
        * \amp * \amp * \amp * \amp * \amp * \\ 
        * \amp * \amp * \amp * \amp * \amp * \\ 
      \end{array}
    \right].
-   </md>
-   How many equations are there in this system and how many
-   unknowns?</p>
-        <p>Based on our work in Section 1.1,
-   do you think it's possible that this
-   system has exactly one solution, infinitely many
-   solutions, or no solutions?</p>
-      </statement>
-    </task>
-  </exercise>
+                    </md>
+                    How many equations are there in this system and how many
+                    unknowns?
+                </p>
 
-  <exercise workspace="3in">
-    <statement>
-      <p>Practice with Gaussian elimination: For each of the following linear systems, form an associated
-  augmented matrix and determine whether there is exactly one
-  solution, infinitely many, or none.</p>
-      <p><m>\ds
+                <p>
+                    Based on our work in Section 1.1, do you think it's possible
+                    that this system has exactly one solution, infinitely many
+                    solutions, or no solutions?
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    There are 3 equations because there are three rows.
+                    There are 5 unknowns because there are 5 columns in the
+                    coefficient matrix.
+                </p>
+
+                <p>
+                    There could be infinitely many solutions or none.
+                    The solution cannot be just a point.
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="3in">
+        <introduction>
+            <p>
+                <em>Practice with Gaussian elimination:</em> For each of the
+                following linear systems, form an associated augmented matrix
+                and determine whether there is exactly one solution, infinitely
+                many, or none.
+            </p>
+        </introduction>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    <m>\ds
   \begin{alignedat}{4}
-    x \amp  {}+{}  \amp y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 1 \\
-    2x \amp  {}-{}  \amp y \amp  {}-{}  \amp 2z \amp  {}={}  \amp 2 \\
-    -x \amp  {}+{}  \amp y \amp  {}+{}  \amp z \amp  {}={}  \amp 0 \\
+    x \amp  {}+{}  \amp 2y \amp  {}-{}  \amp z \amp  {}={}  \amp 1 \\
+    3x \amp  {}+{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 7 \\
+    -x \amp   \amp  \amp  {}+{}  \amp 4z \amp  {}={}  \amp -3 \\
   \end{alignedat}
-  </m></p>
-      <p><m>\ds
+  </m>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    3 \amp 2 \amp 2 \amp 7 \\
+                    -1 \amp 0 \amp 4 \amp -3 \\
+                  \end{array}\right] \amp \xrightarrow{(R2 + (-3)R1) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp -4 \amp 5 \amp 4 \\
+                    -1 \amp 0 \amp 4 \amp -3 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1+R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp -4 \amp 5 \amp 4 \\
+                    0 \amp 2 \amp 3 \amp -2 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(\frac{-1}{4})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp 1 \amp 1 \amp -1 \\
+                    0 \amp 2 \amp 3 \amp -2 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R3 + (-2)R2) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp 1 \amp 1 \amp -1 \\
+                    0 \amp 0 \amp 1 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R2 + (-1)R3) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp 1 \amp 0 \amp -1 \\
+                    0 \amp 0 \amp 1 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1 + (-1)R3) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 1 \\
+                    0 \amp 1 \amp 0 \amp -1 \\
+                    0 \amp 0 \amp 1 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1 + (-2)R2) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 0 \amp 0 \amp 3 \\
+                    0 \amp 1 \amp 0 \amp -1 \\
+                    0 \amp 0 \amp 1 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                    </md>
+                    This yields the solution <m>x = 3</m>, <m>y = -1</m>, and
+                    <m>z = 0</m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    <m>\ds
   \begin{alignedat}{4}
     -x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp -1 \\
     2x \amp  {}+{}  \amp 4y \amp  {}-{}  \amp z \amp  {}={}  \amp 5 \\
     x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 3 \\
   \end{alignedat}
-  </m></p>
-      <p><m>\ds
+  </m>
+                </p>
+            </statement>
+
+            <solution component="02-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rrr|r} 
+                    -1 \amp -2 \amp 2 \amp -1 \\
+                    2 \amp 4 \amp -1 \amp 5 \\
+                    1 \amp 2 \amp 0 \amp 3 \\
+                  \end{array}\right] \amp \xrightarrow{(-1)(R1) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    2 \amp 4 \amp -1 \amp 5 \\
+                    1 \amp 2 \amp 0 \amp 3 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R2+(-2)R1) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 3 \amp 3 \\
+                    1 \amp 2 \amp 0 \amp 3 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R3+(-1)R1) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 3 \amp 3 \\
+                    0 \amp 0 \amp 2 \amp 2 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(\frac{1}{3})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 1 \amp 1 \\
+                    0 \amp 0 \amp 2 \amp 2 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(\frac{1}{2})(R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 1 \amp 1 \\
+                    0 \amp 0 \amp 1 \amp 1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R3 + (-1)R2) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 1 \amp 1 \\
+                    0 \amp 0 \amp 0 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1 + 2R2) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 3 \\
+                    0 \amp 0 \amp 1 \amp 1 \\
+                    0 \amp 0 \amp 0 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                    </md>
+                    This yields the solution <m>x = -2y + 3</m>, <m>z = 1</m>,
+                    and <m>y</m> is free.
+                    This is an infinite solution set.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="0.75in">
+            <statement>
+                <p>
+                    <m>\ds
   \begin{alignedat}{4}
     -x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp -1 \\
     2x \amp  {}+{}  \amp 4y \amp  {}-{}  \amp z \amp  {}={}  \amp 5 \\
     x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 2 \\
   \end{alignedat}
-  </m></p>
-    </statement>
-  </exercise>
+  </m>
+                </p>
+            </statement>
 
-  <outcomes>
-    <introduction>
-      <p>Make sure you can answer the following questions:</p>
-    </introduction>
-    <ul>
-      <li><p>What operations can we do to a system of linear equations to get a new system that has the same solutions?</p></li>
-      <li><p>What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?</p></li>
-      <li><p>What is an algorithm for doing Gaussian elimination?</p></li>
-    </ul>
-  </outcomes>
+            <solution component="02-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rrr|r} 
+                    -1 \amp -2 \amp 2 \amp -1 \\
+                    2 \amp 4 \amp -1 \amp 5 \\
+                    1 \amp 2 \amp 0 \amp 2 \\
+                  \end{array}\right] \amp \xrightarrow{(-1)(R1) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    2 \amp 4 \amp -1 \amp 5 \\
+                    1 \amp 2 \amp 0 \amp 2 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R2+(-2)R1) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 3 \amp 3 \\
+                    1 \amp 2 \amp 0 \amp 2 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R3+(-1)R1) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 3 \amp 3 \\
+                    0 \amp 0 \amp 2 \amp 1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(\frac{1}{2})(R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 3 \amp 3 \\
+                    0 \amp 0 \amp 1 \amp \frac{1}{2} \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R2+(-3)R3) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -2 \amp 1 \\
+                    0 \amp 0 \amp 0 \amp \frac{3}{2} \\
+                    0 \amp 0 \amp 1 \amp \frac{1}{2} \\
+                  \end{array}\right]
+                  </mrow>
+                    </md>
+                    This yields no solution!
+                </p>
+            </solution>
+        </task>
+    </exercise>
 
+    <outcomes>
+        <introduction>
+            <p>
+                Make sure you can answer the following questions:
+            </p>
+        </introduction>
+
+        <ul>
+            <li>
+                <p>
+                    What operations can we do to a system of linear equations to
+                    get a new system that has the same solutions?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    What is an augmented matrix and how do we transfer between a
+                    system of linear equations and an augmented matrix, and
+                    back?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    What is an algorithm for doing Gaussian elimination?
+                </p>
+            </li>
+        </ul>
+    </outcomes>
 </worksheet>
