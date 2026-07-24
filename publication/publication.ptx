@@ -23,7 +23,7 @@
     <!-- project).                                                           -->
       <!--<exercise-inline statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" />-->
-      <!--<exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />-->
+      <exercise-worksheet statement="yes" hint="yes" answer="no" solution="yes" />
       <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
 
@@ -53,7 +53,9 @@
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
     <!-- In this example, we include the w1s components from the sample activity to show solutions. -->
-      <version include="w1s"/>
+    <!-- Change this to deploy different solutions that students can see that are marked with component tags. -->
+    <!-- In this course, each activity/worksheet has a different component tag. -->
+    <!--  <version include="w1s"/>-->
 
   </source>
 
@@ -120,11 +122,11 @@
 
     <!-- Whether to knowl a particular elements is set here    -->
     <!-- Lots of elements have this possibility; see the guide -->
-      <!--<knowl
+    <knowl
         theorem="no"
         proof="yes"
         definition="no"
-        example="yes"
+        example="no"
         example-solution="yes"
         project="no"
         task="no"
@@ -139,7 +141,7 @@
         exercise-divisional="no"
         exercise-worksheet="no"
         exercise-readingquestion="no"
-      />-->
+      />
 
     <!-- Specify the theme for the html by giving names to     -->
     <!-- override defaults.  Ex:<css theme="denver"/>          -->
