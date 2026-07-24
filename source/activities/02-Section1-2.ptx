@@ -327,6 +327,97 @@
         rows) <m>\rightarrow</m> (New row).
     </p>
 
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                In class you were asked to 
+                organize 7 linear systems with 6 row operations leading from one system of equations to the next. This was
+                introducing the process of performing Gaussian Elimination in order to find the 
+                solution to the system of equations.  Those same linear systems are shown below. 
+                Next to each linear system, write each corresponding augmented matrix.  Then, put an arrow with the row operation
+                that leads from one system to the next. Identify the goal of each row operation, e.g., to clear the entry underneath a 
+                leading term/pivot to work towards reduced row echelon form.
+            </p>
+
+            <p> 
+    <m>
+                      \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
+     \amp    \amp -3y \amp {}-{} \amp 3z \amp {}={}  \amp 3 \\
+    -3x \amp  {}-{}  \amp 2y \amp {}+{} \amp z \amp {}={}  \amp -10 \\
+  \end{alignedat} 
+    </m>
+    </p>
+
+<p>
+    <m>
+                       \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
+     \amp    \amp -3y \amp {}-{} \amp 3z \amp {}={}  \amp 3 \\
+     \amp   \amp 4y \amp {}+{} \amp z \amp {}={}  \amp 2 \\
+  \end{alignedat} 
+    </m>
+    </p>
+
+<p>
+    <m>
+                       \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
+     \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
+     \amp   \amp 4y \amp {}+{} \amp z \amp {}={}  \amp 2 \\
+  \end{alignedat} 
+    </m>
+    </p>
+
+<p>
+    <m>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
+     \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
+     \amp   \amp  \amp  \amp -3z \amp {}={}  \amp 6 \\
+  \end{alignedat} 
+    </m>
+    </p>
+
+<p>
+    <m>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
+     \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
+     \amp   \amp  \amp  \amp z \amp {}={}  \amp -2 \\
+  \end{alignedat} 
+    </m>
+    </p>
+
+<p>
+    <m>
+                        \begin{alignedat}{3}
+    x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 4 \\
+     \amp    \amp     y \amp {}={}  \amp 1 \\
+     \amp   \amp   z \amp {}={}  \amp -2 \\
+  \end{alignedat} 
+    </m>
+    </p>
+
+<p>
+    <m>
+                        \begin{alignedat}{3}
+     \amp x \amp  {}={}  \amp 2 \\
+    \amp     y \amp {}={}  \amp 1 \\
+      \amp   z \amp {}={}  \amp -2 \\
+  \end{alignedat} 
+    </m>
+    </p>
+        </statement>
+
+        <solution component="00-solutions">
+            <p>
+                Sure!
+                "Span is all colors."
+            </p>
+        </solution>
+    </exercise>
+
     <exercise>
         <introduction>
             <p>
@@ -588,28 +679,28 @@
                   \end{array}\right]
                   </mrow>
                         <mrow>
-                  \amp \xrightarrow{(\frac{-1}{4})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                  \amp \xrightarrow{(2R3 + R2) \to R3} \amp \left[\begin{array}{rrr|r} 
                     1 \amp 2 \amp -1 \amp 1 \\
-                    0 \amp 1 \amp 1 \amp -1 \\
-                    0 \amp 2 \amp 3 \amp -2 \\
-                  \end{array}\right]
-                  </mrow>
-                        <mrow>
-                  \amp \xrightarrow{(R3 + (-2)R2) \to R3} \amp \left[\begin{array}{rrr|r} 
-                    1 \amp 2 \amp -1 \amp 1 \\
-                    0 \amp 1 \amp 1 \amp -1 \\
+                    0 \amp -4 \amp 5 \amp 4 \\
                     0 \amp 0 \amp 1 \amp 0 \\
                   \end{array}\right]
                   </mrow>
                         <mrow>
-                  \amp \xrightarrow{(R2 + (-1)R3) \to R2} \amp \left[\begin{array}{rrr|r} 
+                  \amp \xrightarrow{(R2 + (-5)R3) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp -4 \amp 0 \amp 4 \\
+                    0 \amp 0 \amp 1 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(\frac{-1}{4})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
                     1 \amp 2 \amp -1 \amp 1 \\
                     0 \amp 1 \amp 0 \amp -1 \\
                     0 \amp 0 \amp 1 \amp 0 \\
                   \end{array}\right]
                   </mrow>
                         <mrow>
-                  \amp \xrightarrow{(R1 + (-1)R3) \to R1} \amp \left[\begin{array}{rrr|r} 
+                  \amp \xrightarrow{(R1 + R3) \to R1} \amp \left[\begin{array}{rrr|r} 
                     1 \amp 2 \amp 0 \amp 1 \\
                     0 \amp 1 \amp 0 \amp -1 \\
                     0 \amp 0 \amp 1 \amp 0 \\
