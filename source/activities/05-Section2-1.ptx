@@ -28,7 +28,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 The vector <m>\vvec</m> stretches (when <m>c \gt 1</m> ),
                 shrinks (when <m>0 \lt c \lt 1</m> ), and flips over the origin
@@ -49,7 +49,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 We can take the following linear combination:
                 <md>
@@ -126,7 +126,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 Yes!
                 Let <m>c=0</m> and <m>d=0</m>.
@@ -184,7 +184,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 Yes!
                 Let <m>c=-2</m> and <m>d=1</m>.
@@ -246,7 +246,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 We can take the following linear combination:
                 <md>
@@ -286,7 +286,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 We can travel in directions parallel to <m>\vvec</m> and
                 <m>\wvec</m>.
@@ -343,7 +343,7 @@
             </p>
         </statement>
 
-        <solution component="06-solutions">
+        <solution component="05-solutions">
             <p>
                 No!
                 We can travel along the gray diamond-like grid lines (sometimes

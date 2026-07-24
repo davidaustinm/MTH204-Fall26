@@ -81,7 +81,7 @@
                 an hour is equal to the number of cars leaving the intersection.
             </p>
 
-            <image source="images/04-traffic_patterns.png" width="50%">
+            <image source="images/lab1-traffic_patterns.png" width="50%">
                 <shortdescription>
                     Traffic pattern in the downtown area of a large city.
                 </shortdescription>
@@ -144,7 +144,7 @@
                 </md>
             </p>
 
-            <image source="images/04-thermo.png" width="50%">
+            <image source="images/lab1-thermo.png" width="50%">
                 <shortdescription>
                     Representation of nodes on a beam and their corresponding
                     temperatures.

@@ -30,7 +30,7 @@
                 </p>
             </statement>
 
-            <solution component="05-solutions">
+            <solution component="04-solutions">
                 <p>
                     <m>
   \left[
@@ -72,7 +72,7 @@
                 </p>
             </statement>
 
-            <solution component="05-solutions">
+            <solution component="04-solutions">
                 <p>
                     <m>
   \left[
@@ -125,7 +125,7 @@
                 </p>
             </statement>
 
-            <solution component="05-solutions">
+            <solution component="04-solutions">
                 <p>
                     <m>
   \left[
@@ -163,7 +163,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 Since all possibilities for the number of solutions (one, zero,
                 or infinite) appear when there is a row of all zeros, we can't
@@ -196,7 +196,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 <md>
                     \left[
@@ -228,7 +228,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 <md>
                     \left[
@@ -259,7 +259,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 If there is a pivot in the last column, then the system is
                 inconsistent (no solutions).
@@ -295,7 +295,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 <md>
                     \left[
@@ -349,7 +349,7 @@
                 </p>
             </statement>
 
-            <solution component="05-solutions">
+            <solution component="04-solutions">
                 <p>
                     The equations from the matrix are:
                     <md>
@@ -385,7 +385,7 @@
                 </p>
             </statement>
 
-            <solution component="05-solutions">
+            <solution component="04-solutions">
                 <p>
                     The free variables are: <m>x_2, x_4</m>.
                 </p>
@@ -404,7 +404,7 @@
                 </p>
             </statement>
 
-            <solution component="05-solutions">
+            <solution component="04-solutions">
                 <p>
                     A variable is basic if the corresponding column has a pivot.
                     Otherwise, it is a free variable.
@@ -423,7 +423,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 This is impossible since there can only be 3 pivot positions
                 (since there are only 3 rows).
@@ -446,7 +446,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 This is possible!
             </p>
@@ -479,7 +479,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 If there is a pivot position in every column corresponding to a
                 variable (this does not include the last column of an augmented
@@ -498,7 +498,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 There must be at least as many rows as columns in the
                 coefficient matrix because this will allow for a pivot position
@@ -528,7 +528,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 First, we use Gaussian elimination to get the matrix in row
                 reduced echelon form:
@@ -584,7 +584,7 @@
             </p>
         </statement>
 
-        <solution component="05-solutions">
+        <solution component="04-solutions">
             <p>
                 For all of the given points <m>(x,y)</m>, we want it to be true
                 that <m>f(x) = y</m>.

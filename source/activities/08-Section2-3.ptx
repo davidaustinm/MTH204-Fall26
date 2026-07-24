@@ -68,7 +68,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <image>
                     <shortdescription>Floor plane.</shortdescription>
                     <prefigure xmlns="https://prefigure.org" label="09-2-3_1">
@@ -91,7 +91,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <image>
                     <shortdescription>
                         One hour of travel with the hoverboard and then one hour
@@ -135,7 +135,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <image>
                     <shortdescription>
                         One hour of travel with the magic carpet and then one
@@ -186,7 +186,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <image>
                     <shortdescription>
                         Traveling with the magic carpet for 1.5 hours in the
@@ -226,7 +226,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     To get to your friend's house, you need to travel backwards
                     for 2 hours.
@@ -256,7 +256,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     To answer this, let's set up a linear combination and solve
                     the corresponding linear system!
@@ -295,7 +295,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     He can't hide.
                     Consider the augmented system
@@ -333,7 +333,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     My cousin can only travel along a line since <m>\vvec</m>
                     and <m>\uvec</m> are scalar multiples of each other.
@@ -412,7 +412,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     All of <m>\mathbb{R}^2</m>.
                 </p>
@@ -427,7 +427,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     A line, with the slope 1/3, going through the origin.
                 </p>
@@ -442,7 +442,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     Geometrically, this is all of <m>\mathbb{R}^2</m>.
                     Algebraically, this is
@@ -460,7 +460,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     Geometrically, this is a line.
                     Algebraically, this is <m>{a\twovec{3}{1}}</m> for any real
@@ -485,7 +485,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     All vectors in <m>\mathbb{R}^2</m>.
                 </p>
@@ -506,7 +506,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     All vectors <m>\bvec = \twovec{3x}{x}</m> for any value
                     <m>x</m> (a line).
@@ -562,7 +562,7 @@
                 </p>
             </statement>
 
-            <solution component="09-solutions">
+            <solution component="08-solutions">
                 <p>
                     The row reduced echelon form of
                     <m>\left[
