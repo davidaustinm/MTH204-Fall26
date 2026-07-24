@@ -58,9 +58,12 @@
       <statement>
         <p>Consider the vector <m>\vvec =\threevec121</m>.  Give a geometric
   description of <m>\laspan\vvec</m> and a rough sketch of the span
-  below.
-  (INCLUDE A BLANK GRID/GRAPH HERE!)
-        </p>
+  below. </p>
+  <image source="images/10-blank_3D_axes.png">
+                <shortdescription>
+                    Blank 3D axes.
+                </shortdescription>
+            </image>
       </statement>
       <solution>
         <p>
@@ -76,11 +79,17 @@
   \evec_2 = \threevec010.
   </md>
   Give a geometric description of <m>\laspan{\evec_1,\evec_2}</m> and a
-  rough sketch of the span below. (NEED BLANK GRAPH HERE OR MAYBE JUST AXES?)</p>
+  rough sketch of the span below. </p>
+  <image source="images/10-blank_3D_axes.png">
+                <shortdescription>
+                    Blank 3D axes.
+                </shortdescription>
+            </image>
       </statement>
       <solution>
         <p>
-          Geometrically, this is the <m>xy</m>-plane! (NEED VISUAL HERE)
+          Geometrically, this is the <m>xy</m>-plane! 
+          
         </p>
       </solution>
     </task>
