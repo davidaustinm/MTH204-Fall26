@@ -57,7 +57,7 @@
   If <m>A\xvec</m> is defined, what is the dimension of the vector <m>\xvec</m>?
   What is the dimension of <m>A\xvec</m>?</p>
     </statement>
-    <solution>
+    <solution component="08-solutions">
       <p>
         The dimension of <m>\xvec</m> is 3 (or a <m>3 \times 1</m> matrix). 
       </p>
@@ -430,15 +430,19 @@ print(A*w+A*v)
       </md>
       we have
       <md>
-        AB  = \left[ A\twovec{-2}{1} \,\,\, A\twovec{3}{2} \,\,\, A\twovec{0}{-2}\right] \\
-         = \left[
+      <mrow>
+        AB = \amp \left[ A\twovec{-2}{1} \,\,\, A\twovec{3}{2} \,\,\, A\twovec{0}{-2}\right]
+        </mrow>
+        <mrow>
+         = \amp \left[
     \begin{array}{rrr}
       -6 \amp 16 \amp -4  \\
       1 \amp 2 \amp -2  \\
       10 \amp -1 \amp -8 \\
       -4 \amp 6 \amp 0 \\
     \end{array}
-  \right].\phantom{39817123}
+  \right].
+  </mrow>
       </md>
     </p>
   </statement>
@@ -446,7 +450,7 @@ print(A*w+A*v)
 
 <exercise workspace="1in">
     <introduction>
-      <p>Consider "Example 5. Matrix Multiplication," which has the following matrix as its result:   
+      <p>Consider <xref ref="ex-mat-mult"/> which has the following matrix as its result:   
   <md>
         AB = \left[
     \begin{array}{rrr}
