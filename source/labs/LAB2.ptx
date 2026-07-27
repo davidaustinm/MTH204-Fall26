@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Lab 2, Due: October 9, 2026</title>
+
+    <introduction>
+        <p>
+            <term>Instructions:</term> Complete the following exercises in your
+            groups.
+            For the write up:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        You should type up your report (a google docs version is
+                        available on Blackboard).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Include screenshots of your work in Sage.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        You only need to hand in one report for your group.
+                        Only include the names of students who contributed.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This lab is graded out of 30 points.
+                        Each problem will be graded out of 5 points - you earn 5
+                        points by including your reasoning, following all
+                        directions, and making only minor errors.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            There is a page of Sage cells available
+            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+        </p>
+
+        <p>
+            We're going to use linear algebra to model a bike sharing program,
+            like the one in Grand Rapids.
+            To keep things simple, we're going to imagine there are only two
+            locations, <m>P</m> and <m>Q</m>, where the bicycles are located.
+        </p>
+
+        <p>
+            We will assume that the bicycles are rented in the morning and
+            returned in the evening according to the following rules:
+            <ul>
+                <li>
+                    <p>
+                        Of the bikes that are rented from location <m>P</m>,
+                        <m>70\%</m> of them are returned to <m>P</m> and the
+                        other <m>30\%</m> are returned to <m>Q</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Of the bikes that are rented from location <m>Q</m>,
+                        <m>40\%</m> of them are returned to <m>Q</m> and the
+                        other <m>60\%</m> are returned to <m>P</m>.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </introduction>
+
+    <exercise>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Suppose that some morning there are 100 bicycles at <m>P</m>
+                    and none at <m>Q</m>.
+                    How many bicycles are at <m>P</m> the next morning and how
+                    many are at <m>Q</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Suppose that some morning there are 100 bicycles at <m>Q</m>
+                    and none at <m>P</m>.
+                    How many bicycles are at <m>P</m> the next morning and how
+                    many are at <m>Q</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Now suppose that there are 100 bicycles at <m>P</m> and 200
+                    at <m>Q</m> some morning.
+                    How many are at each location the next morning?
+                    Show your work and explain your thinking.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Now we're going to introduce some linear algebra to help us
+                understand what's going on more generally.
+                Suppose that <m>P_k</m> is the number of bicycles at <m>P</m> on
+                the morning of day <m>k</m> and <m>Q_k</m> is the number of
+                bicycles at <m>Q</m> on the morning of day <m>k</m>.
+            </p>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    The next morning, the number of bicycles, <m>P_{k+1}</m>, at
+                    location <m>P</m> will be <m>70\%</m> of <m>P_k</m> and
+                    <m>60\%</m> of <m>Q_k</m>.
+                    Express this as an algebraic equation for <m>P_{k+1}</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Also find an algebraic equation for <m>Q_{k+1}</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Now we'll bundle this together using vectors and matrices.
+                    We will use the vector <m>\xvec_k = \twovec{P_k}{Q_k}</m> to
+                    represent the distribution of bicycles on day <m>k</m>.
+                    Using the equations for <m>P_{k+1}</m> and <m>Q_{k+1}</m>
+                    that you just wrote, find a matrix <m>A</m> such that
+                    <md>
+                        \xvec_{k+1} = A\xvec_k.
+                    </md>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Check your work by evaluating <m>A\twovec{100}{200}</m> and
+                    comparing the result to what you found above in Problem
+                    1(c).
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Suppose that there are, on Monday morning, <m>800</m>
+                    bicycles at <m>P</m> and <m>800</m> at <m>Q</m>.
+                    Find the distribution of bicycles on Tuesday morning,
+                    Wednesday morning, and Thursday morning.
+                    Explain how you found these distributions.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Suppose you find on a Saturday morning that there are
+                    <m>998</m> bicycles at <m>P</m> and <m>502</m> at <m>Q</m>.
+                    How many were at each location a day earlier on Friday
+                    morning?
+                    On Thursday morning?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Here are some vectors that are special for this matrix:
+                <md>
+                    \vvec_1 = \twovec{2}{1} \,\,\,\,\,\,\,\, \vvec_2 = \twovec{1}{-1}.
+                </md>
+            </p>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Evaluate <m>A\vvec_1</m>.
+                    What do you notice?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Evaluate <m>A\vvec_2</m> and compare it to <m>\vvec_2</m>.
+                    What do you notice?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Suppose that the initial distribution of bicycles some
+                    morning is written as a linear combination of <m>\vvec_1</m>
+                    and <m>\vvec_2</m>:
+                    <md>
+                        \xvec_0 = c_1\vvec_1 + c_2\vvec_2.
+                    </md>
+                    Use the linearity principle of matrix multiplication, along
+                    with that you just found out above, to explain why
+                    <md>
+                        \xvec_1 = c_1\vvec_1 + 0.1c_2\vvec_2.
+                    </md>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Apply the same reasoning to write <m>\xvec_2</m> as a linear
+                    combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Suppose that the initial distribution of bicycles has
+                    <m>800</m> at <m>P</m> and <m>700</m> at <m>Q</m>.
+                    Write the vector <m>\xvec_0</m> as a linear combination of
+                    <m>\vvec_1</m> and <m>\vvec_2</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Use what you've found above to write <m>\xvec_1</m>, the
+                    distribution of bicycles the next day, as a linear
+                    combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    In the same way, write <m>\xvec_7</m>, the distribution of
+                    bicycles one week later, as a linear combination of
+                    <m>\vvec_1</m> and <m>\vvec_2</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    What happens as time goes by?
+                    That is, after a very long time, what happens to
+                    <m>\xvec_k</m> when written as a linear combination of
+                    <m>\vvec_1</m> and <m>\vvec_2</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    What does this say about the ultimate distribution of
+                    bicycles at locations <m>P</m> and <m>Q</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Repeat this analysis from Problem 5 assuming that all
+                <m>1500</m> bicycles start at <m>P</m>.
+                What happens after a very long time?
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
