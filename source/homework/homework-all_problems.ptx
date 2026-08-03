@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Written Homework Exercises</title>
+  <introduction>
+    <p>
+      <alert>Every Wednesday at 11:59 pm, 5 exercises will be due.</alert>
+      This collection of exercises will grow, with 5 exercises added each week.
+      You will need to regularly look at the updated version of this page on Blackboard.
+    </p>
+  </introduction>
+
+  <page>
+
+    <!-- Q1 Section 1.1 -->
+    <exercise>
+      <introduction>
+        <p>
+          For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether
+or not the system is linear. For (iii), provide written justification for your conclusion.
+        </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          <m>
+          \begin{cases}
+x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
+x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
+\end{cases}
+</m>
+          </p>
+        </statement>
+      </task>
+
+<task>
+      <statement>
+        <p>
+          <m>
+          \begin{cases}
+x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
+3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\
+9x \amp + \amp 3y \amp - \amp z \amp = \amp -4 \\
+-2x \amp - \amp y \amp + \amp 8z \amp = \amp 0 \\
+\end{cases}
+</m>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+          <m>
+          \begin{cases}
+x^2 \amp - \amp 2xy \amp + \amp y^3 \amp = \amp 9 \\
+\sin(x) \amp + \amp e^y \amp - \amp 4y \amp = \amp 0 \\
+\end{cases}
+</m>
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+<!-- Q2 Section 1.2 -->
+    <exercise>
+      <introduction>
+        <p>
+          Give an example of a matrix in reduced row echelon form that describes 
+          a linear system having the stated properties.  For each, write one short 
+          sentence that explains why your example meets the stated criteria. If it 
+          is not possible to find such an example, explain why not.
+        </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          a linear system having 4 equations and 2 unknowns and having exactly one solution.
+          </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          a linear system having 3 equations and 3 unknowns and having no solution.
+           </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+          a linear system having 2 equations and 5 unknowns and having infinitely many solutions.
+          </p>
+        </statement>
+      </task>
+
+<task>
+      <statement>
+        <p>
+          a linear system having 3 equations and 5 unknowns and having exactly one solution.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+          a linear system having 4 equations and 4 unknowns and having exactly one solution.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <!-- Q3 Section 1.2 -->
+    <exercise>
+      <statement>
+        <p>
+          A given linear system has been represented by an augmented matrix and the process of Gaussian 
+          elimination has begun.  The current state of the process is shown in the augmented matrix below.
+             </p>
+             <p>
+              Execute the next <alert>three steps</alert> (that is, the next three row operations) of Gaussian elimination, 
+              and clearly state the three row operations you used, employing notation like we've been using in class.  
+              Your work should show at least two additional matrices beyond the one stated here. 
+              <md>
+              \left[
+    \begin{array}{rrr|r}
+      1 \amp 5 \amp -3 \amp 6 \\
+      0 \amp 1 \amp 2 \amp -4 \\
+      0 \amp -2 \amp 7 \amp 0 \\
+    \end{array}
+  \right]
+              </md>
+              </p>
+        </statement>
+
+    </exercise>
+
+<!-- Q4 Section 1.2 -->
+    <exercise>
+      <introduction>
+        <p>
+          Consider the linear system:
+          <md>
+          \begin{array}{rcrcrcr}
+-2x_1 \amp + \amp x_2 \amp \ \amp \ \amp = \amp -4 \\
+3x_1 \amp \ \amp \  \amp + \amp 3x_3 \amp = \amp 9 \\
+-x_1 \amp - \amp 2x_2  \amp - \amp 5x_3 \amp = \amp -7
+\end{array}
+          </md>
+          </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          Write the augmented matrix that corresponds to the given system.
+          </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          Work by hand to find the reduced row echelon form of the augmented matrix.
+          </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+          Identify which variables are basic and which are free.
+          </p>
+        </statement>
+      </task>
+
+<task>
+      <statement>
+        <p>
+          Describe the solution space of the system, using a parametric description if there are infinitely many solutions.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <!-- Q5 Section 1.3 -->
+    <exercise>
+      <introduction>
+        <p>
+          For each of the following linear systems of equations, (i) represent the system with an augmented matrix, 
+          (ii) use \emph{Sage} to find the RREF of the matrix of the linear system, and report the RREF in your written
+           summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric 
+           form if there are infinitely many solutions.
+        </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          <m>
+          \begin{cases}
+x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
+3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\
+9x \amp + \amp 3y \amp - \amp z \amp = \amp -4 \\
+-2x \amp - \amp y \amp + \amp 8z \amp = \amp 0  \\
+\end{cases}
+</m>
+          </p>
+        </statement>
+      </task>
+
+<task>
+      <statement>
+        <p>
+          <m>
+          \begin{cases}
+x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
+x_1 \amp - \amp 2x_2 \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
+\end{cases}
+</m>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+          <m>
+          \begin{cases}
+x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
+x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
+-2x_1 \amp + \amp 1x_2  \amp - \amp 3x_3 \amp + \amp x_4 \amp = \amp -1 \\
+-x_1 \amp - \amp 4x_2  \amp + \amp 2x_3 \amp + \amp 5x_4 \amp = \amp 0 \\
+\end{cases}
+</m>
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+
+    <!-- Q6 Section 1.4 -->
+    <exercise>
+      <introduction>
+        <p>
+          For each of the four scenarios below, give an example of an 
+          augmented matrix in RREF that satisfies the stated criteria, or explain 
+          why such a matrix is not possible.  
+          </p>
+      <p>
+      For each example you provide, (i) circle the pivot locations, (ii) make each 
+      non-pivot column have at least one non-zero entry, and (iii) write one sentence 
+      to say why the system is consistent or inconsistent.  In addition, if the corresponding 
+      linear system is consistent, describe the solution space for your example.
+        </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.  
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent. 
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+          An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.
+          </p>
+        </statement>
+      </task>
+
+<task>
+      <statement>
+        <p>
+          An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <!-- Q7 Section 2.1 -->
+    <exercise>
+      <introduction>
+        <p>
+          Consider the vectors <m>\uvec</m>, <m>\vvec</m>, <m>\xvec</m>, <m>\yvec</m>, 
+          and <m>\zvec</m> pictured in this figure:
+          </p>
+       <image source="images/HW-lin-comb-nonstd.eps" width="50%">
+                <shortdescription>
+                    4 vectors in a plane.
+                </shortdescription>
+            </image>
+
+      <p>
+      Notice that while there is no scale on the axes, the vectors 
+      <m>\uvec</m> and <m>\vvec</m> generate a "grid", and the tips of the 
+      vectors <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m> lie at intersection points 
+      on the grid.
+        </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          For each of the vectors <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m>, express the vector 
+          as a linear combination of <m>\uvec</m> and <m>\vvec</m>.  
+          Clearly state each linear combination by writing an equation such 
+          as <m>\xvec = \underline{\hspace{0.25in}}\uvec +  \underline{\hspace{0.25in}}\vvec</m>.  
+          After you do this for all three vectors, write a sentence that explains how you determined 
+          the weights in your linear combinations.	 	
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          Sketch and label the vector  <m>\wvec = 3\uvec - \vvec</m>.
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+          What geometric figure is formed by the tips of all vectors of the form 
+          <m>{\uvec + t\vvec}</m>, when <m>t</m> is allowed to be any real number?  
+          (Hint: you might plot some points that correspond to several different 
+          values of <m>t</m> that you choose.)  Write a careful sentence or two that explains 
+          your conclusion and how you determined it.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+
+    <!-- Q8 Section 2.1 -->
+    <exercise>
+      <introduction>
+        <p>
+          Consider the linear system 
+	<md>
+\begin{array}{rcrcr}
+2x \amp - \amp 3y \amp = \amp 13 \\
+3x \amp + \amp y  \amp = \amp 3 \\
+\end{array}
+</md>
+</p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          Solve the system and describe the solution space fully.   
+          If there are infinitely many solutions, describe them in 
+          parametric form.	
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          Let <m>\uvec = \twovec{2}{3}</m> and <m>\vvec = \twovec{-3}{1}</m>.  
+         How can you rewrite the given linear system above as asking 
+         a question about a linear combination of <m>\uvec</m> and <m>\vvec</m>?
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+         Let <m>\bvec = \twovec{13}{3}</m>.  Is <m>\bvec</m> a linear combination of 
+         <m>\uvec</m> and <m>\vvec</m>?  Why or why not?  If yes, give the weights 
+         that make <m>\bvec</m> a linear combination of <m>\uvec</m> and <m>\vvec</m>; 
+         if no, explain why no such weights exist.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+<!-- Q9 Section 2.2 -->
+    <exercise>
+      <introduction>
+        <p>
+          Suppose that <m>A</m> is a <m>3 \times 2</m> matrix whose columns are the 
+          vectors <m>\vvec_1</m> and <m>\vvec_2</m>: <m>A = [ \vvec_1 \ \ \vvec_2]</m>.
+</p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          What are the dimensions of the vectors <m>\vvec_1</m> and <m>\vvec_2</m>?	
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          Write the matrix-vector product <m>A \twovec10</m> as a linear combination of <m>\vvec_1</m> 
+          and <m>\vvec_2</m>.  Similarly, write <m>A \twovec01</m> as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+         Suppose we are now given some specific information about certain 
+         matrix-vector products.  Specifically, say we are given
+		<md>A \twovec10 = \threevec{2}{-1}{4} \ \mbox{and} \ A \twovec01 = \threevec{0}{3}{-1}.</md>
+		What is the matrix <m>A</m>?  Why?
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+         Determine <m>A \twovec{-3}{5}</m>.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <!-- Q10 Section 2.3 -->
+    <exercise>
+      <introduction>
+        <p>
+          Consider the vectors <m>\uvec = \threevec{1}{0}{-1}</m>, <m>\vvec = \threevec{0}{-1}{1}</m>, and <m>\wvec = \threevec{2}{-3}{1}</m>.
+</p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          Is <m>\bvec = \threevec{-5}{7}{-3}</m> in Span<m>\{ \uvec, \vvec, \wvec \}</m>?  Why or why not?
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          Is <m>\cvec = \threevec{-5}{7}{-2}</m> in Span<m>\{ \uvec, \vvec, \wvec \}</m>?  Why or why not?
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+         Do the vectors <m>\uvec, \vvec, \wvec</m> span all of <m>\mathbb{R}^3</m>?  
+         Why or why not?
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+         What is an important observation to make about the relationship 
+         among <m>\uvec, \vvec, \wvec</m>?
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+         Give a careful written description of Span<m>\{ \uvec, \vvec, \wvec \}</m>.	
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <!-- Q11 Section 2.3 -->
+    <exercise>
+      <introduction>
+        <p>
+          Suppose that <m>A</m> is the matrix  <m>A = [ \vvec_1 \ \ \vvec_2 \ \ \vvec_3]</m> where 
+	<md>
+	\vvec_1 = \threevec111, \ \ \vvec_2 = \threevec{\phantom{-}2}{-1}{\phantom{-}0}, \ \ \vvec_3 = \threevec{-1}{\phantom{-}3}{\phantom{-}2}
+	</md>
+  </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          If <m>\xvec = \threevec{\phantom{-}4}{-2}{\phantom{-}3}</m>, write <m>A\xvec</m> in two different ways:  
+          (i) as a linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>, 
+          and (ii) as a single vector that you find by hand.
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          If <m>\bvec = \threevec{\phantom{-}5}{-7}{-3}</m>, determine all 
+          solutions to the equation <m>A\xvec = \bvec</m>.  Clearly show 
+          how this problem can be turned into a system of equations 
+          (don't just write down an augmented matrix), and solve. If there are 
+          infinitely many solutions, express them in parametric vector form.
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+         Is <m>\cvec =  \threevec{\phantom{-}5}{-7}{-2}</m> a linear 
+         combination of <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>?
+           Clearly show how this question can be turned into a system of 
+           linear equations and then explain your answer.
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+    <!-- Q12 Section 2.3 -->
+    <exercise>
+      <introduction>
+        <p>
+          Suppose that we have the following collection of vectors in 
+          <m>\mathbb{R}^4</m>:  <md>{\vvec_1 = \fourvec{1}{1}{1}{1}, 
+          \vvec_2 = \fourvec{\phantom{-}1}{\phantom{-}1}{-1}{-1}, 
+          \vvec_3 = \fourvec{\phantom{-}1}{-1}{\phantom{-}1}{-1}}</md>.
+  </p>
+      </introduction>
+      <task>
+      <statement>
+        <p>
+          Give an example of a nonzero vector $\wvec$ that is not equal 
+          to <m>\vvec_1</m>, <m>\vvec_2</m>, or <m>\vvec_3</m> that belongs to the 
+          span of <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>.  Write a sentence 
+          to say why your vector has the desired property.
+
+      </p>
+        </statement>
+      </task>
+
+        <task>
+      <statement>
+        <p>
+          Explain why Span<m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m> is not 
+          <m>\mathbb{R}^4</m> using pivots.
+             </p>
+        </statement>
+      </task>
+
+       <task>
+      <statement>
+        <p>
+         Find a vector <m>\vvec_4</m> so that <m>\vvec_4</m> is not in 
+         Span<m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>, and clearly justify 
+         why your vector has this property.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+      <statement>
+        <p>
+         What can you say about Span<m>\{ \vvec_1, \vvec_2, \vvec_3, \vvec_4 \}</m>?  Why?
+          </p>
+        </statement>
+      </task>
+
+    </exercise>
+
+
+  </page>
+</worksheet>

@@ -58,12 +58,13 @@
         <p>
             Now, let me introduce you to Wooody, the lovable star of the
             animated kids' film <em>Toy Tale</em> due out this holiday season.
-            <image source="images/lab3_wooody1.png" width="35%">
-                <shortdescription>
-                    Introduction to Wooody from <em>Toy Tale</em>.
-                </shortdescription>
-            </image>
         </p>
+
+        <image source="images/lab3_wooody1.png" width="35%">
+            <shortdescription>
+                Introduction to Wooody from <em>Toy Tale</em>.
+            </shortdescription>
+        </image>
 
         <p>
             The computer animators who made <em>Toy Tale</em> assembled the film
