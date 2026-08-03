@@ -512,9 +512,15 @@
       <solution>
         <p>
           <md>
-            c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 = c_1\vvec_1 + c_2\vvec_2 + c_3(2\vvec_1 - \vvec_2) \\
-            \phantom{c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3} = c_1\vvec_1 + 2c_3\vvec_1 + c_2\vvec_2 - c_3\vvec_2 \\
-            \phantom{c_1\vvec_1 + c_2\vvec_2 + 1\vvec_3} = (c_1+2c_3)\vvec_1 + (c_2-c_3)\vvec_2 \\
+          <mrow>
+            c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 \amp = c_1\vvec_1 + c_2\vvec_2 + c_3(2\vvec_1 - \vvec_2) 
+            </mrow>
+            <mrow>
+            \amp = c_1\vvec_1 + 2c_3\vvec_1 + c_2\vvec_2 - c_3\vvec_2 
+            </mrow>
+            <mrow>
+            \amp = (c_1+2c_3)\vvec_1 + (c_2-c_3)\vvec_2 
+            </mrow>
           </md>
           Here, since <m>c_1, c_2, c_3</m> are any constants, then <m>c_1+2c_3</m>
           is also just a constant, as well as <m>c_2-c_3</m>.  Therefore, this is 

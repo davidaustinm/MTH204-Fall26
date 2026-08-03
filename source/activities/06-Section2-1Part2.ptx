@@ -477,9 +477,9 @@ A.rref()
                         \ds
   \begin{alignedat}{4}
     4c_1 \amp  {}+{}  \amp c_2 \amp  {}-{}  \amp 2c_3 \amp  {}={}  \amp 0 \\
-    \phantom{4c_1} \amp  \phantom{{}+{}}  \amp -3c_2 \amp  {}+{}  \amp c_3 \amp  {}={}  \amp 1 \\
+     \amp    \amp -3c_2 \amp  {}+{}  \amp c_3 \amp  {}={}  \amp 1 \\
     2c_1 \amp  {}+{}  \amp 3c_2 \amp  {}+{}  \amp c_3 \amp  {}={}  \amp 2 \\
-    c_1 \amp  {}+{}  \amp c_2 \amp  \phantom{{}+{}}  \amp \phantom{-2c_3} \amp  {}={}  \amp -2 \\
+    c_1 \amp  {}+{}  \amp c_2 \amp    \amp  \amp  {}={}  \amp -2 \\
   \end{alignedat}
                     </md>
                 </p>
@@ -552,7 +552,7 @@ A.rref()
                     \ds
   \begin{alignedat}{4}
     3x_1 \amp  {}+{}  \amp 2x_2 \amp  {}-{}  \amp x_3 \amp  {}={}  \amp 4 \\
-    x_1 \amp  \phantom{{}+{}}  \amp \phantom{3c_2} \amp  {}+{}  \amp 2x_3 \amp  {}={}  \amp 0 \\
+    x_1 \amp    \amp  \amp  {}+{}  \amp 2x_3 \amp  {}={}  \amp 0 \\
     -x_1 \amp  {}-{}  \amp x_2 \amp  {}+{}  \amp 3x_3 \amp  {}={}  \amp 1 \\
     \end{alignedat}
                 </md>
