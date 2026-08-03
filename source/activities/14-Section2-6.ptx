@@ -1,290 +1,646 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>Section 2.6 - The geometry of matrix transformations</title>
+    <title>Section 2.6 - The geometry of matrix transformations</title>
 
-  <exercise>
-    <introduction>
-      <p>Matrix transformation perform geometric operations. Go to <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">this website</url> to
-study the effect that various matrix transformations have on the plane. On the left
-is the plane before the transformation; on the right is the plane after the transformation.</p>
-      <p>Describe the geometric effect of the matrix transformations defined by</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}2 \amp 0 \\ 0 \amp 1\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Scales by 2 in the <m>x</m>-direction.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}2 \amp 0 \\ 0 \amp 2\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Scales by 2 in both the <m>x</m>-direction and <m>y</m>-direction.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}0 \amp -1 \\ 1 \amp 0\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Rotates by <m>90^o</m> counterclockwise.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}1 \amp 1 \\ 0 \amp 1\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Skews to the right.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}-1 \amp 0 \\ 0 \amp 1\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Flips over the <m>y</m>-axis.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}1 \amp 0 \\ 0 \amp 0\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Projects (condenses) on to the <m>x</m>-axis.  Note: columns are not linearly independent.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}1 \amp 0 \\ 0 \amp 1\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Nothing! This is the identity matrix!
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>A = \left[\begin{array}{cc}1 \amp -1 \\ -2 \amp 2\end{array}\right]</m></p>
-      </statement>
-      <solution>
-        <p>
-          Projects onto a line and stretches. Note: columns are not linearly independent.
-        </p>
-      </solution>
-    </task>
-  </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Matrix transformation perform geometric operations.
+                Go to
+                <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">this website</url>
+                to study the effect that various matrix transformations have on
+                the plane.
+                On the left is the plane before the transformation; on the right
+                is the plane after the transformation.
+            </p>
 
-  <exercise>
-    <introduction>
-      <p>
-        Transformations that scale.
-      </p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Find the matrix <m>A</m> that defines the transformation <m>T</m> that scales all vectors horizontally by <m>3</m> and vertically by <m>5</m>. You can go to <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">this website</url> to check your work (with smaller numbers)!</p>
-      </statement>
-      <solution>
-        <p>
-          Let's think about the action we want with respect to our vectors <m>\evec_1</m> and <m>\evec_2</m>.
-          First, we want to take <m>\evec_1 = \twovec{1}{0}</m> and scale this horizontally by 3 (note: the vertical
-          component is zero here).  This means if we input <m>\twovec{1}{0}</m>,
-          the output should be <m>\twovec{3}{0}</m> to scale by 3 horizontally (1st coordinate).
-        </p>
-        <p>
-          Then, for <m>\evec_2 = \twovec{0}{1}</m> and scale this verically by 5 (note: the horizontal
-          component is zero here).  This means if we input <m>\twovec{0}{1}</m>,
-          the output should be <m>\twovec{0}{5}</m> to scale by 5 vertically (2nd coordinate).
-        </p>
-        <p>
-          Therefore, we have <m>A = \begin{bmatrix} 3 \amp 0 \\ 0 \amp 5 \end{bmatrix} </m>.
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>In general, what is the matrix that that will define the transformation that scales all vectors horizontally by <m>a</m> and vertically by <m>b</m>?</p>
-      </statement>
-      <solution>
-        <p>
-          <md>
-            \begin{bmatrix} a \amp 0 \\ 0 \amp b \end{bmatrix}
-          </md>
-        </p>
-      </solution>
-    </task>
-  </exercise>
+            <p>
+                Describe the geometric effect of the matrix transformations
+                defined by
+            </p>
+        </introduction>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>
-        What matrix produces a <m>180^o</m> rotation? (Find <m>T(\evec_1)</m> and <m>T(\evec_2)</m>
-        to find the matrix - you can check it using the applet.)
-      </p>
-    </statement>
-    <solution>
-        <p>
-          Again, we look at the action of the transformation on our vectors <m>\evec_1</m> and <m>\evec_2</m>. So,
-          <md>
-            T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{-1}{0} \\
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}2 \amp 0 \\ 0 \amp 1\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Scales by 2 in the <m>x</m>-direction.
+                </p>
+
+                <image source="images/14-Sec2_6-1(a).png">
+                    <shortdescription>
+                        Linear transformation that scales by 2 in the
+                        <m>x</m>-direction.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}2 \amp 0 \\ 0 \amp 2\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Scales by 2 in both the <m>x</m>-direction and
+                    <m>y</m>-direction.
+                </p>
+
+                <image source="images/14-Sec2_6-1(b).png">
+                    <shortdescription>
+                        Linear transformation that scales by 2 in both the
+                        <m>x</m>-direction and <m>y</m>-direction.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}0 \amp -1 \\ 1 \amp 0\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Rotates by <m>90^o</m> counterclockwise.
+                </p>
+
+                <image source="images/14-Sec2_6-1(c).png">
+                    <shortdescription>
+                        Linear transformation that rotates by <m>90^o</m>
+                        counterclockwise.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}1 \amp 1 \\ 0 \amp 1\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Skews to the right.
+                </p>
+
+                <image source="images/14-Sec2_6-1(d).png">
+                    <shortdescription>
+                        Linear transformation that skews to the right.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}-1 \amp 0 \\ 0 \amp 1\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Flips over the <m>y</m>-axis.
+                </p>
+
+                <image source="images/14-Sec2_6-1(e).png">
+                    <shortdescription>
+                        Linear transformation that flips over the <m>y</m>-axis.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}1 \amp 0 \\ 0 \amp 0\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Projects (condenses) on to the <m>x</m>-axis.
+                    Note: columns are not linearly independent.
+                </p>
+
+                <image source="images/14-Sec2_6-1(f).png">
+                    <shortdescription>
+                        Linear transformation that projects (condenses) on to
+                        the <m>x</m>-axis.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}1 \amp 0 \\ 0 \amp 1\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Nothing!
+                    This is the identity matrix!
+                </p>
+
+                <image source="images/14-Sec2_6-1(g).png">
+                    <shortdescription>
+                        Linear transformation that does nothing!
+                        This is the identity matrix!
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>A = \left[\begin{array}{cc}1 \amp -1 \\ -2 \amp 2\end{array}\right]</m>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Projects onto a line and stretches.
+                    Note: columns are not linearly independent.
+                </p>
+
+                <image source="images/14-Sec2_6-1(h).png">
+                    <shortdescription>
+                        Linear transformation that projects onto a line and
+                        stretches.
+                    </shortdescription>
+                </image>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Transformations that scale.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the matrix <m>A</m> that defines the transformation
+                    <m>T</m> that scales all vectors horizontally by <m>3</m>
+                    and vertically by <m>5</m>.
+                    You can go to
+                    <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">this website</url>
+                    to check your work (with smaller numbers)!
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Let's think about the action we want with respect to our
+                    vectors <m>\evec_1</m> and <m>\evec_2</m>.
+                    First, we want to take <m>\evec_1 = \twovec{1}{0}</m> and
+                    scale this horizontally by 3 (note: the vertical component
+                    is zero here).
+                    This means if we input <m>\twovec{1}{0}</m>, the output
+                    should be <m>\twovec{3}{0}</m> to scale by 3 horizontally
+                    (1st coordinate).
+                </p>
+
+                <p>
+                    Then, for <m>\evec_2 = \twovec{0}{1}</m> and scale this
+                    verically by 5 (note: the horizontal component is zero
+                    here).
+                    This means if we input <m>\twovec{0}{1}</m>, the output
+                    should be <m>\twovec{0}{5}</m> to scale by 5 vertically (2nd
+                    coordinate).
+                </p>
+
+                <p>
+                    Therefore, we have
+                    <m>A = \begin{bmatrix} 3 \amp 0 \\ 0 \amp 5 \end{bmatrix} </m>.
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    In general, what is the matrix that that will define the
+                    transformation that scales all vectors horizontally by
+                    <m>a</m> and vertically by <m>b</m>?
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <md>
+                        \begin{bmatrix} a \amp 0 \\ 0 \amp b \end{bmatrix}
+                    </md>
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                What matrix produces a <m>180^o</m> rotation?
+                (Find <m>T(\evec_1)</m> and <m>T(\evec_2)</m> to find the matrix
+                - you can check it using the applet.)
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                Again, we look at the action of the transformation on our
+                vectors <m>\evec_1</m> and <m>\evec_2</m>.
+                So,
+                <md>
+                    T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{-1}{0} \\
             T(\evec_2) = T\left(\twovec{0}{1}\right) = \twovec{0}{-1} \\
-          </md>
-          Therefore, the matrix that produces this transformation is
-          <md>
-            \begin{bmatrix} -1 \amp 0 \\ 0 \amp -1 \end{bmatrix}.
-          </md>
-        </p>
-      </solution>
-  </exercise>
+                </md>
+                Therefore, the matrix that produces this transformation is
+                <md>
+                    \begin{bmatrix} -1 \amp 0 \\ 0 \amp -1 \end{bmatrix}.
+                </md>
+            </p>
+        </solution>
+    </exercise>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>
-        What matrix produces a reflection over the line <m>y = -x</m>? (Find <m>T(\evec_1)</m> and <m>T(\evec_2)</m>
-        to find the matrix - you can check it using the applet.)
-      </p>
-    </statement>
-    <solution>
-        <p>
-          Again, we look at the action of the transformation on our vectors <m>\evec_1</m> and <m>\evec_2</m>. So,
-          <md>
-            T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{0}{-1} \\
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                What matrix produces a reflection over the line <m>y = -x</m>?
+                (Find <m>T(\evec_1)</m> and <m>T(\evec_2)</m> to find the matrix
+                - you can check it using the applet.)
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                Again, we look at the action of the transformation on our
+                vectors <m>\evec_1</m> and <m>\evec_2</m>.
+                So,
+                <md>
+                    T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{0}{-1} \\
             T(\evec_2) = T\left(\twovec{0}{1}\right) = \twovec{-1}{0} \\
-          </md>
-          Therefore, the matrix that produces this transformation is
-          <md>
-            \begin{bmatrix} 0 \amp -1 \\ -1 \amp 0 \end{bmatrix}.
-          </md>
-        </p>
-      </solution>
-  </exercise>
+                </md>
+                Therefore, the matrix that produces this transformation is
+                <md>
+                    \begin{bmatrix} 0 \amp -1 \\ -1 \amp 0 \end{bmatrix}.
+                </md>
+            </p>
+        </solution>
+    </exercise>
 
-  <exercise>
-    <introduction>
-      <p>All of the transformations in this question have the form <m>T: \real^2 \to \real^2</m>.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Find the matrix of the transformation that has no effect on vectors; that is, <m>T(\xvec) = \xvec</m>. We call this matrix the identity and denote it by <m>I</m>.</p>
-      </statement>
-      <solution>
-        <p>
-          We saw in Problem 1(g) that the identity matrix has no transformational effect on vectors.
-          Additionally, note that <m>I\xvec = \xvec</m>.  Therefore, <m>T(\xvec) = \xvec = I\xvec</m>,
-          such that the corresponding matrix for this transformation is <m>{I = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}.}</m>
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find the matrix <m>B</m> of the transformation that reflects vectors in <m>\real^2</m>
- over the line <m>y=x</m>.</p>
-      </statement>
-      <solution>
-        <p>
-          Again, we look at the action of the transformation on our vectors <m>\evec_1</m> and <m>\evec_2</m>. So,
-          <md>
-            T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{0}{1} \\
+    <exercise>
+        <introduction>
+            <p>
+                All of the transformations in this question have the form
+                <m>T: \real^2 \to \real^2</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the matrix of the transformation that has no effect on
+                    vectors; that is, <m>T(\xvec) = \xvec</m>.
+                    We call this matrix the identity and denote it by <m>I</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We saw in Problem 1(g) that the identity matrix has no
+                    transformational effect on vectors.
+                    Additionally, note that <m>I\xvec = \xvec</m>.
+                    Therefore, <m>{T(\xvec) = \xvec = I\xvec}</m>, such that the
+                    corresponding matrix for this transformation is
+                    <m>{I = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}.}</m>
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the matrix <m>B</m> of the transformation that reflects
+                    vectors in <m>\real^2</m> over the line <m>y=x</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Again, we look at the action of the transformation on our
+                    vectors <m>\evec_1</m> and <m>\evec_2</m>.
+                    So,
+                    <md>
+                        T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{0}{1} \\
             T(\evec_2) = T\left(\twovec{0}{1}\right) = \twovec{1}{0} \\
-          </md>
-          Therefore, the matrix that produces this transformation is
-          <md>
-          B = \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}.
-          </md>
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the result of composing the reflection you found in the previous part with itself; that is, what is the effect of reflecting in the line <m>y=x</m>  and then reflecting in this line again. Provide a geometric explanation for your result as well as an algebraic one obtained by multiplying matrices.</p>
-      </statement>
-      <solution>
-        <p>
-          This corresponds to 
-          <md>
-            B^2 = \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix} \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix} = \left[\begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}\twovec{0}{1} \,\,\,\,\,\,\,\,  \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}\twovec{1}{0}\right] \\
+                    </md>
+                    Therefore, the matrix that produces this transformation is
+                    <md>
+                        B = \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}.
+                    </md>
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the result of composing the reflection you found in
+                    the previous part with itself; that is, what is the effect
+                    of reflecting in the line <m>y=x</m> and then reflecting in
+                    this line again.
+                    Provide a geometric explanation for your result as well as
+                    an algebraic one obtained by multiplying matrices.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    This corresponds to
+                    <md>
+                        B^2 = \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix} \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix} = \left[\begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}\twovec{0}{1} \,\,\,\,\,\,\,\,  \begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}\twovec{1}{0}\right] \\
             = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix} = I.
-          </md>
-          Thus, reflecting twice returns to the original vector.  This makes geometric sense!
-        </p>
-      </solution>
-    </task>
-  </exercise>
+                    </md>
+                    Thus, reflecting twice returns to the original vector.
+                    This makes geometric sense!
+                </p>
+            </solution>
+        </task>
+    </exercise>
 
-  <exercise>
-    <introduction>
-      <p>More composing transformations.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Find the matrix <m>C</m> that rotates vectors counterclockwise in the plane by <m>90^\circ</m>.</p>
-      </statement>
-      <solution>
-        <p>
-          We look at the action of the transformation on our vectors <m>\evec_1</m> and <m>\evec_2</m>. So,
-          <md>
-            T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{0}{1} \\
+    <exercise>
+        <introduction>
+            <p>
+                More composing transformations.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the matrix <m>C</m> that rotates vectors
+                    counterclockwise in the plane by <m>90^\circ</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We look at the action of the transformation on our vectors
+                    <m>\evec_1</m> and <m>\evec_2</m>.
+                    So,
+                    <md>
+                        T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{0}{1} \\
             T(\evec_2) = T\left(\twovec{0}{1}\right) = \twovec{-1}{0} \\
-          </md>
-          Therefore, the matrix that produces this transformation is
-          <md>
-          C = \begin{bmatrix} 0 \amp 1 \\ -1 \amp 0 \end{bmatrix}.
-          </md>
-        </p>
-      </solution>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find the matrix that results from composing a <m>90^\circ</m> rotation with itself. Explain the geometric meaning of this operation. Find the matrix that results from composing a 
-<m>90^\circ</m> rotation with itself four times; that is, if <m>T</m> is the matrix transformation that rotates vectors by <m>90^\circ</m> find the matrix for <m>T\circ T \circ T \circ T</m>. Explain why your result makes sense geometrically.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Compare the result of rotating by <m>90^\circ</m>  and then reflecting over the line  <m>y=x</m>
- to the result of first reflecting over <m>y=x</m> and then rotating <m>90^\circ</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Do matrix transformations ``commute"? That is, if <m>S</m> and <m>T</m> are two transformations, is <m>S\circ T = T\circ S</m>?</p>
-      </statement>
-    </task>
-  </exercise>
+                    </md>
+                    Therefore, the matrix that produces this transformation is
+                    <md>
+                        C = \begin{bmatrix} 0 \amp 1 \\ -1 \amp 0 \end{bmatrix}.
+                    </md>
+                </p>
+            </solution>
+        </task>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Explain why the matrix that rotates vectors counterclockwise by an angle <m>\theta</m> is 
-<md>\begin{bmatrix}
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the matrix that results from composing a
+                    <m>90^\circ</m> rotation with itself.
+                    Explain the geometric meaning of this operation.
+                    Find the matrix that results from composing a
+                    <m>90^\circ</m> rotation with itself four times; that is, if
+                    <m>T</m> is the matrix transformation that rotates vectors
+                    by <m>90^\circ</m> find the matrix for
+                    <m>T\circ T \circ T \circ T</m>.
+                    Explain why your result makes sense geometrically.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The matrix that results from composing a <m>90^\circ</m>
+                    rotation with itself is a rotation by <m>180^\circ</m>.
+                    If <m>C</m> from part (a) is the matrix for a
+                    <m>90^\circ</m> rotation, then <m>C \circ C = C^2</m> is the
+                    matrix for a rotation by <m>180^\circ</m>.
+                    Thus,
+                    <md>
+                        C^2 = \begin{bmatrix} -1 \amp 0 \\ 0 \amp 1 \\ \end{bmatrix}.
+                    </md>
+                </p>
+
+                <p>
+                    The matrix for <m>T\circ T \circ T \circ T</m> is
+                    <md>
+                        C^4 = \begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \\ \end{bmatrix},
+                    </md>
+                    which is the identity matrix!
+                    Therefore, if we rotate by <m>90^\circ</m> four times, this
+                    is rotating by <m>360^\circ</m>, which takes us back to the
+                    original position and thus, there isn't really any rotation.
+                </p>
+                <sage>
+                    <input>
+C = matrix(2,2,[0,-1,
+                1,0])
+C*C
+                    </input>
+                    <output>
+[-1  0]
+[ 0 -1]
+                    </output>
+                </sage>
+                <sage>
+                    <input>
+C = matrix(2,2,[0,-1,
+                1,0])
+C^4
+                    </input>
+                    <output>
+[1 0]
+[0 1]
+                    </output>
+                </sage>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Compare the result of rotating by <m>90^\circ</m> and then
+                    reflecting over the line <m>y=x</m> to the result of first
+                    reflecting over <m>y=x</m> and then rotating
+                    <m>90^\circ</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Rotating by <m>90^\circ</m> then reflecting over <m>y=x</m>
+                    is <m>B\cdot C</m> (where <m>B</m> is the matrix from
+                    Problem 5(b)).
+                    We apply <m>C</m> to <m>\xvec</m> first and then, <m>B</m>.
+                    Here,
+                    <md>
+                        B\cdot C = \begin{bmatrix} 1 \amp 0 \\ 0 \amp -1 \\ \end{bmatrix}.
+                    </md>
+                </p>
+
+                <p>
+                    Reflecting over <m>y=x</m> and then rotating by
+                    <m>90^\circ</m> is <m>C\cdot B</m>, where
+                    <md>
+                        C\cdot B = \begin{bmatrix} -1 \amp 0 \\ 0 \amp 1 \\ \end{bmatrix}.
+                    </md>
+                </p>
+                <sage>
+                    <input>
+#Reflect over y=x
+B = matrix(2,2,[0,1,
+                1,0])
+#Rotate 90 counterclockwise
+C = matrix(2,2,[0,-1,
+                1,0])
+print("B*C = rotate then reflect")
+print(B*C)
+print("C*B = reflect then rotate")
+print(C*B)
+                    </input>
+                    <output>
+B*C = rotate then reflect
+[ 1  0]
+[ 0 -1]
+C*B = reflect then rotate
+[-1  0]
+[ 0  1]
+                    </output>
+                </sage>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Do matrix transformations "commute"?
+                    That is, if <m>S</m> and <m>T</m> are two transformations,
+                    is <m>S\circ T = T\circ S</m>?
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    No!
+                    Rotate then reflect is different than reflect and then
+                    rotate.
+                </p>
+
+                <p>
+                    For example,
+                    <md>
+                        \twovec{1}{0} \xrightarrow{\textrm{rotate}} \twovec{0}{1} \xrightarrow{\textrm{reflect}} \twovec{1}{0},
+                    </md>
+                    whereas
+                    <md>
+                        \twovec{1}{0} \xrightarrow{\textrm{reflect}} \twovec{0}{1} \xrightarrow{\textrm{rotate}} \twovec{-1}{0},
+                    </md>
+                    and these aren't equal!
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                Explain why the matrix that rotates vectors counterclockwise by
+                an angle <m>\theta</m> is
+                <md>
+                    \begin{bmatrix}
 \cos\theta \amp-\sin\theta\\
 \sin\theta \amp\cos\theta
-\end{bmatrix}.</md></p>
-    </statement>
-  </exercise>
+\end{bmatrix}.
+                </md>
+            </p>
+        </statement>
 
-  <outcomes>
-    <ul>
-      <li><p>What is the matrix for a transformation that scales horizontally by a factor of <m>a</m> and vertically by a factor of <m>b</m>?</p></li>
-      <li><p>What is the matrix for a transformation that rotates counterclockwise by an angle <m>\theta</m>?</p></li>
-      <li><p>How can you find the matrix associated with the composition of two matrix transformations?</p></li>
-    </ul>
-  </outcomes>
+        <solution>
+            <p>
+                We look at the action of the transformation on our vectors
+                <m>\evec_1</m> and <m>\evec_2</m>.
+                So,
+                <md>
+                    T(\evec_1) = T\left(\twovec{1}{0}\right) = \twovec{\cos(\theta)}{\sin(\theta)}. \\
+                </md>
+                This is because if we take <m>\evec_1</m> and rotate it by the
+                angle theta, then the <m>x</m>-component is the horizontal
+                component of the triangle, which is <m>\cos(\theta)</m> and the
+                <m>y</m>-component is the vertical component of the triangle,
+                which is <m>\sin(\theta)</m>.
+                See blue triangle in diagram below.
+                For <m>\evec_2</m>, we have
+                <md>
+                    T(\evec_2) = T\left(\twovec{0}{1}\right) = \twovec{-\sin(\theta)}{\cos(\theta)}. \\
+                </md>
+                Here, the horizontal component of the resulting vector is
+                <m>\sin(\theta)</m>, but in the negative <m>x</m>-direction,
+                making the component <m>-\sin(\theta)</m> and the vertical
+                component is <m>\cos(\theta)</m>.
+                See green triangle in diagram below.
+            </p>
 
+            <image source="images/14-rotation01.png">
+                <shortdescription>
+                    Linear transformation that rotates vectors counterclockwise
+                    by an angle <m>\theta</m>.
+                </shortdescription>
+            </image>
+        </solution>
+    </exercise>
+
+    <outcomes>
+        <ul>
+            <li>
+                <p>
+                    What is the matrix for a transformation that scales
+                    horizontally by a factor of <m>a</m> and vertically by a
+                    factor of <m>b</m>?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    What is the matrix for a transformation that rotates
+                    counterclockwise by an angle <m>\theta</m>?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How can you find the matrix associated with the composition
+                    of two matrix transformations?
+                </p>
+            </li>
+        </ul>
+    </outcomes>
 </worksheet>
