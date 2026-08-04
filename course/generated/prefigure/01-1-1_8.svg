@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="01-1-1_8-figure" width="250" height="210" viewBox="0 0 250 210">
+  <defs>
+    <clipPath id="01-1-1_8-clipPath-0">
+      <rect x="5.0" y="5.0" width="240.0" height="200.0"/>
+    </clipPath>
+  </defs>
+  <g id="01-1-1_8-label-0" transform="translate(-43.0,159.0) translate(-2.2,-2.7)">
+    <g id="01-1-1_8-g-0">
+      <text font-family="serif" font-size="8" font-weight="bold" x="0.0" y="3.8">p</text>
+    </g>
+  </g>
+  <g id="01-1-1_8-label-1" transform="translate(-60.0,227.0) translate(-2.2,-2.7)">
+    <g id="01-1-1_8-g-1">
+      <text font-family="serif" font-size="8" font-weight="bold" x="0.0" y="3.8">q</text>
+    </g>
+  </g>
+</svg>

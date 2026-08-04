@@ -46,7 +46,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -77,8 +94,8 @@ window.MathJax = {
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Course Name (change me)">
-<meta property="book:author" content="Instructor Lastname">
+<meta property="book:title" content="Linear Algebra 1">
+<meta property="book:author" content="DocK and Dr. Maggie">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -101,22 +118,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.1';
+eBookConfig.runestone_version = '8.2.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.18fa7ea1d9f376c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="root-1-2.html"><span class="title">Course Name (change me)</span> <span class="subtitle">MATH xxx Semester 20xx</span></a></h1>
-<p class="byline">Instructor Lastname</p>
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Linear Algebra 1</span> <span class="subtitle">MATH 204 Fall 2026</span></a></h1>
+<p class="byline">DocK and Dr. Maggie</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -190,13 +207,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
 </ul>
-</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="LTs.html" class="internal"><span class="title">Learning Targets</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
@@ -220,12 +240,12 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">Activity Worksheets</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Section 1.1- What can we expect</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">Section 1.2 - Reduced row echelon form (Part 2)</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">Lab 1, Due: September 18, 2020</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Introduction Activity - Color Wheel</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">Section 1.1- What can we expect</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">Section 1.2 - Reduced row echelon form (Part 2)</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">Section 1.4 - Pivots and their influence on solution spaces</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">Section 2.1 - Vectors and Linear Combinations</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">Section 2.1 - Vectors and Linear Combinations Part 2</span></a></div></li>
@@ -256,7 +276,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">Final Review, Part III</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Section 1.2 - Row Operations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="labs.html" class="internal"><span class="title">Labs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-2.html" class="internal"><span class="title">Lab 1, Due: September 25, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-3.html" class="internal"><span class="title">Lab 2, Due: October 9, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-4.html" class="internal"><span class="title">Lab 3, Due: October 23, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-5.html" class="internal"><span class="title">Lab 4, Due: November 13, 2026</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
@@ -269,7 +301,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -288,166 +323,380 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 2.3 - The Span of a Set of Vectors</span><div class="print-links"><a href="?printpreview=activities-11" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<article class="objectives goal-like" id="activities-11-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<ul class="disc" id="activities-11-2-1">
-<li id="activities-11-2-1-1">
-<div class="para" id="activities-11-2-1-1-1">What is the span of a set of vectors and how do we denote it?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="activities-11-2"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="activities-11-2-1-1">The <em class="emphasis">span</em> of a set of vectors <span class="process-math">\(\vvec_1, \vvec_2, \ldots, \vvec_n\)</span> is the set of all linear combinations that can be formed from the vectors.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-11-2-1-2">Alternatively, if <span class="process-math">\({A = \left[\vvec_1 \,\,\, \vvec_2 \,\,\, \cdots \,\,\, \vvec_n\right],}\)</span> then the span of the vectors consists of all vectors <span class="process-math">\(\bvec\)</span> for which the equation <span class="process-math">\(A\xvec = \bvec\)</span> is consistent.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#activities-11-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
-</li>
-<li id="activities-11-2-1-2">
-<div class="para" id="activities-11-2-1-2-1">How can we determine if a vector is in the span of another set of vectors?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Objective"><a href="#activities-11-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
-</li>
-<li id="activities-11-2-1-3">
-<div class="para" id="activities-11-2-1-3-1">How do we know if the span of a set of vectors <span class="process-math">\(\vvec_1, \vvec_2, \dots, \vvec_n\)</span> is <span class="process-math">\(\mathbb{R}^m\)</span> using the pivots of the matrix <span class="process-math">\([\vvec_1 \vvec_2 \vvec_3 \dots \vvec_n]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Objective"><a href="#activities-11-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Objectives"><a href="#activities-11-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div>
+<div class="autopermalink" data-description="Definition 7"><a href="#activities-11-2" title="Copy heading and permalink for Definition 7" aria-label="Copy heading and permalink for Definition 7">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-11-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="introduction" id="activities-11-3-1">
-<div class="para logical" id="activities-11-3-1-1">
-<div class="para">Let’s start in 2-dimensions, and suppose that</div>
-<div class="displaymath process-math" id="activities-11-3-1-1-1">
-\begin{equation*}
-\vvec_1=\twovec11,~~~
-\vvec_2=\twovec{-3}{-3},~~~
-\vvec_3=\twovec14.
-\end{equation*}
+<div class="para" id="activities-11-3-1-1">
+<dfn class="terminology">The setting:</dfn> You are a young traveler, leaving home for the first time. Your parents want to help you on your journey, so just before your departure, they give you two gifts. Specifically, they give you two forms of transportation: a hoverboard and a magic carpet. Your parents inform you that the hoverboard and the magic carpet have restrictions in how they operate.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-1-2">
+<dfn class="terminology">Hoverboard’s Restrictions:</dfn> We denote the restriction on the hoverboard’s movement by the vector <span class="process-math">\(\vvec = \twovec{3}{1}\text{.}\)</span> By this we mean that if the hoverboard traveled "forward" for one hour, it would move along a "diagonal" path that would result in a displacement of 3 miles East and 1 mile North of its starting location. You can also put it in reverse - after one hour you’d be 3 miles West and 1 mile South.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-11-3-1-3">
+<dfn class="terminology">Magic Carpet’s Restrictions:</dfn> We denote the restriction on the magic carpet’s movement by the vector <span class="process-math">\(\wvec = \twovec{1}{2}\text{.}\)</span> By this we mean that if the magic carpet traveled "forward" for one hour, it would move along a "diagonal" path that would result in a displacement of 1 mile East and 2 miles North of its starting location. You can also take this in reverse as well.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-11-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-11-3-2-1-1">Is <span class="process-math">\(\twovec66\)</span> in the span of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-2-1-1">Use the tape to mark the origin and <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> axis. Each tile is one unit. You’ve made a "floor plane."<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/09-2-3_1.svg" role="img" class="contained" alt="Floor plane."></div>
+<div class="autopermalink" data-description="Solution 1.a.1"><a href="#activities-11-3-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.a"><a href="#activities-11-3-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-11-3-3-1-1">Is <span class="process-math">\(\twovec45\)</span> in the span of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-3-1-1">Travel with the hoverboard for one hour, and then travel with the magic carpet forward for one hour. Where do you end up?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/09-2-3_2.svg" role="img" class="contained" alt="One hour of travel with the hoverboard and then one hour of travel with the magic carpet."></div>
+<div class="para" id="activities-11-3-3-2-2">
+<span class="process-math">\(\twovec{3}{1} + \twovec{1}{2} = \twovec{4}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.b.1"><a href="#activities-11-3-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.b"><a href="#activities-11-3-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-3-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="activities-11-3-4-1-1">Give a geometric description of the span of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{,}\)</span> denoted <span class="process-math">\(\span{\vvec_1,\vvec_2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-4-1-1">Now do the opposite - travel with the magic carpet forward for one hour, and then travel with the hoverboard forward for one hour. Where do you end up? What does this say about <span class="process-math">\(\vvec+\wvec\)</span> vs. <span class="process-math">\(\wvec+\vvec\text{?}\)</span> Does this hold in general?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/09-2-3_3.svg" role="img" class="contained" alt="One hour of travel with the magic carpet and then one hour of travel with the hoverboard."></div>
+<div class="para" id="activities-11-3-4-2-2">
+<span class="process-math">\(\twovec{1}{2} + \twovec{3}{1} = \twovec{4}{3}\text{.}\)</span> So, <span class="process-math">\(\vvec + \wvec = \wvec + \vvec\)</span> and this holds in general!<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.c.1"><a href="#activities-11-3-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.c"><a href="#activities-11-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-3-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="activities-11-3-5-1-1">Can <span class="process-math">\(\twovec45\)</span> be expressed as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_3\text{?}\)</span>  Is <span class="process-math">\(\twovec45\)</span> in the span of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_3\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-5-1-1">Where do you end up if you travel in the reverse direction on your magic carpet for 1.5 hours?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/09-2-3_4.svg" role="img" class="contained" alt="Traveling with the magic carpet for 1.5 hours in the reverse direction."></div>
+<div class="para" id="activities-11-3-5-2-2">
+<span class="process-math">\((-1.5)\twovec{1}{2} = \twovec{-1.5}{-3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.d.1"><a href="#activities-11-3-5-2" title="Copy heading and permalink for Solution 1.d.1" aria-label="Copy heading and permalink for Solution 1.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.d"><a href="#activities-11-3-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-3-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="activities-11-3-6-1-1">Give a geometric description of the span of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-6-1-1">You lost your magic carpet. Starting at the origin and using just your hoverboard, can you get to your friend’s house at <span class="process-math">\(\twovec{-6}{-2}\text{?}\)</span> Can you get to the grocery store at <span class="process-math">\(\twovec{2}{4}\text{?}\)</span> How would you describe the collection of places you can get to? (I.e., is it a point or a line or all of <span class="process-math">\(\mathbb{R}^2\text{?}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-3-6-2-1">To get to your friend’s house, you need to travel backwards for 2 hours. <span class="process-math">\((-2)\twovec{3}{1} = \twovec{-6}{-2}\text{.}\)</span> But, you can’t get to the grocery store because there is no value <span class="process-math">\(x\)</span> such that <span class="process-math">\(x\twovec{3}{1} = \twovec{3x}{x} = \twovec{2}{4}\text{.}\)</span> Therefore, <span class="process-math">\(\twovec{3x}{x} \neq \twovec{2}{4}\)</span> for any <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.e.1"><a href="#activities-11-3-6-2" title="Copy heading and permalink for Solution 1.e.1" aria-label="Copy heading and permalink for Solution 1.e.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.e"><a href="#activities-11-3-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-3-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="activities-11-3-7-1-1">For what vectors <span class="process-math">\(\bvec\)</span> does the equation \ \ \ \ <span class="process-math">\(\begin{bmatrix}
-1 \amp 1 \\
-1 \amp 4 \\
-\end{bmatrix} \xvec = \bvec\)</span> \ \ \ \ have a solution?  Explain your thinking.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-3-7-1-1">Good news, you’re back at the origin, and you have both your magic carpet and your hoverboard. You want to go visit the wise man, Old Man Gauss, who lives in a cabin that is 107 miles East and 64 miles North of your home. Is it possible to get there? If so, express how using a linear combination/vector notation. If not, explain why not. Is there more than one way to get there?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-11-3-7-2-1">
+<div class="para">To answer this, let’s set up a linear combination and solve the corresponding linear system! First,</div>
+<div class="displaymath process-math" id="activities-11-3-7-2-1-1">
+\begin{equation*}
+x_1\twovec{3}{1} + x_2\twovec{1}{2} = \twovec{107}{64}.
+\end{equation*}
+</div>
+<div class="para">Then,</div>
+<div class="displaymath process-math" id="activities-11-3-7-2-1-2">
+\begin{equation*}
+\left[
+\begin{array}{rr|r}
+3 \amp  1 \amp 107 \\
+1 \amp  2 \amp 64 \\
+\end{array}
+\right] \sim \left[
+\begin{array}{rr|r}
+1 \amp  0 \amp 30 \\
+0 \amp  1 \amp 17 \\
+\end{array}
+\right]
+\end{equation*}
+</div>
+<div class="para">So, 30 hours on the hoverboard and 17 on the magic carpet will get you there!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.f.1"><a href="#activities-11-3-7-2" title="Copy heading and permalink for Solution 1.f.1" aria-label="Copy heading and permalink for Solution 1.f.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.f"><a href="#activities-11-3-7" title="Copy heading and permalink for Task 1.f" aria-label="Copy heading and permalink for Task 1.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-3-8"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="activities-11-3-8-1-1">Old Man Gauss now tries to hide somewhere you can’t visit him. Is there somewhere he could hide? How would you describe a collection of places you can get to?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-11-3-8-2-1">
+<div class="para">He can’t hide. Consider the augmented system</div>
+<div class="displaymath process-math" id="activities-11-3-8-2-1-1">
+\begin{equation*}
+\left[
+\begin{array}{rr|r}
+3 \amp  1 \amp x \\
+1 \amp  2 \amp y \\
+\end{array}
+\right] \sim \left[
+\begin{array}{rr|r}
+1 \amp  0 \amp * \\
+0 \amp  1 \amp * \\
+\end{array}
+\right]
+\end{equation*}
+</div>
+<div class="para">This system is always consistent and therefore, always has a solutions! We can get anywhere in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.g.1"><a href="#activities-11-3-8-2" title="Copy heading and permalink for Solution 1.g.1" aria-label="Copy heading and permalink for Solution 1.g.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 1.g"><a href="#activities-11-3-8" title="Copy heading and permalink for Task 1.g" aria-label="Copy heading and permalink for Task 1.g">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-3-9"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="para" id="activities-11-3-9-1-1">Your cousin also gets a magic carpet and a hoverboard from your aunt and uncle. His magic carpet also travels in the direction <span class="process-math">\(\vvec = \twovec{3}{1}\text{,}\)</span> but his hoverboard travels in the direction <span class="process-math">\(\uvec = \twovec{6}{2}\text{.}\)</span> Use your "floor plane" to determine where your cousin can go. Can Old Man Gauss hide from your friend?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-3-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-3-9-2-1">My cousin can only travel along a line since <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\uvec\)</span> are scalar multiples of each other. Specifically, my cousin only travels along the line <span class="process-math">\({y = \frac{1}{3}x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-3-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/prefigure/09-2-3_5.svg" role="img" class="contained" alt="Graph of \(f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14\) going through the 3 given points."></div>
+<div class="autopermalink" data-description="Solution 1.h.1"><a href="#activities-11-3-9-2" title="Copy heading and permalink for Solution 1.h.1" aria-label="Copy heading and permalink for Solution 1.h.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 1.h"><a href="#activities-11-3-9" title="Copy heading and permalink for Task 1.h" aria-label="Copy heading and permalink for Task 1.h">🔗</a></div>
 </article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-11-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-11-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="introduction" id="activities-11-4-1">
-<div class="para" id="activities-11-4-1-1">Now we’ll look at the span of sets of vectors in <span class="process-math">\(\real^3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="activities-11-4-1-1">
+<div class="para">Let’s put some more technical terms to the magic carpet/hoverboard scenario. Recall the following movement:</div>
+<ul class="disc" id="activities-11-4-1-1-1">
+<li id="activities-11-4-1-1-1-1">
+<div class="para" id="activities-11-4-1-1-1-1-1">You and your cousin’s hoverboard travel in the direction <span class="process-math">\(\vvec = \twovec{3}{1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-11-4-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-11-4-1-1-1-2">
+<div class="para" id="activities-11-4-1-1-1-2-1">Your magic carpet can move in the direction <span class="process-math">\(\wvec = \twovec{1}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-11-4-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-11-4-1-1-1-3">
+<div class="para" id="activities-11-4-1-1-1-3-1">Your cousin’s magic carpet can move in the direction <span class="process-math">\(\uvec = \twovec{6}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-11-4-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-11-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-11-4-2-1-1">Consider the vector <span class="process-math">\(\vvec =\threevec121\text{.}\)</span>  Give a geometric description of <span class="process-math">\(\laspan\{\vvec\}\)</span> and a rough sketch of the span below.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-11-4-2-1-2">\includegraphics[scale=.9]{coordinates-3d}<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-11-4-2-1-1">Describe the set of vectors that result from linear combinations of <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\wvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-2-2-1">All of <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.a.1"><a href="#activities-11-4-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 2.a"><a href="#activities-11-4-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="activities-11-4-3-1-1">
-<div class="para">Now consider the vectors</div>
-<div class="displaymath process-math" id="activities-11-4-3-1-1-1">
-\begin{equation*}
-\evec_1 = \threevec100,~~~
-\evec_2 = \threevec010.
-\end{equation*}
+<div class="para" id="activities-11-4-3-1-1">Describe the set of vectors that result from linear combinations of <span class="process-math">\(\vvec\)</span> and <span class="process-math">\(\uvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">Give a geometric description of <span class="process-math">\(\laspan\{\evec_1,\evec_2\}\)</span> and a rough sketch of the span below.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-11-4-3-1-2">\includegraphics[scale=.9]{coordinates-3d}<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="solutions">
+<details id="activities-11-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-3-2-1">A line, with the slope 1/3, going through the origin.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.b.1"><a href="#activities-11-4-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 2.b"><a href="#activities-11-4-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-11-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para logical" id="activities-11-4-4-1-1">
-<div class="para">Let’s look at this situation algebraically.  If we write <span class="process-math">\(\bvec=\threevec{b_1}{b_2}{b_3}\text{,}\)</span> what condition on the components of <span class="process-math">\(\bvec\)</span> must be satisfied if the equation</div>
-<div class="displaymath process-math" id="activities-11-4-4-1-1-3">
-\begin{equation*}
-\begin{bmatrix}
-1 \amp 0 \\
-0 \amp 1 \\
-0 \amp 0 \\
-\end{bmatrix}
-\xvec = \bvec
-\end{equation*}
+<div class="para" id="activities-11-4-4-1-1">What is Span <span class="process-math">\(\{\vvec,\wvec\}\text{?}\)</span> Try to describe geometrically and algebraically.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">is consistent?  What condition on the components of <span class="process-math">\(\bvec\)</span> must be satisfied for <span class="process-math">\(\bvec\)</span> to be in the span of <span class="process-math">\(\evec_1\)</span> and <span class="process-math">\(\evec_2\text{?}\)</span>
+<div class="solutions">
+<details id="activities-11-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-4-2-1">Geometrically, this is all of <span class="process-math">\(\mathbb{R}^2\text{.}\)</span> Algebraically, this is <span class="process-math">\({a\twovec{3}{1} + b\twovec{1}{2}}\)</span> for any real number <span class="process-math">\(a, b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Solution 2.c.1"><a href="#activities-11-4-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 2.c"><a href="#activities-11-4-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="activities-11-4-5-1-1">What is Span <span class="process-math">\(\{\vvec,\uvec\}\text{?}\)</span> Try to describe geometrically and algebraically.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-5-2-1">Geometrically, this is a line. Algebraically, this is <span class="process-math">\({a\twovec{3}{1}}\)</span> for any real number <span class="process-math">\(a\text{.}\)</span> Note, that we don’t need the <span class="process-math">\(\uvec\)</span> because it is a scalar multiple of <span class="process-math">\(\vvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.d.1"><a href="#activities-11-4-5-2" title="Copy heading and permalink for Solution 2.d.1" aria-label="Copy heading and permalink for Solution 2.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.d"><a href="#activities-11-4-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-4-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="activities-11-4-6-1-1">For what vectors <span class="process-math">\(\bvec\)</span> does the matrix equation <span class="process-math">\(\left[
+\begin{array}{rr}
+3 \amp 1  \\
+1 \amp 2 \\
+\end{array}
+\right]\xvec = \bvec\)</span> have a solution?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-6-2-1">All vectors in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.e.1"><a href="#activities-11-4-6-2" title="Copy heading and permalink for Solution 2.e.1" aria-label="Copy heading and permalink for Solution 2.e.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.e"><a href="#activities-11-4-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-4-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="activities-11-4-7-1-1">For what vectors <span class="process-math">\(\bvec\)</span> does the matrix equation <span class="process-math">\(\left[
+\begin{array}{rr}
+3 \amp 6  \\
+1 \amp 2 \\
+\end{array}
+\right]\xvec = \bvec\)</span> have a solution?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-7-2-1">All vectors <span class="process-math">\(\bvec = \twovec{3x}{x}\)</span> for any value <span class="process-math">\(x\)</span> (a line).<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.f.1"><a href="#activities-11-4-7-2" title="Copy heading and permalink for Solution 2.f.1" aria-label="Copy heading and permalink for Solution 2.f.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.f"><a href="#activities-11-4-7" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-4-8"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="activities-11-4-8-1-1">How many pivots does the matrix <span class="process-math">\(\left[
+\begin{array}{rr}
+3 \amp 1  \\
+1 \amp 2 \\
+\end{array}
+\right]\)</span> have? How might this be related to your answer for Span <span class="process-math">\(\{\vvec,\wvec\}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-8-2-1">The row reduced echelon form of <span class="process-math">\(\left[
+\begin{array}{rr}
+3 \amp 1  \\
+1 \amp 2 \\
+\end{array}
+\right]\)</span> is the identity matrix, which means that the system is always consistent, no matter what <span class="process-math">\(\bvec\)</span> is. There is a pivot in every row!<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.g.1"><a href="#activities-11-4-8-2" title="Copy heading and permalink for Solution 2.g.1" aria-label="Copy heading and permalink for Solution 2.g.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.g"><a href="#activities-11-4-8" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-11-4-9"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="para" id="activities-11-4-9-1-1">How many pivots does the matrix <span class="process-math">\(\left[
+\begin{array}{rr}
+3 \amp 6  \\
+1 \amp 2 \\
+\end{array}
+\right]\)</span> have? How might this be related to your answer for Span <span class="process-math">\(\{\vvec,\uvec\}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-11-4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-11-4-9-2-1">The row reduced echelon form of <span class="process-math">\(\left[
+\begin{array}{rr}
+3 \amp 1  \\
+1 \amp 2 \\
+\end{array}
+\right]\)</span> is <span class="process-math">\(\left[
+\begin{array}{rr}
+1 \amp 2  \\
+0 \amp 0 \\
+\end{array}
+\right]\text{,}\)</span> which means that there is only 1 pivot and thus, not always a solution. For some <span class="process-math">\(\bvec\)</span> there could be a pivot in the rightmost column of the augmented matrix for the corresponding linear system, thus resulting in no solution.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-4-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.h.1"><a href="#activities-11-4-9-2" title="Copy heading and permalink for Solution 2.h.1" aria-label="Copy heading and permalink for Solution 2.h.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.h"><a href="#activities-11-4-9" title="Copy heading and permalink for Task 2.h" aria-label="Copy heading and permalink for Task 2.h">🔗</a></div>
 </article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-11-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="activities-11-5"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-11-5-1">
-<div class="para logical" id="activities-11-5-1-1">
-<div class="para">Consider the vectors</div>
-<div class="displaymath process-math" id="activities-11-5-1-1-1">
-\begin{equation*}
-\vvec_1 = \threevec11{-1},~~~
-\vvec_2 = \threevec021,~~~
-\vvec_3 = \threevec1{-2}4.
-\end{equation*}
+<article class="outcomes goal-like" id="activities-11-5"><h3 class="heading"><span class="type">Outcomes</span></h3>
+<ul class="disc" id="activities-11-5-1">
+<li id="activities-11-5-1-1">
+<div class="para" id="activities-11-5-1-1-1">What is the span of a set of vectors and how do we denote it?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-11-5-1-1" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+<li id="activities-11-5-1-2">
+<div class="para" id="activities-11-5-1-2-1">How can we determine if a vector is in the span of another set of vectors?<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-11-5-1-2" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+<li id="activities-11-5-1-3">
+<div class="para" id="activities-11-5-1-3-1">How do we know if the span of a set of vectors <span class="process-math">\(\vvec_1, \vvec_2, \dots, \vvec_n\)</span> is <span class="process-math">\(\mathbb{R}^m\)</span> using the pivots of the matrix <span class="process-math">\([\vvec_1 \,\,\, \vvec_2 \,\,\, \vvec_3 \,\,\, \dots \,\,\, \vvec_n]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="task exercise-like" id="activities-11-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-11-5-2-1-1">Is the vector <span class="process-math">\(\threevec4{-3}{-1}\)</span> in <span class="process-math">\(\laspan\{\vvec_1,\vvec_2,\vvec_3\}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 3.a"><a href="#activities-11-5-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-11-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-11-5-3-1-1">What is the reduced row echelon form of the matrix <span class="process-math">\(\begin{bmatrix}
-\vvec_1 \amp \vvec_2 \amp \vvec_3
-\end{bmatrix}
-\text{?}\)</span>  You should be able to find this using your work from the last question.<div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 3.b"><a href="#activities-11-5-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-11-5-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="activities-11-5-4-1-1">What do the pivot positions of this matrix tell you about <span class="process-math">\(\laspan\{\vvec_1,\vvec_2,\vvec_3\}\text{?}\)</span>  Give a geometric description of <span class="process-math">\(\laspan\{\vvec_1,\vvec_2,\vvec_3\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-11-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 3.c"><a href="#activities-11-5-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-11-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-11-5-1-3" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Outcomes"><a href="#activities-11-5" title="Copy heading and permalink for Outcomes" aria-label="Copy heading and permalink for Outcomes">🔗</a></div>
 </article><div class="autopermalink" data-description="Worksheet: Section 2.3 - The Span of a Set of Vectors"><a href="#activities-11" title="Copy heading and permalink for Worksheet: Section 2.3 - The Span of a Set of Vectors" aria-label="Copy heading and permalink for Worksheet: Section 2.3 - The Span of a Set of Vectors">🔗</a></div>
 </section>
 </div>

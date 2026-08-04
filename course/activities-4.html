@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</title>
+<title>Section 1.1- What can we expect</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -46,7 +46,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -77,8 +94,8 @@ window.MathJax = {
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Course Name (change me)">
-<meta property="book:author" content="Instructor Lastname">
+<meta property="book:title" content="Linear Algebra 1">
+<meta property="book:author" content="DocK and Dr. Maggie">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -101,22 +118,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.1';
+eBookConfig.runestone_version = '8.2.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.18fa7ea1d9f376c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="root-1-2.html"><span class="title">Course Name (change me)</span> <span class="subtitle">MATH xxx Semester 20xx</span></a></h1>
-<p class="byline">Instructor Lastname</p>
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Linear Algebra 1</span> <span class="subtitle">MATH 204 Fall 2026</span></a></h1>
+<p class="byline">DocK and Dr. Maggie</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -190,13 +207,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
 </ul>
-</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="LTs.html" class="internal"><span class="title">Learning Targets</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
@@ -220,12 +240,12 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">Activity Worksheets</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Section 1.1- What can we expect</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">Section 1.2 - Reduced row echelon form (Part 2)</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">Lab 1, Due: September 18, 2020</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Introduction Activity - Color Wheel</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">Section 1.1- What can we expect</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">Section 1.2 - Reduced row echelon form (Part 2)</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">Section 1.4 - Pivots and their influence on solution spaces</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">Section 2.1 - Vectors and Linear Combinations</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">Section 2.1 - Vectors and Linear Combinations Part 2</span></a></div></li>
@@ -256,7 +276,19 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">Final Review, Part III</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Section 1.2 - Row Operations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="labs.html" class="internal"><span class="title">Labs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-2.html" class="internal"><span class="title">Lab 1, Due: September 25, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-3.html" class="internal"><span class="title">Lab 2, Due: October 9, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-4.html" class="internal"><span class="title">Lab 3, Due: October 23, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-5.html" class="internal"><span class="title">Lab 4, Due: November 13, 2026</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
@@ -269,7 +301,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -286,144 +321,592 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <section class="worksheet" id="activities-4" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h2 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</span><div class="print-links"><a href="?printpreview=activities-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 1.1- What can we expect</span><div class="print-links"><a href="?printpreview=activities-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<article class="objectives goal-like" id="activities-4-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<div class="introduction" id="activities-4-2-1">
-<div class="para" id="activities-4-2-1-1">Make sure you can answer the following questions:<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="activities-4-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="activities-4-2-1-1">Motivation: The Grand Rapids Children’s Museum charges $12 admission for adults and $5 admission for children (ages 3-17). One day, they know the revenue was $900 and the total number of people was 110, but your boss isn’t sure how many children and how many adults. Is there only one answer? Can you figure it out?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div>
-<ul class="disc" id="activities-4-2-2">
-<li id="activities-4-2-2-1">
-<div class="para" id="activities-4-2-2-1-1">What operations can we do to a system of linear equations to get a new system that has the same solutions?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Objective"><a href="#activities-4-2-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
-</li>
-<li id="activities-4-2-2-2">
-<div class="para" id="activities-4-2-2-2-1">What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Objective"><a href="#activities-4-2-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
-</li>
-<li id="activities-4-2-2-3">
-<div class="para" id="activities-4-2-2-3-1">What is an algorithm for doing Gaussian elimination?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Objective"><a href="#activities-4-2-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Objectives"><a href="#activities-4-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activities-4-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-4-3-1">
-<div class="para" id="activities-4-3-1-1">Working with augmented matrices:<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-<article class="task exercise-like" id="activities-4-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-4-3-2-1-1">Write the augmented matrix for the following system of equations and perform Gaussian elimination to describe the solution space of the system of equations in as much detail as you can.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-4-3-2-1-2">
-<span class="process-math">\(\ds
-\begin{alignedat}{4}
-x \amp  {}+{}  \amp 2y \amp  {}-{}  \amp z \amp  {}={}  \amp 1 \\
-3x \amp  {}+{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 7 \\
--x \amp  \amp  \amp  {}+{}  \amp 4z \amp  {}={}  \amp -3 \\
-\end{alignedat}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#activities-4-3-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-4-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="activities-4-3-3-1-1">
-<div class="para">Suppose that you have a system of linear equations in the unknowns <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> whose augmented matrix is row equivalent to</div>
-<div class="displaymath process-math" id="activities-4-3-3-1-1-3">
+<div class="solutions">
+<details id="activities-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-2-2-1">
+<div class="para">First, let’s decide on the variables for our equations. Let <span class="process-math">\(A\)</span> be the number of adults and <span class="process-math">\(C\)</span> be the number of children. Then we can write two equations based on the information given:</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-3">
 \begin{equation*}
-\left[
-\begin{array}{rr|r}
-1 \amp 0 \amp 3 \\ 
-0 \amp 1 \amp 0 \\ 
-0 \amp 0 \amp 0 \\
-\end{array}
-\right].
+12A + 5C = 900
 \end{equation*}
 </div>
-<div class="para">Write the system of linear equations corresponding to the augmented matrix.  Then describe the solution set of the system of equations in as much detail as you can.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#activities-4-3-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-4-3-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para logical" id="activities-4-3-4-1-1">
-<div class="para">Suppose that you have a system of linear equations in the unknowns <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> whose augmented matrix is row equivalent to</div>
-<div class="displaymath process-math" id="activities-4-3-4-1-1-3">
+<div class="displaymath process-math" id="activities-4-2-2-1-4">
 \begin{equation*}
-\left[
-\begin{array}{rr|r}
-1 \amp 0 \amp 3 \\ 
-0 \amp 1 \amp 0 \\ 
-0 \amp 0 \amp 1 \\
-\end{array}
-\right].
+A + C = 110
 \end{equation*}
 </div>
-<div class="para">Write the system of linear equations corresponding to the augmented matrix.  Then describe the solution set of the system of equations in as much detail as you can.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">We can solve this system of equations using substitution or elimination. Let’s use elimination. We can multiply the second equation by -12 to get:</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-5">
+\begin{equation*}
+-12A - 12C = -1320
+\end{equation*}
+</div>
+<div class="para">Adding this to the first equation:</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-6">
+\begin{equation*}
+(12A + 5C) + (-12A - 12C) = 900 + (-1320)
+\end{equation*}
+</div>
+<div class="para">Simplifying:</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-7">
+\begin{equation*}
+-7C = -420
+\end{equation*}
+</div>
+<div class="para">Solving for <span class="process-math">\(C\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-9">
+\begin{equation*}
+C = 60
+\end{equation*}
+</div>
+<div class="para">Substituting back into the second equation:</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-10">
+\begin{equation*}
+A + 60 = 110
+\end{equation*}
+</div>
+<div class="para">Solving for <span class="process-math">\(A\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-2-2-1-12">
+\begin{equation*}
+A = 50
+\end{equation*}
+</div>
+<div class="para">Therefore, there is a unique solution: 50 adults and 60 children. Note that we can do this process multiple different ways.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.1"><a href="#activities-4-2-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#activities-4-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-4-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-4-3-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para logical" id="activities-4-3-5-1-1">
-<div class="para">Suppose that the augmented matrix of a system of linear equations has the following shape where <span class="process-math">\(*\)</span> could be any real number.</div>
-<div class="displaymath process-math" id="activities-4-3-5-1-1-2">
+<article class="exercise exercise-like" id="activities-4-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="activities-4-3-1-1">What is a line? What is a linear equation? Try to think both algebraically and geometrically (on a graph)! (Save this answer - we’ll come back to it.)<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-3-2-1">
+<div class="para">There can be many answers to this, but some things to think about are:</div>
+<ul class="disc" id="activities-4-3-2-1-1">
+<li id="activities-4-3-2-1-1-1">
+<div class="para" id="activities-4-3-2-1-1-1-1">A line is a set of points that satisfy a linear equation.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-3-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-3-2-1-1-2">
+<div class="para" id="activities-4-3-2-1-1-2-1">A linear equation is an equation that can be written in the form <span class="process-math">\({Ax + By = C}\)</span> where <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\)</span> are constants.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-3-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-3-2-1-1-3">
+<div class="para" id="activities-4-3-2-1-1-3-1">Geometrically, a linear equation represents a straight line on a graph.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-3-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-3-2-1-1-4">
+<div class="para" id="activities-4-3-2-1-1-4-1">Algebraically, it represents a relationship between two variables that can be expressed in the form of a linear equation.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-3-2-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-3-2-1-1-5">
+<div class="para" id="activities-4-3-2-1-1-5-1">The slope of a line is constant -- there is no curvature.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-3-2-1-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-3-2-1-1-6">
+<div class="para" id="activities-4-3-2-1-1-6-1">A line extends infinitely in both directions and has no endpoints.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-3-2-1-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1"><a href="#activities-4-3-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-4-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-4-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-4-4-1">
+<div class="para" id="activities-4-4-1-1">We’ll now consider linear systems in two variables: By a <em class="emphasis">system of linear equations</em> or a <em class="emphasis">linear system</em>, we mean a set of linear equations written in a common set of unknowns.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-4-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="activities-4-4-2-1-1">As a warmup we saw a few "linear systems" in two variables, e.g., <span class="process-math">\(-x + y = 1\)</span> and <span class="process-math">\(2x - y = 1\)</span> is a linear system in the two variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> We can visualize a linear system in two variables as a collection of lines in the plane. A solution to the linear system is a point that satisfies both equations, which is the same as saying where the two lines intersect. Here are the ways we say that lines can intersect.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:4.166666666666667%;margin-right:4.166666666666667%;grid-template-columns:27.2727272727273% 27.2727272727273% 27.2727272727273%;column-gap:8.333333333333332%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/01-1-1_1.svg" role="img" class="contained" alt="A pair of lines that intersect in a single point, demonstrating that a set of linear equations may contain a single common solution."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/01-1-1_2.svg" role="img" class="contained" alt="Two parallel lines are shown, which demonstrates the fact that a set of two equations in two unknowns may have no solutions."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/01-1-1_3.svg" role="img" class="contained" alt="A pair of lines that intersect in infinitely many points, demonstrating that a set of linear equations may contain infinitely many common solutions."></div></div>
+</div>
+</div> 
+<div class="para" id="activities-4-4-2-1-3">Are there any other ways lines could intersect? Based on your answer, what are the possibilities for the solutions of a system of linear equations in two variables? <dfn class="terminology">Note we call the intersections the solution set to the linear system.</dfn><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-4-2-2-1">
+<div class="para">There are no other ways lines could intersect. Therefore, the possibilities for the solutions of a system of linear equations in two variables are:</div>
+<ul class="disc" id="activities-4-4-2-2-1-1">
+<li id="activities-4-4-2-2-1-1-1">
+<div class="para" id="p-derived-activities-4-4-2-2-1-1-1">Exactly one solution (the lines intersect at a single point, see left graph)</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-4-2-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-4-2-2-1-1-2">
+<div class="para" id="p-derived-activities-4-4-2-2-1-1-2">No solutions (the lines are parallel and do not intersect, see middle graph)</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-4-2-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activities-4-4-2-2-1-1-3">
+<div class="para" id="p-derived-activities-4-4-2-2-1-1-3">Infinitely many solutions (the lines are the same line, see right graph)</div>
+<div class="autopermalink" data-description="Item"><a href="#activities-4-4-2-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.a.1"><a href="#activities-4-4-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#activities-4-4-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="activities-4-4-3-1-1">Based on the image below and prior knowledge - what happens to the number of solutions as we add more equations?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:4.166666666666667%;margin-right:4.166666666666667%;grid-template-columns:27.2727272727273% 27.2727272727273% 27.2727272727273%;column-gap:8.333333333333332%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/01-1-1_4.svg" role="img" class="contained" alt="A single line, which contains infinitely many points. This demonstrates that a set of linear equations may have infinitely many solutions."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/01-1-1_5.svg" role="img" class="contained" alt="A pair of lines that intersect in a single point, demonstrating that a set of linear equations may contain a single common solution."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/01-1-1_6.svg" role="img" class="contained" alt="Three lines that have no common point of intersection. This shows that a set of linear equations may have no common solutions."></div></div>
+</div>
+</div>
+<div class="solutions">
+<details id="activities-4-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-4-3-2-1">A single line has infinitely many solutions (left graph), two lines can intersect at a single point giving one solution (middle graph), and three lines may have no common point of intersection and thus, no solutions. As we add more equations, it is less likely to have common intersections and thus, the number of solutions generally decreases.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.b.1"><a href="#activities-4-4-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#activities-4-4-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-4-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-4-5"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-4-5-1">
+<div class="para" id="activities-4-5-1-1">We’ll now consider linear systems in three variables. An example of a linear equation in three variables is <span class="process-math">\(3x+2y+z = 1\text{.}\)</span> A linear equation in three variables (think <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> ) is a plane. Here we’ll use <span class="process-math">\(3\times5\)</span> index cards, or pieces of paper, or whatever you have that looks like a flat surface, to study the solutions to systems of linear equations in three variables. Again, a solution to a system of linear equations is a point (or points) that satisfy all the equations, ie., an intersection.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-4-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="activities-4-5-2-1-1">Is it possible that there are no solutions to a system of two equations in three variables? If so, explain how or sketch an example.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-2-2-1">Yes, it is possible that there are no solutions to a system of two equations in three variables. This can happen if the two planes represented by the equations are parallel and do not intersect.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/prefigure/01-1-1_7.svg" role="img" class="contained" alt="Two paralell planes have no points of intersection and represent a system in three variables and two equations that does not have a solution."></div>
+<div class="autopermalink" data-description="Solution 4.a.1"><a href="#activities-4-5-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#activities-4-5-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="activities-4-5-3-1-1">Is it possible that the solutions to a system of two equations in three variables is a single point? If so, explain how or sketch an example.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-3-2-1">No, it is not possible for the solutions to a system of two equations in three variables to be a single point. Two planes in three-dimensional space can either be parallel (no intersection), intersect along a line (infinitely many points), or be the same plane (also infinitely many points). Therefore, a single point of intersection cannot occur with just two planes. This is due to the system being "underconstrained."<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/prefigure/01-1-1_8.svg" role="img" class="contained" alt="A system of two equations in three variables either has infinitely many solutions or no solutions."></div>
+<div class="autopermalink" data-description="Solution 4.b.1"><a href="#activities-4-5-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#activities-4-5-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="activities-4-5-4-1-1">If you are studying a system of two equations in three variables, what would you usually expect for the solution set?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-4-2-1">Usually a line, but there could be no intersection.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.c.1"><a href="#activities-4-5-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#activities-4-5-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="activities-4-5-5-1-1">If you are studying a system of three equations in three variables, what would you usually expect for the solution set?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-5-2-1">Usually a point, but we could also get a line or no solutions.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/01-Sect1-1_3planes.png" class="contained" alt="A system of three equations in three variables usually results in a point, but could results in no solutions or infinitely many soltions (a line)."></div>
+<div class="autopermalink" data-description="Solution 4.d.1"><a href="#activities-4-5-5-2" title="Copy heading and permalink for Solution 4.d.1" aria-label="Copy heading and permalink for Solution 4.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.d"><a href="#activities-4-5-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="activities-4-5-6-1-1">If you are studying a system of four equations in three variables, what would you usually expect for the solution set?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-6-2-1">Usually no solutions as this is "overconstrained."<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.e.1"><a href="#activities-4-5-6-2" title="Copy heading and permalink for Solution 4.e.1" aria-label="Copy heading and permalink for Solution 4.e.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.e"><a href="#activities-4-5-6" title="Copy heading and permalink for Task 4.e" aria-label="Copy heading and permalink for Task 4.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="activities-4-5-7-1-1">Is it possible that the solutions to four equations in three unknowns form a line? Either sketch an example or state a reason why it can’t happen.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-7-2-1">Yes! It is possible for the solutions to four equations in three unknowns to form a line. This can occur if the four planes represented by the equations intersect in such a way that they share a common line of intersection.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/images/01-Sect1-1_4planes.png" class="contained" alt="A system of four equations in three variables can form a line of infinitely many solutions."></div>
+<div class="autopermalink" data-description="Solution 4.f.1"><a href="#activities-4-5-7-2" title="Copy heading and permalink for Solution 4.f.1" aria-label="Copy heading and permalink for Solution 4.f.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.f"><a href="#activities-4-5-7" title="Copy heading and permalink for Task 4.f" aria-label="Copy heading and permalink for Task 4.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-8"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="activities-4-5-8-1-1">Suppose we have a set of 500 linear equations in 10 unknowns. Which of the would you expect to hold?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-8-2-1">In a system of 500 linear equations in 10 unknowns, we would generally expect there to be no solutions. This is because there are more equations than unknowns, which typically leads to an overdetermined system. In such cases, it is likely that the equations will contradict each other, resulting in no common solution. The system is overconstrained, meaning that there are too many constraints for the number of variables available to satisfy them all simultaneously.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.g.1"><a href="#activities-4-5-8-2" title="Copy heading and permalink for Solution 4.g.1" aria-label="Copy heading and permalink for Solution 4.g.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.g"><a href="#activities-4-5-8" title="Copy heading and permalink for Task 4.g" aria-label="Copy heading and permalink for Task 4.g">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-9"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="para" id="activities-4-5-9-1-1">Suppose we have a set of 10 linear equations in 500 unknowns. Which of the three possibilities would you expect to hold?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-9-2-1">In a system of 10 linear equations in 500 unknowns, we would generally expect there to be infinitely many solutions. This is because there are more unknowns than equations, which typically allows for a larger solution space. The system is underdetermined, meaning that there are not enough constraints to uniquely determine the values of all the unknowns. Therefore, we would expect the solution set to be infinite. There are many variables to play around with, but only a few equations to satisfy -- many "degrees of freedom."<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.h.1"><a href="#activities-4-5-9-2" title="Copy heading and permalink for Solution 4.h.1" aria-label="Copy heading and permalink for Solution 4.h.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.h"><a href="#activities-4-5-9" title="Copy heading and permalink for Task 4.h" aria-label="Copy heading and permalink for Task 4.h">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-5-10"><h4 class="heading"><span class="codenumber">(i)</span></h4>
+<div class="para" id="activities-4-5-10-1-1">What happens to the size of the solution sets as we add more equations?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-10-2-1">As we add more equations to a system of linear equations, the size of the solution set generally decreases. This is because each additional equation imposes an additional constraint on the variables, which can reduce the number of possible solutions.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-5-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.i.1"><a href="#activities-4-5-10-2" title="Copy heading and permalink for Solution 4.i.1" aria-label="Copy heading and permalink for Solution 4.i.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 4.i"><a href="#activities-4-5-10" title="Copy heading and permalink for Task 4.i" aria-label="Copy heading and permalink for Task 4.i">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activities-4-5" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="definition definition-like" id="def-linear-system"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="def-linear-system-1-1">
+<div class="para">A linear equation in the unknowns <span class="process-math">\(x_1, x_2, \ldots, x_n\)</span> may be written in the form</div>
+<div class="displaymath process-math" id="def-linear-system-1-1-2">
 \begin{equation*}
-\left[
-\begin{array}{rrrrr|r}
-* \amp * \amp * \amp * \amp * \amp * \\ 
-* \amp * \amp * \amp * \amp * \amp * \\ 
-* \amp * \amp * \amp * \amp * \amp * \\ 
-\end{array}
-\right].
+a_1x_1 + a_2x_2 + \ldots + a_nx_n = b,
 \end{equation*}
 </div>
-<div class="para">How many equations are there in this system and how many unknowns?</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">where <span class="process-math">\(a_1, a_2, \ldots, a_n\)</span> are real numbers knowns as <em class="emphasis">coefficients</em>. We also say that <span class="process-math">\(x_1, x_2, \ldots, x_n\)</span> are the <em class="emphasis">variables</em> in the equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-linear-system-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="activities-4-3-5-1-2">Based on our work in Section 1.1, do you think it’s possible that this system has exactly one solution, infinitely many solutions, or no solutions?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-3-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-linear-system-1-2">By a <em class="emphasis">system of linear equations</em> or a <em class="emphasis">linear system</em>, we mean a set of linear equations written in a common set of unknowns.<div class="autopermalink" data-description="Paragraph"><a href="#def-linear-system-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="0.75in"></div>
-<div class="autopermalink" data-description="Task 1.d"><a href="#activities-4-3-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-4-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+<div class="autopermalink" data-description="Definition 1"><a href="#def-linear-system" title="Copy heading and permalink for Definition 1" aria-label="Copy heading and permalink for Definition 1">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="activities-4-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="activities-4-4-1-1">Practice with Gaussian elimination: For each of the following linear systems, form an associated augmented matrix and determine whether there is exactly one solution, infinitely many, or none.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-4-4-1-2">
-<span class="process-math">\(\ds
-\begin{alignedat}{4}
-x \amp  {}+{}  \amp y \amp  {}+{}  \amp 2z \amp  {}={}  \amp 1 \\
-2x \amp  {}-{}  \amp y \amp  {}-{}  \amp 2z \amp  {}={}  \amp 2 \\
--x \amp  {}+{}  \amp y \amp  {}+{}  \amp z \amp  {}={}  \amp 0 \\
-\end{alignedat}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-4-4-1-3">
-<span class="process-math">\(\ds
-\begin{alignedat}{4}
--x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp -1 \\
-2x \amp  {}+{}  \amp 4y \amp  {}-{}  \amp z \amp  {}={}  \amp 5 \\
-x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 3 \\
-\end{alignedat}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-4-4-1-4">
-<span class="process-math">\(\ds
-\begin{alignedat}{4}
--x \amp  {}-{}  \amp 2y \amp  {}+{}  \amp 2z \amp  {}={}  \amp -1 \\
-2x \amp  {}+{}  \amp 4y \amp  {}-{}  \amp z \amp  {}={}  \amp 5 \\
-x \amp  {}+{}  \amp 2y \amp  \amp  \amp  {}={}  \amp 2 \\
-\end{alignedat}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="def-solution"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-solution-1-1">A <em class="emphasis">solution</em> to a linear system is simply a set of numbers <span class="process-math">\({x_1 = s_1, x_2 = s_2, \ldots, x_n = s_n}\)</span> that satisfy all the equations in the system.<div class="autopermalink" data-description="Paragraph"><a href="#def-solution-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-4-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet: Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)"><a href="#activities-4" title="Copy heading and permalink for Worksheet: Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)" aria-label="Copy heading and permalink for Worksheet: Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)">🔗</a></div>
+<div class="autopermalink" data-description="Definition 2"><a href="#def-solution" title="Copy heading and permalink for Definition 2" aria-label="Copy heading and permalink for Definition 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-4-8"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-4-8-1">
+<div class="para" id="activities-4-8-1-1">Consider the above important definitions from your <a class="external" href="https://gvsu.edu/s/1rw" target="_blank">textbook</a> when thinking about the following problems:<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-4-8-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction" id="activities-4-8-2-1">
+<div class="para" id="activities-4-8-2-1-1">Which of the following equations are linear? Justify your response.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-4-8-2-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="activities-4-8-2-2-1-1">
+<span class="process-math">\(2x + xy - 3y^2 = 2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-8-2-2-2-1">This equation is not linear because it contains the term <span class="process-math">\(xy\text{,}\)</span> which is a product of two variables, and the term <span class="process-math">\(y^2\text{,}\)</span> which is a variable raised to a power greater than 1. A linear equation must have each variable to the first power and cannot have products of variables.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.i.1"><a href="#activities-4-8-2-2-2" title="Copy heading and permalink for Solution 5.a.i.1" aria-label="Copy heading and permalink for Solution 5.a.i.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.a.i"><a href="#activities-4-8-2-2" title="Copy heading and permalink for Task 5.a.i" aria-label="Copy heading and permalink for Task 5.a.i">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-2-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="activities-4-8-2-3-1-1">
+<span class="process-math">\(-2x_1 + 3x_2 + 4x_3 - x_5 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-8-2-3-2-1">This equation is linear because it has each variable to the first power and no products of variables. It has the same form as the definition with <span class="process-math">\(b = 0\)</span> and <span class="process-math">\(a_4 = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.ii.1"><a href="#activities-4-8-2-3-2" title="Copy heading and permalink for Solution 5.a.ii.1" aria-label="Copy heading and permalink for Solution 5.a.ii.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.a.ii"><a href="#activities-4-8-2-3" title="Copy heading and permalink for Task 5.a.ii" aria-label="Copy heading and permalink for Task 5.a.ii">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-2-4"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="activities-4-8-2-4-1-1">
+<span class="process-math">\(x = 3z - 4y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-8-2-4-2-1">This equation is linear because it has each variable to the first power and no products of variables. This can be rewritten as <span class="process-math">\(x + 4y - 3z = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.iii.1"><a href="#activities-4-8-2-4-2" title="Copy heading and permalink for Solution 5.a.iii.1" aria-label="Copy heading and permalink for Solution 5.a.iii.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.a.iii"><a href="#activities-4-8-2-4" title="Copy heading and permalink for Task 5.a.iii" aria-label="Copy heading and permalink for Task 5.a.iii">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-2-5"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
+<div class="para" id="activities-4-8-2-5-1-1">
+<span class="process-math">\(\sin(x_1) + \cos(x_2) = 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-8-2-5-2-1">This equation is not linear because it contains the terms <span class="process-math">\(\sin(x_1)\)</span> and <span class="process-math">\(\cos(x_2)\text{,}\)</span> which are trigonometric functions of the variables. A linear equation must have each variable to the first power and cannot have functions of the variables.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.iv.1"><a href="#activities-4-8-2-5-2" title="Copy heading and permalink for Solution 5.a.iv.1" aria-label="Copy heading and permalink for Solution 5.a.iv.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.a.iv"><a href="#activities-4-8-2-5" title="Copy heading and permalink for Task 5.a.iv" aria-label="Copy heading and permalink for Task 5.a.iv">🔗</a></div>
+</article><div class="autopermalink" data-description="Task 5.a"><a href="#activities-4-8-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="activities-4-8-3-1">
+<div class="para" id="activities-4-8-3-1-1">Consider the system of linear equations:<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-8-3-1-2">
+<div class="displaymath process-math" id="activities-4-8-3-1-2-1">
+\begin{equation*}
+\ds
+\begin{alignedat}{4}
+x \amp  {}+{}  \amp y \amp \amp  {}={}  \amp 3 \\
+\amp  \amp  y \amp  {}-{}  z \amp  {}={}  \amp 2 \\
+2x \amp  {}+{} \amp y  \amp  {}+{}  z \amp  {}={}  \amp 4 \\
+\end{alignedat}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-4-8-3-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="activities-4-8-3-2-1-1">Is <span class="process-math">\((x,y,z) = (1,2,0)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-8-3-2-2-1">
+<div class="para">To be a solution, the point must satisfy all three equations. Let’s check: Plugging in <span class="process-math">\((x,y,z) = (1,2,0)\)</span> into the first equation:</div>
+<div class="displaymath process-math" id="activities-4-8-3-2-2-1-2">
+\begin{equation*}
+1 + 2 = 3
+\end{equation*}
+</div>
+<div class="para">This is true. Now the second equation:</div>
+<div class="displaymath process-math" id="activities-4-8-3-2-2-1-3">
+\begin{equation*}
+2 - 0 = 2
+\end{equation*}
+</div>
+<div class="para">This is also true. Now the third equation:</div>
+<div class="displaymath process-math" id="activities-4-8-3-2-2-1-4">
+\begin{equation*}
+2(1) + 2 + 0 = 4
+\end{equation*}
+</div>
+<div class="para">This is also true. Since the point satisfies all three equations, <span class="process-math">\((1,2,0)\)</span> is indeed a solution to the system of equations.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.i.1"><a href="#activities-4-8-3-2-2" title="Copy heading and permalink for Solution 5.b.i.1" aria-label="Copy heading and permalink for Solution 5.b.i.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.b.i"><a href="#activities-4-8-3-2" title="Copy heading and permalink for Task 5.b.i" aria-label="Copy heading and permalink for Task 5.b.i">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-3-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="activities-4-8-3-3-1-1">Is <span class="process-math">\((x,y,z) = (-2,1,0)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-8-3-3-2-1">
+<div class="para">To be a solution, the point must satisfy all three equations. Let’s check: Plugging in <span class="process-math">\((x,y,z) = (-2,1,0)\)</span> into the first equation:</div>
+<div class="displaymath process-math" id="activities-4-8-3-3-2-1-2">
+\begin{equation*}
+-2 + 1 = -1 \neq 3
+\end{equation*}
+</div>
+<div class="para">This is false. Therefore, <span class="process-math">\((-2,1,0)\)</span> is not a solution to the system of equations. Note, we don’t need to check the other equations, since that won’t change that the point doesn’t satisfy the first equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.ii.1"><a href="#activities-4-8-3-3-2" title="Copy heading and permalink for Solution 5.b.ii.1" aria-label="Copy heading and permalink for Solution 5.b.ii.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.b.ii"><a href="#activities-4-8-3-3" title="Copy heading and permalink for Task 5.b.ii" aria-label="Copy heading and permalink for Task 5.b.ii">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-3-4"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="activities-4-8-3-4-1-1">Is <span class="process-math">\((x,y,z) = (0,-3,1)\)</span> a solution?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-8-3-4-2-1">
+<div class="para">To be a solution, the point must satisfy all three equations. Let’s check: Plugging in <span class="process-math">\((x,y,z) = (0,-3,1)\)</span> into the first equation:</div>
+<div class="displaymath process-math" id="activities-4-8-3-4-2-1-2">
+\begin{equation*}
+0 + (-3) = -3 \neq 3
+\end{equation*}
+</div>
+<div class="para">This is false. Therefore, <span class="process-math">\((0,-3,1)\)</span> is not a solution to the system of equations.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.iii.1"><a href="#activities-4-8-3-4-2" title="Copy heading and permalink for Solution 5.b.iii.1" aria-label="Copy heading and permalink for Solution 5.b.iii.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.b.iii"><a href="#activities-4-8-3-4" title="Copy heading and permalink for Task 5.b.iii" aria-label="Copy heading and permalink for Task 5.b.iii">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-3-5"><h5 class="heading"><span class="codenumber">(iv)</span></h5>
+<div class="para" id="activities-4-8-3-5-1-1">Can you find a solution in which <span class="process-math">\(y = 0\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-8-3-5-2-1">
+<div class="para">If <span class="process-math">\(y = 0\text{,}\)</span> then the system of equations becomes:</div>
+<div class="displaymath process-math" id="activities-4-8-3-5-2-1-2">
+\begin{equation*}
+x + 0 = 3 \implies x = 3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-4-8-3-5-2-1-3">
+\begin{equation*}
+0 - z = 2 \implies z = -2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-4-8-3-5-2-1-4">
+\begin{equation*}
+2(3) + 0 + (-2) = 4 \implies 6 - 2 = 4
+\end{equation*}
+</div>
+<div class="para">This is true. Therefore, a solution with <span class="process-math">\(y = 0\)</span> is <span class="process-math">\((x,y,z) = (3,0,-2)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.iv.1"><a href="#activities-4-8-3-5-2" title="Copy heading and permalink for Solution 5.b.iv.1" aria-label="Copy heading and permalink for Solution 5.b.iv.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.b.iv"><a href="#activities-4-8-3-5" title="Copy heading and permalink for Task 5.b.iv" aria-label="Copy heading and permalink for Task 5.b.iv">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-4-8-3-6"><h5 class="heading"><span class="codenumber">(v)</span></h5>
+<div class="para" id="activities-4-8-3-6-1-1">Do you think there are other solutions?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-8-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-8-3-6-2-1">Yes! We have two solutions already: <span class="process-math">\((1,2,0)\)</span> and <span class="process-math">\((3,0,-2)\text{.}\)</span> This suggests that there are infinitely many solutions to this system of equations.<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-8-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.v.1"><a href="#activities-4-8-3-6-2" title="Copy heading and permalink for Solution 5.b.v.1" aria-label="Copy heading and permalink for Solution 5.b.v.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.b.v"><a href="#activities-4-8-3-6" title="Copy heading and permalink for Task 5.b.v" aria-label="Copy heading and permalink for Task 5.b.v">🔗</a></div>
+</article><div class="autopermalink" data-description="Task 5.b"><a href="#activities-4-8-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activities-4-8" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="outcomes goal-like" id="activities-4-9"><h3 class="heading"><span class="type">Outcomes</span></h3>
+<div class="introduction" id="activities-4-9-1">
+<div class="para" id="activities-4-9-1-1">Make sure you can answer the following questions (at least for 2 and 3 variables):<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul class="disc" id="activities-4-9-2">
+<li id="activities-4-9-2-1">
+<div class="para" id="activities-4-9-2-1-1">What is a linear equation?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-9-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-4-9-2-1" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+<li id="activities-4-9-2-2">
+<div class="para" id="activities-4-9-2-2-1">What is a system of linear equations? What does it mean for a list of numbers to be a solution to a system of linear equations? Can you answer the second question both algebraically and geometrically?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-9-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-4-9-2-2" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+<li id="activities-4-9-2-3">
+<div class="para" id="activities-4-9-2-3-1">How many solutions can we expect for a system of linear equations?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-9-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-4-9-2-3" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+<li id="activities-4-9-2-4">
+<div class="para" id="activities-4-9-2-4-1">How does this number of solutions typically change as we add more equations?<div class="autopermalink" data-description="Paragraph"><a href="#activities-4-9-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-4-9-2-4" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Outcomes"><a href="#activities-4-9" title="Copy heading and permalink for Outcomes" aria-label="Copy heading and permalink for Outcomes">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Section 1.1- What can we expect"><a href="#activities-4" title="Copy heading and permalink for Worksheet: Section 1.1- What can we expect" aria-label="Copy heading and permalink for Worksheet: Section 1.1- What can we expect">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
