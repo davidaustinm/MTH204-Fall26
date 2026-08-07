@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 4.4 - Dynamical Systems</title>
-  <objectives>
+  <!-- <objectives>
     <introduction>
       <p>Why is having a basis of eigenvectors useful?</p>
     </introduction>
-  </objectives>
+  </objectives> -->
   <introduction>
     <p>\\</p>
     <p>Suppose we have two species <m>R</m> and <m>S</m> that interact with one
@@ -37,7 +37,7 @@
   <exercise workspace="1in">
     <statement>
       <p>Verify that
-	<md> {\bf v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \qquad {\bf v}_2 = \begin{bmatrix} -2 \\ \s1 \end{bmatrix} </md>
+	<md> {\bf v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \qquad {\bf v}_2 = \begin{bmatrix} -2 \\ 1 \end{bmatrix} </md>
 	are eigenvectors of <m>A</m> and find their respective eigenvalues.</p>
     </statement>
   </exercise>

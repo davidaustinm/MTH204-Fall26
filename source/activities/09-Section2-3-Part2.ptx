@@ -23,7 +23,7 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Give a geometric description of the span of <m>\vvec_1</m> and <m>\vvec_2</m>, denoted <m>\span{\vvec_1,\vvec_2}</m>.</p>
+        <p>Give a geometric description of the span of <m>\vvec_1</m> and <m>\vvec_2</m>, denoted <m>\laspan{\vvec_1,\vvec_2}</m>.</p>
       </statement>
     </task>
     <task workspace="1in">
@@ -212,7 +212,7 @@
     <task workspace="1in">
       <statement>
         <p>Is the vector <m>\threevec5{-4}{-3}</m> in
-  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>?</p>
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>?</p>
       </statement>
       <solution>
         <p>
@@ -233,7 +233,7 @@
   \right]
           </md>
           This system is consistent! Therefore, <m>\threevec5{-4}{-3}</m> is in the
-  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>. There is a free variable, so there are infinitely many solutions.
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>. There is a free variable, so there are infinitely many solutions.
   One such solution/linear combination is: <m>3\vvec_1 - \vvec_2 = \threevec5{-4}{-3}</m>. Another
   is <m>{\vvec_1 + \vvec_2 = \threevec5{-4}{-3}}</m>.
         </p>
@@ -262,7 +262,7 @@
   \right]
           </md>
           This system is inconsistent! Therefore, <m>\threevec8{4}{11}</m> is NOT in the
-  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>. 
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>. 
         </p>
       </solution>
     </task>
@@ -280,12 +280,12 @@
     </task>
     <task workspace="0.75in">
       <statement>
-        <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3}</m></p>
+        <p>Give a geometric description of <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m></p>
       </statement>
       <solution>
         <p>
           Because there are two pivots, there is a relationship between the three vectors such
-          that <m>\span{\vvec_1,\vvec_2,\vvec_3} = \span{\vvec_1,\vvec_2}</m> and, geometrically, is
+          that <m>\laspan{\vvec_1,\vvec_2,\vvec_3} = \laspan{\vvec_1,\vvec_2}</m> and, geometrically, is
           a plane.
         </p>
       </solution>
@@ -294,14 +294,14 @@
       <statement>
         <p>Now suppose that <m>\vvec_4 = \threevec132</m>.
   Is the vector <m>\threevec5{-4}{-3}</m> in
-  <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>?  Notice that you
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>?  Notice that you
   already determined whether this vector is in
-  <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+  <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
       </statement>
       <solution>
         <p>
-          Yes, if <m>\threevec{5}{-4}{-3}</m> is in <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>,
-          then it is in <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>. This is because we can 
+          Yes, if <m>\threevec{5}{-4}{-3}</m> is in <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>,
+          then it is in <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>. This is because we can 
           always choose the coefficient in front of the <m>\vvec_4</m> to be 0 in order to have a
           linear combination.  If a vector is added to the span, vectors already determined to be in 
           the smaller span will continue to be in the larger span.  However, if vectors are removed
@@ -315,17 +315,17 @@
       </statement>
       <solution>
         <p>
-          Even though this solution was not previously in the <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>, it could
-          be that it is in <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>.  We have to check!
+          Even though this solution was not previously in the <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>, it could
+          be that it is in <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>.  We have to check!
         <md>
             \left[
-    \begin{array}{rrr|r}
+    \begin{array}{rrrr|r}
       2 \amp 1 \amp 3 \amp 1 \amp 8 \\ 
       -1 \amp 1 \amp -3 \amp 3 \amp 4 \\ 
       0 \amp 3 \amp -3 \amp 2 \amp 11 \\
     \end{array}
   \right] \sim \left[
-    \begin{array}{rrr|r}
+    \begin{array}{rrrr|r}
       1 \amp 0 \amp 2 \amp 0 \amp 2 \\ 
       0 \amp 1 \amp -1 \amp 0 \amp 3 \\ 
       0 \amp 0 \amp 0 \amp 1 \amp 1\\
@@ -334,7 +334,7 @@
           </md>
           This is a consistent system and due to the presence of free variables, has infinitely many
           solutions.  One such solution is <m>{2\vvec_1 + 3\vvec_2 + \vvec_4 = \threevec{8}{4}{11}}</m>.
-          Therefore, <m>\threevec84{11}</m> is in the <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>
+          Therefore, <m>\threevec84{11}</m> is in the <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>
         </p>
       </solution>
     </task>
@@ -351,7 +351,7 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m></p>
+        <p>Give a geometric description of <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m></p>
       </statement>
       <solution>
         <p>
@@ -530,14 +530,14 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Explain why <m>\span{\vvec_1,\vvec_2,\vvec_3} =
-  \span{\vvec_1,\vvec_2}</m>.</p>
+        <p>Explain why <m>\laspan{\vvec_1,\vvec_2,\vvec_3} =
+  \laspan{\vvec_1,\vvec_2}</m>.</p>
       </statement>
       <solution>
         <p>
           Any vector that can be written as a linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>,
           and <m>\vvec_3</m> can be written as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>!
-          So, <m>{\span{\vvec_1,\vvec_2,\vvec_3} = \span{\vvec_1,\vvec_2}}</m>.
+          So, <m>{\laspan{\vvec_1,\vvec_2,\vvec_3} = \laspan{\vvec_1,\vvec_2}}</m>.
         </p>
       </solution>
     </task>

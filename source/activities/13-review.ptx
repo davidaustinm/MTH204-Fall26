@@ -50,7 +50,7 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Is <m>\bvec</m> in <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>?</p>
+        <p>Is <m>\bvec</m> in <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>?</p>
       </statement>
     </task>
     <task workspace="1in">
@@ -60,7 +60,7 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Describe <m>\span{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>.  Explain your thinking.</p>
+        <p>Describe <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>.  Explain your thinking.</p>
       </statement>
     </task>
   </exercise>
@@ -227,9 +227,9 @@ column without a pivot.</p>
     <task workspace="1in">
       <statement>
         <p>Suppose 
-	<md>T\left(\begin{bmatrix} 1 \\ 0 \\ 0  \end{bmatrix}\right) = \begin{bmatrix} \s1 \\ \s2 \\ \s5  \\ -7 \end{bmatrix} ,\qquad
+	<!-- <md>T\left(\begin{bmatrix} 1 \\ 0 \\ 0  \end{bmatrix}\right) = \begin{bmatrix} \s1 \\ \s2 \\ \s5  \\ -7 \end{bmatrix} ,\qquad
 	T\left(\begin{bmatrix} 0 \\ 1 \\ 0  \end{bmatrix}\right) = \begin{bmatrix} \s 9 \\ \s 4 \\ -2 \\ \s 1 \end{bmatrix}, \qquad \text{ and }\qquad
-	T\left(\begin{bmatrix} 0 \\ 0 \\ 1  \end{bmatrix}\right) = \begin{bmatrix} -3 \\ \s 9 \\ \s 4 \\ -2 \end{bmatrix}.</md>
+	T\left(\begin{bmatrix} 0 \\ 0 \\ 1  \end{bmatrix}\right) = \begin{bmatrix} -3 \\ \s 9 \\ \s 4 \\ -2 \end{bmatrix}.</md> -->
 	Find the matrix <m>A</m> that defines the linear transformation.</p>
       </statement>
     </task>

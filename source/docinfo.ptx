@@ -10,8 +10,8 @@
   <!-- it defines. -->
   <macros>
 \newcommand{\ds}{\displaystyle}
-\newcommand{\vs}[1]{\vspace{#1in}}
-\renewcommand{\vss}[1]{\vspace*{#1in}}
+<!-- \newcommand{\vs}[1]{\vspace{#1in}}
+\renewcommand{\vss}[1]{\vspace*{#1in}} -->
 \newcommand{\bvec}{{\mathbf b}}
 \newcommand{\cvec}{{\mathbf c}}
 \newcommand{\dvec}{{\mathbf d}}
@@ -39,7 +39,7 @@
 \newcommand{\cfourvec}[4]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\ #4
     \end{array}\right]}
 \newcommand{\mattwo}[4]{\left[\begin{array}{rr}#1 \amp #2 \\ #3 \amp #4 \\ \end{array}\right]}
-\renewcommand{\span}[1]{\text{Span}\{#1\}}
+ <!-- \renewcommand{\span}[1]{\text{Span}\{#1\}} -->
 \newcommand{\laspan}[1]{\text{Span}\{#1\}}
 \newcommand{\bcal}{{\cal B}}
 \newcommand{\ccal}{{\cal C}}

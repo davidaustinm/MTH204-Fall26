@@ -13,7 +13,7 @@
 
 <p> <term>Linear systems:</term>
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
      \amp    \amp -3y \amp {}-{} \amp 3z \amp {}={}  \amp 3 \\
     -3x \amp  {}-{}  \amp 2y \amp {}+{} \amp z \amp {}={}  \amp -10 \\
@@ -21,7 +21,7 @@
     </md>
 
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
      \amp    \amp -3y \amp {}-{} \amp 3z \amp {}={}  \amp 3 \\
      \amp   \amp 4y \amp {}+{} \amp z \amp {}={}  \amp 2 \\
@@ -29,7 +29,7 @@
     </md>
 
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
      \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
      \amp   \amp 4y \amp {}+{} \amp z \amp {}={}  \amp 2 \\
@@ -37,7 +37,7 @@
     </md>
 
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
      \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
      \amp   \amp  \amp  \amp -3z \amp {}={}  \amp 6 \\
@@ -45,7 +45,7 @@
     </md>
 
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
      \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
      \amp   \amp  \amp  \amp z \amp {}={}  \amp -2 \\
@@ -53,7 +53,7 @@
     </md>
 
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp  {}={}  \amp 4 \\
      \amp    \amp     y \amp {}={}  \amp 1 \\
      \amp   \amp   z \amp {}={}  \amp -2 \\
@@ -61,7 +61,7 @@
     </md>
 
     <md>
-                        \begin{alignedat}{3}
+                        \begin{alignedat}{4}
      \amp x \amp  {}={}  \amp 2 \\
     \amp     y \amp {}={}  \amp 1 \\
       \amp   z \amp {}={}  \amp -2 \\

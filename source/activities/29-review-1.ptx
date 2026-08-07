@@ -34,12 +34,12 @@
     <task workspace="1.5in">
       <statement>
         <p>Do the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m> span <m>\real^3</m>?  If
-  not, find a vector that is not in <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+  not, find a vector that is not in <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Give a geometric description of <m>\span{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
+        <p>Give a geometric description of <m>\laspan{\vvec_1,\vvec_2,\vvec_3}</m>.</p>
       </statement>
     </task>
     <task workspace="1in">
