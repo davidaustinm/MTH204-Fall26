@@ -1483,7 +1483,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.4 - Determinants",
-  "body": " Section 3.4 - Determinants    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?     \\\\  Recall that the determinant a matrix is the area of the parallelogram formed by and , with a negative sign if the vectors are negatively oriented. We denote the determinant of as .     For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:   (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .       When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:      Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix      We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.       Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.     "
+  "body": " Section 3.4 - Determinants    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?     \\\\  Recall that the determinant a matrix is the area of the parallelogram formed by and , with a negative sign if the vectors are negatively oriented. We denote the determinant of as .     For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .        When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:      Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix      We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.       Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.     "
 },
 {
   "id": "activities-22-2",
@@ -1501,7 +1501,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:   (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .    "
+  "body": "  For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .     "
 },
 {
   "id": "activities-22-5",
@@ -1879,102 +1879,93 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 4.4 - Dynamical Systems",
-  "body": " Section 4.4 - Dynamical Systems    Why is having a basis of eigenvectors useful?     \\\\  Suppose we have two species and that interact with one another and that we record the change in their populations from year to year. When we begin our study, the populations, measured in thousands, are and ; after years, the populations are and .  Knowing the populations in one year, we find their populations the next year: We will combine the populations into a vector and write where     Verify that are eigenvectors of and find their respective eigenvalues.      Suppose that initially . Write as a linear combination of eigenvectors and .      Write the vectors , , and as a linear combination of eigenvectors and . Use linearity of matrix multiplication! (If you have powers of eigenvalues, might I suggest not simplifying those... You should have and in your answers.)      Do you see a pattern? Can you find a formula for some general as a linear combination of and ? Hint: there might be powers of in your answer      When becomes very large (that is ), what part of the expression for goes to 0?      When becomes very large (that is ), what happens to the ratio of the populations ? (Recall .)      If we begin instead with what eventually happens to the ratio as becomes very large?      Explain what happens to the ratio as becomes very large no matter what the initial populations are.      After a very long time, by approximately what factor does the population of grow every year? By approximately what factor does the population of grow every year?  Note that if and didn't live in the same region we would have and which would mean both populations would eventually go extinct. Instead, these species are ``cooperative\" which means they benefit from each other (these are the ``off diagonal\" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.      Challenge: Can you give an example of a dynamic system in which species and are competitive, that is both compete for resources and ``hurt'' the other species instead of benefiting them? Can you give an example of a ``predator-prey'' dynamic system in which species is the prey, and species is the predator? (Who would benefit from interactions, and who wouldn't in that case?)    "
+  "body": " Section 4.4 - Dynamical Systems    \\\\  Suppose we have two species and that interact with one another and that we record the change in their populations from year to year. When we begin our study, the populations, measured in thousands, are and ; after years, the populations are and .  Knowing the populations in one year, we find their populations the next year: We will combine the populations into a vector and write where     Verify that are eigenvectors of and find their respective eigenvalues.      Suppose that initially . Write as a linear combination of eigenvectors and .      Write the vectors , , and as a linear combination of eigenvectors and . Use linearity of matrix multiplication! (If you have powers of eigenvalues, might I suggest not simplifying those... You should have and in your answers.)      Do you see a pattern? Can you find a formula for some general as a linear combination of and ? Hint: there might be powers of in your answer      When becomes very large (that is ), what part of the expression for goes to 0?      When becomes very large (that is ), what happens to the ratio of the populations ? (Recall .)      If we begin instead with what eventually happens to the ratio as becomes very large?      Explain what happens to the ratio as becomes very large no matter what the initial populations are.      After a very long time, by approximately what factor does the population of grow every year? By approximately what factor does the population of grow every year?  Note that if and didn't live in the same region we would have and which would mean both populations would eventually go extinct. Instead, these species are ``cooperative\" which means they benefit from each other (these are the ``off diagonal\" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.      Challenge: Can you give an example of a dynamic system in which species and are competitive, that is both compete for resources and ``hurt'' the other species instead of benefiting them? Can you give an example of a ``predator-prey'' dynamic system in which species is the prey, and species is the predator? (Who would benefit from interactions, and who wouldn't in that case?)    "
 },
 {
-  "id": "activities-28-2",
+  "id": "activities-28-3",
   "level": "2",
-  "url": "activities-28.html#activities-28-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  Why is having a basis of eigenvectors useful?   "
-},
-{
-  "id": "activities-28-4",
-  "level": "2",
-  "url": "activities-28.html#activities-28-4",
+  "url": "activities-28.html#activities-28-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Verify that are eigenvectors of and find their respective eigenvalues.   "
 },
 {
-  "id": "activities-28-5",
+  "id": "activities-28-4",
   "level": "2",
-  "url": "activities-28.html#activities-28-5",
+  "url": "activities-28.html#activities-28-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Suppose that initially . Write as a linear combination of eigenvectors and .   "
 },
 {
-  "id": "activities-28-6",
+  "id": "activities-28-5",
   "level": "2",
-  "url": "activities-28.html#activities-28-6",
+  "url": "activities-28.html#activities-28-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Write the vectors , , and as a linear combination of eigenvectors and . Use linearity of matrix multiplication! (If you have powers of eigenvalues, might I suggest not simplifying those... You should have and in your answers.)   "
 },
 {
-  "id": "activities-28-7",
+  "id": "activities-28-6",
   "level": "2",
-  "url": "activities-28.html#activities-28-7",
+  "url": "activities-28.html#activities-28-6",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Do you see a pattern? Can you find a formula for some general as a linear combination of and ? Hint: there might be powers of in your answer   "
 },
 {
-  "id": "activities-28-8",
+  "id": "activities-28-7",
   "level": "2",
-  "url": "activities-28.html#activities-28-8",
+  "url": "activities-28.html#activities-28-7",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  When becomes very large (that is ), what part of the expression for goes to 0?   "
 },
 {
-  "id": "activities-28-9",
+  "id": "activities-28-8",
   "level": "2",
-  "url": "activities-28.html#activities-28-9",
+  "url": "activities-28.html#activities-28-8",
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
   "body": "  When becomes very large (that is ), what happens to the ratio of the populations ? (Recall .)   "
 },
 {
-  "id": "activities-28-10",
+  "id": "activities-28-9",
   "level": "2",
-  "url": "activities-28.html#activities-28-10",
+  "url": "activities-28.html#activities-28-9",
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
   "body": "  If we begin instead with what eventually happens to the ratio as becomes very large?   "
 },
 {
-  "id": "activities-28-11",
+  "id": "activities-28-10",
   "level": "2",
-  "url": "activities-28.html#activities-28-11",
+  "url": "activities-28.html#activities-28-10",
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "",
   "body": "  Explain what happens to the ratio as becomes very large no matter what the initial populations are.   "
 },
 {
-  "id": "activities-28-12",
+  "id": "activities-28-11",
   "level": "2",
-  "url": "activities-28.html#activities-28-12",
+  "url": "activities-28.html#activities-28-11",
   "type": "Worksheet Exercise",
   "number": "9",
   "title": "",
   "body": "  After a very long time, by approximately what factor does the population of grow every year? By approximately what factor does the population of grow every year?  Note that if and didn't live in the same region we would have and which would mean both populations would eventually go extinct. Instead, these species are ``cooperative\" which means they benefit from each other (these are the ``off diagonal\" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.   "
 },
 {
-  "id": "activities-28-13",
+  "id": "activities-28-12",
   "level": "2",
-  "url": "activities-28.html#activities-28-13",
+  "url": "activities-28.html#activities-28-12",
   "type": "Worksheet Exercise",
   "number": "10",
   "title": "",
