@@ -374,7 +374,7 @@
      \amp   \amp  \amp  \amp -3z \amp {}={}  \amp 6 \\
   \end{alignedat}
                 </md>
-            <md>
+                <md>
                     \begin{alignedat}{4}
     x \amp  {}+{}  \amp 2y \amp \amp \amp {}={}  \amp 4 \\
      \amp    \amp y \amp {}+{} \amp z \amp {}={}  \amp -1 \\
@@ -398,10 +398,58 @@
             </p>
         </statement>
 
-        <solution component="00-solutions">
+        <solution component="02-solutions">
             <p>
-                Sure!
-                "Span is all colors."
+                <md>
+                    <mrow>
+                  \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 4 \\
+                    0 \amp -3 \amp -3 \amp 3 \\
+                    -3 \amp -2 \amp 1 \amp -10 \\
+                  \end{array}\right] \amp \xrightarrow{(3R1+R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 4 \\
+                    0 \amp -3 \amp -3 \amp 3 \\
+                    0 \amp 4 \amp 1 \amp 2 \\
+                  \end{array}\right] \,\,\,\,\,\,\,\, \textrm{clear out 1st column}
+                  </mrow>
+                    <mrow>
+                  \amp \xrightarrow{(\frac{-1}{3})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 4 \\
+                    0 \amp 1 \amp 1 \amp -1 \\
+                    0 \amp 4 \amp 1 \amp 2 \\
+                  \end{array}\right] \,\,\,\,\,\,\,\, \textrm{make pivot entry 1}
+                  </mrow>
+                    <mrow>
+                  \amp \xrightarrow{(R3 + (-4)R2) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 4 \\
+                    0 \amp 1 \amp 1 \amp -1 \\
+                    0 \amp 0 \amp -3 \amp 6 \\
+                  \end{array}\right] \,\,\,\,\,\,\,\, \textrm{clear out 2nd column}
+                  </mrow>
+                    <mrow>
+                  \amp \xrightarrow{(\frac{-1}{3})(R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 4 \\
+                    0 \amp 1 \amp 1 \amp -1 \\
+                    0 \amp 0 \amp 1 \amp -2 \\
+                  \end{array}\right] \,\,\,\,\,\,\,\, \textrm{make pivot entry 1}
+                  </mrow>
+                    <mrow>
+                  \amp \xrightarrow{(R2 + (-1)R3) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp 0 \amp 4 \\
+                    0 \amp 1 \amp 0 \amp 1 \\
+                    0 \amp 0 \amp 1 \amp -2 \\
+                  \end{array}\right] \,\,\,\,\,\,\,\, \textrm{clear 3rd column}
+                  </mrow>
+                    <mrow>
+                  \amp \xrightarrow{((-2)R2 + R1) \to R1} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 0 \amp 0 \amp 2 \\
+                    0 \amp 1 \amp 0 \amp 1 \\
+                    0 \amp 0 \amp 1 \amp -2 \\
+                  \end{array}\right] \,\,\,\,\,\,\,\, \textrm{clear 2nd column}
+                  </mrow>
+                </md>
+                This yields the single solution <m>x = 2</m>, <m>y = 1</m>, and
+                <m>z = -2</m>.
             </p>
         </solution>
     </exercise>
