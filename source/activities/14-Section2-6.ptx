@@ -36,7 +36,7 @@
                 <image source="images/14-Sec2_6-1(a).png">
                     <shortdescription>
                         Linear transformation that scales by 2 in the
-                        <m>x</m>-direction.
+                        x-direction.
                     </shortdescription>
                 </image>
             </solution>
@@ -58,7 +58,7 @@
                 <image source="images/14-Sec2_6-1(b).png">
                     <shortdescription>
                         Linear transformation that scales by 2 in both the
-                        <m>x</m>-direction and <m>y</m>-direction.
+                        x-direction and y-direction.
                     </shortdescription>
                 </image>
             </solution>
@@ -78,7 +78,7 @@
 
                 <image source="images/14-Sec2_6-1(c).png">
                     <shortdescription>
-                        Linear transformation that rotates by <m>90^o</m>
+                        Linear transformation that rotates by 90 degrees
                         counterclockwise.
                     </shortdescription>
                 </image>
@@ -119,7 +119,7 @@
 
                 <image source="images/14-Sec2_6-1(e).png">
                     <shortdescription>
-                        Linear transformation that flips over the <m>y</m>-axis.
+                        Linear transformation that flips over the y--axis.
                     </shortdescription>
                 </image>
             </solution>
@@ -141,7 +141,7 @@
                 <image source="images/14-Sec2_6-1(f).png">
                     <shortdescription>
                         Linear transformation that projects (condenses) on to
-                        the <m>x</m>-axis.
+                        the x-axis.
                     </shortdescription>
                 </image>
             </solution>
@@ -612,19 +612,13 @@ C*B = reflect then rotate
             <image source="images/14-rotation01.png">
                 <shortdescription>
                     Linear transformation that rotates vectors counterclockwise
-                    by an angle <m>\theta</m>.
+                    by an angle theta.
                 </shortdescription>
             </image>
         </solution>
     </exercise>
 
     <outcomes>
-        <introduction>
-            <p>
-                Make sure you can answer the following questions:
-            </p>
-        </introduction>
-
         <ul>
             <li>
                 <p>

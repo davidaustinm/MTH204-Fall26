@@ -112,7 +112,7 @@
   </latex>
 
   <!-- The embed-button makes it easy to copy the code for an iframe into your LMS -->
-  <html embed-button="yes">
+  <!-- <html embed-button="yes"> -->
 
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
@@ -143,6 +143,7 @@
         exercise-readingquestion="no"
       />
 
+      </html>
     <!-- Specify the theme for the html by giving names to     -->
     <!-- override defaults.  Ex:<css theme="denver"/>          -->
     <!-- See also                                              -->
