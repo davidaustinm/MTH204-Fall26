@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 3.1 - Invertibility - Part 2</title>
-  <objectives>
-    <introduction>
-      <p>Make sure you can answer the following questions:</p>
-    </introduction>
-    <ul>
-      <li><p>Given a matrix, how can one use row reduction to tell if the matrix is invertible?</p></li>
-      <li><p>How can we use the inverse of a matrix <m>A</m> to solve <m>Ax=b</m>.</p></li>
-      <li><p>How do we find the inverse of a matrix using row reduction?</p></li>
-      <li><p>How do we find the inverse of a matrix using Sage?</p></li>
-    </ul>
-  </objectives>
+  
 
   <exercise workspace="1in">
     <introduction>
@@ -131,5 +121,18 @@
       </statement>
     </task>
   </exercise>
+
+
+  <outcomes>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>Given a matrix, how can one use row reduction to tell if the matrix is invertible?</p></li>
+      <li><p>How can we use the inverse of a matrix <m>A</m> to solve <m>Ax=b</m>.</p></li>
+      <li><p>How do we find the inverse of a matrix using row reduction?</p></li>
+      <li><p>How do we find the inverse of a matrix using Sage?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>
