@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 3.4 - Determinants using Cofactor Expansion - Part 2</title>
-  <objectives>
-    <ul>
-      <li><p>How do we think about the determinant of a 2x2 matrix algebraically?</p></li>
-      <li><p>How do we apply cofactor expansion?</p></li>
-    </ul>
-  </objectives>
+ 
 
   <exercise workspace="1in">
     <statement>
@@ -62,5 +57,14 @@ A =
       <p>Explain how you could know that <m>\det\begin{bmatrix}  5 \amp -5\\ -7 \amp 7\end{bmatrix} = 0</m> without doing any computation.</p>
     </statement>
   </exercise>
+
+
+   <outcomes>
+    <ul>
+      <li><p>How do we think about the determinant of a 2x2 matrix algebraically?</p></li>
+      <li><p>How do we apply cofactor expansion?</p></li>
+    </ul>
+  </outcomes>
+
 
 </worksheet>

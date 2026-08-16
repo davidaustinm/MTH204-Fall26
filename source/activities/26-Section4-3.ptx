@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 4.3 - Diagonalizability</title>
-  <objectives>
-    <introduction>
-      <p>\begin{enumerate}
-\item What does it mean for <m>A</m> to be diagonalizable?  How do we find the diagonalization of a matrix <m>A</m>?
-\item If <m>A</m> is a diagonalizable matrix, what happens to <m>A^k</m>?
-\item If <m>A</m> is a diagonalizable matrix, what happens to <m>\lim_{k\rightarrow\infty}A^k</m>?
-\end{enumerate}</p>
-    </introduction>
-  </objectives>
+
 
   <exercise>
     <introduction>
@@ -158,5 +150,27 @@
   this is true for any square matrix, diagonalizable or not!</p>
     </statement>
   </exercise>
+
+    <outcomes>
+    <introduction>
+      <p> Make sure you can answer the following questions: </p>
+      </introduction>
+      <ul>
+        <li>
+          <p>
+            What does it mean for <m>A</m> to be diagonalizable?  How do we find the diagonalization of a matrix <m>A</m>?
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>A</m> is a diagonalizable matrix, what happens to <m>A^k</m>?
+          </p>
+        </li>
+        <li>
+          <p>If <m>A</m> is a diagonalizable matrix, what happens to <m>\lim_{k\rightarrow\infty}A^k</m>?
+          </p>
+        </li>
+      </ul>
+  </outcomes>
 
 </worksheet>

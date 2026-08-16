@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 4.4 - Dynamical Systems</title>
-  <!-- <objectives>
-    <introduction>
-      <p>Why is having a basis of eigenvectors useful?</p>
-    </introduction>
-  </objectives> -->
+
   <introduction>
     <p>\\</p>
     <p>Suppose we have two species <m>R</m> and <m>S</m> that interact with one
@@ -97,4 +93,18 @@
     </statement>
   </exercise>
 
+   <outcomes>
+    <introduction> <p>
+      Make sure you can answer the following question.
+    </p>
+      </introduction>
+      <ul>
+        <li>
+          <p>
+            Why is having a basis of eigenvectors useful?
+          </p>
+        </li>
+      </ul>
+  
+  </outcomes> 
 </worksheet>

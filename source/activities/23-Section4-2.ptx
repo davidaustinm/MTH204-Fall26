@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 4.2. - Finding eigenvectors and eigenvalues</title>
-  <objectives>
-    <introduction>
-      <p>\begin{enumerate}
-\item What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix?
-\item What is the multiplicity of an eigenvalue?
-\item What is an eigenspace and how do we find it?
-
-
-\end{enumerate}</p>
-    </introduction>
-  </objectives>
+ 
   <introduction>
     <p>\\</p>
     <p>If <m>A</m> is an <m>n\times n</m> matrix, we can rewrite the condition
@@ -192,5 +182,32 @@ We will now practice finding eigenvalues <m>\lambda</m> and eigenvectors
   the eigenvalues of a triangular matrix?</p>
     </statement>
   </exercise>
+
+   <outcomes>
+    <introduction>
+     <p>
+      Make sure you can answer the following questions:
+     </p>
+    </introduction>
+      <ul>
+        <li>
+          <p>
+            What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix?
+          </p>
+        </li>
+        <li>
+          <p>
+             What is the multiplicity of an eigenvalue?
+          </p>
+        </li>
+
+        <li>
+          <p>
+             What is an eigenspace and how do we find it?
+
+          </p>
+        </li>
+      </ul>
+  </outcomes>
 
 </worksheet>
