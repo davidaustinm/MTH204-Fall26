@@ -129,6 +129,12 @@ independent is called a <em>basis</em> of <m>\real^n</m>.</p>
 
 
   <outcomes>
+     <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
     <ul>
       <li><p>What is a basis?</p></li>
       <li><p>How do we determine if a given set of vectors is a basis?</p></li>

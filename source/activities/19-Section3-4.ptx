@@ -226,6 +226,12 @@ U = \left[
   </exercise>
 
     <outcomes>
+       <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
     <ul>
       <li><p>How do we think about the determinant of a 2x2 matrix geometrically?</p></li>
       <li><p>How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?</p></li>

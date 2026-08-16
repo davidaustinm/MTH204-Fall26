@@ -60,6 +60,12 @@ A =
 
 
    <outcomes>
+     <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
     <ul>
       <li><p>How do we think about the determinant of a 2x2 matrix algebraically?</p></li>
       <li><p>How do we apply cofactor expansion?</p></li>
