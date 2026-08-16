@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)",
-  "body": " Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)    Determine whether the following matrix manipulations (A) must keep or (B) could change the solution set for the corresponding linear system.     Swapping two rows, for example:        (A) same exact system!      Swapping two columns, for example:        (B) changes the names of the variables, so the solution is reversed.      Add a constant to every term of a row, for example:        (B) this is adding to the left, but only to the right.      Multiply a row by a nonzero constant, for example:        (A) multiplying an equation by a constant doesn't change the line.      Add a constant multiple of one row to another row, for example:        (A) adding the same thing to both sides still includes the original line, so we don't lose\/change any of the constraints on the variables and .      Replace a column with zeros, for example:        (B) takes out of the equation; there are no solutions.      Replace a row with zeros (i.e., multiply a row by zero), for example:        (B) we lose a constraint on the variables and from the equation . The equation has all and values as solutions.     The following are called the \"Elementary Row Operations.\" These are things we can do to an augmented matrix and not change the solution set.  Swap two rows, for example :   Multiply a row by a nonzero constant, for example, :   Add a constant multiple of one row to another row, for example, :   Observe that we will use the following notation: (Combination of old rows) (New row).    In class you were asked to organize 7 linear systems with 6 row operations leading from one system of equations to the next. This was introducing the process of performing Gaussian Elimination in order to find the solution to the system of equations. Those same linear systems are shown below. Next to each linear system, write each corresponding augmented matrix. Then, put an arrow with the row operation that leads from one system to the next. Identify the goal of each row operation, e.g., to clear the entry underneath a leading term\/pivot to work towards reduced row echelon form.             Sure! \"Span is all colors.\"      Working with augmented matrices:     Write the augmented matrix for the following system of equations and perform Gaussian elimination to describe the solution space of the system of equations in as much detail as you can.        This yields the solution , , and .      Suppose that you have a system of linear equations in the unknowns and whose augmented matrix is row equivalent to Write the system of linear equations corresponding to the augmented matrix. Then describe the solution set of the system of equations in as much detail as you can.    The corresponding linear system is: which yields the solution and . This solution is a point, .      Suppose that you have a system of linear equations in the unknowns and whose augmented matrix is row equivalent to Write the system of linear equations corresponding to the augmented matrix. Then describe the solution set of the system of equations in as much detail as you can.    The corresponding linear system is: which yields no solutions.      Suppose that the augmented matrix of a system of linear equations has the following shape where could be any real number. How many equations are there in this system and how many unknowns?  Based on our work in Section 1.1, do you think it's possible that this system has exactly one solution, infinitely many solutions, or no solutions?    There are 3 equations because there are three rows. There are 5 unknowns because there are 5 columns in the coefficient matrix.  There could be infinitely many solutions or none. The solution cannot be just a point.        Practice with Gaussian elimination: For each of the following linear systems, form an associated augmented matrix and determine whether there is exactly one solution, infinitely many, or none.           This yields the solution , , and .            This yields the solution , , and is free. This is an infinite solution set.            This yields no solution!       Make sure you can answer the following questions:     What operations can we do to a system of linear equations to get a new system that has the same solutions?    What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?    What is an algorithm for doing Gaussian elimination?     "
+  "body": " Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)    Determine whether the following matrix manipulations (A) must keep or (B) could change the solution set for the corresponding linear system.     Swapping two rows, for example:        (A) same exact system!      Swapping two columns, for example:        (B) changes the names of the variables, so the solution is reversed.      Add a constant to every term of a row, for example:        (B) this is adding to the left, but only to the right.      Multiply a row by a nonzero constant, for example:        (A) multiplying an equation by a constant doesn't change the line.      Add a constant multiple of one row to another row, for example:        (A) adding the same thing to both sides still includes the original line, so we don't lose\/change any of the constraints on the variables and .      Replace a column with zeros, for example:        (B) takes out of the equation; there are no solutions.      Replace a row with zeros (i.e., multiply a row by zero), for example:        (B) we lose a constraint on the variables and from the equation . The equation has all and values as solutions.     The following are called the \"Elementary Row Operations.\" These are things we can do to an augmented matrix and not change the solution set.  Swap two rows, for example :   Multiply a row by a nonzero constant, for example, :   Add a constant multiple of one row to another row, for example, :   Observe that we will use the following notation: (Combination of old rows) (New row).    In class you were asked to organize 7 linear systems with 6 row operations leading from one system of equations to the next. This was introducing the process of performing Gaussian Elimination in order to find the solution to the system of equations. Those same linear systems are shown below. Next to each linear system, write each corresponding augmented matrix. Then, put an arrow with the row operation that leads from one system to the next. Identify the goal of each row operation, e.g., to clear the entry underneath a leading term\/pivot to work towards reduced row echelon form.              This yields the single solution , , and .      Working with augmented matrices:     Write the augmented matrix for the following system of equations and perform Gaussian elimination to describe the solution space of the system of equations in as much detail as you can.        This yields the solution , , and .      Suppose that you have a system of linear equations in the unknowns and whose augmented matrix is row equivalent to Write the system of linear equations corresponding to the augmented matrix. Then describe the solution set of the system of equations in as much detail as you can.    The corresponding linear system is: which yields the solution and . This solution is a point, .      Suppose that you have a system of linear equations in the unknowns and whose augmented matrix is row equivalent to Write the system of linear equations corresponding to the augmented matrix. Then describe the solution set of the system of equations in as much detail as you can.    The corresponding linear system is: which yields no solutions.      Suppose that the augmented matrix of a system of linear equations has the following shape where could be any real number. How many equations are there in this system and how many unknowns?  Based on our work in Section 1.1, do you think it's possible that this system has exactly one solution, infinitely many solutions, or no solutions?    There are 3 equations because there are three rows. There are 5 unknowns because there are 5 columns in the coefficient matrix.  There could be infinitely many solutions or none. The solution cannot be just a point.        Practice with Gaussian elimination: For each of the following linear systems, form an associated augmented matrix and determine whether there is exactly one solution, infinitely many, or none.           This yields the solution , , and .            This yields the solution , , and is free. This is an infinite solution set.            This yields no solution!       Make sure you can answer the following questions:     What operations can we do to a system of linear equations to get a new system that has the same solutions?    What is an augmented matrix and how do we transfer between a system of linear equations and an augmented matrix, and back?    What is an algorithm for doing Gaussian elimination?     "
 },
 {
   "id": "activities-5-2",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  In class you were asked to organize 7 linear systems with 6 row operations leading from one system of equations to the next. This was introducing the process of performing Gaussian Elimination in order to find the solution to the system of equations. Those same linear systems are shown below. Next to each linear system, write each corresponding augmented matrix. Then, put an arrow with the row operation that leads from one system to the next. Identify the goal of each row operation, e.g., to clear the entry underneath a leading term\/pivot to work towards reduced row echelon form.             Sure! \"Span is all colors.\"   "
+  "body": "  In class you were asked to organize 7 linear systems with 6 row operations leading from one system of equations to the next. This was introducing the process of performing Gaussian Elimination in order to find the solution to the system of equations. Those same linear systems are shown below. Next to each linear system, write each corresponding augmented matrix. Then, put an arrow with the row operation that leads from one system to the next. Identify the goal of each row operation, e.g., to clear the entry underneath a leading term\/pivot to work towards reduced row echelon form.              This yields the single solution , , and .   "
 },
 {
   "id": "activities-5-5",
@@ -1195,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 2.6 - The geometry of matrix transformations",
-  "body": " Section 2.6 - The geometry of matrix transformations    Matrix transformation perform geometric operations. Go to this website to study the effect that various matrix transformations have on the plane. On the left is the plane before the transformation; on the right is the plane after the transformation.  Describe the geometric effect of the matrix transformations defined by          Scales by 2 in the -direction.   Linear transformation that scales by 2 in the -direction.            Scales by 2 in both the -direction and -direction.   Linear transformation that scales by 2 in both the -direction and -direction.            Rotates by counterclockwise.   Linear transformation that rotates by counterclockwise.            Skews to the right.   Linear transformation that skews to the right.            Flips over the -axis.   Linear transformation that flips over the -axis.            Projects (condenses) on to the -axis. Note: columns are not linearly independent.   Linear transformation that projects (condenses) on to the -axis.            Nothing! This is the identity matrix!   Linear transformation that does nothing! This is the identity matrix!            Projects onto a line and stretches. Note: columns are not linearly independent.   Linear transformation that projects onto a line and stretches.        Transformations that scale.     Find the matrix that defines the transformation that scales all vectors horizontally by and vertically by . You can go to this website to check your work (with smaller numbers)!    Let's think about the action we want with respect to our vectors and . First, we want to take and scale this horizontally by 3 (note: the vertical component is zero here). This means if we input , the output should be to scale by 3 horizontally (1st coordinate).  Then, for and scale this verically by 5 (note: the horizontal component is zero here). This means if we input , the output should be to scale by 5 vertically (2nd coordinate).  Therefore, we have .      In general, what is the matrix that that will define the transformation that scales all vectors horizontally by and vertically by ?            What matrix produces a rotation? (Find and to find the matrix - you can check it using the applet.)    Again, we look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       What matrix produces a reflection over the line ? (Find and to find the matrix - you can check it using the applet.)    Again, we look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       All of the transformations in this question have the form .     Find the matrix of the transformation that has no effect on vectors; that is, . We call this matrix the identity and denote it by .    We saw in Problem 1(g) that the identity matrix has no transformational effect on vectors. Additionally, note that . Therefore, , such that the corresponding matrix for this transformation is       Find the matrix of the transformation that reflects vectors in over the line .    Again, we look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       What is the result of composing the reflection you found in the previous part with itself; that is, what is the effect of reflecting in the line and then reflecting in this line again. Provide a geometric explanation for your result as well as an algebraic one obtained by multiplying matrices.    This corresponds to Thus, reflecting twice returns to the original vector. This makes geometric sense!       More composing transformations.     Find the matrix that rotates vectors counterclockwise in the plane by .    We look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       Find the matrix that results from composing a rotation with itself. Explain the geometric meaning of this operation. Find the matrix that results from composing a rotation with itself four times; that is, if is the matrix transformation that rotates vectors by find the matrix for . Explain why your result makes sense geometrically.    The matrix that results from composing a rotation with itself is a rotation by . If from part (a) is the matrix for a rotation, then is the matrix for a rotation by . Thus,   The matrix for is which is the identity matrix! Therefore, if we rotate by four times, this is rotating by , which takes us back to the original position and thus, there isn't really any rotation.        Compare the result of rotating by and then reflecting over the line to the result of first reflecting over and then rotating .    Rotating by then reflecting over is (where is the matrix from Problem 5(b)). We apply to first and then, . Here,   Reflecting over and then rotating by is , where        Do matrix transformations \"commute\"? That is, if and are two transformations, is ?    No! Rotate then reflect is different than reflect and then rotate.  For example, whereas and these aren't equal!       Explain why the matrix that rotates vectors counterclockwise by an angle is     We look at the action of the transformation on our vectors and . So, This is because if we take and rotate it by the angle theta, then the -component is the horizontal component of the triangle, which is and the -component is the vertical component of the triangle, which is . See blue triangle in diagram below. For , we have Here, the horizontal component of the resulting vector is , but in the negative -direction, making the component and the vertical component is . See green triangle in diagram below.   Linear transformation that rotates vectors counterclockwise by an angle .        What is the matrix for a transformation that scales horizontally by a factor of and vertically by a factor of ?    What is the matrix for a transformation that rotates counterclockwise by an angle ?    How can you find the matrix associated with the composition of two matrix transformations?     "
+  "body": " Section 2.6 - The geometry of matrix transformations    Matrix transformation perform geometric operations. Go to this website to study the effect that various matrix transformations have on the plane. On the left is the plane before the transformation; on the right is the plane after the transformation.  Describe the geometric effect of the matrix transformations defined by          Scales by 2 in the -direction.   Linear transformation that scales by 2 in the x-direction.            Scales by 2 in both the -direction and -direction.   Linear transformation that scales by 2 in both the x-direction and y-direction.            Rotates by counterclockwise.   Linear transformation that rotates by 90 degrees counterclockwise.            Skews to the right.   Linear transformation that skews to the right.            Flips over the -axis.   Linear transformation that flips over the y--axis.            Projects (condenses) on to the -axis. Note: columns are not linearly independent.   Linear transformation that projects (condenses) on to the x-axis.            Nothing! This is the identity matrix!   Linear transformation that does nothing! This is the identity matrix!            Projects onto a line and stretches. Note: columns are not linearly independent.   Linear transformation that projects onto a line and stretches.        Transformations that scale.     Find the matrix that defines the transformation that scales all vectors horizontally by and vertically by . You can go to this website to check your work (with smaller numbers)!    Let's think about the action we want with respect to our vectors and . First, we want to take and scale this horizontally by 3 (note: the vertical component is zero here). This means if we input , the output should be to scale by 3 horizontally (1st coordinate).  Then, for and scale this verically by 5 (note: the horizontal component is zero here). This means if we input , the output should be to scale by 5 vertically (2nd coordinate).  Therefore, we have .      In general, what is the matrix that that will define the transformation that scales all vectors horizontally by and vertically by ?            What matrix produces a rotation? (Find and to find the matrix - you can check it using the applet.)    Again, we look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       What matrix produces a reflection over the line ? (Find and to find the matrix - you can check it using the applet.)    Again, we look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       All of the transformations in this question have the form .     Find the matrix of the transformation that has no effect on vectors; that is, . We call this matrix the identity and denote it by .    We saw in Problem 1(g) that the identity matrix has no transformational effect on vectors. Additionally, note that . Therefore, , such that the corresponding matrix for this transformation is       Find the matrix of the transformation that reflects vectors in over the line .    Again, we look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       What is the result of composing the reflection you found in the previous part with itself; that is, what is the effect of reflecting in the line and then reflecting in this line again. Provide a geometric explanation for your result as well as an algebraic one obtained by multiplying matrices.    This corresponds to Thus, reflecting twice returns to the original vector. This makes geometric sense!       More composing transformations.     Find the matrix that rotates vectors counterclockwise in the plane by .    We look at the action of the transformation on our vectors and . So, Therefore, the matrix that produces this transformation is       Find the matrix that results from composing a rotation with itself. Explain the geometric meaning of this operation. Find the matrix that results from composing a rotation with itself four times; that is, if is the matrix transformation that rotates vectors by find the matrix for . Explain why your result makes sense geometrically.    The matrix that results from composing a rotation with itself is a rotation by . If from part (a) is the matrix for a rotation, then is the matrix for a rotation by . Thus,   The matrix for is which is the identity matrix! Therefore, if we rotate by four times, this is rotating by , which takes us back to the original position and thus, there isn't really any rotation.        Compare the result of rotating by and then reflecting over the line to the result of first reflecting over and then rotating .    Rotating by then reflecting over is (where is the matrix from Problem 5(b)). We apply to first and then, . Here,   Reflecting over and then rotating by is , where        Do matrix transformations \"commute\"? That is, if and are two transformations, is ?    No! Rotate then reflect is different than reflect and then rotate.  For example, whereas and these aren't equal!       Explain why the matrix that rotates vectors counterclockwise by an angle is     We look at the action of the transformation on our vectors and . So, This is because if we take and rotate it by the angle theta, then the -component is the horizontal component of the triangle, which is and the -component is the vertical component of the triangle, which is . See blue triangle in diagram below. For , we have Here, the horizontal component of the resulting vector is , but in the negative -direction, making the component and the vertical component is . See green triangle in diagram below.   Linear transformation that rotates vectors counterclockwise by an angle theta.       Make sure you can answer the following questions:     What is the matrix for a transformation that scales horizontally by a factor of and vertically by a factor of ?    What is the matrix for a transformation that rotates counterclockwise by an angle ?    How can you find the matrix associated with the composition of two matrix transformations?     "
 },
 {
   "id": "activities-17-2",
@@ -1204,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Matrix transformation perform geometric operations. Go to this website to study the effect that various matrix transformations have on the plane. On the left is the plane before the transformation; on the right is the plane after the transformation.  Describe the geometric effect of the matrix transformations defined by          Scales by 2 in the -direction.   Linear transformation that scales by 2 in the -direction.            Scales by 2 in both the -direction and -direction.   Linear transformation that scales by 2 in both the -direction and -direction.            Rotates by counterclockwise.   Linear transformation that rotates by counterclockwise.            Skews to the right.   Linear transformation that skews to the right.            Flips over the -axis.   Linear transformation that flips over the -axis.            Projects (condenses) on to the -axis. Note: columns are not linearly independent.   Linear transformation that projects (condenses) on to the -axis.            Nothing! This is the identity matrix!   Linear transformation that does nothing! This is the identity matrix!            Projects onto a line and stretches. Note: columns are not linearly independent.   Linear transformation that projects onto a line and stretches.     "
+  "body": "  Matrix transformation perform geometric operations. Go to this website to study the effect that various matrix transformations have on the plane. On the left is the plane before the transformation; on the right is the plane after the transformation.  Describe the geometric effect of the matrix transformations defined by          Scales by 2 in the -direction.   Linear transformation that scales by 2 in the x-direction.            Scales by 2 in both the -direction and -direction.   Linear transformation that scales by 2 in both the x-direction and y-direction.            Rotates by counterclockwise.   Linear transformation that rotates by 90 degrees counterclockwise.            Skews to the right.   Linear transformation that skews to the right.            Flips over the -axis.   Linear transformation that flips over the y--axis.            Projects (condenses) on to the -axis. Note: columns are not linearly independent.   Linear transformation that projects (condenses) on to the x-axis.            Nothing! This is the identity matrix!   Linear transformation that does nothing! This is the identity matrix!            Projects onto a line and stretches. Note: columns are not linearly independent.   Linear transformation that projects onto a line and stretches.     "
 },
 {
   "id": "activities-17-3",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "  Explain why the matrix that rotates vectors counterclockwise by an angle is     We look at the action of the transformation on our vectors and . So, This is because if we take and rotate it by the angle theta, then the -component is the horizontal component of the triangle, which is and the -component is the vertical component of the triangle, which is . See blue triangle in diagram below. For , we have Here, the horizontal component of the resulting vector is , but in the negative -direction, making the component and the vertical component is . See green triangle in diagram below.   Linear transformation that rotates vectors counterclockwise by an angle .    "
+  "body": "  Explain why the matrix that rotates vectors counterclockwise by an angle is     We look at the action of the transformation on our vectors and . So, This is because if we take and rotate it by the angle theta, then the -component is the horizontal component of the triangle, which is and the -component is the vertical component of the triangle, which is . See blue triangle in diagram below. For , we have Here, the horizontal component of the resulting vector is , but in the negative -direction, making the component and the vertical component is . See green triangle in diagram below.   Linear transformation that rotates vectors counterclockwise by an angle theta.    "
 },
 {
   "id": "activities-17-9",
@@ -1267,7 +1267,7 @@ var ptx_lunr_docs = [
   "type": "Outcomes",
   "number": "",
   "title": "",
-  "body": "   What is the matrix for a transformation that scales horizontally by a factor of and vertically by a factor of ?    What is the matrix for a transformation that rotates counterclockwise by an angle ?    How can you find the matrix associated with the composition of two matrix transformations?    "
+  "body": "  Make sure you can answer the following questions:     What is the matrix for a transformation that scales horizontally by a factor of and vertically by a factor of ?    What is the matrix for a transformation that rotates counterclockwise by an angle ?    How can you find the matrix associated with the composition of two matrix transformations?    "
 },
 {
   "id": "activities-18",
@@ -1276,52 +1276,52 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.1 - Invertibility",
-  "body": " Section 3.1 - Invertibility    Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?      Consider the matrices     [label=(\\alph*)]      Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?       Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      What is the matrix . Is it true ? (Can do this with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation       Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix---that is, has the same number of rows and columns---what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?       Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?    "
+  "body": " Section 3.1 - Invertibility    Consider the matrices     [label=(\\alph*)]      Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?       Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      What is the matrix . Is it true ? (Can do this with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation       Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix---that is, has the same number of rows and columns---what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?       Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?      Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?    "
 },
 {
   "id": "activities-18-2",
   "level": "2",
   "url": "activities-18.html#activities-18-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?   "
-},
-{
-  "id": "activities-18-3",
-  "level": "2",
-  "url": "activities-18.html#activities-18-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Consider the matrices     [label=(\\alph*)]      Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?    "
 },
 {
-  "id": "activities-18-4",
+  "id": "activities-18-3",
   "level": "2",
-  "url": "activities-18.html#activities-18-4",
+  "url": "activities-18.html#activities-18-3",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      What is the matrix . Is it true ? (Can do this with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation    "
 },
 {
-  "id": "activities-18-5",
+  "id": "activities-18-4",
   "level": "2",
-  "url": "activities-18.html#activities-18-5",
+  "url": "activities-18.html#activities-18-4",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix---that is, has the same number of rows and columns---what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?    "
 },
 {
-  "id": "activities-18-6",
+  "id": "activities-18-5",
   "level": "2",
-  "url": "activities-18.html#activities-18-6",
+  "url": "activities-18.html#activities-18-5",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?   "
+},
+{
+  "id": "activities-18-6",
+  "level": "2",
+  "url": "activities-18.html#activities-18-6",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?   "
 },
 {
   "id": "activities-19",
@@ -1330,61 +1330,61 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.1 - Invertibility - Part 2",
-  "body": " Section 3.1 - Invertibility - Part 2    Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?      Suppose  If is the inverse of , we could solve the following three equations separately to find the columns of : \\\\ But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity\\_matrix(3) . You may augment using B.augment(identity\\_matrix(3))      Use to solve the equation .       Consider the matrix     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or \\begin{verbatim}B^(-1)\\end{verbatim}.      Using from problem 1 and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?       Suppose and are invertible matrices.     Explain why by simplifying      Explain why the product of two invertible matrices is always invertible.       Suppose that is a matrix whose columns are linearly independent. Can you guarantee that is invertible? Explain.      If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:     Which of the two triangular matrices below are invertible?      Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?     "
+  "body": " Section 3.1 - Invertibility - Part 2    Suppose  If is the inverse of , we could solve the following three equations separately to find the columns of : \\\\ But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity\\_matrix(3) . You may augment using B.augment(identity\\_matrix(3))      Use to solve the equation .       Consider the matrix     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or \\begin{verbatim}B^(-1)\\end{verbatim}.      Using from problem 1 and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?       Suppose and are invertible matrices.     Explain why by simplifying      Explain why the product of two invertible matrices is always invertible.       Suppose that is a matrix whose columns are linearly independent. Can you guarantee that is invertible? Explain.      If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:     Which of the two triangular matrices below are invertible?      Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?       Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?    "
 },
 {
   "id": "activities-19-2",
   "level": "2",
   "url": "activities-19.html#activities-19-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?   "
-},
-{
-  "id": "activities-19-3",
-  "level": "2",
-  "url": "activities-19.html#activities-19-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Suppose  If is the inverse of , we could solve the following three equations separately to find the columns of : \\\\ But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity\\_matrix(3) . You may augment using B.augment(identity\\_matrix(3))      Use to solve the equation .    "
 },
 {
-  "id": "activities-19-4",
+  "id": "activities-19-3",
   "level": "2",
-  "url": "activities-19.html#activities-19-4",
+  "url": "activities-19.html#activities-19-3",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Consider the matrix     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or \\begin{verbatim}B^(-1)\\end{verbatim}.      Using from problem 1 and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?    "
 },
 {
-  "id": "activities-19-5",
+  "id": "activities-19-4",
   "level": "2",
-  "url": "activities-19.html#activities-19-5",
+  "url": "activities-19.html#activities-19-4",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Suppose and are invertible matrices.     Explain why by simplifying      Explain why the product of two invertible matrices is always invertible.    "
 },
 {
-  "id": "activities-19-6",
+  "id": "activities-19-5",
   "level": "2",
-  "url": "activities-19.html#activities-19-6",
+  "url": "activities-19.html#activities-19-5",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Suppose that is a matrix whose columns are linearly independent. Can you guarantee that is invertible? Explain.   "
 },
 {
-  "id": "activities-19-7",
+  "id": "activities-19-6",
   "level": "2",
-  "url": "activities-19.html#activities-19-7",
+  "url": "activities-19.html#activities-19-6",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:     Which of the two triangular matrices below are invertible?      Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?    "
+},
+{
+  "id": "activities-19-7",
+  "level": "2",
+  "url": "activities-19.html#activities-19-7",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?   "
 },
 {
   "id": "activities-20",
@@ -1393,43 +1393,43 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.2 - Bases and Coordinate Systems",
-  "body": " Section 3.2 - Bases and Coordinate Systems    What is a basis?  How do we determine if a given set of vectors is a basis?  How many vectors are in any basis for ?  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?     \\\\  A set of vectors in that spans and is linearly independent is called a basis of .     This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?       Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .  \\begin{center} \\includegraphics{basis-1.eps} \\end{center}  We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as  In general, if , then     Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ?       Consider the vectors     Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system.\\footnote{The representation in the standard coordinate system is with the standard basis vectors ,}      Explain how to convert the vector into , its representation in the coordinate system defined by .     "
+  "body": " Section 3.2 - Bases and Coordinate Systems   \\\\  A set of vectors in that spans and is linearly independent is called a basis of .     This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?       Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .  \\begin{center} \\includegraphics{basis-1.eps} \\end{center}  We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as  In general, if , then     Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ?       Consider the vectors     Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system.\\footnote{The representation in the standard coordinate system is with the standard basis vectors ,}      Explain how to convert the vector into , its representation in the coordinate system defined by .       Make sure you can answer the following questions (at least for 2 and 3 variables):    What is a basis?  How do we determine if a given set of vectors is a basis?  How many vectors are in any basis for ?  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?    "
 },
 {
-  "id": "activities-20-2",
+  "id": "activities-20-3",
   "level": "2",
-  "url": "activities-20.html#activities-20-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  What is a basis?  How do we determine if a given set of vectors is a basis?  How many vectors are in any basis for ?  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?   "
-},
-{
-  "id": "activities-20-4",
-  "level": "2",
-  "url": "activities-20.html#activities-20-4",
+  "url": "activities-20.html#activities-20-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?    "
 },
 {
-  "id": "activities-20-5",
+  "id": "activities-20-4",
   "level": "2",
-  "url": "activities-20.html#activities-20-5",
+  "url": "activities-20.html#activities-20-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .  \\begin{center} \\includegraphics{basis-1.eps} \\end{center}  We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as  In general, if , then     Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ?    "
 },
 {
-  "id": "activities-20-6",
+  "id": "activities-20-5",
   "level": "2",
-  "url": "activities-20.html#activities-20-6",
+  "url": "activities-20.html#activities-20-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Consider the vectors     Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system.\\footnote{The representation in the standard coordinate system is with the standard basis vectors ,}      Explain how to convert the vector into , its representation in the coordinate system defined by .    "
+},
+{
+  "id": "activities-20-6",
+  "level": "2",
+  "url": "activities-20.html#activities-20-6",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):    What is a basis?  How do we determine if a given set of vectors is a basis?  How many vectors are in any basis for ?  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?   "
 },
 {
   "id": "activities-21",
@@ -1438,43 +1438,43 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.2 - Bases and Coordinate Systems - Part 2",
-  "body": " Section 3.2 - Bases and Coordinate Systems - Part 2    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?     \\\\  Recall: if is a basis for , then if then That is, is the normal vector in standard form, and is the vector of coefficients (weights) of the linear combination of the vectors in the basis that equals .     Suppose that is the basis for consisting of the vectors and . Let's form the matrix     Explain why .      Find a matrix such that .       Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to { http:\/\/gvsu.edu\/s\/0Jc } where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?        Find the matrix that converts into (that is ). You may want to give this a name in Sage; that is, Pb = matrix(...) .      Find the matrix that converts into . You may also want to give this a name in Sage.      Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Write an expression for the luminance as it depends on , , and . Explain how the luminance represents the brightness of the color.      Write an expression for the blue chrominance in terms of , , and . Explain how the blue chrominance measures the amount of blue in the color.     "
+  "body": " Section 3.2 - Bases and Coordinate Systems - Part 2   \\\\  Recall: if is a basis for , then if then That is, is the normal vector in standard form, and is the vector of coefficients (weights) of the linear combination of the vectors in the basis that equals .     Suppose that is the basis for consisting of the vectors and . Let's form the matrix     Explain why .      Find a matrix such that .       Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to { http:\/\/gvsu.edu\/s\/0Jc } where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?        Find the matrix that converts into (that is ). You may want to give this a name in Sage; that is, Pb = matrix(...) .      Find the matrix that converts into . You may also want to give this a name in Sage.      Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Write an expression for the luminance as it depends on , , and . Explain how the luminance represents the brightness of the color.      Write an expression for the blue chrominance in terms of , , and . Explain how the blue chrominance measures the amount of blue in the color.       Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?    "
 },
 {
-  "id": "activities-21-2",
+  "id": "activities-21-3",
   "level": "2",
-  "url": "activities-21.html#activities-21-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?   "
-},
-{
-  "id": "activities-21-4",
-  "level": "2",
-  "url": "activities-21.html#activities-21-4",
+  "url": "activities-21.html#activities-21-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Suppose that is the basis for consisting of the vectors and . Let's form the matrix     Explain why .      Find a matrix such that .    "
 },
 {
-  "id": "activities-21-5",
+  "id": "activities-21-4",
   "level": "2",
-  "url": "activities-21.html#activities-21-5",
+  "url": "activities-21.html#activities-21-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to { http:\/\/gvsu.edu\/s\/0Jc } where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?    "
 },
 {
-  "id": "activities-21-6",
+  "id": "activities-21-5",
   "level": "2",
-  "url": "activities-21.html#activities-21-6",
+  "url": "activities-21.html#activities-21-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "   Find the matrix that converts into (that is ). You may want to give this a name in Sage; that is, Pb = matrix(...) .      Find the matrix that converts into . You may also want to give this a name in Sage.      Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Write an expression for the luminance as it depends on , , and . Explain how the luminance represents the brightness of the color.      Write an expression for the blue chrominance in terms of , , and . Explain how the blue chrominance measures the amount of blue in the color.    "
+},
+{
+  "id": "activities-21-6",
+  "level": "2",
+  "url": "activities-21.html#activities-21-6",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?   "
 },
 {
   "id": "activities-22",
@@ -1483,61 +1483,61 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.4 - Determinants",
-  "body": " Section 3.4 - Determinants    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?     \\\\  Recall that the determinant a matrix is the area of the parallelogram formed by and , with a negative sign if the vectors are negatively oriented. We denote the determinant of as .     For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .        When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:      Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix      We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.       Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.     "
+  "body": " Section 3.4 - Determinants   \\\\  Recall that the determinant a matrix is the area of the parallelogram formed by and , with a negative sign if the vectors are negatively oriented. We denote the determinant of as .     For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .        When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:      Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix      We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.       Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.       Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?    "
 },
 {
-  "id": "activities-22-2",
+  "id": "activities-22-3",
   "level": "2",
-  "url": "activities-22.html#activities-22-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?   "
-},
-{
-  "id": "activities-22-4",
-  "level": "2",
-  "url": "activities-22.html#activities-22-4",
+  "url": "activities-22.html#activities-22-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .     "
 },
 {
-  "id": "activities-22-5",
+  "id": "activities-22-4",
   "level": "2",
-  "url": "activities-22.html#activities-22-5",
+  "url": "activities-22.html#activities-22-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:   "
 },
 {
-  "id": "activities-22-6",
+  "id": "activities-22-5",
   "level": "2",
-  "url": "activities-22.html#activities-22-6",
+  "url": "activities-22.html#activities-22-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix   "
 },
 {
-  "id": "activities-22-7",
+  "id": "activities-22-6",
   "level": "2",
-  "url": "activities-22.html#activities-22-7",
+  "url": "activities-22.html#activities-22-6",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.    "
 },
 {
-  "id": "activities-22-8",
+  "id": "activities-22-7",
   "level": "2",
-  "url": "activities-22.html#activities-22-8",
+  "url": "activities-22.html#activities-22-7",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.    "
+},
+{
+  "id": "activities-22-8",
+  "level": "2",
+  "url": "activities-22.html#activities-22-8",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?   "
 },
 {
   "id": "activities-23",
@@ -1546,61 +1546,61 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.4 - Determinants using Cofactor Expansion - Part 2",
-  "body": " Section 3.4 - Determinants using Cofactor Expansion - Part 2    How do we think about the determinant of a 2x2 matrix algebraically?  How do we apply cofactor expansion?      Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.      Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)      Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.      Use a cofactor expansion to determine whether the following vectors form a basis for :      Explain how you could know that without doing any computation.    "
+  "body": " Section 3.4 - Determinants using Cofactor Expansion - Part 2    Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.      Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)      Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.      Use a cofactor expansion to determine whether the following vectors form a basis for :      Explain how you could know that without doing any computation.      Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix algebraically?  How do we apply cofactor expansion?    "
 },
 {
   "id": "activities-23-2",
   "level": "2",
   "url": "activities-23.html#activities-23-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  How do we think about the determinant of a 2x2 matrix algebraically?  How do we apply cofactor expansion?   "
-},
-{
-  "id": "activities-23-3",
-  "level": "2",
-  "url": "activities-23.html#activities-23-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.   "
 },
 {
-  "id": "activities-23-4",
+  "id": "activities-23-3",
   "level": "2",
-  "url": "activities-23.html#activities-23-4",
+  "url": "activities-23.html#activities-23-3",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)   "
 },
 {
-  "id": "activities-23-5",
+  "id": "activities-23-4",
   "level": "2",
-  "url": "activities-23.html#activities-23-5",
+  "url": "activities-23.html#activities-23-4",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.   "
 },
 {
-  "id": "activities-23-6",
+  "id": "activities-23-5",
   "level": "2",
-  "url": "activities-23.html#activities-23-6",
+  "url": "activities-23.html#activities-23-5",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Use a cofactor expansion to determine whether the following vectors form a basis for :   "
 },
 {
-  "id": "activities-23-7",
+  "id": "activities-23-6",
   "level": "2",
-  "url": "activities-23.html#activities-23-7",
+  "url": "activities-23.html#activities-23-6",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  Explain how you could know that without doing any computation.   "
+},
+{
+  "id": "activities-23-7",
+  "level": "2",
+  "url": "activities-23.html#activities-23-7",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix algebraically?  How do we apply cofactor expansion?   "
 },
 {
   "id": "activities-24",
@@ -1609,88 +1609,88 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.5 - Subspaces of <span class=\"process-math\">\\(\\real^p\\)<\/span>",
-  "body": " Section 3.5 - Subspaces of    Make sure you can answer the following questions:    What is the definition of a subspace? How can we tell if something is a subspace?  What is the dimension of a subspace? How do we find it?  How do we find the null space of a matrix?  How do we find the column space of a matrix?  What is the relationship between the dimension of the column space and the dimension of the null space?     \\\\  The first subspace we'll look at is called the \\em column space of and denoted as . It's just the span of the columns of :     Consider the matrix     Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Since and span and are linearly independent, we say they form a basis for . The \\em dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of ( ), and what geometrical shape does it form in ?       Suppose we have a matrix     What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.         Generally speaking, what is the relationship between the dimension and the number of pivots in ?  The second subspace we'll look at is called the \\em null space of and denoted . It's just the solution set of the equation .      Let's now go back to the matrix at the top of the first page, rewritten here:     Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?       Let's go back to the matrix , rewritten below     Find a basis for .      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.       Suppose that is a matrix with 30 pivots.     is a \\underline{}-dimensional subspace of where \\underline{}.      is a \\underline{}-dimensional subspace of where \\underline{}.       The rank of a matrix , denoted, is the number of pivot positions of .     What is the relationship between the rank of a matrix and the dimension of ?      Say is an matrix. Fill in the blank:     "
+  "body": " Section 3.5 - Subspaces of   \\\\  The first subspace we'll look at is called the \\em column space of and denoted as . It's just the span of the columns of :     Consider the matrix     Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Since and span and are linearly independent, we say they form a basis for . The \\em dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of ( ), and what geometrical shape does it form in ?       Suppose we have a matrix     What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.       Generally speaking, what is the relationship between the dimension and the number of pivots in ?  The second subspace we'll look at is called the \\em null space of and denoted . It's just the solution set of the equation .      Let's now go back to the matrix at the top of the first page, rewritten here:     Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?       Let's go back to the matrix , rewritten below     Find a basis for .      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.       Suppose that is a matrix with 30 pivots.     is a \\underline{}-dimensional subspace of where \\underline{}.      is a \\underline{}-dimensional subspace of where \\underline{}.       The rank of a matrix , denoted, is the number of pivot positions of .     What is the relationship between the rank of a matrix and the dimension of ?      Say is an matrix. Fill in the blank:       Make sure you can answer the following questions:    What is the definition of a subspace? How can we tell if something is a subspace?  What is the dimension of a subspace? How do we find it?  How do we find the null space of a matrix?  How do we find the column space of a matrix?  What is the relationship between the dimension of the column space and the dimension of the null space?    "
 },
 {
-  "id": "activities-24-2",
+  "id": "activities-24-2-2",
   "level": "2",
-  "url": "activities-24.html#activities-24-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  Make sure you can answer the following questions:    What is the definition of a subspace? How can we tell if something is a subspace?  What is the dimension of a subspace? How do we find it?  How do we find the null space of a matrix?  How do we find the column space of a matrix?  What is the relationship between the dimension of the column space and the dimension of the null space?   "
-},
-{
-  "id": "activities-24-3-2",
-  "level": "2",
-  "url": "activities-24.html#activities-24-3-2",
+  "url": "activities-24.html#activities-24-2-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "\\em column space "
 },
 {
-  "id": "activities-24-4",
+  "id": "activities-24-3",
   "level": "2",
-  "url": "activities-24.html#activities-24-4",
+  "url": "activities-24.html#activities-24-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Consider the matrix     Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Since and span and are linearly independent, we say they form a basis for . The \\em dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of ( ), and what geometrical shape does it form in ?    "
 },
 {
-  "id": "activities-24-5",
+  "id": "activities-24-4",
   "level": "2",
-  "url": "activities-24.html#activities-24-5",
+  "url": "activities-24.html#activities-24-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Suppose we have a matrix     What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.      "
+  "body": "  Suppose we have a matrix     What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.    "
 },
 {
-  "id": "activities-24-6",
+  "id": "activities-24-5",
   "level": "2",
-  "url": "activities-24.html#activities-24-6",
+  "url": "activities-24.html#activities-24-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Generally speaking, what is the relationship between the dimension and the number of pivots in ?  The second subspace we'll look at is called the \\em null space of and denoted . It's just the solution set of the equation .   "
 },
 {
-  "id": "activities-24-7",
+  "id": "activities-24-6",
   "level": "2",
-  "url": "activities-24.html#activities-24-7",
+  "url": "activities-24.html#activities-24-6",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Let's now go back to the matrix at the top of the first page, rewritten here:     Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?    "
 },
 {
-  "id": "activities-24-8",
+  "id": "activities-24-7",
   "level": "2",
-  "url": "activities-24.html#activities-24-8",
+  "url": "activities-24.html#activities-24-7",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  Let's go back to the matrix , rewritten below     Find a basis for .      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.    "
 },
 {
-  "id": "activities-24-9",
+  "id": "activities-24-8",
   "level": "2",
-  "url": "activities-24.html#activities-24-9",
+  "url": "activities-24.html#activities-24-8",
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
   "body": "  Suppose that is a matrix with 30 pivots.     is a \\underline{}-dimensional subspace of where \\underline{}.      is a \\underline{}-dimensional subspace of where \\underline{}.    "
 },
 {
-  "id": "activities-24-10",
+  "id": "activities-24-9",
   "level": "2",
-  "url": "activities-24.html#activities-24-10",
+  "url": "activities-24.html#activities-24-9",
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
   "body": "  The rank of a matrix , denoted, is the number of pivot positions of .     What is the relationship between the rank of a matrix and the dimension of ?      Say is an matrix. Fill in the blank:    "
+},
+{
+  "id": "activities-24-10",
+  "level": "2",
+  "url": "activities-24.html#activities-24-10",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:    What is the definition of a subspace? How can we tell if something is a subspace?  What is the dimension of a subspace? How do we find it?  How do we find the null space of a matrix?  How do we find the column space of a matrix?  What is the relationship between the dimension of the column space and the dimension of the null space?   "
 },
 {
   "id": "activities-25",
@@ -1698,44 +1698,44 @@ var ptx_lunr_docs = [
   "url": "activities-25.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Section 4.1  - An introduction to eigenvectors and eigenvalues",
-  "body": " Section 4.1 - An introduction to eigenvectors and eigenvalues    Make sure you can answer the following questions: \\begin{enumerate} \\item What is an eigenvector? How can we find the associated eigenvalue? \\item Given a vector and a matrix, how do we know if that vector is an eigenvector of the given matrix? \\item What happens geoemetrically when is an eigenvector of ?﻿﻿ \\item If v is an eigenvector of with eigenvalue k, what is ? What is ? \\item Why are eigenvectors useful?﻿﻿﻿ \\end{enumerate}     \\\\  If is an matrix, we say that a nonzero vector is an eigenvector of with associated eigenvalue  if     Go to http:\/\/gvsu.edu\/s\/0Ja where you will find an interactive diagram that allows you to choose a matrix using the sliders along the top. The red vector may be moved by clicking in the head of the vector and dragging it to a new location. The vector will appear in outline.     Choose the matrix . Move the red vector so that the eigenvector condition holds. What is the eigenvector and what is the associated eigenvalue?      By algebraically computing , verify that your vector is an eigenvector.      If you multiply your eigenvector by the scalar 2, do you still have an eigenvector? If so, what is the associated eigenvector?      Are you able to find another linearly independent eigenvector ? If so, what is the eigenvector and what is the associated eigenvalue?      If is a scalar, what is the geometric relationship between and ?      If , what is the geometric relationship between and ?       Now consider the matrix . Use the diagram to describe any eigenvectors and their associated eigenvalues. What geometric transformation does this matrix perform on vectors? How does this explain the presence of any eigenvectors?      Consider the matrix .     Find the product to verify that is an eigenvector of . What is the associated eigenvalue ?      Find the product to verify that is a an eigenvector of . What is the associated eigenvalue ?      What is ? What is ? (Can do this easily by hand if you don't simplify!)  So why do we care about any of this? Good question. It helps to remember that matrix multiplication satisfies the linearity condition:      Express the vector as a linear combination of and .      Using the linearity of matrix multiplication, and the expression you just found for in terms of and , and your knowledge of and , to write .  Right now this might seem like a really complicated way to do matrix vector multiplication. But using these steps we can find without much trouble.      Use the strategy from part (e) to find . Don't simplify.     "
+  "title": "Section 4.1 - An introduction to eigenvectors and eigenvalues",
+  "body": " Section 4.1 - An introduction to eigenvectors and eigenvalues   \\\\  If is an matrix, we say that a nonzero vector is an eigenvector of with associated eigenvalue  if      Go to http:\/\/gvsu.edu\/s\/0Ja where you will find an interactive diagram that allows you to choose a matrix using the sliders along the top. The red vector may be moved by clicking in the head of the vector and dragging it to a new location. The vector will appear in outline.     Choose the matrix . Move the red vector so that the eigenvector condition holds. What is the eigenvector and what is the associated eigenvalue?      By algebraically computing , verify that your vector is an eigenvector.      If you multiply your eigenvector by the scalar 2, do you still have an eigenvector? If so, what is the associated eigenvector?      Are you able to find another linearly independent eigenvector ? If so, what is the eigenvector and what is the associated eigenvalue?      If is a scalar, what is the geometric relationship between and ?      If , what is the geometric relationship between and ?       Now consider the matrix . Use the diagram to describe any eigenvectors and their associated eigenvalues. What geometric transformation does this matrix perform on vectors? How does this explain the presence of any eigenvectors?      Consider the matrix .     Find the product to verify that is an eigenvector of . What is the associated eigenvalue ?      Find the product to verify that is a an eigenvector of . What is the associated eigenvalue ?      What is ? What is ? (Can do this easily by hand if you don't simplify!)  So why do we care about any of this? Good question. It helps to remember that matrix multiplication satisfies the linearity condition:       Express the vector as a linear combination of and .      Using the linearity of matrix multiplication, and the expression you just found for in terms of and , and your knowledge of and , to write .  Right now this might seem like a really complicated way to do matrix vector multiplication. But using these steps we can find without much trouble.      Use the strategy from part (e) to find . Don't simplify.       Make sure you can answer the following questions:    What is an eigenvector? How can we find the associated eigenvalue?  Given a vector and a matrix, how do we know if that vector is an eigenvector of the given matrix?  What happens geoemetrically when is an eigenvector of ?  If v is an eigenvector of with eigenvalue k, what is ? What is ?  Why are eigenvectors useful?    "
 },
 {
-  "id": "activities-25-2",
+  "id": "activities-25-3",
   "level": "2",
-  "url": "activities-25.html#activities-25-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  Make sure you can answer the following questions: \\begin{enumerate} \\item What is an eigenvector? How can we find the associated eigenvalue? \\item Given a vector and a matrix, how do we know if that vector is an eigenvector of the given matrix? \\item What happens geoemetrically when is an eigenvector of ?﻿﻿ \\item If v is an eigenvector of with eigenvalue k, what is ? What is ? \\item Why are eigenvectors useful?﻿﻿﻿ \\end{enumerate}   "
-},
-{
-  "id": "activities-25-4",
-  "level": "2",
-  "url": "activities-25.html#activities-25-4",
+  "url": "activities-25.html#activities-25-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Go to http:\/\/gvsu.edu\/s\/0Ja where you will find an interactive diagram that allows you to choose a matrix using the sliders along the top. The red vector may be moved by clicking in the head of the vector and dragging it to a new location. The vector will appear in outline.     Choose the matrix . Move the red vector so that the eigenvector condition holds. What is the eigenvector and what is the associated eigenvalue?      By algebraically computing , verify that your vector is an eigenvector.      If you multiply your eigenvector by the scalar 2, do you still have an eigenvector? If so, what is the associated eigenvector?      Are you able to find another linearly independent eigenvector ? If so, what is the eigenvector and what is the associated eigenvalue?      If is a scalar, what is the geometric relationship between and ?      If , what is the geometric relationship between and ?    "
 },
 {
-  "id": "activities-25-5",
+  "id": "activities-25-4",
   "level": "2",
-  "url": "activities-25.html#activities-25-5",
+  "url": "activities-25.html#activities-25-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Now consider the matrix . Use the diagram to describe any eigenvectors and their associated eigenvalues. What geometric transformation does this matrix perform on vectors? How does this explain the presence of any eigenvectors?   "
 },
 {
-  "id": "activities-25-6",
+  "id": "activities-25-5",
   "level": "2",
-  "url": "activities-25.html#activities-25-6",
+  "url": "activities-25.html#activities-25-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Consider the matrix .     Find the product to verify that is an eigenvector of . What is the associated eigenvalue ?      Find the product to verify that is a an eigenvector of . What is the associated eigenvalue ?      What is ? What is ? (Can do this easily by hand if you don't simplify!)  So why do we care about any of this? Good question. It helps to remember that matrix multiplication satisfies the linearity condition:      Express the vector as a linear combination of and .      Using the linearity of matrix multiplication, and the expression you just found for in terms of and , and your knowledge of and , to write .  Right now this might seem like a really complicated way to do matrix vector multiplication. But using these steps we can find without much trouble.      Use the strategy from part (e) to find . Don't simplify.    "
+  "body": "  Consider the matrix .     Find the product to verify that is an eigenvector of . What is the associated eigenvalue ?      Find the product to verify that is a an eigenvector of . What is the associated eigenvalue ?      What is ? What is ? (Can do this easily by hand if you don't simplify!)  So why do we care about any of this? Good question. It helps to remember that matrix multiplication satisfies the linearity condition:       Express the vector as a linear combination of and .      Using the linearity of matrix multiplication, and the expression you just found for in terms of and , and your knowledge of and , to write .  Right now this might seem like a really complicated way to do matrix vector multiplication. But using these steps we can find without much trouble.      Use the strategy from part (e) to find . Don't simplify.    "
+},
+{
+  "id": "activities-25-6",
+  "level": "2",
+  "url": "activities-25.html#activities-25-6",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:    What is an eigenvector? How can we find the associated eigenvalue?  Given a vector and a matrix, how do we know if that vector is an eigenvector of the given matrix?  What happens geoemetrically when is an eigenvector of ?  If v is an eigenvector of with eigenvalue k, what is ? What is ?  Why are eigenvectors useful?   "
 },
 {
   "id": "activities-26",
@@ -1744,61 +1744,61 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 4.2. - Finding eigenvectors and eigenvalues",
-  "body": " Section 4.2. - Finding eigenvectors and eigenvalues    \\begin{enumerate} \\item What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix? \\item What is the multiplicity of an eigenvalue? \\item What is an eigenspace and how do we find it? \\end{enumerate}     \\\\  If is an matrix, we can rewrite the condition as We will now practice finding eigenvalues and eigenvectors .     If is an eigenvector of with associated eigenvalue , then is a nonzero solution to the homogeneous equation .     What does this imply about the pivot positions of the matrix ?      What does this say about the invertibility of ?      What does this say about the determinant ? We call the characteristic polynomial .       Consider the matrix and construct the matrix     Find the determinant and then find the values such that . These are the eigenvalues of .  We call the characteristic equation . The solutions to the characteristic equation in this case are and . These are the eigenvalues of . Now let's find the eigenvectors, which are the solutions to the equation .      Start with , which gives us the matrix . Find the solutions to the homogeneous equation . These will be the eigenvectors corresponding to . (In Sage you can enter A - 3 identity matrix(2) to get .)      Now use , which gives us the matrix . Find the solutions to the homogeneous equation . These will be the eigenvectors corresponding to .      Go to http:\/\/gvsu.edu\/s\/0Ja and verify that you have found the eigenvectors and eigenvalues for .      We will call the set of all eigenvectors corresponding to an eigenvalue the eigenspace of corresponding to and denote it by . Notice that , the null space of . For the matrix , what are and ?       Let's now find the eigenvectors and eigenvalues of .     Find the eigenvalues by solving the equation , then find a basis for the eigenspaces for each eigenvalue .      Note you should get that is a ``double root\" of the characteristic polynomial. So we say is an eigenvalue of multiplicity 2. You can check your results again using the interactive figure.      Is it possible to form a basis of consisting of eigenvectors of ?       Consider the matrix , and find its eigenvalues and eigenvectors. Verify your results again with the interactive figure.      Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries. What does this say about the eigenvalues of a triangular matrix?    "
+  "body": " Section 4.2. - Finding eigenvectors and eigenvalues   \\\\  If is an matrix, we can rewrite the condition as We will now practice finding eigenvalues and eigenvectors .     If is an eigenvector of with associated eigenvalue , then is a nonzero solution to the homogeneous equation .     What does this imply about the pivot positions of the matrix ?      What does this say about the invertibility of ?      What does this say about the determinant ? We call the characteristic polynomial .       Consider the matrix and construct the matrix     Find the determinant and then find the values such that . These are the eigenvalues of .  We call the characteristic equation . The solutions to the characteristic equation in this case are and . These are the eigenvalues of . Now let's find the eigenvectors, which are the solutions to the equation .      Start with , which gives us the matrix . Find the solutions to the homogeneous equation . These will be the eigenvectors corresponding to . (In Sage you can enter A - 3 identity matrix(2) to get .)      Now use , which gives us the matrix . Find the solutions to the homogeneous equation . These will be the eigenvectors corresponding to .      Go to http:\/\/gvsu.edu\/s\/0Ja and verify that you have found the eigenvectors and eigenvalues for .      We will call the set of all eigenvectors corresponding to an eigenvalue the eigenspace of corresponding to and denote it by . Notice that , the null space of . For the matrix , what are and ?       Let's now find the eigenvectors and eigenvalues of .     Find the eigenvalues by solving the equation , then find a basis for the eigenspaces for each eigenvalue .      Note you should get that is a ``double root\" of the characteristic polynomial. So we say is an eigenvalue of multiplicity 2. You can check your results again using the interactive figure.      Is it possible to form a basis of consisting of eigenvectors of ?       Consider the matrix , and find its eigenvalues and eigenvectors. Verify your results again with the interactive figure.      Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries. What does this say about the eigenvalues of a triangular matrix?      Make sure you can answer the following questions:     What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix?    What is the multiplicity of an eigenvalue?    What is an eigenspace and how do we find it?     "
 },
 {
-  "id": "activities-26-2",
+  "id": "activities-26-3",
   "level": "2",
-  "url": "activities-26.html#activities-26-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  \\begin{enumerate} \\item What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix? \\item What is the multiplicity of an eigenvalue? \\item What is an eigenspace and how do we find it? \\end{enumerate}   "
-},
-{
-  "id": "activities-26-4",
-  "level": "2",
-  "url": "activities-26.html#activities-26-4",
+  "url": "activities-26.html#activities-26-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  If is an eigenvector of with associated eigenvalue , then is a nonzero solution to the homogeneous equation .     What does this imply about the pivot positions of the matrix ?      What does this say about the invertibility of ?      What does this say about the determinant ? We call the characteristic polynomial .    "
 },
 {
-  "id": "activities-26-5",
+  "id": "activities-26-4",
   "level": "2",
-  "url": "activities-26.html#activities-26-5",
+  "url": "activities-26.html#activities-26-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Consider the matrix and construct the matrix     Find the determinant and then find the values such that . These are the eigenvalues of .  We call the characteristic equation . The solutions to the characteristic equation in this case are and . These are the eigenvalues of . Now let's find the eigenvectors, which are the solutions to the equation .      Start with , which gives us the matrix . Find the solutions to the homogeneous equation . These will be the eigenvectors corresponding to . (In Sage you can enter A - 3 identity matrix(2) to get .)      Now use , which gives us the matrix . Find the solutions to the homogeneous equation . These will be the eigenvectors corresponding to .      Go to http:\/\/gvsu.edu\/s\/0Ja and verify that you have found the eigenvectors and eigenvalues for .      We will call the set of all eigenvectors corresponding to an eigenvalue the eigenspace of corresponding to and denote it by . Notice that , the null space of . For the matrix , what are and ?    "
 },
 {
-  "id": "activities-26-6",
+  "id": "activities-26-5",
   "level": "2",
-  "url": "activities-26.html#activities-26-6",
+  "url": "activities-26.html#activities-26-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Let's now find the eigenvectors and eigenvalues of .     Find the eigenvalues by solving the equation , then find a basis for the eigenspaces for each eigenvalue .      Note you should get that is a ``double root\" of the characteristic polynomial. So we say is an eigenvalue of multiplicity 2. You can check your results again using the interactive figure.      Is it possible to form a basis of consisting of eigenvectors of ?    "
 },
 {
-  "id": "activities-26-7",
+  "id": "activities-26-6",
   "level": "2",
-  "url": "activities-26.html#activities-26-7",
+  "url": "activities-26.html#activities-26-6",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Consider the matrix , and find its eigenvalues and eigenvectors. Verify your results again with the interactive figure.   "
 },
 {
-  "id": "activities-26-8",
+  "id": "activities-26-7",
   "level": "2",
-  "url": "activities-26.html#activities-26-8",
+  "url": "activities-26.html#activities-26-7",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries. What does this say about the eigenvalues of a triangular matrix?   "
+},
+{
+  "id": "activities-26-8",
+  "level": "2",
+  "url": "activities-26.html#activities-26-8",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:     What is a characteristic polynomial? How do we use it to find the eigenvalues of a matrix?    What is the multiplicity of an eigenvalue?    What is an eigenspace and how do we find it?    "
 },
 {
   "id": "activities-27",
@@ -1807,70 +1807,70 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 4.2. - Finding eigenvectors and eigenvalues",
-  "body": " Section 4.2. - Finding eigenvectors and eigenvalues    \\begin{enumerate} \\item How do we know if the eigenvectors of an matrix form a basis for ? \\end{enumerate}     \\\\  If is an matrix, we would like to know if there is a basis of consisting of eigenvectors of .  Remember:   The eigenvalues of are the roots of the charactertic polynomial .  The set of eigenvectors associated to forms the eigenspace , which is the solution space of the equation or, in other words, .   Handy: Here's a handy Sage command. If A is a square matrix, then A.fcp('x') will tell you the ``factored characteristic polynomial'' expressed in terms of a variable x .     Consider the matrix .     What is its factored characteristic polynomial?      What are the eigenvalues of ?      Find a basis for each eigenspace of this matrix. What is the dimension of each eigenspace?      Is there a basis of consisting of eigenvectors? If so, what is one such basis?       Consider the matrix     Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and state its dimension.      Is there a basis for consisting of eigenvectors of ?       Now consider the matrix     Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and its dimension.      Is there a basis for consisting of eigenvectors of ? If so, what is one such basis?       Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries.     What does this say about the eigenvalues of a triangular matrix?      What are the eigenvalues of this matrix ?      Find a basis for each of the eigenspaces and state their dimensions.      Is there a basis of consisting of eigenvectors of ?       Suppose that the factored characteristic polynomial of a matrix is If is an matrix, what is ?  Based on the examples we've seen, do you think there will be a basis of consisting of eigenvectors of    "
+  "body": " Section 4.2. - Finding eigenvectors and eigenvalues   If is an matrix, we would like to know if there is a basis of consisting of eigenvectors of .  Remember:     The eigenvalues of are the roots of the charactertic polynomial .    The set of eigenvectors associated to forms the eigenspace , which is the solution space of the equation or, in other words, .      Handy: Here's a handy Sage command. If A is a square matrix, then A.fcp('x') will tell you the ``factored characteristic polynomial'' expressed in terms of a variable x .     Consider the matrix .     What is its factored characteristic polynomial?      What are the eigenvalues of ?      Find a basis for each eigenspace of this matrix. What is the dimension of each eigenspace?      Is there a basis of consisting of eigenvectors? If so, what is one such basis?       Consider the matrix      Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and state its dimension.      Is there a basis for consisting of eigenvectors of ?       Now consider the matrix      Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and its dimension.      Is there a basis for consisting of eigenvectors of ? If so, what is one such basis?       Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries.     What does this say about the eigenvalues of a triangular matrix?      What are the eigenvalues of this matrix ?      Find a basis for each of the eigenspaces and state their dimensions.      Is there a basis of consisting of eigenvectors of ?       Suppose that the factored characteristic polynomial of a matrix is If is an matrix, what is ?  Based on the examples we've seen, do you think there will be a basis of consisting of eigenvectors of       Make sure you can answer the following questions:     How do we know if the eigenvectors of an matrix form a basis for ?     "
 },
 {
-  "id": "activities-27-2",
+  "id": "activities-27-2-4",
   "level": "2",
-  "url": "activities-27.html#activities-27-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  \\begin{enumerate} \\item How do we know if the eigenvectors of an matrix form a basis for ? \\end{enumerate}   "
-},
-{
-  "id": "activities-27-3-5",
-  "level": "2",
-  "url": "activities-27.html#activities-27-3-5",
+  "url": "activities-27.html#activities-27-2-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Handy: "
 },
 {
-  "id": "activities-27-4",
+  "id": "activities-27-3",
   "level": "2",
-  "url": "activities-27.html#activities-27-4",
+  "url": "activities-27.html#activities-27-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Consider the matrix .     What is its factored characteristic polynomial?      What are the eigenvalues of ?      Find a basis for each eigenspace of this matrix. What is the dimension of each eigenspace?      Is there a basis of consisting of eigenvectors? If so, what is one such basis?    "
 },
 {
+  "id": "activities-27-4",
+  "level": "2",
+  "url": "activities-27.html#activities-27-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the matrix      Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and state its dimension.      Is there a basis for consisting of eigenvectors of ?    "
+},
+{
   "id": "activities-27-5",
   "level": "2",
   "url": "activities-27.html#activities-27-5",
   "type": "Worksheet Exercise",
-  "number": "2",
+  "number": "3",
   "title": "",
-  "body": "  Consider the matrix     Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and state its dimension.      Is there a basis for consisting of eigenvectors of ?    "
+  "body": "  Now consider the matrix      Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and its dimension.      Is there a basis for consisting of eigenvectors of ? If so, what is one such basis?    "
 },
 {
   "id": "activities-27-6",
   "level": "2",
   "url": "activities-27.html#activities-27-6",
   "type": "Worksheet Exercise",
-  "number": "3",
+  "number": "4",
   "title": "",
-  "body": "  Now consider the matrix     Find factored characteristic polynomial of .      For each eigenvalue, find a basis for its associated eigenspace and its dimension.      Is there a basis for consisting of eigenvectors of ? If so, what is one such basis?    "
+  "body": "  Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries.     What does this say about the eigenvalues of a triangular matrix?      What are the eigenvalues of this matrix ?      Find a basis for each of the eigenspaces and state their dimensions.      Is there a basis of consisting of eigenvectors of ?    "
 },
 {
   "id": "activities-27-7",
   "level": "2",
   "url": "activities-27.html#activities-27-7",
   "type": "Worksheet Exercise",
-  "number": "4",
+  "number": "5",
   "title": "",
-  "body": "  Remember that the determinant of a triangular matrix, such as , is the product of the diagonal entries.     What does this say about the eigenvalues of a triangular matrix?      What are the eigenvalues of this matrix ?      Find a basis for each of the eigenspaces and state their dimensions.      Is there a basis of consisting of eigenvectors of ?    "
+  "body": "  Suppose that the factored characteristic polynomial of a matrix is If is an matrix, what is ?  Based on the examples we've seen, do you think there will be a basis of consisting of eigenvectors of    "
 },
 {
   "id": "activities-27-8",
   "level": "2",
   "url": "activities-27.html#activities-27-8",
-  "type": "Worksheet Exercise",
-  "number": "5",
+  "type": "Outcomes",
+  "number": "",
   "title": "",
-  "body": "  Suppose that the factored characteristic polynomial of a matrix is If is an matrix, what is ?  Based on the examples we've seen, do you think there will be a basis of consisting of eigenvectors of   "
+  "body": "  Make sure you can answer the following questions:     How do we know if the eigenvectors of an matrix form a basis for ?    "
 },
 {
   "id": "activities-28",
@@ -1879,7 +1879,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 4.4 - Dynamical Systems",
-  "body": " Section 4.4 - Dynamical Systems    \\\\  Suppose we have two species and that interact with one another and that we record the change in their populations from year to year. When we begin our study, the populations, measured in thousands, are and ; after years, the populations are and .  Knowing the populations in one year, we find their populations the next year: We will combine the populations into a vector and write where     Verify that are eigenvectors of and find their respective eigenvalues.      Suppose that initially . Write as a linear combination of eigenvectors and .      Write the vectors , , and as a linear combination of eigenvectors and . Use linearity of matrix multiplication! (If you have powers of eigenvalues, might I suggest not simplifying those... You should have and in your answers.)      Do you see a pattern? Can you find a formula for some general as a linear combination of and ? Hint: there might be powers of in your answer      When becomes very large (that is ), what part of the expression for goes to 0?      When becomes very large (that is ), what happens to the ratio of the populations ? (Recall .)      If we begin instead with what eventually happens to the ratio as becomes very large?      Explain what happens to the ratio as becomes very large no matter what the initial populations are.      After a very long time, by approximately what factor does the population of grow every year? By approximately what factor does the population of grow every year?  Note that if and didn't live in the same region we would have and which would mean both populations would eventually go extinct. Instead, these species are ``cooperative\" which means they benefit from each other (these are the ``off diagonal\" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.      Challenge: Can you give an example of a dynamic system in which species and are competitive, that is both compete for resources and ``hurt'' the other species instead of benefiting them? Can you give an example of a ``predator-prey'' dynamic system in which species is the prey, and species is the predator? (Who would benefit from interactions, and who wouldn't in that case?)    "
+  "body": " Section 4.4 - Dynamical Systems   \\\\  Suppose we have two species and that interact with one another and that we record the change in their populations from year to year. When we begin our study, the populations, measured in thousands, are and ; after years, the populations are and .  Knowing the populations in one year, we find their populations the next year: We will combine the populations into a vector and write where     Verify that are eigenvectors of and find their respective eigenvalues.      Suppose that initially . Write as a linear combination of eigenvectors and .      Write the vectors , , and as a linear combination of eigenvectors and . Use linearity of matrix multiplication! (If you have powers of eigenvalues, might I suggest not simplifying those... You should have and in your answers.)      Do you see a pattern? Can you find a formula for some general as a linear combination of and ? Hint: there might be powers of in your answer      When becomes very large (that is ), what part of the expression for goes to 0?      When becomes very large (that is ), what happens to the ratio of the populations ? (Recall .)      If we begin instead with what eventually happens to the ratio as becomes very large?      Explain what happens to the ratio as becomes very large no matter what the initial populations are.      After a very long time, by approximately what factor does the population of grow every year? By approximately what factor does the population of grow every year?  Note that if and didn't live in the same region we would have and which would mean both populations would eventually go extinct. Instead, these species are ``cooperative\" which means they benefit from each other (these are the ``off diagonal\" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.      Challenge: Can you give an example of a dynamic system in which species and are competitive, that is both compete for resources and ``hurt'' the other species instead of benefiting them? Can you give an example of a ``predator-prey'' dynamic system in which species is the prey, and species is the predator? (Who would benefit from interactions, and who wouldn't in that case?)      Make sure you can answer the following question.     Why is having a basis of eigenvectors useful?     "
 },
 {
   "id": "activities-28-3",
@@ -1972,58 +1972,67 @@ var ptx_lunr_docs = [
   "body": "  Challenge: Can you give an example of a dynamic system in which species and are competitive, that is both compete for resources and ``hurt'' the other species instead of benefiting them? Can you give an example of a ``predator-prey'' dynamic system in which species is the prey, and species is the predator? (Who would benefit from interactions, and who wouldn't in that case?)   "
 },
 {
+  "id": "activities-28-13",
+  "level": "2",
+  "url": "activities-28.html#activities-28-13",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following question.     Why is having a basis of eigenvectors useful?    "
+},
+{
   "id": "activities-29",
   "level": "1",
   "url": "activities-29.html",
   "type": "Worksheet",
   "number": "",
   "title": "Section 4.3 - Diagonalizability",
-  "body": " Section 4.3 - Diagonalizability    \\begin{enumerate} \\item What does it mean for to be diagonalizable? How do we find the diagonalization of a matrix ? \\item If is a diagonalizable matrix, what happens to ? \\item If is a diagonalizable matrix, what happens to ? \\end{enumerate}      Suppose that is a matrix with one eigenvector having eigenvalue and a second eigenvector having eigenvalue .     What is and expressed in terms of and ?      Let's build the following matrices: (Note is made up of the eigenvalues!) What do you find if you multiply ?      What do you find if you multiply .      Explain why and why it follows that .     Anytime we have an matrix and a basis for consisting of eigenvectors of , if we build the matrix of eigenvectors and the diagonal matrix like this: then and we say that is diagonalizable .      Remember that our favorite matrix has eigenvectors with eigenvalue 3 and with eigenvalue .     Construct the matrices and and verify that .      Let's now consider By regrouping the terms in the product, explain why . What does this say about the eigenvalues and eigenvectors of ?      What about for some power ?      Let's now consider the inverse . Simplify this expression using the fact that (that is when we take the inverse of a product, the order switches). What does this say about the eigenvalues and eigenvectors of ?       Let's use a previous example with the distribution of trucks at two locations and , and look at the stochastic matrix and notice that it has eigenvectors with eigenvalue and with eigenvalue 0.2.     Construct the matrices and so that .      Remember that we were interested in looking at what happens to as grows to be very large. Since we have , what happens to as grows very large. In calculus speak, what is ?      What does this say about ?      Suppose that there are a total of 1000 trucks so that the initial state vector where . What happens to the distribution of cars after a very long time ?       Suppose that a matrix is diagonalizable so that . Use the properties of determinants to explain why is equal to the product of the eigenvalues.  It turns out this is true for any square matrix, diagonalizable or not!    "
+  "body": " Section 4.3 - Diagonalizability    Suppose that is a matrix with one eigenvector having eigenvalue and a second eigenvector having eigenvalue .     What is and expressed in terms of and ?      Let's build the following matrices: (Note is made up of the eigenvalues!) What do you find if you multiply ?      What do you find if you multiply .      Explain why and why it follows that .     Anytime we have an matrix and a basis for consisting of eigenvectors of , if we build the matrix of eigenvectors and the diagonal matrix like this: then and we say that is diagonalizable .      Remember that our favorite matrix has eigenvectors with eigenvalue 3 and with eigenvalue .     Construct the matrices and and verify that .      Let's now consider By regrouping the terms in the product, explain why . What does this say about the eigenvalues and eigenvectors of ?      What about for some power ?      Let's now consider the inverse . Simplify this expression using the fact that (that is when we take the inverse of a product, the order switches). What does this say about the eigenvalues and eigenvectors of ?       Let's use a previous example with the distribution of trucks at two locations and , and look at the stochastic matrix and notice that it has eigenvectors with eigenvalue and with eigenvalue 0.2.     Construct the matrices and so that .      Remember that we were interested in looking at what happens to as grows to be very large. Since we have , what happens to as grows very large. In calculus speak, what is ?      What does this say about ?      Suppose that there are a total of 1000 trucks so that the initial state vector where . What happens to the distribution of cars after a very long time ?       Suppose that a matrix is diagonalizable so that . Use the properties of determinants to explain why is equal to the product of the eigenvalues.  It turns out this is true for any square matrix, diagonalizable or not!      Make sure you can answer the following questions:     What does it mean for to be diagonalizable? How do we find the diagonalization of a matrix ?    If is a diagonalizable matrix, what happens to ?    If is a diagonalizable matrix, what happens to ?     "
 },
 {
   "id": "activities-29-2",
   "level": "2",
   "url": "activities-29.html#activities-29-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  \\begin{enumerate} \\item What does it mean for to be diagonalizable? How do we find the diagonalization of a matrix ? \\item If is a diagonalizable matrix, what happens to ? \\item If is a diagonalizable matrix, what happens to ? \\end{enumerate}   "
-},
-{
-  "id": "activities-29-3",
-  "level": "2",
-  "url": "activities-29.html#activities-29-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Suppose that is a matrix with one eigenvector having eigenvalue and a second eigenvector having eigenvalue .     What is and expressed in terms of and ?      Let's build the following matrices: (Note is made up of the eigenvalues!) What do you find if you multiply ?      What do you find if you multiply .      Explain why and why it follows that .     Anytime we have an matrix and a basis for consisting of eigenvectors of , if we build the matrix of eigenvectors and the diagonal matrix like this: then and we say that is diagonalizable .   "
 },
 {
-  "id": "activities-29-4",
+  "id": "activities-29-3",
   "level": "2",
-  "url": "activities-29.html#activities-29-4",
+  "url": "activities-29.html#activities-29-3",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Remember that our favorite matrix has eigenvectors with eigenvalue 3 and with eigenvalue .     Construct the matrices and and verify that .      Let's now consider By regrouping the terms in the product, explain why . What does this say about the eigenvalues and eigenvectors of ?      What about for some power ?      Let's now consider the inverse . Simplify this expression using the fact that (that is when we take the inverse of a product, the order switches). What does this say about the eigenvalues and eigenvectors of ?    "
 },
 {
-  "id": "activities-29-5",
+  "id": "activities-29-4",
   "level": "2",
-  "url": "activities-29.html#activities-29-5",
+  "url": "activities-29.html#activities-29-4",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Let's use a previous example with the distribution of trucks at two locations and , and look at the stochastic matrix and notice that it has eigenvectors with eigenvalue and with eigenvalue 0.2.     Construct the matrices and so that .      Remember that we were interested in looking at what happens to as grows to be very large. Since we have , what happens to as grows very large. In calculus speak, what is ?      What does this say about ?      Suppose that there are a total of 1000 trucks so that the initial state vector where . What happens to the distribution of cars after a very long time ?    "
 },
 {
-  "id": "activities-29-6",
+  "id": "activities-29-5",
   "level": "2",
-  "url": "activities-29.html#activities-29-6",
+  "url": "activities-29.html#activities-29-5",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Suppose that a matrix is diagonalizable so that . Use the properties of determinants to explain why is equal to the product of the eigenvalues.  It turns out this is true for any square matrix, diagonalizable or not!   "
+},
+{
+  "id": "activities-29-6",
+  "level": "2",
+  "url": "activities-29.html#activities-29-6",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:     What does it mean for to be diagonalizable? How do we find the diagonalization of a matrix ?    If is a diagonalizable matrix, what happens to ?    If is a diagonalizable matrix, what happens to ?    "
 },
 {
   "id": "activities-30",
@@ -2077,52 +2086,52 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 4.5 - Markov chains",
-  "body": " Section 4.5 - Markov chains    What is a stochastic matrix? What is a probability vector?  What is a Markov chain? What is a steady state vector for a Markov chain?  What does the Perron-Frobenius theorem say and why is it so useful?     \\\\  Here is some terminology:   A probability vector is a vector with nonnegative entries that add to 1, like .  A stochastic matrix is a square matrix in which every column is a probability vector.      Here's a typical stochastic matrix, like the ones we have been considering:     Explain why is a stochastic matrix.      Verify that and are eigenvectors and find their associated eigenvalues.  It turns out that is always an eigenvalue of a stochastic matrix and that all the eigenvalues satisfy .      Find a diagonalization and then find .      Suppose that is a probability vector, which means that the two entries in add to 1. What is ?      Let's check this out in Sage. Define a probability vector x0 and let's look at how evolves under repeated multiplication by . The following code prints .  \\begin{verbatim} x = vector([1,0]) for i in range(20): x = A*x print(x) \\end{verbatim}  What do you notice happens to the vectors ?      What happens if you try a different initial probability vector ?      The sequence of vectors where is called a \\em Markov chain . (You've been doing Markov Chains for awhile!) We see here that any probability vector converges to a unique probability vector . We say is a {\\bf {\\emph {steady-state}}} vector if . What does the steady-state vector tell you about the dynamical system?       Now consider the stochastic matrix . Since is stochastic, should be an eigenvalue.     Verify that is an eigenvalue and find a basis for its corresponding eigenspace.      What happens when you create a Markov chain with this matrix? Try different initial probability vectors .     An important question arises: if is a stochastic matrix and is a Markov chain, does converge to a steady-state vector?      Here's an important theorem called the Perron-Frobenius theorem : \\begin{quote} If is a stochastic matrix and either (a) all the entries of are positive or (b) all the entries of some power are positive, then and all other eigenvalues satisfy . This means that any Markov chain will converge to a unique probability vector . \\end{quote} (If all entries of are strictly positive for some power of , then is called a \\em positive matrix.)     Which of the following stochastic matrices satisfy the hypothesis of the Perron-Frobenius theorem?      For which of those matrices does any Markov chain converge to a unique probability vector ?       Consider the matrix     Does satisfy the hypothesis of the Perron-Frobenius theorem?      Find the eigenvalues of . How do these eigenvalues confirm the statement of the Perron-Frobenius theorem?      Find a basis for (you might want to multiply it by a scalar so that every entry is an integer).      What will be the unique stationary vector to which any Markov chain converges?      Using Sage, verify that any Markov chain converges to .     "
+  "body": " Section 4.5 - Markov chains   \\\\  Here is some terminology:    A probability vector is a vector with nonnegative entries that add to 1, like .  A stochastic matrix is a square matrix in which every column is a probability vector.       Here's a typical stochastic matrix, like the ones we have been considering:     Explain why is a stochastic matrix.      Verify that and are eigenvectors and find their associated eigenvalues.  It turns out that is always an eigenvalue of a stochastic matrix and that all the eigenvalues satisfy .      Find a diagonalization and then find .      Suppose that is a probability vector, which means that the two entries in add to 1. What is ?      Let's check this out in Sage. Define a probability vector x0 and let's look at how evolves under repeated multiplication by . The following code prints .  \\begin{verbatim} x = vector([1,0]) for i in range(20): x = A*x print(x) \\end{verbatim}  What do you notice happens to the vectors ?      What happens if you try a different initial probability vector ?      The sequence of vectors where is called a \\em Markov chain . (You've been doing Markov Chains for awhile!) We see here that any probability vector converges to a unique probability vector . We say is a {\\bf {\\emph {steady-state}}} vector if . What does the steady-state vector tell you about the dynamical system?       Now consider the stochastic matrix . Since is stochastic, should be an eigenvalue.     Verify that is an eigenvalue and find a basis for its corresponding eigenspace.      What happens when you create a Markov chain with this matrix? Try different initial probability vectors .     An important question arises: if is a stochastic matrix and is a Markov chain, does converge to a steady-state vector?      Here's an important theorem called the Perron-Frobenius theorem : \\begin{quote} If is a stochastic matrix and either (a) all the entries of are positive or (b) all the entries of some power are positive, then and all other eigenvalues satisfy . This means that any Markov chain will converge to a unique probability vector . \\end{quote} (If all entries of are strictly positive for some power of , then is called a \\em positive matrix.)     Which of the following stochastic matrices satisfy the hypothesis of the Perron-Frobenius theorem?      For which of those matrices does any Markov chain converge to a unique probability vector ?       Consider the matrix     Does satisfy the hypothesis of the Perron-Frobenius theorem?      Find the eigenvalues of . How do these eigenvalues confirm the statement of the Perron-Frobenius theorem?      Find a basis for (you might want to multiply it by a scalar so that every entry is an integer).      What will be the unique stationary vector to which any Markov chain converges?      Using Sage, verify that any Markov chain converges to .       Make sure you can answer the following questions:    What is a stochastic matrix? What is a probability vector?  What is a Markov chain? What is a steady state vector for a Markov chain?  What does the Perron-Frobenius theorem say and why is it so useful?    "
 },
 {
-  "id": "activities-31-2",
+  "id": "activities-31-3",
   "level": "2",
-  "url": "activities-31.html#activities-31-2",
-  "type": "Objectives",
-  "number": "",
-  "title": "",
-  "body": "  What is a stochastic matrix? What is a probability vector?  What is a Markov chain? What is a steady state vector for a Markov chain?  What does the Perron-Frobenius theorem say and why is it so useful?   "
-},
-{
-  "id": "activities-31-4",
-  "level": "2",
-  "url": "activities-31.html#activities-31-4",
+  "url": "activities-31.html#activities-31-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Here's a typical stochastic matrix, like the ones we have been considering:     Explain why is a stochastic matrix.      Verify that and are eigenvectors and find their associated eigenvalues.  It turns out that is always an eigenvalue of a stochastic matrix and that all the eigenvalues satisfy .      Find a diagonalization and then find .      Suppose that is a probability vector, which means that the two entries in add to 1. What is ?      Let's check this out in Sage. Define a probability vector x0 and let's look at how evolves under repeated multiplication by . The following code prints .  \\begin{verbatim} x = vector([1,0]) for i in range(20): x = A*x print(x) \\end{verbatim}  What do you notice happens to the vectors ?      What happens if you try a different initial probability vector ?      The sequence of vectors where is called a \\em Markov chain . (You've been doing Markov Chains for awhile!) We see here that any probability vector converges to a unique probability vector . We say is a {\\bf {\\emph {steady-state}}} vector if . What does the steady-state vector tell you about the dynamical system?    "
 },
 {
-  "id": "activities-31-5",
+  "id": "activities-31-4",
   "level": "2",
-  "url": "activities-31.html#activities-31-5",
+  "url": "activities-31.html#activities-31-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Now consider the stochastic matrix . Since is stochastic, should be an eigenvalue.     Verify that is an eigenvalue and find a basis for its corresponding eigenspace.      What happens when you create a Markov chain with this matrix? Try different initial probability vectors .     An important question arises: if is a stochastic matrix and is a Markov chain, does converge to a steady-state vector?   "
 },
 {
-  "id": "activities-31-6",
+  "id": "activities-31-5",
   "level": "2",
-  "url": "activities-31.html#activities-31-6",
+  "url": "activities-31.html#activities-31-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Here's an important theorem called the Perron-Frobenius theorem : \\begin{quote} If is a stochastic matrix and either (a) all the entries of are positive or (b) all the entries of some power are positive, then and all other eigenvalues satisfy . This means that any Markov chain will converge to a unique probability vector . \\end{quote} (If all entries of are strictly positive for some power of , then is called a \\em positive matrix.)     Which of the following stochastic matrices satisfy the hypothesis of the Perron-Frobenius theorem?      For which of those matrices does any Markov chain converge to a unique probability vector ?    "
 },
 {
-  "id": "activities-31-7",
+  "id": "activities-31-6",
   "level": "2",
-  "url": "activities-31.html#activities-31-7",
+  "url": "activities-31.html#activities-31-6",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Consider the matrix     Does satisfy the hypothesis of the Perron-Frobenius theorem?      Find the eigenvalues of . How do these eigenvalues confirm the statement of the Perron-Frobenius theorem?      Find a basis for (you might want to multiply it by a scalar so that every entry is an integer).      What will be the unique stationary vector to which any Markov chain converges?      Using Sage, verify that any Markov chain converges to .    "
+},
+{
+  "id": "activities-31-7",
+  "level": "2",
+  "url": "activities-31.html#activities-31-7",
+  "type": "Outcomes",
+  "number": "",
+  "title": "",
+  "body": "  Make sure you can answer the following questions:    What is a stochastic matrix? What is a probability vector?  What is a Markov chain? What is a steady state vector for a Markov chain?  What does the Perron-Frobenius theorem say and why is it so useful?   "
 },
 {
   "id": "activities-32",
