@@ -1,147 +1,430 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>Section 3.2 - Bases and Coordinate Systems</title>
-  
-  <introduction>
-    <p>\\</p>
-    <p>A set of vectors in <m>\real^n</m> that spans <m>\real^n</m> and is linearly
-independent is called a <em>basis</em> of <m>\real^n</m>.</p>
-  </introduction>
+    <title>Section 3.2 - Bases and Coordinate Systems</title>
 
-  <exercise>
     <introduction>
-      <p>This question is to get you familiar with facts about bases.</p>
+        <definition xml:id="def-">
+            <statement>
+                <p>
+                    A set of vectors in <m>\real^n</m> that spans <m>\real^n</m>
+                    and is linearly independent is called a <em>basis</em> of
+                    <m>\real^n</m>.
+                </p>
+            </statement>
+        </definition>
     </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Explain why the vectors <m>\vvec_1=\twovec21</m> and
-  <m>\vvec_2=\twovec12</m> form a basis for <m>\real^2</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Explain why the vectors <m>\evec_1</m>, <m>\evec_2</m>, and <m>\evec_3</m> form a
-  basis for <m>\real^3</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>How many vectors will be in a basis for <m>\real^{12}</m>?  Explain your
-  thinking. In general, how many vectors will be in a basis for <m>\real^n</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Suppose that <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> is a basis for
-  <m>\real^n</m>.  Explain why every vector <m>\bvec</m> in <m>\real^n</m> can be
-  written as a linear combination of <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m>
-  in exactly one way.</p>
-      </statement>
-    </task>
-    <task workspace=".6in">
-      <statement>
-        <p>If  <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> form a basis for <m>\real^n</m> what is the row reduced echelon form of <m>A = [\vvec_1\,\, \vvec_2\, \, \ldots\, \, \vvec_n]</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What can you say about the invertibility of the matrix <m>A</m> if its columns form a basis?</p>
-      </statement>
-    </task>
-  </exercise>
 
-  <exercise>
-    <introduction>
-      <p>Suppose that <m>\vvec_1=\twovec21</m> and
-  <m>\vvec_2=\twovec12</m>.  In part 1a you explained why these vectors form a basis of <m>\real^2</m>, and we'll denote this basis as <m>\bcal=\{\vvec_1,\vvec_2\}</m>.  Every vector in <m>\real^2</m> can be expressed in two different
-  ways:  in its usual form as a column vector AND as a linear
-  combination of <m>\vvec_1</m> and <m>\vvec_2</m>.  We are going to use this to
-  define a new coordinate system for <m>\real^2</m>.</p>
-      <p>\begin{center}
-    \includegraphics{basis-1.eps}
-  \end{center}</p>
-      <p>We can express the vector <m>\twovec30</m> as linear combination of <m>\vvec_1</m>
-  and <m>\vvec_2</m>, that is <m>\twovec30 = 2\vvec_1 - \vvec_2</m>.  (And we can see this using the figure above or using algebra.)  In our new coordinate system defined by <m>\vvec_1</m> and <m>\vvec_2</m>, this vector has coordinates <m>2</m>
-  and <m>-1</m>, that is the first coordinate in our new system is the weight of <m>\vvec_1</m>, and the second coordinate is the weight of <m>\vvec_2</m> when our vector is written as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.  We will write this as
-  <md>
-  \coords{\twovec{3}0}{\bcal} = \twovec{2}{-1}.
-  </md></p>
-      <p>In general, if <m>\xvec=c_1\vvec_1+c_2\vvec_2</m>, then
-  <md>
-  \coords{\xvec}{\bcal} = \twovec{c_1}{c_2}.
-  </md></p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Express <m>\twovec{-4}1</m> as a linear combination of <m>\vvec_1</m> and
-  <m>\vvec_2</m> to find the coordinates <m>\coords{\twovec{-4}1}{\bcal}</m>. Do using algebra. Does your answer seem reasonable based on the figure?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find the vector <m>\xvec</m> so that <m>\coords{\xvec}{\bcal} =
-  \twovec2{-3}</m>. Can you use the figure first? Then do using algebra? (Notice this is ``opposite" from question (a).)</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Suppose that <m>A=\left[\vvec_1 \ \vvec_2 \right]</m>.  What is <m>A\twovec{-2}3</m>?</p>
-      </statement>
-    </task>
-  </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                This question is to get you familiar with facts about bases.
+            </p>
+        </introduction>
 
-  <exercise>
-    <introduction>
-      <p>Consider the vectors
-  <md>
-  \vvec_1=\threevec10{-2},\hspace*{24pt}
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain why the vectors <m>\vvec_1=\twovec21</m> and
+                    <m>\vvec_2=\twovec12</m> form a basis for <m>\real^2</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain why the vectors <m>\evec_1</m>, <m>\evec_2</m>, and
+                    <m>\evec_3</m> form a basis for <m>\real^3</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Do the vectors <m>\vvec_1=\threevec111</m>,
+                    <m>\vvec_2=\threevec{0}{1}{-1}</m>,
+                    <m>vvec_3 = \threevec{1}{0}{[1}</m> form a basis for
+                    <m>\mathbb{R}^3</m>?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Do the vectors <m>\vvec_1=\threevec111</m>,
+                    <m>\vvec_2=\threevec{0}{1}{-1}</m>,
+                    <m>vvec_3 = \threevec{1}{0}{[1}</m>,
+                    <m>\vvec_4=\threevec123</m> form a basis for
+                    <m>\mathbb{R}^3</m>?
+                    Why or why not?
+                    How could you do this problem without row reducing?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    How many vectors will be in a basis for <m>\real^{12}</m>?
+                    Explain your thinking.
+                    In general, how many vectors will be in a basis for
+                    <m>\real^n</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose that <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> is a
+                    basis for <m>\real^n</m>.
+                    Explain why every vector <m>\bvec</m> in <m>\real^n</m> can
+                    be written as a linear combination of
+                    <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> in exactly one way.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace=".6in">
+            <statement>
+                <p>
+                    If <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> form a basis for
+                    <m>\real^n</m> what is the row reduced echelon form of
+                    <m>A = [\vvec_1\,\, \vvec_2\, \, \ldots\, \, \vvec_n]</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What can you say about the invertibility of the matrix
+                    <m>A</m> if its columns form a basis?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <proposition xml:id="prop-sec3-2-basis">
+        <statement>
+            <p>
+                A set of vectors forms a basis for <m>\mathbb{R}^m</m> if and
+                only if the matrix
+                <md>
+                    A = [ \vvec_1 \,\, \vvec_2 \,\, \dots \vvec_n ] \sim I.
+                </md>
+                This means there must be <m>m</m> vectors in <m>\mathbb{R}^m</m>
+            </p>
+        </statement>
+    </proposition>
+
+    <example>
+        <p>
+            Notice that the vectors
+            <md>
+                \evec_1 = \threevec100 , \evec_2 = \threevec010, \evec_3 = \threevec001
+            </md>
+            forms the columns of the <m>3\times 3</m> identity matrix which
+            implies this set forms a basis for <m>\mathbb{R}^3</m>.
+            More generally, the set of vectors
+            <m>\evec_1,\evec_2,\dots,\evec_m</m> forms a basis for
+            <m>\mathbb{R}^m</m> which we call the <term>standard basis</term>
+            for <m>\mathbb{R}^m</m>.
+        </p>
+    </example>
+
+    <example>
+        <p>
+            Suppose that <m>\vvec_1=\twovec21</m> and <m>\vvec_2=\twovec12</m>.
+            In part 1a you explained why these vectors form a basis of
+            <m>\real^2</m>, and we'll denote this basis as
+            <m>\bcal=\{\vvec_1,\vvec_2\}</m>.
+            Every vector in <m>\real^2</m> can be expressed in two different
+            ways: in its usual form as a column vector AND as a linear
+            combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+            We are going to use this to define a new coordinate system for
+            <m>\real^2</m>.
+        </p>
+
+        <figure xml:id="sec3-2-fig-12basis">
+            <caption>
+                The grid formed by the basis vectors <m>\vvec_1=\twovec21</m>
+                and <m>\vvec_2=\twovec12</m>.
+            </caption>
+
+            <image width="40%">
+                <shortdescription>
+                    Two vectors and a set of skewed grid lines representing
+                    their linear combinations.
+                </shortdescription>
+
+                <description>
+                    <p>
+                        There is a set of coordinate axes and a standard
+                        <m>1\times1</m> coordinate grid in the background.
+                        There are also two vectors <m>\vvec_1=\twovec21</m> and
+                        <m>\vvec_2=\twovec12</m> and two sets of parallel lines
+                        representing the linear combinations of <m>\vvec_1</m>
+                        and <m>\vvec_2</m>.
+                        One set of parallel lines is parallel to <m>\vvec_1</m>
+                        and passes through the integer multiples of
+                        <m>\vvec_2</m> while the other set is parallel to
+                        <m>\vvec_2</m> and passes through integer multiples of
+                        <m>\vvec_1</m>.
+                    </p>
+                </description>
+                <prefigure xmlns="https://prefigure.org" label="pf-basis-1-2">
+                    <diagram xmlns="https://prefigure.org" dimensions="(250, 250)" margins="5">
+                        <definition>
+                            v1=(2,1)
+                        </definition>
+
+                        <definition>
+                            v2=(1,2)
+                        </definition>
+                        <coordinates bbox="(-4,-4,4,4)">
+                            <grid-axes decorations="no"/>
+                            <grid at="skew-grid" basis="(v1,v2)" cliptobbox="yes" stroke="gray"/>
+                            <vector at="v1" v="v1" stroke="black">
+                                <m>
+                                    \vvec_1
+                                </m>
+                            </vector>
+                            <vector at="v2" v="v2" stroke="black">
+                                <m>
+                                    \vvec_2
+                                </m>
+                            </vector>
+                        </coordinates>
+                        <annotations text="Two vectors and the linear combinations they create">
+                            <annotation ref="v1" text="The vector v one"/>
+                            <annotation ref="v2" text="The vector v two"/>
+                            <annotation ref="skew-grid" text="The linear combinations they create are represented by a skewed grid of lines parallel to v one and v two"/>
+                        </annotations>
+                    </diagram>
+                </prefigure>
+            </image>
+        </figure>
+
+        <p>
+            We can express the vector <m>\twovec30</m> as linear combination of
+            <m>\vvec_1</m> and <m>\vvec_2</m>, that is
+            <m>\twovec30 = 2\vvec_1 - \vvec_2</m>.
+            (And we can see this using the figure above or using algebra.) In
+            our new coordinate system defined by <m>\vvec_1</m> and
+            <m>\vvec_2</m>, this vector has coordinates <m>2</m> and <m>-1</m>,
+            that is the first coordinate in our new system is the weight of
+            <m>\vvec_1</m>, and the second coordinate is the weight of
+            <m>\vvec_2</m> when our vector is written as a linear combination of
+            <m>\vvec_1</m> and <m>\vvec_2</m>.
+            We will write this as
+            <md>
+                \coords{\twovec{3}0}{\bcal} = \twovec{2}{-1}.
+            </md>
+        </p>
+
+        <p>
+            In general, if <m>\xvec=c_1\vvec_1+c_2\vvec_2</m>, then
+            <md>
+                \coords{\xvec}{\bcal} = \twovec{c_1}{c_2}.
+            </md>
+            The coordinates are the weights in the linear combinations.
+        </p>
+    </example>
+
+    <exercise>
+        <introduction>
+            <p>
+                Using <xref ref="sec3-2-fig-12basis"/>, repeated below, answer
+                the following questions.
+            </p>
+
+            <image width="30%">
+                <shortdescription>
+                    Two vectors and a set of skewed grid lines representing
+                    their linear combinations.
+                </shortdescription>
+                <prefigure xmlns="https://prefigure.org" label="pf-basis-1-2-2">
+                    <diagram xmlns="https://prefigure.org" dimensions="(250, 250)" margins="5">
+                        <definition>
+                            v1=(2,1)
+                        </definition>
+
+                        <definition>
+                            v2=(1,2)
+                        </definition>
+                        <coordinates bbox="(-4,-4,4,4)">
+                            <grid-axes decorations="no"/>
+                            <grid at="skew-grid" basis="(v1,v2)" cliptobbox="yes" stroke="gray"/>
+                            <vector at="v1" v="v1" stroke="black">
+                                <m>
+                                    \vvec_1
+                                </m>
+                            </vector>
+                            <vector at="v2" v="v2" stroke="black">
+                                <m>
+                                    \vvec_2
+                                </m>
+                            </vector>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+            </image>
+        </introduction>
+
+        <task workspace="1/2in">
+            <statement>
+                <p>
+                    Express <m>\twovec{-4}1</m> as a linear combination of
+                    <m>\vvec_1</m> and <m>\vvec_2</m> to find the coordinates
+                    <m>\coords{\twovec{-4}1}{\bcal}</m>.
+                    Do using algebra.
+                    Does your answer seem reasonable based on the figure?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1/2in">
+            <statement>
+                <p>
+                    Find the vector <m>\xvec</m> so that
+                    <m>\coords{\xvec}{\bcal} =
+  \twovec2{-3}</m>.
+                    Can you use the figure first?
+                    Then do using algebra?
+                    (Notice this is ``opposite" from question (a).)
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1/2in">
+            <statement>
+                <p>
+                    Suppose that <m>A=\left[\vvec_1 \ \vvec_2 \right]</m>.
+                    What is <m>A\twovec{-2}3</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the vectors
+                <md>
+                    \vvec_1=\threevec10{-2},\hspace*{24pt}
   \vvec_2=\threevec{-2}1{0},\hspace*{24pt}
   \vvec_3=\threevec112
-  </md></p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Explain why the vectors form a basis <m>\bcal</m> for <m>\real^3</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find the vector <m>\xvec</m> such that <m>\coords{\xvec}{\bcal} =
-  \threevec2{-1}{-2}</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find the coordinates <m>\coords{\threevec{-2}{1}{-8}}{\bcal}</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Explain how to convert <m>\{\xvec\}_\mathcal{B}</m>, the representation of a vector <m>\xvec</m> in the coordinates defined by <m>\mathcal{B}</m>, into <m>\xvec</m>, its representation in the standard coordinate system.\footnote{The representation in the standard coordinate system is with the standard basis vectors <m>e_1,\dots, e_n</m>,}</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Explain how to convert the vector <m>\xvec</m> into <m>\{\xvec\}_\mathcal{B}</m>, its representation in the coordinate system defined by <m>\mathcal{B}</m>.</p>
-      </statement>
-    </task>
-  </exercise>
+                </md>
+            </p>
+        </introduction>
 
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain why the vectors form a basis <m>\bcal</m> for
+                    <m>\real^3</m>.
+                </p>
+            </statement>
+        </task>
 
-  <outcomes>
-     <introduction>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the vector <m>\xvec</m> such that
+                    <m>\coords{\xvec}{\bcal} =
+  \threevec2{-1}{-2}</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the coordinates
+                    <m>\coords{\threevec{-2}{1}{-8}}{\bcal}</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain how to convert <m>\{\xvec\}_\mathcal{B}</m>, the
+                    representation of a vector <m>\xvec</m> in the coordinates
+                    defined by <m>\mathcal{B}</m>, into <m>\xvec</m>, its
+                    representation in the standard coordinate
+                    system.\footnote{The representation in the standard
+                    coordinate system is with the standard basis vectors
+                    <m>e_1,\dots, e_n</m>,}
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain how to convert the vector <m>\xvec</m> into
+                    <m>\{\xvec\}_\mathcal{B}</m>, its representation in the
+                    coordinate system defined by <m>\mathcal{B}</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <outcomes>
+        <introduction>
             <p>
                 Make sure you can answer the following questions (at least for 2
                 and 3 variables):
             </p>
         </introduction>
-    <ul>
-      <li><p>What is a basis?</p></li>
-      <li><p>How do we determine if a given set of vectors is a basis?</p></li>
-      <li><p>How many vectors are in any basis for <m>\real^n</m>?</p></li>
-      <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
-      <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
-      <li><p>How do we think about non-standard bases geometrically?</p></li>
-    </ul>
-  </outcomes>
+
+        <ul>
+            <li>
+                <p>
+                    What is a basis?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How do we determine if a given set of vectors is a basis?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How many vectors are in any basis for <m>\real^n</m>?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How do we convert from a vector in a non-standard basis
+                    <m>\mathcal{B}</m> to its standard basis coordinates
+                    algebraically?
+                    (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How do we convert from a vector in a standard basis to its
+                    coordinates in another basis algebraically?
+                    (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How do we think about non-standard bases geometrically?
+                </p>
+            </li>
+        </ul>
+    </outcomes>
 </worksheet>

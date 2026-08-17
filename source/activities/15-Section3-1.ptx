@@ -139,7 +139,7 @@
                 identity matrix.
                 We therefore have the two equations
                 <md>
-                    A\bvec_1 = \evec_1=\twovec10, \hspace*{24pt}
+                    A\bvec_1 = \evec_1=\twovec10,
     A\bvec_2 = \evec_2=\twovec01
                 </md>
                 that we can solve for <m>\bvec_1</m> and <m>\bvec_2</m>.
@@ -167,9 +167,10 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    What is the matrix <m>B</m>.
+                    Based on the previous parts, what is the matrix <m>B</m>?
                     Is it true <m>AB = I</m>?
-                    (Can do this with Sage.)
+                    (Can multiply with Sage.)
+
                 </p>
             </statement>
         </task>
@@ -191,6 +192,7 @@
                 </p>
             </statement>
         </task>
+
 
         <task workspace="1in">
             <statement>
@@ -254,8 +256,8 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Since <m>A</m> is a square matrix---that is, <m>A</m> has
-                    the same number of rows and columns---what is the reduced
+                    Since <m>A</m> is a square matrix - that is, <m>A</m> has
+                    the same number of rows and columns - what is the reduced
                     row echelon form of <m>A</m>?
                 </p>
             </statement>
@@ -310,7 +312,7 @@
                 </p>
             </li>
 
-            <li>
+            <!-- <li>
                 <p>
                     How do we find the inverse of a matrix using row reduction?
                 </p>
@@ -320,7 +322,7 @@
                 <p>
                     How do we find the inverse of a matrix using Sage?
                 </p>
-            </li>
+            </li> -->
         </ul>
     </outcomes>
 </worksheet>
