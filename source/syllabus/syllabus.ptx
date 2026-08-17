@@ -1,86 +1,747 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Syllabus</title>
+    <title>Syllabus</title>
 
-  <introduction>
-    <p>
-    </p>
-  </introduction>
-  <!-- Include chapters -->
-  <subsection xml:id="sec-course-info">
-    <title>Course Information</title>
+    <introduction>
+        <p/>
+    </introduction>
+    <!-- Include chapters -->
+    <subsection xml:id="sec-course-info">
+        <title>Course Information</title>
 
-    <p>
-      This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for [term] 20xx.
-      It is a [n] credit course.
-      <!-- use a description list (dl) for short items -->
-      <dl>
-        <li>
-          <title>Instructor</title>
+        <p>
+            This is the syllabus for
+            <term>Linear Algebra (MATH 204, section xxx)</term> for Fall 2026.
+            It is a 3 credit course.
+            <!-- use a description list (dl) for short items -->
+            <dl>
+                <li>
+                    <title>Instructor</title>
 
-          <p>
-            Prof. Lastname, Office Location, <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
-          </p>
-        </li>
+                    <p>
+                        Prof.
+                        Lastname, Office Location,
+                        <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
+                    </p>
+                </li>
 
-        <li>
-          <title>Student Hours</title>
+                <li>
+                    <title>Student Hours</title>
 
-          <p>
-            TBD
-          </p>
-        </li>
+                    <p>
+                        TBD
+                    </p>
+                </li>
 
-        <li>
-          <title>Class meets</title>
+                <li>
+                    <title>Class meets</title>
 
-          <p>
-            course times and location.
-          </p>
-        </li>
+                    <p>
+                        course times and location.
+                    </p>
+                </li>
 
-        <li>
-          <title>Course Description</title>
+                <li>
+                    <title>Textbook and course materials</title>
 
-          <p>
-            course description from catalog
-          </p>
-        </li>
+                    <p>
+                        <pubtitle>Understanding Linear Algebra</pubtitle> by
+                        David Austin.
+                        Access
+                        <url href="http://gvsu.edu/s/1rw" visual="gvsu.edu/s/1rw">here</url>.
+                    </p>
 
-        <li>
-          <title>Prerequisite</title>
+                    <p>
+                        We will also use online resources such as
+                        <url href="http://gvsu.edu/s/0Ng" visual="gvsu.edu/s/0Ng">Sage</url>
+                        and
+                        <url href="https://runestone.academy/admin/auth/register" visual="runestone.academy/admin/auth/register">Runstone</url>.
+                    </p>
+                </li>
 
-          <p>
-            list of prerequisites
-          </p>
-        </li>
+                <li>
+                    <title/>
+                    <p>
+                        My main priority in this course is for you to grow as a
+                        mathematician: to be able to understand and apply
+                        complex statements, to solve challenging problems, and
+                        to communicate orally and in writing.
+                        I want you to succeed.
+                        My teaching philosophy is that everyone has the right to
+                        understand and enjoy mathematics, and to feel part of a
+                        mathematical community.
+                        Please see me when you need help.
+                    </p>
+                </li>
 
-        <li>
-          <title>Textbook and course materials</title>
+                <li>
+                    <title>Being Successful in MTH 204</title>
 
-          <p>
-            <pubtitle>textbook name</pubtitle>
-            by textbook author.
-          </p>
-        </li>
-      </dl>
-    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <term>Attend class.</term> Attendance is
+                                expected and is correlated to success.
+                            </li>
 
-  <!-- Use paragraphs to break apart subsections -->
-    <paragraphs>
-      <title>Course Overview</title>
+                            <li>
+                                <term>Aim for deep conceptual understanding.</term>
+                                Linear algebra makes sense!
+                                If you aim for sensemaking the answers (and good
+                                grades) will follow.
+                            </li>
 
-      <p>
-      </p>
-    </paragraphs>
-  </subsection>
+                            <li>
+                                <term>Use office hours wisely.</term> Office
+                                hours are for you to ask questions!
+                                Please drop in whenever you have questions!
+                                I ask that you prepare by first making your best
+                                effort and forming specific questions.
+                                This helps our meetings be the most productive.
+                            </li>
 
-  <!-- Other subsections for larger dividers -->
-  <subsection xml:id="sec-assessments">
-    <title>Assessments and Grades</title>
+                            <li>
+                                <term>Use the math center.</term> Free drop in
+                                tutoring in person and online (
+                                <url href="https://www.gvsu.edu/tutoring/math-tutoring-center-26" visual="gvsu.edu/tutoring/math-tutoring-center-26">here</url>
+                                ).
+                            </li>
 
-    <p>
-    </p>
-  </subsection>
+                            <li>
+                                <term>Talk to your peers.</term> Talking through
+                                math can lead to huge insights - try it!
+                            </li>
+
+                            <li>
+                                <term> Please ask for anything that would help your learning. </term>
+                                In particular, I know you are human and things
+                                come up.
+                                Keep me in the loop so I can help.
+                                Just email me and we can make an appointment or
+                                talk over email.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+
+                <li>
+                    <title> Diversity, Equity, and Inclusion</title>
+
+                    <p>
+                        We live in a wonderfully diverse world.
+                        Acknowledging and listening to the perspectives and
+                        experiences of people from a different cultural
+                        background than your own (e.g., gender, race, sexual
+                        orientation, nationality, religion, socioeconomic
+                        status) is a vital part of the learning process and your
+                        personal development.
+                        It is my intent that students from all backgrounds and
+                        perspectives be well-served by this course, that
+                        students' learning needs be addressed both in and out of
+                        the classroom, and that the diversity students bring to
+                        this class be viewed as a resource, strength, and
+                        benefit.
+                        All voices need to be heard.
+                        I welcome and appreciate any suggestions you have
+                        pertaining to diversity, equity, and inclusion, and
+                        commit to listen reflectively to your concerns, without
+                        defensiveness, in recognition that receiving honest
+                        feedback is a necessary step in improving the
+                        inclusiveness of our academic environment.
+                    </p>
+                </li>
+
+                <li>
+                    <title> Climate Goals</title>
+
+                    <p>
+                        <ul>
+                            <li>
+                                <em>Axiom 1.</em> Mathematical potential is
+                                distributed equally among different groups,
+                                irrespective of geographic, demographic, and
+                                economic boundaries.
+                            </li>
+
+                            <li>
+                                <em>Axiom 2.</em> Everyone can have joyful,
+                                meaningful, and empowering mathematical
+                                experiences.
+                            </li>
+
+                            <li>
+                                <em>Axiom 3.</em> Mathematics is a powerful,
+                                malleable tool that can be shaped and used
+                                differently by various communities to serve
+                                their needs.
+                            </li>
+
+                            <li>
+                                <em>Axiom 4.</em> Every student deserves to be
+                                treated with dignity and respect.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+            </dl>
+        </p>
+        <!-- Use paragraphs to break apart subsections -->
+        <paragraphs>
+            <title>What is Linear Algebra?</title>
+
+            <p>
+                Linear algebra is geometric and algebraic sense-making of linear
+                equations in ways that are wildly useful.
+                We will learn how Google uses eigenvectors to give you the right
+                search results, how our phones use linear transformations to
+                send images with minimal data usage, and how Pixar uses matrix
+                multiplication to animate films.
+                The power to do these things comes from understanding in both a
+                geometric and algebraic way.
+                Throughout the course, we will be Making Sense Together - I ask
+                that you always strive to make sense, and I will be here to help
+                you.
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>What should you do if you need help?</title>
+
+            <p>
+                Successful students reach out for help when they need it.
+                You should strive to be aware of when you are struggling.
+                Whether you are having a technology issue or a mathematical
+                issue or a personal issue impeding your work, reach out to me!
+                I'm here to help you be successful in this class.
+                If something in your life is preventing you from showing me your
+                best work, I would like to help you.
+                The earlier you get in touch the easier it is to catch up.
+                You can always reach me by email.
+                I generally check my email throughout the day but rarely at
+                night or on the weekend.
+                I'm pretty good about responding to email quickly (and
+                definitely within 24 hours during the work week).
+                Don't struggle alone!
+            </p>
+        </paragraphs>
+    </subsection>
+    <!-- Other subsections for larger dividers -->
+    <subsection xml:id="sec-assessments">
+        <title>Assessments and Grades</title>
+
+        <p>
+            <dl>
+                <li>
+                    <title>Class Preparation [CP] (5%)</title>
+
+                    <p>
+                        There will be class preparation assignments due before
+                        each class (twice a week).
+                        These are graded for completeness, not correctness.
+                        Your grade for this part is the percentage you
+                        completed.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Summary Activities [SA] (15%)</title>
+
+                    <p>
+                        Runestone is an online platform connected to our
+                        textbook.
+                        There will be a set of summary activities through
+                        Runestone each week consisting of 5-10 exercises
+                        relating to the content of the course.
+                        If you earn 90% of the points you will get full credit.
+                        If you earn less than 90% your grade will be scaled
+                        appropriately.
+                        It is a good idea to write your work in a Runestone
+                        section of your notebook to keep yourself organized.
+                        See the Runestone policies for more information.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Written Homework [WH] (20%)</title>
+
+                    <p>
+                        Written HW sets are more extended and involved
+                        multi-part problems to solve that involve a formal
+                        writeup with written explanation.
+                        There will 1-3 problems due every week on Wednesday.
+                        There will be options for revision; individual problems
+                        will be assessed as "exemplary" (100%), "satisfactory"
+                        (75%), or "not yet" (0%).
+                        See the written homework policies for more information
+                        (including info about revisions).
+                    </p>
+                </li>
+
+                <li>
+                    <title>Learning Target Checkpoints [LT] (28%)</title>
+
+                    <p>
+                        There will be a learning target quiz each Friday.
+                        Each skill is graded "E" for exemplary, "S" for
+                        "satisfactory” or “NY” for “not yet”.
+                        Each LT is worth 2% of your grade — an "E" gives 2%, "S"
+                        is 1.5%, and "NY" is 0%.
+                        There will be 14 targets.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Labs [L] (10%)</title>
+
+                    <p>
+                        Each lab is worth a varying number of points and there
+                        will be approximately 6 labs.
+                        You can earn partial credit.
+                        These will be done in teams.
+                        See the lab policies for more information (including
+                        info about revisions).
+                    </p>
+                </li>
+
+                <li>
+                    <title>Final Exam (22%)</title>
+
+                    <p>
+                        The final exam will be cumulative, focusing on big
+                        picture ideas of the course.
+                        The final exam is scheduled by the registrar at a time
+                        TBD.
+                        More details will be given out later.
+                    </p>
+                </li>
+            </dl>
+            The following table allows you to convert your weighted percentage
+            to a letter grade.
+            Note the percentage you earned will not be rounded (e.g.
+            92.8% is an A-).
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+            <row header="yes">
+                <cell>A</cell>
+                <cell>A-</cell>
+                <cell>B+</cell>
+                <cell>B</cell>
+                <cell>B-</cell>
+                <cell>C+</cell>
+                <cell>C</cell>
+                <cell>C-</cell>
+                <cell>D+</cell>
+                <cell>D</cell>
+                <cell>F</cell>
+            </row>
+
+            <row>
+                <cell><m>\ge 93</m></cell>
+                <cell><m>\ge 90</m></cell>
+                <cell><m>\ge 87</m></cell>
+                <cell><m>\ge 83</m></cell>
+                <cell><m>\ge 80</m></cell>
+                <cell><m>\ge 77</m></cell>
+                <cell><m>\ge 73</m></cell>
+                <cell><m>\ge 70</m></cell>
+                <cell><m>\ge 67</m></cell>
+                <cell><m>\ge 63</m></cell>
+                <cell><m>\lt 63</m></cell>
+            </row>
+        </tabular>
+
+        <p>
+            <em>Grades are updated on Blackboard regularly. Please check and verify regularly!</em>
+        </p>
+
+        <paragraphs>
+            <title>Technology</title>
+
+            <p>
+                You will need a laptop/tablet/Chromebook on which they can
+                access a modern internet browser such as Chrome.
+                You should plan to bring a laptop to class regularly.
+                (Please let me know if you don’t have one and I can bring one!)
+                You should have or develop proficiencies in the following (which
+                are all free):
+                <ul>
+                    <li>
+                        <em>GVSU Email:</em> You should check your
+                        @mail.gvsu.edu email at least once each weekday for
+                        important announcements.
+                        You should also email me from your @mail.gvsu.edu
+                        account so it doesn’t go to spam!
+                    </li>
+
+                    <li>
+                        <em>Blackboard</em> You should know how to navigate
+                        Blackboard.
+                        In particular:
+                        <ul>
+                            <li>
+                                Watch the course tour so you know where to find
+                                things.
+                                If you can’t find something, email me.
+                                (It’s possible I forgot to post.)
+                            </li>
+
+                            <li>
+                                Assignments: You need to know how to view an
+                                assignment and upload your work.
+                            </li>
+
+                            <li>
+                                Grades and Feedback: I will upload your current
+                                grades to Blackboard on a weekly basis as well
+                                as give you feedback on homework.
+                                If you don’t know how to find your grades or
+                                read the feedback please email me!
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <em> Sage:</em> You aren’t expected to know this yet!
+                        We will develop proficiency in this as a class.
+                        You have access to free sage cells
+                        <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Academic Honesty</title>
+
+            <p>
+                See each individual assignment document linked on Blackboard for
+                information on academic honesty.
+                You are responsible for knowing the policies - academic
+                dishonesty will not be tolerated and all instances will be
+                reported to the dean of students.
+                I ask that you take your learning seriously and take advantage
+                of the opportunities you are given to succeed.
+                To avoid academic dishonesty please make sure you know the
+                policies, and avoid situations where you may feel desperate
+                (say, by procrastinating).
+                Academic honesty is worth the reward of learning, and dishonesty
+                is not worth the risk.
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Attendance and Missed Classes</title>
+
+            <p>
+                Attendance does not count towards your final grade, however, I
+                do expect that you will be in class and I will take attendance.
+                The class is counting on your contributions and being in class
+                is important for your learning.
+                I’ve seen many capable students fail because they miss class.
+                If you must miss class you should:
+                <ul>
+                    <li>Email me to let me know. (I worry about you!)</li>
+                    <li>
+                        Check Blackboard to make sure you turn in assignments.
+                    </li>
+
+                    <li>
+                        Look over the class notes and textbook.
+                        Get in touch with a classmate to get notes and find out
+                        what you should do to catch up.
+                    </li>
+                </ul>
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>Late Work and Deadlines</title>
+
+            <p/>
+        </paragraphs>
+    </subsection>
+
+    <subsection xml:id="sec-otherPolicies">
+        <title>Other Information and Policies</title>
+
+        <p>
+            <dl>
+                <li>
+                    <title/>
+                    <p>
+                        This course is subject to the following
+                        <url href="http://www.gvsu.edu/coursepolicies/" visual="http://www.gvsu.edu/coursepolicies/">GVSU policies</url>.
+                    </p>
+                </li>
+
+                <li>
+                    <title> Important Dates</title>
+
+                    <p>
+                        View the
+                        <url href="https://www.gvsu.edu/registrar/academiccalendar.htm" visual="https://www.gvsu.edu/registrar/academiccalendar.htm">academic calendar</url>
+                        for all important dates.
+                        In particular, the last chance to add a class or drop
+                        with 100% tuition refund is September 4th by 5PM.
+                        The last day to change to credit/no credit is September
+                        25th by 5PM.
+                        The last day to drop with a "W" is November 13th by 5PM.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Student Accessibility Resources Office</title>
+
+                    <p>
+                        If you are in need of accommodations due to a learning,
+                        physical, or other disability you must present a memo to
+                        me from Student Accessibility Resources, indicating the
+                        existence of a disability and the suggested reasonable
+                        accommodations.
+                        If you have not already done so, please contact the
+                        Student Accessibility Resources office (215 CON):
+                        616-331-2490 or access@gvsu.edu.
+                        Please note that I cannot provide accommodations based
+                        upon disability until you have provided me with a copy
+                        of the SAR issued memo.
+                        All discussions will remain confidential.
+                        If you have a physical disability and think you will
+                        need assistance evacuating this classroom and/or
+                        building in an emergency situation, please make me aware
+                        so I can develop a plan to assist you.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Math Tutoring Center</title>
+
+                    <p>
+                        GVSU’s Math Tutoring Center offers both in-person and
+                        online drop-in tutoring this semester, starting
+                        Wednesday, September 2.
+                        You can access the most up-to-date information on our
+                        <url href="http://gvsu.edu/tutoring/math/" visual="http://gvsu.edu/tutoring/math/">website</url>.
+                        There you will find our current hours, information on
+                        how to access online tutoring with Discord Voice and a
+                        schedule of when you can find tutors to help with your
+                        specific course.
+                        Bring questions to any center about using technology
+                        (calculator or Desmos), on methods and concepts, or on
+                        specific problems.
+                        All Math Center tutoring is FREE, so stop by early and
+                        often.
+                        The Math Tutoring Center offers:
+                        <ul>
+                            <li>
+                                in-person tutoring on the Allendale campus (MAK
+                                A-2-601): Monday – Thursday 10am – 5pm and
+                                Friday 10am – 2pm
+                            </li>
+
+                            <li>
+                                in-person tutoring on the Pew campus (Steelcase
+                                Library Collaboration Zone DeVos A): Monday –
+                                Thursday 1pm – 5pm (check website, hours may
+                                change)
+                            </li>
+
+                            <li>
+                                online tutoring via Discord Voice: Sunday –
+                                Thursday 5pm – 9pm To access virtual drop-in
+                                tutoring, you can use the link in your
+                                Blackboard course called Math Tutoring Center or
+                                visit our website.
+                                Then you will need to click on the "Online Math
+                                Tutoring Center" button, which will require a
+                                GVSU login.
+                                We ask that when you enter our Discord server,
+                                please change your username to your first and
+                                last name so we can get you signed in and
+                                connected with a tutor.
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+
+                <li>
+                    <title>Tutoring and Reading Center Appointments</title>
+
+                    <p>
+                        GVSU’s Tutoring and Reading Center offers appointment
+                        tutoring both in-person and virtually.
+                        You can sign up for 50-minute tutoring appointments for
+                        many Math courses.
+                        Request a tutor
+                        <url href="https://www.gvsu.edu/trc/" visual="https://www.gvsu.edu/trc/">here</url>
+                        or schedule directly on Navigate.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Mental Health and Wellness</title>
+
+                    <p>
+                        If your mental health concerns and/or stressful events
+                        negatively affect your daily emotional state, academic
+                        performance, or ability to participate in your daily
+                        activities, there are resources available to you.
+                        GVSU encourages all students to access these resources,
+                        particularly as we navigate the transition and emotions
+                        associated with this time.
+                        The University Counseling Center offers a range of
+                        psychological services to meet the mental health needs
+                        of students, with the primary goal being to support
+                        students negotiating their transition into adulthood.
+                        The University Counseling Center can be reached by
+                        calling (616)-331-3266.
+                        If you are in distress and need to speak with someone
+                        urgently, an on-call crisis counselor can be reached
+                        24/7 at the following numbers:
+                        <ul>
+                            <li>
+                                Call or Text 988: Suicide and Crisis Lifeline
+                            </li>
+
+                            <li>Text HOME to 741741: Crisis Text Line</li>
+                        </ul>
+                        In addition, managing daily stress and self-care are
+                        also important to well-being.
+                        There are resources to help with this in the form of
+                        peer tutoring, academic skills and success coaching, and
+                        more at this
+                        <url href="https://www.gvsu.edu/support/" visual="https://www.gvsu.edu/support/">website</url>.
+                        The campus recreation center and student wellness
+                        education are also available to support the wellness of
+                        your mind, body and soul so you can thrive during your
+                        time at GVSU.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Course Description</title>
+
+                    <p>
+                        An introduction to systems of linear equations
+                        emphasizing conceptual understanding and computational
+                        thinking.
+                        Primary topics include solutions to linear systems,
+                        vector and matrix algebra, span and linear independence,
+                        bases, eigenvectors and eigenvalues.
+                        Applications will be integrated throughout the course.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Course Objectives</title> After successful completion
+
+                    of the course, students will be able to:
+                    <p>
+                        <ol>
+                            <li>
+                                Analyze systems of linear equations and describe
+                                their solution spaces.
+                            </li>
+
+                            <li>
+                                Describe how the pivot positions of an augmented
+                                matrix influence the nature of the solution
+                                space to a linear system.
+                            </li>
+
+                            <li>
+                                Demonstrate algebraic and geometric fluency with
+                                vectors.
+                            </li>
+
+                            <li>
+                                Interpret questions about linear systems as
+                                questions about linear combinations of vectors.
+                            </li>
+
+                            <li>
+                                Describe the concept of span of a set of vectors
+                                and apply it to determine the span of a set of
+                                vectors.
+                            </li>
+
+                            <li>
+                                Describe the concept of linear independence of a
+                                set of vectors and apply it to determine whether
+                                a set of vectors is linearly independent.
+                            </li>
+
+                            <li>
+                                Interpret matrix transformations as functions
+                                defined through matrix multiplication and create
+                                specific matrix transformations to perform
+                                geometric operations.
+                            </li>
+
+                            <li>
+                                Calculate matrix sums, products, and multiples
+                                by scalar, and recognize matrix products as
+                                arising from composing matrix transformations.
+                            </li>
+
+                            <li>
+                                Recognize a basis for and use the coordinate
+                                system it defines to solve problems.
+                            </li>
+
+                            <li>
+                                Recognize an invertible matrix and find its
+                                inverse.
+                            </li>
+
+                            <li>
+                                Apply one of several algorithms for finding the
+                                determinant of a matrix, and use the determinant
+                                to determine if a matrix is invertible.
+                            </li>
+
+                            <li>
+                                State the definition and intuitive meaning of an
+                                eigenvalue-eigenvector pair of a square matrix.
+                            </li>
+
+                            <li>
+                                Apply a conceptual understanding of linear
+                                systems to find the eigenvalues and eigenvectors
+                                of a square matrix.
+                            </li>
+
+                            <li>
+                                Demonstrate how the theory of eigenvalues and
+                                eigenvectors is used to solve problems in
+                                dynamical systems.
+                            </li>
+
+                            <li>
+                                Use computer algebra technology as a tool to
+                                solve important problems in linear algebra.
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+
+                <li>
+                    <title> Syllabus Changes</title>
+
+                    <p>
+                        This syllabus is meant to serve as a general overview of
+                        the course.
+                        I reserve the right to make adjustments to the syllabus
+                        as necessary, typically in consultation with you.
+                        Any changes will be announced in at least one
+                        synchronous class meeting and via a Blackboard
+                        announcement.
+                        Changes will be made to the live version of this
+                        syllabus which is linked on Blackboard.
+                    </p>
+                </li>
+            </dl>
+        </p>
+    </subsection>
 </section>
