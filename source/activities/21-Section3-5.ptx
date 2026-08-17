@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 3.5 - Subspaces of <m>\real^p</m></title>
-  <objectives>
-    <introduction>
-      <p>Make sure you can answer the following questions:</p>
-    </introduction>
-    <ul>
-      <li><p>What is the definition of a subspace? How can we tell if something is a subspace?</p></li>
-      <li><p>What is the dimension of a subspace? How do we find it?</p></li>
-      <li><p>How do we find the null space of a matrix?</p></li>
-      <li><p>How do we find the column space of a matrix?</p></li>
-      <li><p>What is the relationship between the dimension of the column space and the dimension of the null space?</p></li>
-    </ul>
-  </objectives>
+ 
   <introduction>
     <p>\\</p>
     <p>The first subspace we'll look at is called
@@ -123,9 +112,7 @@ A = \begin{bmatrix}
     <m>p=</m> \underline{}.</p>
       </statement>
     </task>
-    <conclusion>
 
-    </conclusion>
   </exercise>
 
   <exercise workspace="1in">
@@ -255,5 +242,18 @@ A = \begin{bmatrix}
       </statement>
     </task>
   </exercise>
+
+   <outcomes>
+    <introduction>
+      <p>Make sure you can answer the following questions:</p>
+    </introduction>
+    <ul>
+      <li><p>What is the definition of a subspace? How can we tell if something is a subspace?</p></li>
+      <li><p>What is the dimension of a subspace? How do we find it?</p></li>
+      <li><p>How do we find the null space of a matrix?</p></li>
+      <li><p>How do we find the column space of a matrix?</p></li>
+      <li><p>What is the relationship between the dimension of the column space and the dimension of the null space?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>

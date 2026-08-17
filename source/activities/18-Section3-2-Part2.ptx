@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 3.2 - Bases and Coordinate Systems - Part 2</title>
-  <objectives>
-    <ul>
-      <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
-      <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
-      <li><p>How do we think about non-standard bases geometrically?</p></li>
-    </ul>
-  </objectives>
+  
   <introduction>
     <p>\\</p>
     <p>Recall: if <m>\bcal = \{\vvec_1, \vvec_2, \ldots, \vvec_n\}</m> is a basis for <m>\real^n</m>, then if <md>\xvec = c_1\vvec_1+c_2\vvec_2 + \cdots + c_n\vvec_n,</md> then
@@ -163,5 +157,19 @@ That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\
       </statement>
     </task>
   </exercise>
+
+  <outcomes>
+     <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
+    <ul>
+      <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
+      <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
+      <li><p>How do we think about non-standard bases geometrically?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>

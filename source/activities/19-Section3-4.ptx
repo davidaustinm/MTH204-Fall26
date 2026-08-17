@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 3.4 - Determinants</title>
-  <objectives>
-    <ul>
-      <li><p>How do we think about the determinant of a 2x2 matrix geometrically?</p></li>
-      <li><p>How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?</p></li>
-      <li><p>What is <m>\det(AB)</m> in terms of <m>\det(A)</m> and <m>\det(B)</m>?</p></li>
-      <li><p>Given <m>\det(A)</m>, how can you tell if <m>A</m> is invertible?</p></li>
-    </ul>
-  </objectives>
+
   <introduction>
     <p>\\</p>
     <p>Recall that the determinant  a <m>2\times 2</m> matrix <m>A = [\vvec_1 \vvec_2]</m> is the area of the parallelogram formed by <m>\vvec_1</m> and <m>\vvec_2</m>, with a negative sign if the vectors are negatively oriented.  We denote the determinant of <m>A</m> as <m>\det A</m>.</p>
@@ -231,5 +224,20 @@ U = \left[
       </statement>
     </task>
   </exercise>
+
+    <outcomes>
+       <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
+    <ul>
+      <li><p>How do we think about the determinant of a 2x2 matrix geometrically?</p></li>
+      <li><p>How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?</p></li>
+      <li><p>What is <m>\det(AB)</m> in terms of <m>\det(A)</m> and <m>\det(B)</m>?</p></li>
+      <li><p>Given <m>\det(A)</m>, how can you tell if <m>A</m> is invertible?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>

@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 4.5 - Markov chains</title>
-  <objectives>
-    <ul>
-      <li><p>What is a stochastic matrix? What is a probability vector?</p></li>
-      <li><p>What is a Markov chain? What is a steady state vector for a Markov chain?</p></li>
-      <li><p>What does the Perron-Frobenius theorem say and why is it so useful?</p></li>
-    </ul>
-  </objectives>
+ 
   <introduction>
     <p>\\</p>
     <p>Here is some terminology:</p>
+    
+    <p>
+      
     <ul>
       <li><p>A <em>probability vector</em> is a vector with nonnegative entries
   that add to 1, like <m>\threevec{0.3}{0.2}{0.5}</m>.</p></li>
       <li><p>A <em>stochastic matrix</em> is a square matrix in which every
   column is a probability vector.</p></li>
     </ul>
+    </p>
   </introduction>
 
   <exercise workspace="1in">
@@ -192,5 +190,18 @@ for i in range(20):
       </statement>
     </task>
   </exercise>
+
+   <outcomes>
+    <introduction>
+      <p>
+        Make sure you can answer the following questions:
+      </p>
+    </introduction>
+    <ul>
+      <li><p>What is a stochastic matrix? What is a probability vector?</p></li>
+      <li><p>What is a Markov chain? What is a steady state vector for a Markov chain?</p></li>
+      <li><p>What does the Perron-Frobenius theorem say and why is it so useful?</p></li>
+    </ul>
+  </outcomes>
 
 </worksheet>

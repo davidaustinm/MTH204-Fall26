@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>Section 3.2 - Bases and Coordinate Systems</title>
-  <objectives>
-    <ul>
-      <li><p>What is a basis?</p></li>
-      <li><p>How do we determine if a given set of vectors is a basis?</p></li>
-      <li><p>How many vectors are in any basis for <m>\real^n</m>?</p></li>
-      <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
-      <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
-      <li><p>How do we think about non-standard bases geometrically?</p></li>
-    </ul>
-  </objectives>
+  
   <introduction>
     <p>\\</p>
     <p>A set of vectors in <m>\real^n</m> that spans <m>\real^n</m> and is linearly
@@ -136,4 +127,21 @@ independent is called a <em>basis</em> of <m>\real^n</m>.</p>
     </task>
   </exercise>
 
+
+  <outcomes>
+     <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
+    <ul>
+      <li><p>What is a basis?</p></li>
+      <li><p>How do we determine if a given set of vectors is a basis?</p></li>
+      <li><p>How many vectors are in any basis for <m>\real^n</m>?</p></li>
+      <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
+      <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
+      <li><p>How do we think about non-standard bases geometrically?</p></li>
+    </ul>
+  </outcomes>
 </worksheet>
