@@ -19,6 +19,7 @@
             <!-- Other documents could go here, like a schedule, project description, etc. -->
             <xi:include href="./syllabus/LTs.ptx"/>
             <xi:include href="./syllabus/LabPolicies.ptx"/>
+            <xi:include href="./syllabus/HWPolicies.ptx"/>
         </chapter>
 
 
