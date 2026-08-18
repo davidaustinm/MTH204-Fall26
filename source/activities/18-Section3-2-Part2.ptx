@@ -3,7 +3,6 @@
   <title>Section 3.2 - Bases and Coordinate Systems - Part 2</title>
   
   <introduction>
-    <p>\\</p>
     <p>Recall: if <m>\bcal = \{\vvec_1, \vvec_2, \ldots, \vvec_n\}</m> is a basis for <m>\real^n</m>, then if <md>\xvec = c_1\vvec_1+c_2\vvec_2 + \cdots + c_n\vvec_n,</md> then
   <md>
   \coords{\xvec}{\bcal} = \left[\begin{array}{c}{c_1}\\{c_2}\\ \vdots \\ c_n\end{array}\right].
@@ -43,8 +42,8 @@ That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\
       <p>A second color model is <m>YC_bC_r</m>, which is known as the <em>luminance-chrominance</em> color model.  We introduce the
   basis <m>\bcal</m> consisting of vectors
   <md>
-  \vvec_1 = \threevec 111, \hspace*{24pt}
-  \vvec_2 = \threevec 0{-0.34413}{1.77200}, \hspace*{24pt}
+  \vvec_1 = \threevec 111, 
+  \vvec_2 = \threevec 0{-0.34413}{1.77200},
   \vvec_3 = \threevec {1.40200}{-0.71414}0,
   </md>
   and define
@@ -61,7 +60,7 @@ That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\
     -127.5 \amp \leq C_r \leq 127.5 \\
   \end{aligned}
   </md></p>
-      <p>Go to {<c>http://gvsu.edu/s/0Jc</c>} where you will find some
+      <p>Go to <url href="http://gvsu.edu/s/0Jc" />  where you will find some
   figures to experiment with color models.  Remember that <m>R</m>, <m>G</m>,
   <m>B</m>, and <m>Y</m> run between 0 and 255 while <m>C_b</m> and <m>C_r</m> run between
   -127.5 and 127.5.</p>
@@ -125,8 +124,8 @@ That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\
         <p>Find the <m>YC_bC_r</m> coordinates for the following colors and
   use the diagrams to check that the two representations agree.</p>
         <p><md>
-  \threevec RGB = \threevec{255}00, \hspace*{24pt}
-  \threevec RGB = \threevec0{255}0, \hspace*{24pt}
+  \threevec RGB = \threevec{255}00, 
+  \threevec RGB = \threevec0{255}0, 
   \threevec RGB = \threevec{255}{255}{255}
   </md></p>
       </statement>
@@ -136,8 +135,8 @@ That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\
         <p>Find the <m>RGB</m> coordinates for the following colors and
   use the diagrams to check that the two representations agree.</p>
         <p><md>
-  \threevec Y{C_b}{C_r} = \threevec {128}00, \hspace*{24pt}
-  \threevec Y{C_b}{C_r} = \threevec {128}{60}0, \hspace*{24pt}
+  \threevec Y{C_b}{C_r} = \threevec {128}00, 
+  \threevec Y{C_b}{C_r} = \threevec {128}{60}0, 
   \threevec Y{C_b}{C_r} = \threevec {128}0{60}.
   </md></p>
       </statement>
@@ -166,9 +165,13 @@ That is, <m>\xvec</m> is the normal vector in standard form, and <m>\{\xvec\}_{\
             </p>
         </introduction>
     <ul>
+      <li>
+        <p>
+          Why might working in another basis be useful?
+        </p>
+      </li>
       <li><p>How do we convert from a vector in a non-standard basis <m>\mathcal{B}</m> to its standard basis coordinates algebraically? (That is, <m>\{\xvec\}_{\mathcal{B}}</m> to <m>\xvec</m>.)</p></li>
       <li><p>How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, <m>\xvec</m> to <m>\{\xvec\}_{\mathcal{B}}</m>.)</p></li>
-      <li><p>How do we think about non-standard bases geometrically?</p></li>
     </ul>
   </outcomes>
 

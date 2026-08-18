@@ -305,7 +305,7 @@
             <statement>
                 <p>
                     Suppose that <m>A=\left[\vvec_1 \ \vvec_2 \right]</m>.
-                    What is <m>A\twovec{-2}3</m>?
+                    What is <m>A\twovec{-2}3</m>? Can you use the grid to determine this?
                 </p>
             </statement>
         </task>
@@ -316,8 +316,8 @@
             <p>
                 Consider the vectors
                 <md>
-                    \vvec_1=\threevec10{-2},\hspace*{24pt}
-  \vvec_2=\threevec{-2}1{0},\hspace*{24pt}
+                    \vvec_1=\threevec10{-2},
+  \vvec_2=\threevec{-2}1{0},
   \vvec_3=\threevec112
                 </md>
             </p>
@@ -358,9 +358,9 @@
                     representation of a vector <m>\xvec</m> in the coordinates
                     defined by <m>\mathcal{B}</m>, into <m>\xvec</m>, its
                     representation in the standard coordinate
-                    system.\footnote{The representation in the standard
+                    system.<fn>The representation in the standard
                     coordinate system is with the standard basis vectors
-                    <m>e_1,\dots, e_n</m>,}
+                    <m>e_1,\dots, e_n</m>.</fn>
                 </p>
             </statement>
         </task>
@@ -374,7 +374,31 @@
                 </p>
             </statement>
         </task>
+
+        <task>
+            <statement>
+                <p>
+                    Read and explain <xref ref="prop-sec3-2-basis"/>
+                </p>
+            </statement>
+        </task>
     </exercise>
+
+    <proposition xml:id="prop-3-2-basisconversion">
+        <statement>
+            <p>
+                If <m>\mathcal{B}</m> is a basis and <m>P_\mathcal{B}</m> the matrix whose columns are the basis vectors, then
+                <md>
+                    \xvec = P_{\mathcal{B}} \{\xvec\}_{\mathcal{B}}
+                </md>
+                
+                <md>
+                    \{\xvec\}_{\mathcal{B}} = P_{\mathcal{B}}^{-1}\xvec
+                </md>
+                
+            </p>
+        </statement>
+    </proposition>
 
     <outcomes>
         <introduction>

@@ -45,6 +45,8 @@ A =
     </statement>
   </exercise>
 
+  <!-- put this in previous worksheet.
+
   <exercise workspace="1in">
     <statement>
       <p>Use a cofactor expansion to determine whether the following vectors form a basis for <m>\mathbb{R}^3</m>:
@@ -56,7 +58,7 @@ A =
     <statement>
       <p>Explain how you could know that <m>\det\begin{bmatrix}  5 \amp -5\\ -7 \amp 7\end{bmatrix} = 0</m> without doing any computation.</p>
     </statement>
-  </exercise>
+  </exercise> -->
 
 
    <outcomes>

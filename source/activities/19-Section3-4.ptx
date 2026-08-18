@@ -3,13 +3,12 @@
   <title>Section 3.4 - Determinants</title>
 
   <introduction>
-    <p>\\</p>
     <p>Recall that the determinant  a <m>2\times 2</m> matrix <m>A = [\vvec_1 \vvec_2]</m> is the area of the parallelogram formed by <m>\vvec_1</m> and <m>\vvec_2</m>, with a negative sign if the vectors are negatively oriented.  We denote the determinant of <m>A</m> as <m>\det A</m>.</p>
   </introduction>
 
   <exercise workspace=".25in">
     <introduction>
-      <p>For this first problem, go to Section 3.4: Determinants, in your textbook \\<c>http://gvsu.edu/s/1rw</c> and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).</p>
+      <p>For this first problem, go to Section 3.4: Determinants, Activity 3.4.7 in your textbook <url href="http://gvsu.edu/s/3cJ"></url>. The appplet will have a blue square and 4 sliders).</p>
       <p>The 4 sliders are corresponding to the matrix <m>\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>. If the figure turns red, it means the vectors are negatively oriented.</p>
     </introduction>
     <task workspace=".2in">
@@ -24,7 +23,7 @@
 -\frac{1}{2} \amp0\\
  0 \amp 2
 \end{bmatrix}. </md>
-What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\footnote{Diagonal means the only non-zero entries are on the diagonal.}</p>
+What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix? <fn> Diagonal means the only non-zero entries are on the diagonal.</fn> </p>
       </statement>
     </task>
     <task workspace="1in">
@@ -98,7 +97,13 @@ Use the diagram to find the determinants of <m>A</m>, <m>B</m>, and <m>AB</m>. W
 
   <exercise workspace="1.5in">
     <statement>
-      <p>When we generalize to <m>3</m> dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:
+      <p> In general the determinant of a matrix is the (signed) area of the parallelogram the two vectors form. A formula is 
+        <m>\det \begin{bmatrix}
+a \amp b\\
+c \amp d
+\end{bmatrix} = ad-bc</m>. 
+
+When we generalize to <m>3</m> dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:
 <md>
 U = \left[
   \begin{array}{ccc}
@@ -221,6 +226,36 @@ U = \left[
       <statement>
         <p>If <m>A</m> a square matrix with a nonzero determinant, explain why <m>A</m>
   is invertible.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Since a nonzero determinant means a matrix is invertible, we can add determinants to our mental chart of connections between linear algebra ideas like bases, linear independence, and span.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Use a determinant to determine whether the following vectors form a basis for <m>\mathbb{R}^3</m>:
+          <md>
+            \threevec{2}{-1}{2},
+            \threevec{1}{-1}{2},
+            \threevec{1}{0}{-4}.
+          </md>  
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Without doing any computation explain how you know <md>\det\begin{bmatrix} 5 \amp -5 \amp 2 \\ 
+            -7 \amp 7 \amp 3 \\
+            3 \amp -3 \amp 1 \end{bmatrix}=0.</md>
+        </p>
       </statement>
     </task>
   </exercise>
