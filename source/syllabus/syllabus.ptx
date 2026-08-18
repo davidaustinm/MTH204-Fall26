@@ -352,6 +352,46 @@
             </row>
         </tabular>
 
+        <image width="75%">
+            <shortdescription>
+                Grade breakdown.
+            </shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="SyllabusGrades">
+                <diagram dimensions="(350,200)" margins="5">
+                    <coordinates bbox="(-1,-1,2.5,1)">
+                        <arc at="Class Preparation" center="(0,0)" radius="1" range="(0,0.05*360)" stroke="black" fill="orange" sector="yes" opacity="0.5"/>
+                        <arc at="Summary Activities" center="(0,0)" radius="1" range="(0.05*360, 0.2*360)" stroke="black" fill="blue" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="Written Homework" center="(0,0)" radius="1" range="(0.2*360, 0.4*360)" stroke="black" fill="magenta" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="LTs" center="(0,0)" radius="1" range="(0.4*360, 0.68*360)" stroke="black" fill="green" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="Labs" center="(0,0)" radius="1" range="(0.68*360, 0.78*360)" stroke="black" fill="purple" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="Final Exam" center="(0,0)" radius="1" range="(0.78*360, 360)" stroke="black" fill="cyan" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc center="(0,0)" radius="1" range="(0.05*360, 0.2*360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <arc center="(0,0)" radius="1" range="(0.4*360, 0.68*360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <arc center="(0,0)" radius="1" range="(0.78*360, 360)" stroke="black" sector="yes" miterlimit="1"/>
+                        <label anchor="(0.57,0.12)" alignment="east" scale="0.7">
+                            [CP] 5%
+                        </label>
+                        <label anchor="(0.34,0.52)" alignment="east" scale="0.7">
+                            [SA] 15%
+                        </label>
+                        <label anchor="(-0.5,0.75)" alignment="east" scale="0.7">
+                            [HW] 20%
+                        </label>
+                        <label anchor="(-0.95,-0.15)" alignment="east" scale="0.7">
+                            [LT] 28%
+                        </label>
+                        <label anchor="(-0.28,-0.85)" alignment="east" scale="0.7">
+                            [L] 10%
+                        </label>
+                        <label anchor="(0.25,-0.55)" alignment="east" scale="0.7">
+                            [Final] 22%
+                        </label>
+                        <circle center="(0,0)" radius="1" stroke="black"/>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+        </image>
+
         <p>
             <em>Grades are updated on Blackboard regularly. Please check and verify regularly!</em>
         </p>
@@ -363,7 +403,7 @@
                 You will need a laptop/tablet/Chromebook on which they can
                 access a modern internet browser such as Chrome.
                 You should plan to bring a laptop to class regularly.
-                (Please let me know if you don’t have one and I can bring one!)
+                (Please let me know if you don't have one and I can bring one!)
                 You should have or develop proficiencies in the following (which
                 are all free):
                 <ul>
@@ -372,19 +412,18 @@
                         @mail.gvsu.edu email at least once each weekday for
                         important announcements.
                         You should also email me from your @mail.gvsu.edu
-                        account so it doesn’t go to spam!
+                        account so it doesn't go to spam!
                     </li>
 
                     <li>
                         <em>Blackboard</em> You should know how to navigate
-                        Blackboard.
-                        In particular:
+                        Blackboard. In particular:
                         <ul>
                             <li>
                                 Watch the course tour so you know where to find
                                 things.
-                                If you can’t find something, email me.
-                                (It’s possible I forgot to post.)
+                                If you can't find something, email me.
+                                (It's possible I forgot to post.)
                             </li>
 
                             <li>
@@ -396,14 +435,14 @@
                                 Grades and Feedback: I will upload your current
                                 grades to Blackboard on a weekly basis as well
                                 as give you feedback on homework.
-                                If you don’t know how to find your grades or
+                                If you don't know how to find your grades or
                                 read the feedback please email me!
                             </li>
                         </ul>
                     </li>
 
                     <li>
-                        <em> Sage:</em> You aren’t expected to know this yet!
+                        <em> Sage:</em> You aren't expected to know this yet!
                         We will develop proficiency in this as a class.
                         You have access to free sage cells
                         <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
@@ -439,7 +478,7 @@
                 do expect that you will be in class and I will take attendance.
                 The class is counting on your contributions and being in class
                 is important for your learning.
-                I’ve seen many capable students fail because they miss class.
+                I've seen many capable students fail because they miss class.
                 If you must miss class you should:
                 <ul>
                     <li>Email me to let me know. (I worry about you!)</li>
@@ -471,7 +510,7 @@
                 material/an inability to catch-up; (2)
                 <term>extensions must
                 be requested 12 hours PRIOR to the assigned
-                deadline</term> --
+                deadline</term> -
                 if requested afterwards, the extension will not be granted.
                 Please send me an email to request any extensions.
                 As applicable, late homework will receive a grade deduction.
@@ -534,7 +573,7 @@
                     <title>Math Tutoring Center</title>
 
                     <p>
-                        GVSU’s Math Tutoring Center offers both in-person and
+                        GVSU's Math Tutoring Center offers both in-person and
                         online drop-in tutoring this semester, starting
                         Wednesday, September 2.
                         You can access the most up-to-date information on our
@@ -650,10 +689,9 @@
                 </li>
 
                 <li>
-                    <title>Course Objectives</title> After successful completion
-
-                    of the course, students will be able to:
+                    <title>Course Objectives</title> 
                     <p>
+                        After successful completion of the course, students will be able to:
                         <ol>
                             <li>
                                 Analyze systems of linear equations and describe
