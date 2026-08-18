@@ -127,7 +127,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/diagcess/diagcess.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -212,6 +212,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-otherPolicies" class="internal"><span class="title">Other Information and Policies</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="LTs.html" class="internal"><span class="title">Learning Targets</span></a></div></li>
@@ -299,143 +300,189 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 3.5 - Subspaces of <span class="process-math">\(\real^p\)</span></span><div class="print-links"><a href="?printpreview=activities-24" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <section class="introduction" id="activities-24-2">
-<div class="para" id="activities-24-2-1">\\<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="def-3-5-subspace"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-3-5-subspace-1-1">A <dfn class="terminology">subspace</dfn> of <span class="process-math">\(\mathbb{R}^p\)</span> is a subset of <span class="process-math">\(\mathbb{R}^p\)</span> that is the span of a set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#def-3-5-subspace-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="activities-24-2-2">
-<div class="para">The first subspace we’ll look at is called the <dfn class="terminology">\em column space</dfn> of <span class="process-math">\(A\)</span> and denoted as <span class="process-math">\(\col(A)\text{.}\)</span>  It’s just the span of the columns of <span class="process-math">\(A\text{:}\)</span>
-</div>
-<div class="displaymath process-math" id="activities-24-2-2-5">
-\begin{equation*}
-\col(A) = \laspan{\vvec_1, \vvec_2,
-\vvec_3, \vvec_4}.
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 17"><a href="#def-3-5-subspace" title="Copy heading and permalink for Definition 17" aria-label="Copy heading and permalink for Definition 17">🔗</a></div>
+</article>
+<div class="para" id="activities-24-2-2">In this section we will look at some important subspaces.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="exercise exercise-like" id="activities-24-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="introduction" id="activities-24-3-1">
-<div class="para logical" id="activities-24-3-1-1">
-<div class="para">Consider the matrix</div>
-<div class="displaymath process-math" id="activities-24-3-1-1-1">
-\begin{equation*}
-A = \begin{bmatrix}
-\vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
-\end{bmatrix}
-= 
-\begin{bmatrix}
-2 \amp -1 \amp 2 \amp 3 \\
-1 \amp 0 \amp 0 \amp 2 \\
--2 \amp 2 \amp -4 \amp -2 \\
-\end{bmatrix}
-\sim
-\begin{bmatrix}
-1 \amp 0 \amp 0 \amp 2 \\
-0 \amp 1 \amp -2 \amp 1 \\
-0 \amp 0 \amp 0 \amp 0 \\
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-24-3-1-1">Let’s start by understanding a few things about subspaces.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-24-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-24-3-2-1-1">Are the vectors <span class="process-math">\(\vvec_1,\ldots,\vvec_4\)</span> linearly independent or dependent?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-24-3-2-1-1">If <span class="process-math">\(\vvec_1, \vvec_2, \dots, \vvec_n\)</span> is a set of vectors in <span class="process-math">\(\mathbb{R}^m\text{,}\)</span> explain why the zero vector <span class="process-math">\({\bf 0}\)</span> can be expressed as a linear combination of these vectors. Usse this fact to explain why <span class="process-math">\({\bf 0}\)</span> belongs to any subspace in <span class="process-math">\(\mathbb{R}^m\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.a"><a href="#activities-24-3-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-24-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-24-3-3-1-1">Write <span class="process-math">\(\vvec_3\)</span> and <span class="process-math">\(\vvec_4\)</span> as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-24-3-3-1-1">Explain why the line on the left is not a subspace of <span class="process-math">\(\mathbb{R}^2\text{,}\)</span> and the line on the right is.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="figure-lines-r2">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:5%;margin-right:5%;grid-template-columns:44.4444444444444% 44.4444444444444%;column-gap:10%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<div class="ChemAccess-element" data-src="generated/prefigure/pf-subspace-line-skew-diagcess.svg" data-cml="generated/prefigure/pf-subspace-line-skew-annotations.xml"></div>
+<details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="figure-lines-r2-2-1-description">
+<div class="para" id="figure-lines-r2-2-1-2-1">A line in two dimensions that does not pass through the origin.<div class="autopermalink" data-description="Paragraph"><a href="#figure-lines-r2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="1in"></div>
+</div></details>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box">
+<div class="ChemAccess-element" data-src="generated/prefigure/pf-subspace-line-origin-diagcess.svg" data-cml="generated/prefigure/pf-subspace-line-origin-annotations.xml"></div>
+<details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="figure-lines-r2-2-2-description">
+<div class="para" id="figure-lines-r2-2-2-2-1">A line in two dimensions that does passes through the origin.<div class="autopermalink" data-description="Paragraph"><a href="#figure-lines-r2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div></div>
+</div>
+</div>
+<details class="instructions diagcess__instructions"><summary>Diagram Exploration Keyboard Controls</summary><div class="diagcess-navigation-controls"><table>
+<thead><tr>
+<th>Key</th>
+<th>Action</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Enter, A</td>
+<td>Activate keyboard driven exploration</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Activate menu driven exploration</td>
+</tr>
+<tr>
+<td>Escape</td>
+<td>Leave exploration mode</td>
+</tr>
+<tr>
+<td>Cursor down</td>
+<td>Explore next lower level</td>
+</tr>
+<tr>
+<td>Cursor up</td>
+<td>Explore next upper level</td>
+</tr>
+<tr>
+<td>Cursor right</td>
+<td>Explore next element on level</td>
+</tr>
+<tr>
+<td>Cursor left</td>
+<td>Explore previous element on level</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Toggle expert mode</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Extra details if available</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Repeat speech</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Activate step magnification</td>
+</tr>
+<tr>
+<td>Comma</td>
+<td>Activate direct magnification</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Deactivate magnification</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>Toggle subtitles</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Cycle contrast settings</td>
+</tr>
+<tr>
+<td>T</td>
+<td>Monochrome colours</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Toggle language (if available)</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Kill current sound</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Stop sound output</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Start and stop sonification</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Repeat sonification output</td>
+</tr>
+</tbody>
+</table></div></details><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Two lines in <span class="process-math">\(\real^2\text{,}\)</span> one of which is a subspace and one of which is not.<div class="autopermalink" data-description="Figure 18"><a href="#figure-lines-r2" title="Copy heading and permalink for Figure 18" aria-label="Copy heading and permalink for Figure 18">🔗</a></div></figcaption>
+</figure><div class="workspace" data-space="1in"></div>
 <div class="autopermalink" data-description="Task 1.b"><a href="#activities-24-3-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-24-3-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="activities-24-3-4-1-1">Explain why <span class="process-math">\(\col(A) = \laspan{\vvec_1, \vvec_2, \vvec_3, \vvec_4} =
-\laspan{\vvec_1, \vvec_2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#activities-24-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-24-3-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="activities-24-3-5-1-1">Explain why <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> form a linearly independent set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 1.d"><a href="#activities-24-3-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-24-3-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="activities-24-3-6-1-1">Since <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> span <span class="process-math">\(\col(A)\)</span> and are linearly independent, we say they form a basis for <span class="process-math">\(\col(A)\text{.}\)</span>  The <dfn class="terminology">\em dimension</dfn> of a subspace <span class="process-math">\(S\)</span> is denoted <span class="process-math">\(\dim S\)</span> and is the number of vectors in a basis for that subspace.  <span class="process-math">\(\col(A)\)</span> is a subspace of <span class="process-math">\(\real^3\)</span> - What is the dimension of <span class="process-math">\(\col(A)\)</span> (<span class="process-math">\(\dim \col(A)\)</span>), and what geometrical shape does it form in <span class="process-math">\(\real^3\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 1.e"><a href="#activities-24-3-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-24-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activities-24-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-24-4-1">
-<div class="para logical" id="activities-24-4-1-1">
-<div class="para">Suppose we have a matrix</div>
-<div class="displaymath process-math" id="activities-24-4-1-1-1">
+<div class="para logical" id="activities-24-3-4-1-1">
+<div class="para">Suppose that <span class="process-math">\(\vvec_1\text{,}\)</span> <span class="process-math">\(\vvec_2\text{,}\)</span> <span class="process-math">\(\vvec_3\text{,}\)</span> and <span class="process-math">\(\vvec_4\)</span> are four vectors in <span class="process-math">\(\real^3\)</span> and that</div>
+<div class="displaymath process-math" id="activities-24-3-4-1-1-6">
 \begin{equation*}
-B = \begin{bmatrix}
-\bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
+\begin{bmatrix}
+\vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
 \end{bmatrix}
 \sim
 \begin{bmatrix}
-1 \amp -2 \amp 0 \amp 3 \amp 0 \\
-0 \amp 0 \amp 1 \amp -1 \amp 0 \\
-0 \amp 0 \amp 0 \amp 0 \amp 1 \\
-0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+1 \amp 2 \amp 0 \amp -2 \\
+0 \amp 0 \amp 1 \amp 1 \\
+0 \amp 0 \amp 0 \amp 0 \\
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Give a description of the subspace <span class="process-math">\(S=\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}\)</span> of <span class="process-math">\(\real^3\text{.}\)</span>
 </div>
-</div>
-<article class="task exercise-like" id="activities-24-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-24-4-2-1-1">What is the shape of <span class="process-math">\(B\text{;}\)</span>  that is, how many rows and columns does it have?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space=".7in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#activities-24-4-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-24-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-24-4-3-1-1">Is <span class="process-math">\(\laspan{\bvec_1} = \laspan{\fourvec1000}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space=".7in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#activities-24-4-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-24-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="activities-24-4-4-1-1">In this case, the column space <span class="process-math">\(\col(B) = \laspan{\bvec_1, \bvec_2,
-\bvec_3, \bvec_4, \bvec_5}\text{.}\)</span>  Are these five vectors linearly independent?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#activities-24-4-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#activities-24-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-24-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="activities-24-4-5-1-1">How can we form a basis for <span class="process-math">\(\col(B)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-24-4">The first important subspace we’ll look at is called the <dfn class="terminology">column space</dfn> of <span class="process-math">\(A\)</span> and denoted as <span class="process-math">\(\col(A)\text{.}\)</span> It’s just the span of the columns of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#activities-24-4-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-24-4-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="activities-24-4-6-1-1">Complete the sentence:  <span class="process-math">\(\col(B)\)</span> is a \underline{}-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> \underline{}.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="def-3-5-colspace"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="def-3-5-colspace-1-1">
+<div class="para">If <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix we call the span of its colums the <dfn class="terminology">column space</dfn> of <span class="process-math">\(A\)</span> and denote it as <span class="process-math">\(col(A)\text{.}\)</span> That is</div>
+<div class="displaymath process-math" id="def-3-5-colspace-1-1-6">
+\begin{equation*}
+\col(A) = \laspan{\vvec_1, \vvec_2,
+\vvec_3, \vvec_4}.
+\end{equation*}
 </div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.e"><a href="#activities-24-4-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-24-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activities-24-5"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="activities-24-5-1-1">Generally speaking, what is the relationship between the dimension <span class="process-math">\(\col(C)\)</span> and the number of pivots in <span class="process-math">\(C\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-24-5-1-2">The second subspace we’ll look at is called the <dfn class="terminology">\em null space</dfn> of <span class="process-math">\(A\)</span> and denoted <span class="process-math">\(\nul(A)\text{.}\)</span>  It’s just the solution set of the equation <span class="process-math">\(A\xvec = \zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-3-5-colspace-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-24-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+<div class="autopermalink" data-description="Definition 19"><a href="#def-3-5-colspace" title="Copy heading and permalink for Definition 19" aria-label="Copy heading and permalink for Definition 19">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="activities-24-6"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-24-6-1">
-<div class="para logical" id="activities-24-6-1-1">
-<div class="para">Let’s now go back to the matrix <span class="process-math">\(A\)</span> at the top of the first page, rewritten here:</div>
-<div class="displaymath process-math" id="activities-24-6-1-1-2">
+<article class="exercise exercise-like" id="exer-3-5-col"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exer-3-5-col-1">
+<div class="para logical" id="exer-3-5-col-1-1">
+<div class="para">Consider the matrix</div>
+<div class="displaymath process-math" id="exer-3-5-col-1-1-1">
 \begin{equation*}
 A = \begin{bmatrix}
 \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
@@ -454,45 +501,76 @@ A = \begin{bmatrix}
 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="activities-24-6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-24-6-2-1-1">Write the solution set to the equation <span class="process-math">\(A\xvec = \zerovec\)</span> as a parametric description.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 4.a"><a href="#activities-24-6-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-24-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-24-6-3-1-1">Use this parametric description to find two vectors <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> for which <span class="process-math">\(\nul(A) = \laspan{\wvec_1,\wvec_2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-col-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exer-3-5-col-2-1-1">Give an example of a vector in <span class="process-math">\(\col(A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 4.b"><a href="#activities-24-6-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#exer-3-5-col-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-6-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="activities-24-6-4-1-1">Explain why <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> form a linearly independent set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-col-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exer-3-5-col-3-1-1">Is <span class="process-math">\(\bvec = \threevec{15}{9}{-12}\)</span> in <span class="process-math">\(\col(A)\text{?}\)</span> Is <span class="process-math">\(\cvec = \fourvec1111\)</span> in <span class="process-math">\(\col(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 4.c"><a href="#activities-24-6-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#exer-3-5-col-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-6-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="activities-24-6-5-1-1">Do <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> form a basis for <span class="process-math">\(\nul(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-col-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="exer-3-5-col-4-1-1">Fill in the blanks: <span class="process-math">\(\col(A)\)</span> is a subspace of <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> because <span class="fillin underline" role="img" aria-label="40-character blank" style="width: 18.1818181818182em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 2.c"><a href="#exer-3-5-col-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exer-3-5-col-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="exer-3-5-col-5-1-1">Are the vectors <span class="process-math">\(\vvec_1,\ldots,\vvec_4\)</span> linearly independent or dependent?<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 4.d"><a href="#activities-24-6-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.d"><a href="#exer-3-5-col-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-6-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="activities-24-6-6-1-1">In this case, since vectors in <span class="process-math">\(\nul(A)\)</span> are in <span class="process-math">\(\real^4\text{,}\)</span> <span class="process-math">\(\nul(A)\)</span> is a subspace of <span class="process-math">\(\real^4\text{.}\)</span>  What is the dimension of <span class="process-math">\(\nul(A)\text{,}\)</span> that is what is <span class="process-math">\(\dim \nul(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-col-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="exer-3-5-col-6-1-1">Write <span class="process-math">\(\vvec_3\)</span> and <span class="process-math">\(\vvec_4\)</span> as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 4.e"><a href="#activities-24-6-6" title="Copy heading and permalink for Task 4.e" aria-label="Copy heading and permalink for Task 4.e">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activities-24-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.e"><a href="#exer-3-5-col-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="activities-24-7"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-24-7-1">
-<div class="para logical" id="activities-24-7-1-1">
-<div class="para">Let’s go back to the matrix <span class="process-math">\(B\text{,}\)</span> rewritten below</div>
-<div class="displaymath process-math" id="activities-24-7-1-1-2">
+<article class="task exercise-like" id="exer-3-5-col-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="exer-3-5-col-7-1-1">Explain why <span class="process-math">\(\col(A) = \laspan{\vvec_1, \vvec_2, \vvec_3, \vvec_4} =
+\laspan{\vvec_1, \vvec_2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.f"><a href="#exer-3-5-col-7" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exer-3-5-col-8"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="para" id="exer-3-5-col-8-1-1">Explain why <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> form a linearly independent set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.g"><a href="#exer-3-5-col-8" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exer-3-5-col-9"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="para" id="exer-3-5-col-9-1-1">Describe <span class="process-math">\(\col(A)\)</span> geometrically.<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.h"><a href="#exer-3-5-col-9" title="Copy heading and permalink for Task 2.h" aria-label="Copy heading and permalink for Task 2.h">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exer-3-5-col-10"><h4 class="heading"><span class="codenumber">(i)</span></h4>
+<div class="para" id="exer-3-5-col-10-1-1">Since <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> span <span class="process-math">\(\col(A)\)</span> and are linearly independent, we say they form a <dfn class="terminology">basis</dfn> for <span class="process-math">\(\col(A)\text{.}\)</span> The <dfn class="terminology">dimension</dfn> of a subspace <span class="process-math">\(S\)</span> is denoted <span class="process-math">\(\dim S\)</span> and is the number of vectors in a basis for that subspace. <span class="process-math">\(\col(A)\)</span> is a subspace of <span class="process-math">\(\real^3\)</span>- What is the dimension of <span class="process-math">\(\col(A)\)</span> (denoted <span class="process-math">\(\dim \col(A)\)</span> )?<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-col-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.i"><a href="#exer-3-5-col-10" title="Copy heading and permalink for Task 2.i" aria-label="Copy heading and permalink for Task 2.i">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#exer-3-5-col" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="definition definition-like" id="def-3-5-basisdim"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-3-5-basisdim-1-1">A <dfn class="terminology">basis</dfn> for a subspace <span class="process-math">\(S\)</span> of <span class="process-math">\(\mathbb{R}^p\)</span> is a set of vectors in <span class="process-math">\(S\)</span> that are linearly independent and whose span is <span class="process-math">\(S\text{.}\)</span> We say that the <dfn class="terminology">dimension</dfn> of the subspace <span class="process-math">\(S\text{,}\)</span> denoted <span class="process-math">\(\dim S\)</span> is the number of vectors in any basis.<div class="autopermalink" data-description="Paragraph"><a href="#def-3-5-basisdim-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 20"><a href="#def-3-5-basisdim" title="Copy heading and permalink for Definition 20" aria-label="Copy heading and permalink for Definition 20">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exer-3-5-colB"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exer-3-5-colB-1">
+<div class="para logical" id="exer-3-5-colB-1-1">
+<div class="para">Suppose we have a matrix</div>
+<div class="displaymath process-math" id="exer-3-5-colB-1-1-1">
 \begin{equation*}
 B = \begin{bmatrix}
 \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
@@ -506,100 +584,249 @@ B = \begin{bmatrix}
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-colB-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="activities-24-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-24-7-2-1-1">Find a basis for <span class="process-math">\(\nul(B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-colB-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exer-3-5-colB-2-1-1">What is the shape of <span class="process-math">\(B\text{;}\)</span> that is, how many rows and columns does it have?<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-colB-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".7in"></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#exer-3-5-colB-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exer-3-5-colB-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exer-3-5-colB-3-1-1">Is <span class="process-math">\(\laspan{\bvec_1} = \laspan{\fourvec1000}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-colB-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".7in"></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#exer-3-5-colB-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exer-3-5-colB-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="exer-3-5-colB-4-1-1">In this case, the column space <span class="process-math">\(\col(B) = \laspan{\bvec_1, \bvec_2,
+\bvec_3, \bvec_4, \bvec_5}\text{.}\)</span> Are these five vectors linearly independent?<div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-colB-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 5.a"><a href="#activities-24-7-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.c"><a href="#exer-3-5-colB-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-24-7-3-1-1">Complete the sentence:  <span class="process-math">\(\nul(B)\)</span> is a \underline{}-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> \underline{}.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-colB-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="exer-3-5-colB-5-1-1">How can we form a basis for <span class="process-math">\(\col(B)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-colB-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 5.b"><a href="#activities-24-7-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activities-24-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.d"><a href="#exer-3-5-colB-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="activities-24-8"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-24-8-1">
-<div class="para" id="activities-24-8-1-1">Suppose that <span class="process-math">\(C\)</span> is a <span class="process-math">\(50\times 100\)</span> matrix with 30 pivots.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-<article class="task exercise-like" id="activities-24-8-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-24-8-2-1-1">
-<span class="process-math">\(\col(C)\)</span> is a \underline{}-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> \underline{}.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exer-3-5-colB-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="exer-3-5-colB-6-1-1">Fill in the blanks: <span class="process-math">\(\col(B)\)</span> is a <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#exer-3-5-colB-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 6.a"><a href="#activities-24-8-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
+<div class="autopermalink" data-description="Task 3.e"><a href="#exer-3-5-colB-6" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#exer-3-5-colB" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-8-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="activities-24-8-3-1-1">
-<span class="process-math">\(\nul(C)\)</span> is a \underline{}-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> \underline{}.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="activities-24-9"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="activities-24-9-1-1">Generally speaking, what is the relationship between the dimension <span class="process-math">\(\col(C)\)</span> and the number of pivots in <span class="process-math">\(C\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 6.b"><a href="#activities-24-8-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#activities-24-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activities-24-9" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="activities-24-9"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="activities-24-9-1">
-<div class="para" id="activities-24-9-1-1">The <em class="emphasis">rank</em> of a matrix <span class="process-math">\(A\text{,}\)</span> denoted, <span class="process-math">\(\text{rank}(A)\)</span> is the number of pivot positions of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-24-10">The second subspace we’ll look at is called the <dfn class="terminology">null space</dfn> of <span class="process-math">\(A\)</span> and is denoted <span class="process-math">\(\nul(A)\text{.}\)</span> It’s just the solution set of the equation <span class="process-math">\(A\xvec = \zerovec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<article class="definition definition-like" id="def-3-5-null"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-3-5-null-1-1">If <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix we call the subset of vectors <span class="process-math">\(\xvec\)</span> in <span class="process-math">\(\mathbb{R}^n\)</span> satisfying <span class="process-math">\(A\xvec={\bf 0}\)</span> the <dfn class="terminology">null space</dfn> of <span class="process-math">\(A\)</span> and denote it by <span class="process-math">\(\nul(A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-3-5-null-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="task exercise-like" id="activities-24-9-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="activities-24-9-2-1-1">What is the relationship between the rank of a matrix <span class="process-math">\(A\)</span> and the dimension of <span class="process-math">\(\col(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-9-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space=".3in"></div>
-<div class="autopermalink" data-description="Task 7.a"><a href="#activities-24-9-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div>
+<div class="autopermalink" data-description="Definition 21"><a href="#def-3-5-null" title="Copy heading and permalink for Definition 21" aria-label="Copy heading and permalink for Definition 21">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-24-9-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="activities-24-9-3-1-1">
-<div class="para">Say <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix. Fill in the blank:</div>
-<div class="displaymath process-math" id="activities-24-9-3-1-1-3">
+<article class="exercise exercise-like" id="activities-24-12"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-24-12-1">
+<div class="para logical" id="activities-24-12-1-1">
+<div class="para">Let’s now go back to the matrix <span class="process-math">\(A\)</span> from <a href="activities-24.html#exer-3-5-col" class="xref" data-knowl="./knowl/xref/exer-3-5-col.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 2">Worksheet Exercise 2</a>, rewritten here:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/exer-3-5-col.html" id="activities-24-12-1-1-3">
 \begin{equation*}
-\dim \nul(A) + \dim \col(A) = \underline{\hspace{.5in}} 
+A = \begin{bmatrix}
+\vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
+\end{bmatrix}
+= 
+\begin{bmatrix}
+2 \amp -1 \amp 2 \amp 3 \\
+1 \amp 0 \amp 0 \amp 2 \\
+-2 \amp 2 \amp -4 \amp -2 \\
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+1 \amp 0 \amp 0 \amp 2 \\
+0 \amp 1 \amp -2 \amp 1 \\
+0 \amp 0 \amp 0 \amp 0 \\
+\end{bmatrix}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-9-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-24-12-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="activities-24-12-2-1-1">Write the solution set to the equation <span class="process-math">\(A\xvec = \zerovec\)</span> as a parametric description.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-12-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Task 5.a"><a href="#activities-24-12-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-12-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="activities-24-12-3-1-1">Use this parametric description to find two vectors <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> for which <span class="process-math">\(\nul(A) = \laspan{\wvec_1,\wvec_2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-12-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 7.b"><a href="#activities-24-9-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#activities-24-9" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+<div class="autopermalink" data-description="Task 5.b"><a href="#activities-24-12-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
 </article>
-<article class="outcomes goal-like" id="activities-24-10"><h3 class="heading"><span class="type">Outcomes</span></h3>
-<div class="introduction" id="activities-24-10-1">
-<div class="para" id="activities-24-10-1-1">Make sure you can answer the following questions:<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activities-24-12-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="activities-24-12-4-1-1">Explain why <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> form a linearly independent set of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-12-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.c"><a href="#activities-24-12-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-12-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="activities-24-12-5-1-1">Do <span class="process-math">\(\wvec_1\)</span> and <span class="process-math">\(\wvec_2\)</span> form a basis for <span class="process-math">\(\nul(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-12-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.d"><a href="#activities-24-12-5" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-12-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="activities-24-12-6-1-1">In this case, since vectors in <span class="process-math">\(\nul(A)\)</span> are in <span class="process-math">\(\real^4\text{,}\)</span> <span class="process-math">\(\nul(A)\)</span> is a subspace of <span class="process-math">\(\real^4\text{.}\)</span> What is the dimension of <span class="process-math">\(\nul(A)\text{,}\)</span> that is what is <span class="process-math">\(\dim \nul(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-12-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 5.e"><a href="#activities-24-12-6" title="Copy heading and permalink for Task 5.e" aria-label="Copy heading and permalink for Task 5.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activities-24-12" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-24-13"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-24-13-1">
+<div class="para logical" id="activities-24-13-1-1">
+<div class="para">Let’s go back to the matrix <span class="process-math">\(B\)</span> from <a href="activities-24.html#exer-3-5-colB" class="xref" data-knowl="./knowl/xref/exer-3-5-colB.html" data-reveal-label="Reveal" data-close-label="Close" title="Worksheet Exercise 3">Worksheet Exercise 3</a>, rewritten below</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/exer-3-5-colB.html" id="activities-24-13-1-1-3">
+\begin{equation*}
+B = \begin{bmatrix}
+\bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+1 \amp -2 \amp 0 \amp 3 \amp 0 \\
+0 \amp 0 \amp 1 \amp -1 \amp 0 \\
+0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<ul class="disc" id="activities-24-10-2">
-<li id="activities-24-10-2-1">
-<div class="para" id="activities-24-10-2-1-1">What is the definition of a subspace? How can we tell if something is a subspace?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activities-24-13-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="activities-24-13-2-1-1">Find a basis for <span class="process-math">\(\nul(B)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-13-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Outcome"><a href="#activities-24-10-2-1" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 6.a"><a href="#activities-24-13-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-13-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="activities-24-13-3-1-1">Complete the sentence: <span class="process-math">\(\nul(B)\)</span> is a <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-13-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 6.b"><a href="#activities-24-13-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#activities-24-13" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-24-14"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-24-14-1">
+<div class="para" id="activities-24-14-1-1">Suppose that <span class="process-math">\(C\)</span> is a <span class="process-math">\(50\times 100\)</span> matrix with 30 pivots.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-24-14-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="activities-24-14-2-1-1">
+<span class="process-math">\(\col(C)\)</span> is a <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-14-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 7.a"><a href="#activities-24-14-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-14-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="activities-24-14-3-1-1">
+<span class="process-math">\(\nul(C)\)</span> is a <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>-dimensional subspace of <span class="process-math">\(\real^p\)</span> where <span class="process-math">\(p=\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-14-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 7.b"><a href="#activities-24-14-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#activities-24-14" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+</article>
+<article class="definition definition-like" id="def-3-5-rank"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-3-5-rank-1-1">The <dfn class="terminology">rank</dfn> of a matrix <span class="process-math">\(A\)</span> is the number of pivot positions in <span class="process-math">\(A\)</span> and is denoted by <span class="process-math">\(\rank(A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-3-5-rank-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 22"><a href="#def-3-5-rank" title="Copy heading and permalink for Definition 22" aria-label="Copy heading and permalink for Definition 22">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-24-16"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="activities-24-16-1">
+<div class="para" id="activities-24-16-1-1">Let’s make further connections between topics and new vocabulary.<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-24-16-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="activities-24-16-2-1-1">How can we use information about the pivots to get a basis for <span class="process-math">\(\col(C)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-16-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Task 8.a"><a href="#activities-24-16-2" title="Copy heading and permalink for Task 8.a" aria-label="Copy heading and permalink for Task 8.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-16-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="activities-24-16-3-1-1">What is the relationship between the rank of a matrix <span class="process-math">\(A\)</span> and the dimension of <span class="process-math">\(\col(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-16-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".3in"></div>
+<div class="autopermalink" data-description="Task 8.b"><a href="#activities-24-16-3" title="Copy heading and permalink for Task 8.b" aria-label="Copy heading and permalink for Task 8.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-16-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="activities-24-16-4-1-1">If <span class="process-math">\(A\)</span> is an invertible <span class="process-math">\(9\times 9\)</span> matrix, what can you say about <span class="process-math">\(\col(A)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-16-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space=".5in"></div>
+<div class="autopermalink" data-description="Task 8.c"><a href="#activities-24-16-4" title="Copy heading and permalink for Task 8.c" aria-label="Copy heading and permalink for Task 8.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-16-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="activities-24-16-5-1-1">Suppose that <span class="process-math">\(A\)</span> is an <span class="process-math">\(8\times 10\)</span> matrix and <span class="process-math">\(\col(A)=\mathbb{R}^8\text{.}\)</span> If <span class="process-math">\(\bvec\)</span> is an 8-dimensional vector, what can you say about the equation <span class="process-math">\(A\xvec=\bvec\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-24-16-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.d"><a href="#activities-24-16-5" title="Copy heading and permalink for Task 8.d" aria-label="Copy heading and permalink for Task 8.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-24-16-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para logical" id="activities-24-16-6-1-1">
+<div class="para">Say <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix. Fill in the blank:</div>
+<div class="displaymath process-math" id="activities-24-16-6-1-1-3">
+\begin{equation*}
+\dim \nul(A) + \dim \col(A) = \underline{\hspace{.5in}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-16-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 8.e"><a href="#activities-24-16-6" title="Copy heading and permalink for Task 8.e" aria-label="Copy heading and permalink for Task 8.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#activities-24-16" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
+</article>
+<article class="outcomes goal-like" id="activities-24-17"><h3 class="heading"><span class="type">Outcomes</span></h3>
+<div class="introduction" id="activities-24-17-1">
+<div class="para" id="activities-24-17-1-1">Make sure you can answer the following questions:<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul class="disc" id="activities-24-17-2">
+<li id="activities-24-17-2-1">
+<div class="para" id="activities-24-17-2-1-1">What is the definition of a subspace? How can we tell if something is a subspace?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-17-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-24-17-2-1" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
 </li>
-<li id="activities-24-10-2-2">
-<div class="para" id="activities-24-10-2-2-1">What is the dimension of a subspace? How do we find it?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="activities-24-17-2-2">
+<div class="para" id="activities-24-17-2-2-1">What is the dimension of a subspace? How do we find it?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-17-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Outcome"><a href="#activities-24-10-2-2" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-24-17-2-2" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
 </li>
-<li id="activities-24-10-2-3">
-<div class="para" id="activities-24-10-2-3-1">How do we find the null space of a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="activities-24-17-2-3">
+<div class="para" id="activities-24-17-2-3-1">How do we find the null space of a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-17-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Outcome"><a href="#activities-24-10-2-3" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-24-17-2-3" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
 </li>
-<li id="activities-24-10-2-4">
-<div class="para" id="activities-24-10-2-4-1">How do we find the column space of a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="activities-24-17-2-4">
+<div class="para" id="activities-24-17-2-4-1">How do we find the column space of a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-17-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Outcome"><a href="#activities-24-10-2-4" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-24-17-2-4" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
 </li>
-<li id="activities-24-10-2-5">
-<div class="para" id="activities-24-10-2-5-1">What is the relationship between the dimension of the column space and the dimension of the null space?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-10-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="activities-24-17-2-5">
+<div class="para" id="activities-24-17-2-5-1">What is the relationship between the dimension of the column space and the dimension of the null space?<div class="autopermalink" data-description="Paragraph"><a href="#activities-24-17-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Outcome"><a href="#activities-24-10-2-5" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+<div class="autopermalink" data-description="Outcome"><a href="#activities-24-17-2-5" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Outcomes"><a href="#activities-24-10" title="Copy heading and permalink for Outcomes" aria-label="Copy heading and permalink for Outcomes">🔗</a></div>
+<div class="autopermalink" data-description="Outcomes"><a href="#activities-24-17" title="Copy heading and permalink for Outcomes" aria-label="Copy heading and permalink for Outcomes">🔗</a></div>
 </article><div class="autopermalink" data-description="Worksheet: Section 3.5 - Subspaces of \real^p"><a href="#activities-24" title="Copy heading and permalink for Worksheet: Section 3.5 - Subspaces of \real^p" aria-label="Copy heading and permalink for Worksheet: Section 3.5 - Subspaces of \real^p">🔗</a></div>
 </section>
 </div>
@@ -610,5 +837,6 @@ B = \begin{bmatrix}
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
+<script>diagcess.Base.init()</script>
 </body>
 </html>

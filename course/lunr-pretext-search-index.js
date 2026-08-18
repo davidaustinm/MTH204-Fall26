@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Syllabus",
-  "body": " Syllabus        Course Information  This is the syllabus for course name (MATH xxx, section xxx) for [term] 20xx. It is a [n] credit course.    Instructor  Prof. Lastname, Office Location, prof.lastname@example.edu .    Student Hours  TBD    Class meets  course times and location.    Course Description  course description from catalog    Prerequisite  list of prerequisites    Textbook and course materials   textbook name by textbook author.       Course Overview        Assessments and Grades     "
+  "body": " Syllabus       Course Information  This is the syllabus for Linear Algebra (MATH 204, section xxx) for Fall 2026. It is a 3 credit course.    Instructor  Prof. Lastname, Office Location, prof.lastname@example.edu .    Student Hours  TBD    Class meets  course times and location.    Textbook and course materials   Understanding Linear Algebra by David Austin. Access here .  We will also use online resources such as Sage and Runstone .     My main priority in this course is for you to grow as a mathematician: to be able to understand and apply complex statements, to solve challenging problems, and to communicate orally and in writing. I want you to succeed. My teaching philosophy is that everyone has the right to understand and enjoy mathematics, and to feel part of a mathematical community. Please see me when you need help.    Being Successful in MTH 204     Attend class. Attendance is expected and is correlated to success.   Aim for deep conceptual understanding. Linear algebra makes sense! If you aim for sensemaking the answers (and good grades) will follow.   Use office hours wisely. Office hours are for you to ask questions! Please drop in whenever you have questions! I ask that you prepare by first making your best effort and forming specific questions. This helps our meetings be the most productive.   Use the math center. Free drop in tutoring in person and online ( here ).   Talk to your peers. Talking through math can lead to huge insights - try it!   Please ask for anything that would help your learning. In particular, I know you are human and things come up. Keep me in the loop so I can help. Just email me and we can make an appointment or talk over email.      Diversity, Equity, and Inclusion  We live in a wonderfully diverse world. Acknowledging and listening to the perspectives and experiences of people from a different cultural background than your own (e.g., gender, race, sexual orientation, nationality, religion, socioeconomic status) is a vital part of the learning process and your personal development. It is my intent that students from all backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of the classroom, and that the diversity students bring to this class be viewed as a resource, strength, and benefit. All voices need to be heard. I welcome and appreciate any suggestions you have pertaining to diversity, equity, and inclusion, and commit to listen reflectively to your concerns, without defensiveness, in recognition that receiving honest feedback is a necessary step in improving the inclusiveness of our academic environment.    Climate Goals     Axiom 1. Mathematical potential is distributed equally among different groups, irrespective of geographic, demographic, and economic boundaries.   Axiom 2. Everyone can have joyful, meaningful, and empowering mathematical experiences.   Axiom 3. Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.   Axiom 4. Every student deserves to be treated with dignity and respect.         What is Linear Algebra?  Linear algebra is geometric and algebraic sense-making of linear equations in ways that are wildly useful. We will learn how Google uses eigenvectors to give you the right search results, how our phones use linear transformations to send images with minimal data usage, and how Pixar uses matrix multiplication to animate films. The power to do these things comes from understanding in both a geometric and algebraic way. Throughout the course, we will be Making Sense Together - I ask that you always strive to make sense, and I will be here to help you.    What should you do if you need help?  Successful students reach out for help when they need it. You should strive to be aware of when you are struggling. Whether you are having a technology issue or a mathematical issue or a personal issue impeding your work, reach out to me! I'm here to help you be successful in this class. If something in your life is preventing you from showing me your best work, I would like to help you. The earlier you get in touch the easier it is to catch up. You can always reach me by email. I generally check my email throughout the day but rarely at night or on the weekend. I'm pretty good about responding to email quickly (and definitely within 24 hours during the work week). Don't struggle alone!      Assessments and Grades     Class Preparation [CP] (5%)  There will be class preparation assignments due before each class (twice a week). These are graded for completeness, not correctness. Your grade for this part is the percentage you completed.    Summary Activities [SA] (15%)  Runestone is an online platform connected to our textbook. There will be a set of summary activities through Runestone each week consisting of 5-10 exercises relating to the content of the course. If you earn 90% of the points you will get full credit. If you earn less than 90% your grade will be scaled appropriately. It is a good idea to write your work in a Runestone section of your notebook to keep yourself organized. See the Runestone policies for more information.    Written Homework [HW] (20%)  Written HW sets are more extended and involved multi-part problems to solve that involve a formal writeup with written explanation. There will 1-3 problems due every week on Wednesday. There will be options for revision; individual problems will be assessed as \"exemplary\" (100%), \"satisfactory\" (75%), or \"not yet\" (0%). See the written homework policies for more information (including info about revisions).    Learning Target Checkpoints [LT] (28%)  There will be a learning target quiz each Friday. Each skill is graded \"E\" for exemplary, \"S\" for \"satisfactory” or “NY” for “not yet”. Each LT is worth 2% of your grade — an \"E\" gives 2%, \"S\" is 1.5%, and \"NY\" is 0%. There will be 14 targets.    Labs [L] (10%)  Each lab is worth a varying number of points and there will be approximately 6 labs. You can earn partial credit. These will be done in teams. See the lab policies for more information (including info about revisions).    Final Exam (22%)  The final exam will be cumulative, focusing on big picture ideas of the course. The final exam is scheduled by the registrar at a time TBD. More details will be given out later.   The following table allows you to convert your weighted percentage to a letter grade. Note the percentage you earned will not be rounded (e.g. 92.8% is an A-).    A  A-  B+  B  B-  C+  C  C-  D+  D  F                  Grades are updated on Blackboard regularly. Please check and verify regularly!    Technology  You will need a laptop\/tablet\/Chromebook on which they can access a modern internet browser such as Chrome. You should plan to bring a laptop to class regularly. (Please let me know if you don’t have one and I can bring one!) You should have or develop proficiencies in the following (which are all free):   GVSU Email: You should check your @mail.gvsu.edu email at least once each weekday for important announcements. You should also email me from your @mail.gvsu.edu account so it doesn’t go to spam!   Blackboard You should know how to navigate Blackboard. In particular:  Watch the course tour so you know where to find things. If you can’t find something, email me. (It’s possible I forgot to post.)  Assignments: You need to know how to view an assignment and upload your work.  Grades and Feedback: I will upload your current grades to Blackboard on a weekly basis as well as give you feedback on homework. If you don’t know how to find your grades or read the feedback please email me!     Sage: You aren’t expected to know this yet! We will develop proficiency in this as a class. You have access to free sage cells here .      Academic Honesty  See each individual assignment document linked on Blackboard for information on academic honesty. You are responsible for knowing the policies - academic dishonesty will not be tolerated and all instances will be reported to the dean of students. I ask that you take your learning seriously and take advantage of the opportunities you are given to succeed. To avoid academic dishonesty please make sure you know the policies, and avoid situations where you may feel desperate (say, by procrastinating). Academic honesty is worth the reward of learning, and dishonesty is not worth the risk.    Attendance and Missed Classes  Attendance does not count towards your final grade, however, I do expect that you will be in class and I will take attendance. The class is counting on your contributions and being in class is important for your learning. I’ve seen many capable students fail because they miss class. If you must miss class you should:  Email me to let me know. (I worry about you!)  Check Blackboard to make sure you turn in assignments.  Look over the class notes and textbook. Get in touch with a classmate to get notes and find out what you should do to catch up.      Late Work and Deadlines      Other Information and Policies      This course is subject to the following GVSU policies .    Important Dates  View the academic calendar for all important dates. In particular, the last chance to add a class or drop with 100% tuition refund is September 4th by 5PM. The last day to change to credit\/no credit is September 25th by 5PM. The last day to drop with a \"W\" is November 13th by 5PM.    Student Accessibility Resources Office  If you are in need of accommodations due to a learning, physical, or other disability you must present a memo to me from Student Accessibility Resources, indicating the existence of a disability and the suggested reasonable accommodations. If you have not already done so, please contact the Student Accessibility Resources office (215 CON): 616-331-2490 or access@gvsu.edu. Please note that I cannot provide accommodations based upon disability until you have provided me with a copy of the SAR issued memo. All discussions will remain confidential. If you have a physical disability and think you will need assistance evacuating this classroom and\/or building in an emergency situation, please make me aware so I can develop a plan to assist you.    Math Tutoring Center  GVSU’s Math Tutoring Center offers both in-person and online drop-in tutoring this semester, starting Wednesday, September 2. You can access the most up-to-date information on our website . There you will find our current hours, information on how to access online tutoring with Discord Voice and a schedule of when you can find tutors to help with your specific course. Bring questions to any center about using technology (calculator or Desmos), on methods and concepts, or on specific problems. All Math Center tutoring is FREE, so stop by early and often. The Math Tutoring Center offers:  in-person tutoring on the Allendale campus (MAK A-2-601): Monday – Thursday 10am – 5pm and Friday 10am – 2pm  in-person tutoring on the Pew campus (Steelcase Library Collaboration Zone DeVos A): Monday – Thursday 1pm – 5pm (check website, hours may change)  online tutoring via Discord Voice: Sunday – Thursday 5pm – 9pm To access virtual drop-in tutoring, you can use the link in your Blackboard course called Math Tutoring Center or visit our website. Then you will need to click on the \"Online Math Tutoring Center\" button, which will require a GVSU login. We ask that when you enter our Discord server, please change your username to your first and last name so we can get you signed in and connected with a tutor.      Tutoring and Reading Center Appointments  GVSU’s Tutoring and Reading Center offers appointment tutoring both in-person and virtually. You can sign up for 50-minute tutoring appointments for many Math courses. Request a tutor here or schedule directly on Navigate.    Mental Health and Wellness  If your mental health concerns and\/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, there are resources available to you. GVSU encourages all students to access these resources, particularly as we navigate the transition and emotions associated with this time. The University Counseling Center offers a range of psychological services to meet the mental health needs of students, with the primary goal being to support students negotiating their transition into adulthood. The University Counseling Center can be reached by calling (616)-331-3266. If you are in distress and need to speak with someone urgently, an on-call crisis counselor can be reached 24\/7 at the following numbers:  Call or Text 988: Suicide and Crisis Lifeline  Text HOME to 741741: Crisis Text Line  In addition, managing daily stress and self-care are also important to well-being. There are resources to help with this in the form of peer tutoring, academic skills and success coaching, and more at this website . The campus recreation center and student wellness education are also available to support the wellness of your mind, body and soul so you can thrive during your time at GVSU.    Course Description  An introduction to systems of linear equations emphasizing conceptual understanding and computational thinking. Primary topics include solutions to linear systems, vector and matrix algebra, span and linear independence, bases, eigenvectors and eigenvalues. Applications will be integrated throughout the course.    Course Objectives After successful completion of the course, students will be able to:   Analyze systems of linear equations and describe their solution spaces.  Describe how the pivot positions of an augmented matrix influence the nature of the solution space to a linear system.  Demonstrate algebraic and geometric fluency with vectors.  Interpret questions about linear systems as questions about linear combinations of vectors.  Describe the concept of span of a set of vectors and apply it to determine the span of a set of vectors.  Describe the concept of linear independence of a set of vectors and apply it to determine whether a set of vectors is linearly independent.  Interpret matrix transformations as functions defined through matrix multiplication and create specific matrix transformations to perform geometric operations.  Calculate matrix sums, products, and multiples by scalar, and recognize matrix products as arising from composing matrix transformations.  Recognize a basis for and use the coordinate system it defines to solve problems.  Recognize an invertible matrix and find its inverse.  Apply one of several algorithms for finding the determinant of a matrix, and use the determinant to determine if a matrix is invertible.  State the definition and intuitive meaning of an eigenvalue-eigenvector pair of a square matrix.  Apply a conceptual understanding of linear systems to find the eigenvalues and eigenvectors of a square matrix.  Demonstrate how the theory of eigenvalues and eigenvectors is used to solve problems in dynamical systems.  Use computer algebra technology as a tool to solve important problems in linear algebra.      Syllabus Changes  This syllabus is meant to serve as a general overview of the course. I reserve the right to make adjustments to the syllabus as necessary, typically in consultation with you. Any changes will be announced in at least one synchronous class meeting and via a Blackboard announcement. Changes will be made to the live version of this syllabus which is linked on Blackboard.      "
 },
 {
   "id": "sec-course-info-2",
@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "course name (MATH xxx, section xxx) "
+  "body": "Linear Algebra (MATH 204, section xxx) Attend class. Aim for deep conceptual understanding. Use office hours wisely. Use the math center. Talk to your peers. Please ask for anything that would help your learning. "
 },
 {
   "id": "LTs",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 2.1 - Vectors and Linear Combinations",
-  "body": " Section 2.1 - Vectors and Linear Combinations   Visit this web site where you find an interactive figure you can use to investigate linear combinations. We will consider the vectors and consider linear combinations (which is shown in red).     The weight is initially set to 0 in the interactive figure. Explain what happens as you vary with ? How is this related to scalar multiplication?    The vector stretches (when ), shrinks (when ), and flips over the origin (when ). When , we are getting all scalar multiples of .      What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.    We can take the following linear combination:    Linear combination of vectors and to get the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1\\mathbf{v}-2\\mathbf{w}           Can the vector be expressed as a linear combination of and ? If so, what are weights and ?    Yes! Let and .   Linear combination of vectors and to get the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    0\\mathbf{v}+0\\mathbf{w}           Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?    Yes! Let and .   Linear combination of vectors and to get the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    -2\\mathbf{v}+1\\mathbf{w}       Using the grey diamond-like background we can see that walking 1 along and \"backwards\" 2 along gives the desired vector .      Verify the result from the previous part by algebraically substituting the weights and and the vectors and and checking you get .    We can take the following linear combination:       Can the vector be expressed as a linear combination of and ? (Use the diagram, how to do this algebraically is on the next page.)    We can travel in directions parallel to and . We get roughly there by going about 1.3 in the direction of and -1.3 in the direction of .   Linear combination of vectors and to get (approximately) the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1.3\\mathbf{v}-1.3\\mathbf{w}           Can you find any two-dimensional vectors that cannot be expressed as linear combinations of and ?    No! We can travel along the gray diamond-like grid lines (sometimes partially so) to get anywhere in the -plane.      Make sure you can answer the following questions:     How do we multiply a vector by a scalar? How do we add two vectors?    How do we picture vector addition and scalar multiplication geometrically?    What is a linear combination of vectors?     "
+  "body": " Section 2.1 - Vectors and Linear Combinations   Visit this web site where you find an interactive figure you can use to investigate linear combinations. We will consider the vectors and consider linear combinations (which is shown in red).     The weight is initially set to 0 in the interactive figure. Explain what happens as you vary with ? How is this related to scalar multiplication?    The vector stretches (when ), shrinks (when ), and flips over the origin (when ). When , we are getting all scalar multiples of .      What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.    We can take the following linear combination:    Linear combination of vectors v and w. to get the vector [0,-3].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1\\mathbf{v}-2\\mathbf{w}           Can the vector be expressed as a linear combination of and ? If so, what are weights and ?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [0, 0]    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    0\\mathbf{v}+0\\mathbf{w}           Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [-3,0].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    -2\\mathbf{v}+1\\mathbf{w}       Using the grey diamond-like background we can see that walking 1 along and \"backwards\" 2 along gives the desired vector .      Verify the result from the previous part by algebraically substituting the weights and and the vectors and and checking you get .    We can take the following linear combination:       Can the vector be expressed as a linear combination of and ? (Use the diagram, how to do this algebraically is on the next page.)    We can travel in directions parallel to and . We get roughly there by going about 1.3 in the direction of and -1.3 in the direction of .   Linear combination of vectors v and w to get (approximately) the vector [1.3, -1.7].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1.3\\mathbf{v}-1.3\\mathbf{w}           Can you find any two-dimensional vectors that cannot be expressed as linear combinations of and ?    No! We can travel along the gray diamond-like grid lines (sometimes partially so) to get anywhere in the -plane.      Make sure you can answer the following questions:     How do we multiply a vector by a scalar? How do we add two vectors?    How do we picture vector addition and scalar multiplication geometrically?    What is a linear combination of vectors?     "
 },
 {
   "id": "activities-8-3",
@@ -457,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.    We can take the following linear combination:    Linear combination of vectors and to get the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1\\mathbf{v}-2\\mathbf{w}        "
+  "body": "  What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.    We can take the following linear combination:    Linear combination of vectors v and w. to get the vector [0,-3].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1\\mathbf{v}-2\\mathbf{w}        "
 },
 {
   "id": "activities-8-5",
@@ -466,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Can the vector be expressed as a linear combination of and ? If so, what are weights and ?    Yes! Let and .   Linear combination of vectors and to get the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    0\\mathbf{v}+0\\mathbf{w}        "
+  "body": "  Can the vector be expressed as a linear combination of and ? If so, what are weights and ?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [0, 0]    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    0\\mathbf{v}+0\\mathbf{w}        "
 },
 {
   "id": "activities-8-6",
@@ -475,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?    Yes! Let and .   Linear combination of vectors and to get the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    -2\\mathbf{v}+1\\mathbf{w}       Using the grey diamond-like background we can see that walking 1 along and \"backwards\" 2 along gives the desired vector .   "
+  "body": "  Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [-3,0].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    -2\\mathbf{v}+1\\mathbf{w}       Using the grey diamond-like background we can see that walking 1 along and \"backwards\" 2 along gives the desired vector .   "
 },
 {
   "id": "activities-8-7",
@@ -493,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  Can the vector be expressed as a linear combination of and ? (Use the diagram, how to do this algebraically is on the next page.)    We can travel in directions parallel to and . We get roughly there by going about 1.3 in the direction of and -1.3 in the direction of .   Linear combination of vectors and to get (approximately) the vector .    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1.3\\mathbf{v}-1.3\\mathbf{w}        "
+  "body": "  Can the vector be expressed as a linear combination of and ? (Use the diagram, how to do this algebraically is on the next page.)    We can travel in directions parallel to and . We get roughly there by going about 1.3 in the direction of and -1.3 in the direction of .   Linear combination of vectors v and w to get (approximately) the vector [1.3, -1.7].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1.3\\mathbf{v}-1.3\\mathbf{w}        "
 },
 {
   "id": "activities-8-9",
@@ -1276,52 +1276,70 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.1 - Invertibility",
-  "body": " Section 3.1 - Invertibility    Consider the matrices     [label=(\\alph*)]      Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?       Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      What is the matrix . Is it true ? (Can do this with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation       Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix---that is, has the same number of rows and columns---what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?       Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?      Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?    "
+  "body": " Section 3.1 - Invertibility    An matrix is called invertible if there is a matrix such that where is the identity matrix. The matrix is called the inverse and denoted .     Notice that we only define invertibility for matrices that have the same number of rows and columns in which case we say the matrix is square .     Consider the matrices             Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?       Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      Based on the previous parts, what is the matrix ? Is it true ? (Can multiply with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation        Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix - that is, has the same number of rows and columns - what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?       Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?      Make sure you can answer the following questions:     Given a matrix, how can one use row reduction to tell if the matrix is invertible?    How can we use the inverse of a matrix to solve .      "
 },
 {
-  "id": "activities-18-2",
+  "id": "def-invertible",
   "level": "2",
-  "url": "activities-18.html#activities-18-2",
-  "type": "Worksheet Exercise",
-  "number": "1",
+  "url": "activities-18.html#def-invertible",
+  "type": "Definition",
+  "number": "9",
   "title": "",
-  "body": "  Consider the matrices     [label=(\\alph*)]      Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?    "
+  "body": "  An matrix is called invertible if there is a matrix such that where is the identity matrix. The matrix is called the inverse and denoted .   "
 },
 {
   "id": "activities-18-3",
   "level": "2",
   "url": "activities-18.html#activities-18-3",
-  "type": "Worksheet Exercise",
-  "number": "2",
+  "type": "Remark",
+  "number": "10",
   "title": "",
-  "body": "  Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      What is the matrix . Is it true ? (Can do this with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation    "
+  "body": " Notice that we only define invertibility for matrices that have the same number of rows and columns in which case we say the matrix is square .  "
 },
 {
   "id": "activities-18-4",
   "level": "2",
   "url": "activities-18.html#activities-18-4",
   "type": "Worksheet Exercise",
-  "number": "3",
+  "number": "1",
   "title": "",
-  "body": "  Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix---that is, has the same number of rows and columns---what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?    "
+  "body": "  Consider the matrices             Define these matrices in Sage. What is the product ?      Is invertible? If so, what is its inverse ?      What is the product ? Is invertible? If so, what is its inverse ?      Find the solution to the equation using .      Remember that the product of matrices usually depends on the order in which you multiply; that is, if and are matrices, it usually happens that . In this example, does it appear that order matters when talking about inverses?    "
 },
 {
   "id": "activities-18-5",
   "level": "2",
   "url": "activities-18.html#activities-18-5",
   "type": "Worksheet Exercise",
-  "number": "4",
+  "number": "2",
   "title": "",
-  "body": "  Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?   "
+  "body": "  Let's begin with the matrix . We would like to know if its invertible; in other words, we'd like to know if we can find a matrix such that . Let's denote by This means that we need to solve where and are the columns of the identity matrix. We therefore have the two equations that we can solve for and .     Using Gaussian elimination, solve the equation to find .      Using Gaussian elimination, solve the equation to find .      Based on the previous parts, what is the matrix ? Is it true ? (Can multiply with Sage.)      Is invertible? If so, what is ?      If , what happens when you try to apply this process to find ?      Let's go back to . Solve using Gaussian Elimination.      Use the matrix you found above and find the product . What does this have to do with the solution to the equation ?      Use the matrix to solve the equation     "
 },
 {
   "id": "activities-18-6",
   "level": "2",
   "url": "activities-18.html#activities-18-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose is an matrix. We've seen that, if is invertible with inverse , then has the solution . This means that the equation is consistent for every vector .     What does this imply about the span of the columns of ?      What does this imply about the pivot positions of ?      Since is a square matrix - that is, has the same number of rows and columns - what is the reduced row echelon form of ?      What can you say about the linear independence\/dependence of the columns of ?    "
+},
+{
+  "id": "activities-18-7",
+  "level": "2",
+  "url": "activities-18.html#activities-18-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Take Find the reduced row echelon form of these matrices. What does this tell you about the invertibility of these two matrices?   "
+},
+{
+  "id": "activities-18-8",
+  "level": "2",
+  "url": "activities-18.html#activities-18-8",
   "type": "Outcomes",
   "number": "",
   "title": "",
-  "body": "  Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?   "
+  "body": "  Make sure you can answer the following questions:     Given a matrix, how can one use row reduction to tell if the matrix is invertible?    How can we use the inverse of a matrix to solve .     "
 },
 {
   "id": "activities-19",
@@ -1330,16 +1348,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.1 - Invertibility - Part 2",
-  "body": " Section 3.1 - Invertibility - Part 2    Suppose  If is the inverse of , we could solve the following three equations separately to find the columns of : \\\\ But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity\\_matrix(3) . You may augment using B.augment(identity\\_matrix(3))      Use to solve the equation .       Consider the matrix     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or \\begin{verbatim}B^(-1)\\end{verbatim}.      Using from problem 1 and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?       Suppose and are invertible matrices.     Explain why by simplifying      Explain why the product of two invertible matrices is always invertible.       Suppose that is a matrix whose columns are linearly independent. Can you guarantee that is invertible? Explain.      If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:     Which of the two triangular matrices below are invertible?      Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?       Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?    "
+  "body": " Section 3.1 - Invertibility - Part 2    Suppose   If is the inverse of , we could solve the following three equations separately to find the columns of : But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity_matrix(3) . You may augment using A.augment(identity_matrix(3))       Use to solve the equation .       Consider the matrix Use Sage for this question!     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or B^(-1) .      Using from and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?       Suppose and are invertible matrices.     Explain why by simplifying       Explain why the product of two invertible matrices is always invertible.       Suppose that is a matrix whose columns are linearly independent. Can you guarantee that is invertible? Explain.       If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:      Which of the two triangular matrices below are invertible?       Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?       Make sure you can answer the following questions:      How do we find the inverse of a matrix using row reduction?    How do we find the inverse of a matrix using Sage?    What is in terms of and ?     "
 },
 {
-  "id": "activities-19-2",
+  "id": "sec3-1-2-matrixA",
   "level": "2",
-  "url": "activities-19.html#activities-19-2",
+  "url": "activities-19.html#sec3-1-2-matrixA",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose  If is the inverse of , we could solve the following three equations separately to find the columns of : \\\\ But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity\\_matrix(3) . You may augment using B.augment(identity\\_matrix(3))      Use to solve the equation .    "
+  "body": "  Suppose   If is the inverse of , we could solve the following three equations separately to find the columns of : But, we may as well solve them at the same time.     To do this, build the augmented matrix and find the reduced row echelon form. How does this produce ? Note: In Sage, you may create the identity matrix by identity_matrix(3) . You may augment using A.augment(identity_matrix(3))       Use to solve the equation .    "
 },
 {
   "id": "activities-19-3",
@@ -1348,7 +1366,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Consider the matrix     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or \\begin{verbatim}B^(-1)\\end{verbatim}.      Using from problem 1 and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?    "
+  "body": "  Consider the matrix Use Sage for this question!     Explain why the matrix is invertible. (Think about row reducing.)      Find the inverse . Note: In Sage, you may find the inverse of a matrix B using B.inverse() or B^(-1) .      Using from and from this problem, is invertible? If so, what is its inverse?      Find and . Which one is the same as ?    "
 },
 {
   "id": "activities-19-4",
@@ -1357,7 +1375,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Suppose and are invertible matrices.     Explain why by simplifying      Explain why the product of two invertible matrices is always invertible.    "
+  "body": "  Suppose and are invertible matrices.     Explain why by simplifying       Explain why the product of two invertible matrices is always invertible.    "
 },
 {
   "id": "activities-19-5",
@@ -1375,7 +1393,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:     Which of the two triangular matrices below are invertible?      Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?    "
+  "body": "   If time: A matrix is lower triangular if all its entries above the diagonal are zero. A matrix is upper triangular if all of its entries below the diagonal are zero. E.g., is lower triangular and is upper triangular:      Which of the two triangular matrices below are invertible?       Without doing any row reduction, can you figure out how to tell if a lower or upper triangular matrix is invertible?    "
 },
 {
   "id": "activities-19-7",
@@ -1384,7 +1402,7 @@ var ptx_lunr_docs = [
   "type": "Outcomes",
   "number": "",
   "title": "",
-  "body": "  Make sure you can answer the following questions:    Given a matrix, how can one use row reduction to tell if the matrix is invertible?  How can we use the inverse of a matrix to solve .  How do we find the inverse of a matrix using row reduction?  How do we find the inverse of a matrix using Sage?   "
+  "body": "  Make sure you can answer the following questions:      How do we find the inverse of a matrix using row reduction?    How do we find the inverse of a matrix using Sage?    What is in terms of and ?    "
 },
 {
   "id": "activities-20",
@@ -1393,7 +1411,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.2 - Bases and Coordinate Systems",
-  "body": " Section 3.2 - Bases and Coordinate Systems   \\\\  A set of vectors in that spans and is linearly independent is called a basis of .     This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?       Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .  \\begin{center} \\includegraphics{basis-1.eps} \\end{center}  We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as  In general, if , then     Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ?       Consider the vectors     Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system.\\footnote{The representation in the standard coordinate system is with the standard basis vectors ,}      Explain how to convert the vector into , its representation in the coordinate system defined by .       Make sure you can answer the following questions (at least for 2 and 3 variables):    What is a basis?  How do we determine if a given set of vectors is a basis?  How many vectors are in any basis for ?  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?    "
+  "body": " Section 3.2 - Bases and Coordinate Systems     A set of vectors in that spans and is linearly independent is called a basis of .       This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      Do the vectors , , form a basis for ? Why or why not?      Do the vectors , , , form a basis for ? Why or why not? How could you do this problem without row reducing?      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?       A set of vectors forms a basis for if and only if the matrix This means there must be vectors in      Notice that the vectors forms the columns of the identity matrix which implies this set forms a basis for . More generally, the set of vectors forms a basis for which we call the standard basis for .    Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .   The grid formed by the basis vectors and .   Two vectors and a set of skewed grid lines representing their linear combinations.   There is a set of coordinate axes and a standard coordinate grid in the background. There are also two vectors and and two sets of parallel lines representing the linear combinations of and . One set of parallel lines is parallel to and passes through the integer multiples of while the other set is parallel to and passes through integer multiples of .     v1=(2,1)  v2=(1,2)      \\vvec_1    \\vvec_2             We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as   In general, if , then The coordinates are the weights in the linear combinations.     Using , repeated below, answer the following questions.   Two vectors and a set of skewed grid lines representing their linear combinations.    v1=(2,1)  v2=(1,2)      \\vvec_1    \\vvec_2          Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ? Can you use the grid to determine this?       Consider the vectors      Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system. The representation in the standard coordinate system is with the standard basis vectors .       Explain how to convert the vector into , its representation in the coordinate system defined by .      Read and explain        If is a basis and the matrix whose columns are the basis vectors, then        Make sure you can answer the following questions (at least for 2 and 3 variables):     What is a basis?    How do we determine if a given set of vectors is a basis?    How many vectors are in any basis for ?    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)    How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)    How do we think about non-standard bases geometrically?     "
+},
+{
+  "id": "def-",
+  "level": "2",
+  "url": "activities-20.html#def-",
+  "type": "Definition",
+  "number": "11",
+  "title": "",
+  "body": "  A set of vectors in that spans and is linearly independent is called a basis of .   "
 },
 {
   "id": "activities-20-3",
@@ -1402,34 +1429,70 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?    "
+  "body": "  This question is to get you familiar with facts about bases.     Explain why the vectors and form a basis for .      Explain why the vectors , , and form a basis for .      Do the vectors , , form a basis for ? Why or why not?      Do the vectors , , , form a basis for ? Why or why not? How could you do this problem without row reducing?      How many vectors will be in a basis for ? Explain your thinking. In general, how many vectors will be in a basis for ?      Suppose that is a basis for . Explain why every vector in can be written as a linear combination of in exactly one way.      If form a basis for what is the row reduced echelon form of ?      What can you say about the invertibility of the matrix if its columns form a basis?    "
 },
 {
-  "id": "activities-20-4",
+  "id": "prop-sec3-2-basis",
   "level": "2",
-  "url": "activities-20.html#activities-20-4",
-  "type": "Worksheet Exercise",
-  "number": "2",
+  "url": "activities-20.html#prop-sec3-2-basis",
+  "type": "Proposition",
+  "number": "12",
   "title": "",
-  "body": "  Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .  \\begin{center} \\includegraphics{basis-1.eps} \\end{center}  We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as  In general, if , then     Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ?    "
+  "body": "  A set of vectors forms a basis for if and only if the matrix This means there must be vectors in    "
 },
 {
   "id": "activities-20-5",
   "level": "2",
   "url": "activities-20.html#activities-20-5",
-  "type": "Worksheet Exercise",
-  "number": "3",
+  "type": "Example",
+  "number": "13",
   "title": "",
-  "body": "  Consider the vectors     Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system.\\footnote{The representation in the standard coordinate system is with the standard basis vectors ,}      Explain how to convert the vector into , its representation in the coordinate system defined by .    "
+  "body": " Notice that the vectors forms the columns of the identity matrix which implies this set forms a basis for . More generally, the set of vectors forms a basis for which we call the standard basis for .  "
 },
 {
   "id": "activities-20-6",
   "level": "2",
   "url": "activities-20.html#activities-20-6",
+  "type": "Example",
+  "number": "14",
+  "title": "",
+  "body": " Suppose that and . In part 1a you explained why these vectors form a basis of , and we'll denote this basis as . Every vector in can be expressed in two different ways: in its usual form as a column vector AND as a linear combination of and . We are going to use this to define a new coordinate system for .   The grid formed by the basis vectors and .   Two vectors and a set of skewed grid lines representing their linear combinations.   There is a set of coordinate axes and a standard coordinate grid in the background. There are also two vectors and and two sets of parallel lines representing the linear combinations of and . One set of parallel lines is parallel to and passes through the integer multiples of while the other set is parallel to and passes through integer multiples of .     v1=(2,1)  v2=(1,2)      \\vvec_1    \\vvec_2             We can express the vector as linear combination of and , that is . (And we can see this using the figure above or using algebra.) In our new coordinate system defined by and , this vector has coordinates and , that is the first coordinate in our new system is the weight of , and the second coordinate is the weight of when our vector is written as a linear combination of and . We will write this as   In general, if , then The coordinates are the weights in the linear combinations.  "
+},
+{
+  "id": "activities-20-7",
+  "level": "2",
+  "url": "activities-20.html#activities-20-7",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Using , repeated below, answer the following questions.   Two vectors and a set of skewed grid lines representing their linear combinations.    v1=(2,1)  v2=(1,2)      \\vvec_1    \\vvec_2          Express as a linear combination of and to find the coordinates . Do using algebra. Does your answer seem reasonable based on the figure?      Find the vector so that . Can you use the figure first? Then do using algebra? (Notice this is ``opposite\" from question (a).)      Suppose that . What is ? Can you use the grid to determine this?    "
+},
+{
+  "id": "activities-20-8",
+  "level": "2",
+  "url": "activities-20.html#activities-20-8",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Consider the vectors      Explain why the vectors form a basis for .      Find the vector such that .      Find the coordinates .      Explain how to convert , the representation of a vector in the coordinates defined by , into , its representation in the standard coordinate system. The representation in the standard coordinate system is with the standard basis vectors .       Explain how to convert the vector into , its representation in the coordinate system defined by .      Read and explain     "
+},
+{
+  "id": "prop-3-2-basisconversion",
+  "level": "2",
+  "url": "activities-20.html#prop-3-2-basisconversion",
+  "type": "Proposition",
+  "number": "16",
+  "title": "",
+  "body": "  If is a basis and the matrix whose columns are the basis vectors, then     "
+},
+{
+  "id": "activities-20-10",
+  "level": "2",
+  "url": "activities-20.html#activities-20-10",
   "type": "Outcomes",
   "number": "",
   "title": "",
-  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):    What is a basis?  How do we determine if a given set of vectors is a basis?  How many vectors are in any basis for ?  How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?   "
+  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):     What is a basis?    How do we determine if a given set of vectors is a basis?    How many vectors are in any basis for ?    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)    How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)    How do we think about non-standard bases geometrically?    "
 },
 {
   "id": "activities-21",
@@ -1438,7 +1501,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.2 - Bases and Coordinate Systems - Part 2",
-  "body": " Section 3.2 - Bases and Coordinate Systems - Part 2   \\\\  Recall: if is a basis for , then if then That is, is the normal vector in standard form, and is the vector of coefficients (weights) of the linear combination of the vectors in the basis that equals .     Suppose that is the basis for consisting of the vectors and . Let's form the matrix     Explain why .      Find a matrix such that .       Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to { http:\/\/gvsu.edu\/s\/0Jc } where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?        Find the matrix that converts into (that is ). You may want to give this a name in Sage; that is, Pb = matrix(...) .      Find the matrix that converts into . You may also want to give this a name in Sage.      Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Write an expression for the luminance as it depends on , , and . Explain how the luminance represents the brightness of the color.      Write an expression for the blue chrominance in terms of , , and . Explain how the blue chrominance measures the amount of blue in the color.       Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?    "
+  "body": " Section 3.2 - Bases and Coordinate Systems - Part 2   Recall: if is a basis for , then if then That is, is the normal vector in standard form, and is the vector of coefficients (weights) of the linear combination of the vectors in the basis that equals .     Suppose that is the basis for consisting of the vectors and . Let's form the matrix     Explain why .      Find a matrix such that .       Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?        Find the matrix that converts into (that is ). You may want to give this a name in Sage; that is, Pb = matrix(...) .      Find the matrix that converts into . You may also want to give this a name in Sage.      Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Find the coordinates for the following colors and use the diagrams to check that the two representations agree.       Write an expression for the luminance as it depends on , , and . Explain how the luminance represents the brightness of the color.      Write an expression for the blue chrominance in terms of , , and . Explain how the blue chrominance measures the amount of blue in the color.       Make sure you can answer the following questions (at least for 2 and 3 variables):     Why might working in another basis be useful?   How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)    "
 },
 {
   "id": "activities-21-3",
@@ -1456,7 +1519,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to { http:\/\/gvsu.edu\/s\/0Jc } where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?    "
+  "body": "  Computers represent colors using a color model . The simplest is the color model, which represents colors as a 3-dimensional vector describing how much red , green , and blue to mix together to create a color. These quantities are represented internally with 8 bytes so, in practice, the range of values is to for each color, , , and .  A second color model is , which is known as the luminance-chrominance color model. We introduce the basis consisting of vectors and define The quantity is called the luminance and measures the brightness of the color, is the blue chrominance and measures how much blue is mixed in, and is the red chrominance and measures how much red is mixed in. The ranges of values are  Go to where you will find some figures to experiment with color models. Remember that , , , and run between 0 and 255 while and run between -127.5 and 127.5.     What happens when and (pushed all the way to the left) and is allowed to vary?      What happens when and (pushed all the way to the left) and is allowed to vary?      What vector represents black in the color model? What vector represents white?      What happens when and (kept in the center) and is allowed to vary?      What happens when (pushed left) and (kept in the center) and is allowed to increase from 0 to 127.5?      What vector represents black in the color model? What vector represents white?    "
 },
 {
   "id": "activities-21-5",
@@ -1474,7 +1537,7 @@ var ptx_lunr_docs = [
   "type": "Outcomes",
   "number": "",
   "title": "",
-  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)  How do we think about non-standard bases geometrically?   "
+  "body": "  Make sure you can answer the following questions (at least for 2 and 3 variables):     Why might working in another basis be useful?   How do we convert from a vector in a non-standard basis to its standard basis coordinates algebraically? (That is, to .)  How do we convert from a vector in a standard basis to its coordinates in another basis algebraically? (That is, to .)   "
 },
 {
   "id": "activities-22",
@@ -1483,7 +1546,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.4 - Determinants",
-  "body": " Section 3.4 - Determinants   \\\\  Recall that the determinant a matrix is the area of the parallelogram formed by and , with a negative sign if the vectors are negatively oriented. We denote the determinant of as .     For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .        When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:      Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix      We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.       Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.       Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?    "
+  "body": " Section 3.4 - Determinants   Recall that the determinant a matrix is the area of the parallelogram formed by and , with a negative sign if the vectors are negatively oriented. We denote the determinant of as .     For this first problem, go to Section 3.4: Determinants, Activity 3.4.7 in your textbook . The appplet will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix? Diagonal means the only non-zero entries are on the diagonal.       Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .        In general the determinant of a matrix is the (signed) area of the parallelogram the two vectors form. A formula is . When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:      Sage can easily find the determinant of a square matrix A with either A.det() or A.determinant() . Find the determinant of the matrix      We are interested in understanding a connection between the determinant of a matrix and the invertibility of that matrix. To understand this connection, we will study the effect of the three row operations (interchange, scaling, and row replacement) on determinants.     Interchange: Take the matrix from question 3 and interchange any two rows to obtain a matrix . Compute . How does it compare to ? This is what generally happens.  If a matrix has a nonzero determinant and we interchange two rows, explain why the determinant of the new matrix is nonzero.      Scaling: Now scale the first row of by to obtain the matrix . Compute and compare it to . This is also what happens generally.  If a matrix has a nonzero determinant and we scale a row by a nonzero number, explain why the determinant of the new matrix is nonzero.      Row replacement: Finally, perform a row replacement operation\\footnote{Add a scalar multiple of one row to another row and replace that row, like we do when row reducing.} on to obtain . Compute and comapre it to . This is also what generally happens.  If a matrix has a nonzero determinant and we perform a row replacement operation, explain why the determinant of the new matrix is nonzero.       Using question 4, we'll determine the relationship between invertibility and determinants:     If you have a matrix whose determinant is nonzero, what can you guarantee about the determinant of its row echelon form? Explain your thinking.      Consider the following two matrices, both of which are in reduced row echelon form: Find and (you shouldn't need Sage to do this).      If is a matrix with a nonzero determinant, which of the two matrices and is possible as the reduced row echelon form of ? Explain your thinking.      If is a matrix with nonzero determinant, what can you guarantee about the reduced row echelon form of ?      If a square matrix with a nonzero determinant, explain why is invertible.       Since a nonzero determinant means a matrix is invertible, we can add determinants to our mental chart of connections between linear algebra ideas like bases, linear independence, and span.     Use a determinant to determine whether the following vectors form a basis for :       Without doing any computation explain how you know        Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix geometrically?  How can we easily compute the determinant of a diagonal (or upper or lower triangular) matrix?  What is in terms of and ?  Given , how can you tell if is invertible?    "
 },
 {
   "id": "activities-22-3",
@@ -1492,7 +1555,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For this first problem, go to Section 3.4: Determinants, in your textbook \\\\ http:\/\/gvsu.edu\/s\/1rw and scroll down to the applet in Activity 3.4.2 (it will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix?\\footnote{Diagonal means the only non-zero entries are on the diagonal.}      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .     "
+  "body": "  For this first problem, go to Section 3.4: Determinants, Activity 3.4.7 in your textbook . The appplet will have a blue square and 4 sliders).  The 4 sliders are corresponding to the matrix . If the figure turns red, it means the vectors are negatively oriented.     Use the diagram to find the determinant of .      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix? What does this lead you to believe is generally true about the determinant of a diagonal matrix? Diagonal means the only non-zero entries are on the diagonal.       Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      Use the diagram to find the determinant of the matrix What is the geometric effect of the matrix transformation defined by this matrix?      What do you notice about the determinant of any matrix of the form This matrix is special because it is ``upper triangular\", which means all the entries below the diagonal (in this case there is only one), are . What do you think you can say about the determinant of an upper triangular matrix in general?      Use the diagram to find the determinant of the matrix What can you say in general about the determinant of matrix that has linearly dependent columns?      Consider the matrices Use the diagram to find the determinants of , , and . What does this suggest is generally true about the relationship of to and ?     Here's some facts we'll use about determinants which you may have discovered in question 1:    (the determinant of the identity is )  If is diagonal then is the product of its diagonal entries. (Since each diagonal entry represents stretching along one of the axes.)  If is upper triangular (or lower triangular), then is also the product of the entries on the diagonal. (The parallelograms have equal area.)   If the columns of are linearly dependent then .     "
 },
 {
   "id": "activities-22-4",
@@ -1501,7 +1564,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:   "
+  "body": "  In general the determinant of a matrix is the (signed) area of the parallelogram the two vectors form. A formula is . When we generalize to dimensions we end up finding the volume of a parallelpiped. We won't worry about the geometric details here, but instead we'll use the fact that the determinant of an upper (or lower) triangular matrix is the product of the entries on the diagonal. Find the determinant of the upper triangular matrix:   "
 },
 {
   "id": "activities-22-5",
@@ -1534,6 +1597,15 @@ var ptx_lunr_docs = [
   "id": "activities-22-8",
   "level": "2",
   "url": "activities-22.html#activities-22-8",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Since a nonzero determinant means a matrix is invertible, we can add determinants to our mental chart of connections between linear algebra ideas like bases, linear independence, and span.     Use a determinant to determine whether the following vectors form a basis for :       Without doing any computation explain how you know     "
+},
+{
+  "id": "activities-22-9",
+  "level": "2",
+  "url": "activities-22.html#activities-22-9",
   "type": "Outcomes",
   "number": "",
   "title": "",
@@ -1546,7 +1618,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.4 - Determinants using Cofactor Expansion - Part 2",
-  "body": " Section 3.4 - Determinants using Cofactor Expansion - Part 2    Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.      Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)      Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.      Use a cofactor expansion to determine whether the following vectors form a basis for :      Explain how you could know that without doing any computation.      Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix algebraically?  How do we apply cofactor expansion?    "
+  "body": " Section 3.4 - Determinants using Cofactor Expansion - Part 2    Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.      Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)      Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.       Make sure you can answer the following questions (at least for 2 and 3 variables):    How do we think about the determinant of a 2x2 matrix algebraically?  How do we apply cofactor expansion?    "
 },
 {
   "id": "activities-23-2",
@@ -1579,24 +1651,6 @@ var ptx_lunr_docs = [
   "id": "activities-23-5",
   "level": "2",
   "url": "activities-23.html#activities-23-5",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  Use a cofactor expansion to determine whether the following vectors form a basis for :   "
-},
-{
-  "id": "activities-23-6",
-  "level": "2",
-  "url": "activities-23.html#activities-23-6",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  Explain how you could know that without doing any computation.   "
-},
-{
-  "id": "activities-23-7",
-  "level": "2",
-  "url": "activities-23.html#activities-23-7",
   "type": "Outcomes",
   "number": "",
   "title": "",
@@ -1609,16 +1663,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.5 - Subspaces of <span class=\"process-math\">\\(\\real^p\\)<\/span>",
-  "body": " Section 3.5 - Subspaces of   \\\\  The first subspace we'll look at is called the \\em column space of and denoted as . It's just the span of the columns of :     Consider the matrix     Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Since and span and are linearly independent, we say they form a basis for . The \\em dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of ( ), and what geometrical shape does it form in ?       Suppose we have a matrix     What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.       Generally speaking, what is the relationship between the dimension and the number of pivots in ?  The second subspace we'll look at is called the \\em null space of and denoted . It's just the solution set of the equation .      Let's now go back to the matrix at the top of the first page, rewritten here:     Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?       Let's go back to the matrix , rewritten below     Find a basis for .      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.       Suppose that is a matrix with 30 pivots.     is a \\underline{}-dimensional subspace of where \\underline{}.      is a \\underline{}-dimensional subspace of where \\underline{}.       The rank of a matrix , denoted, is the number of pivot positions of .     What is the relationship between the rank of a matrix and the dimension of ?      Say is an matrix. Fill in the blank:       Make sure you can answer the following questions:    What is the definition of a subspace? How can we tell if something is a subspace?  What is the dimension of a subspace? How do we find it?  How do we find the null space of a matrix?  How do we find the column space of a matrix?  What is the relationship between the dimension of the column space and the dimension of the null space?    "
+  "body": " Section 3.5 - Subspaces of     A subspace of is a subset of that is the span of a set of vectors.    In this section we will look at some important subspaces.     Let's start by understanding a few things about subspaces.     If is a set of vectors in , explain why the zero vector can be expressed as a linear combination of these vectors. Usse this fact to explain why belongs to any subspace in .      Explain why the line on the left is not a subspace of , and the line on the right is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.                A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.                     Suppose that , , , and are four vectors in and that Give a description of the subspace of .     The first important subspace we'll look at is called the column space of and denoted as . It's just the span of the columns of .    If is an matrix we call the span of its colums the column space of and denote it as . That is       Consider the matrix      Give an example of a vector in .      Is in ? Is in ?      Fill in the blanks: is a subspace of because .      Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Describe geometrically.      Since and span and are linearly independent, we say they form a basis for . The dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of (denoted )?       A basis for a subspace of is a set of vectors in that are linearly independent and whose span is . We say that the dimension of the subspace , denoted is the number of vectors in any basis.      Suppose we have a matrix      What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Fill in the blanks: is a -dimensional subspace of where         Generally speaking, what is the relationship between the dimension and the number of pivots in ?    The second subspace we'll look at is called the null space of and is denoted . It's just the solution set of the equation .    If is an matrix we call the subset of vectors in satisfying the null space of and denote it by .      Let's now go back to the matrix from , rewritten here:      Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?       Let's go back to the matrix from , rewritten below      Find a basis for .      Complete the sentence: is a -dimensional subspace of where  .       Suppose that is a matrix with 30 pivots.      is a -dimensional subspace of where  .       is a -dimensional subspace of where  .       The rank of a matrix is the number of pivot positions in and is denoted by .      Let's make further connections between topics and new vocabulary.     How can we use information about the pivots to get a basis for ?      What is the relationship between the rank of a matrix and the dimension of ?      If is an invertible matrix, what can you say about ?      Suppose that is an matrix and . If is an 8-dimensional vector, what can you say about the equation .      Say is an matrix. Fill in the blank:        Make sure you can answer the following questions:     What is the definition of a subspace? How can we tell if something is a subspace?    What is the dimension of a subspace? How do we find it?    How do we find the null space of a matrix?    How do we find the column space of a matrix?    What is the relationship between the dimension of the column space and the dimension of the null space?     "
 },
 {
-  "id": "activities-24-2-2",
+  "id": "def-3-5-subspace",
   "level": "2",
-  "url": "activities-24.html#activities-24-2-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "activities-24.html#def-3-5-subspace",
+  "type": "Definition",
+  "number": "17",
   "title": "",
-  "body": "\\em column space "
+  "body": "  A subspace of is a subset of that is the span of a set of vectors.   "
 },
 {
   "id": "activities-24-3",
@@ -1627,70 +1681,133 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the matrix     Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Since and span and are linearly independent, we say they form a basis for . The \\em dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of ( ), and what geometrical shape does it form in ?    "
+  "body": "  Let's start by understanding a few things about subspaces.     If is a set of vectors in , explain why the zero vector can be expressed as a linear combination of these vectors. Usse this fact to explain why belongs to any subspace in .      Explain why the line on the left is not a subspace of , and the line on the right is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.                A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.                     Suppose that , , , and are four vectors in and that Give a description of the subspace of .    "
 },
 {
   "id": "activities-24-4",
   "level": "2",
   "url": "activities-24.html#activities-24-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "column space "
+},
+{
+  "id": "def-3-5-colspace",
+  "level": "2",
+  "url": "activities-24.html#def-3-5-colspace",
+  "type": "Definition",
+  "number": "19",
+  "title": "",
+  "body": "  If is an matrix we call the span of its colums the column space of and denote it as . That is    "
+},
+{
+  "id": "exer-3-5-col",
+  "level": "2",
+  "url": "activities-24.html#exer-3-5-col",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Suppose we have a matrix     What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.    "
+  "body": "  Consider the matrix      Give an example of a vector in .      Is in ? Is in ?      Fill in the blanks: is a subspace of because .      Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Describe geometrically.      Since and span and are linearly independent, we say they form a basis for . The dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of (denoted )?    "
 },
 {
-  "id": "activities-24-5",
+  "id": "def-3-5-basisdim",
   "level": "2",
-  "url": "activities-24.html#activities-24-5",
+  "url": "activities-24.html#def-3-5-basisdim",
+  "type": "Definition",
+  "number": "20",
+  "title": "",
+  "body": "  A basis for a subspace of is a set of vectors in that are linearly independent and whose span is . We say that the dimension of the subspace , denoted is the number of vectors in any basis.   "
+},
+{
+  "id": "exer-3-5-colB",
+  "level": "2",
+  "url": "activities-24.html#exer-3-5-colB",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Generally speaking, what is the relationship between the dimension and the number of pivots in ?  The second subspace we'll look at is called the \\em null space of and denoted . It's just the solution set of the equation .   "
-},
-{
-  "id": "activities-24-6",
-  "level": "2",
-  "url": "activities-24.html#activities-24-6",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  Let's now go back to the matrix at the top of the first page, rewritten here:     Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?    "
-},
-{
-  "id": "activities-24-7",
-  "level": "2",
-  "url": "activities-24.html#activities-24-7",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  Let's go back to the matrix , rewritten below     Find a basis for .      Complete the sentence: is a \\underline{}-dimensional subspace of where \\underline{}.    "
-},
-{
-  "id": "activities-24-8",
-  "level": "2",
-  "url": "activities-24.html#activities-24-8",
-  "type": "Worksheet Exercise",
-  "number": "6",
-  "title": "",
-  "body": "  Suppose that is a matrix with 30 pivots.     is a \\underline{}-dimensional subspace of where \\underline{}.      is a \\underline{}-dimensional subspace of where \\underline{}.    "
+  "body": "  Suppose we have a matrix      What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Fill in the blanks: is a -dimensional subspace of where      "
 },
 {
   "id": "activities-24-9",
   "level": "2",
   "url": "activities-24.html#activities-24-9",
   "type": "Worksheet Exercise",
-  "number": "7",
+  "number": "4",
   "title": "",
-  "body": "  The rank of a matrix , denoted, is the number of pivot positions of .     What is the relationship between the rank of a matrix and the dimension of ?      Say is an matrix. Fill in the blank:    "
+  "body": "  Generally speaking, what is the relationship between the dimension and the number of pivots in ?   "
 },
 {
   "id": "activities-24-10",
   "level": "2",
   "url": "activities-24.html#activities-24-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "null space "
+},
+{
+  "id": "def-3-5-null",
+  "level": "2",
+  "url": "activities-24.html#def-3-5-null",
+  "type": "Definition",
+  "number": "21",
+  "title": "",
+  "body": "  If is an matrix we call the subset of vectors in satisfying the null space of and denote it by .   "
+},
+{
+  "id": "activities-24-12",
+  "level": "2",
+  "url": "activities-24.html#activities-24-12",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Let's now go back to the matrix from , rewritten here:      Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?    "
+},
+{
+  "id": "activities-24-13",
+  "level": "2",
+  "url": "activities-24.html#activities-24-13",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Let's go back to the matrix from , rewritten below      Find a basis for .      Complete the sentence: is a -dimensional subspace of where  .    "
+},
+{
+  "id": "activities-24-14",
+  "level": "2",
+  "url": "activities-24.html#activities-24-14",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Suppose that is a matrix with 30 pivots.      is a -dimensional subspace of where  .       is a -dimensional subspace of where  .    "
+},
+{
+  "id": "def-3-5-rank",
+  "level": "2",
+  "url": "activities-24.html#def-3-5-rank",
+  "type": "Definition",
+  "number": "22",
+  "title": "",
+  "body": "  The rank of a matrix is the number of pivot positions in and is denoted by .   "
+},
+{
+  "id": "activities-24-16",
+  "level": "2",
+  "url": "activities-24.html#activities-24-16",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Let's make further connections between topics and new vocabulary.     How can we use information about the pivots to get a basis for ?      What is the relationship between the rank of a matrix and the dimension of ?      If is an invertible matrix, what can you say about ?      Suppose that is an matrix and . If is an 8-dimensional vector, what can you say about the equation .      Say is an matrix. Fill in the blank:     "
+},
+{
+  "id": "activities-24-17",
+  "level": "2",
+  "url": "activities-24.html#activities-24-17",
   "type": "Outcomes",
   "number": "",
   "title": "",
-  "body": "  Make sure you can answer the following questions:    What is the definition of a subspace? How can we tell if something is a subspace?  What is the dimension of a subspace? How do we find it?  How do we find the null space of a matrix?  How do we find the column space of a matrix?  What is the relationship between the dimension of the column space and the dimension of the null space?   "
+  "body": "  Make sure you can answer the following questions:     What is the definition of a subspace? How can we tell if something is a subspace?    What is the dimension of a subspace? How do we find it?    How do we find the null space of a matrix?    How do we find the column space of a matrix?    What is the relationship between the dimension of the column space and the dimension of the null space?    "
 },
 {
   "id": "activities-25",
