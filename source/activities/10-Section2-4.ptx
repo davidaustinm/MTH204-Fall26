@@ -1,18 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
   <title>Section 2.4 - Linear independence</title>
-  <objectives>
-    <ul>
-      <li><p>What does it mean for a set of vectors to be linearly dependent? Linearly independent?</p></li>
-      <li><p>What is the maximum number of vectors in <m>\mathbb{R}^m</m> that can be linearly dependent?</p></li>
-      <li><p>When there is a non-trivial solution to the homogeneous equation <m>A\xvec=\zerovec</m>, what can you say about the columns of the matrix <m>A</m> (in terms of linear dependence/independence)?</p></li>
-    </ul>
-  </objectives>
+
+  <definition>
+    <statement>
+      <p>
+        A set of vectors is called <em>linearly dependent</em> if one of the
+        vectors is a linear combination of the others.
+        Otherwise, the set of vectors is called <em>linearly independent</em>.
+      </p>
+    </statement>
+  </definition>
 
   <exercise>
     <introduction>
-      <p>Consider the matrix
-  <md>A =
+      <p>
+        Consider the colors activity we did on the first day.
+        Let's use the elementary school art definitions, say red, blue and
+        yellow are primary colors (and together can make any color), and purple,
+        green, and orange are secondary colors (that can be made of two primary
+        colors).
+      </p>
+    </introduction>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          What would you say it means for a set of colors to span all colors?
+          What would you say it means for a set of colors to be linearly
+          independent?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Span all colors - we can make any color with the set.
+          Linearly independent - no color in the set can be made with other
+          colors in the set.
+        </p>
+      </solution>
+    </task>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          Put any number of colors (of red, blue, yellow, purple, green, and
+          orange) in each box below satisfying the appropriate conditions, or
+          put X if it’s impossible.
+          Explain your reasoning.
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+          <col width="30%" halign="center"/>
+          <col width="70%"/>
+          <row header="yes">
+            <cell/>
+            <cell>Linearly Dependent</cell>
+            <cell>Linearly Independent</cell>
+          </row>
+
+          <row>
+            <cell>Span is all colors</cell>
+            <cell/>
+            <cell/>
+          </row>
+
+          <row>
+            <cell>Span is not all colors</cell>
+            <cell/>
+            <cell/>
+          </row>
+        </tabular>
+      </statement>
+
+      <solution>
+        <p>
+          For (1), B + Y = G, so they are linearly dependent.
+          But, can make all colors, so it spans.
+          For (2), we can make all colors with R, B, and Y, so it spans.
+          Also, these are all primary colors and can't be used to make each
+          other, so are linearly independent.
+          For (3), R + B = P, so linearly dependent.
+          It does not span since we can't make yellow.
+          For (4), can't make yellow, so this set doesn't span and we can't make
+          red or blue with the others, so linearly independent.
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+          <col width="30%" halign="center"/>
+          <col width="70%"/>
+          <row header="yes">
+            <cell/>
+            <cell>Linearly Dependent</cell>
+            <cell>Linearly Independent</cell>
+          </row>
+
+          <row>
+            <cell>Span is all colors</cell>
+            <cell>(1) R, B, Y, G</cell>
+            <cell>(2) R, B, Y</cell>
+          </row>
+
+          <row>
+            <cell>Span is not all colors</cell>
+            <cell>(3) R, B, P</cell>
+            <cell>(4) R, B</cell>
+          </row>
+        </tabular>
+      </solution>
+    </task>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          Thinking in <m>\mathbb{R}^2</m> now - can a set of two vectors be
+          linearly dependent?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Yes, <m>\{\twovec{0}{1}, \twovec{0}{2}\}</m> is linearly dependent,
+          since <m>2\twovec{0}{1} = \twovec{0}{2}</m>.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        We would like to develop a means to detect when a set of vectors is
+        linearly depen- dent.
+        This activity will point the way.
+      </p>
+    </introduction>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          Suppose that we have five vectors in <m>\mathbb{R}^4</m> that form the
+          columns of a matrix having reduced row echelon form
+          <md>
+            \[\vvec_1 \,\,\, \vvec_2 \,\,\, \vvec_3 \,\,\, \vvec_4 \,\,\, \vvec_5 \] \sim 
+         \begin{bmatrix}
+         1 \amp 0 \amp -1 \amp 0 \amp 2 \\
+         0 \amp 1 \amp 2 \amp 0 \amp 3 \\
+         0 \amp 0 \amp 0 \amp 1 \amp -1 \\
+         0 \amp 0 \amp 0 \amp 0 \amp 0
+         \end{bmatrix}.
+          </md>
+          Is it possible to write one of the vectors
+          <m>\vvec_1, \vvec_2,
+         \vvec_3, \vvec_4, \vvec_5</m> as a
+          linear combination of the others?
+          If so, show explicitly how one vector appears as a linear combination
+          of some of the other vectors.
+          Is this set of vectors linearly dependent or independent?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Yes, it is possible!
+          <m>\vvec_3 = -\vvec_1 + 2\vvec_2</m> and thus, the set of these 3
+          vectors is linearly dependent.
+          Additionally, <m>\vvec_5</m> can be written as a linear combination of
+          the other 4 vectors in infinitely many ways.
+          Therefore, the set of all 5 vectors is linearly dependent.
+        </p>
+      </solution>
+    </task>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          Put any number of colors (of red, blue, yellow, purple, green, and
+          orange) in each box below satisfying the appropriate conditions, or
+          put X if it’s impossible.
+          Explain your reasoning.
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+          <col width="30%" halign="center"/>
+          <col width="70%"/>
+          <row header="yes">
+            <cell/>
+            <cell>Linearly Dependent</cell>
+            <cell>Linearly Independent</cell>
+          </row>
+
+          <row>
+            <cell>Span is all colors</cell>
+            <cell/>
+            <cell/>
+          </row>
+
+          <row>
+            <cell>Span is not all colors</cell>
+            <cell/>
+            <cell/>
+          </row>
+        </tabular>
+      </statement>
+
+      <solution>
+        <p>
+          For (1), B + Y = G, so they are linearly dependent.
+          But, can make all colors, so it spans.
+          For (2), we can make all colors with R, B, and Y, so it spans.
+          Also, these are all primary colors and can't be used to make each
+          other, so are linearly independent.
+          For (3), R + B = P, so linearly dependent.
+          It does not span since we can't make yellow.
+          For (4), can't make yellow, so this set doesn't span and we can't make
+          red or blue with the others, so linearly independent.
+        </p>
+
+        <tabular top="minor" bottom="minor" left="minor" right="minor">
+          <col width="30%" halign="center"/>
+          <col width="70%"/>
+          <row header="yes">
+            <cell/>
+            <cell>Linearly Dependent</cell>
+            <cell>Linearly Independent</cell>
+          </row>
+
+          <row>
+            <cell>Span is all colors</cell>
+            <cell>(1) R, B, Y, G</cell>
+            <cell>(2) R, B, Y</cell>
+          </row>
+
+          <row>
+            <cell>Span is not all colors</cell>
+            <cell>(3) R, B, P</cell>
+            <cell>(4) R, B</cell>
+          </row>
+        </tabular>
+      </solution>
+    </task>
+
+    <task workspace="1in">
+      <statement>
+        <p>
+          Thinking in <m>\mathbb{R}^2</m> now - can a set of two vectors be
+          linearly dependent?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Yes, <m>\{\twovec{0}{1}, \twovec{0}{2}\}</m> is linearly dependent,
+          since <m>2\twovec{0}{1} = \twovec{0}{2}</m>.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Consider the matrix
+        <md>
+          A =
   \left[
     \begin{array}{ccc}
       3 \amp 2 \amp 0 \\
@@ -20,44 +272,68 @@
       2 \amp 1 \amp 1 \\
     \end{array}
   \right]
-  </md>
-  whose columns are the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>.</p>
+        </md>
+        whose columns are the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and
+        <m>\vvec_3</m>.
+      </p>
     </introduction>
+
     <task workspace="1in">
       <statement>
-        <p>[label=(\alph*)]</p>
+        <p>
+          [label=(\alph*)]
+        </p>
       </statement>
     </task>
+
     <task workspace="1.5in">
       <statement>
-        <p>Give a parametric description of the solution space to the
-    equation <m>A\xvec = \zerovec</m>. (This equation is called ``homogeneous" because of the <m>\zerovec</m>.)</p>
+        <p>
+          Give a parametric description of the solution space to the equation
+          <m>A\xvec = \zerovec</m>.
+          (This equation is called ``homogeneous" because of the
+          <m>\zerovec</m>.)
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Find one set of nonzero weights <m>c_1</m>, <m>c_2</m>, <m>c_3</m> such that
-    <md>
-    c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 = \zerovec.
-    </md></p>
+        <p>
+          Find one set of nonzero weights <m>c_1</m>, <m>c_2</m>, <m>c_3</m>
+          such that
+          <md>
+            c_1\vvec_1 + c_2\vvec_2 + c_3\vvec_3 = \zerovec.
+          </md>
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Use these weights to show that one of the vectors can be
-    written as a linear combination of the others.</p>
+        <p>
+          Use these weights to show that one of the vectors can be written as a
+          linear combination of the others.
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Explain why the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>
-    are linearly dependent.</p>
+        <p>
+          Explain why the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and
+          <m>\vvec_3</m> are linearly dependent.
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Do the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m> span
-    <m>\real^3</m>?  (Hint: Use part (a).)</p>
+        <p>
+          Do the vectors <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m> span
+          <m>\real^3</m>?
+          (Hint: Use part (a).)
+        </p>
       </statement>
     </task>
   </exercise>
@@ -65,33 +341,42 @@
   <exercise>
     <task workspace="1in">
       <statement>
-        <p>If <m>A</m> is any matrix, explain why the homogeneous equation
-  <m>A\xvec=\zerovec</m> is consistent.  For instance, is there a vector
-  you can guarantee is a solution?</p>
+        <p>
+          If <m>A</m> is any matrix, explain why the homogeneous equation
+          <m>A\xvec=\zerovec</m> is consistent.
+          For instance, is there a vector you can guarantee is a solution?
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>What condition on the pivots of <m>A</m> guarantees that there is
-  solution to the homogeneous equation <m>A\xvec=\zerovec</m> besides the
-  solution <m>\xvec=\zerovec</m>?</p>
+        <p>
+          What condition on the pivots of <m>A</m> guarantees that there is
+          solution to the homogeneous equation <m>A\xvec=\zerovec</m> besides
+          the solution <m>\xvec=\zerovec</m>?
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>In the example above, we saw that having a nonzero solution to
-  the homogeneous equation <m>A\xvec=\zerovec</m> enabled us to conclude
-  that the columns of <m>A</m> are linearly dependent.  What condition on
-  the pivots of <m>A</m> will guarantee that the columns of <m>A</m> are
-  linearly dependent?</p>
+        <p>
+          In the example above, we saw that having a nonzero solution to the
+          homogeneous equation <m>A\xvec=\zerovec</m> enabled us to conclude
+          that the columns of <m>A</m> are linearly dependent.
+          What condition on the pivots of <m>A</m> will guarantee that the
+          columns of <m>A</m> are linearly dependent?
+        </p>
       </statement>
     </task>
   </exercise>
 
   <exercise>
     <introduction>
-      <p>Consider the matrix
-  <m>A=
+      <p>
+        Consider the matrix
+        <m>A=
   \left[
     \begin{array}{ccc}
       0 \amp -1 \amp 1 \\
@@ -99,36 +384,56 @@
     \end{array}
   \right]
   </m>
-  whose columns are <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>.</p>
+        whose columns are <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>.
+      </p>
     </introduction>
+
     <task workspace="1in">
       <statement>
-        <p>[label=(\alph*)]</p>
+        <p>
+          [label=(\alph*)]
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Sketch the vectors below.  Do you think the vectors are
-    linearly independent or linearly dependent?</p>
-        <p>\includegraphics{empty-4.eps}</p>
+        <p>
+          Sketch the vectors below.
+          Do you think the vectors are linearly independent or linearly
+          dependent?
+        </p>
+
+        <p>
+          \includegraphics{empty-4.eps}
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Explain how we know that there is a nonzero solution to the
-    homogeneous equation <m>A\xvec=\zerovec</m>.</p>
+        <p>
+          Explain how we know that there is a nonzero solution to the
+          homogeneous equation <m>A\xvec=\zerovec</m>.
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Find a nonzero solution to the homogeneous solution
-    <m>A\xvec=\zerovec</m>.</p>
+        <p>
+          Find a nonzero solution to the homogeneous solution
+          <m>A\xvec=\zerovec</m>.
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Use this solution to express one of the vectors as a linear
-    combination of the others.</p>
+        <p>
+          Use this solution to express one of the vectors as a linear
+          combination of the others.
+        </p>
       </statement>
     </task>
   </exercise>
@@ -136,41 +441,90 @@
   <exercise>
     <task workspace="1in">
       <statement>
-        <p>[label=(\alph*)]</p>
+        <p>
+          [label=(\alph*)]
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>What condition on the pivots of a matrix <m>A</m> will guarantee that its columns
-    are linearly independent?</p>
+        <p>
+          What condition on the pivots of a matrix <m>A</m> will guarantee that
+          its columns are linearly independent?
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Suppose that <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> are linearly
-    independent vectors in <m>\real^9</m>.  What can you say about the
-    number of vectors in this set?</p>
+        <p>
+          Suppose that <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> are linearly
+          independent vectors in <m>\real^9</m>.
+          What can you say about the number of vectors in this set?
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>What is the smallest number of vectors that can span
-    <m>\real^{13}</m>?</p>
+        <p>
+          What is the smallest number of vectors that can span
+          <m>\real^{13}</m>?
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>What is the largest number of vectors in <m>\real^{13}</m> that are
-    linearly independent?</p>
+        <p>
+          What is the largest number of vectors in <m>\real^{13}</m> that are
+          linearly independent?
+        </p>
       </statement>
     </task>
+
     <task workspace="1in">
       <statement>
-        <p>Suppose that a set of vectors in <m>\real^{13}</m> is linearly
-    independent and spans <m>\real^{13}</m>.  What can you say about the
-    number of vectors?</p>
+        <p>
+          Suppose that a set of vectors in <m>\real^{13}</m> is linearly
+          independent and spans <m>\real^{13}</m>.
+          What can you say about the number of vectors?
+        </p>
       </statement>
     </task>
   </exercise>
 
+  <outcomes>
+    <ul>
+      <li>
+        <p>
+          What does it mean for a set of vectors to be linearly dependent?
+          Linearly independent?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          What can you say about the pivots of a matrix if the columns of that
+          matrix are a linearly dependent set of vectors?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          What is the maximum number of vectors in <m>\mathbb{R}^m</m> that can
+          be linearly dependent?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          When there is a non-trivial solution to the homogeneous equation
+          <m>A\xvec=\zerovec</m>, what can you say about the columns of the
+          matrix <m>A</m> (in terms of linear dependence/independence)?
+        </p>
+      </li>
+    </ul>
+  </outcomes>
 </worksheet>
