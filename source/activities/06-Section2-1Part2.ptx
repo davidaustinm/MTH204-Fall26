@@ -314,7 +314,7 @@ A.rref().n(digits=2)
             <solution component="06-solutions">
                 <image width="50%">
                     <shortdescription>
-                        Graph of vectors <m>\vvec</m> and <m>\wvec</m>.
+                        Graph of vectors v and w.
                     </shortdescription>
                     <prefigure xmlns="https://prefigure.org" label="06-2-2_6">
                         <diagram dimensions="(300, 300)" margins="5">

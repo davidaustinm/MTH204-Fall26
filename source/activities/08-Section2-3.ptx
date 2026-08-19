@@ -344,7 +344,7 @@
                 <image>
                     <shortdescription>
                         Graph of
-                        <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m> going
+                        a function going
                         through the 3 given points.
                     </shortdescription>
                     <prefigure xmlns="https://prefigure.org" label="09-2-3_5">

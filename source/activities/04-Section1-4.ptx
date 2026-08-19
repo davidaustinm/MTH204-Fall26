@@ -648,7 +648,7 @@ A.rref()
 
             <image>
                 <shortdescription>
-                    Graph of <m>f(x) = \frac{-1}{2}x^2 - \frac{3}{2}x + 14</m>
+                    Graph of a function
                     going through the 3 given points.
                 </shortdescription>
                 <prefigure xmlns="https://prefigure.org" label="05-1-4_1">

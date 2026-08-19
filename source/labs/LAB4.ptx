@@ -51,7 +51,7 @@
 
         <image source="images/lab4_figure1.png" width="75%">
             <shortdescription>
-                Luminance values in an <m>8\times 8</m> block of pixels from a
+                Luminance values in an 8 by 8 block of pixels from a
                 digital photo taken in Capitol Reef National Park.
             </shortdescription>
         </image>
