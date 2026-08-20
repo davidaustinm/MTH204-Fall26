@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="syllabusM" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Syllabus</title>
 
     <introduction>
         <p/>
     </introduction>
     <!-- Include chapters -->
-    <subsection xml:id="sec-course-info">
+    <subsection>
         <title>Course Information</title>
 
         <p>
@@ -227,7 +227,7 @@
         </paragraphs>
     </subsection>
     <!-- Other subsections for larger dividers -->
-    <subsection xml:id="sec-assessments">
+    <subsection>
         <title>Assessments and Grades</title>
 
         <p>
@@ -356,7 +356,7 @@
             <shortdescription>
                 Grade breakdown.
             </shortdescription>
-            <prefigure xmlns="https://prefigure.org" label="SyllabusGrades">
+            <prefigure xmlns="https://prefigure.org" label="SyllabusGradesM">
                 <diagram dimensions="(350,200)" margins="5">
                     <coordinates bbox="(-1,-1,2.5,1)">
                         <arc at="Class Preparation" center="(0,0)" radius="1" range="(0,0.05*360)" stroke="black" fill="orange" sector="yes" opacity="0.5"/>
@@ -421,7 +421,7 @@
                         Blackboard. In particular:
                         <ul>
                             <li>
-                               Poke around in the first week to see how things are organized.
+                                Poke around in the first week to see how things are organized.
                                 If you can't find something, email me.
                                 (It's possible I forgot to post.)
                             </li>
@@ -520,7 +520,7 @@
         </paragraphs>
     </subsection>
 
-    <subsection xml:id="sec-otherPolicies">
+    <subsection>
         <title>Other Information and Policies</title>
 
         <p>
