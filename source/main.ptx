@@ -22,6 +22,7 @@
             <xi:include href="./syllabus/LTs.ptx"/>
             <xi:include href="./syllabus/LabPolicies.ptx"/>
             <xi:include href="./syllabus/HWPolicies.ptx"/>
+            <xi:include href="./syllabus/ClassPreparationPolicies.ptx"/>
         </chapter>
 
 
