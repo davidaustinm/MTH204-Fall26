@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <section xml:id="syllabusL" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Syllabus</title>
+    <title>Linear Algebra - Fall 2026- (MTH 204-03) Syllabus</title>
 
     <introduction>
         <p/>
@@ -12,7 +12,7 @@
 
         <p>
             This is the syllabus for
-            <term>Linear Algebra (MATH 204, section xxx)</term> for Fall 2026.
+            <term>Linear Algebra (MATH 204, Section 03)</term> for Fall 2026.
             It is a 3 credit course.
             <!-- use a description list (dl) for short items -->
             <dl>
@@ -20,9 +20,8 @@
                     <title>Instructor</title>
 
                     <p>
-                        Prof.
-                        Lastname, Office Location,
-                        <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
+                        Professor Keough, MAK C-2-513,
+                        <url href="mailto:keoulaur@.edu">keoulaur@gvsu.edu.edu</url>.
                     </p>
                 </li>
 
@@ -38,7 +37,7 @@
                     <title>Class meets</title>
 
                     <p>
-                       MWF (TIME) MAK B-1-132
+                       MWF 12-12:50 PM MAK B-1-132
                     </p>
                 </li>
 
