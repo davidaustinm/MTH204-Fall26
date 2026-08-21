@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="ClassPrep" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Class Preparation Policies</title>
+<section xml:id="SummaryActivities" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Summary Activity Policies</title>
 
     <paragraphs>
         <title>Purpose</title>
@@ -10,34 +10,26 @@
             This component of assessment has several purposes:
             <ul>
                 <li>
-                    <term>Get exposed to new content.</term> Each day in class
-                    will be spent working on problems, so that I’m there to help
-                    you when you and your teammates get stuck.
-                    So some of the content will be introduced via video or
-                    reading before class.
-                    This has a couple of advantages: (1) you can go at your own
-                    pace (retry, rewind, rewatch, change the speed, pause,
-                    whatever!) and (2) your second exposure in class will likely
-                    make more sense after you’ve seen it once!
+                    <term>Practice.</term> Doing problems outside of class is
+                    key to learning mathematics.
                 </li>
 
                 <li>
-                    <term>Generation.</term> This is when you attempt to solve a
-                    problem before being shown how to do it.
-                    This has been shown to help with learning and remembering.
-                    It is often the case that this doesn’t feel like learning,
-                    but the truth is that learning sometimes hurts a little!
+                    <term>Immediate feedback.</term> For the Summary Activity
+                    part of the Runestone assignment you are immediately told
+                    whether an answer is right or wrong (for most problems) -
+                    you don't need to wait for me to grade and return homework.
                 </li>
 
                 <li>
-                    <term>Help me tailor the class to you.</term> If everyone
-                    says they understand the content of the class preparation, I
-                    will not bore you with going over it.
-                    If you ask a question on the class preparation I will do my
-                    best to answer it.
-                    If everyone seems confused we can spend more time on it.
-                    Please answer the questions honestly so we can make sure the
-                    class works for you!
+                    <term>An opportunity for productive failure.</term> On the
+                    checkpoints within the Summary Activity you will have
+                    multiple attempts on each problem because it is okay to make
+                    mistakes.
+                    In fact, making mistakes is a key part of learning.
+                    The attempts on each problem are limited though because we
+                    want this failure to be productive, that is, we want to
+                    learn from our mistakes.
                 </li>
             </ul>
         </p>
@@ -113,8 +105,7 @@
 
                 <li>
                     <p>
-                        On the next page, enter your course name:
-                        XXXXXXXXXX.
+                        On the next page, enter your course name: XXXXXXXXXX.
                     </p>
 
                     <p>
@@ -159,27 +150,21 @@
     </paragraphs>
 
     <paragraphs>
-        <title>Completing Preview Activities in Runestone</title>
+        <title>Completing Summary Activities in Runestone</title>
 
         <p>
             <ol>
                 <li>
                     Follow the assignment link in Blackbaord to the appropriate
-                    page for the Preview Activity in Runestone.
+                    page for the Assignment in Runestone.
+                    These are also visible in the Assignments portion of your
+                    Runestone Dashboard.
                 </li>
 
                 <li>Make sure to answer each question and hit "Submit."</li>
                 <li>
-                    One of the last few questions will ask for your confidence
-                    in understanding the material, and the last question will
-                    ask for questions and comments.
-                </li>
-
-                <li>
-                    That's it!
-                    You do not need to submit the overall assignment.
-                    Once you have hit "Submit" everything is saved and I will be
-                    able to see you have completed it.
+                    I will grade the "best" answer out of your attempts and this
+                    is what will save with Runestone.
                 </li>
             </ol>
         </p>
@@ -189,22 +174,9 @@
         <title>Feedback and Grading</title>
 
         <p>
-            You get feedback via the video, other students’ answers, and in
-            class.
-            These are graded for completeness, not correctness.
-            Make sure you watch any videos, do any reading, and answer all the
-            questions on the Runestone Preview Activity and you will earn
-            credit.
-            Your overall grade for this component will be the percentage you
-            completed.
-            That is, if you complete all of the class preparation assignments,
-            you earn 100% for this part.
-            The preview activities are due 30 minutes prior to class start on
-            class days.
-            I will review responses at that time.
-            Since the benefit of these assignments come from doing them before
-            class, class preparation assignments done after class are not
-            accepted.
+            Summary activity assignments are due on Thursdays at 11:59pm.
+            Summary activity assignments will count as 15% of your grade.
+            These will be graded for correctness.
         </p>
     </paragraphs>
 
@@ -212,12 +184,18 @@
         <title>Academic Honesty</title>
 
         <p>
-            You may collaborate and use any resources you would like for the
-            class preparations.
-            That being said, please do not enter anything you do not understand.
-            Part of the purpose is for me to pace the class appropriately -
-            entering answers you don’t understand will mean you don’t get the
-            help you need!
+            You may use your book, your notes, me, 
+            your peers, and the math center for help on the Summary Activities.
+            You may NOT use any other internet resources, including googling
+            answers, ChatGPT, or Chegg (submitting questions or using others
+            submitted questions).
+            It is important for your learning that you do these problems for
+            yourself.
+            Any instances of academic dishonesty will be reported to the Office
+            of Student Conduct and Conflict Resolution.
+            Penalties can include failure of an assignment, a 0 on the Summary Activity
+            part of your grade, and/or failure of the course.
+            Remember I want to help, just email me!
         </p>
     </paragraphs>
 </section>
