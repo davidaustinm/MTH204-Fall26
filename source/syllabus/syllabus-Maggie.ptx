@@ -60,7 +60,7 @@
                     </p>
                 </li>
 
-                <li>
+                <!-- <li>
                     <title/>
                     <p>
                         My main priority in this course is for you to grow as a
@@ -73,11 +73,20 @@
                         mathematical community.
                         Please see me when you need help.
                     </p>
-                </li>
+                </li> -->
 
                 <li>
                     <title>Being Successful in MTH 204</title>
-
+                   <p> My main priority in this course is for you to grow as a
+                        mathematician: to be able to understand and apply
+                        complex statements, to solve challenging problems, and
+                        to communicate orally and in writing.
+                        I want you to succeed.
+                        My teaching philosophy is that everyone has the right to
+                        understand and enjoy mathematics, and to feel part of a
+                        mathematical community.
+                        Please see me when you need help. Additionally, consider
+                    the following things you can do to be successful.</p>
                     <p>
                         <ul>
                             <li>
@@ -227,7 +236,7 @@
         </paragraphs>
     </subsection>
     <!-- Other subsections for larger dividers -->
-    <subsection>
+    <subsection xml:id="sec-assessmentsM">
         <title>Assessments and Grades</title>
 
         <p>
@@ -271,8 +280,8 @@
                         writeup with written explanation.
                         There will 1-3 problems due every week on Wednesday.
                         There will be options for revision; individual problems
-                        will be assessed as "exemplary" (100%), "satisfactory"
-                        (75%), or "not yet" (0%).
+                        will be assessed as E for "exemplary" (100%), S for "satisfactory"
+                        (75%), or NY for "not yet" (0%).
                         See the written homework policies for more information
                         (including info about revisions).
                     </p>
@@ -283,10 +292,10 @@
 
                     <p>
                         There will be a learning target quiz each Friday.
-                        Each skill is graded "E" for exemplary, "S" for
-                        "satisfactory” or “NY” for “not yet”.
-                        Each LT is worth 2% of your grade — an "E" gives 2%, "S"
-                        is 1.5%, and "NY" is 0%.
+                        Each target is graded E for <q>exemplary</q>, S for
+                        <q>satisfactory</q> or NY for <q>not yet</q>.
+                        Each LT is worth 2% of your grade — an E gives 2%, S
+                        is 1.5%, and NY is 0%.
                         There will be 14 targets.
                     </p>
                 </li>
@@ -421,7 +430,7 @@
                         Blackboard. In particular:
                         <ul>
                             <li>
-                                Poke around in the first week to see how things are organized.
+                               Poke around in the first week to see how things are organized.
                                 If you can't find something, email me.
                                 (It's possible I forgot to post.)
                             </li>
@@ -446,7 +455,7 @@
                         <em> Sage:</em> You aren't expected to know this yet!
                         We will develop proficiency in this as a class.
                         You have access to free sage cells
-                        <url href="http://gvsu.edu/s/0Ng"></url>.
+                        <url href="http://gvsu.edu/s/0Ng">here</url>.
                     </li>
                 </ul>
             </p>
@@ -468,6 +477,23 @@
                 (say, by procrastinating).
                 Academic honesty is worth the reward of learning, and dishonesty
                 is not worth the risk.
+            </p>
+        </paragraphs>
+
+    <paragraphs>
+            <title>AI Policy</title>
+
+            <p>
+                You may not use AI or ChatGPT for any 
+                component of this course.  In this course, we'll be 
+                developing skills that are important to practice on your own. 
+                Because use of generative AI may inhibit the development of those skills, 
+                you aren't allowed employing AI tools in this course. Using such tools 
+                for any purposes, or attempting to represent AI-generated work as your 
+                own, will violate our academic integrity policy.  If you can think of
+                a way that AI or ChatGPT can support (and not replace) your learning,
+                please let me know! I am open to discussion on how these tools can
+                be used in a constructive way.
             </p>
         </paragraphs>
 
@@ -520,7 +546,7 @@
         </paragraphs>
     </subsection>
 
-    <subsection>
+    <subsection xml:id="sec-otherPoliciesM">
         <title>Other Information and Policies</title>
 
         <p>
@@ -528,7 +554,7 @@
                 <li>
                     <title/>
                     <p>
-                        This course is subject to the following
+                        This course is subject to all policies at
                         <url href="http://www.gvsu.edu/coursepolicies/" visual="http://www.gvsu.edu/coursepolicies/">GVSU policies</url>.
                     </p>
                 </li>
@@ -546,6 +572,21 @@
                         25th by 5PM.
                         The last day to drop with a "W" is November 13th by 5PM.
                     </p>
+                </li>
+
+                <li>
+                    <title>Remote Status and Faculty Absence</title>
+
+                    <p>
+                        In the event that the university moves to remote status
+                        or the professor is unable to make it to campus for class,
+                        instruction will be moved either synchronously or asynchronously
+                        online. This will be communicated by the instructor through
+                        Blackboard and email ASAP. This also applies to final exams, 
+                        where there is a possibility the exam will move to online, take-home, 
+                        or another arrangement.  Make sure to check all announcements on 
+                        Blackboard in a timely manner!
+                                            </p>
                 </li>
 
                 <li>
@@ -673,6 +714,39 @@
                         education are also available to support the wellness of
                         your mind, body and soul so you can thrive during your
                         time at GVSU.
+                    </p>
+                </li>
+
+                <li>
+                    <title>Classroom and Campus Safety</title>
+
+                    <p>
+                        Classroom and campus safety are our shared responsibility. Please familiarize yourself with the classroom emergency placard, which contains important information that could prove useful should an emergency arise. Emergency situations could include a fire alarm, tornado warning, medical emergency, or hostile intruder, and our response might consist of evacuating MAK Hall in an orderly manner, moving as a group to a different location in the building, rendering assistance to a class member, or staying put and locking the classroom door. Please make sure to have your primary mobile number listed in Banner so that you will automatically receive any campus alerts. 
+                        </p>
+                        <p>
+                            Additional information about campus safety can be found at the following sites:
+                            <ul>
+                                <li> <url href="https://www.gvsu.edu/dps/warnings-and-alerts-133.htm">Directions for enabling additional contact means to the campus alert system</url> </li>
+                                <li> <url href="https://www.gvsu.edu/emergency/">Emergency alert information</url></li>
+                                <li> <url href ="https://www.gvsu.edu/emergency/tornado-safety-location-2.htm">List of campus tornado safety locations</url></li>
+                                <li> <url href="https://www.gvsu.edu/emergency/medical-emergency-15.htm">Medical emergencies</url> and <url href="https://www.gvsu.edu/emergency/automated-external-defibrillator-33.htm">campus AED locations</url></li> 
+                                <li> <url href="https://www.gvsu.edu/dps/active-shooter-response-85.htm">Active shooter response</url></li>
+                                </ul>
+                            </p>
+                </li>
+
+                <li>
+                    <title>Religious Accommodation</title>
+
+                    <p>
+                        In accordance with the <url href="https://www.gvsu.edu/policies/policy.htm?policyId=129535EB-9F42-2683-61E9033594C870D2"> Religious Inclusion Policy</url>, 
+                        GVSU will provide reasonable accommodations for faculty,
+                        staff, and students to observe their religious beliefs, except
+                        where accommodating the request would result in undue hardship
+                        on the University in its mission, operation, or in meeting its academic
+                        standards. If you would like to request a reasonable accommodation, 
+                        please complete this <url href="https://www.gvsu.edu/affirmative/religious-request.htm">form</url> and submit it to me within the first two
+                        weeks of the semester or as soon as reasonably possible.
                     </p>
                 </li>
 
