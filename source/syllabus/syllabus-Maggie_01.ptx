@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="syllabusL" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Linear Algebra - Fall 2026- (MTH 204-03) Syllabus</title>
+<section xml:id="syllabusM" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Linear Algebra - Fall 2026 - (MTH 204-01) Syllabus</title>
 
     <introduction>
         <p/>
@@ -12,7 +12,7 @@
 
         <p>
             This is the syllabus for
-            <term>Linear Algebra (MATH 204, Section 03)</term> for Fall 2026.
+            <term>Linear Algebra (MATH 204, Section 1)</term> for Fall 2026.
             It is a 3 credit course.
             <!-- use a description list (dl) for short items -->
             <dl>
@@ -20,29 +20,53 @@
                     <title>Instructor</title>
 
                     <p>
-                        Professor Keough, MAK C-2-513,
-                        <url href="mailto:keoulaur@.edu">keoulaur@gvsu.edu.edu</url>.
+                        Prof.
+                        Regan, MAK C-2-410, 616-331-2045,
+                        <url href="mailto:reganmar@gvsu.edu">reganmar@gvsu.edu</url>.
+                        You can call me Dr./Prof.
+                        Regan or Dr./Prof.
+                        Maggie.
                     </p>
-                </li>
-
-                <li>
-                    <title>Student Hours</title>
 
                     <p>
-                        TBD
+                        The best way to reach me is by email.
+                        I will do my best to respond within 24 hours (except
+                        weekends).
+                        My general working hours are 8 am - 5 pm ET Monday
+                        through Friday.
                     </p>
                 </li>
 
                 <li>
-                    <title>Class meets</title>
+                    <title>Office Hours</title>
 
                     <p>
-                        MWF 12-12:50 PM MAK B-1-132
+                        Tuesday from 1 - 2 pm ET (MAK A-2-610)
+                    </p>
+
+                    <p>
+                        Wednesday from 11 am - 12 pm ET (MAK A-2-610)
+                    </p>
+
+                    <p>
+                        Thursday from 1 - 2 pm ET (MAK A-2-610)
+                    </p>
+
+                    <p>
+                        or by appointment
                     </p>
                 </li>
 
                 <li>
-                    <title>Textbook and course materials</title>
+                    <title>Class Meets</title>
+
+                    <p>
+                        MWF 9-9:50 am ET in MAK B-1-132
+                    </p>
+                </li>
+
+                <li>
+                    <title>Textbook and Course Materials</title>
 
                     <p>
                         <pubtitle>Understanding Linear Algebra</pubtitle> by
@@ -238,7 +262,7 @@
         </paragraphs>
     </subsection>
     <!-- Other subsections for larger dividers -->
-    <subsection xml:id="sec-assessmentsL">
+    <subsection xml:id="sec-assessmentsM">
         <title>Assessments and Grades</title>
 
         <p>
@@ -321,8 +345,8 @@
                     <p>
                         The final exam will be cumulative, focusing on big
                         picture ideas of the course.
-                        The final exam is scheduled by the registrar at a time
-                        TBD.
+                        The final exam is scheduled by the registrar for
+                        <term>Wednesday, December 16, 8:00 am - 9:50 am ET.</term>
                         More details will be given out later.
                     </p>
                 </li>
@@ -365,7 +389,7 @@
 
         <image width="75%">
             <shortdescription>Grade breakdown.</shortdescription>
-            <prefigure xmlns="https://prefigure.org" label="SyllabusGradesL">
+            <prefigure xmlns="https://prefigure.org" label="SyllabusGradesM">
                 <diagram dimensions="(350,200)" margins="5">
                     <coordinates bbox="(-1,-1,2.5,1)">
                         <arc at="Class Preparation" center="(0,0)" radius="1" range="(0,0.05*360)" stroke="black" fill="orange" sector="yes" opacity="0.5"/>
@@ -552,7 +576,7 @@
         </paragraphs>
     </subsection>
 
-    <subsection xml:id="sec-otherPoliciesL">
+    <subsection xml:id="sec-otherPoliciesM">
         <title>Other Information and Policies</title>
 
         <p>
@@ -656,10 +680,10 @@
 
                             <li>
                                 online tutoring via Discord Voice: Sunday –
-                                Thursday 5pm – 8pm. To access virtual drop-in
-                                tutoring, you can use the link in your
-                                Blackboard course called Math Tutoring Center or
-                                visit our website.
+                                Thursday 5pm – 8pm.
+                                To access virtual drop-in tutoring, you can use
+                                the link in your Blackboard course called Math
+                                Tutoring Center or visit our website.
                                 Then you will need to click on the "Online Math
                                 Tutoring Center" button, which will require a
                                 GVSU login.
