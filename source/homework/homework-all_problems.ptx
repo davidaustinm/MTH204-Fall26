@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-  <title>Written Homework Exercises</title>
-  <introduction>
-    <p>
-      <alert>Every Wednesday at 11:59 pm, 5 exercises will be due.</alert>
-      This collection of exercises will grow, with 5 exercises added each week.
-      You will need to regularly look at the updated version of this page on Blackboard.
-    </p>
-  </introduction>
+    <title>Written Homework Exercises</title>
 
-  <page>
+    <page>
+        <!-- Q1 Section 1.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the given systems, state (i) the number of
+                    equations, (ii) the number of unknowns, and (iii) whether or
+                    not the system is linear.
+                    For (iii), provide written justification for your
+                    conclusion.
+                </p>
+            </introduction>
 
-    <!-- Q1 Section 1.1 -->
-    <exercise>
-      <introduction>
-        <p>
-          For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether
-or not the system is linear. For (iii), provide written justification for your conclusion.
-        </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          <m>
+            <task>
+                <statement>
+                    <p>
+                        <m>
           \begin{cases}
 x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
 x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
 \end{cases}
 </m>
-          </p>
-        </statement>
-      </task>
+                    </p>
+                </statement>
+            </task>
 
-<task>
-      <statement>
-        <p>
-          <m>
+            <task>
+                <statement>
+                    <p>
+                        <m>
           \begin{cases}
 x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
 3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\
@@ -44,164 +40,191 @@ x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
 -2x \amp - \amp y \amp + \amp 8z \amp = \amp 0 \\
 \end{cases}
 </m>
-          </p>
-        </statement>
-      </task>
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-          <m>
+            <task>
+                <statement>
+                    <p>
+                        <m>
           \begin{cases}
 x^2 \amp - \amp 2xy \amp + \amp y^3 \amp = \amp 9 \\
 \sin(x) \amp + \amp e^y \amp - \amp 4y \amp = \amp 0 \\
 \end{cases}
 </m>
-          </p>
-        </statement>
-      </task>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    </exercise>
+    <page>
+        <!-- Q2 Section 1.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Give an example of a matrix in reduced row echelon form that
+                    describes a linear system having the stated properties.
+                    For each, write one short sentence that explains why your
+                    example meets the stated criteria.
+                    If it is not possible to find such an example, explain why
+                    not.
+                </p>
+            </introduction>
 
-<!-- Q2 Section 1.2 -->
-    <exercise>
-      <introduction>
-        <p>
-          Give an example of a matrix in reduced row echelon form that describes 
-          a linear system having the stated properties.  For each, write one short 
-          sentence that explains why your example meets the stated criteria. If it 
-          is not possible to find such an example, explain why not.
-        </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          a linear system having 4 equations and 2 unknowns and having exactly one solution.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 4 equations and 2 unknowns and
+                        having exactly one solution.
+                    </p>
+                </statement>
+            </task>
 
-        <task>
-      <statement>
-        <p>
-          a linear system having 3 equations and 3 unknowns and having no solution.
-           </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 3 equations and 3 unknowns and
+                        having no solution.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-          a linear system having 2 equations and 5 unknowns and having infinitely many solutions.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 2 equations and 5 unknowns and
+                        having infinitely many solutions.
+                    </p>
+                </statement>
+            </task>
 
-<task>
-      <statement>
-        <p>
-          a linear system having 3 equations and 5 unknowns and having exactly one solution.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 3 equations and 5 unknowns and
+                        having exactly one solution.
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-          a linear system having 4 equations and 4 unknowns and having exactly one solution.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 4 equations and 4 unknowns and
+                        having exactly one solution.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    </exercise>
+    <page>
+        <!-- Q3 Section 1.2 -->
+        <exercise>
+            <statement>
+                <p>
+                    A given linear system has been represented by an augmented
+                    matrix and the process of Gaussian elimination has begun.
+                    The current state of the process is shown in the augmented
+                    matrix below.
+                </p>
 
-    <!-- Q3 Section 1.2 -->
-    <exercise>
-      <statement>
-        <p>
-          A given linear system has been represented by an augmented matrix and the process of Gaussian 
-          elimination has begun.  The current state of the process is shown in the augmented matrix below.
-             </p>
-             <p>
-              Execute the next <alert>three steps</alert> (that is, the next three row operations) of Gaussian elimination, 
-              and clearly state the three row operations you used, employing notation like we've been using in class.  
-              Your work should show at least two additional matrices beyond the one stated here. 
-              <md>
-              \left[
+                <p>
+                    Execute the next <alert>three steps</alert> (that is, the
+                    next three row operations) of Gaussian elimination, and
+                    clearly state the three row operations you used, employing
+                    notation like we've been using in class.
+                    Your work should show at least two additional matrices
+                    beyond the one stated here.
+                    <md>
+                        \left[
     \begin{array}{rrr|r}
       1 \amp 5 \amp -3 \amp 6 \\
       0 \amp 1 \amp 2 \amp -4 \\
       0 \amp -2 \amp 7 \amp 0 \\
     \end{array}
   \right]
-              </md>
-              </p>
-        </statement>
+                    </md>
+                </p>
+            </statement>
+        </exercise>
+    </page>
 
-    </exercise>
-
-<!-- Q4 Section 1.2 -->
-    <exercise>
-      <introduction>
-        <p>
-          Consider the linear system:
-          <md>
-          \begin{array}{rcrcrcr}
+    <page>
+        <!-- Q4 Section 1.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the linear system:
+                    <md>
+                        \begin{array}{rcrcrcr}
 -2x_1 \amp + \amp x_2 \amp \ \amp \ \amp = \amp -4 \\
 3x_1 \amp \ \amp \  \amp + \amp 3x_3 \amp = \amp 9 \\
 -x_1 \amp - \amp 2x_2  \amp - \amp 5x_3 \amp = \amp -7
 \end{array}
-          </md>
-          </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          Write the augmented matrix that corresponds to the given system.
-          </p>
-        </statement>
-      </task>
+                    </md>
+                </p>
+            </introduction>
 
-        <task>
-      <statement>
-        <p>
-          Work by hand to find the reduced row echelon form of the augmented matrix.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Write the augmented matrix that corresponds to the given
+                        system.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-          Identify which variables are basic and which are free.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Work by hand to find the reduced row echelon form of the
+                        augmented matrix.
+                    </p>
+                </statement>
+            </task>
 
-<task>
-      <statement>
-        <p>
-          Describe the solution space of the system, using a parametric description if there are infinitely many solutions.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Identify which variables are basic and which are free.
+                    </p>
+                </statement>
+            </task>
 
-    </exercise>
+            <task>
+                <statement>
+                    <p>
+                        Describe the solution space of the system, using a
+                        parametric description if there are infinitely many
+                        solutions.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    <!-- Q5 Section 1.3 -->
-    <exercise>
-      <introduction>
-        <p>
-          For each of the following linear systems of equations, (i) represent the system with an augmented matrix, 
-          (ii) use \emph{Sage} to find the RREF of the matrix of the linear system, and report the RREF in your written
-           summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric 
-           form if there are infinitely many solutions.
-        </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          <m>
+    <page>
+        <!-- Q5 Section 1.3 -->
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the following linear systems of equations, (i)
+                    represent the system with an augmented matrix, (ii) use
+                    \emph{Sage} to find the RREF of the matrix of the linear
+                    system, and report the RREF in your written summary, and
+                    (iii) describe the solution space of the system in as much
+                    detail as you can, using parametric form if there are
+                    infinitely many solutions.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
           \begin{cases}
 x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
 3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\
@@ -209,27 +232,27 @@ x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
 -2x \amp - \amp y \amp + \amp 8z \amp = \amp 0  \\
 \end{cases}
 </m>
-          </p>
-        </statement>
-      </task>
+                    </p>
+                </statement>
+            </task>
 
-<task>
-      <statement>
-        <p>
-          <m>
+            <task>
+                <statement>
+                    <p>
+                        <m>
           \begin{cases}
 x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
 x_1 \amp - \amp 2x_2 \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
 \end{cases}
 </m>
-          </p>
-        </statement>
-      </task>
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-          <m>
+            <task>
+                <statement>
+                    <p>
+                        <m>
           \begin{cases}
 x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
 x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
@@ -237,357 +260,1552 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
 -x_1 \amp - \amp 4x_2  \amp + \amp 2x_3 \amp + \amp 5x_4 \amp = \amp 0 \\
 \end{cases}
 </m>
-          </p>
-        </statement>
-      </task>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    </exercise>
+    <page>
+        <!-- Q6 Section 1.4 -->
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the four scenarios below, give an example of an
+                    augmented matrix in RREF that satisfies the stated criteria,
+                    or explain why such a matrix is not possible.
+                </p>
 
+                <p>
+                    For each example you provide, (i) circle the pivot
+                    locations, (ii) make each non-pivot column have at least one
+                    non-zero entry, and (iii) write one sentence to say why the
+                    system is consistent or inconsistent.
+                    In addition, if the corresponding linear system is
+                    consistent, describe the solution space for your example.
+                </p>
+            </introduction>
 
-    <!-- Q6 Section 1.4 -->
-    <exercise>
-      <introduction>
-        <p>
-          For each of the four scenarios below, give an example of an 
-          augmented matrix in RREF that satisfies the stated criteria, or explain 
-          why such a matrix is not possible.  
-          </p>
-      <p>
-      For each example you provide, (i) circle the pivot locations, (ii) make each 
-      non-pivot column have at least one non-zero entry, and (iii) write one sentence 
-      to say why the system is consistent or inconsistent.  In addition, if the corresponding 
-      linear system is consistent, describe the solution space for your example.
-        </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.  
-      </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix with four rows, three columns, and
+                        two pivots for which the corresponding linear system is
+                        consistent.
+                    </p>
+                </statement>
+            </task>
 
-        <task>
-      <statement>
-        <p>
-          An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent. 
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix with three rows, five columns, and
+                        three pivots for which the corresponding linear system
+                        is inconsistent.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-          An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix that corresponds to a linear system
+                        of 4 equations in 3 variables that has infinitely many
+                        solutions.
+                    </p>
+                </statement>
+            </task>
 
-<task>
-      <statement>
-        <p>
-          An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix that corresponds to a linear system
+                        of 3 equations in 5 unknown variables that has a unique
+                        solution.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    </exercise>
+    <page>
+        <!-- Q7 Section 2.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the vectors <m>\uvec</m>, <m>\vvec</m>,
+                    <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m> pictured in
+                    this figure:
+                </p>
 
-    <!-- Q7 Section 2.1 -->
-    <exercise>
-      <introduction>
-        <p>
-          Consider the vectors <m>\uvec</m>, <m>\vvec</m>, <m>\xvec</m>, <m>\yvec</m>, 
-          and <m>\zvec</m> pictured in this figure:
-          </p>
-       <image source="images/HW-lin-comb-nonstd.eps" width="50%">
-                <shortdescription>
-                    4 vectors in a plane.
-                </shortdescription>
-            </image>
+                <image source="images/HW-lin-comb-nonstd.eps" width="50%">
+                    <shortdescription>4 vectors in a plane.</shortdescription>
+                </image>
 
-      <p>
-      Notice that while there is no scale on the axes, the vectors 
-      <m>\uvec</m> and <m>\vvec</m> generate a "grid", and the tips of the 
-      vectors <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m> lie at intersection points 
-      on the grid.
-        </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          For each of the vectors <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m>, express the vector 
-          as a linear combination of <m>\uvec</m> and <m>\vvec</m>.  
-          Clearly state each linear combination by writing an equation such 
-          as <m>\xvec = \underline{\hspace{0.25in}}\uvec +  \underline{\hspace{0.25in}}\vvec</m>.  
-          After you do this for all three vectors, write a sentence that explains how you determined 
-          the weights in your linear combinations.	 	
-      </p>
-        </statement>
-      </task>
+                <p>
+                    Notice that while there is no scale on the axes, the vectors
+                    <m>\uvec</m> and <m>\vvec</m> generate a "grid", and the
+                    tips of the vectors <m>\xvec</m>, <m>\yvec</m>, and
+                    <m>\zvec</m> lie at intersection points on the grid.
+                </p>
+            </introduction>
 
-        <task>
-      <statement>
-        <p>
-          Sketch and label the vector  <m>\wvec = 3\uvec - \vvec</m>.
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        For each of the vectors <m>\xvec</m>, <m>\yvec</m>, and
+                        <m>\zvec</m>, express the vector as a linear combination
+                        of <m>\uvec</m> and <m>\vvec</m>.
+                        Clearly state each linear combination by writing an
+                        equation such as
+                        <m>\xvec = \underline{\hspace{0.25in}}\uvec +  \underline{\hspace{0.25in}}\vvec</m>.
+                        After you do this for all three vectors, write a
+                        sentence that explains how you determined the weights in
+                        your linear combinations.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-          What geometric figure is formed by the tips of all vectors of the form 
-          <m>{\uvec + t\vvec}</m>, when <m>t</m> is allowed to be any real number?  
-          (Hint: you might plot some points that correspond to several different 
-          values of <m>t</m> that you choose.)  Write a careful sentence or two that explains 
-          your conclusion and how you determined it.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch and label the vector
+                        <m>\wvec = 3\uvec - \vvec</m>.
+                    </p>
+                </statement>
+            </task>
 
-    </exercise>
+            <task>
+                <statement>
+                    <p>
+                        What geometric figure is formed by the tips of all
+                        vectors of the form <m>{\uvec + t\vvec}</m>, when
+                        <m>t</m> is allowed to be any real number?
+                        (Hint: you might plot some points that correspond to
+                        several different values of <m>t</m> that you choose.)
+                        Write a careful sentence or two that explains your
+                        conclusion and how you determined it.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-
-    <!-- Q8 Section 2.1 -->
-    <exercise>
-      <introduction>
-        <p>
-          Consider the linear system 
-	<md>
-\begin{array}{rcrcr}
+    <page>
+        <!-- Q8 Section 2.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the linear system
+                    <md>
+                        \begin{array}{rcrcr}
 2x \amp - \amp 3y \amp = \amp 13 \\
 3x \amp + \amp y  \amp = \amp 3 \\
 \end{array}
-</md>
-</p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          Solve the system and describe the solution space fully.   
-          If there are infinitely many solutions, describe them in 
-          parametric form.	
-      </p>
-        </statement>
-      </task>
+                    </md>
+                </p>
+            </introduction>
 
-        <task>
-      <statement>
-        <p>
-          Let <m>\uvec = \twovec{2}{3}</m> and <m>\vvec = \twovec{-3}{1}</m>.  
-         How can you rewrite the given linear system above as asking 
-         a question about a linear combination of <m>\uvec</m> and <m>\vvec</m>?
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Solve the system and describe the solution space fully.
+                        If there are infinitely many solutions, describe them in
+                        parametric form.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-         Let <m>\bvec = \twovec{13}{3}</m>.  Is <m>\bvec</m> a linear combination of 
-         <m>\uvec</m> and <m>\vvec</m>?  Why or why not?  If yes, give the weights 
-         that make <m>\bvec</m> a linear combination of <m>\uvec</m> and <m>\vvec</m>; 
-         if no, explain why no such weights exist.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\uvec = \twovec{2}{3}</m> and
+                        <m>\vvec = \twovec{-3}{1}</m>.
+                        How can you rewrite the given linear system above as
+                        asking a question about a linear combination of
+                        <m>\uvec</m> and <m>\vvec</m>?
+                    </p>
+                </statement>
+            </task>
 
-    </exercise>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\bvec = \twovec{13}{3}</m>.
+                        Is <m>\bvec</m> a linear combination of <m>\uvec</m> and
+                        <m>\vvec</m>?
+                        Why or why not?
+                        If yes, give the weights that make <m>\bvec</m> a linear
+                        combination of <m>\uvec</m> and <m>\vvec</m>; if no,
+                        explain why no such weights exist.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-<!-- Q9 Section 2.2 -->
-    <exercise>
-      <introduction>
-        <p>
-          Suppose that <m>A</m> is a <m>3 \times 2</m> matrix whose columns are the 
-          vectors <m>\vvec_1</m> and <m>\vvec_2</m>: <m>A = [ \vvec_1 \ \ \vvec_2]</m>.
-</p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          What are the dimensions of the vectors <m>\vvec_1</m> and <m>\vvec_2</m>?	
-      </p>
-        </statement>
-      </task>
+    <page>
+        <!-- Q9 Section 2.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is a <m>3 \times 2</m> matrix whose
+                    columns are the vectors <m>\vvec_1</m> and <m>\vvec_2</m>:
+                    <m>A = [ \vvec_1 \ \ \vvec_2]</m>.
+                </p>
+            </introduction>
 
-        <task>
-      <statement>
-        <p>
-          Write the matrix-vector product <m>A \twovec10</m> as a linear combination of <m>\vvec_1</m> 
-          and <m>\vvec_2</m>.  Similarly, write <m>A \twovec01</m> as a linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        What are the dimensions of the vectors <m>\vvec_1</m>
+                        and <m>\vvec_2</m>?
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-         Suppose we are now given some specific information about certain 
-         matrix-vector products.  Specifically, say we are given
-		<md>A \twovec10 = \threevec{2}{-1}{4} \ \mbox{and} \ A \twovec01 = \threevec{0}{3}{-1}.</md>
-		What is the matrix <m>A</m>?  Why?
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Write the matrix-vector product <m>A \twovec10</m> as a
+                        linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                        Similarly, write <m>A \twovec01</m> as a linear
+                        combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-         Determine <m>A \twovec{-3}{5}</m>.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose we are now given some specific information about
+                        certain matrix-vector products.
+                        Specifically, say we are given
+                        <md>
+                            A \twovec10 = \threevec{2}{-1}{4} \ \mbox{and} \ A \twovec01 = \threevec{0}{3}{-1}.
+                        </md>
+                        What is the matrix <m>A</m>?
+                        Why?
+                    </p>
+                </statement>
+            </task>
 
-    </exercise>
+            <task>
+                <statement>
+                    <p>
+                        Determine <m>A \twovec{-3}{5}</m>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    <!-- Q10 Section 2.3 -->
-    <exercise>
-      <introduction>
-        <p>
-          Consider the vectors <m>\uvec = \threevec{1}{0}{-1}</m>, <m>\vvec = \threevec{0}{-1}{1}</m>, and <m>\wvec = \threevec{2}{-3}{1}</m>.
-</p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          Is <m>\bvec = \threevec{-5}{7}{-3}</m> in Span<m>\{ \uvec, \vvec, \wvec \}</m>?  Why or why not?
-      </p>
-        </statement>
-      </task>
+    <page>
+        <!-- Q10 Section 2.3 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the vectors <m>\uvec = \threevec{1}{0}{-1}</m>,
+                    <m>\vvec = \threevec{0}{-1}{1}</m>, and
+                    <m>\wvec = \threevec{2}{-3}{1}</m>.
+                </p>
+            </introduction>
 
-        <task>
-      <statement>
-        <p>
-          Is <m>\cvec = \threevec{-5}{7}{-2}</m> in Span<m>\{ \uvec, \vvec, \wvec \}</m>?  Why or why not?
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\bvec = \threevec{-5}{7}{-3}</m> in Span
+                        <m>\{ \uvec, \vvec, \wvec \}</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-         Do the vectors <m>\uvec, \vvec, \wvec</m> span all of <m>\mathbb{R}^3</m>?  
-         Why or why not?
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\cvec = \threevec{-5}{7}{-2}</m> in Span
+                        <m>\{ \uvec, \vvec, \wvec \}</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-         What is an important observation to make about the relationship 
-         among <m>\uvec, \vvec, \wvec</m>?
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Do the vectors <m>\uvec, \vvec, \wvec</m> span all of
+                        <m>\mathbb{R}^3</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-         Give a careful written description of Span<m>\{ \uvec, \vvec, \wvec \}</m>.	
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        What is an important observation to make about the
+                        relationship among <m>\uvec, \vvec, \wvec</m>?
+                    </p>
+                </statement>
+            </task>
 
-    </exercise>
+            <task>
+                <statement>
+                    <p>
+                        Give a careful written description of Span
+                        <m>\{ \uvec, \vvec, \wvec \}</m>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    <!-- Q11 Section 2.3 -->
-    <exercise>
-      <introduction>
-        <p>
-          Suppose that <m>A</m> is the matrix  <m>A = [ \vvec_1 \ \ \vvec_2 \ \ \vvec_3]</m> where 
-	<md>
-	\vvec_1 = \threevec111, \ \ \vvec_2 = \threevec{\phantom{-}2}{-1}{\phantom{-}0}, \ \ \vvec_3 = \threevec{-1}{\phantom{-}3}{\phantom{-}2}
-	</md>
-  </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          If <m>\xvec = \threevec{\phantom{-}4}{-2}{\phantom{-}3}</m>, write <m>A\xvec</m> in two different ways:  
-          (i) as a linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>, 
-          and (ii) as a single vector that you find by hand.
-      </p>
-        </statement>
-      </task>
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is the matrix
+                    <m>A = [ \vvec_1 \ \ \vvec_2 \ \ \vvec_3]</m> where
+                    <md>
+                        \vvec_1 = \threevec111, \ \ \vvec_2 = \threevec{\phantom{-}2}{-1}{\phantom{-}0}, \ \ \vvec_3 = \threevec{-1}{\phantom{-}3}{\phantom{-}2}
+                    </md>
+                </p>
+            </introduction>
 
-        <task>
-      <statement>
-        <p>
-          If <m>\bvec = \threevec{\phantom{-}5}{-7}{-3}</m>, determine all 
-          solutions to the equation <m>A\xvec = \bvec</m>.  Clearly show 
-          how this problem can be turned into a system of equations 
-          (don't just write down an augmented matrix), and solve. If there are 
-          infinitely many solutions, express them in parametric vector form.
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        If
+                        <m>\xvec = \threevec{\phantom{-}4}{-2}{\phantom{-}3}</m>,
+                        write <m>A\xvec</m> in two different ways: (i) as a
+                        linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>,
+                        and <m>\vvec_3</m>, and (ii) as a single vector that you
+                        find by hand.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-         Is <m>\cvec =  \threevec{\phantom{-}5}{-7}{-2}</m> a linear 
-         combination of <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>?
-           Clearly show how this question can be turned into a system of 
-           linear equations and then explain your answer.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        If <m>\bvec = \threevec{\phantom{-}5}{-7}{-3}</m>,
+                        determine all solutions to the equation
+                        <m>A\xvec = \bvec</m>.
+                        Clearly show how this problem can be turned into a
+                        system of equations (don't just write down an augmented
+                        matrix), and solve.
+                        If there are infinitely many solutions, express them in
+                        parametric vector form.
+                    </p>
+                </statement>
+            </task>
 
-    </exercise>
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\cvec =  \threevec{\phantom{-}5}{-7}{-2}</m> a
+                        linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>,
+                        and <m>\vvec_3</m>?
+                        Clearly show how this question can be turned into a
+                        system of linear equations and then explain your answer.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    <!-- Q12 Section 2.3 -->
-    <exercise>
-      <introduction>
-        <p>
-          Suppose that we have the following collection of vectors in 
-          <m>\mathbb{R}^4</m>:  <md>{\vvec_1 = \fourvec{1}{1}{1}{1}, 
+    <page>
+        <!-- Q12 Section 2.3 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that we have the following collection of vectors in
+                    <m>\mathbb{R}^4</m>:
+                    <md>
+                        {\vvec_1 = \fourvec{1}{1}{1}{1}, 
           \vvec_2 = \fourvec{\phantom{-}1}{\phantom{-}1}{-1}{-1}, 
-          \vvec_3 = \fourvec{\phantom{-}1}{-1}{\phantom{-}1}{-1}}</md>.
-  </p>
-      </introduction>
-      <task>
-      <statement>
-        <p>
-          Give an example of a nonzero vector $\wvec$ that is not equal 
-          to <m>\vvec_1</m>, <m>\vvec_2</m>, or <m>\vvec_3</m> that belongs to the 
-          span of <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>.  Write a sentence 
-          to say why your vector has the desired property.
+          \vvec_3 = \fourvec{\phantom{-}1}{-1}{\phantom{-}1}{-1}}
+                    </md>.
+                </p>
+            </introduction>
 
-      </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Give an example of a nonzero vector $\wvec$ that is not
+                        equal to <m>\vvec_1</m>, <m>\vvec_2</m>, or
+                        <m>\vvec_3</m> that belongs to the span of
+                        <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>.
+                        Write a sentence to say why your vector has the desired
+                        property.
+                    </p>
+                </statement>
+            </task>
 
-        <task>
-      <statement>
-        <p>
-          Explain why Span<m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m> is not 
-          <m>\mathbb{R}^4</m> using pivots.
-             </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain why Span <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>
+                        is not <m>\mathbb{R}^4</m> using pivots.
+                    </p>
+                </statement>
+            </task>
 
-       <task>
-      <statement>
-        <p>
-         Find a vector <m>\vvec_4</m> so that <m>\vvec_4</m> is not in 
-         Span<m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>, and clearly justify 
-         why your vector has this property.
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        Find a vector <m>\vvec_4</m> so that <m>\vvec_4</m> is
+                        not in Span <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>, and
+                        clearly justify why your vector has this property.
+                    </p>
+                </statement>
+            </task>
 
-      <task>
-      <statement>
-        <p>
-         What can you say about Span<m>\{ \vvec_1, \vvec_2, \vvec_3, \vvec_4 \}</m>?  Why?
-          </p>
-        </statement>
-      </task>
+            <task>
+                <statement>
+                    <p>
+                        What can you say about Span
+                        <m>\{ \vvec_1, \vvec_2, \vvec_3, \vvec_4 \}</m>?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
 
-    </exercise>
+    <page>
+        <!-- Question 13, Section 2.3, 2.4 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Let the vectors <m>{\vec u}</m>, <m>{\vec v}</m>,
+                    <m>{\vec w}</m>, and <m>{\vec z}</m> be given by
+                    <md>
+                        {\vec u} = \left[ \begin{array}{r}2 \\ 1 \\ -1\end{array} \right], \ {\vec v} = \left[ \begin{array}{r}-3 \\ -1 \\ 2\end{array} \right], \ {\vec w} = \left[ \begin{array}{r}1 \\ 1 \\ 0\end{array} \right], \ {\vec z} = \left[ \begin{array}{r}1 \\ 2 \\ 3\end{array} \right]
+                    </md>
+                </p>
+            </introduction>
 
+            <task>
+                <introduction>
+                    <p>
+                        For each of the following sets of vectors, is the set
+                        linearly dependent or linearly independent?
+                        Give a clear justification of each conclusion, including
+                        any relevant computations you use.
+                    </p>
+                </introduction>
 
-  </page>
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{ {\vec u}, {\vec v} \}</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{ {\vec u}, {\vec v}, {\vec w} \}</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{ {\vec u}, {\vec v}, {\vec w}, {\vec z} \}</m>
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Can you find a set of <em>exactly three</em> vectors
+                        among <m>{\vec u}</m>, <m>{\vec v}</m>, <m>{\vec w}</m>,
+                        and <m>{\vec z}</m> that is linearly independent?
+                        If so, do so with justification; if not, explain why
+                        not.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Of the three sets of vectors in (a), which set(s) span
+                        all of <m>{\mathbb{R}}^{3}</m>?
+                        Write carefully to explain your conclusions.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 14, Section 2.3/2.4 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>k</m> is an unknown parameter and consider
+                    the set of vectors
+                    <md>
+                        {\vec v}_{1} = \left[ \begin{array}{r}1 \\ 1 \\ -1\end{array} \right], \ {\vec v}_{2} = \left[ \begin{array}{r}2 \\ 1 \\ 1\end{array} \right], \ {\vec v}_{3} = \left[ \begin{array}{r}3 \\ 1 \\ k\end{array} \right]
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        For what value(s) of <m>k</m> is the set
+                        <m>\{ {\vec v}_{1}, {\vec v}_{2}, {\vec v}_{3} \}</m>
+                        linearly dependent?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        For what value(s) of <m>k</m> is Span
+                        <m>\{ {\vec v}_{1}, {\vec v}_{2}, {\vec v}_{3} \} = {\mathbb{R}}^{3}</m>
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        How are your responses to (a) and (b) connected to one
+                        another?
+                        (There are several important things you can say here.)
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 15, Section 2.5/2.6 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Let <m>S : \mathbb{R}^{2} \to \mathbb{R}^{2}</m> be the
+                    linear transformation that reflects each input vector across
+                    the line <m>y = x</m>, and let
+                    <m>R : \mathbb{R}^{2} \to \mathbb{R}^{2}</m> be the
+                    transformation that rotates each input vector by
+                    <m>90^{\circ}</m> clockwise about the origin.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine the matrices <m>B</m> and <m>C</m> such that
+                        <m>S({\vec x}) = B{\vec x}</m> and
+                        <m>R({\vec x}) = C{\vec x}</m>.
+                        For each, write a sentence to explain your reasoning.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Consider the new transformation <m>T</m> that is defined
+                        by <m>T({\vec x}) = (R \circ S)({\vec x})</m>.
+                        Determine the matrix <m>M</m> for which
+                        <m>T({\vec x}) = M{\vec x}</m>.
+                        Clearly show your work and thinking.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        For the transformation <m>T</m> defined in (b) as the
+                        composition of <m>R</m> and <m>S</m>, what is the effect
+                        of <m>T</m> on input vectors?
+                        (For instance, you might see if you can determine if
+                        <m>T</m> generates a rotation around the origin by a
+                        certain angle, a reflection across a certain line, or
+                        some other geometric effect.)
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Create the new transformation <m>Q</m> that is defined
+                        by <m>Q({\vec x}) = (S\circ R)({\vec x})</m>.
+                        Are <m>Q</m> and <m>T</m> the same transformation?
+                        Explain how you know.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the following 3 prompts ((a), (b), and (c)), you
+                    are given some general information about a collection of
+                    vectors, and then asked to consider two statements, <q>I</q>
+                    and <q>II</q>, about those vectors.
+                    For each, your task is to decide which of them is true.
+                    It could be that both are true, only one of them is true,
+                    both are false, or there's not enough information to say
+                    (about one or both of them).
+                </p>
+
+                <p>
+                    For each prompt, your task is to (i) make an appropriate
+                    conclusion about each of the two statements (is it true,
+                    false, or can't say) <em>and</em> (ii) provide clear written
+                    justification that explains how you have reasoned from the
+                    given information to your conclusion.
+                    If you use a proposition from the text, please refer to that
+                    clearly by number and by a summary of what the proposition
+                    tells you.
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        Suppose that a set of vectors in <m>{\mathbb{R}}^{n}</m>
+                        has fewer vectors than there are entries in each vector.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors is linearly independent.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors doesn't span
+                            <m>{\mathbb{R}}^{n}</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <introduction>
+                    <p>
+                        Suppose that a set of vectors in <m>{\mathbb{R}}^{n}</m>
+                        has more vectors than there are entries in each vector.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors is linearly independent.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors doesn't span
+                            <m>{\mathbb{R}}^{n}</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <introduction>
+                    <p>
+                        Suppose we have a set of 12 vectors
+                        <m>\{{\vec v}_{1}, {\vec v}_{2}, \ldots, {\vec v}_{12}\}</m>
+                        in <m>{\mathbb{R}}^{12}</m>; note that we have exactly
+                        the same number of vectors as there are components in
+                        each vector.
+                        In addition, suppose that you know that for some vector
+                        <m>{\vec b}</m> in <m>{\mathbb{R}}^{12}</m>,
+                        <m>{\vec b}</m> can be written as a linear combination
+                        of the vectors <m>{\vec v}_{1}</m>, <m>{\vec v}_{2}</m>,
+                        <m>\ldots</m>, <m>{\vec v}_{12}</m> in exactly one way.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors is linearly independent.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors doesn't span
+                            <m>{\mathbb{R}}^{n}</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 17 Section 2.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>T</m> is the matrix transformation defined
+                    by the matrix <m>A</m> and <m>S</m> is the matrix
+                    transformation defined by <m>B</m> where
+                    <md>
+                        A = \left[ \begin{array}{rrr}3 &amp;-1 &amp; 0\\ 1 &amp;2 &amp; 2 \\ -1 &amp; 3 &amp;2\end{array}\right], \,\,\,\,\, B =\left[ \begin{array}{rrr}1 &amp;-1 &amp;0 \\ 2&amp;1 &amp;2\end{array}\right].
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>T : \mathbb{R}^{n} \to \mathbb{R}^{m}</m> what are
+                        the values of <m>n</m> and <m>m</m>?
+                        What values of <m>n</m> and <m>m</m> are appropriate for
+                        the transformation <m>S</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Evaluate
+                        <m>T \left( \left[\begin{array}{c}\phantom{-}1 \\ -3 \\ \phantom{-}2\end{array}\right]\right)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Evaluate
+                        <m>S\left(\left[\begin{array}{c}-2 \\ \phantom{-}2 \\ \phantom{-}1\end{array}\right]\right)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Evaluate
+                        <m>(S\circ T)\left(\left[\begin{array}{c}\phantom{-}1 \\ -3 \\ \phantom{-}2\end{array}\right]\right)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the matrix <m>C</m> that defines the matrix
+                        transformation <m>S\circ T</m>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>T</m> is a matrix transformation such that
+                    <m>T : \mathbb{R}^{2} \to \mathbb{R}^{3}</m>, and we know
+                    that
+                    <md>
+                        T\left(\left[\begin{array}{c}1 \\ 0\end{array}\right]\right) = \left[ \begin{array}{r}2 \\ 1 \\ -1\end{array} \right] \ \mbox{and}\ T\left(\left[\begin{array}{c}0 \\ 1\end{array}\right]\right) = \left[ \begin{array}{r}-1 \\ 3 \\ 2\end{array} \right].
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the matrix <m>A</m> such that
+                        <m>T({\vec x}) = A{\vec x}</m> and hence determine
+                        <m>T({\vec v})</m> for
+                        <m>{\vec v} = \left[ \begin{array}{r}-3 \\ 4\end{array} \right].</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine and describe all vectors <m>{\vec x}</m> such
+                        that
+                        <m>T({\vec x}) = \left[ \begin{array}{r}3 \\ 19 \\ 6\end{array} \right]</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        True or false: for any <m>{\vec b}</m> in
+                        <m>\mathbb{R}^{3}</m>, we can find a solution
+                        <m>{\vec x}</m> to the equation
+                        <m>T({\vec x}) = {\vec b}</m>.
+                        (Be sure to justify your conclusion.)
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 19 Section 2.6/3.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    This problem asks you to investigate some invertible
+                    matrices whose inverse has a special property.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain why the <m>2 \times 2</m> identity matrix,
+                        <m>I_{2}</m>, is invertible and why its inverse is
+                        itself.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find 2 other <m>2 \times 2</m> matrices <m>B</m> and
+                        <m>C</m> such that <m>A</m>, <m>B</m>, <m>C</m>, and
+                        <m>I_{2}</m> are four different matrices and each matrix
+                        has the property that the matrix is invertible and its
+                        inverse is itself.
+                        Write to explain your thinking for how you found
+                        <m>B</m> and <m>C</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Give an example, with justification, of an invertible
+                        <m>3 \times 3</m> matrix <m>M</m> such that <m>M</m> is
+                        not <m>I_{3}</m> and <m>M^{-1}= M</m>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 20, Section 3.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Determine whether the following statements are true or false
+                    and explain your reasoning.
+                    If you use a proposition from the text, please refer to that
+                    clearly by number and by a summary of what the proposition
+                    tells you.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is invertible, then the columns of <m>A</m>
+                        are linearly independent.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is a square matrix whose diagonal entries
+                        are all nonzero, then <m>A</m> is invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is a square matrix whose diagonal entries
+                        are all nonzero, then <m>A</m> is invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is an invertible <m>n\times n</m> matrix,
+                        then span of the columns of <m>A</m> is
+                        <m>\mathbb{R}^{n}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is invertible, then there is a nonzero
+                        solution to the homogeneous equation
+                        <m>A{\vec x} = {\vec 0}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is an <m>n\times n</m> matrix and the
+                        equation <m>A{\vec x}={\vec b}</m> has a solution for
+                        every vector <m>{\vec b}</m>, then <m>A</m> is
+                        invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Using the figure, determine
+                        <m>\{ {\vec a} \}_{\mathcal{B}}</m>,
+                        <m>\{ {\vec b} \}_{\mathcal{B}}</m>, and
+                        <m>\{ {\vec c} \}_{\mathcal{B}}</m> for the vectors
+                        <md>
+                            {\vec a} = \left[\begin{array}{c}-6 \\ 0\end{array}\right], \ {\vec b} = \left[\begin{array}{c}0 \\ -6\end{array}\right], \ {\vec c} = \left[\begin{array}{c}4 \\ 5\end{array}\right].
+                        </md>
+                        Again, write at least one sentence that explains how you
+                        determined your results.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 21, Section 3.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the vectors <m>{\vec v}_{1}</m> and
+                    <m>{\vec v}_{2}</m> given in the figure below and let
+                    <m>\mathcal{B}= \{ {\vec v}_{1}, {\vec v}_{2} \}</m>.
+                </p>
+
+                <image source="images/ex-basis.png"/>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain why
+                        <m>\mathcal{B}= \{ {\vec v}_{1}, {\vec v}_{2} \}</m> is
+                        a basis for <m>{\mathbb{R}}^{2}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        On the figure, plot the vectors <m>{\vec x}</m>,
+                        <m>{\vec y}</m>, and <m>{\vec z}</m> that respectively
+                        satisfy
+                        <md>
+                            \{ {\vec x} \}_{\mathcal{B}}= \left[\begin{array}{c}2 \\ 2\end{array}\right], \ \{ {\vec y} \}_{\mathcal{B}}= \left[\begin{array}{c}-2 \\ -1\end{array}\right], \ \{ {\vec z} \}_{\mathcal{B}}= \left[\begin{array}{c}-1 \\ 2\end{array}\right]
+                        </md>
+                        Write at least one sentence that explains how you
+                        determined the vectors that you plotted.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Lastly, find <m>\{{\vec u}\}_{\mathcal{B}}</m> if
+                        <m>{\vec u} = \left[\begin{array}{c}600 \\ 900\end{array}\right]</m>,
+                        and find <m>{\vec v}</m> if
+                        <m>\{{\vec v}\}_{\mathcal{B}}= \left[\begin{array}{c}-70 \\ 105\end{array}\right]</m>.
+                        Show your work - if you used Sage, say what you did.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 22 Section 3.1 and 3.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Provide a justification for your response to each of the
+                    following questions.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose you have a linearly independent set of <m>m</m>
+                        vectors in <m>\mathbb{R}^{m}</m>.
+                        Can you guarantee that this set of vectors forms a basis
+                        of <m>\mathbb{R}^{m}</m>?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose you have a set of 10 vectors
+                        <m>\{{\vec v}_{1}, {\vec v}_{2}, \ldots, {\vec v}_{10}\}</m>
+                        in <m>\mathbb{R}^{10}</m> and every vector in
+                        <m>\mathbb{R}^{10}</m> can be written as a linear
+                        combination of these 10 vectors.
+                        Can you guarantee that this set of vectors forms a basis
+                        for <m>\mathbb{R}^{10}</m>?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose <m>A</m> is a <m>15\times15</m> matrix and that
+                        the equation <m>A{\vec x} = {\vec b}</m> has a unique
+                        solution for some vector <m>{\vec b}</m>.
+                        Can you guarantee that <m>A</m> is invertible?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 23 Section 3.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Crystallographers find it convenient to use coordinate
+                    systems that are adapted to the specific geometry of a
+                    crystal.
+                    As a two-dimensional example, consider a layer of graphite
+                    in which carbon atoms are arranged in regular hexagons to
+                    form the crystalline structure shown below.
+                </p>
+
+                <image source="images/ex-graphite.eps"/>
+                <p>
+                    The origin of the coordinate is at the carbon atom labeled
+                    by <q>0.</q> It is convenient to choose the basis
+                    <m>{\cal B}</m> defined by the indicated vectors
+                    <m>{\vec v}_{1}</m> and <m>{\vec v}_{2}</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        Indicate the locations <m>{\vec x}</m> for which
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}1 \\ 0\end{array}\right]</m>.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}0 \\ 1\end{array}\right]</m>.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}2 \\ 1\end{array}\right]</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the coordinates in the basis <m>{\cal B}</m> of the
+                        six yellow carbon atoms.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the coordinates of the center of the hexagon
+                        labeled <q>C.</q>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the coordinates of the atom labeled <q>1.</q>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 24 Section 3.4 -->
+        <exercise>
+            <statement>
+                <p>
+                    Consider the matrix
+                    <m>A = \begin{bmatrix}-2 &amp; 1 &amp; k \\ 2 &amp; 3 &amp; 0 \\ 1 &amp; 2 &amp; 2 \\\end{bmatrix}</m>
+                    defined in terms of the parameter <m>k</m>.
+                    Compute <m>\det(A)</m>.
+                    Show your work.
+                </p>
+            </statement>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 25 Section 3.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>B</m> is a matrix
+                    <m>B = \begin{bmatrix}{\vec v}_{1}&amp;{\vec v}_{2}&amp;{\vec v}_{3}&amp;{\vec v}_{4}&amp;{\vec v}_{5}\end{bmatrix}</m>
+                    and that its reduced row echelon form is
+                    <md>
+                        B \sim \begin{bmatrix}1 &amp; -3 &amp; 0 &amp; -7 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 6 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\end{bmatrix}.
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>{\vec x}</m> is a solution to the equation
+                        <m>B{\vec x} = {\vec 0}</m>, what is the dimension of
+                        the vector <m>{\vec x}</m> and why?
+                        (i.e.
+                        How many entries does <m>{\vec x}</m> have?)
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Give a parametric vector description of the solution set
+                        to the equation <m>B{\vec x} = {\vec 0}</m>.
+                        Show your steps.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a basis for the null space <m>\text{Nul}(B)</m>.
+                        Be sure to explain why your set of vectors is a basis
+                        for <m>\text{Nul}(B)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Among the vectors <m>{\vec v}_{1}</m>,
+                        <m>{\vec v}_{2}</m>, <m>{\vec v}_{3}</m>,
+                        <m>{\vec v}_{4}</m>, and <m>{\vec v}_{5}</m>, what is
+                        the largest linearly independent set you can find and
+                        why?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 26 Section 3.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is the matrix
+                    <md>
+                        A = \left[ \begin{array}{rrrrr}1 &amp; -2 &amp; -1 &amp; 2 &amp; -4 \\ 0 &amp; 0 &amp; 3 &amp; -3 &amp; 9 \\ -2 &amp; 4 &amp; 5 &amp; -7 &amp; 17 \\ -1 &amp; 2 &amp; 1 &amp; -3 &amp; 5\end{array} \right]
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Is the column space of <m>A</m> equal to
+                        <m>{\mathbb{R}}^{4}</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine a basis for Col <m>(A)</m>.
+                        Clearly justify your choice.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a nonzero vector <m>{\vec b}</m> in
+                        <m>{\mathbb{R}}^{4}</m> that is not equal to one of your
+                        basis vectors in (b) such that <m>{\vec b}</m> is in
+                        Col( <m>A</m> ).
+                        Explain how you found <m>{\vec b}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a vector <m>{\vec c}</m> in <m>{\mathbb{R}}^{4}</m>
+                        such that <m>{\vec c}</m> is not in Col( <m>A</m> ), or
+                        explain why no such vector exists.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 27 Section 3.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Let
+                    <m>A= \left[ \begin{array}{rrrrrr}1 &amp; 2 &amp; -4 &amp; -8 &amp; -3 &amp; 9\\ 2 &amp; 0 &amp; -4 &amp; 0 &amp; 1 &amp; -1\\ 1 &amp; -1 &amp; -1 &amp; 4 &amp; 4 &amp; -7 \\ 1 &amp; 1 &amp; -3 &amp; -4 &amp; 2 &amp; 1 \\ 3 &amp; 2 &amp; -8 &amp; -8 &amp; 5 &amp; -4\end{array} \right]</m>.
+                </p>
+
+                <p>
+                    ( <alert>Note</alert>: If you go to
+                    <url href="https://gvsu.edu/s/2EY">https://gvsu.edu/s/2EY</url>
+                    you'll find the Sage code to enter the <m>5 \times 6</m>
+                    matrix <m>A</m> given here and you can copy and paste it to
+                    ensure you have no entry errors.)
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        Complete each of the following sentences, with a brief
+                        explanation of why:
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            Nul <m>(A)</m> is a subspace of
+                            <m>{\mathbb{R}}^{k}</m> for <m>k =</m> <fillin/>,
+                            because
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Col <m>(A)</m> is a subspace of
+                            <m>{\mathbb{R}}^{p}</m> for <m>p =</m> <fillin/>,
+                            because
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <introduction>
+                    <p>
+                        With clear justification and labeling of your results
+                        (one short sentence of justification for each of the
+                        following items), determine each of the following:
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            A basis for Col <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            A basis for Nul <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The dimension of Col <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The dimension of Nul <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 28 Section 4.1/4.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    This should be completed entirely by hand, with no use of
+                    Sage or other technology.
+                    For each question, write enough that you demonstrate that
+                    you are doing the work by hand.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Let
+                        <m>A = \left[ \begin{array}{cc}34 &amp; -42 \\ 21 &amp; -29\end{array} \right]</m>.
+                        Verify that
+                        <m>{\vec u} = \left[\begin{array}{c}2 \\ 1\end{array}\right]</m>
+                        and
+                        <m>{\vec v} = \left[\begin{array}{c}1 \\ 1\end{array}\right]</m>
+                        are eigenvectors of <m>A</m> and determine the
+                        corresponding eigenvalue for each.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose <m>C</m> is a <m>2 \times 2</m> matrix whose
+                        eigenvectors are the vectors <m>{\vec v}_{1}</m> and
+                        <m>{\vec v}_{2}</m> in the given figure.
+                        Suppose further that the corresponding eigenvalues of
+                        <m>C</m> are <m>\lambda_{1} = -1</m> and
+                        <m>\lambda_{2} = 2</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let
+                        <m>B = \left[ \begin{array}{cc}1 &amp; -1 \\ 1 &amp; 1\end{array} \right]</m>.
+                        Determine the characteristic equation of <m>B</m> and
+                        then use it to explain why <m>B</m> has no real
+                        eigenvalues.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Write each of the following vectors as a linear
+                        combination of <m>{\vec v}_{1}</m> and
+                        <m>{\vec v}_{2}</m> (clearly showing how you obtained
+                        these linear combinations), and then sketch the three
+                        resulting vectors on the figure (with labels).
+                        Note that there is no scale given in the figure; write
+                        all of your results in terms of <m>{\vec v}_{1}</m> and
+                        <m>{\vec v}_{2}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        the three vectors to find and sketch: (i)
+                        <m>C {\vec x}</m> (ii) <m>C^{2} {\vec x}</m> (iii)
+                        <m>C^{-1}{\vec x}</m>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+
+        <image source="images/A-evecs.png"/>
+    </page>
+
+    <page>
+        <exercise>
+            <!-- Question 29 Section 4.2/4.3 -->
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is a <m>3 \times 3</m> matrix with
+                    eigenvalues <m>\lambda_{1} = 8</m> and
+                    <m>\lambda_{2} = -5</m>, where one eigenvalue has
+                    multiplicity 2.
+                    A student is in the process of determining a basis for each
+                    eigenspace of <m>A</m>; your task is to finish their work.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        After computing <m>A - 8I</m>, the student row-reduces
+                        and finds that
+                        <md>
+                            \mbox{rref}([A - 8I \ | \ {\vec 0} \,]) = \left[ \begin{array}{rrr|r}1 &amp; 0 &amp; 7 &amp; 0 \\ 0 &amp; 1 &amp; -3 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array} \right]
+                        </md>
+                        Determine a basis for <m>E_{8}</m>.
+                        Show your thinking clearly.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        After computing <m>A + 5I</m>, the student row-reduces
+                        and finds that
+                        <md>
+                            \mbox{rref}([A + 5I \ | \ {\vec 0} \,]) = \left[ \begin{array}{rrr|r}1 &amp; -4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array} \right]
+                        </md>
+                        Determine a basis for <m>E_{-5}</m>.
+                        Show your thinking clearly.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is <m>A</m> diagonalizable?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose that there was an error in the work in (b), and
+                        that actually after computing <m>A + 5I</m>, the student
+                        correctly row-reduces and finds that
+                        <md>
+                            \mbox{rref}([A +5I \ | \ {\vec 0} \,]) = \left[ \begin{array}{rrr|r}1 &amp; -4 &amp; -9 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array} \right]
+                        </md>
+                        Determine a basis for <m>E_{-5}</m>.
+                        Show your thinking clearly.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        What impact, if any, does the result of (d) have on your
+                        conclusions in (c)?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <statement>
+                <p>
+                    This final homework exercise invites you to reflect on your
+                    learning in the course.
+                    To earn an <q>S</q>, you need to follow the directions and
+                    show honest effort and introspection, and of course write in
+                    your own words.
+                    Here's the prompt:
+                </p>
+
+                <p>
+                    <em>What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?</em>
+                </p>
+
+                <p>
+                    You should type a 250-500 word essay in response (that's
+                    roughly 1/2 to 3/4 of a page of single-spaced text).
+                    Proof-read your work; collegiate-quality writing is
+                    expected.
+                    When you are finished, copy and paste your essay onto
+                    Blackboard under this homework problem.
+                </p>
+            </statement>
+        </exercise>
+    </page>
 </worksheet>

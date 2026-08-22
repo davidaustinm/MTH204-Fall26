@@ -95,6 +95,8 @@
         <chapter xml:id="homework">
             <title>Homework</title>
 
+            <xi:include href="./homework/homework-all_problems.ptx" />
+
             <!-- Include homework files -->
             <!--<xi:include href="./homework/homework01.ptx"/>-->
         </chapter>
