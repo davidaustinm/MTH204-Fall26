@@ -3,6 +3,9 @@
 <worksheet>
     <title>Section 1.2 - Reduced row echelon form (Part 2)</title>
 
+    <page>
+        
+    
     <p>
         There is a special class of matrices whose form makes it especially easy
         to describe the solution space of the corresponding linear system.
@@ -67,7 +70,7 @@
         future.
     </p>
 
-    <exercise workspace="1in">
+    <exercise workspace=".5in">
         <statement>
             <p>
                 When practicing Gaussian Elimination, you might have noticed it
@@ -101,7 +104,11 @@
         </solution>
     </exercise>
 
-    <exercise workspace="2in">
+    </page>
+
+    <page>
+
+    <exercise workspace=".5in">
         <introduction>
             <p>
                 Consider each of the following augmented matrices.
@@ -117,7 +124,7 @@
             </p>
         </introduction>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     <m>\ds
@@ -152,7 +159,7 @@
             </solution>
         </task>
 
-        <task workspace="3in">
+        <task >
             <statement>
                 <p>
                     <m>\ds
@@ -177,7 +184,7 @@
             </solution>
         </task>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     <m>\ds
@@ -201,7 +208,7 @@
             </solution>
         </task>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     <m>
@@ -248,7 +255,7 @@
             </solution>
         </task>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     <m>\ds
@@ -302,6 +309,10 @@
         </task>
     </exercise>
 
+     </page>
+
+    <page>
+
     <exercise workspace="1in">
         <introduction>
             <p>
@@ -309,7 +320,7 @@
             </p>
         </introduction>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     Suppose that the reduced row echelon form of a matrix looks
@@ -337,7 +348,7 @@
             </solution>
         </task>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     Suppose that the reduced row echelon form of a matrix looks
@@ -366,7 +377,7 @@
             </solution>
         </task>
 
-        <task workspace="3in">
+        <task>
             <statement>
                 <p>
                     If a linear system has no solutions, how can you tell by
@@ -383,7 +394,9 @@
             </solution>
         </task>
     </exercise>
+ </page>
 
+    <page>
     <exercise workspace="1in">
         <statement>
             <p>
@@ -488,6 +501,8 @@ A.rref()
             </sage>
         </solution>
     </exercise>
+
+     </page>
 
     <outcomes>
         <introduction>

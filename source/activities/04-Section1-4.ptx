@@ -3,6 +3,9 @@
 <worksheet>
     <title>Section 1.4 - Pivots and their influence on solution spaces</title>
 
+    <page>
+        
+   
     <exercise>
         <introduction>
             <p>
@@ -153,6 +156,11 @@
         </task>
     </exercise>
 
+     </page>
+
+     <page>
+        
+
     <exercise workspace=".5in">
         <statement>
             <p>
@@ -251,6 +259,11 @@
         </solution>
     </exercise>
 
+     </page>
+
+     <page>
+
+
     <exercise workspace="1.1in">
         <statement>
             <p>
@@ -321,6 +334,10 @@
             </p>
         </solution>
     </exercise>
+
+     </page>
+
+     <page>
 
     <exercise>
         <introduction>
@@ -413,6 +430,10 @@
         </task>
     </exercise>
 
+     </page>
+
+     <page>
+
     <exercise workspace="1in">
         <statement>
             <p>
@@ -471,6 +492,10 @@
         </solution>
     </exercise>
 
+     </page>
+
+     <page>
+
     <exercise workspace="1in">
         <statement>
             <p>
@@ -508,6 +533,10 @@
             </p>
         </solution>
     </exercise>
+
+     </page>
+
+     <page>
 
     <exercise workspace="1in">
         <statement>
@@ -571,6 +600,9 @@
             </p>
         </solution>
     </exercise>
+     </page>
+
+     <page>
 
     <exercise workspace="1in">
         <statement>
@@ -684,6 +716,8 @@ A.rref()
             </image>
         </solution>
     </exercise>
+
+     </page>
 
     <outcomes>
         <introduction>
