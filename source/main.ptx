@@ -78,7 +78,6 @@
             <title>Handouts</title>
 
             <!-- Include handouts -->
-            <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
             <xi:include href="./handouts/02-Section1-2_H.ptx"/>
         </chapter>
 
