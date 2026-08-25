@@ -20,7 +20,7 @@
                     <title>Instructor</title>
 
                     <p>
-                        Professor Keough, MAK C-2-513,
+                        Professor Keough, MAK C-2-513, 616-331-3632.
                         <url href="mailto:keoulaur@.edu">keoulaur@gvsu.edu.edu</url>.
                     </p>
                 </li>
@@ -29,7 +29,31 @@
                     <title>Student Hours</title>
 
                     <p>
-                        TBD
+                        <ul>
+                            <li>
+                                <p>
+                                    Mondays 4-5PM
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Wednesdays 10-11AM
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Thursdays 1-2PM
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Fridays 10-11AM
+                                </p>
+                            </li>
+                        </ul>
                     </p>
                 </li>
 
@@ -56,6 +80,7 @@
                         <url href="http://gvsu.edu/s/0Ng" visual="gvsu.edu/s/0Ng">Sage</url>
                         and
                         <url href="https://runestone.academy/admin/auth/register" visual="runestone.academy/admin/auth/register">Runstone</url>.
+                        Our course name is ula_fall26_keough.
                     </p>
                 </li>
                 <!-- <li>
@@ -213,6 +238,33 @@
                 Throughout the course, we will be Making Sense Together - I ask
                 that you always strive to make sense, and I will be here to help
                 you.
+            </p>
+        </paragraphs>
+
+        <paragraphs>
+            <title>What should I know about my professor?</title>
+
+            <p>
+                Hi!
+                I'm Dr.
+                Keough, many students call me DocK for short.
+                My main priority in this course is for you to grow as a
+                mathematician: to be able to understand and apply complex
+                statements, to solve challenging problems, and to communicate
+                orally and in writing.
+            </p>
+
+            <p>
+                My teaching philosophy is that 
+            
+              <em>  Everyone has the right to
+                understand and enjoy mathematics, and to feel part of a
+                mathematical community. </em>
+                
+            </p>
+
+            <p>
+                I want you to succeed. Please see me when you need help.
             </p>
         </paragraphs>
 
