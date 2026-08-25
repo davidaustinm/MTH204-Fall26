@@ -16,21 +16,19 @@
 
             <!-- Course syllabus -->
             <xi:include href="./syllabus/syllabus.ptx"/>
-            <xi:include href="./syllabus/syllabus-Maggie_01.ptx" />
-            <xi:include href="./syllabus/syllabus-Maggie_02.ptx" />
-            <xi:include href="./syllabus/syllabus-Lauren.ptx" />
+            <xi:include href="./syllabus/syllabus-Maggie_01.ptx"/>
+            <xi:include href="./syllabus/syllabus-Maggie_02.ptx"/>
+            <xi:include href="./syllabus/syllabus-Lauren.ptx"/>
             <!-- Other documents could go here, like a schedule, project description, etc. -->
             <xi:include href="./syllabus/LTs.ptx"/>
             <xi:include href="./syllabus/LabPolicies.ptx"/>
             <xi:include href="./syllabus/HWPolicies.ptx"/>
             <xi:include href="./syllabus/ClassPreparationPolicies.ptx"/>
             <xi:include href="./syllabus/SummaryActivityPolicies.ptx"/>
-            <xi:include href="./syllabus/RunestoneL.ptx" />
-            <xi:include href="./syllabus/RunestoneM01.ptx" />
-            <xi:include href="./syllabus/RunestoneM02.ptx" />
+            <xi:include href="./syllabus/RunestoneL.ptx"/>
+            <xi:include href="./syllabus/RunestoneM01.ptx"/>
+            <xi:include href="./syllabus/RunestoneM02.ptx"/>
         </chapter>
-
-
 
         <chapter xml:id="activities">
             <title>Activity Worksheets</title>
@@ -98,8 +96,7 @@
         <chapter xml:id="homework">
             <title>Homework</title>
 
-            <xi:include href="./homework/homework-all_problems.ptx" />
-
+            <xi:include href="./homework/homework-all_problems.ptx"/>
             <!-- Include homework files -->
             <!--<xi:include href="./homework/homework01.ptx"/>-->
         </chapter>
