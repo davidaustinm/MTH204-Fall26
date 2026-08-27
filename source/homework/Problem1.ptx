@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 1 - Written Homework</title>
+
+    <page>
+        <!-- Q1 Section 1.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the given systems, state (i) the number of
+                    equations, (ii) the number of unknowns, and (iii) whether or
+                    not the system is linear.
+                    For (iii), provide written justification for your
+                    conclusion.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
+          \begin{cases}
+x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
+x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
+\end{cases}
+</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
+          \begin{cases}
+x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
+3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\
+9x \amp + \amp 3y \amp - \amp z \amp = \amp -4 \\
+-2x \amp - \amp y \amp + \amp 8z \amp = \amp 0 \\
+\end{cases}
+</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
+          \begin{cases}
+x^2 \amp - \amp 2xy \amp + \amp y^3 \amp = \amp 9 \\
+\sin(x) \amp + \amp e^y \amp - \amp 4y \amp = \amp 0 \\
+\end{cases}
+</m>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 28 - Written Homework</title>
+
+    <page>
+        <!-- Question 28 Section 4.1/4.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    This should be completed entirely by hand, with no use of
+                    Sage or other technology.
+                    For each question, write enough that you demonstrate that
+                    you are doing the work by hand.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Let
+                        <m>A = \left[ \begin{array}{cc}34 &amp; -42 \\ 21 &amp; -29\end{array} \right]</m>.
+                        Verify that
+                        <m>{\vec u} = \left[\begin{array}{c}2 \\ 1\end{array}\right]</m>
+                        and
+                        <m>{\vec v} = \left[\begin{array}{c}1 \\ 1\end{array}\right]</m>
+                        are eigenvectors of <m>A</m> and determine the
+                        corresponding eigenvalue for each.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose <m>C</m> is a <m>2 \times 2</m> matrix whose
+                        eigenvectors are the vectors <m>{\vec v}_{1}</m> and
+                        <m>{\vec v}_{2}</m> in the given figure.
+                        Suppose further that the corresponding eigenvalues of
+                        <m>C</m> are <m>\lambda_{1} = -1</m> and
+                        <m>\lambda_{2} = 2</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let
+                        <m>B = \left[ \begin{array}{cc}1 &amp; -1 \\ 1 &amp; 1\end{array} \right]</m>.
+                        Determine the characteristic equation of <m>B</m> and
+                        then use it to explain why <m>B</m> has no real
+                        eigenvalues.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Write each of the following vectors as a linear
+                        combination of <m>{\vec v}_{1}</m> and
+                        <m>{\vec v}_{2}</m> (clearly showing how you obtained
+                        these linear combinations), and then sketch the three
+                        resulting vectors on the figure (with labels).
+                        Note that there is no scale given in the figure; write
+                        all of your results in terms of <m>{\vec v}_{1}</m> and
+                        <m>{\vec v}_{2}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        the three vectors to find and sketch: (i)
+                        <m>C {\vec x}</m> (ii) <m>C^{2} {\vec x}</m> (iii)
+                        <m>C^{-1}{\vec x}</m>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+
+        <image source="images/A-evecs.png"/>
+    </page>
+</worksheet>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 11 - Written Homework</title>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is the matrix
+                    <m>A = [ \vvec_1 \ \ \vvec_2 \ \ \vvec_3]</m> where
+                    <md>
+                        \vvec_1 = \threevec111, \ \ \vvec_2 = \threevec{\phantom{-}2}{-1}{\phantom{-}0}, \ \ \vvec_3 = \threevec{-1}{\phantom{-}3}{\phantom{-}2}
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        If
+                        <m>\xvec = \threevec{\phantom{-}4}{-2}{\phantom{-}3}</m>,
+                        write <m>A\xvec</m> in two different ways: (i) as a
+                        linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>,
+                        and <m>\vvec_3</m>, and (ii) as a single vector that you
+                        find by hand.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>\bvec = \threevec{\phantom{-}5}{-7}{-3}</m>,
+                        determine all solutions to the equation
+                        <m>A\xvec = \bvec</m>.
+                        Clearly show how this problem can be turned into a
+                        system of equations (don't just write down an augmented
+                        matrix), and solve.
+                        If there are infinitely many solutions, express them in
+                        parametric vector form.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\cvec =  \threevec{\phantom{-}5}{-7}{-2}</m> a
+                        linear combination of <m>\vvec_1</m>, <m>\vvec_2</m>,
+                        and <m>\vvec_3</m>?
+                        Clearly show how this question can be turned into a
+                        system of linear equations and then explain your answer.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 13 - Written Homework</title>
+
+    <page>
+        <!-- Question 13, Section 2.3, 2.4 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Let the vectors <m>{\vec u}</m>, <m>{\vec v}</m>,
+                    <m>{\vec w}</m>, and <m>{\vec z}</m> be given by
+                    <md>
+                        {\vec u} = \left[ \begin{array}{r}2 \\ 1 \\ -1\end{array} \right], \ {\vec v} = \left[ \begin{array}{r}-3 \\ -1 \\ 2\end{array} \right], \ {\vec w} = \left[ \begin{array}{r}1 \\ 1 \\ 0\end{array} \right], \ {\vec z} = \left[ \begin{array}{r}1 \\ 2 \\ 3\end{array} \right]
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        For each of the following sets of vectors, is the set
+                        linearly dependent or linearly independent?
+                        Give a clear justification of each conclusion, including
+                        any relevant computations you use.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{ {\vec u}, {\vec v} \}</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{ {\vec u}, {\vec v}, {\vec w} \}</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{ {\vec u}, {\vec v}, {\vec w}, {\vec z} \}</m>
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Can you find a set of <em>exactly three</em> vectors
+                        among <m>{\vec u}</m>, <m>{\vec v}</m>, <m>{\vec w}</m>,
+                        and <m>{\vec z}</m> that is linearly independent?
+                        If so, do so with justification; if not, explain why
+                        not.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Of the three sets of vectors in (a), which set(s) span
+                        all of <m>{\mathbb{R}}^{3}</m>?
+                        Write carefully to explain your conclusions.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

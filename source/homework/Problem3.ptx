@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 3 - Written Homework</title>
+
+    <page>
+        <!-- Q3 Section 1.2 -->
+        <exercise>
+            <statement>
+                <p>
+                    A given linear system has been represented by an augmented
+                    matrix and the process of Gaussian elimination has begun.
+                    The current state of the process is shown in the augmented
+                    matrix below.
+                </p>
+
+                <p>
+                    Execute the next <alert>three steps</alert> (that is, the
+                    next three row operations) of Gaussian elimination, and
+                    clearly state the three row operations you used, employing
+                    notation like we've been using in class.
+                    Your work should show at least two additional matrices
+                    beyond the one stated here.
+                    <md>
+                        \left[
+    \begin{array}{rrr|r}
+      1 \amp 5 \amp -3 \amp 6 \\
+      0 \amp 1 \amp 2 \amp -4 \\
+      0 \amp -2 \amp 7 \amp 0 \\
+    \end{array}
+  \right]
+                    </md>
+                </p>
+            </statement>
+        </exercise>
+    </page>
+</worksheet>

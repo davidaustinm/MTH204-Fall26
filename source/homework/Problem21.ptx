@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 21 - Written Homework</title>
+
+    <page>
+        <!-- Question 21, Section 3.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the vectors <m>{\vec v}_{1}</m> and
+                    <m>{\vec v}_{2}</m> given in the figure below and let
+                    <m>\mathcal{B}= \{ {\vec v}_{1}, {\vec v}_{2} \}</m>.
+                </p>
+
+                <image source="images/ex-basis.png"/>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain why
+                        <m>\mathcal{B}= \{ {\vec v}_{1}, {\vec v}_{2} \}</m> is
+                        a basis for <m>{\mathbb{R}}^{2}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        On the figure, plot the vectors <m>{\vec x}</m>,
+                        <m>{\vec y}</m>, and <m>{\vec z}</m> that respectively
+                        satisfy
+                        <md>
+                            \{ {\vec x} \}_{\mathcal{B}}= \left[\begin{array}{c}2 \\ 2\end{array}\right], \ \{ {\vec y} \}_{\mathcal{B}}= \left[\begin{array}{c}-2 \\ -1\end{array}\right], \ \{ {\vec z} \}_{\mathcal{B}}= \left[\begin{array}{c}-1 \\ 2\end{array}\right]
+                        </md>
+                        Write at least one sentence that explains how you
+                        determined the vectors that you plotted.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Lastly, find <m>\{{\vec u}\}_{\mathcal{B}}</m> if
+                        <m>{\vec u} = \left[\begin{array}{c}600 \\ 900\end{array}\right]</m>,
+                        and find <m>{\vec v}</m> if
+                        <m>\{{\vec v}\}_{\mathcal{B}}= \left[\begin{array}{c}-70 \\ 105\end{array}\right]</m>.
+                        Show your work - if you used Sage, say what you did.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

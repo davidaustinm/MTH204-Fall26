@@ -562,6 +562,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
+         <!-- Q11 Section 2.3 -->
         <exercise>
             <introduction>
                 <p>
@@ -857,6 +858,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
+         <!-- Q16 Section 2.3, 2.4 -->
         <exercise>
             <introduction>
                 <p>
@@ -1034,6 +1036,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
+         <!-- Q18 Section 2.5 -->
         <exercise>
             <introduction>
                 <p>
@@ -1782,6 +1785,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
+         <!-- Q30 -->
         <exercise>
             <statement>
                 <p>

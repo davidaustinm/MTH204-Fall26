@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 23 - Written Homework</title>
+
+    <page>
+        <!-- Question 23 Section 3.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Crystallographers find it convenient to use coordinate
+                    systems that are adapted to the specific geometry of a
+                    crystal.
+                    As a two-dimensional example, consider a layer of graphite
+                    in which carbon atoms are arranged in regular hexagons to
+                    form the crystalline structure shown below.
+                </p>
+
+                <image source="images/ex-graphite.eps"/>
+                <p>
+                    The origin of the coordinate is at the carbon atom labeled
+                    by <q>0.</q> It is convenient to choose the basis
+                    <m>{\cal B}</m> defined by the indicated vectors
+                    <m>{\vec v}_{1}</m> and <m>{\vec v}_{2}</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        Indicate the locations <m>{\vec x}</m> for which
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}1 \\ 0\end{array}\right]</m>.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}0 \\ 1\end{array}\right]</m>.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}2 \\ 1\end{array}\right]</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the coordinates in the basis <m>{\cal B}</m> of the
+                        six yellow carbon atoms.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the coordinates of the center of the hexagon
+                        labeled <q>C.</q>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the coordinates of the atom labeled <q>1.</q>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

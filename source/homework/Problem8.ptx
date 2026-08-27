@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 8 - Written Homework</title>
+
+    <page>
+        <!-- Q8 Section 2.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the linear system
+                    <md>
+                        \begin{array}{rcrcr}
+2x \amp - \amp 3y \amp = \amp 13 \\
+3x \amp + \amp y  \amp = \amp 3 \\
+\end{array}
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Solve the system and describe the solution space fully.
+                        If there are infinitely many solutions, describe them in
+                        parametric form.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\uvec = \twovec{2}{3}</m> and
+                        <m>\vvec = \twovec{-3}{1}</m>.
+                        How can you rewrite the given linear system above as
+                        asking a question about a linear combination of
+                        <m>\uvec</m> and <m>\vvec</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\bvec = \twovec{13}{3}</m>.
+                        Is <m>\bvec</m> a linear combination of <m>\uvec</m> and
+                        <m>\vvec</m>?
+                        Why or why not?
+                        If yes, give the weights that make <m>\bvec</m> a linear
+                        combination of <m>\uvec</m> and <m>\vvec</m>; if no,
+                        explain why no such weights exist.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

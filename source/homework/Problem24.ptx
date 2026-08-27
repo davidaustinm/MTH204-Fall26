@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 24 - Written Homework</title>
+
+    <page>
+        <!-- Question 24 Section 3.4 -->
+        <exercise>
+            <statement>
+                <p>
+                    Consider the matrix
+                    <m>A = \begin{bmatrix}-2 &amp; 1 &amp; k \\ 2 &amp; 3 &amp; 0 \\ 1 &amp; 2 &amp; 2 \\\end{bmatrix}</m>
+                    defined in terms of the parameter <m>k</m>.
+                    Compute <m>\det(A)</m>.
+                    Show your work.
+                </p>
+            </statement>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Question 25 Section 3.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>B</m> is a matrix
+                    <m>B = \begin{bmatrix}{\vec v}_{1}&amp;{\vec v}_{2}&amp;{\vec v}_{3}&amp;{\vec v}_{4}&amp;{\vec v}_{5}\end{bmatrix}</m>
+                    and that its reduced row echelon form is
+                    <md>
+                        B \sim \begin{bmatrix}1 &amp; -3 &amp; 0 &amp; -7 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 6 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\end{bmatrix}.
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>{\vec x}</m> is a solution to the equation
+                        <m>B{\vec x} = {\vec 0}</m>, what is the dimension of
+                        the vector <m>{\vec x}</m> and why?
+                        (i.e.
+                        How many entries does <m>{\vec x}</m> have?)
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Give a parametric vector description of the solution set
+                        to the equation <m>B{\vec x} = {\vec 0}</m>.
+                        Show your steps.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a basis for the null space <m>\text{Nul}(B)</m>.
+                        Be sure to explain why your set of vectors is a basis
+                        for <m>\text{Nul}(B)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Among the vectors <m>{\vec v}_{1}</m>,
+                        <m>{\vec v}_{2}</m>, <m>{\vec v}_{3}</m>,
+                        <m>{\vec v}_{4}</m>, and <m>{\vec v}_{5}</m>, what is
+                        the largest linearly independent set you can find and
+                        why?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

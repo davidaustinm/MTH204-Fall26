@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 29 - Written Homework</title>
+
+    <page>
+        <exercise>
+            <!-- Question 29 Section 4.2/4.3 -->
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is a <m>3 \times 3</m> matrix with
+                    eigenvalues <m>\lambda_{1} = 8</m> and
+                    <m>\lambda_{2} = -5</m>, where one eigenvalue has
+                    multiplicity 2.
+                    A student is in the process of determining a basis for each
+                    eigenspace of <m>A</m>; your task is to finish their work.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        After computing <m>A - 8I</m>, the student row-reduces
+                        and finds that
+                        <md>
+                            \mbox{rref}([A - 8I \ | \ {\vec 0} \,]) = \left[ \begin{array}{rrr|r}1 &amp; 0 &amp; 7 &amp; 0 \\ 0 &amp; 1 &amp; -3 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array} \right]
+                        </md>
+                        Determine a basis for <m>E_{8}</m>.
+                        Show your thinking clearly.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        After computing <m>A + 5I</m>, the student row-reduces
+                        and finds that
+                        <md>
+                            \mbox{rref}([A + 5I \ | \ {\vec 0} \,]) = \left[ \begin{array}{rrr|r}1 &amp; -4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array} \right]
+                        </md>
+                        Determine a basis for <m>E_{-5}</m>.
+                        Show your thinking clearly.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is <m>A</m> diagonalizable?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose that there was an error in the work in (b), and
+                        that actually after computing <m>A + 5I</m>, the student
+                        correctly row-reduces and finds that
+                        <md>
+                            \mbox{rref}([A +5I \ | \ {\vec 0} \,]) = \left[ \begin{array}{rrr|r}1 &amp; -4 &amp; -9 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{array} \right]
+                        </md>
+                        Determine a basis for <m>E_{-5}</m>.
+                        Show your thinking clearly.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        What impact, if any, does the result of (d) have on your
+                        conclusions in (c)?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

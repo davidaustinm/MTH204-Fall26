@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 12 - Written Homework</title>
+
+    <page>
+        <!-- Q12 Section 2.3 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that we have the following collection of vectors in
+                    <m>\mathbb{R}^4</m>:
+                    <md>
+                        {\vvec_1 = \fourvec{1}{1}{1}{1}, 
+          \vvec_2 = \fourvec{\phantom{-}1}{\phantom{-}1}{-1}{-1}, 
+          \vvec_3 = \fourvec{\phantom{-}1}{-1}{\phantom{-}1}{-1}}
+                    </md>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Give an example of a nonzero vector $\wvec$ that is not
+                        equal to <m>\vvec_1</m>, <m>\vvec_2</m>, or
+                        <m>\vvec_3</m> that belongs to the span of
+                        <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>.
+                        Write a sentence to say why your vector has the desired
+                        property.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain why Span <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>
+                        is not <m>\mathbb{R}^4</m> using pivots.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a vector <m>\vvec_4</m> so that <m>\vvec_4</m> is
+                        not in Span <m>\{ \vvec_1, \vvec_2, \vvec_3 \}</m>, and
+                        clearly justify why your vector has this property.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        What can you say about Span
+                        <m>\{ \vvec_1, \vvec_2, \vvec_3, \vvec_4 \}</m>?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

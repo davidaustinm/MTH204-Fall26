@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 6 - Written Homework</title>
+
+    <page>
+        <!-- Q6 Section 1.4 -->
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the four scenarios below, give an example of an
+                    augmented matrix in RREF that satisfies the stated criteria,
+                    or explain why such a matrix is not possible.
+                </p>
+
+                <p>
+                    For each example you provide, (i) circle the pivot
+                    locations, (ii) make each non-pivot column have at least one
+                    non-zero entry, and (iii) write one sentence to say why the
+                    system is consistent or inconsistent.
+                    In addition, if the corresponding linear system is
+                    consistent, describe the solution space for your example.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix with four rows, three columns, and
+                        two pivots for which the corresponding linear system is
+                        consistent.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix with three rows, five columns, and
+                        three pivots for which the corresponding linear system
+                        is inconsistent.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix that corresponds to a linear system
+                        of 4 equations in 3 variables that has infinitely many
+                        solutions.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        An augmented matrix that corresponds to a linear system
+                        of 3 equations in 5 unknown variables that has a unique
+                        solution.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

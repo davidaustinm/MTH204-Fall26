@@ -85,7 +85,7 @@
             <title>Labs</title>
 
             <!-- Include labs -->
-            <!--<xi:include href="./labs/lab-filename.ptx"/>-->
+            <!-- <xi:include href="./labs/lab-filename.ptx"/> -->
             <xi:include href="./labs/LAB1.ptx"/>
             <xi:include href="./labs/LAB2.ptx"/>
             <xi:include href="./labs/LAB3.ptx"/>
@@ -96,8 +96,38 @@
             <title>Homework</title>
 
             <xi:include href="./homework/homework-all_problems.ptx"/>
+            <xi:include href="./homework/Problem1.ptx"/>
+            <xi:include href="./homework/Problem2.ptx"/>
+            <xi:include href="./homework/Problem3.ptx"/>
+            <xi:include href="./homework/Problem4.ptx"/>
+            <xi:include href="./homework/Problem5.ptx"/>
+            <xi:include href="./homework/Problem6.ptx"/>
+            <xi:include href="./homework/Problem7.ptx"/>
+            <xi:include href="./homework/Problem8.ptx"/>
+            <xi:include href="./homework/Problem9.ptx"/>
+            <xi:include href="./homework/Problem10.ptx"/>
+            <xi:include href="./homework/Problem11.ptx"/>
+            <xi:include href="./homework/Problem12.ptx"/>
+            <xi:include href="./homework/Problem13.ptx"/>
+            <xi:include href="./homework/Problem14.ptx"/>
+            <xi:include href="./homework/Problem15.ptx"/>
+            <xi:include href="./homework/Problem16.ptx"/>
+            <xi:include href="./homework/Problem17.ptx"/>
+            <xi:include href="./homework/Problem18.ptx"/>
+            <xi:include href="./homework/Problem19.ptx"/>
+            <xi:include href="./homework/Problem20.ptx"/>
+            <xi:include href="./homework/Problem21.ptx"/>
+            <xi:include href="./homework/Problem22.ptx"/>
+            <xi:include href="./homework/Problem23.ptx"/>
+            <xi:include href="./homework/Problem24.ptx"/>
+            <xi:include href="./homework/Problem25.ptx"/>
+            <xi:include href="./homework/Problem26.ptx"/>
+            <xi:include href="./homework/Problem27.ptx"/>
+            <xi:include href="./homework/Problem28.ptx"/>
+            <xi:include href="./homework/Problem29.ptx"/>
+            <xi:include href="./homework/Problem30.ptx"/>
             <!-- Include homework files -->
-            <!--<xi:include href="./homework/homework01.ptx"/>-->
+            <!-- <xi:include href="./homework/homework01.ptx"/> -->
         </chapter>
         <!-- Include additional chapters for other categories -->
     </book>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 9 - Written Homework</title>
+
+    <page>
+        <!-- Q9 Section 2.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is a <m>3 \times 2</m> matrix whose
+                    columns are the vectors <m>\vvec_1</m> and <m>\vvec_2</m>:
+                    <m>A = [ \vvec_1 \ \ \vvec_2]</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        What are the dimensions of the vectors <m>\vvec_1</m>
+                        and <m>\vvec_2</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Write the matrix-vector product <m>A \twovec10</m> as a
+                        linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                        Similarly, write <m>A \twovec01</m> as a linear
+                        combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose we are now given some specific information about
+                        certain matrix-vector products.
+                        Specifically, say we are given
+                        <md>
+                            A \twovec10 = \threevec{2}{-1}{4} \ \mbox{and} \ A \twovec01 = \threevec{0}{3}{-1}.
+                        </md>
+                        What is the matrix <m>A</m>?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine <m>A \twovec{-3}{5}</m>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

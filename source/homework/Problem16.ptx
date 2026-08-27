@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 16 - Written Homework</title>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the following 3 prompts ((a), (b), and (c)), you
+                    are given some general information about a collection of
+                    vectors, and then asked to consider two statements, <q>I</q>
+                    and <q>II</q>, about those vectors.
+                    For each, your task is to decide which of them is true.
+                    It could be that both are true, only one of them is true,
+                    both are false, or there's not enough information to say
+                    (about one or both of them).
+                </p>
+
+                <p>
+                    For each prompt, your task is to (i) make an appropriate
+                    conclusion about each of the two statements (is it true,
+                    false, or can't say) <em>and</em> (ii) provide clear written
+                    justification that explains how you have reasoned from the
+                    given information to your conclusion.
+                    If you use a proposition from the text, please refer to that
+                    clearly by number and by a summary of what the proposition
+                    tells you.
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        Suppose that a set of vectors in <m>{\mathbb{R}}^{n}</m>
+                        has fewer vectors than there are entries in each vector.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors is linearly independent.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors doesn't span
+                            <m>{\mathbb{R}}^{n}</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <introduction>
+                    <p>
+                        Suppose that a set of vectors in <m>{\mathbb{R}}^{n}</m>
+                        has more vectors than there are entries in each vector.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors is linearly independent.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors doesn't span
+                            <m>{\mathbb{R}}^{n}</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <introduction>
+                    <p>
+                        Suppose we have a set of 12 vectors
+                        <m>\{{\vec v}_{1}, {\vec v}_{2}, \ldots, {\vec v}_{12}\}</m>
+                        in <m>{\mathbb{R}}^{12}</m>; note that we have exactly
+                        the same number of vectors as there are components in
+                        each vector.
+                        In addition, suppose that you know that for some vector
+                        <m>{\vec b}</m> in <m>{\mathbb{R}}^{12}</m>,
+                        <m>{\vec b}</m> can be written as a linear combination
+                        of the vectors <m>{\vec v}_{1}</m>, <m>{\vec v}_{2}</m>,
+                        <m>\ldots</m>, <m>{\vec v}_{12}</m> in exactly one way.
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors is linearly independent.
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The set of vectors doesn't span
+                            <m>{\mathbb{R}}^{n}</m>.
+                        </p>
+                    </statement>
+                </task>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

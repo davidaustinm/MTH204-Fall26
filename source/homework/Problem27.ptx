@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 27 - Written Homework</title>
+
+    <page>
+        <!-- Question 27 Section 3.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Let
+                    <m>A= \left[ \begin{array}{rrrrrr}1 &amp; 2 &amp; -4 &amp; -8 &amp; -3 &amp; 9\\ 2 &amp; 0 &amp; -4 &amp; 0 &amp; 1 &amp; -1\\ 1 &amp; -1 &amp; -1 &amp; 4 &amp; 4 &amp; -7 \\ 1 &amp; 1 &amp; -3 &amp; -4 &amp; 2 &amp; 1 \\ 3 &amp; 2 &amp; -8 &amp; -8 &amp; 5 &amp; -4\end{array} \right]</m>.
+                </p>
+
+                <p>
+                    ( <alert>Note</alert>: If you go to
+                    <url href="https://gvsu.edu/s/2EY">https://gvsu.edu/s/2EY</url>
+                    you'll find the Sage code to enter the <m>5 \times 6</m>
+                    matrix <m>A</m> given here and you can copy and paste it to
+                    ensure you have no entry errors.)
+                </p>
+            </introduction>
+
+            <task>
+                <introduction>
+                    <p>
+                        Complete each of the following sentences, with a brief
+                        explanation of why:
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            Nul <m>(A)</m> is a subspace of
+                            <m>{\mathbb{R}}^{k}</m> for <m>k =</m> <fillin/>,
+                            because
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            Col <m>(A)</m> is a subspace of
+                            <m>{\mathbb{R}}^{p}</m> for <m>p =</m> <fillin/>,
+                            because
+                        </p>
+                    </statement>
+                </task>
+            </task>
+
+            <task>
+                <introduction>
+                    <p>
+                        With clear justification and labeling of your results
+                        (one short sentence of justification for each of the
+                        following items), determine each of the following:
+                    </p>
+                </introduction>
+
+                <task>
+                    <statement>
+                        <p>
+                            A basis for Col <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            A basis for Nul <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The dimension of Col <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+
+                <task>
+                    <statement>
+                        <p>
+                            The dimension of Nul <m>(A)</m>
+                        </p>
+                    </statement>
+                </task>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

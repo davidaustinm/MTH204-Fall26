@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 4 - Written Homework</title>
+
+    <page>
+        <!-- Q4 Section 1.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Consider the linear system:
+                    <md>
+                        \begin{array}{rcrcrcr}
+-2x_1 \amp + \amp x_2 \amp \ \amp \ \amp = \amp -4 \\
+3x_1 \amp \ \amp \  \amp + \amp 3x_3 \amp = \amp 9 \\
+-x_1 \amp - \amp 2x_2  \amp - \amp 5x_3 \amp = \amp -7
+\end{array}
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Write the augmented matrix that corresponds to the given
+                        system.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Work by hand to find the reduced row echelon form of the
+                        augmented matrix.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Identify which variables are basic and which are free.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Describe the solution space of the system, using a
+                        parametric description if there are infinitely many
+                        solutions.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 30 - Written Homework</title>
+
+    <page>
+        <exercise>
+            <statement>
+                <p>
+                    This final homework exercise invites you to reflect on your
+                    learning in the course.
+                    To earn an <q>S</q>, you need to follow the directions and
+                    show honest effort and introspection, and of course write in
+                    your own words.
+                    Here's the prompt:
+                </p>
+
+                <p>
+                    <em>What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?</em>
+                </p>
+
+                <p>
+                    You should type a 250-500 word essay in response (that's
+                    roughly 1/2 to 3/4 of a page of single-spaced text).
+                    Proof-read your work; collegiate-quality writing is
+                    expected.
+                    When you are finished, copy and paste your essay onto
+                    Blackboard under this homework problem.
+                </p>
+            </statement>
+        </exercise>
+    </page>
+</worksheet>

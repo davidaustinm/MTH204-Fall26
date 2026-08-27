@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 2 - Written Homework</title>
+
+    <page>
+        <!-- Q2 Section 1.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Give an example of a matrix in reduced row echelon form that
+                    describes a linear system having the stated properties.
+                    For each, write one short sentence that explains why your
+                    example meets the stated criteria.
+                    If it is not possible to find such an example, explain why
+                    not.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 4 equations and 2 unknowns and
+                        having exactly one solution.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 3 equations and 3 unknowns and
+                        having no solution.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 2 equations and 5 unknowns and
+                        having infinitely many solutions.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 3 equations and 5 unknowns and
+                        having exactly one solution.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        a linear system having 4 equations and 4 unknowns and
+                        having exactly one solution.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

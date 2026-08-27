@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 15 - Written Homework</title>
+
+    <page>
+        <!-- Question 15, Section 2.5/2.6 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Let <m>S : \mathbb{R}^{2} \to \mathbb{R}^{2}</m> be the
+                    linear transformation that reflects each input vector across
+                    the line <m>y = x</m>, and let
+                    <m>R : \mathbb{R}^{2} \to \mathbb{R}^{2}</m> be the
+                    transformation that rotates each input vector by
+                    <m>90^{\circ}</m> clockwise about the origin.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine the matrices <m>B</m> and <m>C</m> such that
+                        <m>S({\vec x}) = B{\vec x}</m> and
+                        <m>R({\vec x}) = C{\vec x}</m>.
+                        For each, write a sentence to explain your reasoning.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Consider the new transformation <m>T</m> that is defined
+                        by <m>T({\vec x}) = (R \circ S)({\vec x})</m>.
+                        Determine the matrix <m>M</m> for which
+                        <m>T({\vec x}) = M{\vec x}</m>.
+                        Clearly show your work and thinking.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        For the transformation <m>T</m> defined in (b) as the
+                        composition of <m>R</m> and <m>S</m>, what is the effect
+                        of <m>T</m> on input vectors?
+                        (For instance, you might see if you can determine if
+                        <m>T</m> generates a rotation around the origin by a
+                        certain angle, a reflection across a certain line, or
+                        some other geometric effect.)
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Create the new transformation <m>Q</m> that is defined
+                        by <m>Q({\vec x}) = (S\circ R)({\vec x})</m>.
+                        Are <m>Q</m> and <m>T</m> the same transformation?
+                        Explain how you know.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

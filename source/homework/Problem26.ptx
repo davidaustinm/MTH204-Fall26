@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 26 - Written Homework</title>
+
+    <page>
+        <!-- Question 26 Section 3.5 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>A</m> is the matrix
+                    <md>
+                        A = \left[ \begin{array}{rrrrr}1 &amp; -2 &amp; -1 &amp; 2 &amp; -4 \\ 0 &amp; 0 &amp; 3 &amp; -3 &amp; 9 \\ -2 &amp; 4 &amp; 5 &amp; -7 &amp; 17 \\ -1 &amp; 2 &amp; 1 &amp; -3 &amp; 5\end{array} \right]
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Is the column space of <m>A</m> equal to
+                        <m>{\mathbb{R}}^{4}</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine a basis for Col <m>(A)</m>.
+                        Clearly justify your choice.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a nonzero vector <m>{\vec b}</m> in
+                        <m>{\mathbb{R}}^{4}</m> that is not equal to one of your
+                        basis vectors in (b) such that <m>{\vec b}</m> is in
+                        Col( <m>A</m> ).
+                        Explain how you found <m>{\vec b}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find a vector <m>{\vec c}</m> in <m>{\mathbb{R}}^{4}</m>
+                        such that <m>{\vec c}</m> is not in Col( <m>A</m> ), or
+                        explain why no such vector exists.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 22 - Written Homework</title>
+
+    <page>
+        <!-- Question 22 Section 3.1 and 3.2 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Provide a justification for your response to each of the
+                    following questions.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose you have a linearly independent set of <m>m</m>
+                        vectors in <m>\mathbb{R}^{m}</m>.
+                        Can you guarantee that this set of vectors forms a basis
+                        of <m>\mathbb{R}^{m}</m>?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose you have a set of 10 vectors
+                        <m>\{{\vec v}_{1}, {\vec v}_{2}, \ldots, {\vec v}_{10}\}</m>
+                        in <m>\mathbb{R}^{10}</m> and every vector in
+                        <m>\mathbb{R}^{10}</m> can be written as a linear
+                        combination of these 10 vectors.
+                        Can you guarantee that this set of vectors forms a basis
+                        for <m>\mathbb{R}^{10}</m>?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Suppose <m>A</m> is a <m>15\times15</m> matrix and that
+                        the equation <m>A{\vec x} = {\vec b}</m> has a unique
+                        solution for some vector <m>{\vec b}</m>.
+                        Can you guarantee that <m>A</m> is invertible?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

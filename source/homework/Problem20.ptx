@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 20 - Written Homework</title>
+
+    <page>
+        <!-- Question 20, Section 3.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Determine whether the following statements are true or false
+                    and explain your reasoning.
+                    If you use a proposition from the text, please refer to that
+                    clearly by number and by a summary of what the proposition
+                    tells you.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is invertible, then the columns of <m>A</m>
+                        are linearly independent.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is a square matrix whose diagonal entries
+                        are all nonzero, then <m>A</m> is invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is a square matrix whose diagonal entries
+                        are all nonzero, then <m>A</m> is invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is an invertible <m>n\times n</m> matrix,
+                        then span of the columns of <m>A</m> is
+                        <m>\mathbb{R}^{n}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is invertible, then there is a nonzero
+                        solution to the homogeneous equation
+                        <m>A{\vec x} = {\vec 0}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is an <m>n\times n</m> matrix and the
+                        equation <m>A{\vec x}={\vec b}</m> has a solution for
+                        every vector <m>{\vec b}</m>, then <m>A</m> is
+                        invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Using the figure, determine
+                        <m>\{ {\vec a} \}_{\mathcal{B}}</m>,
+                        <m>\{ {\vec b} \}_{\mathcal{B}}</m>, and
+                        <m>\{ {\vec c} \}_{\mathcal{B}}</m> for the vectors
+                        <md>
+                            {\vec a} = \left[\begin{array}{c}-6 \\ 0\end{array}\right], \ {\vec b} = \left[\begin{array}{c}0 \\ -6\end{array}\right], \ {\vec c} = \left[\begin{array}{c}4 \\ 5\end{array}\right].
+                        </md>
+                        Again, write at least one sentence that explains how you
+                        determined your results.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

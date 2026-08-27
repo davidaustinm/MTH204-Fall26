@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 14 - Written Homework</title>
+
+    <page>
+        <!-- Question 14, Section 2.3/2.4 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>k</m> is an unknown parameter and consider
+                    the set of vectors
+                    <md>
+                        {\vec v}_{1} = \left[ \begin{array}{r}1 \\ 1 \\ -1\end{array} \right], \ {\vec v}_{2} = \left[ \begin{array}{r}2 \\ 1 \\ 1\end{array} \right], \ {\vec v}_{3} = \left[ \begin{array}{r}3 \\ 1 \\ k\end{array} \right]
+                    </md>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        For what value(s) of <m>k</m> is the set
+                        <m>\{ {\vec v}_{1}, {\vec v}_{2}, {\vec v}_{3} \}</m>
+                        linearly dependent?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        For what value(s) of <m>k</m> is Span
+                        <m>\{ {\vec v}_{1}, {\vec v}_{2}, {\vec v}_{3} \} = {\mathbb{R}}^{3}</m>
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        How are your responses to (a) and (b) connected to one
+                        another?
+                        (There are several important things you can say here.)
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

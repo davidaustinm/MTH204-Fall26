@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 5 - Written Homework</title>
+
+    <page>
+        <!-- Q5 Section 1.3 -->
+        <exercise>
+            <introduction>
+                <p>
+                    For each of the following linear systems of equations, (i)
+                    represent the system with an augmented matrix, (ii) use
+                    \emph{Sage} to find the RREF of the matrix of the linear
+                    system, and report the RREF in your written summary, and
+                    (iii) describe the solution space of the system in as much
+                    detail as you can, using parametric form if there are
+                    infinitely many solutions.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
+          \begin{cases}
+x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
+3x \amp + \amp 2y \amp - \amp 4z \amp = \amp 7 \\
+9x \amp + \amp 3y \amp - \amp z \amp = \amp -4 \\
+-2x \amp - \amp y \amp + \amp 8z \amp = \amp 0  \\
+\end{cases}
+</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
+          \begin{cases}
+x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
+x_1 \amp - \amp 2x_2 \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
+\end{cases}
+</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        <m>
+          \begin{cases}
+x_1 \amp - \amp 3x_2 \amp + \amp 4x_3 \amp - \amp x_4 \amp = \amp 2 \\
+x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
+-2x_1 \amp + \amp 1x_2  \amp - \amp 3x_3 \amp + \amp x_4 \amp = \amp -1 \\
+-x_1 \amp - \amp 4x_2  \amp + \amp 2x_3 \amp + \amp 5x_4 \amp = \amp 0 \\
+\end{cases}
+</m>
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>
