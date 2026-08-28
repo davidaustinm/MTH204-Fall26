@@ -392,12 +392,12 @@
             <prefigure xmlns="https://prefigure.org" label="SyllabusGradesM">
                 <diagram dimensions="(350,200)" margins="5">
                     <coordinates bbox="(-1,-1,2.5,1)">
-                        <arc at="Class Preparation" center="(0,0)" radius="1" range="(0,0.05*360)" stroke="black" fill="orange" sector="yes" opacity="0.5"/>
-                        <arc at="Summary Activities" center="(0,0)" radius="1" range="(0.05*360, 0.2*360)" stroke="black" fill="blue" sector="yes" miterlimit="1" opacity="0.4"/>
-                        <arc at="Written Homework" center="(0,0)" radius="1" range="(0.2*360, 0.4*360)" stroke="black" fill="magenta" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="ClassPreparation" center="(0,0)" radius="1" range="(0,0.05*360)" stroke="black" fill="orange" sector="yes" opacity="0.5"/>
+                        <arc at="SummaryActivities" center="(0,0)" radius="1" range="(0.05*360, 0.2*360)" stroke="black" fill="blue" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="WrittenHomework" center="(0,0)" radius="1" range="(0.2*360, 0.4*360)" stroke="black" fill="magenta" sector="yes" miterlimit="1" opacity="0.4"/>
                         <arc at="LTs" center="(0,0)" radius="1" range="(0.4*360, 0.68*360)" stroke="black" fill="green" sector="yes" miterlimit="1" opacity="0.4"/>
                         <arc at="Labs" center="(0,0)" radius="1" range="(0.68*360, 0.78*360)" stroke="black" fill="purple" sector="yes" miterlimit="1" opacity="0.4"/>
-                        <arc at="Final Exam" center="(0,0)" radius="1" range="(0.78*360, 360)" stroke="black" fill="cyan" sector="yes" miterlimit="1" opacity="0.4"/>
+                        <arc at="FinalExam" center="(0,0)" radius="1" range="(0.78*360, 360)" stroke="black" fill="cyan" sector="yes" miterlimit="1" opacity="0.4"/>
                         <arc center="(0,0)" radius="1" range="(0.05*360, 0.2*360)" stroke="black" sector="yes" miterlimit="1"/>
                         <arc center="(0,0)" radius="1" range="(0.4*360, 0.68*360)" stroke="black" sector="yes" miterlimit="1"/>
                         <arc center="(0,0)" radius="1" range="(0.78*360, 360)" stroke="black" sector="yes" miterlimit="1"/>
