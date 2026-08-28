@@ -1,67 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 6 - Written Homework</title>
+    <title>Problem 6 - Written Homework MTH 204</title>
 
-    <page>
-        <!-- Q6 Section 1.4 -->
-        <exercise>
-            <introduction>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Q6 Section 1.4 -->
+    <exercise>
+        <introduction>
+            <p>
+                For each of the four scenarios below, give an example of an
+                augmented matrix in RREF that satisfies the stated criteria, or
+                explain why such a matrix is not possible.
+            </p>
+
+            <p>
+                For each example you provide, (i) circle the pivot locations,
+                (ii) make each non-pivot column have at least one non-zero
+                entry, and (iii) write one sentence to say why the system is
+                consistent or inconsistent.
+                In addition, if the corresponding linear system is consistent,
+                describe the solution space for your example.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
                 <p>
-                    For each of the four scenarios below, give an example of an
-                    augmented matrix in RREF that satisfies the stated criteria,
-                    or explain why such a matrix is not possible.
+                    An augmented matrix with four rows, three columns, and two
+                    pivots for which the corresponding linear system is
+                    consistent.
                 </p>
+            </statement>
+        </task>
 
+        <task workspace="1in">
+            <statement>
                 <p>
-                    For each example you provide, (i) circle the pivot
-                    locations, (ii) make each non-pivot column have at least one
-                    non-zero entry, and (iii) write one sentence to say why the
-                    system is consistent or inconsistent.
-                    In addition, if the corresponding linear system is
-                    consistent, describe the solution space for your example.
+                    An augmented matrix with three rows, five columns, and three
+                    pivots for which the corresponding linear system is
+                    inconsistent.
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        An augmented matrix with four rows, three columns, and
-                        two pivots for which the corresponding linear system is
-                        consistent.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    An augmented matrix that corresponds to a linear system of 4
+                    equations in 3 variables that has infinitely many solutions.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        An augmented matrix with three rows, five columns, and
-                        three pivots for which the corresponding linear system
-                        is inconsistent.
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        An augmented matrix that corresponds to a linear system
-                        of 4 equations in 3 variables that has infinitely many
-                        solutions.
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        An augmented matrix that corresponds to a linear system
-                        of 3 equations in 5 unknown variables that has a unique
-                        solution.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    An augmented matrix that corresponds to a linear system of 3
+                    equations in 5 unknown variables that has a unique solution.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>

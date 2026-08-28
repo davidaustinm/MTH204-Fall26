@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 1 - Written Homework</title>
+    <title>Problem 1 - Written Homework MTH 204</title>
 
-    <page>
+        <p>
+            You should write up solutions neatly to all problems, making sure to
+            show all your work and follow the homework policies (see Blackboard
+            document for details).
+            You will turn in the hand-written assignment in person during
+            Wednesday class time.
+            The solutions you turn in should be your own work and written in
+            your own words.  You cannot use any resources outside of discussing with
+            your professor or classmates and/or your textbook. 
+            At the top of your first page of solutions, please list the names of
+            any students who you worked with on the assignment.
+            Don't forget to put your name at the top of the first page!
+        </p>
         <!-- Q1 Section 1.1 -->
         <exercise>
             <introduction>
@@ -16,7 +28,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         <m>
@@ -29,7 +41,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
                 </statement>
             </task>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         <m>
@@ -44,7 +56,7 @@ x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
                 </statement>
             </task>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         <m>
@@ -57,5 +69,4 @@ x^2 \amp - \amp 2xy \amp + \amp y^3 \amp = \amp 9 \\
                 </statement>
             </task>
         </exercise>
-    </page>
 </worksheet>

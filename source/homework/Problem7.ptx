@@ -1,68 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 7 - Written Homework</title>
+    <title>Problem 7 - Written Homework MTH 204</title>
 
-    <page>
-        <!-- Q7 Section 2.1 -->
-        <exercise>
-            <introduction>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Q7 Section 2.1 -->
+    <exercise>
+        <introduction>
+            <p>
+                Consider the vectors <m>\uvec</m>, <m>\vvec</m>, <m>\xvec</m>,
+                <m>\yvec</m>, and <m>\zvec</m> pictured in this figure:
+            </p>
+
+            <image source="images/HW-lin-comb-nonstd.eps" width="50%">
+                <shortdescription>4 vectors in a plane.</shortdescription>
+            </image>
+
+            <p>
+                Notice that while there is no scale on the axes, the vectors
+                <m>\uvec</m> and <m>\vvec</m> generate a "grid", and the tips of
+                the vectors <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m> lie at
+                intersection points on the grid.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
                 <p>
-                    Consider the vectors <m>\uvec</m>, <m>\vvec</m>,
-                    <m>\xvec</m>, <m>\yvec</m>, and <m>\zvec</m> pictured in
-                    this figure:
+                    For each of the vectors <m>\xvec</m>, <m>\yvec</m>, and
+                    <m>\zvec</m>, express the vector as a linear combination of
+                    <m>\uvec</m> and <m>\vvec</m>.
+                    Clearly state each linear combination by writing an equation
+                    such as
+                    <m>\xvec = \underline{\hspace{0.25in}}\uvec +  \underline{\hspace{0.25in}}\vvec</m>.
+                    After you do this for all three vectors, write a sentence
+                    that explains how you determined the weights in your linear
+                    combinations.
                 </p>
+            </statement>
+        </task>
 
-                <image source="images/HW-lin-comb-nonstd.eps" width="50%">
-                    <shortdescription>4 vectors in a plane.</shortdescription>
-                </image>
-
+        <task workspace="1in">
+            <statement>
                 <p>
-                    Notice that while there is no scale on the axes, the vectors
-                    <m>\uvec</m> and <m>\vvec</m> generate a "grid", and the
-                    tips of the vectors <m>\xvec</m>, <m>\yvec</m>, and
-                    <m>\zvec</m> lie at intersection points on the grid.
+                    Sketch and label the vector <m>\wvec = 3\uvec - \vvec</m>.
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        For each of the vectors <m>\xvec</m>, <m>\yvec</m>, and
-                        <m>\zvec</m>, express the vector as a linear combination
-                        of <m>\uvec</m> and <m>\vvec</m>.
-                        Clearly state each linear combination by writing an
-                        equation such as
-                        <m>\xvec = \underline{\hspace{0.25in}}\uvec +  \underline{\hspace{0.25in}}\vvec</m>.
-                        After you do this for all three vectors, write a
-                        sentence that explains how you determined the weights in
-                        your linear combinations.
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        Sketch and label the vector
-                        <m>\wvec = 3\uvec - \vvec</m>.
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        What geometric figure is formed by the tips of all
-                        vectors of the form <m>{\uvec + t\vvec}</m>, when
-                        <m>t</m> is allowed to be any real number?
-                        (Hint: you might plot some points that correspond to
-                        several different values of <m>t</m> that you choose.)
-                        Write a careful sentence or two that explains your
-                        conclusion and how you determined it.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What geometric figure is formed by the tips of all vectors
+                    of the form <m>{\uvec + t\vvec}</m>, when <m>t</m> is
+                    allowed to be any real number?
+                    (Hint: you might plot some points that correspond to several
+                    different values of <m>t</m> that you choose.) Write a
+                    careful sentence or two that explains your conclusion and
+                    how you determined it.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>

@@ -1,59 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 4 - Written Homework</title>
+    <title>Problem 4 - Written Homework MTH 204</title>
 
-    <page>
-        <!-- Q4 Section 1.2 -->
-        <exercise>
-            <introduction>
-                <p>
-                    Consider the linear system:
-                    <md>
-                        \begin{array}{rcrcrcr}
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Q4 Section 1.2 -->
+    <exercise>
+        <introduction>
+            <p>
+                Consider the linear system:
+                <md>
+                    \begin{array}{rcrcrcr}
 -2x_1 \amp + \amp x_2 \amp \ \amp \ \amp = \amp -4 \\
 3x_1 \amp \ \amp \  \amp + \amp 3x_3 \amp = \amp 9 \\
 -x_1 \amp - \amp 2x_2  \amp - \amp 5x_3 \amp = \amp -7
 \end{array}
-                    </md>
+                </md>
+            </p>
+        </introduction>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Write the augmented matrix that corresponds to the given
+                    system.
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Write the augmented matrix that corresponds to the given
-                        system.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    Work by hand to find the reduced row echelon form of the
+                    augmented matrix.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Work by hand to find the reduced row echelon form of the
-                        augmented matrix.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Identify which variables are basic and which are free.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Identify which variables are basic and which are free.
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        Describe the solution space of the system, using a
-                        parametric description if there are infinitely many
-                        solutions.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Describe the solution space of the system, using a
+                    parametric description if there are infinitely many
+                    solutions.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>
