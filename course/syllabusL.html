@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear Algebra - Fall 2026- (MTH 204-03) Syllabus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Linear Algebra 1">
+<meta property="og:title" content="Linear Algebra 1">
+<meta property="book:title" content="Linear Algebra 1">
+<meta name="twitter:description" content="MATH 204 Fall 2026">
+<meta property="og:description" content="MATH 204 Fall 2026">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/diagcess/diagcess.js"></script><script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Linear Algebra 1</span> <span class="subtitle">MATH 204 Fall 2026</span></a></div>
+<p class="byline">DocK and Dr. Maggie</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="syllabusM2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-documents.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="LTs.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\ds}{\displaystyle}
+
+\newcommand{\bvec}{{\mathbf b}}
+\newcommand{\cvec}{{\mathbf c}}
+\newcommand{\dvec}{{\mathbf d}}
+\newcommand{\evec}{{\mathbf e}}
+\newcommand{\fvec}{{\mathbf f}}
+\newcommand{\qvec}{{\mathbf q}}
+\newcommand{\uvec}{{\mathbf u}}
+\newcommand{\vvec}{{\mathbf v}}
+\newcommand{\wvec}{{\mathbf w}}
+\newcommand{\xvec}{{\mathbf x}}
+\newcommand{\yvec}{{\mathbf y}}
+\newcommand{\zvec}{{\mathbf y}}
+\newcommand{\zerovec}{{\mathbf 0}}
+\newcommand{\real}{{\mathbb R}}
+\newcommand{\twovec}[2]{\left[\begin{array}{r}#1 \\ #2
+    \end{array}\right]}
+\newcommand{\ctwovec}[2]{\left[\begin{array}{c}#1 \\ #2
+   \end{array}\right]}
+\newcommand{\threevec}[3]{\left[\begin{array}{r}#1 \\ #2 \\ #3
+  \end{array}\right]}
+\newcommand{\cthreevec}[3]{\left[\begin{array}{c}#1 \\ #2 \\ #3
+    \end{array}\right]}
+\newcommand{\fourvec}[4]{\left[\begin{array}{r}#1 \\ #2 \\ #3 \\ #4
+    \end{array}\right]}
+\newcommand{\cfourvec}[4]{\left[\begin{array}{c}#1 \\ #2 \\ #3 \\ #4
+    \end{array}\right]}
+\newcommand{\mattwo}[4]{\left[\begin{array}{rr}#1 \amp #2 \\ #3 \amp #4 \\ \end{array}\right]}
+ 
+\newcommand{\laspan}[1]{\text{Span}\{#1\}}
+\newcommand{\bcal}{{\cal B}}
+\newcommand{\ccal}{{\cal C}}
+\newcommand{\scal}{{\cal S}}
+\newcommand{\wcal}{{\cal W}}
+\newcommand{\ecal}{{\cal E}}
+\newcommand{\coords}[2]{\left\{#1\right\}_{#2}}
+\newcommand{\gray}[1]{\color{gray}{#1}}
+\newcommand{\lgray}[1]{\color{lightgray}{#1}}
+\newcommand{\rank}{\text{rank}}
+\newcommand{\col}{\text{Col}}
+\newcommand{\nul}{\text{Nul}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-course-documents">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabus" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-otherPolicies" class="internal"><span class="title">Other Information and Policies</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabusM.html" class="internal"><span class="title">Linear Algebra - Fall 2026 - (MTH 204-01) Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabusM" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusM.html#syllabusM-3" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusM.html#sec-assessmentsM" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusM.html#sec-otherPoliciesM" class="internal"><span class="title">Other Information and Policies</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabusM2.html" class="internal"><span class="title">Linear Algebra - Fall 2026 - (MTH 204-02) Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabusM2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusM2.html#syllabusM2-3" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusM2.html#sec-assessmentsM2" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusM2.html#sec-otherPoliciesM2" class="internal"><span class="title">Other Information and Policies</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="syllabusL.html" class="internal"><span class="title">Linear Algebra - Fall 2026- (MTH 204-03) Syllabus</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-syllabusL">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusL.html#syllabusL-3" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusL.html#sec-assessmentsL" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabusL.html#sec-otherPoliciesL" class="internal"><span class="title">Other Information and Policies</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="LTs.html" class="internal"><span class="title">Learning Target Quizzes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="LabsPolicies.html" class="internal"><span class="title">Lab Policies</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="HW.html" class="internal"><span class="title">Written Homework Policies</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ClassPrep.html" class="internal"><span class="title">Class Preparation Policies</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="SummaryActivities.html" class="internal"><span class="title">Summary Activity Policies</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="runestone-03.html" class="internal"><span class="title">MTH 204-03: Accessing Runestone Academy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="runestone-01.html" class="internal"><span class="title">MTH 204-01: Accessing Runestone Academy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="runestone-02.html" class="internal"><span class="title">MTH 204-02: Accessing Runestone Academy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">Activity Worksheets</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="activities-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Introduction Activity - Color Wheel</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">Section 1.1- What can we expect</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">Section 1.2 - Finding Solutions to Systems of Linear Equations (Part 1)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">Section 1.2 - Reduced row echelon form (Part 2)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">Section 1.4 - Pivots and their influence on solution spaces</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">Section 2.1 - Vectors and Linear Combinations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">Section 2.1 - Vectors and Linear Combinations Part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-10.html" class="internal"><span class="title">Section 2.2 - Matrix multiplication and linear combinations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-11.html" class="internal"><span class="title">Section 2.3 - The Span of a Set of Vectors</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-12.html" class="internal"><span class="title">Section 2.3 - The Span of a Set of Vectors - Part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-13.html" class="internal"><span class="title">Section 2.4 - Linear independence</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-14.html" class="internal"><span class="title">Section 2.4 - Linear independence Part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-15.html" class="internal"><span class="title">Section 2.5 - Matrix transformations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-16.html" class="internal"><span class="title">Review / Extra Practice</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-17.html" class="internal"><span class="title">Section 2.6 - The geometry of matrix transformations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-18.html" class="internal"><span class="title">Section 3.1 - Invertibility</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-19.html" class="internal"><span class="title">Section 3.1 - Invertibility - Part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-20.html" class="internal"><span class="title">Section 3.2 - Bases and Coordinate Systems</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-21.html" class="internal"><span class="title">Section 3.2 - Bases and Coordinate Systems - Part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-22.html" class="internal"><span class="title">Section 3.4 - Determinants</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-23.html" class="internal"><span class="title">Section 3.4 - Determinants using Cofactor Expansion - Part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">Section 3.5 - Subspaces of <span class="process-math">\(\real^p\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">Section 4.1 - An introduction to eigenvectors and eigenvalues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">Section 4.4 - Dynamical Systems</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">Section 4.3 - Diagonalizability</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">Make Connections - Eigen Review</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-31.html" class="internal"><span class="title">Section 4.5 - Markov chains</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-32.html" class="internal"><span class="title">Final Review, Part I</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-33.html" class="internal"><span class="title">Final Review, Part II</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">Final Review, Part III</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div>
+<ul id="ptx-toc-group-handouts" class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Section 1.2 - Row Operations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="labs.html" class="internal"><span class="title">Labs</span></a></div>
+<ul id="ptx-toc-group-labs" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-2.html" class="internal"><span class="title">Lab 1, Due: September 25, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-3.html" class="internal"><span class="title">Lab 2, Due: October 9, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-4.html" class="internal"><span class="title">Lab 3, Due: October 23, 2026</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-5.html" class="internal"><span class="title">Lab 4, Due: November 13, 2026</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
+<ul id="ptx-toc-group-homework" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Written Homework Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Problem 1 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Problem 2 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Problem 3 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-6.html" class="internal"><span class="title">Problem 4 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-7.html" class="internal"><span class="title">Problem 5 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-8.html" class="internal"><span class="title">Problem 6 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-9.html" class="internal"><span class="title">Problem 7 - Written Homework MTH 204</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-10.html" class="internal"><span class="title">Problem 8 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-11.html" class="internal"><span class="title">Problem 9 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-12.html" class="internal"><span class="title">Problem 10 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-13.html" class="internal"><span class="title">Problem 11 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-14.html" class="internal"><span class="title">Problem 12 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-15.html" class="internal"><span class="title">Problem 13 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-16.html" class="internal"><span class="title">Problem 14 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-17.html" class="internal"><span class="title">Problem 15 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-18.html" class="internal"><span class="title">Problem 16 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-19.html" class="internal"><span class="title">Problem 17 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-20.html" class="internal"><span class="title">Problem 18 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-21.html" class="internal"><span class="title">Problem 19 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-22.html" class="internal"><span class="title">Problem 20 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-23.html" class="internal"><span class="title">Problem 21 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-24.html" class="internal"><span class="title">Problem 22 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-25.html" class="internal"><span class="title">Problem 23 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-26.html" class="internal"><span class="title">Problem 24 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-27.html" class="internal"><span class="title">Problem 25 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-28.html" class="internal"><span class="title">Problem 26 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-29.html" class="internal"><span class="title">Problem 27 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-30.html" class="internal"><span class="title">Problem 28 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-31.html" class="internal"><span class="title">Problem 29 - Written Homework</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-32.html" class="internal"><span class="title">Problem 30 - Written Homework</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="syllabusL">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Algebra - Fall 2026- (MTH 204-03) Syllabus</span>
+</h1>
+<section class="introduction" id="syllabusL-2">
+<div class="para" id="syllabusL-2-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></section>
+<section class="subsection" id="syllabusL-3">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Information</span>
+</h2>
+<div class="para logical" id="syllabusL-3-2">
+<div class="para">This is the syllabus for <dfn class="terminology">Linear Algebra (MATH 204, Section 03)</dfn> for Fall 2026. It is a 3 credit course. </div>
+<dl class="description-list">
+<dt id="syllabusL-3-2-2-1">Instructor<div class="autopermalink" aria-hidden="true" data-description="Item: Instructor"><a tabindex="-1" href="#syllabusL-3-2-2-1" title="Copy heading and permalink for Item: Instructor" aria-label="Copy heading and permalink for Item: Instructor">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="syllabusL-3-2-2-1-2">Professor Keough, MAK C-2-513, 616-331-3632. <a class="external" href="mailto:keoulaur@.edu" target="_blank">keoulaur@gvsu.edu.edu</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="syllabusL-3-2-2-2">Student Hours<div class="autopermalink" aria-hidden="true" data-description="Item: Student Hours"><a tabindex="-1" href="#syllabusL-3-2-2-2" title="Copy heading and permalink for Item: Student Hours" aria-label="Copy heading and permalink for Item: Student Hours">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="syllabusL-3-2-2-2-2">
+<ul class="disc" id="syllabusL-3-2-2-2-2-1">
+<li id="syllabusL-3-2-2-2-2-1-1">
+<div class="para" id="syllabusL-3-2-2-2-2-1-1-1">Mondays 4-5PM<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-2-2-1-2">
+<div class="para" id="syllabusL-3-2-2-2-2-1-2-1">Wednesdays 10-11AM<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-2-2-1-3">
+<div class="para" id="syllabusL-3-2-2-2-2-1-3-1">Thursdays 1-2PM<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-2-2-1-4">
+<div class="para" id="syllabusL-3-2-2-2-2-1-4-1">Fridays 10-11AM<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="syllabusL-3-2-2-3">Class meets<div class="autopermalink" aria-hidden="true" data-description="Item: Class meets"><a tabindex="-1" href="#syllabusL-3-2-2-3" title="Copy heading and permalink for Item: Class meets" aria-label="Copy heading and permalink for Item: Class meets">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="syllabusL-3-2-2-3-2">MWF 12-12:50 PM MAK B-1-132<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="syllabusL-3-2-2-4">Textbook and course materials<div class="autopermalink" aria-hidden="true" data-description="Item: Textbook and course materials"><a tabindex="-1" href="#syllabusL-3-2-2-4" title="Copy heading and permalink for Item: Textbook and course materials" aria-label="Copy heading and permalink for Item: Textbook and course materials">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="syllabusL-3-2-2-4-2">
+<span class="booktitle">Understanding Linear Algebra</span> by David Austin. Access <a class="external" href="http://gvsu.edu/s/1rw" target="_blank">here</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="syllabusL-3-2-2-4-3">We will also use online resources such as <a class="external" href="http://gvsu.edu/s/0Ng" target="_blank">Sage</a> and <a class="external" href="https://runestone.academy/admin/auth/register" target="_blank">Runstone</a>. Our course name is ula_fall26_keough.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="syllabusL-3-2-2-5">Being Successful in MTH 204<div class="autopermalink" aria-hidden="true" data-description="Item: Being Successful in MTH 204"><a tabindex="-1" href="#syllabusL-3-2-2-5" title="Copy heading and permalink for Item: Being Successful in MTH 204" aria-label="Copy heading and permalink for Item: Being Successful in MTH 204">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="syllabusL-3-2-2-5-2">My main priority in this course is for you to grow as a mathematician: to be able to understand and apply complex statements, to solve challenging problems, and to communicate orally and in writing. I want you to succeed. My teaching philosophy is that everyone has the right to understand and enjoy mathematics, and to feel part of a mathematical community. Please see me when you need help. Additionally, consider the following things you can do to be successful.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="syllabusL-3-2-2-5-3">
+<ul class="disc" id="syllabusL-3-2-2-5-3-1">
+<li id="syllabusL-3-2-2-5-3-1-1">
+<div class="para" id="p-derived-syllabusL-3-2-2-5-3-1-1">
+<dfn class="terminology">Attend class.</dfn> Attendance is expected and is correlated to success.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-5-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-5-3-1-2">
+<div class="para" id="p-derived-syllabusL-3-2-2-5-3-1-2">
+<dfn class="terminology">Aim for deep conceptual understanding.</dfn> Linear algebra makes sense! If you aim for sensemaking the answers (and good grades) will follow.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-5-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-5-3-1-3">
+<div class="para" id="p-derived-syllabusL-3-2-2-5-3-1-3">
+<dfn class="terminology">Use office hours wisely.</dfn> Office hours are for you to ask questions! Please drop in whenever you have questions! I ask that you prepare by first making your best effort and forming specific questions. This helps our meetings be the most productive.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-5-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-5-3-1-4">
+<div class="para" id="p-derived-syllabusL-3-2-2-5-3-1-4">
+<dfn class="terminology">Use the math center.</dfn> Free drop in tutoring in person and online ( <a class="external" href="https://www.gvsu.edu/tutoring/math-tutoring-center-26" target="_blank">here</a> ).</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-5-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-5-3-1-5">
+<div class="para" id="p-derived-syllabusL-3-2-2-5-3-1-5">
+<dfn class="terminology">Talk to your peers.</dfn> Talking through math can lead to huge insights - try it!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-5-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-5-3-1-6">
+<div class="para" id="p-derived-syllabusL-3-2-2-5-3-1-6">
+<dfn class="terminology">Please ask for anything that would help your learning.</dfn> In particular, I know you are human and things come up. Keep me in the loop so I can help. Just email me and we can make an appointment or talk over email.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-5-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="syllabusL-3-2-2-6">Diversity, Equity, and Inclusion<div class="autopermalink" aria-hidden="true" data-description="Item: Diversity, Equity, and Inclusion"><a tabindex="-1" href="#syllabusL-3-2-2-6" title="Copy heading and permalink for Item: Diversity, Equity, and Inclusion" aria-label="Copy heading and permalink for Item: Diversity, Equity, and Inclusion">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="syllabusL-3-2-2-6-2">We live in a wonderfully diverse world. Acknowledging and listening to the perspectives and experiences of people from a different cultural background than your own (e.g., gender, race, sexual orientation, nationality, religion, socioeconomic status) is a vital part of the learning process and your personal development. It is my intent that students from all backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of the classroom, and that the diversity students bring to this class be viewed as a resource, strength, and benefit. All voices need to be heard. I welcome and appreciate any suggestions you have pertaining to diversity, equity, and inclusion, and commit to listen reflectively to your concerns, without defensiveness, in recognition that receiving honest feedback is a necessary step in improving the inclusiveness of our academic environment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="syllabusL-3-2-2-7">Climate Goals<div class="autopermalink" aria-hidden="true" data-description="Item: Climate Goals"><a tabindex="-1" href="#syllabusL-3-2-2-7" title="Copy heading and permalink for Item: Climate Goals" aria-label="Copy heading and permalink for Item: Climate Goals">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="syllabusL-3-2-2-7-2">
+<ul class="disc" id="syllabusL-3-2-2-7-2-1">
+<li id="syllabusL-3-2-2-7-2-1-1">
+<div class="para" id="p-derived-syllabusL-3-2-2-7-2-1-1">
+<em class="emphasis">Axiom 1.</em> Mathematical potential is distributed equally among different groups, irrespective of geographic, demographic, and economic boundaries.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-7-2-1-2">
+<div class="para" id="p-derived-syllabusL-3-2-2-7-2-1-2">
+<em class="emphasis">Axiom 2.</em> Everyone can have joyful, meaningful, and empowering mathematical experiences.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-7-2-1-3">
+<div class="para" id="p-derived-syllabusL-3-2-2-7-2-1-3">
+<em class="emphasis">Axiom 3.</em> Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-7-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="syllabusL-3-2-2-7-2-1-4">
+<div class="para" id="p-derived-syllabusL-3-2-2-7-2-1-4">
+<em class="emphasis">Axiom 4.</em> Every student deserves to be treated with dignity and respect.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#syllabusL-3-2-2-7-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="syllabusL-3-3"><h3 class="heading"><span class="title">What is Linear Algebra?</span></h3>
+<div class="para" id="syllabusL-3-3-2">Linear algebra is geometric and algebraic sense-making of linear equations in ways that are wildly useful. We will learn how Google uses eigenvectors to give you the right search results, how our phones use linear transformations to send images with minimal data usage, and how Pixar uses matrix multiplication to animate films. The power to do these things comes from understanding in both a geometric and algebraic way. Throughout the course, we will be Making Sense Together - I ask that you always strive to make sense, and I will be here to help you.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: What is Linear Algebra?"><a tabindex="-1" href="#syllabusL-3-3" title="Copy heading and permalink for Paragraphs: What is Linear Algebra?" aria-label="Copy heading and permalink for Paragraphs: What is Linear Algebra?">🔗</a></div>
+</section>
+<section class="paragraphs" id="syllabusL-3-4"><h3 class="heading"><span class="title">What should I know about my professor?</span></h3>
+<div class="para" id="syllabusL-3-4-2">Hi! I’m Dr. Keough, many students call me DocK for short. My main priority in this course is for you to grow as a mathematician: to be able to understand and apply complex statements, to solve challenging problems, and to communicate orally and in writing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="syllabusL-3-4-3">My teaching philosophy is that <em class="emphasis">Everyone has the right to understand and enjoy mathematics, and to feel part of a mathematical community.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="syllabusL-3-4-4">I want you to succeed. Please see me when you need help.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: What should I know about my professor?"><a tabindex="-1" href="#syllabusL-3-4" title="Copy heading and permalink for Paragraphs: What should I know about my professor?" aria-label="Copy heading and permalink for Paragraphs: What should I know about my professor?">🔗</a></div>
+</section>
+<section class="paragraphs" id="syllabusL-3-5"><h3 class="heading"><span class="title">What should you do if you need help?</span></h3>
+<div class="para" id="syllabusL-3-5-2">Successful students reach out for help when they need it. You should strive to be aware of when you are struggling. Whether you are having a technology issue or a mathematical issue or a personal issue impeding your work, reach out to me! I’m here to help you be successful in this class. If something in your life is preventing you from showing me your best work, I would like to help you. The earlier you get in touch the easier it is to catch up. You can always reach me by email. I generally check my email throughout the day but rarely at night or on the weekend. I’m pretty good about responding to email quickly (and definitely within 24 hours during the work week). Don’t struggle alone!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#syllabusL-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: What should you do if you need help?"><a tabindex="-1" href="#syllabusL-3-5" title="Copy heading and permalink for Paragraphs: What should you do if you need help?" aria-label="Copy heading and permalink for Paragraphs: What should you do if you need help?">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection: Course Information"><a tabindex="-1" href="#syllabusL-3" title="Copy heading and permalink for Subsection: Course Information" aria-label="Copy heading and permalink for Subsection: Course Information">🔗</a></div>
+</section>
+<section class="subsection" id="sec-assessmentsL">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assessments and Grades</span>
+</h2>
+<div class="para logical" id="sec-assessmentsL-2">
+<dl class="description-list">
+<dt id="sec-assessmentsL-2-1-1">Class Preparation [CP] (5%)<div class="autopermalink" aria-hidden="true" data-description="Item: Class Preparation [CP] (5%)"><a tabindex="-1" href="#sec-assessmentsL-2-1-1" title="Copy heading and permalink for Item: Class Preparation [CP] (5%)" aria-label="Copy heading and permalink for Item: Class Preparation [CP] (5%)">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-assessmentsL-2-1-1-2">There will be class preparation assignments due before each class (twice a week). These are graded for completeness, not correctness. Your grade for this part is the percentage you completed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-assessmentsL-2-1-2">Summary Activities [SA] (15%)<div class="autopermalink" aria-hidden="true" data-description="Item: Summary Activities [SA] (15%)"><a tabindex="-1" href="#sec-assessmentsL-2-1-2" title="Copy heading and permalink for Item: Summary Activities [SA] (15%)" aria-label="Copy heading and permalink for Item: Summary Activities [SA] (15%)">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-assessmentsL-2-1-2-2">Runestone is an online platform connected to our textbook. There will be a set of summary activities through Runestone each week consisting of 5-10 exercises relating to the content of the course. If you earn 90% of the points you will get full credit. If you earn less than 90% your grade will be scaled appropriately. It is a good idea to write your work in a Runestone section of your notebook to keep yourself organized. See the Runestone policies for more information.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-assessmentsL-2-1-3">Written Homework [HW] (20%)<div class="autopermalink" aria-hidden="true" data-description="Item: Written Homework [HW] (20%)"><a tabindex="-1" href="#sec-assessmentsL-2-1-3" title="Copy heading and permalink for Item: Written Homework [HW] (20%)" aria-label="Copy heading and permalink for Item: Written Homework [HW] (20%)">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-assessmentsL-2-1-3-2">Written HW sets are more extended and involved multi-part problems to solve that involve a formal writeup with written explanation. There will 1-3 problems due every week on Wednesday. There will be options for revision; individual problems will be assessed as E for "exemplary" (100%), S for "satisfactory" (75%), or NY for "not yet" (0%). See the written homework policies for more information (including info about revisions).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-assessmentsL-2-1-4">Learning Target Quizzes [LT] (28%)<div class="autopermalink" aria-hidden="true" data-description="Item: Learning Target Quizzes [LT] (28%)"><a tabindex="-1" href="#sec-assessmentsL-2-1-4" title="Copy heading and permalink for Item: Learning Target Quizzes [LT] (28%)" aria-label="Copy heading and permalink for Item: Learning Target Quizzes [LT] (28%)">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-assessmentsL-2-1-4-2">There will be a learning target quiz each Friday. Each target is graded E for “exemplary”, S for “satisfactory” or NY for “not yet”. Each LT is worth 2% of your grade — an E gives 2%, S is 1.5%, and NY is 0%. There will be 14 targets.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-assessmentsL-2-1-5">Labs [L] (10%)<div class="autopermalink" aria-hidden="true" data-description="Item: Labs [L] (10%)"><a tabindex="-1" href="#sec-assessmentsL-2-1-5" title="Copy heading and permalink for Item: Labs [L] (10%)" aria-label="Copy heading and permalink for Item: Labs [L] (10%)">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-assessmentsL-2-1-5-2">Each lab is worth a varying number of points and there will be approximately 6 labs. You can earn partial credit. These will be done in teams. See the lab policies for more information (including info about revisions).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-assessmentsL-2-1-6">Final Exam (22%)<div class="autopermalink" aria-hidden="true" data-description="Item: Final Exam (22%)"><a tabindex="-1" href="#sec-assessmentsL-2-1-6" title="Copy heading and permalink for Item: Final Exam (22%)" aria-label="Copy heading and permalink for Item: Final Exam (22%)">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-assessmentsL-2-1-6-2">The final exam will be cumulative, focusing on big picture ideas of the course. The final exam is scheduled by the registrar at a time TBD. More details will be given out later.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="para">The following table allows you to convert your weighted percentage to a letter grade. Note the percentage you earned will not be rounded (e.g. 92.8% is an A-).</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A-</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B+</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B-</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C+</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C-</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D+</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">F</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(\ge 93\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 90\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 87\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 83\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 80\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 77\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 73\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 70\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 67\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\ge 63\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(\lt 63\)</span></td>
+</tr>
+</table></div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/prefigure/SyllabusGradesL.svg" role="img" class="contained" alt="Grade breakdown."></div>
+<div class="para" id="sec-assessmentsL-5">
+<em class="emphasis">Grades are updated on Blackboard regularly. Please check and verify regularly!</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sec-assessmentsL-6"><h3 class="heading"><span class="title">Technology.</span></h3>
+<div class="para logical" id="sec-assessmentsL-6-2">
+<div class="para">You will need a laptop/tablet/Chromebook on which they can access a modern internet browser such as Chrome. You should plan to bring a laptop to class regularly. (Please let me know if you don’t have one and I can bring one!) You should have or develop proficiencies in the following (which are all free):</div>
+<ul class="disc" id="sec-assessmentsL-6-2-1">
+<li id="sec-assessmentsL-6-2-1-1">
+<div class="para" id="p-derived-sec-assessmentsL-6-2-1-1">
+<em class="emphasis">GVSU Email:</em> You should check your @mail.gvsu.edu email at least once each weekday for important announcements. You should also email me from your @mail.gvsu.edu account so it doesn’t go to spam!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-6-2-1-2">
+<div class="para logical" id="sec-assessmentsL-6-2-1-2-1">
+<div class="para">
+<em class="emphasis">Blackboard:</em> You should know how to navigate Blackboard. In particular:</div>
+<ul class="circle" id="sec-assessmentsL-6-2-1-2-1-2">
+<li id="sec-assessmentsL-6-2-1-2-1-2-1">
+<div class="para" id="p-derived-sec-assessmentsL-6-2-1-2-1-2-1">Poke around in the first week to see how things are organized. If you can’t find something, email me. (It’s possible I forgot to post.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-6-2-1-2-1-2-2">
+<div class="para" id="p-derived-sec-assessmentsL-6-2-1-2-1-2-2">Assignments: You need to know how to view an assignment and upload your work.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-6-2-1-2-1-2-3">
+<div class="para" id="p-derived-sec-assessmentsL-6-2-1-2-1-2-3">Grades and Feedback: I will upload your current grades to Blackboard on a weekly basis as well as give you feedback on homework. If you don’t know how to find your grades or read the feedback please email me!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-2-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-6-2-1-3">
+<div class="para" id="p-derived-sec-assessmentsL-6-2-1-3">
+<em class="emphasis">Sage:</em> You aren’t expected to know this yet! We will develop proficiency in this as a class. You have access to free sage cells <a class="external" href="http://gvsu.edu/s/0Ng" target="_blank">here</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-6-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Technology"><a tabindex="-1" href="#sec-assessmentsL-6" title="Copy heading and permalink for Paragraphs: Technology" aria-label="Copy heading and permalink for Paragraphs: Technology">🔗</a></div>
+</section>
+<section class="paragraphs" id="sec-assessmentsL-7"><h3 class="heading"><span class="title">Academic Honesty.</span></h3>
+<div class="para" id="sec-assessmentsL-7-2">See each individual assignment document linked on Blackboard for information on academic honesty. You are responsible for knowing the policies - academic dishonesty will not be tolerated and all instances will be reported to the dean of students. I ask that you take your learning seriously and take advantage of the opportunities you are given to succeed. To avoid academic dishonesty please make sure you know the policies, and avoid situations where you may feel desperate (say, by procrastinating). Academic honesty is worth the reward of learning, and dishonesty is not worth the risk.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Academic Honesty"><a tabindex="-1" href="#sec-assessmentsL-7" title="Copy heading and permalink for Paragraphs: Academic Honesty" aria-label="Copy heading and permalink for Paragraphs: Academic Honesty">🔗</a></div>
+</section>
+<section class="paragraphs" id="sec-assessmentsL-8"><h3 class="heading"><span class="title">AI Policy.</span></h3>
+<div class="para" id="sec-assessmentsL-8-2">You may not use AI or ChatGPT for any component of this course. In this course, we’ll be developing skills that are important to practice on your own. Because use of generative AI may inhibit the development of those skills, you aren’t allowed employing AI tools in this course. Using such tools for any purposes, or attempting to represent AI-generated work as your own, will violate our academic integrity policy.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-assessmentsL-8-3">
+<div class="para">This is complicated, and we’ll talk about it in class. If you can think of a way that AI or ChatGPT can support (and not replace) your learning, please let me know! I am open to discussion on how these tools can be used in a constructive way. You may think:</div>
+<ul class="disc" id="sec-assessmentsL-8-3-1">
+<li id="sec-assessmentsL-8-3-1-1">
+<div class="para" id="p-derived-sec-assessmentsL-8-3-1-1">"I will be using AI in my career." With the current state of AI, you won’t be using it to learn new ways of thinking, like we’re trying to do in our course. AI will not help you develop an understanding of mathematics.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-8-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-8-3-1-2">
+<div class="para" id="p-derived-sec-assessmentsL-8-3-1-2">"I only use it to check my work when I don’t feel totally confident." A colleague is part of a math education research study that investigates how students learn math from textbooks. Interviews with students clearly show how using AI causes students to become less confident over time since they come to trust what comes from AI more than they trust their own work. Learning will be challenging and facing challenges requires you to have the confidence that you can do it. Please don’t surrender the trust that you have in your own abilities.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-8-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-assessmentsL-8-4">
+<div class="para">Here is one research study, among many others: <a class="external" href="https://www.media.mit.edu/publications/your-brain-on-chatgpt/" target="_blank">Your Brain on ChatGPT</a>. From the abstract:</div>
+<dl class="description-list">
+<dt id="sec-assessmentsL-8-4-2-1"><div class="autopermalink" aria-hidden="true" data-description="Item: "><a tabindex="-1" href="#sec-assessmentsL-8-4-2-1" title="Copy heading and permalink for Item: " aria-label="Copy heading and permalink for Item: ">🔗</a></div></dt>
+<dd>
+<div class="para" id="sec-assessmentsL-8-4-2-1-2">
+<em class="emphasis">Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels. These results raise concerns about the long-term educational implications of LLM reliance and underscore the need for deeper inquiry into AI’s role in learning.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-8-4-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-assessmentsL-8-5">
+<a class="external" href="https://arxiv.org/pdf/2608.16753" target="_blank">"In some areas, particularly in education and in the training of young mathematicians, it will be crucial to emphasize the irreducibly human aspect of our work, and to restrict the use of AI tools quite tightly; the goal of training a mathematician is not achieved by producing correct homework."</a>- Terry Tao<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: AI Policy"><a tabindex="-1" href="#sec-assessmentsL-8" title="Copy heading and permalink for Paragraphs: AI Policy" aria-label="Copy heading and permalink for Paragraphs: AI Policy">🔗</a></div>
+</section>
+<section class="paragraphs" id="sec-assessmentsL-9"><h3 class="heading"><span class="title">Attendance and Missed Classes.</span></h3>
+<div class="para logical" id="sec-assessmentsL-9-2">
+<div class="para">Attendance does not count towards your final grade, however, I do expect that you will be in class and I will take attendance. The class is counting on your contributions and being in class is important for your learning. I’ve seen many capable students fail because they miss class. If you must miss class you should:</div>
+<ul class="disc" id="sec-assessmentsL-9-2-1">
+<li id="sec-assessmentsL-9-2-1-1">
+<div class="para" id="p-derived-sec-assessmentsL-9-2-1-1">Email me to let me know. (I worry about you!)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-9-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-9-2-1-2">
+<div class="para" id="p-derived-sec-assessmentsL-9-2-1-2">Check Blackboard to make sure you turn in assignments.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-9-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-assessmentsL-9-2-1-3">
+<div class="para" id="p-derived-sec-assessmentsL-9-2-1-3">Look over the class notes and textbook. Get in touch with a classmate to get notes and find out what you should do to catch up.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-assessmentsL-9-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Attendance and Missed Classes"><a tabindex="-1" href="#sec-assessmentsL-9" title="Copy heading and permalink for Paragraphs: Attendance and Missed Classes" aria-label="Copy heading and permalink for Paragraphs: Attendance and Missed Classes">🔗</a></div>
+</section>
+<section class="paragraphs" id="sec-assessmentsL-10"><h3 class="heading"><span class="title">Phone Policy.</span></h3>
+<div class="para" id="sec-assessmentsL-10-2">Inside our classroom, please keep your phone stored in your belongings and away from your work space, unless you have an exceptional situation such as concern for a friend or family member. This includes time when you are waiting for class to begin as this provides everyone with the opportunity to develop productive working relationships.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-assessmentsL-10-3">We live in an age where your attention is being monetized by others, and it is not readily apparent the price that you are paying. An overwhelming amount of research, however, plainly shows how disruptive this technology is to your learning. <a class="external" href="https://www.nytimes.com/2018/10/26/style/phones-children-silicon-valley.html?unlocked_article_code=1.dk8.6ygB.2TOc7QaMEx3N=url-share" target="_blank">“On the scale between candy and crack cocaine, it’s closer to crack cocaine,” Mr. Anderson [former editor of Wired magazine] said of screens.</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-10-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Phone Policy"><a tabindex="-1" href="#sec-assessmentsL-10" title="Copy heading and permalink for Paragraphs: Phone Policy" aria-label="Copy heading and permalink for Paragraphs: Phone Policy">🔗</a></div>
+</section>
+<section class="paragraphs" id="sec-assessmentsL-11"><h3 class="heading"><span class="title">Late Work and Deadlines.</span></h3>
+<div class="para" id="sec-assessmentsL-11-2">Learning takes time, and sometimes time doesn’t work out the way you expect. I’d much rather see what you know, rather than enforcing arbitrary deadlines and rules (I don’t enjoy that any more than you do!). While I am open to extensions on the assignment due dates, I will make two notes: (1) getting behind on assignments can be a slippery slope and potentially lead to a delay in learning the material/an inability to catch-up; (2) <dfn class="terminology">extensions must be requested 12 hours PRIOR to the assigned deadline</dfn>- unless there are unusual circumstances. if requested afterwards, the extension will not be granted. Please send me an email to request any extensions. As applicable, late homework will receive a grade deduction.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-assessmentsL-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Late Work and Deadlines"><a tabindex="-1" href="#sec-assessmentsL-11" title="Copy heading and permalink for Paragraphs: Late Work and Deadlines" aria-label="Copy heading and permalink for Paragraphs: Late Work and Deadlines">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection: Assessments and Grades"><a tabindex="-1" href="#sec-assessmentsL" title="Copy heading and permalink for Subsection: Assessments and Grades" aria-label="Copy heading and permalink for Subsection: Assessments and Grades">🔗</a></div>
+</section>
+<section class="subsection" id="sec-otherPoliciesL">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Other Information and Policies</span>
+</h2>
+<div class="para logical" id="sec-otherPoliciesL-2">
+<dl class="description-list">
+<dt id="sec-otherPoliciesL-2-1-1"><div class="autopermalink" aria-hidden="true" data-description="Item: "><a tabindex="-1" href="#sec-otherPoliciesL-2-1-1" title="Copy heading and permalink for Item: " aria-label="Copy heading and permalink for Item: ">🔗</a></div></dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-1-2">This course is subject to all policies at <a class="external" href="http://www.gvsu.edu/coursepolicies/" target="_blank">GVSU policies</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-2">Important Dates<div class="autopermalink" aria-hidden="true" data-description="Item: Important Dates"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-2" title="Copy heading and permalink for Item: Important Dates" aria-label="Copy heading and permalink for Item: Important Dates">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-2-2">View the <a class="external" href="https://www.gvsu.edu/registrar/academiccalendar.htm" target="_blank">academic calendar</a> for all important dates. In particular, the last chance to add a class or drop with 100% tuition refund is September 4th by 5PM. The last day to change to credit/no credit is September 25th by 5PM. The last day to drop with a "W" is November 13th by 5PM.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-3">Remote Status and Faculty Absence<div class="autopermalink" aria-hidden="true" data-description="Item: Remote Status and Faculty Absence"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-3" title="Copy heading and permalink for Item: Remote Status and Faculty Absence" aria-label="Copy heading and permalink for Item: Remote Status and Faculty Absence">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-3-2">In the event that the university moves to remote status or the professor is unable to make it to campus for class, instruction will be moved either synchronously or asynchronously online. This will be communicated by the instructor through Blackboard and email ASAP. This also applies to final exams, where there is a possibility the exam will move to online, take-home, or another arrangement. Make sure to check all announcements on Blackboard in a timely manner!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-4">Student Accessibility Resources Office<div class="autopermalink" aria-hidden="true" data-description="Item: Student Accessibility Resources Office"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-4" title="Copy heading and permalink for Item: Student Accessibility Resources Office" aria-label="Copy heading and permalink for Item: Student Accessibility Resources Office">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-4-2">If you are in need of accommodations due to a learning, physical, or other disability you must present a memo to me from Student Accessibility Resources, indicating the existence of a disability and the suggested reasonable accommodations. If you have not already done so, please contact the Student Accessibility Resources office (215 CON): 616-331-2490 or access@gvsu.edu. Please note that I cannot provide accommodations based upon disability until you have provided me with a copy of the SAR issued memo. All discussions will remain confidential. If you have a physical disability and think you will need assistance evacuating this classroom and/or building in an emergency situation, please make me aware so I can develop a plan to assist you.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-5">Math Tutoring Center<div class="autopermalink" aria-hidden="true" data-description="Item: Math Tutoring Center"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-5" title="Copy heading and permalink for Item: Math Tutoring Center" aria-label="Copy heading and permalink for Item: Math Tutoring Center">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sec-otherPoliciesL-2-1-5-2">
+<div class="para">GVSU’s Math Tutoring Center offers both in-person and online drop-in tutoring this semester, starting Wednesday, September 2. You can access the most up-to-date information on our <a class="external" href="http://gvsu.edu/tutoring/math/" target="_blank">website</a>. There you will find our current hours, information on how to access online tutoring with Discord Voice and a schedule of when you can find tutors to help with your specific course. Bring questions to any center about using technology (calculator or Desmos), on methods and concepts, or on specific problems. All Math Center tutoring is FREE, so stop by early and often. The Math Tutoring Center offers:</div>
+<ul class="disc" id="sec-otherPoliciesL-2-1-5-2-2">
+<li id="sec-otherPoliciesL-2-1-5-2-2-1">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-5-2-2-1">in-person tutoring on the Allendale campus (MAK A-2-601): Monday – Thursday 10am – 5pm and Friday 10am – 2pm</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-5-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-5-2-2-2">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-5-2-2-2">in-person tutoring on the Pew campus (Steelcase Library Collaboration Zone DeVos A): Monday – Thursday 12pm – 4pm (check website, hours may change)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-5-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-5-2-2-3">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-5-2-2-3">online tutoring via Discord Voice: Sunday – Thursday 5pm – 8pm. To access virtual drop-in tutoring, you can use the link in your Blackboard course called Math Tutoring Center or visit our website. Then you will need to click on the "Online Math Tutoring Center" button, which will require a GVSU login. We ask that when you enter our Discord server, please change your username to your first and last name so we can get you signed in and connected with a tutor.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-5-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-6">Tutoring and Reading Center Appointments<div class="autopermalink" aria-hidden="true" data-description="Item: Tutoring and Reading Center Appointments"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-6" title="Copy heading and permalink for Item: Tutoring and Reading Center Appointments" aria-label="Copy heading and permalink for Item: Tutoring and Reading Center Appointments">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-6-2">GVSU’s Tutoring and Reading Center offers appointment tutoring both in-person and virtually. You can sign up for 50-minute tutoring appointments for many Math courses. Request a tutor <a class="external" href="https://www.gvsu.edu/trc/" target="_blank">here</a> or schedule directly on Navigate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-7">Mental Health and Wellness<div class="autopermalink" aria-hidden="true" data-description="Item: Mental Health and Wellness"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-7" title="Copy heading and permalink for Item: Mental Health and Wellness" aria-label="Copy heading and permalink for Item: Mental Health and Wellness">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sec-otherPoliciesL-2-1-7-2">
+<div class="para">If your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, there are resources available to you. GVSU encourages all students to access these resources, particularly as we navigate the transition and emotions associated with this time. The University Counseling Center offers a range of psychological services to meet the mental health needs of students, with the primary goal being to support students negotiating their transition into adulthood. The University Counseling Center can be reached by calling (616)-331-3266. If you are in distress and need to speak with someone urgently, an on-call crisis counselor can be reached 24/7 at the following numbers:</div>
+<ul class="disc" id="sec-otherPoliciesL-2-1-7-2-1">
+<li id="sec-otherPoliciesL-2-1-7-2-1-1">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-7-2-1-1">Call or Text 988: Suicide and Crisis Lifeline</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-7-2-1-2">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-7-2-1-2">Text HOME to 741741: Crisis Text Line</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">In addition, managing daily stress and self-care are also important to well-being. There are resources to help with this in the form of peer tutoring, academic skills and success coaching, and more at this <a class="external" href="https://www.gvsu.edu/support/" target="_blank">website</a>. The campus recreation center and student wellness education are also available to support the wellness of your mind, body and soul so you can thrive during your time at GVSU.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-8">Classroom and Campus Safety<div class="autopermalink" aria-hidden="true" data-description="Item: Classroom and Campus Safety"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8" title="Copy heading and permalink for Item: Classroom and Campus Safety" aria-label="Copy heading and permalink for Item: Classroom and Campus Safety">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-8-2">Classroom and campus safety are our shared responsibility. Please familiarize yourself with the classroom emergency placard, which contains important information that could prove useful should an emergency arise. Emergency situations could include a fire alarm, tornado warning, medical emergency, or hostile intruder, and our response might consist of evacuating MAK Hall in an orderly manner, moving as a group to a different location in the building, rendering assistance to a class member, or staying put and locking the classroom door. Please make sure to have your primary mobile number listed in Banner so that you will automatically receive any campus alerts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-otherPoliciesL-2-1-8-3">
+<div class="para">Additional information about campus safety can be found at the following sites:</div>
+<ul class="disc" id="sec-otherPoliciesL-2-1-8-3-1">
+<li id="sec-otherPoliciesL-2-1-8-3-1-1">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-8-3-1-1"><a class="external" href="https://www.gvsu.edu/dps/warnings-and-alerts-133.htm" target="_blank">Directions for enabling additional contact means to the campus alert system</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-8-3-1-2">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-8-3-1-2"><a class="external" href="https://www.gvsu.edu/emergency/" target="_blank">Emergency alert information</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-8-3-1-3">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-8-3-1-3"><a class="external" href="https://www.gvsu.edu/emergency/tornado-safety-location-2.htm" target="_blank">List of campus tornado safety locations</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-8-3-1-4">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-8-3-1-4">
+<a class="external" href="https://www.gvsu.edu/emergency/medical-emergency-15.htm" target="_blank">Medical emergencies</a> and <a class="external" href="https://www.gvsu.edu/emergency/automated-external-defibrillator-33.htm" target="_blank">campus AED locations</a>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-8-3-1-5">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-8-3-1-5"><a class="external" href="https://www.gvsu.edu/dps/active-shooter-response-85.htm" target="_blank">Active shooter response</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-9">Religious Accommodation<div class="autopermalink" aria-hidden="true" data-description="Item: Religious Accommodation"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-9" title="Copy heading and permalink for Item: Religious Accommodation" aria-label="Copy heading and permalink for Item: Religious Accommodation">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-9-2">In accordance with the <a class="external" href="https://www.gvsu.edu/policies/policy.htm?policyId=129535EB-9F42-2683-61E9033594C870D2" target="_blank">Religious Inclusion Policy</a>, GVSU will provide reasonable accommodations for faculty, staff, and students to observe their religious beliefs, except where accommodating the request would result in undue hardship on the University in its mission, operation, or in meeting its academic standards. If you would like to request a reasonable accommodation, please complete this <a class="external" href="https://www.gvsu.edu/affirmative/religious-request.htm" target="_blank">form</a> and submit it to me within the first two weeks of the semester or as soon as reasonably possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-10">CLAS Voyage Embarking Experience<div class="autopermalink" aria-hidden="true" data-description="Item: CLAS Voyage Embarking Experience"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10" title="Copy heading and permalink for Item: CLAS Voyage Embarking Experience" aria-label="Copy heading and permalink for Item: CLAS Voyage Embarking Experience">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sec-otherPoliciesL-2-1-10-2">
+<div class="para">This course has been identified as part of the CLAS Voyage Embarking Experience. The Embarking Experience has been designed to help you thrive as you navigate the transition to college. The Embarking Experience isn’t a single course or a checklist of requirements, but the College of Liberal Arts and Sciences’ ongoing approach to supporting your success throughout your first year. These experiences, including this course, are designed to help you meet a set of important outcomes:</div>
+<ol class="decimal" id="sec-otherPoliciesL-2-1-10-2-1">
+<li id="sec-otherPoliciesL-2-1-10-2-1-1">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-10-2-1-1">Developing a sense of academic and social belonging.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-10-2-1-2">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-10-2-1-2">Reflecting on the value and benefits of a liberal education.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-10-2-1-3">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-10-2-1-3">Developing confidence in your academic growth and success.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-10-2-1-4">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-10-2-1-4">Learning about and engaging with university resources.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-10-2-1-5">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-10-2-1-5">Growing your skills with digital technology.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="para">To learn more visit <a class="external" href="www.gvsu.edu/clas/voyage" target="_blank">their website</a>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-11">Course Description<div class="autopermalink" aria-hidden="true" data-description="Item: Course Description"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-11" title="Copy heading and permalink for Item: Course Description" aria-label="Copy heading and permalink for Item: Course Description">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-11-2">An introduction to systems of linear equations emphasizing conceptual understanding and computational thinking. Primary topics include solutions to linear systems, vector and matrix algebra, span and linear independence, bases, eigenvectors and eigenvalues. Applications will be integrated throughout the course.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-12">Course Objectives<div class="autopermalink" aria-hidden="true" data-description="Item: Course Objectives"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12" title="Copy heading and permalink for Item: Course Objectives" aria-label="Copy heading and permalink for Item: Course Objectives">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sec-otherPoliciesL-2-1-12-2">
+<div class="para">After successful completion of the course, students will be able to:</div>
+<ol class="decimal" id="sec-otherPoliciesL-2-1-12-2-1">
+<li id="sec-otherPoliciesL-2-1-12-2-1-1">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-1">Analyze systems of linear equations and describe their solution spaces.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-2">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-2">Describe how the pivot positions of an augmented matrix influence the nature of the solution space to a linear system.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-3">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-3">Demonstrate algebraic and geometric fluency with vectors.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-4">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-4">Interpret questions about linear systems as questions about linear combinations of vectors.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-5">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-5">Describe the concept of span of a set of vectors and apply it to determine the span of a set of vectors.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-6">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-6">Describe the concept of linear independence of a set of vectors and apply it to determine whether a set of vectors is linearly independent.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-7">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-7">Interpret matrix transformations as functions defined through matrix multiplication and create specific matrix transformations to perform geometric operations.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-8">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-8">Calculate matrix sums, products, and multiples by scalar, and recognize matrix products as arising from composing matrix transformations.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-9">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-9">Recognize a basis for and use the coordinate system it defines to solve problems.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-10">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-10">Recognize an invertible matrix and find its inverse.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-11">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-11">Apply one of several algorithms for finding the determinant of a matrix, and use the determinant to determine if a matrix is invertible.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-11" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-12">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-12">State the definition and intuitive meaning of an eigenvalue-eigenvector pair of a square matrix.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-12" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-13">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-13">Apply a conceptual understanding of linear systems to find the eigenvalues and eigenvectors of a square matrix.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-13" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-14">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-14">Demonstrate how the theory of eigenvalues and eigenvectors is used to solve problems in dynamical systems.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-14" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-otherPoliciesL-2-1-12-2-1-15">
+<div class="para" id="p-derived-sec-otherPoliciesL-2-1-12-2-1-15">Use computer algebra technology as a tool to solve important problems in linear algebra.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2-1-15" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sec-otherPoliciesL-2-1-13">Syllabus Changes<div class="autopermalink" aria-hidden="true" data-description="Item: Syllabus Changes"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-13" title="Copy heading and permalink for Item: Syllabus Changes" aria-label="Copy heading and permalink for Item: Syllabus Changes">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sec-otherPoliciesL-2-1-13-2">This syllabus is meant to serve as a general overview of the course. I reserve the right to make adjustments to the syllabus as necessary, typically in consultation with you. Any changes will be announced in at least one synchronous class meeting and via a Blackboard announcement. Changes will be made to the live version of this syllabus which is linked on Blackboard.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2-1-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-otherPoliciesL-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Other Information and Policies"><a tabindex="-1" href="#sec-otherPoliciesL" title="Copy heading and permalink for Subsection: Other Information and Policies" aria-label="Copy heading and permalink for Subsection: Other Information and Policies">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Linear Algebra - Fall 2026- (MTH 204-03) Syllabus"><a tabindex="-1" href="#syllabusL" title="Copy heading and permalink for Section: Linear Algebra - Fall 2026- (MTH 204-03) Syllabus" aria-label="Copy heading and permalink for Section: Linear Algebra - Fall 2026- (MTH 204-03) Syllabus">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="syllabusM2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="LTs.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>diagcess.Base.init()</script>
+</body>
+</html>

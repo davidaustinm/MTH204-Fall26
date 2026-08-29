@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="01-1-1_10-figure" width="250" height="210" viewBox="0 0 250 210">
+  <defs>
+    <clipPath id="01-1-1_10-__clipPath-0">
+      <rect x="5.0" y="5.0" width="240.0" height="200.0"/>
+    </clipPath>
+  </defs>
+  <path id="01-1-1_10-__path-0" d="M 187.2 125.5 L 38.2 141.9 L 62.8 84.5 L 211.8 68.1 Z" stroke="none" opacity="0.4" stroke-width="2" fill="blue" clip-path="url(#01-1-1_10-__clipPath-0)"/>
+  <path id="01-1-1_10-__path-1" d="M 217.3 98.2 L 68.2 114.6 L 92.8 57.2 L 241.8 40.8 Z" stroke="none" stroke-width="2" fill="orange" clip-path="url(#01-1-1_10-__clipPath-0)"/>
+  <g id="01-1-1_10-__label-0" transform="translate(99.0,63.0) translate(-2.8,-3.0)">
+    <g id="01-1-1_10-__g-0">
+      <text font-family="serif" font-size="8" font-weight="bold" x="0.0" y="4.3">p</text>
+    </g>
+  </g>
+  <g id="01-1-1_10-__label-1" transform="translate(49.0,133.0) translate(-2.8,-3.0)">
+    <g id="01-1-1_10-__g-1">
+      <text font-family="serif" font-size="8" font-weight="bold" x="0.0" y="4.3">q</text>
+    </g>
+  </g>
+</svg>
