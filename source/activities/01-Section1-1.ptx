@@ -606,7 +606,8 @@
                     <p>
                         Suppose we have a set of 500 linear equations in 10
                         unknowns.
-                        Which of the would you expect to hold?
+                        Which of the three possibilities would you expect to
+                        hold?
                     </p>
                 </statement>
 
@@ -945,45 +946,45 @@
             </task>
         </exercise>
     </page>
-        <outcomes>
-            <introduction>
+
+    <outcomes>
+        <introduction>
+            <p>
+                Make sure you can answer the following questions (at least for 2
+                and 3 variables):
+            </p>
+        </introduction>
+
+        <ul>
+            <li>
                 <p>
-                    Make sure you can answer the following questions (at least
-                    for 2 and 3 variables):
+                    What is a linear equation?
                 </p>
-            </introduction>
+            </li>
 
-            <ul>
-                <li>
-                    <p>
-                        What is a linear equation?
-                    </p>
-                </li>
+            <li>
+                <p>
+                    What is a system of linear equations?
+                    What does it mean for a list of numbers to be a solution to
+                    a system of linear equations?
+                    Can you answer the second question both algebraically and
+                    geometrically?
+                </p>
+            </li>
 
-                <li>
-                    <p>
-                        What is a system of linear equations?
-                        What does it mean for a list of numbers to be a solution
-                        to a system of linear equations?
-                        Can you answer the second question both algebraically
-                        and geometrically?
-                    </p>
-                </li>
+            <li>
+                <p>
+                    How many solutions can we expect for a system of linear
+                    equations?
+                </p>
+            </li>
 
-                <li>
-                    <p>
-                        How many solutions can we expect for a system of linear
-                        equations?
-                    </p>
-                </li>
-
-                <li>
-                    <p>
-                        How does this number of solutions typically change as we
-                        add more equations?
-                    </p>
-                </li>
-            </ul>
-        </outcomes>
-
+            <li>
+                <p>
+                    How does this number of solutions typically change as we add
+                    more equations?
+                </p>
+            </li>
+        </ul>
+    </outcomes>
 </worksheet>
