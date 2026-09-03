@@ -130,5 +130,13 @@
             <!-- <xi:include href="./homework/homework01.ptx"/> -->
         </chapter>
         <!-- Include additional chapters for other categories -->
+
+        <chapter xml:id="quizzes">
+            <title>Learning Target Quizzes</title>
+
+            <!-- Include handouts -->
+            <xi:include href="./LTs/01_LT.ptx"/>
+        </chapter>
+
     </book>
 </pretext>

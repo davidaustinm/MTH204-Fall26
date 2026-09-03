@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Learning Target 1 Quiz - MTH 204</title>
+
+    <p>
+        This quiz covers course learning target #1.
+        You are allowed to use a calculator which does NOT have graphing or
+        symbolic capabilities.
+        Read all <term>DIRECTIONS</term> carefully.
+        Good luck!
+    </p>
+    <!-- Q1 Section 1.1 -->
+    <exercise>
+        <introduction>
+            <p>
+                (First attempt) I can execute the next 2-3 steps of Gaussian
+                elimination by hand that are needed to work toward RREF (and
+                recognize that additional steps are needed to achieve RREF),
+                identify which row operations were used, and put a matrix in
+                RREF using Sage.
+            </p>
+
+            <p>
+                A given linear system has been represented by an augmented
+                matrix and Gaussian elimination has begun.
+                The current state of the process is shown below.
+            </p>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Execute the next <term>two</term> row operations that you
+                    would perform to continue the process of Gaussian
+                    elimination, clearly stating your steps by writing the
+                    explicit row operations you did.
+                    You should write at least two additional matrices to show
+                    your work.
+                    <m>
+          \begin{array}{ccc|c}
+          1 \amp 7 \amp -2 \amp 12 \\
+          0 \amp 2 \amp -4 \amp 6 \\
+          0 \amp 3 \amp -5 \amp 10 \\
+          \end{array}
+</m>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Based on your final matrix, what would be the next row
+                    operation you would execute to continue Gaussian
+                    elimination?
+                    Simply state the next row operation; you need not perform
+                    it.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Without doing any further row operations, determine the
+                    number of solutions that this system has and explain your
+                    thinking.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>
