@@ -131,7 +131,7 @@
         </chapter>
         <!-- Include additional chapters for other categories -->
 
-        <chapter xml:id="quizzes">
+        <chapter xml:id="quizzes" component="quiz">
             <title>Learning Target Quizzes</title>
 
             <!-- Include handouts -->
