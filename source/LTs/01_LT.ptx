@@ -59,15 +59,5 @@
                 </p>
             </statement>
         </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Without doing any further row operations, determine the
-                    number of solutions that this system has and explain your
-                    thinking.
-                </p>
-            </statement>
-        </task>
     </exercise>
 </worksheet>
