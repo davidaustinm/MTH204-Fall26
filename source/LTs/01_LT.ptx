@@ -28,7 +28,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Execute the next <term>two</term> row operations that you
@@ -37,18 +37,18 @@
                     explicit row operations you did.
                     You should write at least two additional matrices to show
                     your work.
-                    <m>
-          \begin{array}{ccc|c}
+                    <md>
+                        \left[\begin{array}{ccc|c}
           1 \amp 7 \amp -2 \amp 12 \\
           0 \amp 2 \amp -4 \amp 6 \\
           0 \amp 3 \amp -5 \amp 10 \\
-          \end{array}
-</m>
+          \end{array}\right]
+                    </md>
                 </p>
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Based on your final matrix, what would be the next row
@@ -60,7 +60,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Without doing any further row operations, determine the
