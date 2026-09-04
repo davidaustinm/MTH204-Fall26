@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Introduction Activity - Color Wheel",
-  "body": " Introduction Activity - Color Wheel   Go to this trycolors.com\/mixer . Play around with the colors. Not you can add more of a color by clicking on it, or less of it by clicking the minus sign below it.     Can you get any color you want to?      Using only Yellow and Red, what colors can you get?      Using only Yellow, Red, and Blue, what colors can you get? What colors can't you get?      What color do you get if you use 1 Yellow, 2 Red, and 2 Blue? What about 1 Yellow, 2 Red, and 3 Blue?      Using Yellow, Blue, and Green, can you get the color Green in more than one way?      Using only Yellow and Blue, how many Yellow and Blue do you need to get the following color:   Color mixer for Jade with hex #46747C.   Is there more than one way to get this color?      Is there a difference in color if you have 1 of each, Red, White, and Black, or 2 of each (Red, White, and Black)?    "
+  "body": " Introduction Activity - Color Wheel   Go to this trycolors.com\/mixer . Play around with the colors. Not you can add more of a color by clicking on it, or less of it by clicking the minus sign below it.     Can you get any color you want to?    Sure! \"Span is all colors.\"      Using only Yellow and Red, what colors can you get?    Yellows, oranges, and reds -- you can't get all of them.      Using only Yellow, Red, and Blue, what colors can you get? What colors can't you get?    In theory, these are primary colors, so you should be able to get all of them.      What color do you get if you use 1 Yellow, 2 Red, and 2 Blue? What about 1 Yellow, 2 Red, and 3 Blue?    With 1 Yellow, 2 Red, and 2 Blue, you get the color Copper Rust with hex #994C44.   Color mixer results for 1 Yellow, 2 Red, and 2 Blue.   With 1 Yellow, 2 Red, and 3 Blue, you get the color Ferra with hex #804B56.   Color mixer results for 1 Yellow, 2 Red, and 3 Blue.       Using Yellow, Blue, and Green, can you get the color Green in more than one way?    One could make the argument either way!      Using only Yellow and Blue, how many Yellow and Blue do you need to get the following color:   Color mixer for Jade with hex #46747C.   Is there more than one way to get this color?    Yes! You would use 3 yellows and 8 blues. You could also use 6 yellows and 16 blues.      Is there a difference in color if you have 1 of each, Red, White, and Black, or 2 of each (Red, White, and Black)?    No difference! Both will create the same color.   Color mixer for both 1 or 2 of each, Red, White, and Black.     "
 },
 {
   "id": "activities-3-3",
@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Can you get any color you want to?   "
+  "body": "  Can you get any color you want to?    Sure! \"Span is all colors.\"   "
 },
 {
   "id": "activities-3-4",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Using only Yellow and Red, what colors can you get?   "
+  "body": "  Using only Yellow and Red, what colors can you get?    Yellows, oranges, and reds -- you can't get all of them.   "
 },
 {
   "id": "activities-3-5",
@@ -340,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Using only Yellow, Red, and Blue, what colors can you get? What colors can't you get?   "
+  "body": "  Using only Yellow, Red, and Blue, what colors can you get? What colors can't you get?    In theory, these are primary colors, so you should be able to get all of them.   "
 },
 {
   "id": "activities-3-6",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  What color do you get if you use 1 Yellow, 2 Red, and 2 Blue? What about 1 Yellow, 2 Red, and 3 Blue?   "
+  "body": "  What color do you get if you use 1 Yellow, 2 Red, and 2 Blue? What about 1 Yellow, 2 Red, and 3 Blue?    With 1 Yellow, 2 Red, and 2 Blue, you get the color Copper Rust with hex #994C44.   Color mixer results for 1 Yellow, 2 Red, and 2 Blue.   With 1 Yellow, 2 Red, and 3 Blue, you get the color Ferra with hex #804B56.   Color mixer results for 1 Yellow, 2 Red, and 3 Blue.    "
 },
 {
   "id": "activities-3-7",
@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Using Yellow, Blue, and Green, can you get the color Green in more than one way?   "
+  "body": "  Using Yellow, Blue, and Green, can you get the color Green in more than one way?    One could make the argument either way!   "
 },
 {
   "id": "activities-3-8",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  Using only Yellow and Blue, how many Yellow and Blue do you need to get the following color:   Color mixer for Jade with hex #46747C.   Is there more than one way to get this color?   "
+  "body": "  Using only Yellow and Blue, how many Yellow and Blue do you need to get the following color:   Color mixer for Jade with hex #46747C.   Is there more than one way to get this color?    Yes! You would use 3 yellows and 8 blues. You could also use 6 yellows and 16 blues.   "
 },
 {
   "id": "activities-3-9",
@@ -376,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "  Is there a difference in color if you have 1 of each, Red, White, and Black, or 2 of each (Red, White, and Black)?   "
+  "body": "  Is there a difference in color if you have 1 of each, Red, White, and Black, or 2 of each (Red, White, and Black)?    No difference! Both will create the same color.   Color mixer for both 1 or 2 of each, Red, White, and Black.    "
 },
 {
   "id": "activities-4",
@@ -2698,7 +2698,7 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "",
   "title": "Section 1.2 - Row Operations",
-  "body": " Section 1.2 - Row Operations    Linear systems:                        Row operations:                          Instructions     You are given 7 systems of linear equations. Put the linear systems in order from most complicated to least complicated.    Then, ask your for the next set. You'll get 6 row operatons. Identify which row operation takes you from one system to the next in your list.    What you just did was unscramble the steps of Gaussian Elimination!       "
+  "body": " Section 1.2 - Row Operations    Linear systems:                          Row operations:                          Instructions     You are given 7 systems of linear equations. Put the linear systems in order from most complicated to least complicated.    Then, ask your for the next set. You'll get 6 row operatons. Identify which row operation takes you from one system to the next in your list.    What you just did was unscramble the steps of Gaussian Elimination!       "
 },
 {
   "id": "handouts-2-2-1",
