@@ -28,6 +28,7 @@
             <xi:include href="./syllabus/RunestoneL.ptx"/>
             <xi:include href="./syllabus/RunestoneM01.ptx"/>
             <xi:include href="./syllabus/RunestoneM02.ptx"/>
+            <xi:include href="./syllabus/LTsAsHandout.ptx"/>
         </chapter>
 
         <chapter xml:id="activities">
