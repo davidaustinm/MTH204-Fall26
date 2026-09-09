@@ -32,18 +32,11 @@
             </p>
         </introduction>
 
-        <task workspace="0.35in">
+        <task workspace="2in">
             <statement>
                 <p>
                     Write the augmented matrix that corresponds to the given
                     system.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1.5in">
-            <statement>
-                <p>
                     Work by hand to find the reduced row echelon form of the
                     augmented matrix.
                 </p>
