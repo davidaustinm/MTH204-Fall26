@@ -3301,7 +3301,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Problem 5 - Written Homework MTH 204",
-  "body": " Problem 5 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use \\emph{Sage} to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                         "
+  "body": " Problem 5 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                         "
 },
 {
   "id": "homework-7-3",
@@ -3310,7 +3310,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use \\emph{Sage} to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                        "
+  "body": "  For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                        "
 },
 {
   "id": "homework-8",
