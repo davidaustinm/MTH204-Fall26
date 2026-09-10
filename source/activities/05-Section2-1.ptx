@@ -23,7 +23,7 @@
             <p>
                 The weight <m>d</m> is initially set to 0 in the interactive
                 figure.
-                Explain what happens as you vary <m>c</m> with <m>d=0</m>?
+                Explain what happens as you vary <m>c</m> with <m>{d=0}</m>?
                 How is this related to scalar multiplication?
             </p>
         </statement>
