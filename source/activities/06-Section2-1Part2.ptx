@@ -3,6 +3,7 @@
 <worksheet>
     <title>Section 2.1 - Vectors and Linear Combinations Part 2</title>
 
+    <page> 
     <exercise workspace="1in">
         <statement>
             <p>
@@ -104,6 +105,9 @@ A.rref().n(digits=6)
             </p>
         </solution>
     </exercise>
+</page>
+
+<page>
 
     <exercise>
         <introduction>
@@ -275,7 +279,9 @@ A.rref().n(digits=2)
             </solution>
         </task>
     </exercise>
+</page>
 
+<page>
     <exercise>
         <introduction>
             <p>
@@ -381,6 +387,8 @@ A.rref().n(digits=2)
             </solution>
         </task>
 
+  
+
         <task workspace="1in">
             <statement>
                 <p>
@@ -426,6 +434,9 @@ A.rref()
             </solution>
         </task>
     </exercise>
+      </page>
+    <page>
+
 
     <exercise workspace="1in">
         <introduction>
@@ -544,6 +555,8 @@ A.rref()
         </task>
     </exercise>
 
+      </page>
+    <page>
     <exercise workspace="1in">
         <introduction>
             <p>
@@ -628,7 +641,8 @@ A.rref()
             </solution>
         </task>
     </exercise>
-
+  </page>
+    <page>
     <exercise workspace="1in">
         <introduction>
             <p>
@@ -770,6 +784,9 @@ print(-3*v1+(-3)*v2+1*v3)
         </task>
     </exercise>
 
+      </page>
+    <page>
+
     <exercise workspace="1in">
         <introduction>
             <p>
@@ -874,6 +891,8 @@ print(-3*v1+(-3)*v2+1*v3)
             </solution>
         </task>
     </exercise>
+      </page>
+  
 
     <outcomes>
         <introduction>
