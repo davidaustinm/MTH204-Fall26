@@ -80,6 +80,7 @@
 
             <!-- Include handouts -->
             <xi:include href="./handouts/02-Section1-2_H.ptx"/>
+            <xi:include href="./handouts/Hoverboard.ptx"/>
         </chapter>
 
         <chapter xml:id="labs">
@@ -137,6 +138,7 @@
 
             <!-- Include handouts -->
             <xi:include href="./LTs/01_LT.ptx"/>
+            
         </chapter>
 
     </book>

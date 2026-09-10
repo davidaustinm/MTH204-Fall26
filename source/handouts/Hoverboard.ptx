@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Section 2.3 - The Span of a Set of Vectors</title>
+    <title>Hoverboards and Magic Carpets</title>
 
   <exercise>
         <introduction>
@@ -40,7 +40,7 @@
             </p>
         </introduction>
 
-        <task workspace="1in">
+        <task workspace=".2in">
             <statement>
                 <p>
                     Use the tape to mark the origin and <m>x</m> and <m>y</m>
