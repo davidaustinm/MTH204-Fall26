@@ -14,14 +14,14 @@
             <ul>
                 <li>
                     <p>
-                        You should type up your report (a google docs version is
-                        available on Blackboard).
+                        You should hand-write your report.
                     </p>
                 </li>
 
                 <li>
                     <p>
-                        Include screenshots of your work in Sage.
+                        Include the output of your work in Sage, along with 
+                        the function(s) you used.
                     </p>
                 </li>
 
@@ -45,12 +45,12 @@
         </p>
 
         <p>
-            There is a page of Sage cells available
-            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+            There is a page of Sage cells available at
+            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">http://gvsu.edu/s/0Ng</url>.
         </p>
     </introduction>
 
-    <exercise workspace="2in">
+    <exercise workspace="4in">
         <statement>
             <p>
                 Consider the system of linear equations:
@@ -63,7 +63,7 @@
                 </md>
                 Write this system as an augmented matrix and use Sage to find a
                 description of the solution space.
-                (Include a screenshot of your work in Sage.)
+                (Include a description of your work in Sage.)
             </p>
         </statement>
     </exercise>
@@ -99,7 +99,7 @@
                     (Hint: the intersection where 650, <m>x</m>, and <m>y</m>
                     meet gives us that <m>650 = x + y</m>- do you see why?)
                     Explain how you set up the equations and include a
-                    screenshot of your work in Sage.
+                    description of your work in Sage.
                 </p>
             </statement>
         </task>
@@ -173,7 +173,7 @@
                 <p>
                     Solve your equations to find the temperatures inside the
                     plate.
-                    Use Sage - include a screenshot of your work.
+                    Use Sage - include a description of your work.
                 </p>
 
                 <p>

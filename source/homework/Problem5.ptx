@@ -23,14 +23,14 @@
             <p>
                 For each of the following linear systems of equations, (i)
                 represent the system with an augmented matrix, (ii) use
-                \emph{Sage} to find the RREF of the matrix of the linear system,
+                Sage to find the RREF of the matrix of the linear system,
                 and report the RREF in your written summary, and (iii) describe
                 the solution space of the system in as much detail as you can,
                 using parametric form if there are infinitely many solutions.
             </p>
         </introduction>
 
-        <task workspace="1in">
+        <task workspace="3in">
             <statement>
                 <p>
                     <m>
@@ -45,7 +45,7 @@ x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="3in">
             <statement>
                 <p>
                     <m>
@@ -58,7 +58,7 @@ x_1 \amp - \amp 2x_2 \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="3in">
             <statement>
                 <p>
                     <m>
