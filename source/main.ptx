@@ -87,7 +87,6 @@
             <title>Labs</title>
 
             <!-- Include labs -->
-            <!-- <xi:include href="./labs/lab-filename.ptx"/> -->
             <xi:include href="./labs/LAB1.ptx"/>
             <xi:include href="./labs/LAB2.ptx"/>
             <xi:include href="./labs/LAB3.ptx"/>
@@ -128,8 +127,7 @@
             <xi:include href="./homework/Problem28.ptx"/>
             <xi:include href="./homework/Problem29.ptx"/>
             <xi:include href="./homework/Problem30.ptx"/>
-            <!-- Include homework files -->
-            <!-- <xi:include href="./homework/homework01.ptx"/> -->
+
         </chapter>
         <!-- Include additional chapters for other categories -->
 
