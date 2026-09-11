@@ -826,84 +826,84 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 2.1 - Vectors and Linear Combinations Part 2",
-  "body": " Section 2.1 - Vectors and Linear Combinations Part 2    There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.      Use the process from the previous problem to write as a linear combination of and . Use Sage!      Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!       Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?       Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?       Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?       Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.       Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.       Make sure you can answer the following questions:     What is a linear combination of vectors?    What is the connection between linear combinations and solutions to linear systems?     "
+  "body": " Section 2.1 - Vectors and Linear Combinations Part 2     There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.      Use the process from the previous problem to write as a linear combination of and . Use Sage!        Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!         Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?         Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?         Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?         Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.         Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.        Make sure you can answer the following questions:     What is a linear combination of vectors?    What is the connection between linear combinations and solutions to linear systems?     "
 },
 {
-  "id": "activities-9-2",
+  "id": "activities-9-2-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-2",
+  "url": "activities-9.html#activities-9-2-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.   "
 },
 {
-  "id": "activities-9-3",
+  "id": "activities-9-2-2",
   "level": "2",
-  "url": "activities-9.html#activities-9-3",
+  "url": "activities-9.html#activities-9-2-2",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Use the process from the previous problem to write as a linear combination of and . Use Sage!   "
 },
 {
-  "id": "activities-9-4",
+  "id": "activities-9-3-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-4",
+  "url": "activities-9.html#activities-9-3-1",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!    "
 },
 {
-  "id": "activities-9-5",
+  "id": "activities-9-4-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-5",
+  "url": "activities-9.html#activities-9-4-1",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?    "
 },
 {
-  "id": "activities-9-6",
+  "id": "activities-9-5-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-6",
+  "url": "activities-9.html#activities-9-5-1",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?    "
 },
 {
-  "id": "activities-9-7",
+  "id": "activities-9-6-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-7",
+  "url": "activities-9.html#activities-9-6-1",
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
   "body": "  Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?    "
 },
 {
-  "id": "activities-9-8",
+  "id": "activities-9-7-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-8",
+  "url": "activities-9.html#activities-9-7-1",
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
   "body": "  Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    "
 },
 {
-  "id": "activities-9-9",
+  "id": "activities-9-8-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-9",
+  "url": "activities-9.html#activities-9-8-1",
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "",
   "body": "  Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    "
 },
 {
-  "id": "activities-9-10",
+  "id": "activities-9-9",
   "level": "2",
-  "url": "activities-9.html#activities-9-10",
+  "url": "activities-9.html#activities-9-9",
   "type": "Outcomes",
   "number": "",
   "title": "",
