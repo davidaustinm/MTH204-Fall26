@@ -5,8 +5,7 @@
 
     <p>
         This quiz covers course learning target #1.
-        You are allowed to use a calculator which does NOT have graphing or
-        symbolic capabilities.
+       
         Read all <term>DIRECTIONS</term> carefully.
         Good luck!
     </p>
@@ -17,8 +16,7 @@
                 (First attempt) I can execute the next 2-3 steps of Gaussian
                 elimination by hand that are needed to work toward RREF (and
                 recognize that additional steps are needed to achieve RREF),
-                identify which row operations were used, and put a matrix in
-                RREF using Sage.
+                identify which row operations were used.
             </p>
 
             <p>
