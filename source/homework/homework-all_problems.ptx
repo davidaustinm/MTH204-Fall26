@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet>
+<worksheet component="homework">
     <title>Written Homework Exercises</title>
 
     <page>
@@ -27,6 +27,25 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
 </m>
                     </p>
                 </statement>
+
+                <solution>
+                    <p>
+                        <ol>
+                            <li>There are two equations.</li>
+                            <li>
+                                There are 4 variables:
+                                <m>x_1, x_2, x_3, x_4</m>.
+                            </li>
+
+                            <li>
+                                This system is linear because each variable
+                                shows up to the first power and does not have
+                                any functions where the variable is the input.
+                                It can be written in the proper form.
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
             </task>
 
             <task>
@@ -42,6 +61,21 @@ x \amp - \amp 5y \amp + \amp 2z \amp = \amp 2 \\
 </m>
                     </p>
                 </statement>
+
+                <solution>
+                    <p>
+                        <ol>
+                            <li>There are 4 equations.</li>
+                            <li>There are 3 variables: <m>x, y, z</m>.</li>
+                            <li>
+                                This system is linear because each variable
+                                shows up to the first power and does not have
+                                any functions where the variable is the input.
+                                It can be written in the proper form.
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
             </task>
 
             <task>
@@ -55,6 +89,23 @@ x^2 \amp - \amp 2xy \amp + \amp y^3 \amp = \amp 9 \\
 </m>
                     </p>
                 </statement>
+
+                <solution>
+                    <p>
+                        <ol>
+                            <li>There are 2 equations.</li>
+                            <li>There are 2 variables: <m>x, y</m>.</li>
+                            <li>
+                                This system is not linear because some of the
+                                variables are raised to a power higher than 1 in
+                                more than one equation.
+                                There are also functions such as exponential and
+                                trigonometric functions with variables as
+                                inputs.
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
             </task>
         </exercise>
     </page>
@@ -562,7 +613,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
-         <!-- Q11 Section 2.3 -->
+        <!-- Q11 Section 2.3 -->
         <exercise>
             <introduction>
                 <p>
@@ -858,7 +909,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
-         <!-- Q16 Section 2.3, 2.4 -->
+        <!-- Q16 Section 2.3, 2.4 -->
         <exercise>
             <introduction>
                 <p>
@@ -1036,7 +1087,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
-         <!-- Q18 Section 2.5 -->
+        <!-- Q18 Section 2.5 -->
         <exercise>
             <introduction>
                 <p>
@@ -1785,7 +1836,7 @@ x_1 \amp - \amp 2x_2  \amp + \amp x_3 \amp \ \amp \ \amp = \amp 5 \\
     </page>
 
     <page>
-         <!-- Q30 -->
+        <!-- Q30 -->
         <exercise>
             <statement>
                 <p>
