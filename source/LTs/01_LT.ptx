@@ -5,7 +5,6 @@
 
     <p>
         This quiz covers course learning target #1.
-       
         Read all <term>DIRECTIONS</term> carefully.
         Good luck!
     </p>
@@ -44,6 +43,33 @@
                     </md>
                 </p>
             </statement>
+
+            <solution>
+                <p>
+                    There are maybe other possible solutions, but below is the
+                    most straightforward.
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rrr|r} 
+                    1 \amp 7 \amp -2 \amp 12 \\
+                    0 \amp 2 \amp -4 \amp 6 \\
+                    0 \amp 3 \amp -5 \amp 10 \\
+                  \end{array}\right] \amp \xrightarrow{(\frac{1}{2})(R2) \to R2} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 7 \amp -2 \amp 12 \\
+                    0 \amp 1 \amp -2 \amp 3 \\
+                    0 \amp 3 \amp -5 \amp 10 \\
+                  \end{array}\right] 
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R3 + (-3)R2) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 7 \amp -2 \amp 12 \\
+                    0 \amp 1 \amp -2 \amp 3 \\
+                    0 \amp 0 \amp 1 \amp 1 \\
+                  \end{array}\right] 
+                  </mrow>
+                    </md>
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -56,6 +82,13 @@
                     it.
                 </p>
             </statement>
+
+            <solution>
+                <p>
+                    This will be a step to start the back substitution.
+                    It is <m>2R3 + R2 \to R2</m>.
+                </p>
+            </solution>
         </task>
     </exercise>
 </worksheet>
