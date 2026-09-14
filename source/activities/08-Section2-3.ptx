@@ -180,7 +180,7 @@
                 </p>
             </statement>
 
-            <solution>
+            <solution component="08-solutions">
                 <p>
                     The row reduced echelon form of
                     <m>\left[
