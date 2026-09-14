@@ -133,7 +133,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Learning Target Quizzes",
-  "body": " Learning Target Quizzes   Purpose  This component of the assessment is intended to emphasize a few things:   Learning is a process. You will not be penalized for not earning an \"exemplary\" on a target the first time, but you are expected to eventually get there.   Frequent assessment is good for learning. I would like you to think of these checkpoints as a tool for learning rather than just assessment - studies show that retrieval of information makes it easier to recall that information later. This is called \"the testing effect.\"   Keeping up with course material is important. These quizzes will be one way of informing both you and me about your progress in the course.   Knowing the basics well is crucial for tackling more difficult problems. These skills were chosen because they are fundamental. You will have time to practice these skills before, briefly during, and after class, but we will be using the majority of class time to tackle difficult problems. You will need to understand the basics well to keep up and contribute to your group.      Instructions and Grading  Each item in the list below is a learning target.  We will have a quiz at the end of each class every Friday assessing these targets.  Each skill will be graded as only \"E\" for \"exemplary,\" “S\" for “satisfactory,\" or “NY\" for “not yet\". To earn an E your solution needs to show all work and explanations, use correct notation, and arrive at a correct answer. In short, you need to convince me that you understand.  Once you earned an \"E\" on a skill you do not need to do so again.   The grades will be indicated on Blackboard. You will be notified which skills will be on a quiz, but it is your responsibility to know which skills you have yet to demonstrate by consulting Blackboard for your graded checkpoints.  The checkpoints are closed book and notes  Since you have multiple attempts on each target there will be no make ups.  Each target will be on three checkpoints, and then you will have one additional attempt in office hours (or by making an appointment).     Each of 14 targets counts as 2% of your final grade.      Academic Honesty  You may use Sage cells if instructed (though, note carefully when asked to do something by hand). You may not use your textbook, other notes, the internet\/AI nor talk to anyone about the quiz until they are handed back (via Blackboard). Any violations of this policy will result in not earning credit for the skill permanently. By policy , all incidents of academic dishonesty will be reported to the Dean of Students.   A recommendation. If you don't earn an \"E\" on the first attempt, be sure to read feedback. It's a good idea to redo the problem and ask me about it!    Learning Targets    I can execute the next 2-3 steps of Gaussian elimination by hand that are needed to work toward RREF (and recognize that additional steps are needed to achieve RREF), and identify which row operations were used. (Section 1.2).  I can use information about pivots to make conclusions about the solutions of a system of linear equations, and explain the underlying reasoning (using appropriate terminology) regarding the existence and uniqueness of solutions and consistency or inconsistency of a system. (Section 1.4)  I can determine if and how a given vector can be written as a linear combination of a given set of vectors and explain what this means geometrically. (Section 2.1)  I can represent a linear system in three different ways and be able to translate back and forth among the forms: as , as a question about linear combinations, and as a question about an augmented matrix (Section 2.2 - Prop 2.2.4)  I can reformulate and answer questions about span in terms of linear combinations, matrix equations, and geometrically. (Section 2.3)  I can reformulate and answer questions about linearly dependent or linearly independent vectors using appropriate computations, and explain the meaning of the results of computations in the language of linear combinations. (Section 2.4)  I can find the matrix of a linear transformation using elementary vectors, apply a transformation to a vector or shape, and compose transformations using matrix multiplication. (Section 2.5)  I can determine if a matrix is invertible, find an inverse, and use inverses to solve matrix equations. (Section 3.1)  I can determine whether or not a set of vectors is a basis for , and give examples and non-examples of bases. (Section 3.2)  I can convert a vector given in the standard basis into a vector in another basis and vice versa. (Section 3.2)  I can find the determinant of a given matrix using cofactor expansion and explain what information this tells us about the invertibility of a matrix. (Section 3.4)  I can find and clearly justify bases for the null space and the column space of a matrix (including why the set of vectors is a basis, i.e., why it is linearly independent and spans the relevant spaces) and thus their dimensions. (Section 3.5)  I can verify that a vector is an eigenvector algebraically and explain what this means about the vector geometrically. (Section 4.1)  I can use the characteristic polynomial of a matrix to identify its eigenvalues, and then find a basis of eigenvectors for each associated eigenspace and, if there is a basis of eigenvectors for , use such a basis to describe the matrix product . (Section 4.2)     "
+  "body": " Learning Target Quizzes   Purpose  This component of the assessment is intended to emphasize a few things:   Learning is a process. You will not be penalized for not earning an \"exemplary\" on a target the first time, but you are expected to eventually get there.   Frequent assessment is good for learning. I would like you to think of these checkpoints as a tool for learning rather than just assessment - studies show that retrieval of information makes it easier to recall that information later. This is called \"the testing effect.\"   Keeping up with course material is important. These quizzes will be one way of informing both you and me about your progress in the course.   Knowing the basics well is crucial for tackling more difficult problems. These targets were chosen because they are fundamental. You will have time to practice these targets before, briefly during, and after class, but we will be using the majority of class time to tackle difficult problems. You will need to understand the basics well to keep up and contribute to your group.      Instructions and Grading  Each item in the list below is a learning target.  We will have a quiz at the end of each class every Friday assessing these targets.  Each target will be graded as only \"E\" for \"exemplary,\" “S\" for “satisfactory,\" or “NY\" for “not yet\". To earn an E your solution needs to show all work and explanations, use correct notation, and arrive at a correct answer. In short, you need to convince me that you understand.  A grade of \"E\" earns , an \"S\"earns , and \"NY\" earns .  Once you earned an \"E\" on a target you do not need to do so again.   The grades will be indicated on Blackboard. You will be notified which targets will be on a quiz, but it is your responsibility to know which targets you have yet to demonstrate by consulting Blackboard for your grade on each learning target.   The checkpoints are closed book and notes  Since you have multiple attempts on each target there will be no make ups.  Each target will be on three checkpoints. You will have 3 attempts to demonstrate your understanding of each skill.  Each of 14 targets counts as 2% of your final grade.      Academic Honesty  You may use Sage cells if instructed (though, note carefully when asked to do something by hand). You may not use your textbook, other notes, the internet\/AI nor talk to anyone about the quiz until they are handed back (via Blackboard). Any violations of this policy will result in not earning credit for the target permanently. By policy , all incidents of academic dishonesty will be reported to the Dean of Students.   A recommendation. If you don't earn an \"E\" on the first attempt, be sure to read feedback. It's a good idea to redo the problem and ask me about it!    Learning Targets    I can execute the next 2-3 steps of Gaussian elimination by hand that are needed to work toward RREF (and recognize that additional steps are needed to achieve RREF), and identify which row operations were used. (Section 1.2).  I can use information about pivots to make conclusions about the solutions of a system of linear equations, and explain the underlying reasoning (using appropriate terminology) regarding the existence and uniqueness of solutions and consistency or inconsistency of a system. (Section 1.4)  I can determine if and how a given vector can be written as a linear combination of a given set of vectors and explain what this means geometrically. (Section 2.1)  I can represent a linear system in three different ways and be able to translate back and forth among the forms: as , as a question about linear combinations, and as a question about an augmented matrix (Section 2.2 - Prop 2.2.4)  I can reformulate and answer questions about span in terms of linear combinations, matrix equations, and geometrically. (Section 2.3)  I can reformulate and answer questions about linearly dependent or linearly independent vectors using appropriate computations, and explain the meaning of the results of computations in the language of linear combinations. (Section 2.4)  I can find the matrix of a linear transformation using elementary vectors, apply a transformation to a vector or shape, and compose transformations using matrix multiplication. (Section 2.5)  I can determine if a matrix is invertible, find an inverse, and use inverses to solve matrix equations. (Section 3.1)  I can determine whether or not a set of vectors is a basis for , and give examples and non-examples of bases. (Section 3.2)  I can convert a vector given in the standard basis into a vector in another basis and vice versa. (Section 3.2)  I can find the determinant of a given matrix using cofactor expansion and explain what information this tells us about the invertibility of a matrix. (Section 3.4)  I can find and clearly justify bases for the null space and the column space of a matrix (including why the set of vectors is a basis, i.e., why it is linearly independent and spans the relevant spaces) and thus their dimensions. (Section 3.5)  I can verify that a vector is an eigenvector algebraically and explain what this means about the vector geometrically. (Section 4.1)  I can use the characteristic polynomial of a matrix to identify its eigenvalues, and then find a basis of eigenvectors for each associated eigenspace and, if there is a basis of eigenvectors for , use such a basis to describe the matrix product . (Section 4.2)     "
 },
 {
   "id": "LTs-2-2",
@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Written Homework Policies",
-  "body": " Written Homework Policies   Purpose  The main purpose of the homework is practice . Importantly, you will practice the idea of explaining your reasoning - which is going to be key for success in this class (and probably in life).    Instructions  Problems will be assigned every week and due in class on Wednesdays. You will be provided a physical copy of the homework assignment where you will write your final solutions. Any other work should be completed in your notebook or on scratch paper.   You are expected to give solutions (not just answers) to each problem. This will be helpful with your own studying and reviewing of material and helps me see what you understand so far.    Writing Math Well  Here are some tips to help you write your homework well:   Your audience is other students in this class that have not seen this problem before. Remind the reader of any relevant facts from class or the book. Your solution should give adequate detail so that the reader can follow your solution.   Write in sentences. A sentence is a complete thought. You may still of course write equations, but they should be part of complete thoughts. Use paragraphs to separate important ideas.   It is possible to write too much. If you write out every triviality, the reader may get lost in the details. This is not good writing, either. (In particular, really trivial calculations need not be shown.)   Avoid shorthand. Do not to use arrows when you could use words like \"if\", \"then\", \"so\", \"therefore\", \"we see that\", \"recall that\".   You may wish to outline your problem-solving strategy at the beginning of the problem. This could help readers follow your solution.    Here are two examples, one good, and one not so good, so you can see how these ideas help. These students are solving the same problem!    Example 1     Why this is not so good:  You don't know what problem the writer is solving.  You can't tell what's an assumption and what's a conclusion.  Where does on thought end and another begin? There are no sentences!  In the 2nd line: combining two thoughts can create untruths ( , but it isn't ).  The 3rd line dangles; what's being said here? It's not a sentence.  What's the relationship between all these phrases? Connective phrases would help!      Example 2   Problem. Find a point in the plane on the positive -axis that has a distance of from the point .   Solution. The desired point is .  To find this, we note that if is a solution, then must satisfy the equation , which follows from the planar distance formula between the points and . It follows that . Then Factoring, we obtain satisfied by either or . Since we assumed and , we see that is the desired point.  Why this is much better:  The writer described the problem, and strategy for solution.  Every thought is a complete sentence with subject and verb (the \"equals\" sign is a verb).  She answered the question right at the beginning. (You can box your answers to help!)  Notice even the equations have punctuation (comma, periods) as they are part of sentences.  She highlighted important ingredients, displayed important equations, avoided trivial algebra.      Grading and Revisions  Each problem will be graded at an \"E\" for \"exemplary\" (100%), an \"S\" for \"satisfactory\" (75%), or \"NY\" for \"not yet\" (0%). You earn an \"E\" if your work demonstrates thorough understanding of the concepts of the problem. You are allowed to resubmit up to 2 problems per week. The resubmission can be from any assignment and you submit a problem as many times as you want. Here is what a revised problem requires:  Make sure you include the problem #.  Rewrite your whole solution as if you are doing the problem for the first time.  Write at least 2 sentences about what you learned from redoing the problem. You could say something like \"I used to think that... But now I know that...\".  You must have submitted the first draft by the deadline (or asked for an extension before the deadline) to be able to resubmit.  Hand resubmissions to me in person during class time or office hours.      Academic Honesty  You are allowed to collaborate on the homework. I believe that collaboration can lead to greater mathematical growth and so I encourage you to work together. However, you must be academically honest. A quick check for academic honesty on homework is that you are using collaboration for greater understanding of course content. Here are some more specifics:   You may   collaborate with other students from our class on homework  ask me about the concepts and for hints after having made a serious attempt at understanding  ask your fellow students for critique of your reasoning on written homework  use the math center     You may not   collaborate with students outside of our class  look up solutions on the internet, in textbooks, ask chatGPT or any AI, or use any resources besides our course textbook  copy any or all of your work from another source (another student or the internet)     You must   Be able to defend anything you turn in (i.e., your work must be a representation of your understanding)  Write up your solutions in your own words     "
+  "body": " Written Homework Policies   Purpose  The main purpose of the homework is practice . Importantly, you will practice the idea of explaining your reasoning - which is going to be key for success in this class (and probably in life).    Instructions  Problems will be assigned every week and due in class on Wednesdays. You will be provided a physical copy of the homework assignment where you will write your final solutions. Any other work should be completed in your notebook or on scratch paper.   You are expected to give solutions (not just answers) to each problem. This will be helpful with your own studying and reviewing of material and helps me see what you understand so far.    Writing Math Well  Here are some tips to help you write your homework well:   Your audience is other students in this class that have not seen this problem before. Remind the reader of any relevant facts from class or the book. Your solution should give adequate detail so that the reader can follow your solution.   Write in sentences. A sentence is a complete thought. You may still of course write equations, but they should be part of complete thoughts. Use paragraphs to separate important ideas.   It is possible to write too much. If you write out every triviality, the reader may get lost in the details. This is not good writing, either. (In particular, really trivial calculations need not be shown.)   Avoid shorthand. Do not to use arrows when you could use words like \"if\", \"then\", \"so\", \"therefore\", \"we see that\", \"recall that\".   You may wish to outline your problem-solving strategy at the beginning of the problem. This could help readers follow your solution.    Here are two examples, one good, and one not so good, so you can see how these ideas help. These students are solving the same problem!    Example 1     Why this is not so good:  You don't know what problem the writer is solving.  You can't tell what's an assumption and what's a conclusion.  Where does on thought end and another begin? There are no sentences!  In the 2nd line: combining two thoughts can create untruths ( , but it isn't ).  The 3rd line dangles; what's being said here? It's not a sentence.  What's the relationship between all these phrases? Connective phrases would help!      Example 2   Problem. Find a point in the plane on the positive -axis that has a distance of from the point .   Solution. The desired point is .  To find this, we note that if is a solution, then must satisfy the equation , which follows from the planar distance formula between the points and . It follows that . Then Factoring, we obtain satisfied by either or . Since we assumed and , we see that is the desired point.  Why this is much better:  The writer described the problem, and strategy for solution.  Every thought is a complete sentence with subject and verb (the \"equals\" sign is a verb).  She answered the question right at the beginning. (You can box your answers to help!)  Notice even the equations have punctuation (comma, periods) as they are part of sentences.  She highlighted important ingredients, displayed important equations, avoided trivial algebra.      Grading and Revisions  Each problem will be graded at an \"E\" for \"exemplary\" (100%), an \"S\" for \"satisfactory\" (75%), or \"NY\" for \"not yet\" (0%). You earn an \"E\" if your work demonstrates thorough understanding of the concepts of the problem. You are allowed to resubmit up to 2 problems per week. The resubmission can be from any assignment and you submit a problem as many times as you want. Here is what a revised problem requires:  Write your revisions in a different color, or on a new sheet of paper.   Turn in your first draft with the original problem with your revision.   Rewrite your whole solution as if you are doing the problem for the first time.  Write at least 2 sentences about what you learned from redoing the problem. You could say something like \"I used to think that... But now I know that...\".  You must have submitted the first draft by the deadline (or asked for an extension before the deadline) to be able to resubmit.  Hand resubmissions to me in person during class time or office hours.      Academic Honesty  You are allowed to collaborate on the homework. I believe that collaboration can lead to greater mathematical growth and so I encourage you to work together. However, you must be academically honest. A quick check for academic honesty on homework is that you are using collaboration for greater understanding of course content. Here are some more specifics:   You may   collaborate with other students from our class on homework  ask me about the concepts and for hints after having made a serious attempt at understanding  ask your fellow students for critique of your reasoning on written homework  use the math center     You may not   collaborate with students outside of our class  look up solutions on the internet, in textbooks, ask chatGPT or any AI, or use any resources besides our course textbook  copy any or all of your work from another source (another student or the internet)     You must   Be able to defend anything you turn in (i.e., your work must be a representation of your understanding)  Write up your solutions in your own words     "
 },
 {
   "id": "HW-2-2",
@@ -826,84 +826,84 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 2.1 - Vectors and Linear Combinations Part 2",
-  "body": " Section 2.1 - Vectors and Linear Combinations Part 2    There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.      Use the process from the previous problem to write as a linear combination of and . Use Sage!      Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!       Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?       Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?       Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?       Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.       Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.       Make sure you can answer the following questions:     What is a linear combination of vectors?    What is the connection between linear combinations and solutions to linear systems?     "
+  "body": " Section 2.1 - Vectors and Linear Combinations Part 2     There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.      Use the process from the previous problem to write as a linear combination of and . Use Sage!        Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!         Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?         Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?         Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?         Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.         Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.        Make sure you can answer the following questions:     What is a linear combination of vectors?    What is the connection between linear combinations and solutions to linear systems?     "
 },
 {
-  "id": "activities-9-2",
+  "id": "activities-9-2-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-2",
+  "url": "activities-9.html#activities-9-2-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.   "
 },
 {
-  "id": "activities-9-3",
+  "id": "activities-9-2-2",
   "level": "2",
-  "url": "activities-9.html#activities-9-3",
+  "url": "activities-9.html#activities-9-2-2",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Use the process from the previous problem to write as a linear combination of and . Use Sage!   "
 },
 {
-  "id": "activities-9-4",
+  "id": "activities-9-3-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-4",
+  "url": "activities-9.html#activities-9-3-1",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!    "
 },
 {
-  "id": "activities-9-5",
+  "id": "activities-9-4-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-5",
+  "url": "activities-9.html#activities-9-4-1",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?    "
 },
 {
-  "id": "activities-9-6",
+  "id": "activities-9-5-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-6",
+  "url": "activities-9.html#activities-9-5-1",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?    "
 },
 {
-  "id": "activities-9-7",
+  "id": "activities-9-6-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-7",
+  "url": "activities-9.html#activities-9-6-1",
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
   "body": "  Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?    "
 },
 {
-  "id": "activities-9-8",
+  "id": "activities-9-7-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-8",
+  "url": "activities-9.html#activities-9-7-1",
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
   "body": "  Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    "
 },
 {
-  "id": "activities-9-9",
+  "id": "activities-9-8-1",
   "level": "2",
-  "url": "activities-9.html#activities-9-9",
+  "url": "activities-9.html#activities-9-8-1",
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "",
   "body": "  Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    "
 },
 {
-  "id": "activities-9-10",
+  "id": "activities-9-9",
   "level": "2",
-  "url": "activities-9.html#activities-9-10",
+  "url": "activities-9.html#activities-9-9",
   "type": "Outcomes",
   "number": "",
   "title": "",
@@ -2985,278 +2985,17 @@ var ptx_lunr_docs = [
   "url": "homework-2.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Written Homework Exercises",
-  "body": " Written Homework Exercises      For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether or not the system is linear. For (iii), provide written justification for your conclusion.                              Give an example of a matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write one short sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.     a linear system having 4 equations and 2 unknowns and having exactly one solution.      a linear system having 3 equations and 3 unknowns and having no solution.      a linear system having 2 equations and 5 unknowns and having infinitely many solutions.      a linear system having 3 equations and 5 unknowns and having exactly one solution.      a linear system having 4 equations and 4 unknowns and having exactly one solution.          A given linear system has been represented by an augmented matrix and the process of Gaussian elimination has begun. The current state of the process is shown in the augmented matrix below.  Execute the next three steps (that is, the next three row operations) of Gaussian elimination, and clearly state the three row operations you used, employing notation like we've been using in class. Your work should show at least two additional matrices beyond the one stated here.          Consider the linear system:      Write the augmented matrix that corresponds to the given system.      Work by hand to find the reduced row echelon form of the augmented matrix.      Identify which variables are basic and which are free.      Describe the solution space of the system, using a parametric description if there are infinitely many solutions.          For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use \\emph{Sage} to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                              For each of the four scenarios below, give an example of an augmented matrix in RREF that satisfies the stated criteria, or explain why such a matrix is not possible.  For each example you provide, (i) circle the pivot locations, (ii) make each non-pivot column have at least one non-zero entry, and (iii) write one sentence to say why the system is consistent or inconsistent. In addition, if the corresponding linear system is consistent, describe the solution space for your example.     An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.      An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent.      An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.      An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.          Consider the vectors , , , , and pictured in this figure:   4 vectors in a plane.   Notice that while there is no scale on the axes, the vectors and generate a \"grid\", and the tips of the vectors , , and lie at intersection points on the grid.     For each of the vectors , , and , express the vector as a linear combination of and . Clearly state each linear combination by writing an equation such as . After you do this for all three vectors, write a sentence that explains how you determined the weights in your linear combinations.      Sketch and label the vector .      What geometric figure is formed by the tips of all vectors of the form , when is allowed to be any real number? (Hint: you might plot some points that correspond to several different values of that you choose.) Write a careful sentence or two that explains your conclusion and how you determined it.          Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.          Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .          Consider the vectors , , and .     Is in Span ? Why or why not?      Is in Span ? Why or why not?      Do the vectors span all of ? Why or why not?      What is an important observation to make about the relationship among ?      Give a careful written description of Span .          Suppose that is the matrix where      If , write in two different ways: (i) as a linear combination of , , and , and (ii) as a single vector that you find by hand.      If , determine all solutions to the equation . Clearly show how this problem can be turned into a system of equations (don't just write down an augmented matrix), and solve. If there are infinitely many solutions, express them in parametric vector form.      Is a linear combination of , , and ? Clearly show how this question can be turned into a system of linear equations and then explain your answer.          Suppose that we have the following collection of vectors in : .     Give an example of a nonzero vector $\\wvec$ that is not equal to , , or that belongs to the span of . Write a sentence to say why your vector has the desired property.      Explain why Span is not using pivots.      Find a vector so that is not in Span , and clearly justify why your vector has this property.      What can you say about Span ? Why?          Let the vectors , , , and be given by      For each of the following sets of vectors, is the set linearly dependent or linearly independent? Give a clear justification of each conclusion, including any relevant computations you use.                           Can you find a set of exactly three vectors among , , , and that is linearly independent? If so, do so with justification; if not, explain why not.      Of the three sets of vectors in (a), which set(s) span all of ? Write carefully to explain your conclusions.          Suppose that is an unknown parameter and consider the set of vectors      For what value(s) of is the set linearly dependent? Why?      For what value(s) of is Span Why?      How are your responses to (a) and (b) connected to one another? (There are several important things you can say here.)          Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.          For each of the following 3 prompts ((a), (b), and (c)), you are given some general information about a collection of vectors, and then asked to consider two statements, I and II , about those vectors. For each, your task is to decide which of them is true. It could be that both are true, only one of them is true, both are false, or there's not enough information to say (about one or both of them).  For each prompt, your task is to (i) make an appropriate conclusion about each of the two statements (is it true, false, or can't say) and (ii) provide clear written justification that explains how you have reasoned from the given information to your conclusion. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     Suppose that a set of vectors in has fewer vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose that a set of vectors in has more vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose we have a set of 12 vectors in ; note that we have exactly the same number of vectors as there are components in each vector. In addition, suppose that you know that for some vector in , can be written as a linear combination of the vectors , , , in exactly one way.     The set of vectors is linearly independent.      The set of vectors doesn't span .           Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .          Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)          This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .          Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.          Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.          Provide a justification for your response to each of the following questions.     Suppose you have a linearly independent set of vectors in . Can you guarantee that this set of vectors forms a basis of ? Explain.      Suppose you have a set of 10 vectors in and every vector in can be written as a linear combination of these 10 vectors. Can you guarantee that this set of vectors forms a basis for ? Explain.      Suppose is a matrix and that the equation has a unique solution for some vector . Can you guarantee that is invertible? Explain.          Crystallographers find it convenient to use coordinate systems that are adapted to the specific geometry of a crystal. As a two-dimensional example, consider a layer of graphite in which carbon atoms are arranged in regular hexagons to form the crystalline structure shown below.   The origin of the coordinate is at the carbon atom labeled by 0. It is convenient to choose the basis defined by the indicated vectors and .     Indicate the locations for which      .       .       .       Find the coordinates in the basis of the six yellow carbon atoms.      Find the coordinates of the center of the hexagon labeled C.       Find the coordinates of the atom labeled 1.           Consider the matrix defined in terms of the parameter . Compute . Show your work.         Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?          Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.          Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul            This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)            Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.          This final homework exercise invites you to reflect on your learning in the course. To earn an S , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, copy and paste your essay onto Blackboard under this homework problem.     "
+  "title": "Problem 1 - Written Homework MTH 204",
+  "body": " Problem 1 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether or not the system is linear. For (iii), provide written justification for your conclusion.                         "
 },
 {
-  "id": "homework-2-2-1",
+  "id": "homework-2-3",
   "level": "2",
-  "url": "homework-2.html#homework-2-2-1",
+  "url": "homework-2.html#homework-2-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether or not the system is linear. For (iii), provide written justification for your conclusion.                        "
-},
-{
-  "id": "homework-2-3-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-3-1",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  Give an example of a matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write one short sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.     a linear system having 4 equations and 2 unknowns and having exactly one solution.      a linear system having 3 equations and 3 unknowns and having no solution.      a linear system having 2 equations and 5 unknowns and having infinitely many solutions.      a linear system having 3 equations and 5 unknowns and having exactly one solution.      a linear system having 4 equations and 4 unknowns and having exactly one solution.    "
-},
-{
-  "id": "homework-2-4-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-4-1",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": "  A given linear system has been represented by an augmented matrix and the process of Gaussian elimination has begun. The current state of the process is shown in the augmented matrix below.  Execute the next three steps (that is, the next three row operations) of Gaussian elimination, and clearly state the three row operations you used, employing notation like we've been using in class. Your work should show at least two additional matrices beyond the one stated here.    "
-},
-{
-  "id": "homework-2-5-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-5-1",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  Consider the linear system:      Write the augmented matrix that corresponds to the given system.      Work by hand to find the reduced row echelon form of the augmented matrix.      Identify which variables are basic and which are free.      Describe the solution space of the system, using a parametric description if there are infinitely many solutions.    "
-},
-{
-  "id": "homework-2-6-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-6-1",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use \\emph{Sage} to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                        "
-},
-{
-  "id": "homework-2-7-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-7-1",
-  "type": "Worksheet Exercise",
-  "number": "6",
-  "title": "",
-  "body": "  For each of the four scenarios below, give an example of an augmented matrix in RREF that satisfies the stated criteria, or explain why such a matrix is not possible.  For each example you provide, (i) circle the pivot locations, (ii) make each non-pivot column have at least one non-zero entry, and (iii) write one sentence to say why the system is consistent or inconsistent. In addition, if the corresponding linear system is consistent, describe the solution space for your example.     An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.      An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent.      An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.      An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.    "
-},
-{
-  "id": "homework-2-8-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-8-1",
-  "type": "Worksheet Exercise",
-  "number": "7",
-  "title": "",
-  "body": "  Consider the vectors , , , , and pictured in this figure:   4 vectors in a plane.   Notice that while there is no scale on the axes, the vectors and generate a \"grid\", and the tips of the vectors , , and lie at intersection points on the grid.     For each of the vectors , , and , express the vector as a linear combination of and . Clearly state each linear combination by writing an equation such as . After you do this for all three vectors, write a sentence that explains how you determined the weights in your linear combinations.      Sketch and label the vector .      What geometric figure is formed by the tips of all vectors of the form , when is allowed to be any real number? (Hint: you might plot some points that correspond to several different values of that you choose.) Write a careful sentence or two that explains your conclusion and how you determined it.    "
-},
-{
-  "id": "homework-2-9-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-9-1",
-  "type": "Worksheet Exercise",
-  "number": "8",
-  "title": "",
-  "body": "  Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.    "
-},
-{
-  "id": "homework-2-10-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-10-1",
-  "type": "Worksheet Exercise",
-  "number": "9",
-  "title": "",
-  "body": "  Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .    "
-},
-{
-  "id": "homework-2-11-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-11-1",
-  "type": "Worksheet Exercise",
-  "number": "10",
-  "title": "",
-  "body": "  Consider the vectors , , and .     Is in Span ? Why or why not?      Is in Span ? Why or why not?      Do the vectors span all of ? Why or why not?      What is an important observation to make about the relationship among ?      Give a careful written description of Span .    "
-},
-{
-  "id": "homework-2-12-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-12-1",
-  "type": "Worksheet Exercise",
-  "number": "11",
-  "title": "",
-  "body": "  Suppose that is the matrix where      If , write in two different ways: (i) as a linear combination of , , and , and (ii) as a single vector that you find by hand.      If , determine all solutions to the equation . Clearly show how this problem can be turned into a system of equations (don't just write down an augmented matrix), and solve. If there are infinitely many solutions, express them in parametric vector form.      Is a linear combination of , , and ? Clearly show how this question can be turned into a system of linear equations and then explain your answer.    "
-},
-{
-  "id": "homework-2-13-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-13-1",
-  "type": "Worksheet Exercise",
-  "number": "12",
-  "title": "",
-  "body": "  Suppose that we have the following collection of vectors in : .     Give an example of a nonzero vector $\\wvec$ that is not equal to , , or that belongs to the span of . Write a sentence to say why your vector has the desired property.      Explain why Span is not using pivots.      Find a vector so that is not in Span , and clearly justify why your vector has this property.      What can you say about Span ? Why?    "
-},
-{
-  "id": "homework-2-14-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-14-1",
-  "type": "Worksheet Exercise",
-  "number": "13",
-  "title": "",
-  "body": "  Let the vectors , , , and be given by      For each of the following sets of vectors, is the set linearly dependent or linearly independent? Give a clear justification of each conclusion, including any relevant computations you use.                           Can you find a set of exactly three vectors among , , , and that is linearly independent? If so, do so with justification; if not, explain why not.      Of the three sets of vectors in (a), which set(s) span all of ? Write carefully to explain your conclusions.    "
-},
-{
-  "id": "homework-2-15-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-15-1",
-  "type": "Worksheet Exercise",
-  "number": "14",
-  "title": "",
-  "body": "  Suppose that is an unknown parameter and consider the set of vectors      For what value(s) of is the set linearly dependent? Why?      For what value(s) of is Span Why?      How are your responses to (a) and (b) connected to one another? (There are several important things you can say here.)    "
-},
-{
-  "id": "homework-2-16-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-16-1",
-  "type": "Worksheet Exercise",
-  "number": "15",
-  "title": "",
-  "body": "  Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.    "
-},
-{
-  "id": "homework-2-17-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-17-1",
-  "type": "Worksheet Exercise",
-  "number": "16",
-  "title": "",
-  "body": "  For each of the following 3 prompts ((a), (b), and (c)), you are given some general information about a collection of vectors, and then asked to consider two statements, I and II , about those vectors. For each, your task is to decide which of them is true. It could be that both are true, only one of them is true, both are false, or there's not enough information to say (about one or both of them).  For each prompt, your task is to (i) make an appropriate conclusion about each of the two statements (is it true, false, or can't say) and (ii) provide clear written justification that explains how you have reasoned from the given information to your conclusion. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     Suppose that a set of vectors in has fewer vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose that a set of vectors in has more vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose we have a set of 12 vectors in ; note that we have exactly the same number of vectors as there are components in each vector. In addition, suppose that you know that for some vector in , can be written as a linear combination of the vectors , , , in exactly one way.     The set of vectors is linearly independent.      The set of vectors doesn't span .     "
-},
-{
-  "id": "homework-2-18-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-18-1",
-  "type": "Worksheet Exercise",
-  "number": "17",
-  "title": "",
-  "body": "  Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .    "
-},
-{
-  "id": "homework-2-19-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-19-1",
-  "type": "Worksheet Exercise",
-  "number": "18",
-  "title": "",
-  "body": "  Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)    "
-},
-{
-  "id": "homework-2-20-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-20-1",
-  "type": "Worksheet Exercise",
-  "number": "19",
-  "title": "",
-  "body": "  This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .    "
-},
-{
-  "id": "homework-2-21-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-21-1",
-  "type": "Worksheet Exercise",
-  "number": "20",
-  "title": "",
-  "body": "  Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.    "
-},
-{
-  "id": "homework-2-22-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-22-1",
-  "type": "Worksheet Exercise",
-  "number": "21",
-  "title": "",
-  "body": "  Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.    "
-},
-{
-  "id": "homework-2-23-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-23-1",
-  "type": "Worksheet Exercise",
-  "number": "22",
-  "title": "",
-  "body": "  Provide a justification for your response to each of the following questions.     Suppose you have a linearly independent set of vectors in . Can you guarantee that this set of vectors forms a basis of ? Explain.      Suppose you have a set of 10 vectors in and every vector in can be written as a linear combination of these 10 vectors. Can you guarantee that this set of vectors forms a basis for ? Explain.      Suppose is a matrix and that the equation has a unique solution for some vector . Can you guarantee that is invertible? Explain.    "
-},
-{
-  "id": "homework-2-24-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-24-1",
-  "type": "Worksheet Exercise",
-  "number": "23",
-  "title": "",
-  "body": "  Crystallographers find it convenient to use coordinate systems that are adapted to the specific geometry of a crystal. As a two-dimensional example, consider a layer of graphite in which carbon atoms are arranged in regular hexagons to form the crystalline structure shown below.   The origin of the coordinate is at the carbon atom labeled by 0. It is convenient to choose the basis defined by the indicated vectors and .     Indicate the locations for which      .       .       .       Find the coordinates in the basis of the six yellow carbon atoms.      Find the coordinates of the center of the hexagon labeled C.       Find the coordinates of the atom labeled 1.     "
-},
-{
-  "id": "homework-2-25-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-25-1",
-  "type": "Worksheet Exercise",
-  "number": "24",
-  "title": "",
-  "body": "  Consider the matrix defined in terms of the parameter . Compute . Show your work.   "
-},
-{
-  "id": "homework-2-26-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-26-1",
-  "type": "Worksheet Exercise",
-  "number": "25",
-  "title": "",
-  "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
-},
-{
-  "id": "homework-2-27-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-27-1",
-  "type": "Worksheet Exercise",
-  "number": "26",
-  "title": "",
-  "body": "  Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.    "
-},
-{
-  "id": "homework-2-28-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-28-1",
-  "type": "Worksheet Exercise",
-  "number": "27",
-  "title": "",
-  "body": "  Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul      "
-},
-{
-  "id": "homework-2-29-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-29-1",
-  "type": "Worksheet Exercise",
-  "number": "28",
-  "title": "",
-  "body": "  This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)     "
-},
-{
-  "id": "homework-2-30-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-30-1",
-  "type": "Worksheet Exercise",
-  "number": "29",
-  "title": "",
-  "body": "   Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.    "
-},
-{
-  "id": "homework-2-31-1",
-  "level": "2",
-  "url": "homework-2.html#homework-2-31-1",
-  "type": "Worksheet Exercise",
-  "number": "30",
-  "title": "",
-  "body": "  This final homework exercise invites you to reflect on your learning in the course. To earn an S , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, copy and paste your essay onto Blackboard under this homework problem.   "
 },
 {
   "id": "homework-3",
@@ -3264,8 +3003,8 @@ var ptx_lunr_docs = [
   "url": "homework-3.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 1 - Written Homework MTH 204",
-  "body": " Problem 1 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether or not the system is linear. For (iii), provide written justification for your conclusion.                         "
+  "title": "Problem 2 - Written Homework MTH 204",
+  "body": " Problem 2 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Give an example of a matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write one short sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.     a linear system having 4 equations and 2 unknowns and having exactly one solution.      a linear system having 3 equations and 3 unknowns and having no solution.      a linear system having 2 equations and 5 unknowns and having infinitely many solutions.      a linear system having 3 equations and 5 unknowns and having exactly one solution.      a linear system having 4 equations and 4 unknowns and having exactly one solution.     "
 },
 {
   "id": "homework-3-3",
@@ -3274,7 +3013,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For each of the given systems, state (i) the number of equations, (ii) the number of unknowns, and (iii) whether or not the system is linear. For (iii), provide written justification for your conclusion.                        "
+  "body": "  Give an example of a matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write one short sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.     a linear system having 4 equations and 2 unknowns and having exactly one solution.      a linear system having 3 equations and 3 unknowns and having no solution.      a linear system having 2 equations and 5 unknowns and having infinitely many solutions.      a linear system having 3 equations and 5 unknowns and having exactly one solution.      a linear system having 4 equations and 4 unknowns and having exactly one solution.    "
 },
 {
   "id": "homework-4",
@@ -3282,8 +3021,8 @@ var ptx_lunr_docs = [
   "url": "homework-4.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 2 - Written Homework MTH 204",
-  "body": " Problem 2 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Give an example of a matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write one short sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.     a linear system having 4 equations and 2 unknowns and having exactly one solution.      a linear system having 3 equations and 3 unknowns and having no solution.      a linear system having 2 equations and 5 unknowns and having infinitely many solutions.      a linear system having 3 equations and 5 unknowns and having exactly one solution.      a linear system having 4 equations and 4 unknowns and having exactly one solution.     "
+  "title": "Problem 3 - Written Homework MTH 204",
+  "body": " Problem 3 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     A given linear system has been represented by an augmented matrix and the process of Gaussian elimination has begun. The current state of the process is shown in the augmented matrix below.  Execute the next three steps (that is, the next three row operations) of Gaussian elimination, and clearly state the three row operations you used, employing notation like we've been using in class. Your work should show at least two additional matrices beyond the one stated here.     "
 },
 {
   "id": "homework-4-3",
@@ -3292,7 +3031,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Give an example of a matrix in reduced row echelon form that describes a linear system having the stated properties. For each, write one short sentence that explains why your example meets the stated criteria. If it is not possible to find such an example, explain why not.     a linear system having 4 equations and 2 unknowns and having exactly one solution.      a linear system having 3 equations and 3 unknowns and having no solution.      a linear system having 2 equations and 5 unknowns and having infinitely many solutions.      a linear system having 3 equations and 5 unknowns and having exactly one solution.      a linear system having 4 equations and 4 unknowns and having exactly one solution.    "
+  "body": "  A given linear system has been represented by an augmented matrix and the process of Gaussian elimination has begun. The current state of the process is shown in the augmented matrix below.  Execute the next three steps (that is, the next three row operations) of Gaussian elimination, and clearly state the three row operations you used, employing notation like we've been using in class. Your work should show at least two additional matrices beyond the one stated here.    "
 },
 {
   "id": "homework-5",
@@ -3300,8 +3039,8 @@ var ptx_lunr_docs = [
   "url": "homework-5.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 3 - Written Homework MTH 204",
-  "body": " Problem 3 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     A given linear system has been represented by an augmented matrix and the process of Gaussian elimination has begun. The current state of the process is shown in the augmented matrix below.  Execute the next three steps (that is, the next three row operations) of Gaussian elimination, and clearly state the three row operations you used, employing notation like we've been using in class. Your work should show at least two additional matrices beyond the one stated here.     "
+  "title": "Problem 4 - Written Homework MTH 204",
+  "body": " Problem 4 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the linear system:      Write the augmented matrix that corresponds to the given system. Work by hand to find the reduced row echelon form of the augmented matrix.      Identify which variables are basic and which are free.      Describe the solution space of the system, using a parametric description if there are infinitely many solutions.     "
 },
 {
   "id": "homework-5-3",
@@ -3310,7 +3049,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  A given linear system has been represented by an augmented matrix and the process of Gaussian elimination has begun. The current state of the process is shown in the augmented matrix below.  Execute the next three steps (that is, the next three row operations) of Gaussian elimination, and clearly state the three row operations you used, employing notation like we've been using in class. Your work should show at least two additional matrices beyond the one stated here.    "
+  "body": "  Consider the linear system:      Write the augmented matrix that corresponds to the given system. Work by hand to find the reduced row echelon form of the augmented matrix.      Identify which variables are basic and which are free.      Describe the solution space of the system, using a parametric description if there are infinitely many solutions.    "
 },
 {
   "id": "homework-6",
@@ -3318,8 +3057,8 @@ var ptx_lunr_docs = [
   "url": "homework-6.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 4 - Written Homework MTH 204",
-  "body": " Problem 4 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the linear system:      Write the augmented matrix that corresponds to the given system. Work by hand to find the reduced row echelon form of the augmented matrix.      Identify which variables are basic and which are free.      Describe the solution space of the system, using a parametric description if there are infinitely many solutions.     "
+  "title": "Problem 5 - Written Homework MTH 204",
+  "body": " Problem 5 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                         "
 },
 {
   "id": "homework-6-3",
@@ -3328,7 +3067,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the linear system:      Write the augmented matrix that corresponds to the given system. Work by hand to find the reduced row echelon form of the augmented matrix.      Identify which variables are basic and which are free.      Describe the solution space of the system, using a parametric description if there are infinitely many solutions.    "
+  "body": "  For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                        "
 },
 {
   "id": "homework-7",
@@ -3336,8 +3075,8 @@ var ptx_lunr_docs = [
   "url": "homework-7.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 5 - Written Homework MTH 204",
-  "body": " Problem 5 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                         "
+  "title": "Problem 6 - Written Homework MTH 204",
+  "body": " Problem 6 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the four scenarios below, give an example of an augmented matrix in RREF that satisfies the stated criteria, or explain why such a matrix is not possible.  For each example you provide, (i) circle the pivot locations, (ii) make each non-pivot column have at least one non-zero entry, and (iii) write one sentence to say why the system is consistent or inconsistent. In addition, if the corresponding linear system is consistent, describe the solution space for your example.     An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.      An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent.      An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.      An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.     "
 },
 {
   "id": "homework-7-3",
@@ -3346,7 +3085,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For each of the following linear systems of equations, (i) represent the system with an augmented matrix, (ii) use Sage to find the RREF of the matrix of the linear system, and report the RREF in your written summary, and (iii) describe the solution space of the system in as much detail as you can, using parametric form if there are infinitely many solutions.                        "
+  "body": "  For each of the four scenarios below, give an example of an augmented matrix in RREF that satisfies the stated criteria, or explain why such a matrix is not possible.  For each example you provide, (i) circle the pivot locations, (ii) make each non-pivot column have at least one non-zero entry, and (iii) write one sentence to say why the system is consistent or inconsistent. In addition, if the corresponding linear system is consistent, describe the solution space for your example.     An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.      An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent.      An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.      An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.    "
 },
 {
   "id": "homework-8",
@@ -3354,8 +3093,8 @@ var ptx_lunr_docs = [
   "url": "homework-8.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 6 - Written Homework MTH 204",
-  "body": " Problem 6 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     For each of the four scenarios below, give an example of an augmented matrix in RREF that satisfies the stated criteria, or explain why such a matrix is not possible.  For each example you provide, (i) circle the pivot locations, (ii) make each non-pivot column have at least one non-zero entry, and (iii) write one sentence to say why the system is consistent or inconsistent. In addition, if the corresponding linear system is consistent, describe the solution space for your example.     An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.      An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent.      An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.      An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.     "
+  "title": "Problem 7 - Written Homework MTH 204",
+  "body": " Problem 7 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the vectors , , , , and pictured in this figure:   4 vectors in a plane.   Notice that while there is no scale on the axes, the vectors and generate a \"grid\", and the tips of the vectors , , and lie at intersection points on the grid.     For each of the vectors , , and , express the vector as a linear combination of and . Clearly state each linear combination by writing an equation such as . After you do this for all three vectors, write a sentence that explains how you determined the weights in your linear combinations.      Sketch and label the vector .      What geometric figure is formed by the tips of all vectors of the form , when is allowed to be any real number? (Hint: you might plot some points that correspond to several different values of that you choose.) Write a careful sentence or two that explains your conclusion and how you determined it.     "
 },
 {
   "id": "homework-8-3",
@@ -3364,7 +3103,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For each of the four scenarios below, give an example of an augmented matrix in RREF that satisfies the stated criteria, or explain why such a matrix is not possible.  For each example you provide, (i) circle the pivot locations, (ii) make each non-pivot column have at least one non-zero entry, and (iii) write one sentence to say why the system is consistent or inconsistent. In addition, if the corresponding linear system is consistent, describe the solution space for your example.     An augmented matrix with four rows, three columns, and two pivots for which the corresponding linear system is consistent.      An augmented matrix with three rows, five columns, and three pivots for which the corresponding linear system is inconsistent.      An augmented matrix that corresponds to a linear system of 4 equations in 3 variables that has infinitely many solutions.      An augmented matrix that corresponds to a linear system of 3 equations in 5 unknown variables that has a unique solution.    "
+  "body": "  Consider the vectors , , , , and pictured in this figure:   4 vectors in a plane.   Notice that while there is no scale on the axes, the vectors and generate a \"grid\", and the tips of the vectors , , and lie at intersection points on the grid.     For each of the vectors , , and , express the vector as a linear combination of and . Clearly state each linear combination by writing an equation such as . After you do this for all three vectors, write a sentence that explains how you determined the weights in your linear combinations.      Sketch and label the vector .      What geometric figure is formed by the tips of all vectors of the form , when is allowed to be any real number? (Hint: you might plot some points that correspond to several different values of that you choose.) Write a careful sentence or two that explains your conclusion and how you determined it.    "
 },
 {
   "id": "homework-9",
@@ -3372,17 +3111,17 @@ var ptx_lunr_docs = [
   "url": "homework-9.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 7 - Written Homework MTH 204",
-  "body": " Problem 7 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the vectors , , , , and pictured in this figure:   4 vectors in a plane.   Notice that while there is no scale on the axes, the vectors and generate a \"grid\", and the tips of the vectors , , and lie at intersection points on the grid.     For each of the vectors , , and , express the vector as a linear combination of and . Clearly state each linear combination by writing an equation such as . After you do this for all three vectors, write a sentence that explains how you determined the weights in your linear combinations.      Sketch and label the vector .      What geometric figure is formed by the tips of all vectors of the form , when is allowed to be any real number? (Hint: you might plot some points that correspond to several different values of that you choose.) Write a careful sentence or two that explains your conclusion and how you determined it.     "
+  "title": "Problem 8 - Written Homework",
+  "body": " Problem 8 - Written Homework      Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.      "
 },
 {
-  "id": "homework-9-3",
+  "id": "homework-9-2-1",
   "level": "2",
-  "url": "homework-9.html#homework-9-3",
+  "url": "homework-9.html#homework-9-2-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the vectors , , , , and pictured in this figure:   4 vectors in a plane.   Notice that while there is no scale on the axes, the vectors and generate a \"grid\", and the tips of the vectors , , and lie at intersection points on the grid.     For each of the vectors , , and , express the vector as a linear combination of and . Clearly state each linear combination by writing an equation such as . After you do this for all three vectors, write a sentence that explains how you determined the weights in your linear combinations.      Sketch and label the vector .      What geometric figure is formed by the tips of all vectors of the form , when is allowed to be any real number? (Hint: you might plot some points that correspond to several different values of that you choose.) Write a careful sentence or two that explains your conclusion and how you determined it.    "
+  "body": "  Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.    "
 },
 {
   "id": "homework-10",
@@ -3390,8 +3129,8 @@ var ptx_lunr_docs = [
   "url": "homework-10.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 8 - Written Homework",
-  "body": " Problem 8 - Written Homework      Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.      "
+  "title": "Problem 9 - Written Homework",
+  "body": " Problem 9 - Written Homework      Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .      "
 },
 {
   "id": "homework-10-2-1",
@@ -3400,7 +3139,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.    "
+  "body": "  Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .    "
 },
 {
   "id": "homework-11",
@@ -3408,8 +3147,8 @@ var ptx_lunr_docs = [
   "url": "homework-11.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 9 - Written Homework",
-  "body": " Problem 9 - Written Homework      Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .      "
+  "title": "Problem 10 - Written Homework",
+  "body": " Problem 10 - Written Homework      Consider the vectors , , and .     Is in Span ? Why or why not?      Is in Span ? Why or why not?      Do the vectors span all of ? Why or why not?      What is an important observation to make about the relationship among ?      Give a careful written description of Span .      "
 },
 {
   "id": "homework-11-2-1",
@@ -3418,7 +3157,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .    "
+  "body": "  Consider the vectors , , and .     Is in Span ? Why or why not?      Is in Span ? Why or why not?      Do the vectors span all of ? Why or why not?      What is an important observation to make about the relationship among ?      Give a careful written description of Span .    "
 },
 {
   "id": "homework-12",
@@ -3426,8 +3165,8 @@ var ptx_lunr_docs = [
   "url": "homework-12.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 10 - Written Homework",
-  "body": " Problem 10 - Written Homework      Consider the vectors , , and .     Is in Span ? Why or why not?      Is in Span ? Why or why not?      Do the vectors span all of ? Why or why not?      What is an important observation to make about the relationship among ?      Give a careful written description of Span .      "
+  "title": "Problem 11 - Written Homework",
+  "body": " Problem 11 - Written Homework     Suppose that is the matrix where      If , write in two different ways: (i) as a linear combination of , , and , and (ii) as a single vector that you find by hand.      If , determine all solutions to the equation . Clearly show how this problem can be turned into a system of equations (don't just write down an augmented matrix), and solve. If there are infinitely many solutions, express them in parametric vector form.      Is a linear combination of , , and ? Clearly show how this question can be turned into a system of linear equations and then explain your answer.      "
 },
 {
   "id": "homework-12-2-1",
@@ -3436,7 +3175,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the vectors , , and .     Is in Span ? Why or why not?      Is in Span ? Why or why not?      Do the vectors span all of ? Why or why not?      What is an important observation to make about the relationship among ?      Give a careful written description of Span .    "
+  "body": "  Suppose that is the matrix where      If , write in two different ways: (i) as a linear combination of , , and , and (ii) as a single vector that you find by hand.      If , determine all solutions to the equation . Clearly show how this problem can be turned into a system of equations (don't just write down an augmented matrix), and solve. If there are infinitely many solutions, express them in parametric vector form.      Is a linear combination of , , and ? Clearly show how this question can be turned into a system of linear equations and then explain your answer.    "
 },
 {
   "id": "homework-13",
@@ -3444,8 +3183,8 @@ var ptx_lunr_docs = [
   "url": "homework-13.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 11 - Written Homework",
-  "body": " Problem 11 - Written Homework     Suppose that is the matrix where      If , write in two different ways: (i) as a linear combination of , , and , and (ii) as a single vector that you find by hand.      If , determine all solutions to the equation . Clearly show how this problem can be turned into a system of equations (don't just write down an augmented matrix), and solve. If there are infinitely many solutions, express them in parametric vector form.      Is a linear combination of , , and ? Clearly show how this question can be turned into a system of linear equations and then explain your answer.      "
+  "title": "Problem 12 - Written Homework",
+  "body": " Problem 12 - Written Homework      Suppose that we have the following collection of vectors in : .     Give an example of a nonzero vector $\\wvec$ that is not equal to , , or that belongs to the span of . Write a sentence to say why your vector has the desired property.      Explain why Span is not using pivots.      Find a vector so that is not in Span , and clearly justify why your vector has this property.      What can you say about Span ? Why?      "
 },
 {
   "id": "homework-13-2-1",
@@ -3454,7 +3193,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is the matrix where      If , write in two different ways: (i) as a linear combination of , , and , and (ii) as a single vector that you find by hand.      If , determine all solutions to the equation . Clearly show how this problem can be turned into a system of equations (don't just write down an augmented matrix), and solve. If there are infinitely many solutions, express them in parametric vector form.      Is a linear combination of , , and ? Clearly show how this question can be turned into a system of linear equations and then explain your answer.    "
+  "body": "  Suppose that we have the following collection of vectors in : .     Give an example of a nonzero vector $\\wvec$ that is not equal to , , or that belongs to the span of . Write a sentence to say why your vector has the desired property.      Explain why Span is not using pivots.      Find a vector so that is not in Span , and clearly justify why your vector has this property.      What can you say about Span ? Why?    "
 },
 {
   "id": "homework-14",
@@ -3462,8 +3201,8 @@ var ptx_lunr_docs = [
   "url": "homework-14.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 12 - Written Homework",
-  "body": " Problem 12 - Written Homework      Suppose that we have the following collection of vectors in : .     Give an example of a nonzero vector $\\wvec$ that is not equal to , , or that belongs to the span of . Write a sentence to say why your vector has the desired property.      Explain why Span is not using pivots.      Find a vector so that is not in Span , and clearly justify why your vector has this property.      What can you say about Span ? Why?      "
+  "title": "Problem 13 - Written Homework",
+  "body": " Problem 13 - Written Homework      Let the vectors , , , and be given by      For each of the following sets of vectors, is the set linearly dependent or linearly independent? Give a clear justification of each conclusion, including any relevant computations you use.                           Can you find a set of exactly three vectors among , , , and that is linearly independent? If so, do so with justification; if not, explain why not.      Of the three sets of vectors in (a), which set(s) span all of ? Write carefully to explain your conclusions.      "
 },
 {
   "id": "homework-14-2-1",
@@ -3472,7 +3211,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that we have the following collection of vectors in : .     Give an example of a nonzero vector $\\wvec$ that is not equal to , , or that belongs to the span of . Write a sentence to say why your vector has the desired property.      Explain why Span is not using pivots.      Find a vector so that is not in Span , and clearly justify why your vector has this property.      What can you say about Span ? Why?    "
+  "body": "  Let the vectors , , , and be given by      For each of the following sets of vectors, is the set linearly dependent or linearly independent? Give a clear justification of each conclusion, including any relevant computations you use.                           Can you find a set of exactly three vectors among , , , and that is linearly independent? If so, do so with justification; if not, explain why not.      Of the three sets of vectors in (a), which set(s) span all of ? Write carefully to explain your conclusions.    "
 },
 {
   "id": "homework-15",
@@ -3480,8 +3219,8 @@ var ptx_lunr_docs = [
   "url": "homework-15.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 13 - Written Homework",
-  "body": " Problem 13 - Written Homework      Let the vectors , , , and be given by      For each of the following sets of vectors, is the set linearly dependent or linearly independent? Give a clear justification of each conclusion, including any relevant computations you use.                           Can you find a set of exactly three vectors among , , , and that is linearly independent? If so, do so with justification; if not, explain why not.      Of the three sets of vectors in (a), which set(s) span all of ? Write carefully to explain your conclusions.      "
+  "title": "Problem 14 - Written Homework",
+  "body": " Problem 14 - Written Homework      Suppose that is an unknown parameter and consider the set of vectors      For what value(s) of is the set linearly dependent? Why?      For what value(s) of is Span Why?      How are your responses to (a) and (b) connected to one another? (There are several important things you can say here.)      "
 },
 {
   "id": "homework-15-2-1",
@@ -3490,7 +3229,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let the vectors , , , and be given by      For each of the following sets of vectors, is the set linearly dependent or linearly independent? Give a clear justification of each conclusion, including any relevant computations you use.                           Can you find a set of exactly three vectors among , , , and that is linearly independent? If so, do so with justification; if not, explain why not.      Of the three sets of vectors in (a), which set(s) span all of ? Write carefully to explain your conclusions.    "
+  "body": "  Suppose that is an unknown parameter and consider the set of vectors      For what value(s) of is the set linearly dependent? Why?      For what value(s) of is Span Why?      How are your responses to (a) and (b) connected to one another? (There are several important things you can say here.)    "
 },
 {
   "id": "homework-16",
@@ -3498,8 +3237,8 @@ var ptx_lunr_docs = [
   "url": "homework-16.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 14 - Written Homework",
-  "body": " Problem 14 - Written Homework      Suppose that is an unknown parameter and consider the set of vectors      For what value(s) of is the set linearly dependent? Why?      For what value(s) of is Span Why?      How are your responses to (a) and (b) connected to one another? (There are several important things you can say here.)      "
+  "title": "Problem 15 - Written Homework",
+  "body": " Problem 15 - Written Homework      Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.      "
 },
 {
   "id": "homework-16-2-1",
@@ -3508,7 +3247,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is an unknown parameter and consider the set of vectors      For what value(s) of is the set linearly dependent? Why?      For what value(s) of is Span Why?      How are your responses to (a) and (b) connected to one another? (There are several important things you can say here.)    "
+  "body": "  Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.    "
 },
 {
   "id": "homework-17",
@@ -3516,8 +3255,8 @@ var ptx_lunr_docs = [
   "url": "homework-17.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 15 - Written Homework",
-  "body": " Problem 15 - Written Homework      Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.      "
+  "title": "Problem 16 - Written Homework",
+  "body": " Problem 16 - Written Homework     For each of the following 3 prompts ((a), (b), and (c)), you are given some general information about a collection of vectors, and then asked to consider two statements, I and II , about those vectors. For each, your task is to decide which of them is true. It could be that both are true, only one of them is true, both are false, or there's not enough information to say (about one or both of them).  For each prompt, your task is to (i) make an appropriate conclusion about each of the two statements (is it true, false, or can't say) and (ii) provide clear written justification that explains how you have reasoned from the given information to your conclusion. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     Suppose that a set of vectors in has fewer vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose that a set of vectors in has more vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose we have a set of 12 vectors in ; note that we have exactly the same number of vectors as there are components in each vector. In addition, suppose that you know that for some vector in , can be written as a linear combination of the vectors , , , in exactly one way.     The set of vectors is linearly independent.      The set of vectors doesn't span .       "
 },
 {
   "id": "homework-17-2-1",
@@ -3526,7 +3265,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.    "
+  "body": "  For each of the following 3 prompts ((a), (b), and (c)), you are given some general information about a collection of vectors, and then asked to consider two statements, I and II , about those vectors. For each, your task is to decide which of them is true. It could be that both are true, only one of them is true, both are false, or there's not enough information to say (about one or both of them).  For each prompt, your task is to (i) make an appropriate conclusion about each of the two statements (is it true, false, or can't say) and (ii) provide clear written justification that explains how you have reasoned from the given information to your conclusion. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     Suppose that a set of vectors in has fewer vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose that a set of vectors in has more vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose we have a set of 12 vectors in ; note that we have exactly the same number of vectors as there are components in each vector. In addition, suppose that you know that for some vector in , can be written as a linear combination of the vectors , , , in exactly one way.     The set of vectors is linearly independent.      The set of vectors doesn't span .     "
 },
 {
   "id": "homework-18",
@@ -3534,8 +3273,8 @@ var ptx_lunr_docs = [
   "url": "homework-18.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 16 - Written Homework",
-  "body": " Problem 16 - Written Homework     For each of the following 3 prompts ((a), (b), and (c)), you are given some general information about a collection of vectors, and then asked to consider two statements, I and II , about those vectors. For each, your task is to decide which of them is true. It could be that both are true, only one of them is true, both are false, or there's not enough information to say (about one or both of them).  For each prompt, your task is to (i) make an appropriate conclusion about each of the two statements (is it true, false, or can't say) and (ii) provide clear written justification that explains how you have reasoned from the given information to your conclusion. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     Suppose that a set of vectors in has fewer vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose that a set of vectors in has more vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose we have a set of 12 vectors in ; note that we have exactly the same number of vectors as there are components in each vector. In addition, suppose that you know that for some vector in , can be written as a linear combination of the vectors , , , in exactly one way.     The set of vectors is linearly independent.      The set of vectors doesn't span .       "
+  "title": "Problem 17 - Written Homework",
+  "body": " Problem 17 - Written Homework      Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .      "
 },
 {
   "id": "homework-18-2-1",
@@ -3544,7 +3283,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  For each of the following 3 prompts ((a), (b), and (c)), you are given some general information about a collection of vectors, and then asked to consider two statements, I and II , about those vectors. For each, your task is to decide which of them is true. It could be that both are true, only one of them is true, both are false, or there's not enough information to say (about one or both of them).  For each prompt, your task is to (i) make an appropriate conclusion about each of the two statements (is it true, false, or can't say) and (ii) provide clear written justification that explains how you have reasoned from the given information to your conclusion. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     Suppose that a set of vectors in has fewer vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose that a set of vectors in has more vectors than there are entries in each vector.     The set of vectors is linearly independent.      The set of vectors doesn't span .       Suppose we have a set of 12 vectors in ; note that we have exactly the same number of vectors as there are components in each vector. In addition, suppose that you know that for some vector in , can be written as a linear combination of the vectors , , , in exactly one way.     The set of vectors is linearly independent.      The set of vectors doesn't span .     "
+  "body": "  Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .    "
 },
 {
   "id": "homework-19",
@@ -3552,8 +3291,8 @@ var ptx_lunr_docs = [
   "url": "homework-19.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 17 - Written Homework",
-  "body": " Problem 17 - Written Homework      Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .      "
+  "title": "Problem 18 - Written Homework",
+  "body": " Problem 18 - Written Homework     Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)      "
 },
 {
   "id": "homework-19-2-1",
@@ -3562,7 +3301,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .    "
+  "body": "  Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)    "
 },
 {
   "id": "homework-20",
@@ -3570,8 +3309,8 @@ var ptx_lunr_docs = [
   "url": "homework-20.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 18 - Written Homework",
-  "body": " Problem 18 - Written Homework     Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)      "
+  "title": "Problem 19 - Written Homework",
+  "body": " Problem 19 - Written Homework      This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .      "
 },
 {
   "id": "homework-20-2-1",
@@ -3580,7 +3319,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)    "
+  "body": "  This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .    "
 },
 {
   "id": "homework-21",
@@ -3588,8 +3327,8 @@ var ptx_lunr_docs = [
   "url": "homework-21.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 19 - Written Homework",
-  "body": " Problem 19 - Written Homework      This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .      "
+  "title": "Problem 20 - Written Homework",
+  "body": " Problem 20 - Written Homework      Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.      "
 },
 {
   "id": "homework-21-2-1",
@@ -3598,7 +3337,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .    "
+  "body": "  Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.    "
 },
 {
   "id": "homework-22",
@@ -3606,8 +3345,8 @@ var ptx_lunr_docs = [
   "url": "homework-22.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 20 - Written Homework",
-  "body": " Problem 20 - Written Homework      Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.      "
+  "title": "Problem 21 - Written Homework",
+  "body": " Problem 21 - Written Homework      Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.      "
 },
 {
   "id": "homework-22-2-1",
@@ -3616,7 +3355,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.    "
+  "body": "  Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.    "
 },
 {
   "id": "homework-23",
@@ -3624,8 +3363,8 @@ var ptx_lunr_docs = [
   "url": "homework-23.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 21 - Written Homework",
-  "body": " Problem 21 - Written Homework      Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.      "
+  "title": "Problem 22 - Written Homework",
+  "body": " Problem 22 - Written Homework      Provide a justification for your response to each of the following questions.     Suppose you have a linearly independent set of vectors in . Can you guarantee that this set of vectors forms a basis of ? Explain.      Suppose you have a set of 10 vectors in and every vector in can be written as a linear combination of these 10 vectors. Can you guarantee that this set of vectors forms a basis for ? Explain.      Suppose is a matrix and that the equation has a unique solution for some vector . Can you guarantee that is invertible? Explain.      "
 },
 {
   "id": "homework-23-2-1",
@@ -3634,7 +3373,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.    "
+  "body": "  Provide a justification for your response to each of the following questions.     Suppose you have a linearly independent set of vectors in . Can you guarantee that this set of vectors forms a basis of ? Explain.      Suppose you have a set of 10 vectors in and every vector in can be written as a linear combination of these 10 vectors. Can you guarantee that this set of vectors forms a basis for ? Explain.      Suppose is a matrix and that the equation has a unique solution for some vector . Can you guarantee that is invertible? Explain.    "
 },
 {
   "id": "homework-24",
@@ -3642,8 +3381,8 @@ var ptx_lunr_docs = [
   "url": "homework-24.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 22 - Written Homework",
-  "body": " Problem 22 - Written Homework      Provide a justification for your response to each of the following questions.     Suppose you have a linearly independent set of vectors in . Can you guarantee that this set of vectors forms a basis of ? Explain.      Suppose you have a set of 10 vectors in and every vector in can be written as a linear combination of these 10 vectors. Can you guarantee that this set of vectors forms a basis for ? Explain.      Suppose is a matrix and that the equation has a unique solution for some vector . Can you guarantee that is invertible? Explain.      "
+  "title": "Problem 23 - Written Homework",
+  "body": " Problem 23 - Written Homework      Crystallographers find it convenient to use coordinate systems that are adapted to the specific geometry of a crystal. As a two-dimensional example, consider a layer of graphite in which carbon atoms are arranged in regular hexagons to form the crystalline structure shown below.   The origin of the coordinate is at the carbon atom labeled by 0. It is convenient to choose the basis defined by the indicated vectors and .     Indicate the locations for which      .       .       .       Find the coordinates in the basis of the six yellow carbon atoms.      Find the coordinates of the center of the hexagon labeled C.       Find the coordinates of the atom labeled 1.       "
 },
 {
   "id": "homework-24-2-1",
@@ -3652,7 +3391,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Provide a justification for your response to each of the following questions.     Suppose you have a linearly independent set of vectors in . Can you guarantee that this set of vectors forms a basis of ? Explain.      Suppose you have a set of 10 vectors in and every vector in can be written as a linear combination of these 10 vectors. Can you guarantee that this set of vectors forms a basis for ? Explain.      Suppose is a matrix and that the equation has a unique solution for some vector . Can you guarantee that is invertible? Explain.    "
+  "body": "  Crystallographers find it convenient to use coordinate systems that are adapted to the specific geometry of a crystal. As a two-dimensional example, consider a layer of graphite in which carbon atoms are arranged in regular hexagons to form the crystalline structure shown below.   The origin of the coordinate is at the carbon atom labeled by 0. It is convenient to choose the basis defined by the indicated vectors and .     Indicate the locations for which      .       .       .       Find the coordinates in the basis of the six yellow carbon atoms.      Find the coordinates of the center of the hexagon labeled C.       Find the coordinates of the atom labeled 1.     "
 },
 {
   "id": "homework-25",
@@ -3660,8 +3399,8 @@ var ptx_lunr_docs = [
   "url": "homework-25.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 23 - Written Homework",
-  "body": " Problem 23 - Written Homework      Crystallographers find it convenient to use coordinate systems that are adapted to the specific geometry of a crystal. As a two-dimensional example, consider a layer of graphite in which carbon atoms are arranged in regular hexagons to form the crystalline structure shown below.   The origin of the coordinate is at the carbon atom labeled by 0. It is convenient to choose the basis defined by the indicated vectors and .     Indicate the locations for which      .       .       .       Find the coordinates in the basis of the six yellow carbon atoms.      Find the coordinates of the center of the hexagon labeled C.       Find the coordinates of the atom labeled 1.       "
+  "title": "Problem 24 - Written Homework",
+  "body": " Problem 24 - Written Homework      Consider the matrix defined in terms of the parameter . Compute . Show your work.         Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?      "
 },
 {
   "id": "homework-25-2-1",
@@ -3670,7 +3409,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Crystallographers find it convenient to use coordinate systems that are adapted to the specific geometry of a crystal. As a two-dimensional example, consider a layer of graphite in which carbon atoms are arranged in regular hexagons to form the crystalline structure shown below.   The origin of the coordinate is at the carbon atom labeled by 0. It is convenient to choose the basis defined by the indicated vectors and .     Indicate the locations for which      .       .       .       Find the coordinates in the basis of the six yellow carbon atoms.      Find the coordinates of the center of the hexagon labeled C.       Find the coordinates of the atom labeled 1.     "
+  "body": "  Consider the matrix defined in terms of the parameter . Compute . Show your work.   "
+},
+{
+  "id": "homework-25-3-1",
+  "level": "2",
+  "url": "homework-25.html#homework-25-3-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
 },
 {
   "id": "homework-26",
@@ -3678,8 +3426,8 @@ var ptx_lunr_docs = [
   "url": "homework-26.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 24 - Written Homework",
-  "body": " Problem 24 - Written Homework      Consider the matrix defined in terms of the parameter . Compute . Show your work.         Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?      "
+  "title": "Problem 25 - Written Homework",
+  "body": " Problem 25 - Written Homework      Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?      "
 },
 {
   "id": "homework-26-2-1",
@@ -3687,15 +3435,6 @@ var ptx_lunr_docs = [
   "url": "homework-26.html#homework-26-2-1",
   "type": "Worksheet Exercise",
   "number": "1",
-  "title": "",
-  "body": "  Consider the matrix defined in terms of the parameter . Compute . Show your work.   "
-},
-{
-  "id": "homework-26-3-1",
-  "level": "2",
-  "url": "homework-26.html#homework-26-3-1",
-  "type": "Worksheet Exercise",
-  "number": "2",
   "title": "",
   "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
 },
@@ -3705,8 +3444,8 @@ var ptx_lunr_docs = [
   "url": "homework-27.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 25 - Written Homework",
-  "body": " Problem 25 - Written Homework      Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?      "
+  "title": "Problem 26 - Written Homework",
+  "body": " Problem 26 - Written Homework      Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.      "
 },
 {
   "id": "homework-27-2-1",
@@ -3715,7 +3454,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
+  "body": "  Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.    "
 },
 {
   "id": "homework-28",
@@ -3723,8 +3462,8 @@ var ptx_lunr_docs = [
   "url": "homework-28.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 26 - Written Homework",
-  "body": " Problem 26 - Written Homework      Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.      "
+  "title": "Problem 27 - Written Homework",
+  "body": " Problem 27 - Written Homework      Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul        "
 },
 {
   "id": "homework-28-2-1",
@@ -3733,7 +3472,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.    "
+  "body": "  Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul      "
 },
 {
   "id": "homework-29",
@@ -3741,8 +3480,8 @@ var ptx_lunr_docs = [
   "url": "homework-29.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 27 - Written Homework",
-  "body": " Problem 27 - Written Homework      Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul        "
+  "title": "Problem 28 - Written Homework",
+  "body": " Problem 28 - Written Homework      This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)        "
 },
 {
   "id": "homework-29-2-1",
@@ -3751,7 +3490,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul      "
+  "body": "  This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)     "
 },
 {
   "id": "homework-30",
@@ -3759,8 +3498,8 @@ var ptx_lunr_docs = [
   "url": "homework-30.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 28 - Written Homework",
-  "body": " Problem 28 - Written Homework      This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)        "
+  "title": "Problem 29 - Written Homework",
+  "body": " Problem 29 - Written Homework      Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.      "
 },
 {
   "id": "homework-30-2-1",
@@ -3769,7 +3508,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)     "
+  "body": "   Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.    "
 },
 {
   "id": "homework-31",
@@ -3777,31 +3516,13 @@ var ptx_lunr_docs = [
   "url": "homework-31.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 29 - Written Homework",
-  "body": " Problem 29 - Written Homework      Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.      "
+  "title": "Problem 30 - Written Homework",
+  "body": " Problem 30 - Written Homework     This final homework exercise invites you to reflect on your learning in the course. To earn an S , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, copy and paste your essay onto Blackboard under this homework problem.     "
 },
 {
   "id": "homework-31-2-1",
   "level": "2",
   "url": "homework-31.html#homework-31-2-1",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "   Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.    "
-},
-{
-  "id": "homework-32",
-  "level": "1",
-  "url": "homework-32.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Problem 30 - Written Homework",
-  "body": " Problem 30 - Written Homework     This final homework exercise invites you to reflect on your learning in the course. To earn an S , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, copy and paste your essay onto Blackboard under this homework problem.     "
-},
-{
-  "id": "homework-32-2-1",
-  "level": "2",
-  "url": "homework-32.html#homework-32-2-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
