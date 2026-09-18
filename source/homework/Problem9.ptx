@@ -1,61 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 9 - Written Homework</title>
+    <title>Problem 9 - Written Homework MTH 204</title>
 
-    <page>
-        <!-- Q9 Section 2.2 -->
-        <exercise>
-            <introduction>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Q9 Section 2.2 -->
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>A</m> is a <m>3 \times 2</m> matrix whose
+                columns are the vectors <m>\vvec_1</m> and <m>\vvec_2</m>:
+                <m>A = [ \vvec_1 \ \ \vvec_2]</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
                 <p>
-                    Suppose that <m>A</m> is a <m>3 \times 2</m> matrix whose
-                    columns are the vectors <m>\vvec_1</m> and <m>\vvec_2</m>:
-                    <m>A = [ \vvec_1 \ \ \vvec_2]</m>.
+                    What are the dimensions of the vectors <m>\vvec_1</m> and
+                    <m>\vvec_2</m>?
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        What are the dimensions of the vectors <m>\vvec_1</m>
-                        and <m>\vvec_2</m>?
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Write the matrix-vector product <m>A \twovec10</m> as a
+                    linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                    Similarly, write <m>A \twovec01</m> as a linear combination
+                    of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Write the matrix-vector product <m>A \twovec10</m> as a
-                        linear combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
-                        Similarly, write <m>A \twovec01</m> as a linear
-                        combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose we are now given some specific information about
+                    certain matrix-vector products.
+                    Specifically, say we are given
+                    <md>
+                        A \twovec10 = \threevec{2}{-1}{4} \ \mbox{and} \ A \twovec01 = \threevec{0}{3}{-1}.
+                    </md>
+                    What is the matrix <m>A</m>?
+                    Why?
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Suppose we are now given some specific information about
-                        certain matrix-vector products.
-                        Specifically, say we are given
-                        <md>
-                            A \twovec10 = \threevec{2}{-1}{4} \ \mbox{and} \ A \twovec01 = \threevec{0}{3}{-1}.
-                        </md>
-                        What is the matrix <m>A</m>?
-                        Why?
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        Determine <m>A \twovec{-3}{5}</m>.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Determine <m>A \twovec{-3}{5}</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>

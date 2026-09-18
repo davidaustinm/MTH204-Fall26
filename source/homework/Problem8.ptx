@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 8 - Written Homework</title>
+    <title>Problem 8 - Written Homework MTH 204</title>
 
-    <page>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
         <!-- Q8 Section 2.1 -->
         <exercise>
             <introduction>
@@ -18,7 +32,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         Solve the system and describe the solution space fully.
@@ -28,7 +42,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Let <m>\uvec = \twovec{2}{3}</m> and
@@ -40,7 +54,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Let <m>\bvec = \twovec{13}{3}</m>.
@@ -54,5 +68,4 @@
                 </statement>
             </task>
         </exercise>
-    </page>
 </worksheet>
