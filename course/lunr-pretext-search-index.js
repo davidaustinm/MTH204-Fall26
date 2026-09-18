@@ -3111,13 +3111,13 @@ var ptx_lunr_docs = [
   "url": "homework-9.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 8 - Written Homework",
-  "body": " Problem 8 - Written Homework      Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.      "
+  "title": "Problem 8 - Written Homework MTH 204",
+  "body": " Problem 8 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the linear system      Solve the system and describe the solution space fully. If there are infinitely many solutions, describe them in parametric form.      Let and . How can you rewrite the given linear system above as asking a question about a linear combination of and ?      Let . Is a linear combination of and ? Why or why not? If yes, give the weights that make a linear combination of and ; if no, explain why no such weights exist.     "
 },
 {
-  "id": "homework-9-2-1",
+  "id": "homework-9-3",
   "level": "2",
-  "url": "homework-9.html#homework-9-2-1",
+  "url": "homework-9.html#homework-9-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3129,13 +3129,13 @@ var ptx_lunr_docs = [
   "url": "homework-10.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 9 - Written Homework",
-  "body": " Problem 9 - Written Homework      Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .      "
+  "title": "Problem 9 - Written Homework MTH 204",
+  "body": " Problem 9 - Written Homework MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Suppose that is a matrix whose columns are the vectors and : .     What are the dimensions of the vectors and ?      Write the matrix-vector product as a linear combination of and . Similarly, write as a linear combination of and .      Suppose we are now given some specific information about certain matrix-vector products. Specifically, say we are given What is the matrix ? Why?      Determine .     "
 },
 {
-  "id": "homework-10-2-1",
+  "id": "homework-10-3",
   "level": "2",
-  "url": "homework-10.html#homework-10-2-1",
+  "url": "homework-10.html#homework-10-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
