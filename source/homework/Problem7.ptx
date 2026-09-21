@@ -25,7 +25,7 @@
                 <m>\yvec</m>, and <m>\zvec</m> pictured in this figure:
             </p>
 
-            <image source="images/HW-lin-comb-nonstd.eps" width="50%">
+            <image source="images/HWProb7-lin-comb-nonstd.png" width="50%">
                 <shortdescription>4 vectors in a plane.</shortdescription>
             </image>
 
@@ -53,7 +53,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Sketch and label the vector <m>\wvec = 3\uvec - \vvec</m>.
