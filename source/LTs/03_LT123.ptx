@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 1,2,3 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #1, #2, and #3.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise>
+            <title>Learning Target 3, First Attempt</title>
+
+            <!-- Learning Target 3 (Attempt 1) -->
+            <introduction>
+                <p>
+                    I can determine if and how a given vector can be written as
+                    a linear combination of a given set of vectors and explain
+                    what this means geometrically.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is the vector <m>\bvec = \threevec{-5}{ 1}{-4}</m> a
+                        linear combination of <m>\uvec = \threevec{1}{1}{2}</m>
+                        and
+                        <m>\wvec =
+                        \threevec{-1}{ 2}{ 1}</m>?
+                        If yes, explain why and find the weights; if not,
+                        explain why no such weights exist.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p workspace="1in">
+                        Is the vector <m>\cvec = \threevec{-5}{ 2}{-4}</m> a
+                        linear combination of <m>\uvec = \threevec{1}{1}{2}</m>
+                        and
+                        <m>\wvec =
+                        \threevec{-1}{ 2}{ 1}</m>?
+                        If yes, explain why and find the weights; if not,
+                        explain why no such weights exist.
+                    </p>
+
+                    <p>
+                        Learning Target 3 continues on back.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\vvec_1</m>, <m>\vvec_2</m>, and <m>\vvec_3</m>
+                        be given by the figure below.
+                        <!-- \scalebox{0.8}{\includegraphics{LT4-f-trans.eps}}  -->
+                        Is <m>\vvec_3</m> a linear combination of <m>\vvec_1</m>
+                        and <m>\vvec_2</m>?
+                        If yes, explain why and find the weights; if not,
+                        explain why no such weights exist.
+                        Write your response to the right of the figure.
+                        <term>(Note</term>
+                        <em> there is no scale on the axes, so you
+                        can't determine coordinates for the various vectors;
+                        just use the grid and figure appropriately.) </em>
+                    </p>
+
+                    <image source="images/LT3-grid1.png" width="50%"/>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <!-- Learning Target 2 (Attempt 2) -->
+            <title>Learning Target 2, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can use information about pivots to make conclusions about
+                    the solutions of a system of linear equations, and explain
+                    the underlying reasoning (using appropriate terminology)
+                    regarding the existence and uniqueness of solutions and
+                    consistency or inconsistency of a system.
+                </p>
+
+                <p>
+                    For each of the following situations describing the pivots
+                    in RREF of the matrix for a given linear system, determine,
+                    with clear justification:
+                    <ol>
+                        <li>
+                            <p>
+                                if the system is consistent or inconsistent, and
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                if the system is consistent, whether there are
+                                infinitely many solutions or only one.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+
+                <p>
+                    For each situation, be sure to write a sentence to justify
+                    your conclusions.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        The augmented matrix for a linear system with 4
+                        equations and 2 unknowns has 2 pivots: one in column 1,
+                        and the other in column 2.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        The augmented matrix for a linear system with 3
+                        equations in 4 unknowns has 3 pivots, and there’s no
+                        pivot in column 2 and no pivot in column 4.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        The coefficient matrix of a linear system with 3
+                        equations in 5 unknowns has 3 pivots.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Learning Target 1 (Attempt 3) -->
+        <exercise>
+            <title>Learning Target 1, Third Attempt</title>
+
+            <statement>
+                <p>
+                    I can execute the next 2-3 steps of Gaussian elimination by
+                    hand that are needed to work toward RREF (and recognize that
+                    additional steps are needed to achieve RREF).
+                </p>
+
+                <p>
+                    A given linear system has been represented by an augmented
+                    matrix and Gaussian elimination has begun.
+                    The current state of the process is shown below.
+                </p>
+
+                <p>
+                    Execute the next <term>three</term> row operations that you
+                    would perform to continue the process of Gaussian
+                    elimination, clearly stating your steps by writing the
+                    explicit row operations you did.
+                    You should write at least three additional matrices to show
+                    your work.
+
+    
+                    <md>
+                        \left[\begin{array}{ccc|c}
+          1 \amp 4 \amp 0  \amp 7 \\
+          2 \amp 7 \amp 0 \amp 10 
+       
+          \end{array}\right]
+                    </md>
+                </p>
+            </statement>
+        </exercise>
+    </page>
+</worksheet>
