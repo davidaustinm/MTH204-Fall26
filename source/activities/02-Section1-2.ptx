@@ -727,6 +727,13 @@
                   \amp \xrightarrow{(2R3 + R2) \to R3} \amp \left[\begin{array}{rrr|r} 
                     1 \amp 2 \amp -1 \amp 1 \\
                     0 \amp -4 \amp 5 \amp 4 \\
+                    0 \amp 0 \amp 11 \amp 0 \\
+                  \end{array}\right]
+                  </mrow>
+                  <mrow>
+                  \amp \xrightarrow{(\frac{1}{11})(R3) \to R3} \amp \left[\begin{array}{rrr|r} 
+                    1 \amp 2 \amp -1 \amp 1 \\
+                    0 \amp -4 \amp 5 \amp 4 \\
                     0 \amp 0 \amp 1 \amp 0 \\
                   \end{array}\right]
                   </mrow>
