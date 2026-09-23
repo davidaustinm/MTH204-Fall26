@@ -16,6 +16,8 @@
             <!-- Learning Target 3 (Attempt 1) -->
             <introduction>
                 <p>
+                <em>   You can and should use Sage for this problem. You can find a page of
+                    Sage cells at <url href="gvsu.edu/s/0Ng"/> (zero, captial N, lower case g). </em>
                     I can determine if and how a given vector can be written as
                     a linear combination of a given set of vectors and explain
                     what this means geometrically.
@@ -38,7 +40,7 @@
 
             <task workspace="1in">
                 <statement>
-                    <p workspace="1in">
+                    <p>
                         Is the vector <m>\cvec = \threevec{-5}{ 2}{-4}</m> a
                         linear combination of <m>\uvec = \threevec{1}{1}{2}</m>
                         and
@@ -48,9 +50,6 @@
                         explain why no such weights exist.
                     </p>
 
-                    <p>
-                        Learning Target 3 continues on back.
-                    </p>
                 </statement>
             </task>
 
@@ -71,7 +70,7 @@
                         just use the grid and figure appropriately.) </em>
                     </p>
 
-                    <image source="images/LT3-grid1.png" width="50%"/>
+                    <image source="images/LT3-grid1.png" width="25%"/>
                 </statement>
             </task>
         </exercise>
