@@ -745,7 +745,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 2.1 - Vectors and Linear Combinations",
-  "body": " Section 2.1 - Vectors and Linear Combinations   Visit this website (gvsu.edu\/s\/0Je) where you find an interactive figure you can use to investigate linear combinations. We will consider the vectors and consider linear combinations (which is shown in red).     The weight is initially set to 0 in the interactive figure. Explain what happens as you vary with ? How is this related to scalar multiplication?      What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.      Can the vector be expressed as a linear combination of and ? If so, what are weights and ?      Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?      Verify the result from the previous part by algebraically substituting the weights and and the vectors and and checking you get .      Can the vector be expressed as a linear combination of and ? (Use the diagram.)      Can you find any two-dimensional vectors that cannot be expressed as linear combinations of and ?      Make sure you can answer the following questions:     How do we multiply a vector by a scalar? How do we add two vectors?    How do we picture vector addition and scalar multiplication geometrically?    What is a linear combination of vectors?     "
+  "body": " Section 2.1 - Vectors and Linear Combinations   Visit this website (gvsu.edu\/s\/0Je) where you find an interactive figure you can use to investigate linear combinations. We will consider the vectors and consider linear combinations (which is shown in red).     The weight is initially set to 0 in the interactive figure. Explain what happens as you vary with ? How is this related to scalar multiplication?    The vector stretches (when ), shrinks (when ), and flips over the origin (when ). When , we are getting all scalar multiples of .      What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.    We can take the following linear combination:    Linear combination of vectors v and w. to get the vector [0,-3].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1\\mathbf{v}-2\\mathbf{w}           Can the vector be expressed as a linear combination of and ? If so, what are weights and ?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [0, 0]    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    0\\mathbf{v}+0\\mathbf{w}           Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [-3,0].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    -2\\mathbf{v}+1\\mathbf{w}       Using the grey diamond-like background we can see that walking 1 along and \"backwards\" 2 along gives the desired vector .      Verify the result from the previous part by algebraically substituting the weights and and the vectors and and checking you get .    We can take the following linear combination:       Can the vector be expressed as a linear combination of and ? (Use the diagram.)    We can travel in directions parallel to and . We get roughly there by going about 1.3 in the direction of and -1.3 in the direction of .   Linear combination of vectors v and w to get (approximately) the vector [1.3, -1.7].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1.3\\mathbf{v}-1.3\\mathbf{w}           Can you find any two-dimensional vectors that cannot be expressed as linear combinations of and ?    No! We can travel along the gray diamond-like grid lines (sometimes partially so) to get anywhere in the -plane.      Make sure you can answer the following questions:     How do we multiply a vector by a scalar? How do we add two vectors?    How do we picture vector addition and scalar multiplication geometrically?    What is a linear combination of vectors?     "
 },
 {
   "id": "activities-8-3",
@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  The weight is initially set to 0 in the interactive figure. Explain what happens as you vary with ? How is this related to scalar multiplication?   "
+  "body": "  The weight is initially set to 0 in the interactive figure. Explain what happens as you vary with ? How is this related to scalar multiplication?    The vector stretches (when ), shrinks (when ), and flips over the origin (when ). When , we are getting all scalar multiples of .   "
 },
 {
   "id": "activities-8-4",
@@ -763,7 +763,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.   "
+  "body": "  What is the linear combination of and when and ? You may find this result using the interactive figure, but you should also verify it by computing the linear combination.    We can take the following linear combination:    Linear combination of vectors v and w. to get the vector [0,-3].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1\\mathbf{v}-2\\mathbf{w}        "
 },
 {
   "id": "activities-8-5",
@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Can the vector be expressed as a linear combination of and ? If so, what are weights and ?   "
+  "body": "  Can the vector be expressed as a linear combination of and ? If so, what are weights and ?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [0, 0]    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    0\\mathbf{v}+0\\mathbf{w}        "
 },
 {
   "id": "activities-8-6",
@@ -781,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?   "
+  "body": "  Use the interactive figure to determine whether the vector can be expressed as a linear combination of and ? If so, what are weights and ? How could you use the grey diamond-like background grid to determine this?    Yes! Let and .   Linear combination of vectors v and w. to get the vector [-3,0].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    -2\\mathbf{v}+1\\mathbf{w}       Using the grey diamond-like background we can see that walking 1 along and \"backwards\" 2 along gives the desired vector .   "
 },
 {
   "id": "activities-8-7",
@@ -790,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Verify the result from the previous part by algebraically substituting the weights and and the vectors and and checking you get .   "
+  "body": "  Verify the result from the previous part by algebraically substituting the weights and and the vectors and and checking you get .    We can take the following linear combination:    "
 },
 {
   "id": "activities-8-8",
@@ -799,7 +799,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  Can the vector be expressed as a linear combination of and ? (Use the diagram.)   "
+  "body": "  Can the vector be expressed as a linear combination of and ? (Use the diagram.)    We can travel in directions parallel to and . We get roughly there by going about 1.3 in the direction of and -1.3 in the direction of .   Linear combination of vectors v and w to get (approximately) the vector [1.3, -1.7].    v=(2,1)  w=(1,2)       {\\mathbf v}    {\\mathbf w}    1.3\\mathbf{v}-1.3\\mathbf{w}        "
 },
 {
   "id": "activities-8-9",
@@ -808,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "  Can you find any two-dimensional vectors that cannot be expressed as linear combinations of and ?   "
+  "body": "  Can you find any two-dimensional vectors that cannot be expressed as linear combinations of and ?    No! We can travel along the gray diamond-like grid lines (sometimes partially so) to get anywhere in the -plane.   "
 },
 {
   "id": "activities-8-10",
@@ -826,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 2.1 - Vectors and Linear Combinations Part 2",
-  "body": " Section 2.1 - Vectors and Linear Combinations Part 2     There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.      Use the process from the previous problem to write as a linear combination of and . Use Sage!        Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!         Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?         Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?         Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?         Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.         Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.        Make sure you can answer the following questions:     What is a linear combination of vectors?    What is the connection between linear combinations and solutions to linear systems?     "
+  "body": " Section 2.1 - Vectors and Linear Combinations Part 2     There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.     This Sage computation yields and .      Use the process from the previous problem to write as a linear combination of and . Use Sage!    We want to solve Simplifying the left side we find In other words, we need and . This is just a linear system.  We can first set up an augmented matrix and then use Sage to solve this linear system.      This Sage computation yields and .        Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.           Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.           How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!    For these total consumed amounts, we have the corresponding augmented matrix:    Using Sage, we see that we need servings of Frosted Flakes and serving of Cocoa Puffs.      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!    For these total consumed amounts, we have the corresponding augmented matrix:    Using Sage, we see that there is no solution due to a pivot in the augmented column. Thus, there is no combination of Frosted Flakes and Cocoa Puffs your sister could've eaten to get these totals. She must've had something besides these cereals for breakfast!         Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)             Graph of vectors v and w.    v=(-1,1)  w=(2,-2)       {\\mathbf v}    {\\mathbf w}           What do you notice about the two vectors? Can you relate them algebraically?    The two vectors are scalar multiplies of each other: .      Can you write as a linear combination of and ? Think geometrically for this question.    No, we can only travel along the line formed by the scalar multiples of . Adding any scalar multiple of is still a scalar multiple of .      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?    Setting up the augmented system we have the following:      No solutions since there is a pivot in the rightmost column. This is what we expect since we can't write as a linear combination of and .         Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.           We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).    From Part (a) we want to solve for the values of , and . This gives a system of linear equations of:     Converting this to an augmented system we have:    Using Sage we have that there is no solution.      Can be written as a linear combination of ?    Since there is no solution to the linear system, cannot be expressed as a linear combination of , and .         Consider the following linear system:      Identify the vectors and .           Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?    Converting this to an augmented system we have:    Using Sage we have that there is a unqiue solution such that can be expressed as a linear combination of and . Namely, .         Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?    Consider   This yields the augmented system of   This gives the following solution in parametric form: and , where is free. Yes, can be written as a linear combination of , , and since the augmented system is consistent. Since the linear system has infinitely many solution, there is more than one way to write the linear combination. For example, , , and is one possible linear combination. Another is , , and .         Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    No!   which has pivots in only the 1st and 2nd row. The 3rd row leaves the possibility of having an equation of , which has no solutions.         Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?    Consider   This yields the augmented system of   This gives the following solution in parametric form: , , and . Yes, can be written as a linear combination of , , and since the augmented system is consistent. Since the linear system has one unique solution (no free variable), there is only one way to write the linear combination of the vectors.      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    Yes!   which doesn't allow for a pivot position in the last column of the augmented matrix. Therefore, this system will always be consistent and any can be written as a linear combination of the 3 given vectors.        Make sure you can answer the following questions:     What is a linear combination of vectors?    What is the connection between linear combinations and solutions to linear systems?     "
 },
 {
   "id": "activities-9-2-1",
@@ -835,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.   "
+  "body": "  There's an important connection between linear combinations and linear systems. Suppose we want to write the vector as a linear combination of and . Then we want to solve Simplifying the left side we find In other words, we need and . This is just a linear system. Use Sage to solve this linear system.     This Sage computation yields and .   "
 },
 {
   "id": "activities-9-2-2",
@@ -844,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Use the process from the previous problem to write as a linear combination of and . Use Sage!   "
+  "body": "  Use the process from the previous problem to write as a linear combination of and . Use Sage!    We want to solve Simplifying the left side we find In other words, we need and . This is just a linear system.  We can first set up an augmented matrix and then use Sage to solve this linear system.      This Sage computation yields and .   "
 },
 {
   "id": "activities-9-3-1",
@@ -853,7 +853,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.      Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.      How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!    "
+  "body": "  Nutritional information about a breakfast cereal is printed on the box. For instance, one serving of Frosted Flakes has 111 calories, 140 milligrams of sodium, and 1.2 grams of protein. We may represent this as a vector   One serving of Cocoa Puffs has 120 calories, 105 milligrams of sodium, and 1.0 grams of protein.     Write the vector describing the nutritional content of Cocoa Puffs.           Suppose you eat servings of Frosted Flakes and servings of Cocoa Puffs. Use the language of vectors and linear combinations to express the total amount of calories, sodium, and protein you have consumed.           How many servings of each cereal have you eaten if you have consumed 342 calories, 385 milligrams of sodium, and 3.4 grams of protein. Use Sage!    For these total consumed amounts, we have the corresponding augmented matrix:    Using Sage, we see that we need servings of Frosted Flakes and serving of Cocoa Puffs.      Suppose your sister consumed 250 calories, 200 milligrams of sodium, and 4 grams of protein at breakfast. What can you conclude about her breakfast? Use Sage!    For these total consumed amounts, we have the corresponding augmented matrix:    Using Sage, we see that there is no solution due to a pivot in the augmented column. Thus, there is no combination of Frosted Flakes and Cocoa Puffs your sister could've eaten to get these totals. She must've had something besides these cereals for breakfast!    "
 },
 {
   "id": "activities-9-4-1",
@@ -862,7 +862,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)              What do you notice about the two vectors? Can you relate them algebraically?      Can you write as a linear combination of and ? Think geometrically for this question.      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?    "
+  "body": "  Consider the vectors and .     Sketch the two vectors on the grid below.   Blank grid.    v=(-1,1)  w=(2,-2)             Graph of vectors v and w.    v=(-1,1)  w=(2,-2)       {\\mathbf v}    {\\mathbf w}           What do you notice about the two vectors? Can you relate them algebraically?    The two vectors are scalar multiplies of each other: .      Can you write as a linear combination of and ? Think geometrically for this question.    No, we can only travel along the line formed by the scalar multiples of . Adding any scalar multiple of is still a scalar multiple of .      Now thinking algebraically, what do you get when you find the reduced row echelon form of . Why should you expect an inconsistent system?    Setting up the augmented system we have the following:      No solutions since there is a pivot in the rightmost column. This is what we expect since we can't write as a linear combination of and .    "
 },
 {
   "id": "activities-9-5-1",
@@ -871,7 +871,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.      We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).      Can be written as a linear combination of ?    "
+  "body": "  Let's look at the vectors      One thing we can do is ask if can be expressed as a linear combination of with weights . Write out the equation for that linear combination.           We can rephrase this question by writing a linear system for the weights . Solve this linear system (use Sage!).    From Part (a) we want to solve for the values of , and . This gives a system of linear equations of:     Converting this to an augmented system we have:    Using Sage we have that there is no solution.      Can be written as a linear combination of ?    Since there is no solution to the linear system, cannot be expressed as a linear combination of , and .    "
 },
 {
   "id": "activities-9-6-1",
@@ -880,7 +880,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  Consider the following linear system:      Identify the vectors and .      Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?    "
+  "body": "  Consider the following linear system:      Identify the vectors and .           Rephrase the question \"Is this linear system consistent?\" by asking \"Can be expressed as a linear combination of and ?\" What's the answer to this question?    Converting this to an augmented system we have:    Using Sage we have that there is a unqiue solution such that can be expressed as a linear combination of and . Namely, .    "
 },
 {
   "id": "activities-9-7-1",
@@ -889,7 +889,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "  Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    "
+  "body": "  Consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?    Consider   This yields the augmented system of   This gives the following solution in parametric form: and , where is free. Yes, can be written as a linear combination of , , and since the augmented system is consistent. Since the linear system has infinitely many solution, there is more than one way to write the linear combination. For example, , , and is one possible linear combination. Another is , , and .         Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    No!   which has pivots in only the 1st and 2nd row. The 3rd row leaves the possibility of having an equation of , which has no solutions.    "
 },
 {
   "id": "activities-9-8-1",
@@ -898,7 +898,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "",
-  "body": "  Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    "
+  "body": "  Now consider the vectors      Can be expressed as a linear combination of , , and ? If so, can be written as a linear combination of the vectors in more than one way?    Consider   This yields the augmented system of   This gives the following solution in parametric form: , , and . Yes, can be written as a linear combination of , , and since the augmented system is consistent. Since the linear system has one unique solution (no free variable), there is only one way to write the linear combination of the vectors.      Considering the same vectors , , and , can we write every three-dimensional vector as a linear combination of these vectors? Explain how the pivot positions in the matrix help answer this question.    Yes!   which doesn't allow for a pivot position in the last column of the augmented matrix. Therefore, this system will always be consistent and any can be written as a linear combination of the 3 given vectors.    "
 },
 {
   "id": "activities-9-9",
