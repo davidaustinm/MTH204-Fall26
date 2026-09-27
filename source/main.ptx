@@ -137,7 +137,8 @@
             <!-- Include handouts -->
             <xi:include href="./LTs/01_LT.ptx"/>
             <xi:include href="./LTs/02_LT12.ptx"/>
-            <xi:include href="./LTs/03_LT123.ptx" />
+            <xi:include href="./LTs/03_LT123.ptx"/>
+            <xi:include href="./LTs/04_LT234.ptx"/>
             
         </chapter>
 
