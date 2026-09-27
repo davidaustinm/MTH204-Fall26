@@ -1,66 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 10 - Written Homework</title>
+    <title>Problem 10 - Written Homework - MTH 204</title>
 
-    <page>
-        <!-- Q10 Section 2.3 -->
-        <exercise>
-            <introduction>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Q10 Section 2.3 -->
+    <exercise>
+        <introduction>
+            <p>
+                Consider the vectors <m>\uvec = \threevec{1}{0}{-1}</m>,
+                <m>\vvec = \threevec{0}{-1}{1}</m>, and
+                <m>\wvec = \threevec{2}{-3}{1}</m>.
+            </p>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
                 <p>
-                    Consider the vectors <m>\uvec = \threevec{1}{0}{-1}</m>,
-                    <m>\vvec = \threevec{0}{-1}{1}</m>, and
-                    <m>\wvec = \threevec{2}{-3}{1}</m>.
+                    Is <m>\bvec = \threevec{-5}{7}{-3}</m> in Span
+                    <m>\{ \uvec, \vvec, \wvec \}</m>?
+                    Why or why not?
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Is <m>\bvec = \threevec{-5}{7}{-3}</m> in Span
-                        <m>\{ \uvec, \vvec, \wvec \}</m>?
-                        Why or why not?
-                    </p>
-                </statement>
-            </task>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Is <m>\cvec = \threevec{-5}{7}{-2}</m> in Span
+                    <m>\{ \uvec, \vvec, \wvec \}</m>?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Is <m>\cvec = \threevec{-5}{7}{-2}</m> in Span
-                        <m>\{ \uvec, \vvec, \wvec \}</m>?
-                        Why or why not?
-                    </p>
-                </statement>
-            </task>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Do the vectors <m>\uvec, \vvec, \wvec</m> span all of
+                    <m>\mathbb{R}^3</m>?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Do the vectors <m>\uvec, \vvec, \wvec</m> span all of
-                        <m>\mathbb{R}^3</m>?
-                        Why or why not?
-                    </p>
-                </statement>
-            </task>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    What is an important observation to make about the
+                    relationship among <m>\uvec, \vvec, \wvec</m>?
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        What is an important observation to make about the
-                        relationship among <m>\uvec, \vvec, \wvec</m>?
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        Give a careful written description of Span
-                        <m>\{ \uvec, \vvec, \wvec \}</m>.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Give a careful written description of Span
+                    <m>\{ \uvec, \vvec, \wvec \}</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>
