@@ -37,8 +37,8 @@
         </p>
 
         <p>
-            There is a page of Sage cells available
-            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+            There is a page of Sage cells available at
+            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">http://gvsu.edu/s/0Ng</url>.
         </p>
 
         <p>
@@ -72,7 +72,7 @@
     </introduction>
 
     <exercise>
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Suppose that some morning there are 100 bicycles at <m>P</m>
@@ -83,7 +83,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Suppose that some morning there are 100 bicycles at <m>Q</m>
@@ -94,7 +94,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Now suppose that there are 100 bicycles at <m>P</m> and 200
@@ -117,7 +117,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     The next morning, the number of bicycles, <m>P_{k+1}</m>, at
@@ -128,7 +128,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Also find an algebraic equation for <m>Q_{k+1}</m>.
@@ -136,11 +136,11 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Now we'll bundle this together using vectors and matrices.
-                    We will use the vector <m>\xvec_k = \twovec{P_k}{Q_k}</m> to
+                    We will use the vector <m>{\xvec_k = \twovec{P_k}{Q_k}}</m> to
                     represent the distribution of bicycles on day <m>k</m>.
                     Using the equations for <m>P_{k+1}</m> and <m>Q_{k+1}</m>
                     that you just wrote, find a matrix <m>A</m> such that
@@ -151,7 +151,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Check your work by evaluating <m>A\twovec{100}{200}</m> and
@@ -163,7 +163,7 @@
     </exercise>
 
     <exercise>
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Suppose that there are, on Monday morning, <m>800</m>
@@ -175,7 +175,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Suppose you find on a Saturday morning that there are
@@ -198,7 +198,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Evaluate <m>A\vvec_1</m>.
@@ -207,7 +207,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Evaluate <m>A\vvec_2</m> and compare it to <m>\vvec_2</m>.
@@ -216,7 +216,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Suppose that the initial distribution of bicycles some
@@ -234,7 +234,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Apply the same reasoning to write <m>\xvec_2</m> as a linear
@@ -245,7 +245,7 @@
     </exercise>
 
     <exercise>
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Suppose that the initial distribution of bicycles has
@@ -256,7 +256,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Use what you've found above to write <m>\xvec_1</m>, the
@@ -266,7 +266,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     In the same way, write <m>\xvec_7</m>, the distribution of
@@ -276,7 +276,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     What happens as time goes by?
@@ -287,7 +287,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     What does this say about the ultimate distribution of
@@ -297,7 +297,7 @@
         </task>
     </exercise>
 
-    <exercise workspace="2in">
+    <exercise workspace="1in">
         <statement>
             <p>
                 Repeat this analysis from Problem 5 assuming that all
