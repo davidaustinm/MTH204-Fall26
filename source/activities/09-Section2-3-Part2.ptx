@@ -189,7 +189,7 @@
             </p>
         </introduction>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Consider the vector <m>\vvec =\threevec121</m>.
@@ -309,7 +309,7 @@
             </solution>
         </task>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Now consider the vectors
@@ -778,11 +778,11 @@
             </solution>
         </task>
 
-        <task workspace="1in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     Give a geometric description of
-                    <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m>
+                    <m>\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}.</m>
                 </p>
             </statement>
 
@@ -795,7 +795,7 @@
         </task>
     </exercise>
 
-    <exercise workspace="1in">
+    <exercise>
         <introduction>
             <p>
                 Suppose that you have a set of vectors
@@ -866,7 +866,7 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    What do you know about the pivot positions of this matrix
+                    What do you know about the pivot positions of this matrix?
                 </p>
             </statement>
 
