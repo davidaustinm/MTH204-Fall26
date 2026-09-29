@@ -22,7 +22,8 @@
                 </p>
 
                 <p>
-                    Consider the following system of linear equations:
+                    Suppose the question is to find the solution set of the 
+                    following linear system of equations.
                     <md>
                         \begin{alignedat}{4}
     4x \amp   \amp \amp {}+{} \amp z \amp {}={}  \amp 3 \\
@@ -37,7 +38,10 @@
             <task workspace="1in">
                 <statement>
                     <p>
-                        Write an equivalent expression using the form
+                       How could you phrase the question about finding the solution set 
+                       as a question
+                        about
+                     
                         <m>A\xvec=\bvec</m>.
                     </p>
                 </statement>
@@ -46,8 +50,9 @@
             <task workspace="1in">
                 <statement>
                     <p>
-                        Write an equivalent equation using the language of
-                        linear combinations.
+                            How could you phrase the question about finding the solution set 
+                       as a question
+                        about linear combinations?
                     </p>
                 </statement>
             </task>
@@ -55,7 +60,8 @@
             <task workspace="1in">
                 <statement>
                     <p>
-                        Write an equivalent equation as an augmented matrix.
+                        What augmented matrix would you row reduce to find the solution set 
+                        of the linear system?
                     </p>
                 </statement>
             </task>
@@ -70,7 +76,7 @@
             <introduction>
                 <p>
                     <em>   You can and should use Sage for this problem. You can find a page of
-                    Sage cells at <url href="gvsu.edu/s/0Ng"/> (zero, captial N, lower case g). </em>
+                    Sage cells at <url href="gvsu.edu/s/0Ng"/> (zero, capital N, lower case g). </em>
                     I can determine if and how a given vector can be written as
                     a linear combination of a given set of vectors and explain
                     what this means geometrically.
@@ -122,7 +128,7 @@
                         just use the grid and figure appropriately.) </em>
                     </p>
 
-                    <image source="images/LT3-grid2.png" width="25%"/>
+                    <image source="images/LT3-grid21.png" width="25%"/>
                 </statement>
             </task>
         </exercise>
@@ -191,7 +197,7 @@
                 <statement>
                     <p>
                         The augmented matrix for a linear system with 2
-                        equations in 4 unknowns has 1 pivot.
+                        equations in 4 unknowns has 2 pivots.
                     </p>
                 </statement>
             </task>
