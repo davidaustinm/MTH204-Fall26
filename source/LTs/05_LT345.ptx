@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 3,4,5 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #3, #4, and #5.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise>
+            <!-- Learning Target 5 (Attempt 1) -->
+            <title>Learning Target 5, First Attempt</title>
+
+            <introduction>
+                <p>
+                    I can reformulate and answer questions about span in terms
+                    of linear combinations, matrix equations, and geometrically.
+                </p>
+
+                <p>
+                    Consider the five vectors
+                    <md>
+                        \uvec = \threevec{3}{1}{0}, \,\,\,\, \vvec = \threevec{2}{1}{1}, \,\,\,\,
+                    \wvec = \threevec{8}{2}{-2}, \,\,\,\, \yvec = \threevec{1}{1}{-1}, \,\,\,\,
+                    \uvec = \threevec{1}{1}{1}.
+                    </md>
+                </p>
+
+                <p>
+                    For at least parts (a) and (b), be sure to use the phrase
+                    "linear combination" in your response.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is <m>\bvec</m> in the span of
+                        <m>\uvec, \vvec, \wvec,</m> and <m>\yvec</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is <m>\yvec</m> in the span of <m>\uvec, \vvec,</m> and
+                        <m>\wvec</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is
+                        <m>{\laspan{\uvec,\vvec,\wvec,\yvec} = \mathbb{R}^3?}</m>
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Learning Target 4 (Attempt 2) -->
+        <exercise>
+            <title>Learning Target 4, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can represent a linear system in three different ways and
+                    be able to translate back and forth among the forms: as
+                    <m>{A\xvec=\bvec}</m>, as a question about linear
+                    combinations, and as a question about an augmented matrix.
+                </p>
+
+                <p>
+                    Consider the question, which you do not need to answer:
+                    <md>
+                        \textrm{\emph{Is}} \,\, \threevec{4}{2}{5} \,\, \textrm{\emph{a linear combination of}} \,\, \threevec{2}{0}{-2}, 
+                   \threevec{1}{-1}{0}, \,\, \textrm{\emph{and}} \,\, \threevec{0}{-2}{2}?
+                    </md>
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Write an equivalent question about a linear system and
+                        explain why your question is equivalent.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Write an equivalent question about a matrix-vector
+                        equation <m>{A\xvec = \bvec}</m> and explain why your
+                        question is equivalent.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <title>Learning Target 3, Third Attempt</title>
+
+            <!-- Learning Target 3 (Attempt 3) -->
+            <introduction>
+                <p>
+                    <em>   You can and should use Sage for this problem. You can find a page of
+                    Sage cells at <url href="gvsu.edu/s/0Ng"/> (zero, capital N, lower case g). </em>
+                    I can determine if and how a given vector can be written as
+                    a linear combination of a given set of vectors and explain
+                    what this means geometrically.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is the vector <m>{\bvec = \threevec{-14}{-38}{10}}</m> a
+                        linear combination of <m>{\uvec = \threevec{0}{-2}{2}}</m>
+                        and
+                        <m>{\wvec =
+                        \threevec{1}{1}{1}}</m>?
+                        If yes, explain why and find the weights; if not,
+                        explain why no such weights exist.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is the vector <m>{\bvec = \threevec{30}{10}{-23}}</m> a
+                        linear combination of <m>{\uvec = \threevec{0}{-2}{2}}</m>
+                        and
+                        <m>{\wvec =
+                        \threevec{1}{1}{1}}</m>?
+                        If yes, explain why and find the weights; if not,
+                        explain why no such weights exist.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>\uvec</m>, <m>\vvec</m>, and <m>\bvec</m> be
+                        given by the figure below.
+                        <!-- \scalebox{0.8}{\includegraphics{LT4-f-trans.eps}}  -->
+                        Is <m>\bvec</m> a linear combination of <m>\uvec</m> and
+                        <m>\vvec</m>?
+                        If yes, explain why and find the weights; if not,
+                        explain why no such weights exist.
+                        Write your response to the right of the figure.
+                        <term>(Note</term>
+                        <em> there is no scale on the axes, so you
+                        can't determine coordinates for the various vectors;
+                        just use the grid and figure appropriately.) </em>
+                    </p>
+
+                    <image source="images/LT3-grid3.png" width="25%"/>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>

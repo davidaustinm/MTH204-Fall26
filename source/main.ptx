@@ -139,6 +139,7 @@
             <xi:include href="./LTs/02_LT12.ptx"/>
             <xi:include href="./LTs/03_LT123.ptx"/>
             <xi:include href="./LTs/04_LT234.ptx"/>
+            <xi:include href="./LTs/05_LT345.ptx"/>
             
         </chapter>
 
