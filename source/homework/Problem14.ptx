@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 14 - Written Homework</title>
+    <title>Problem 14 - Written Homework - MTH 204</title>
 
-    <page>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
         <!-- Question 14, Section 2.3/2.4 -->
         <exercise>
             <introduction>
@@ -16,7 +30,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         For what value(s) of <m>k</m> is the set
@@ -27,7 +41,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         For what value(s) of <m>k</m> is Span
@@ -37,7 +51,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         How are your responses to (a) and (b) connected to one
@@ -47,5 +61,4 @@
                 </statement>
             </task>
         </exercise>
-    </page>
 </worksheet>

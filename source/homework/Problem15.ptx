@@ -1,69 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 15 - Written Homework</title>
+    <title>Problem 15 - Written Homework - MTH 204</title>
 
-    <page>
-        <!-- Question 15, Section 2.5/2.6 -->
-        <exercise>
-            <introduction>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Question 15, Section 2.5/2.6 -->
+    <exercise>
+        <introduction>
+            <p>
+                Let <m>{S : \mathbb{R}^{2} \to \mathbb{R}^{2}}</m> be the linear
+                transformation that reflects each input vector across the line
+                <m>{y = x}</m>, and let
+                <m>{R : \mathbb{R}^{2} \to \mathbb{R}^{2}}</m> be the
+                transformation that rotates each input vector by
+                <m>90^{\circ}</m> clockwise about the origin.
+            </p>
+        </introduction>
+
+        <task workspace="0.5in">
+            <statement>
                 <p>
-                    Let <m>S : \mathbb{R}^{2} \to \mathbb{R}^{2}</m> be the
-                    linear transformation that reflects each input vector across
-                    the line <m>y = x</m>, and let
-                    <m>R : \mathbb{R}^{2} \to \mathbb{R}^{2}</m> be the
-                    transformation that rotates each input vector by
-                    <m>90^{\circ}</m> clockwise about the origin.
+                    Determine the matrices <m>B</m> and <m>C</m> such that
+                    <m>{S({\vec x}) = B{\vec x}}</m> and
+                    <m>{R({\vec x}) = C{\vec x}}</m>.
+                    For each, write a sentence to explain your reasoning.
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Determine the matrices <m>B</m> and <m>C</m> such that
-                        <m>S({\vec x}) = B{\vec x}</m> and
-                        <m>R({\vec x}) = C{\vec x}</m>.
-                        For each, write a sentence to explain your reasoning.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Consider the new transformation <m>T</m> that is defined by
+                    <m>{T({\vec x}) = (R \circ S)({\vec x})}</m>.
+                    Determine the matrix <m>M</m> for which
+                    <m>{T({\vec x}) = M{\vec x}}</m>.
+                    Clearly show your work and thinking.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Consider the new transformation <m>T</m> that is defined
-                        by <m>T({\vec x}) = (R \circ S)({\vec x})</m>.
-                        Determine the matrix <m>M</m> for which
-                        <m>T({\vec x}) = M{\vec x}</m>.
-                        Clearly show your work and thinking.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    For the transformation <m>T</m> defined in (b) as the
+                    composition of <m>R</m> and <m>S</m>, what is the effect of
+                    <m>T</m> on input vectors?
+                    (For instance, you might see if you can determine if
+                    <m>T</m> generates a rotation around the origin by a certain
+                    angle, a reflection across a certain line, or some other
+                    geometric effect.)
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        For the transformation <m>T</m> defined in (b) as the
-                        composition of <m>R</m> and <m>S</m>, what is the effect
-                        of <m>T</m> on input vectors?
-                        (For instance, you might see if you can determine if
-                        <m>T</m> generates a rotation around the origin by a
-                        certain angle, a reflection across a certain line, or
-                        some other geometric effect.)
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        Create the new transformation <m>Q</m> that is defined
-                        by <m>Q({\vec x}) = (S\circ R)({\vec x})</m>.
-                        Are <m>Q</m> and <m>T</m> the same transformation?
-                        Explain how you know.
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Create the new transformation <m>Q</m> that is defined by
+                    <m>{Q({\vec x}) = (S\circ R)({\vec x})}</m>.
+                    Are <m>Q</m> and <m>T</m> the same transformation?
+                    Explain how you know.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>
