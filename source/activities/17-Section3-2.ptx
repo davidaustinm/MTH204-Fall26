@@ -45,19 +45,19 @@
                 <p>
                     Do the vectors <m>\vvec_1=\threevec111</m>,
                     <m>\vvec_2=\threevec{0}{1}{-1}</m>,
-                    <m>vvec_3 = \threevec{1}{0}{[1}</m> form a basis for
+                    <m>\vvec_3 = \threevec{1}{0}{[1}</m> form a basis for
                     <m>\mathbb{R}^3</m>?
                     Why or why not?
                 </p>
             </statement>
         </task>
 
-        <task>
+        <task workspace="1in">
             <statement>
                 <p>
                     Do the vectors <m>\vvec_1=\threevec111</m>,
                     <m>\vvec_2=\threevec{0}{1}{-1}</m>,
-                    <m>vvec_3 = \threevec{1}{0}{[1}</m>,
+                    <m>\vvec_3 = \threevec{1}{0}{[1}</m>,
                     <m>\vvec_4=\threevec123</m> form a basis for
                     <m>\mathbb{R}^3</m>?
                     Why or why not?
@@ -156,7 +156,7 @@
                 and <m>\vvec_2=\twovec12</m>.
             </caption>
 
-            <image width="40%">
+            <image width="50%">
                 <shortdescription>
                     Two vectors and a set of skewed grid lines representing
                     their linear combinations.
@@ -227,7 +227,7 @@
             </md>
         </p>
 
-        <p>
+        <p workspace=".2in">
             In general, if <m>\xvec=c_1\vvec_1+c_2\vvec_2</m>, then
             <md>
                 \coords{\xvec}{\bcal} = \twovec{c_1}{c_2}.
@@ -282,7 +282,7 @@
                     Express <m>\twovec{-4}1</m> as a linear combination of
                     <m>\vvec_1</m> and <m>\vvec_2</m> to find the coordinates
                     <m>\coords{\twovec{-4}1}{\bcal}</m>.
-                    Do using algebra.
+                    Use algebra/Sage (not the figure) to do so.
                     Does your answer seem reasonable based on the figure?
                 </p>
             </statement>
@@ -291,11 +291,11 @@
         <task workspace="1/2in">
             <statement>
                 <p>
-                    Find the vector <m>\xvec</m> so that
+                    On the figure, draw vector <m>\xvec</m> so that
                     <m>\coords{\xvec}{\bcal} =
   \twovec2{-3}</m>.
-                    Can you use the figure first?
-                    Then do using algebra?
+                    
+                    Then find <m>\xvec</m> uisng algebra/Sage.
                     (Notice this is ``opposite" from question (a).)
                 </p>
             </statement>
@@ -378,13 +378,13 @@
         <task>
             <statement>
                 <p>
-                    Read and explain <xref ref="prop-sec3-2-basis"/>
+                    Read and explain <xref ref="prop-3-2-basisconversion"/>
                 </p>
             </statement>
         </task>
     </exercise>
 
-    <proposition xml:id="prop-3-2-basisconversion">
+    <proposition xml:id="prop-3-2-basisconversion" workspace="1in">
         <statement>
             <p>
                 If <m>\mathcal{B}</m> is a basis and <m>P_\mathcal{B}</m> the matrix whose columns are the basis vectors, then

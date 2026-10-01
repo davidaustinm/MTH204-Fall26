@@ -3,6 +3,10 @@
 <worksheet>
     <title>Section 3.5 - Subspaces of <m>\real^p</m></title>
 
+
+
+    
+
     <introduction>
         <definition xml:id="def-3-5-subspace">
             <statement>
@@ -18,6 +22,7 @@
         </p>
     </introduction>
 
+        <page>
     <exercise>
         <introduction>
             <p>
@@ -93,7 +98,7 @@
                                 <diagram xmlns="https://prefigure.org" dimensions="(200, 200)" margins="5">
                                     <coordinates bbox="(-4,-4,4,4)">
                                         <grid-axes decorations="no"/>
-                                        <line at="line" endpoints="((0,0),(2,1))" stroke="blue" infinite="yes"/>
+                                        <line at="line" endpoints="((0,1),(2,2))" stroke="blue" infinite="yes"/>
                                     </coordinates>
                                     <annotations text="A line passing through negative two, negative one and two one">
                                         <annotation ref="line" text="The line"/>
@@ -131,18 +136,22 @@
         </task>
     </exercise>
 
+    </page>
+
+    <page>
+        
     <p>
         The first important subspace we'll look at is called the <term>column space</term>
-        of <m>A</m> and denoted as <m>\col(A)</m>.
+        of <m>A</m> and denoted as <m>\operatorname{Col}(A)</m>.
         It's just the span of the columns of <m>A</m>.
     </p>
 
         <definition xml:id="def-3-5-colspace">
           <statement>
             <p>
-              If <m>A</m> is an <m>m\times n</m> matrix we call the span of its colums the <term>column space</term> of <m>A</m> and denote it as <m>col(A)</m>. That is 
+              If <m>A</m> is an <m>m\times n</m> matrix we call the span of its columns the <term>column space</term> of <m>A</m> and denote it as <m>col(A)</m>. That is 
               <md>
-            \col(A) = \laspan{\vvec_1, \vvec_2,
+            \operatorname{Col}(A) = \laspan{\vvec_1, \vvec_2,
   \vvec_3, \vvec_4}.
         </md>
             </p>
@@ -193,7 +202,10 @@
         <task>
           <statement>
             <p>
-              Fill in the blanks: <m>\col(A)</m> is a subspace of <fillin characters="10" /> because <fillin characters="40" />.
+              Fill in the blanks: <m>\col(A)</m> is a subspace of <fillin characters="10" /> because
+            </p>
+            <p>
+                 <fillin characters="80" />.
             </p>
           </statement>
         </task>
@@ -225,7 +237,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     Explain why <m>\vvec_1</m> and <m>\vvec_2</m> form a
@@ -234,7 +246,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="1.25in">
           <statement>
             <p>
              Describe <m>\col(A)</m> geometrically.
@@ -258,6 +270,9 @@
         </task>
     </exercise>
 
+        </page>
+
+    <page>
     <definition xml:id="def-3-5-basisdim">
       <statement>
         <p>
@@ -285,7 +300,7 @@
             </p>
         </introduction>
 
-        <task workspace=".7in">
+        <task workspace=".6in">
             <statement>
                 <p>
                     What is the shape of <m>B</m>; that is, how many rows and
@@ -294,15 +309,15 @@
             </statement>
         </task>
 
-        <task workspace=".7in">
+        <task workspace=".6in">
             <statement>
                 <p>
-                    Is <m>\laspan{\bvec_1} = \laspan{\fourvec1000}</m>?
+                    Is <m>\laspan\left{\bvec_1\right} = \laspan\left{\fourvec1000\right}</m>?
                 </p>
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace=".7in">
             <statement>
                 <p>
                     In this case, the column space
@@ -313,7 +328,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace=".7in">
             <statement>
                 <p>
                     How can we form a basis for <m>\col(B)</m>?
@@ -321,7 +336,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task>
             <statement>
                 <p>
                     Fill in the blanks: <m>\col(B)</m> is a
@@ -331,6 +346,9 @@
             </statement>
         </task>
     </exercise>
+        </page>
+
+    <page>
 
     <exercise workspace="1in">
         <statement>
@@ -357,6 +375,7 @@
                 </p>
               </statement>
             </definition>
+ 
 
     <exercise>
         <introduction>
@@ -431,6 +450,10 @@
             </statement>
         </task>
     </exercise>
+  </page>
+    <page>
+        
+  
 
     <exercise>
         <introduction>
@@ -497,6 +520,9 @@
         </task>
     </exercise>
 
+        </page>
+
+    <page>
     <definition xml:id="def-3-5-rank">
       <statement>
         <p>
@@ -534,7 +560,7 @@
           </statement>
         </task>
 
-        <task>
+        <task workspace=".5in">
           <statement>
             <p>
               Suppose that <m>A</m> is an <m>8\times 10</m> matrix and <m>\col(A)=\mathbb{R}^8</m>. If <m>\bvec</m> is an 8-dimensional vector, what can you say about the equation <m>A\xvec=\bvec</m>.
@@ -554,6 +580,8 @@
             </statement>
         </task>
     </exercise>
+
+        </page>
 
     <outcomes>
         <introduction>

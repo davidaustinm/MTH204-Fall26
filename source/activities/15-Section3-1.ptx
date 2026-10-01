@@ -40,8 +40,9 @@
                     1 \amp 1 \amp 1
                     \end{array}\right]
                     </md>
-                  </p>
-                  <p>
+                </p>
+
+                <p>
                     <md>
                         B = \ds
                       \left[\begin{array}{rrr}
@@ -57,12 +58,11 @@
         <task workspace="1in">
             <statement>
                 <p>
-                   Define these matrices in Sage. What is the product <m>AB</m>?
+                    Define these matrices in Sage.
+                    What is the product <m>AB</m>?
                 </p>
             </statement>
         </task>
-
-
 
         <task workspace="1in">
             <statement>
@@ -170,7 +170,6 @@
                     Based on the previous parts, what is the matrix <m>B</m>?
                     Is it true <m>AB = I</m>?
                     (Can multiply with Sage.)
-
                 </p>
             </statement>
         </task>
@@ -192,7 +191,6 @@
                 </p>
             </statement>
         </task>
-
 
         <task workspace="1in">
             <statement>
@@ -311,7 +309,6 @@
                     <m>Ax=b</m>.
                 </p>
             </li>
-
             <!-- <li>
                 <p>
                     How do we find the inverse of a matrix using row reduction?

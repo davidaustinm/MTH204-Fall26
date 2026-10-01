@@ -2,6 +2,8 @@
 <worksheet>
   <title>Section 3.4 - Determinants using Cofactor Expansion - Part 2</title>
  
+<page>
+  
 
   <exercise workspace="1in">
     <statement>
@@ -14,7 +16,9 @@
 You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.</p>
     </statement>
   </exercise>
+</page>
 
+<page>
   <exercise workspace="1in">
     <statement>
       <p>Find the determinant of the matrix using a cofactor expansion:
@@ -32,6 +36,9 @@ A =
     </statement>
   </exercise>
 
+  </page>
+
+<page>
   <exercise workspace="1in">
     <statement>
       <p>Use a cofactor expansion to find the determinant of 
@@ -44,6 +51,8 @@ A =
 	Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.</p>
     </statement>
   </exercise>
+
+  </page>
 
   <!-- put this in previous worksheet.
 
@@ -62,14 +71,12 @@ A =
 
 
    <outcomes>
-     <introduction>
-            <p>
-                Make sure you can answer the following questions (at least for 2
-                and 3 variables):
-            </p>
-        </introduction>
+ 
     <ul>
       <li><p>How do we think about the determinant of a 2x2 matrix algebraically?</p></li>
+      <li><p>
+        What is co-factor expansion for?
+      </p> </li>
       <li><p>How do we apply cofactor expansion?</p></li>
     </ul>
   </outcomes>

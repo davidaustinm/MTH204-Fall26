@@ -3,6 +3,9 @@
 <worksheet>
     <title>Section 3.1 - Invertibility - Part 2</title>
 
+    <page>
+        
+   
     <exercise workspace="1in" xml:id="sec3-1-2-matrixA">
         <introduction>
             <p>
@@ -54,6 +57,11 @@
             </statement>
         </task>
     </exercise>
+
+     </page>
+
+     <page>
+    
 
     <exercise>
         <introduction>
@@ -114,6 +122,10 @@
         </task>
     </exercise>
 
+         </page>
+
+     <page>
+
     <exercise workspace="1.5in">
         <introduction>
             <p>
@@ -153,6 +165,10 @@
             </p>
         </statement>
     </exercise>
+
+         </page>
+
+     <page>
 
     <exercise>
         <introduction>
@@ -201,6 +217,8 @@
         </task>
     </exercise>
 
+         </page>
+
     <outcomes>
         <introduction>
             <p>
@@ -211,6 +229,7 @@
         <ul>
             <!-- <li><p>Given a matrix, how can one use row reduction to tell if the matrix is invertible?</p></li>
       <li><p>How can we use the inverse of a matrix <m>A</m> to solve <m>Ax=b</m>.</p></li> -->
+            
             <li>
                 <p>
                     How do we find the inverse of a matrix using row reduction?
@@ -220,6 +239,12 @@
             <li>
                 <p>
                     How do we find the inverse of a matrix using Sage?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    How can we determine if a matrix is invertible using its reduced row echelon form?
                 </p>
             </li>
             <li>
