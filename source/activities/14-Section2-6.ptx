@@ -7,8 +7,8 @@
         <introduction>
             <p>
                 Matrix transformation perform geometric operations.
-                Go to
-                <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">this website</url>
+                Go to the website: 
+                <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">https://gvsu.edu/s/0Jf</url>
                 to study the effect that various matrix transformations have on
                 the plane.
                 On the left is the plane before the transformation; on the right
@@ -206,7 +206,7 @@
                     <m>T</m> that scales all vectors horizontally by <m>3</m>
                     and vertically by <m>5</m>.
                     You can go to
-                    <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">this website</url>
+                    <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">https://gvsu.edu/s/0Jf</url>
                     to check your work (with smaller numbers)!
                 </p>
             </statement>
