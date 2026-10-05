@@ -7,7 +7,7 @@
         <introduction>
             <p>
                 Matrix transformation perform geometric operations.
-                Go to the website: 
+                Go to 
                 <url href="https://gvsu.edu/s/0Jf" visual="gvsu.edu/s/0Jf">https://gvsu.edu/s/0Jf</url>
                 to study the effect that various matrix transformations have on
                 the plane.
@@ -169,7 +169,7 @@
             </solution>
         </task>
 
-        <task workspace="1in">
+        <task workspace="2in">
             <statement>
                 <p>
                     <m>A = \left[\begin{array}{cc}1 \amp -1 \\ -2 \amp 2\end{array}\right]</m>
@@ -544,7 +544,7 @@ C*B = reflect then rotate
                 <p>
                     Do matrix transformations "commute"?
                     That is, if <m>S</m> and <m>T</m> are two transformations,
-                    is <m>S\circ T = T\circ S</m>?
+                    is <m>{S\circ T = T\circ S}</m>?
                 </p>
             </statement>
 
