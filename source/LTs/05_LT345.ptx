@@ -25,8 +25,21 @@
                     <md>
                         \uvec = \threevec{3}{1}{0}, \,\,\,\, \vvec = \threevec{2}{1}{1}, \,\,\,\,
                     \wvec = \threevec{8}{2}{-2}, \,\,\,\, \yvec = \threevec{1}{1}{-1}, \,\,\,\,
-                    \uvec = \threevec{1}{1}{1}.
+                    \bvec = \threevec{1}{1}{1}.
                     </md>
+                </p>
+
+                <p>
+                  <em> Note: In this problem, if you make a small entry error in
+                    Sage, you will likely radically change the conclusions you
+                    make.
+                    Be certain to double check what you enter in Sage to make
+                    sure it matches what you want it to represent.</em> 
+                </p>
+
+                <p>
+                     <em>   You can and should use Sage for this problem. You can find a page of
+                    Sage cells at <url href="gvsu.edu/s/0Ng"/> (zero, capital N, lower case g). </em>
                 </p>
 
                 <p>
@@ -103,7 +116,8 @@
                     <p>
                         Write an equivalent question about a matrix-vector
                         equation <m>{A\xvec = \bvec}</m> and explain why your
-                        question is equivalent.
+                        question is equivalent. In particular, include the matrix <m>{A}</m>, 
+                        the vector <m>{\bvec}</m>, and how many entries are in <m>{\xvec}</m>.
                     </p>
                 </statement>
             </task>
@@ -129,11 +143,11 @@
                 <statement>
                     <p>
                         Is the vector <m>{\bvec = \threevec{-14}{-38}{10}}</m> a
-                        linear combination of <m>{\uvec = \threevec{0}{-2}{2}}</m>
-                        and
+                        linear combination of
+                        <m>{\uvec = \threevec{0}{-2}{2}}</m> and
                         <m>{\wvec =
                         \threevec{1}{1}{1}}</m>?
-                        If yes, explain why and find the weights; if not,
+                        If yes, explain why and find weights; if not,
                         explain why no such weights exist.
                     </p>
                 </statement>
@@ -143,11 +157,11 @@
                 <statement>
                     <p>
                         Is the vector <m>{\bvec = \threevec{30}{10}{-23}}</m> a
-                        linear combination of <m>{\uvec = \threevec{0}{-2}{2}}</m>
-                        and
+                        linear combination of
+                        <m>{\uvec = \threevec{0}{-2}{2}}</m> and
                         <m>{\wvec =
                         \threevec{1}{1}{1}}</m>?
-                        If yes, explain why and find the weights; if not,
+                        If yes, explain why and find weights; if not,
                         explain why no such weights exist.
                     </p>
                 </statement>
@@ -158,19 +172,18 @@
                     <p>
                         Let <m>\uvec</m>, <m>\vvec</m>, and <m>\bvec</m> be
                         given by the figure below.
-                        <!-- \scalebox{0.8}{\includegraphics{LT4-f-trans.eps}}  -->
+                       
                         Is <m>\bvec</m> a linear combination of <m>\uvec</m> and
                         <m>\vvec</m>?
                         If yes, explain why and find the weights; if not,
                         explain why no such weights exist.
-                        Write your response to the right of the figure.
                         <term>(Note</term>
                         <em> there is no scale on the axes, so you
                         can't determine coordinates for the various vectors;
                         just use the grid and figure appropriately.) </em>
                     </p>
 
-                    <image source="images/LT3-grid3.png" width="25%"/>
+                       <image source="images/LT3-grid21.png" width="45%"/>
                 </statement>
             </task>
         </exercise>
