@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 15 - Written Homework - MTH 204</title>
+
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Question 15, Section 2.5/2.6 -->
+    <exercise workspace="1in">
+        <introduction>
+            <p>
+                Another application of linear systems is fitting polynomials.
+                In fact, one can use linear algebra to do regressions and find
+                the best-fitting polynomial for a given set of data points.
+                You can learn how that works in MTH 205 (Linear Algebra II), or
+                you can go ahead and try reading Section 6.5 of your textbook.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Suppose we have <m>(1,12), (2,9),</m> and <m>(3,5)</m> and
+                    we want to find a quadratic polynomial that passes through
+                    these points.
+                    That means we are looking for a polynomial of the form
+                    <m>p(x) = ax^2 + bx + c</m> where <m>a</m>, <m>b</m>, and
+                    <m>c</m> are constants we want to find.
+                    Using the point <m>(1,12)</m>, we can substitute
+                    <m>x = 1</m> and <m>p(x) = 12</m> to get
+                    <md>
+                        12 = a (1)^2 + b(1) + c.
+                    </md>
+                    Use this strategy to find two other equations using the
+                    points <m>(2,9)</m> and <m>(3,5)</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Explain why the first part gives you a linear system with
+                    unknowns <m>a,b</m> and <m>c</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Solve the linear system (using Sage) to write the quadratic
+                    that passes through these points.
+                    Check that your polynomial works by using a graphing
+                    software (like Desmos), or substituting the points to make
+                    sure you get the correct output.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Consider the points <m>(-2,33), (1,6), (3,18), (4,15)</m>.
+                    Use the method above to find a cubic (degree 3) polynomial
+                    that passes through all 4 of these points.
+                    Explain your work (don't just give a final answer, give a
+                    solution!)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain the meme.
+                    Hint: Think about how many points you needed for a degree 2
+                    polynomial and a degree 3 polynomial in the questions above.
+                </p>
+            </statement>
+
+       
+        </task>
+    </exercise>
+               <figure>
+                <caption>
+                    A Map of a fourth degree polynomial going through the 5 most
+                    populous U.S.
+                    cities.
+                </caption>
+
+                <image source="images/PolyFittingMap.png" width="25%">
+                    <shortdescription>US Map.</shortdescription>
+                </image>
+            </figure>
+
+</worksheet>
