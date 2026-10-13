@@ -27,13 +27,6 @@
 
                 <li>
                     <p>
-                        You only need to hand in one report for your group.
-                        Only include the names of students who contributed.
-                    </p>
-                </li>
-
-                <li>
-                    <p>
                         This lab is graded out of 30 points.
                         Each problem will be graded out of 5 points - you earn 5
                         points by including your reasoning, following all
@@ -44,8 +37,8 @@
         </p>
 
         <p>
-            There is a page of Sage cells available
-            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+            There is a page of Sage cells available at
+            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">http://gvsu.edu/s/0Ng</url>.
         </p>
 
         <p>
@@ -78,8 +71,8 @@
         </p>
 
         <p>
-            If you go to
-            <url href="http://gvsu.edu/s/0Jb" visual="http://gvsu.edu/s/0Jb">this website</url>,
+            If you go to the website
+            <url href="http://gvsu.edu/s/0Jb" visual="http://gvsu.edu/s/0Jb">http://gvsu.edu/s/0Jb</url>,
             you will find a figure that can make Wooody move.
             On the left, you see a picture of Wooody, while on the right you
             will see a picture of him after a matrix transformation has been
@@ -170,12 +163,12 @@
                 and then the bottom.
             </p>
 
-            <image source="images/lab3_wooody3.png" width="50%">
+            <image source="images/lab3_wooody3.png" width="60%">
                 <shortdescription>Wooody doing a cartwheel.</shortdescription>
             </image>
         </introduction>
 
-        <task workspace="1in">
+        <task workspace="2in">
             <statement>
                 <p>
                     What is the transformation <m>M_1</m> that produces the
@@ -184,7 +177,7 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="3in">
             <statement>
                 <p>
                     Using <m>M_1</m>, how can you produce the second frame
@@ -195,7 +188,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="3in">
             <statement>
                 <p>
                     How can you continue using <m>M_1</m> to generate <m>M_3</m>
@@ -234,7 +227,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     Explain a way to make the sequence of frames above.
@@ -242,7 +235,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     Determine the function that takes our original picture of
