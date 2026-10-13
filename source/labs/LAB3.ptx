@@ -14,14 +14,14 @@
             <ul>
                 <li>
                     <p>
-                        You should type up your report (a google docs version is
-                        available on Blackboard).
+                        Include descriptions of your work in Sage.
                     </p>
                 </li>
 
                 <li>
                     <p>
-                        Include screenshots of your work in Sage.
+                        You only need to hand in one report for your group.
+                        Only include the names of students who contributed.
                     </p>
                 </li>
 
@@ -123,7 +123,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Compute this matrix product and verify that it produces the
@@ -132,7 +132,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     The benefit of using homogeneous coordinates is because they
@@ -144,7 +144,7 @@
         </task>
     </exercise>
 
-    <exercise workspace="2in">
+    <exercise workspace="5.5in">
         <statement>
             <p>
                 Press the <term>Reset</term> button if you have modified Wooody.
@@ -154,7 +154,7 @@
                 What is the matrix transformation that has been applied?
             </p>
 
-            <image source="images/lab3_wooody2.png" width="35%">
+            <image source="images/lab3_wooody2.png" width="25%">
                 <shortdescription>
                     Wooody waving his right hand.
                 </shortdescription>
@@ -175,7 +175,7 @@
             </image>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     What is the transformation <m>M_1</m> that produces the
@@ -184,7 +184,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Using <m>M_1</m>, how can you produce the second frame
