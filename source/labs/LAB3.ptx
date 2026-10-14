@@ -14,14 +14,7 @@
             <ul>
                 <li>
                     <p>
-                        You should type up your report (a google docs version is
-                        available on Blackboard).
-                    </p>
-                </li>
-
-                <li>
-                    <p>
-                        Include screenshots of your work in Sage.
+                        Include descriptions of your work in Sage.
                     </p>
                 </li>
 
@@ -44,8 +37,8 @@
         </p>
 
         <p>
-            There is a page of Sage cells available
-            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">here</url>.
+            There is a page of Sage cells available at
+            <url href="http://gvsu.edu/s/0Ng" visual="http://gvsu.edu/s/0Ng">http://gvsu.edu/s/0Ng</url>.
         </p>
 
         <p>
@@ -78,8 +71,8 @@
         </p>
 
         <p>
-            If you go to
-            <url href="http://gvsu.edu/s/0Jb" visual="http://gvsu.edu/s/0Jb">this website</url>,
+            If you go to the website
+            <url href="http://gvsu.edu/s/0Jb" visual="http://gvsu.edu/s/0Jb">http://gvsu.edu/s/0Jb</url>,
             you will find a figure that can make Wooody move.
             On the left, you see a picture of Wooody, while on the right you
             will see a picture of him after a matrix transformation has been
@@ -123,7 +116,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     Compute this matrix product and verify that it produces the
@@ -132,7 +125,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     The benefit of using homogeneous coordinates is because they
@@ -144,7 +137,7 @@
         </task>
     </exercise>
 
-    <exercise workspace="2in">
+    <exercise workspace="5.5in">
         <statement>
             <p>
                 Press the <term>Reset</term> button if you have modified Wooody.
@@ -154,7 +147,7 @@
                 What is the matrix transformation that has been applied?
             </p>
 
-            <image source="images/lab3_wooody2.png" width="35%">
+            <image source="images/lab3_wooody2.png" width="25%">
                 <shortdescription>
                     Wooody waving his right hand.
                 </shortdescription>
@@ -170,7 +163,7 @@
                 and then the bottom.
             </p>
 
-            <image source="images/lab3_wooody3.png" width="50%">
+            <image source="images/lab3_wooody3.png" width="60%">
                 <shortdescription>Wooody doing a cartwheel.</shortdescription>
             </image>
         </introduction>
@@ -184,7 +177,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="3in">
             <statement>
                 <p>
                     Using <m>M_1</m>, how can you produce the second frame
@@ -195,7 +188,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="3in">
             <statement>
                 <p>
                     How can you continue using <m>M_1</m> to generate <m>M_3</m>
@@ -234,7 +227,7 @@
             </p>
         </introduction>
 
-        <task workspace="2in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     Explain a way to make the sequence of frames above.
@@ -242,7 +235,7 @@
             </statement>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1.5in">
             <statement>
                 <p>
                     Determine the function that takes our original picture of
