@@ -128,6 +128,7 @@
             <xi:include href="./homework/Problem29.ptx"/>
             <xi:include href="./homework/Problem30.ptx"/>
             <xi:include href="./homework/Problem15-Alternate.ptx"/>
+            <xi:include href="./homework/Problem17-Alternate.ptx"/>
 
         </chapter>
         <!-- Include additional chapters for other categories -->
