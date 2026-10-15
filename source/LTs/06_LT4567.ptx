@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 4,5,6,7 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #4, #5, #6, and #7.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise workspace="1in">
+            <!-- Learning Target 7 (Attempt 1) -->
+            <title>Learning Target 7, Attempt 1</title>
+
+            <introduction>
+                <p>
+                    I can find the matrix of a linear transformation using
+                    elementary vectors, apply a transformation to a vector or
+                    shape, and compose transformations using matrix
+                    multiplication.
+                </p>
+
+                <p>
+                    Suppose you have matrix transformations
+                    <m>T:\mathbb{R}^2\to\mathbb{R}^2</m> and
+                    <m>S:\mathbb{R}^2\to\mathbb{R}^2</m> and that
+                    <me>
+                        T\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 1 \\ 0 \end{bmatrix},\quad
+        T\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} 0 \\ -1 \end{bmatrix},\quad
+        S\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 0 \\ -1 \end{bmatrix},\quad
+        S\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} 1 \\ 0 \end{bmatrix}.
+                    </me>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Find the matrices <m>B</m> and <m>C</m> that define
+                        <m>T</m> and <m>S</m> respectively.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If
+                        <m>\mathbf{v} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}</m>,
+                        find <m>T(\mathbf{v})</m> and <m>S(\mathbf{v})</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine the composition <m>(T\circ S)(\mathbf{w})</m>
+                        where
+                        <m>\mathbf{w} = \begin{bmatrix} 11 \\ -17 \end{bmatrix}</m>
+                        and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <!-- Learning Target 6 (Attempt 1) -->
+            <title>Learning Target 6, Attempt 1</title>
+
+            <introduction>
+                <p>
+                    I can reformulate and answer questions about linearly
+                    dependent or linearly independent vectors using appropriate
+                    computations, and explain the meaning of the results of
+                    computations in the language of linear combinations.
+                </p>
+
+                <p>
+                    <alert><em>Note</em></alert>: In this problem, if you make a
+                    small entry error in Sage, you will likely radically change
+                    the conclusions you make.
+                    <em>Be certain to double check what you enter in Sage to make 
+                        sure it matches what you want it to represent.</em>
+                </p>
+
+                <p>
+                    Consider the four vectors
+                    <m>\mathbf{v}_1 = \begin{bmatrix} -1 \\ \phantom{-}1 \\ \phantom{-}1 \end{bmatrix}</m>,
+                    <m>\mathbf{v}_2 = \begin{bmatrix} -1 \\ -1 \\ \phantom{-}1 \end{bmatrix}</m>,
+                    <m>\mathbf{v}_3 = \begin{bmatrix} -9 \\ \phantom{-}1 \\ \phantom{-}9 \end{bmatrix}</m>,
+                    and
+                    <m>\mathbf{v}_4 = \begin{bmatrix} 1 \\ -5 \\ -1 \end{bmatrix}</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Is the set of four vectors <m>\mathbf{v}_1</m>,
+                        <m>\mathbf{v}_2</m>, <m>\mathbf{v}_3</m>, and
+                        <m>\mathbf{v}_4</m> linearly independent or linearly
+                        dependent?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        What is the largest collection of linearly independent
+                        vectors you can find from among <m>\mathbf{v}_1</m>,
+                        <m>\mathbf{v}_2</m>, <m>\mathbf{v}_3</m>, and
+                        <m>\mathbf{v}_4</m>?
+                        Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is it possible to write one of <m>\mathbf{v}_1</m>,
+                        <m>\mathbf{v}_2</m>, <m>\mathbf{v}_3</m>, and
+                        <m>\mathbf{v}_4</m> as a linear combination of two or
+                        more of the other vectors?
+                        If yes, state such a linear combination; if not, explain
+                        why not.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <!-- Learning Target 5 (Attempt 2) -->
+            <title>Learning Target 5, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    Consider the four vectors
+                    <md>
+                        \mathbf{u} = \begin{bmatrix} -1 \\ \phantom{-}1 \\ \phantom{-}3 \end{bmatrix},
+                    \mathbf{v} = \begin{bmatrix} \phantom{-}1 \\ \phantom{-}2 \\ -1 \end{bmatrix},
+                    \mathbf{w} = \begin{bmatrix} -5 \\ -4 \\ \phantom{-}9 \end{bmatrix},
+                    \text{ and }
+                    \mathbf{b} = \begin{bmatrix} \phantom{-}2 \\ \phantom{-}1 \\ -5 \end{bmatrix}.
+                    </md>
+                    For each of the following questions, provide clear
+                    justification for your conclusions.
+                    If you use Sage, include a summary of any computations.
+                </p>
+
+                <p>
+                    <alert><em>For at least parts (a) and (b), be sure to use the phrase <q>linear combination</q> in your response.</em></alert>
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\mathbf{b}</m> in the span of <m>\mathbf{u}</m>,
+                        <m>\mathbf{v}</m>, and <m>\mathbf{w}</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\mathbf{w}</m> in the span of <m>\mathbf{u}</m>
+                        and <m>\mathbf{v}</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is
+                        <m>\operatorname{Span}\{\mathbf{u}, \mathbf{v}, \mathbf{w}\} = \mathbb{R}^3</m>?
+                        Why or why not?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Is <m>\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}</m>
+                        a line in <m>\mathbb{R}^3</m>, a plane in
+                        <m>\mathbb{R}^3</m>, all of <m>\mathbb{R}^3</m>, or
+                        something else?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Learning Target 4 (Attempt 3) -->
+        <exercise workspace="1in">
+            <title>Learning Target 4, Third Attempt</title>
+
+            <introduction>
+                <p>
+                    Consider the linear system of equations given in the form
+                    <m>A\mathbf{x} = \mathbf{b}</m> by the equation
+                    <md>
+                        \begin{bmatrix}
+        \phantom{-}6 &amp; -5 \\
+        \phantom{-}1 &amp; \phantom{-}3 \\
+        -3 &amp; -2
+        \end{bmatrix}
+        \mathbf{x}
+        =
+        \begin{bmatrix} \phantom{-} 11 \\ -7 \\ \phantom{-}3 \end{bmatrix}
+                    </md>.
+                </p>
+
+                <p>
+                    <alert>Note:</alert>
+                    <em>At no point in this question do you need to determine numerical values for the entries in vector</em>
+                    <m>\mathbf{x}</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        How many entries are in vector <m>\mathbf{x}</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Rewrite the given equation as an equation among vectors
+                        by re-writing the equation as an appropriate linear
+                        combination of vectors.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Rewrite the given equation as a system of linear
+                        equations.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        What augmented matrix would you row-reduce if you wanted
+                        to determine <m>\mathbf{x}</m>?
+                        (Do not actually row-reduce.)
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>
