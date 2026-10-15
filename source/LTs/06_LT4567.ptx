@@ -26,12 +26,12 @@
                     Suppose you have matrix transformations
                     <m>T:\mathbb{R}^2\to\mathbb{R}^2</m> and
                     <m>S:\mathbb{R}^2\to\mathbb{R}^2</m> and that
-                    <me>
+                    <md>
                         T\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 1 \\ 0 \end{bmatrix},\quad
         T\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} 0 \\ -1 \end{bmatrix},\quad
         S\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 0 \\ -1 \end{bmatrix},\quad
         S\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} 1 \\ 0 \end{bmatrix}.
-                    </me>
+                    </md>
                 </p>
             </introduction>
 
