@@ -195,11 +195,8 @@
             <task>
                 <statement>
                     <p>
-                        Is <m>\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}</m>
-                        a line in <m>\mathbb{R}^3</m>, a plane in
-                        <m>\mathbb{R}^3</m>, all of <m>\mathbb{R}^3</m>, or
-                        something else?
-                        Explain.
+                        Describe <m>\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}</m>
+                        geometrically. Explain your reasoning.
                     </p>
                 </statement>
             </task>
@@ -214,7 +211,7 @@
             <introduction>
                 <p>
                     Consider the linear system of equations given in the form
-                    <m>A\mathbf{x} = \mathbf{b}</m> by the equation
+                    <m>{A\mathbf{x} = \mathbf{b}}</m> by the equation
                     <md>
                         \begin{bmatrix}
         \phantom{-}6 &amp; -5 \\
