@@ -3309,13 +3309,13 @@ var ptx_lunr_docs = [
   "url": "homework-20.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 19 - Written Homework",
-  "body": " Problem 19 - Written Homework      This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .      "
+  "title": "Problem 19 - Written Homework - MTH 204",
+  "body": " Problem 19 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     This problem asks you to investigate some invertible matrices whose inverse has a special property.     Explain why the identity matrix, , is invertible and why its inverse is itself.      Find 2 other matrices and such that , , , and are four different matrices and each matrix has the property that the matrix is invertible and its inverse is itself. Write to explain your thinking for how you found and .      Give an example, with justification, of an invertible matrix such that is not and .     "
 },
 {
-  "id": "homework-20-2-1",
+  "id": "homework-20-3",
   "level": "2",
-  "url": "homework-20.html#homework-20-2-1",
+  "url": "homework-20.html#homework-20-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3327,13 +3327,13 @@ var ptx_lunr_docs = [
   "url": "homework-21.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 20 - Written Homework",
-  "body": " Problem 20 - Written Homework      Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.      "
+  "title": "Problem 20 - Written Homework - MTH 204",
+  "body": " Problem 20 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Determine whether the following statements are true or false and explain your reasoning. If you use a proposition from the text, please refer to that clearly by number and by a summary of what the proposition tells you.     If is invertible, then the columns of are linearly independent.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is a square matrix whose diagonal entries are all nonzero, then is invertible.      If is an invertible matrix, then span of the columns of is .      If is invertible, then there is a nonzero solution to the homogeneous equation .      If is an matrix and the equation has a solution for every vector , then is invertible.      Using the figure, determine , , and for the vectors Again, write at least one sentence that explains how you determined your results.     "
 },
 {
-  "id": "homework-21-2-1",
+  "id": "homework-21-3",
   "level": "2",
-  "url": "homework-21.html#homework-21-2-1",
+  "url": "homework-21.html#homework-21-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3554,6 +3554,24 @@ var ptx_lunr_docs = [
   "number": "24",
   "title": "",
   "body": " A Map of a fourth degree polynomial going through the 5 most populous U.S. cities.   US Map.   "
+},
+{
+  "id": "homework-33",
+  "level": "1",
+  "url": "homework-33.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 17 - Written Homework - MTH 204",
+  "body": " Problem 17 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.     "
+},
+{
+  "id": "homework-33-3",
+  "level": "2",
+  "url": "homework-33.html#homework-33-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.    "
 }
 ]
 
