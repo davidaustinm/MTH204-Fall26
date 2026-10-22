@@ -146,7 +146,8 @@
             <xi:include href="./LTs/04_LT234.ptx"/>
             <xi:include href="./LTs/05_LT345.ptx"/>
             <xi:include href="./LTs/06_LT4567.ptx"/>  
-            <xi:include href="./LTs/06_LT456.ptx"/>          
+            <xi:include href="./LTs/06_LT456.ptx"/> 
+            <xi:include href="./LTs/07_LT567.ptx"/>          
         </chapter>
 
     </book>
