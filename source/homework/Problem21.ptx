@@ -25,7 +25,11 @@
                     <m>\mathcal{B}= \{ {\vec v}_{1}, {\vec v}_{2} \}</m>.
                 </p>
 
-                <image source="images/ex-basis.png"/>
+                <image source="images/ex-basis.png" width="75%">
+                <shortdescription>
+                    Graph with new coordinate axis from vectors v1 and v2.
+                </shortdescription>
+            </image>
             </introduction>
 
             <task workspace="1in">
