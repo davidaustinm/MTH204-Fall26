@@ -3345,13 +3345,13 @@ var ptx_lunr_docs = [
   "url": "homework-22.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 21 - Written Homework",
-  "body": " Problem 21 - Written Homework      Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.      "
+  "title": "Problem 21 - Written Homework - MTH 204",
+  "body": " Problem 21 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the vectors and given in the figure below and let .      Explain why is a basis for .      On the figure, plot the vectors , , and that respectively satisfy Write at least one sentence that explains how you determined the vectors that you plotted.      Lastly, find if , and find if . Show your work - if you used Sage, say what you did.     "
 },
 {
-  "id": "homework-22-2-1",
+  "id": "homework-22-3",
   "level": "2",
-  "url": "homework-22.html#homework-22-2-1",
+  "url": "homework-22.html#homework-22-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3572,6 +3572,42 @@ var ptx_lunr_docs = [
   "number": "1",
   "title": "",
   "body": "  Let be the linear transformation that reflects each input vector across the line , and let be the transformation that rotates each input vector by clockwise about the origin.     Determine the matrices and such that and . For each, write a sentence to explain your reasoning.      Consider the new transformation that is defined by . Determine the matrix for which . Clearly show your work and thinking.      For the transformation defined in (b) as the composition of and , what is the effect of on input vectors? (For instance, you might see if you can determine if generates a rotation around the origin by a certain angle, a reflection across a certain line, or some other geometric effect.)      Create the new transformation that is defined by . Are and the same transformation? Explain how you know.    "
+},
+{
+  "id": "homework-34",
+  "level": "1",
+  "url": "homework-34.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 18 - Written Homework - MTH 204",
+  "body": " Problem 18 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .     "
+},
+{
+  "id": "homework-34-3",
+  "level": "2",
+  "url": "homework-34.html#homework-34-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose that is the matrix transformation defined by the matrix and is the matrix transformation defined by where      If what are the values of and ? What values of and are appropriate for the transformation ?      Evaluate .      Evaluate .      Evaluate .      Find the matrix that defines the matrix transformation .    "
+},
+{
+  "id": "homework-35",
+  "level": "1",
+  "url": "homework-35.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Problem 19 - Written Homework - MTH 204",
+  "body": " Problem 19 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!    Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)     "
+},
+{
+  "id": "homework-35-3",
+  "level": "2",
+  "url": "homework-35.html#homework-35-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose that is a matrix transformation such that , and we know that      Find the matrix such that and hence determine for       Determine and describe all vectors such that .      True or false: for any in , we can find a solution to the equation . (Be sure to justify your conclusion.)    "
 }
 ]
 
