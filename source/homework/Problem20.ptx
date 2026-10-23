@@ -30,7 +30,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         If <m>A</m> is invertible, then the columns of <m>A</m>
@@ -39,7 +39,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in"> 
                 <statement>
                     <p>
                         If <m>A</m> is a square matrix whose diagonal entries
@@ -48,7 +48,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         If <m>A</m> is a square matrix whose diagonal entries
@@ -57,7 +57,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         If <m>A</m> is an invertible <m>n\times n</m> matrix,
@@ -67,7 +67,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         If <m>A</m> is invertible, then there is a nonzero
@@ -77,7 +77,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         If <m>A</m> is an <m>n\times n</m> matrix and the
@@ -88,7 +88,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Using the figure, determine
@@ -96,7 +96,7 @@
                         <m>\{ {\vec b} \}_{\mathcal{B}}</m>, and
                         <m>\{ {\vec c} \}_{\mathcal{B}}</m> for the vectors
                         <md>
-                            {\vec a} = \left[\begin{array}{c}-6 \\ 0\end{array}\right], \ {\vec b} = \left[\begin{array}{c}0 \\ -6\end{array}\right], \ {\vec c} = \left[\begin{array}{c}4 \\ 5\end{array}\right].
+                            {\vec a} = \left[\begin{array}{r}-6 \\ 0\end{array}\right], \ {\vec b} = \left[\begin{array}{r}0 \\ -6\end{array}\right], \ {\vec c} = \left[\begin{array}{r}4 \\ 5\end{array}\right].
                         </md>
                         Again, write at least one sentence that explains how you
                         determined your results.
