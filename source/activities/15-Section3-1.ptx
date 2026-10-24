@@ -62,6 +62,28 @@
                     What is the product <m>AB</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <m>AB = I_3</m> (the <m>3\times 3</m> identity matrix).
+                </p>
+                <sage>
+                    <input>
+A = matrix(3,3,[1,0,2,
+                2,2,1,
+                1,1,1])
+B = matrix(3,3,[1,2,-4,
+                -1,-1,3,
+                0,-1,2])
+A*B
+                    </input>
+                    <output>
+[1 0 0]
+[0 1 0]
+[0 0 1]
+                    </output>
+                </sage>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -71,6 +93,13 @@
                     If so, what is its inverse <m>A^{-1}</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <m>A</m> is invertible, and its inverse is
+                    <m>{A^{-1} = B}</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -81,6 +110,32 @@
                     If so, what is its inverse <m>B^{-1}</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <m>BA = I_3</m> (the <m>3\times 3</m> identity matrix).
+                </p>
+                <sage>
+                    <input>
+A = matrix(3,3,[1,0,2,
+                2,2,1,
+                1,1,1])
+B = matrix(3,3,[1,2,-4,
+                -1,-1,3,
+                0,-1,2])
+B*A
+                    </input>
+                    <output>
+[1 0 0]
+[0 1 0]
+[0 0 1]
+                    </output>
+                </sage>
+
+                <p>
+                    <m>B</m> is invertible and its inverse is <m>{B^{-1}=A}</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -91,6 +146,29 @@
     \threevec{4}{-1}{4}</m> using <m>A^{-1}</m>.
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    If we multiply both sides by <m>B</m>, which is the inverse
+                    of <m>A</m>, then we get
+                    <md>
+                        BA\xvec = B\threevec{4}{-1}{4} \\
+                    \xvec = \threevec{-14}{9}{9}
+                    </md>
+                </p>
+                <sage>
+                    <input>
+B = matrix(3,3,[1,2,-4,
+                -1,-1,3,
+                0,-1,2])
+x = vector([4,-1,4])
+B*x
+                    </input>
+                    <output>
+(-14,9,9)
+                    </output>
+                </sage>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -104,6 +182,14 @@
                     talking about inverses?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    The order doesn't matter when talking about inverses,
+                    because both multiplications equal the same size identity
+                    matrix.
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -153,6 +239,29 @@
                     <m>A\bvec_1 = \twovec10</m> to find <m>\bvec_1</m>.
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rr|r} 
+                    1 \amp 2 \amp 1 \\
+                    1 \amp 3 \amp 0 \\
+                  \end{array}\right] \amp \xrightarrow{(R2-R1) \to R2} \amp \left[\begin{array}{rr|r} 
+                    1 \amp 2 \amp 1 \\
+                    0 \amp 1 \amp -1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1-2R2) \to R1} \amp \left[\begin{array}{rr|r} 
+                    1 \amp 0 \amp 3 \\
+                    0 \amp 1 \amp -1 \\
+                  \end{array}\right], 
+                  </mrow>
+                    </md>
+                    which yields the solution <m>{\bvec_1 = \twovec{3}{-1}.}</m>
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -162,6 +271,29 @@
                     <m>A\bvec_2 = \twovec01</m> to find <m>\bvec_2</m>.
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rr|r} 
+                    1 \amp 2 \amp 0 \\
+                    1 \amp 3 \amp 1 \\
+                  \end{array}\right] \amp \xrightarrow{(R2-R1) \to R2} \amp \left[\begin{array}{rr|r} 
+                    1 \amp 2 \amp 0 \\
+                    0 \amp 1 \amp 1 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1-2R2) \to R1} \amp \left[\begin{array}{rr|r} 
+                    1 \amp 0 \amp -2 \\
+                    0 \amp 1 \amp 1 \\
+                  \end{array}\right], 
+                  </mrow>
+                    </md>
+                    which yields the solution <m>{\bvec_2 = \twovec{-2}{1}.}</m>
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -172,6 +304,29 @@
                     (Can multiply with Sage.)
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <m>B = \left[\begin{array}{rr}3 \amp -2 \\ -1 \amp 1 \end{array}\right].</m>
+                </p>
+
+                <p>
+                    Yes, it is true that <m>{AB = I_2.}</m>
+                </p>
+                <sage>
+                    <input>
+A = matrix(2,2,[1,2,
+                1,3])
+B = matrix(2,2,[3,-2,
+                -1,1])
+A*B
+                    </input>
+                    <output>
+[1 0]
+[0 1]
+                    </output>
+                </sage>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -181,6 +336,19 @@
                     If so, what is <m>A^{-1}</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    Yes, <m>A</m> is invertible since it row reduces to the
+                    identity matrix.
+                    This is because there is a pivot in every row and every
+                    column.
+                    We also have a <m>B</m> matrix above such that
+                    <m>AB = I_2</m>.
+                    In this case,
+                    <m>A^{-1} = B = \left[\begin{array}{rr}3 \amp -2 \\ -1 \amp 1 \end{array}\right]</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -190,15 +358,55 @@
                     to apply this process to find <m>C^{-1}</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rr|r} 
+                    -2 \amp 1 \amp 1 \\
+                    4 \amp -2 \amp 0 \\
+                  \end{array}\right] \amp \xrightarrow{(R2+2R1) \to R2} \amp \left[\begin{array}{rr|r} 
+                    -2 \amp 1 \amp 1 \\
+                    0 \amp 0 \amp 2 \\
+                  \end{array}\right],
+                  </mrow>
+                    </md>
+                    which has no solution!
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
             <statement>
                 <p>
                     Let's go back to <m>A = \mattwo1213</m>.
-                    Solve <m>Ax = \twovec14</m> using Gaussian Elimination.
+                    Solve <m>A\xvec = \twovec14</m> using Gaussian Elimination.
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <md>
+                        <mrow>
+                  \left[\begin{array}{rr|r} 
+                    1 \amp 2 \amp 1 \\
+                    1 \amp 3 \amp 4 \\
+                  \end{array}\right] \amp \xrightarrow{(R2-R1) \to R2} \amp \left[\begin{array}{rr|r} 
+                    1 \amp 2 \amp 1 \\
+                    0 \amp 1 \amp 3 \\
+                  \end{array}\right]
+                  </mrow>
+                        <mrow>
+                  \amp \xrightarrow{(R1-2R2) \to R1} \amp \left[\begin{array}{rr|r} 
+                    1 \amp 0 \amp -5 \\
+                    0 \amp 1 \amp 3 \\
+                  \end{array}\right], 
+                  </mrow>
+                    </md>
+                    which yields the solution <m>{\xvec = \twovec{-5}{3}.}</m>
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -207,18 +415,42 @@
                     Use the matrix <m>B</m> you found above and find the product
                     <m>B\twovec14</m>.
                     What does this have to do with the solution to the equation
-                    <m>Ax = \twovec14</m>?
+                    <m>A\xvec = \twovec14</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    <m>{B\twovec14 = 1\twovec{3}{-1} + 4\twovec{-2}{1} = \twovec{-5}{3}.}</m>
+                    This is the same as the solution to the equation
+                    <m>A\xvec = \twovec14</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
             <statement>
                 <p>
                     Use the matrix <m>B</m> to solve the equation
-                    <m>Ax = \twovec3{14}</m>
+                    <m>A\xvec = \twovec3{14}.</m>
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    To do this, we can multiply both sides of the equation by
+                    <m>B</m> giving <m>{BA\xvec = B\twovec3{14}.}</m> However,
+                    <m>BA = I</m>, so this yields
+                    <m>{\xvec = B\twovec3{14}.}</m>
+                </p>
+
+                <p>
+                    Therefore, the solution to <m>A\xvec = \twovec3{14}</m> is
+                    <md>
+                        \xvec = B\twovec3{14} = 3\twovec{3}{-1} + 14\twovec{-2}{1} = \twovec{-19}{11}.
+                    </md>
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -227,9 +459,9 @@
             <p>
                 Suppose <m>A</m> is an <m>n\times n</m> matrix.
                 We've seen that, if <m>A</m> is invertible with inverse
-                <m>B</m>, then <m>A\xvec = \bvec</m> has the solution
-                <m>\xvec = B\bvec</m>.
-                This means that the equation <m>A\xvec = \bvec</m> is consistent
+                <m>B</m>, then <m>{A\xvec = \bvec}</m> has the solution
+                <m>{\xvec = B\bvec}</m>.
+                This means that the equation <m>{A\xvec = \bvec}</m> is consistent
                 for every vector <m>\bvec</m>.
             </p>
         </introduction>
@@ -241,6 +473,16 @@
                     <m>A</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    The span of the columns of <m>A</m> is all of
+                    <m>\mathbb{R}^n</m> since for every <m>\bvec</m> there is a
+                    solution to <m>A\xvec = \bvec</m>, which means that for
+                    every <m>\bvec</m> there is a linear combination of the
+                    columns of <m>A</m> that gives <m>\bvec</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -249,6 +491,13 @@
                     What does this imply about the pivot positions of <m>A</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    The system is always consistent, so there is a pivot in
+                    every row!
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -259,6 +508,16 @@
                     row echelon form of <m>A</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    We already know that there is a pivot in every row from
+                    above, so because the matrix is square, there must also be a
+                    pivot in every column.
+                    Therefore, the reduced row echelon form of <m>A</m> is the
+                    identity matrix of size <m>{n\times n}</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -268,6 +527,13 @@
                     the columns of <m>A</m>?
                 </p>
             </statement>
+
+            <solution component="15-solutions">
+                <p>
+                    Since there is a pivot in every column, the columns of
+                    <m>A</m> are linearly independent.
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -276,16 +542,29 @@
             <p>
                 Take
                 <md>
-                    A=\begin{bmatrix} 1 \amp 2 \\ 1 \amp 3 \\ \end{bmatrix},~~~   C = \begin{bmatrix}
+                    A=\begin{bmatrix} 1 \amp 2 \\ 1 \amp 3 \\ \end{bmatrix},~~~   C = \left[\begin{array}{rr}
     -2 \amp 1 \\
     4 \amp -2 \\
-  \end{bmatrix},~~~
+  \end{array}\right],~~~
                 </md>
                 Find the reduced row echelon form of these matrices.
                 What does this tell you about the invertibility of these two
                 matrices?
             </p>
         </statement>
+
+        <solution component="15-solutions">
+            <p>
+                <m>A</m> row reduces to the <m>2\times 2</m> identity matrix and
+                therefore, <m>A</m> is invertible.
+            </p>
+
+            <p>
+                <m>C</m> row reduces to the matrix
+                <m>\begin{bmatrix} 1 \amp -\frac{1}{2} \\ 0 \amp 0 \\ \end{bmatrix}</m>.
+                Thus, <m>C</m> is not invertible.
+            </p>
+        </solution>
     </exercise>
 
     <outcomes>

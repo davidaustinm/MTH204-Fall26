@@ -4,71 +4,130 @@
     <title>Section 3.1 - Invertibility - Part 2</title>
 
     <page>
-        
-   
-    <exercise workspace="1in" xml:id="sec3-1-2-matrixA">
-        <introduction>
-            <p>
-                Suppose
-                <md>
-                    A = \left[\begin{array}{rrr} 1\amp0\amp-2\\ 1\amp-1\amp0 \\ -1\amp2\amp1  \end{array}\right].
-                </md>
-            </p>
-
-            <p>
-                If <m>B =  \left[\bvec_1 \ \bvec_2 \  \bvec_3 \right]</m> is the
-                inverse of <m>A</m>, we could solve the following three
-                equations separately to find the columns of <m>B</m>:
-                <md>
-                    A\bvec_1 = \evec_1=\threevec100, \ \ \  A\bvec_2 = \evec_2=\threevec010, \ \ \ A\bvec_3 = \evec_3=\threevec001.
-                </md>
-                But, we may as well solve them at the same time.
-            </p>
-        </introduction>
-
-        <task workspace="2in">
-            <statement>
+        <exercise workspace="1in" xml:id="sec3-1-2-matrixA">
+            <introduction>
                 <p>
-                    To do this, build the augmented matrix
+                    Suppose
                     <md>
-                        \left[
+                        A = \left[\begin{array}{rrr} 1\amp0\amp-2\\ 1\amp-1\amp0 \\ -1\amp2\amp1  \end{array}\right].
+                    </md>
+                </p>
+
+                <p>
+                    If <m>B =  \left[\bvec_1 \ \bvec_2 \  \bvec_3 \right]</m> is
+                    the inverse of <m>A</m>, we could solve the following three
+                    equations separately to find the columns of <m>B</m>:
+                    <md>
+                        A\bvec_1 = \evec_1=\threevec100, \ \ \  A\bvec_2 = \evec_2=\threevec010, \ \ \ A\bvec_3 = \evec_3=\threevec001.
+                    </md>
+                    But, we may as well solve them at the same time.
+                </p>
+            </introduction>
+
+            <task workspace="2in">
+                <statement>
+                    <p>
+                        To do this, build the augmented matrix
+                        <md>
+                            \left[
       \begin{array}{c|c}
         A \amp I \\
       \end{array}
     \right]
-                    </md>
-                    and find the reduced row echelon form.
-                    How does this produce <m>B =
+                        </md>
+                        and find the reduced row echelon form.
+                        How does this produce <m>B =
     A^{-1}</m>?
-                    Note: In Sage, you may create the <m>3\times3</m> identity
-                    matrix by <c>identity_matrix(3)</c>.
-                    You may augment <m>A</m> using
-                    <c>A.augment(identity_matrix(3))</c>
-                </p>
-            </statement>
-        </task>
+                        Note: In Sage, you may create the <m>3\times3</m>
+                        identity matrix by <c>identity_matrix(3)</c>.
+                        You may augment <m>A</m> using
+                        <c>A.augment(identity_matrix(3))</c>
+                    </p>
+                </statement>
 
-        <task workspace="1in">
-            <statement>
+                <solution component="16-solutions">
+                    <p>
+                        For each of the individual systems of the three
+                        equations above, we would use the same row operations
+                        every time.
+                        If we augment with the identity matrix, the first column
+                        corresponds to solving the system
+                        <m>A\bvec_1 = \evec_1</m>, the second column to solving
+                        the system <m>A\bvec_2 = \evec_2</m>, and the third with
+                        <m>A\bvec_3 = \evec_3</m>.
+                        Since all use the same row operations, we can solve them
+                        together, where the results augmented matrix will hold
+                        the three columns of <m>B</m>, namely,
+                        <m>\left[\bvec_1 \ \bvec_2 \  \bvec_3 \right].</m>
+                        Consider the Sage code and output below.
+                    </p>
+                    <sage>
+                        <input>
+A = matrix(3,3,[1,0,-2,
+                1,-1,0,
+                -1,2,1])
+C = A.augment(identity_matrix(3))
+C.rref()
+                        </input>
+                        <output>
+[1 0 0  1/3 4/3 2/3]
+[0 1 0  1/3 1/3 2/3]
+[0 0 1 -1/3 2/3 1/3]
+                        </output>
+                    </sage>
+
+                    <p>
+                        Therefore,
+                        <m>A^{-1} = \begin{bmatrix}
+                    \frac{1}{3} \amp \frac{4}{3} \amp \frac{2}{3} \\
+                    \frac{1}{3} \amp \frac{1}{3} \amp \frac{2}{3} \\
+                    -\frac{1}{3} \amp \frac{2}{3} \amp \frac{1}{3} \\
+                    \end{bmatrix}.
+                    </m>
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Use <m>B= A^{-1}</m> to solve the equation
+                        <m>A\xvec = \threevec723</m>.
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        Multiply both sides by <m>B</m> such that
+                        <m>{\xvec = B\threevec{7}{2}{3} = 7\threevec{\frac{1}{3}}{\frac{1}{3}}{-\frac{1}{3}} + 2\threevec{\frac{4}{3}}{\frac{1}{3}}{\frac{2}{3}} + 3\threevec{\frac{2}{3}}{\frac{2}{3}}{\frac{1}{3}} = \threevec{7}{5}{0}}</m>.
+                    </p>
+                    <sage>
+                        <input>
+A = matrix(3,3,[1,0,-2,
+                1,-1,0,
+                -1,2,1])
+C = A.augment(identity_matrix(3))
+D = C.rref()
+B = D.matrix_from_columns([3,4,5]) # takes the columns corresponding to the inverse
+x = vector([7,2,3])
+B*x
+                        </input>
+                        <output>
+(7, 5, 0)
+                        </output>
+                    </sage>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <introduction>
                 <p>
-                    Use <m>B= A^{-1}</m> to solve the equation
-                    <m>A\xvec = \threevec723</m>.
-                </p>
-            </statement>
-        </task>
-    </exercise>
-
-     </page>
-
-     <page>
-    
-
-    <exercise>
-        <introduction>
-            <p>
-                Consider the matrix
-                <md>
-                    B =
+                    Consider the matrix
+                    <md>
+                        B =
   \left[
     \begin{array}{rrr}
       -3 \amp 2 \amp -2 \\
@@ -76,111 +135,280 @@
       1 \amp 2 \amp -2 \\
     \end{array}
   \right].
-                </md>
-                Use Sage for this question!
-            </p>
-        </introduction>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Explain why the matrix <m>B</m> is invertible.
-                    (Think about row reducing.)
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-         
-            <statement>
-                <p>
-                    Find the inverse <m>B^{-1}</m>.
-                    Note: In Sage, you may find the inverse of a matrix <c>B</c>
-                    using <c>B.inverse()</c> or
-                    <c>B^(-1)</c>.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Using <m>A</m> from <xref ref="sec3-1-2-matrixA"/> and <m>B</m> from this
-                    problem, is <m>AB</m> invertible?
-                    If so, what is its inverse?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Find <m>A^{-1}B^{-1}</m> and <m>B^{-1}A^{-1}</m>.
-                    Which one is the same as <m>(AB)^{-1}</m>?
-                </p>
-            </statement>
-        </task>
-    </exercise>
-
-         </page>
-
-     <page>
-
-    <exercise workspace="1.5in">
-        <introduction>
-            <p>
-                Suppose <m>A</m> and <m>B</m> are invertible <m>n\times n</m>
-                matrices.
-            </p>
-        </introduction>
-
-        <task workspace="1.5in">
-            <statement>
-                <p>
-                    Explain why <m>(AB)^{-1} = B^{-1}A^{-1}</m> by simplifying
-                    <md>
-                        (AB)(B^{-1}A^{-1})
                     </md>
+                    Use Sage for this question!
                 </p>
-            </statement>
-        </task>
+            </introduction>
 
-        <task workspace="1in">
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Explain why the matrix <m>B</m> is invertible.
+                        (Think about row reducing.)
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        <m>B</m> is invertible since it row reduces to the
+                        identity matrix.
+                    </p>
+                    <sage>
+                        <input>
+B = matrix(3,3,[-3, 2, -2,
+                1, 0, 3,
+                1, 2, -2])
+B.rref()
+                        </input>
+                        <output>
+[1 0 0]
+[0 1 0]
+[0 0 1]
+                        </output>
+                    </sage>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Find the inverse <m>B^{-1}</m>.
+                        Note: In Sage, you may find the inverse of a matrix
+                        <c>B</c> using <c>B.inverse()</c> or <c>B^(-1)</c>.
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        The inverse is
+                        <m>B^{-1} = \begin{bmatrix}
+                    -\frac{1}{4} \amp 0 \amp \frac{1}{4} \\
+                    \frac{5}{24} \amp \frac{1}{3} \amp \frac{7}{24} \\
+                    \frac{1}{12} \amp \frac{1}{3} \amp -\frac{1}{12} \\
+                    \end{bmatrix}.</m>
+                    </p>
+                    <sage>
+                        <input>
+B = matrix(3,3,[-3, 2, -2,
+                1, 0, 3,
+                1, 2, -2])
+B.inverse()
+                        </input>
+                        <output>
+[-1/4    0   1/4]
+[5/24  1/3  7/24]
+[1/12  1/3 -1/12]
+                        </output>
+                    </sage>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Using <m>A</m> from <xref ref="sec3-1-2-matrixA"/> and
+                        <m>B</m> from this problem, is <m>AB</m> invertible?
+                        If so, what is its inverse?
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        Yes, the matrix <m>AB</m> row reduces to <m>I_3</m>, so
+                        <m>AB</m> is invertible.
+                        The inverse is
+                        <m>(AB)^{-1} = \begin{bmatrix}
+                    -\frac{1}{6} \amp -\frac{1}{6} \amp -\frac{1}{12} \\
+                    \frac{1}{12} \amp \frac{7}{12} \amp \frac{11}{24} \\
+                    \frac{1}{6} \amp \frac{1}{6} \amp \frac{1}{4} \\
+                    \end{bmatrix}.</m>
+                        We can find this using Sage - see below.
+                    </p>
+                    <sage>
+                        <input>
+A = matrix(3,3,[1,0,-2,
+                1,-1,0,
+                -1,2,1])
+B = matrix(3,3,[-3, 2, -2,
+                1, 0, 3,
+                1, 2, -2])
+B.inverse()
+                        </input>
+                        <output>
+[-1/6  -1/6   -1/12]
+[1/12  7/12   11/24]
+[ 1/6   1/6     1/4]
+                        </output>
+                    </sage>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Find <m>A^{-1}B^{-1}</m> and <m>B^{-1}A^{-1}</m>.
+                        Which one is the same as <m>(AB)^{-1}</m>?
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        Using <m>B^{-1}</m> found above and <m>A^{-1}</m> found
+                        in <xref ref="sec3-1-2-matrixA"/>, we have that
+                        <m>A^{-1}B^{-1} = \begin{bmatrix} 
+                    \frac{1}{4} \amp \frac{2}{3} \amp \frac{5}{12} \\
+                    \frac{1}{24} \amp \frac{1}{3} \amp \frac{1}{8} \\
+                    \frac{1}{4} \amp \frac{1}{3} \amp \frac{1}{12} \\
+                     \end{bmatrix}.</m>
+                        See below for confirmation using Sage.
+                    </p>
+                    <sage>
+                        <input>
+A = matrix(3,3,[1,0,-2,
+                1,-1,0,
+                -1,2,1])
+B = matrix(3,3,[-3, 2, -2,
+                1, 0, 3,
+                1, 2, -2])
+print(A.inverse()*B.inverse())
+                        </input>
+                        <output>
+[ 1/4  2/3  5/12]
+[1/24  1/3   1/8]
+[ 1/4  1/3  1/12]
+                        </output>
+                    </sage>
+
+                    <p>
+                        Secondly, we have that
+                        <m>B^{-1}A^{-1} = \begin{bmatrix} 
+                    -\frac{1}{6} \amp -\frac{1}{6} \amp -\frac{1}{12} \\
+                                        \frac{1}{12} \amp \frac{7}{12} \amp \frac{11}{24} \\
+                                        \frac{1}{6} \amp \frac{1}{6} \amp \frac{1}{4} \\
+                     \end{bmatrix}.</m>
+                        See below for confirmation using Sage.
+                    </p>
+                    <sage>
+                        <input>
+A = matrix(3,3,[1,0,-2,
+                1,-1,0,
+                -1,2,1])
+B = matrix(3,3,[-3, 2, -2,
+                1, 0, 3,
+                1, 2, -2])
+print(B.inverse()*A.inverse())
+                        </input>
+                        <output>
+[-1/6  -1/6   -1/12]
+[1/12  7/12   11/24]
+[ 1/6   1/6     1/4]
+                        </output>
+                    </sage>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1.5in">
+            <introduction>
+                <p>
+                    Suppose <m>A</m> and <m>B</m> are invertible
+                    <m>n\times n</m> matrices.
+                </p>
+            </introduction>
+
+            <task workspace="1.5in">
+                <statement>
+                    <p>
+                        Explain why <m>(AB)^{-1} = B^{-1}A^{-1}</m> by
+                        simplifying
+                        <md>
+                            (AB)(B^{-1}A^{-1})
+                        </md>
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        <md>
+                            <mrow>
+                    (AB)(B^{-1}A^{-1}) \amp = \amp A(BB^{-1})A^{-1} 
+                    </mrow>
+                            <mrow>
+                    \amp = \amp A(I_n)A^{-1} 
+                    </mrow>
+                            <mrow>
+                    \amp = \amp AA^{-1} 
+                    </mrow>
+                            <mrow>
+                    \amp = \amp I_n.
+                    </mrow>
+                        </md>
+                        This means that <m>AB</m> and <m>B^{-1}A^{-1}</m> are
+                        inverses of each other.
+                        Thus, <m>{(AB)^{-1} = B^{-1}A^{-1}.}</m>
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Explain why the product of two invertible
+                        <m>n\times n</m> matrices is always invertible.
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        Since we know that <m>A</m> and <m>B</m> are invertible,
+                        the inverses <m>A^{-1}</m> and <m>B^{-1}</m> must exist.
+                        Therefore, their product <m>B^{-1}A^{-1}</m> also
+                        exists.
+                        Since <m>{B^{-1}A^{-1} = (AB)^{-1}}</m>, it must be true
+                        that the inverse of the product of two invertible
+                        matrices always exists.
+                        Thus, this product is always invertible.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+
+        <exercise workspace="1.5in">
             <statement>
                 <p>
-                    Explain why the product of two invertible <m>n\times n</m>
-                    matrices is always invertible.
+                    Suppose that <m>A</m> is a <m>7\times7</m> matrix whose
+                    columns are linearly independent.
+                    Can you guarantee that <m>A</m> is invertible?
+                    Explain.
                 </p>
             </statement>
-        </task>
-    </exercise>
 
-    <exercise workspace="1.5in">
-        <statement>
-            <p>
-                Suppose that <m>A</m> is a <m>7\times7</m> matrix whose columns
-                are linearly independent.
-                Can you guarantee that <m>A</m> is invertible?
-                Explain.
-            </p>
-        </statement>
-    </exercise>
+            <solution component="16-solutions">
+                <p>
+                    Yes, there is a pivot in every column since they are
+                    independent and <m>A</m> is square, so there is also a pivot
+                    in every row.
+                    This means that <m>A</m> row reduces to <m>I_7</m> and is
+                    thus invertible.
+                </p>
+            </solution>
+        </exercise>
+    </page>
 
-         </page>
-
-     <page>
-
-    <exercise>
-        <introduction>
-            <p>
-                <em>If time:</em> A matrix <m>A</m> is lower triangular if all
-                its entries above the diagonal are zero.
-                A matrix <m>A</m> is upper triangular if all of its entries
-                below the diagonal are zero.
-                E.g., <m>L</m> is lower triangular and <m>U</m> is upper
-                triangular:
-                <md>
-                    L = \begin{bmatrix}
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    <em>If time:</em> A matrix <m>A</m> is lower triangular if
+                    all its entries above the diagonal are zero.
+                    A matrix <m>A</m> is upper triangular if all of its entries
+                    below the diagonal are zero.
+                    E.g., <m>L</m> is lower triangular and <m>U</m> is upper
+                    triangular:
+                    <md>
+                        L = \begin{bmatrix}
 	* \amp0 \amp0\amp0\\
 	* \amp* \amp0 \amp0\\
 	* \amp* \amp* \amp0\\
@@ -192,32 +420,60 @@
 	0 \amp0 \amp* \amp*\\
 	0 \amp0 \amp0 \amp*
 	\end{bmatrix}.
-                </md>
-            </p>
-        </introduction>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Which of the two triangular matrices below are invertible?
-                    <md>
-                        \left[\begin{array}{ccc}1\amp0\amp7\\0\amp-2\amp5\\0\amp0\amp-9  \end{array}\right], ~~~  \left[\begin{array}{ccc} 1\amp0\amp7\\ 0\amp-2\amp5\\0\amp0\amp0 \end{array}\right]
                     </md>
                 </p>
-            </statement>
-        </task>
+            </introduction>
 
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Without doing any row reduction, can you figure out how to
-                    tell if a lower or upper triangular matrix is invertible?
-                </p>
-            </statement>
-        </task>
-    </exercise>
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Which of the two triangular matrices below are
+                        invertible?
+                        <md>
+                            \left[\begin{array}{ccc}1\amp0\amp7\\0\amp-2\amp5\\0\amp0\amp-9  \end{array}\right], ~~~  \left[\begin{array}{ccc} 1\amp0\amp7\\ 0\amp-2\amp5\\0\amp0\amp0 \end{array}\right]
+                        </md>
+                    </p>
+                </statement>
 
-         </page>
+                <solution component="16-solutions">
+                    <p>
+                        <m>\left[\begin{array}{ccc}1\amp0\amp7\\0\amp-2\amp5\\0\amp0\amp-9  \end{array}\right]</m>
+                        is invertible because there is a pivot along the main
+                        diagonal such that after continued Gaussian Elimination
+                        the reduced row echelon form would be <m>I_3</m>.
+                    </p>
+
+                    <p>
+                        <m>\left[\begin{array}{ccc} 1\amp0\amp7\\ 0\amp-2\amp5\\0\amp0\amp0 \end{array}\right]</m>
+                        is not invertible because there is no pivot in the last
+                        column.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Without doing any row reduction, can you figure out how
+                        to tell if a square lower or upper triangular matrix is
+                        invertible?
+                    </p>
+                </statement>
+
+                <solution component="16-solutions">
+                    <p>
+                        There will be a pivot in every column and row if all the
+                        entries on the diagonal are nonzero.
+                        This is true for both square lower and upper triangular
+                        matrices.
+                        Therefore, to be invertible the square lower or upper
+                        triangular matrix must have all nonzero entries on the
+                        diagonal.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+    </page>
 
     <outcomes>
         <introduction>
@@ -229,7 +485,6 @@
         <ul>
             <!-- <li><p>Given a matrix, how can one use row reduction to tell if the matrix is invertible?</p></li>
       <li><p>How can we use the inverse of a matrix <m>A</m> to solve <m>Ax=b</m>.</p></li> -->
-            
             <li>
                 <p>
                     How do we find the inverse of a matrix using row reduction?
@@ -244,13 +499,16 @@
 
             <li>
                 <p>
-                    How can we determine if a matrix is invertible using its reduced row echelon form?
+                    How can we determine if a matrix is invertible using its
+                    reduced row echelon form?
                 </p>
             </li>
+
             <li>
-              <p>
-                What is <m>(AB)^{-1}</m> in terms of <m>A^{-1}</m> and <m>B^{-1}</m>?
-              </p>
+                <p>
+                    What is <m>(AB)^{-1}</m> in terms of <m>A^{-1}</m> and
+                    <m>B^{-1}</m>?
+                </p>
             </li>
         </ul>
     </outcomes>
