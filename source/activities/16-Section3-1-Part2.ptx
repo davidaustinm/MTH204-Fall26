@@ -181,11 +181,11 @@ B.rref()
                 <solution component="16-solutions">
                     <p>
                         The inverse is
-                        <m>B^{-1} = \begin{bmatrix}
+                        <m>B^{-1} = \left[\begin{array}{rrr}
                     -\frac{1}{4} \amp 0 \amp \frac{1}{4} \\
                     \frac{5}{24} \amp \frac{1}{3} \amp \frac{7}{24} \\
                     \frac{1}{12} \amp \frac{1}{3} \amp -\frac{1}{12} \\
-                    \end{bmatrix}.</m>
+                    \end{array}\right].</m>
                     </p>
                     <sage>
                         <input>
@@ -217,11 +217,11 @@ B.inverse()
                         Yes, the matrix <m>AB</m> row reduces to <m>I_3</m>, so
                         <m>AB</m> is invertible.
                         The inverse is
-                        <m>(AB)^{-1} = \begin{bmatrix}
+                        <m>(AB)^{-1} = \left[\begin{array}{rrr}
                     -\frac{1}{6} \amp -\frac{1}{6} \amp -\frac{1}{12} \\
                     \frac{1}{12} \amp \frac{7}{12} \amp \frac{11}{24} \\
                     \frac{1}{6} \amp \frac{1}{6} \amp \frac{1}{4} \\
-                    \end{bmatrix}.</m>
+                    \end{array}\right].</m>
                         We can find this using Sage - see below.
                     </p>
                     <sage>
@@ -232,7 +232,8 @@ A = matrix(3,3,[1,0,-2,
 B = matrix(3,3,[-3, 2, -2,
                 1, 0, 3,
                 1, 2, -2])
-B.inverse()
+D = A*B
+D.inverse()
                         </input>
                         <output>
 [-1/6  -1/6   -1/12]

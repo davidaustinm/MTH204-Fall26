@@ -346,7 +346,7 @@ A*B
                     We also have a <m>B</m> matrix above such that
                     <m>AB = I_2</m>.
                     In this case,
-                    <m>A^{-1} = B = \left[\begin{array}{rr}3 \amp -2 \\ -1 \amp 1 \end{array}\right]</m>.
+                    <m>{A^{-1} = B = \left[\begin{array}{rr}3 \amp -2 \\ -1 \amp 1 \end{array}\right].}</m>
                 </p>
             </solution>
         </task>
@@ -561,7 +561,7 @@ A*B
 
             <p>
                 <m>C</m> row reduces to the matrix
-                <m>\begin{bmatrix} 1 \amp -\frac{1}{2} \\ 0 \amp 0 \\ \end{bmatrix}</m>.
+                <m>\left[\begin{array}{r} 1 \amp -\frac{1}{2} \\ 0 \amp 0 \\ \end{array}\right]</m>.
                 Thus, <m>C</m> is not invertible.
             </p>
         </solution>
