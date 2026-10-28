@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 21 - Written Homework - MTH 204</title>
+
+<p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+        <!-- Question 20, Section 3.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    Determine whether the following statements are true or false
+                    and explain your reasoning.
+                    If you use a proposition from the text, please refer to that
+                    clearly by number and by a summary of what the proposition
+                    tells you.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        If <m>A</m> is invertible, then the columns of <m>A</m>
+                        are linearly independent.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in"> 
+                <statement>
+                    <p>
+                        If <m>A</m> is a square matrix whose diagonal entries
+                        are all nonzero, then <m>A</m> is invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        If <m>A</m> is a square matrix whose diagonal entries
+                        are all nonzero, then <m>A</m> is invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        If <m>A</m> is an invertible <m>n\times n</m> matrix,
+                        then span of the columns of <m>A</m> is
+                        <m>\mathbb{R}^{n}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        If <m>A</m> is invertible, then there is a nonzero
+                        solution to the homogeneous equation
+                        <m>A{\vec x} = {\vec 0}</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        If <m>A</m> is an <m>n\times n</m> matrix and the
+                        equation <m>A{\vec x}={\vec b}</m> has a solution for
+                        every vector <m>{\vec b}</m>, then <m>A</m> is
+                        invertible.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Using the figure, determine
+                        <m>\{ {\vec a} \}_{\mathcal{B}}</m>,
+                        <m>\{ {\vec b} \}_{\mathcal{B}}</m>, and
+                        <m>\{ {\vec c} \}_{\mathcal{B}}</m> for the vectors
+                        <md>
+                            {\vec a} = \left[\begin{array}{r}-6 \\ 0\end{array}\right], \ {\vec b} = \left[\begin{array}{r}0 \\ -6\end{array}\right], \ {\vec c} = \left[\begin{array}{r}4 \\ 5\end{array}\right].
+                        </md>
+                        Again, write at least one sentence that explains how you
+                        determined your results.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+</worksheet>

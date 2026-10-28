@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 20 - Written Homework - MTH 204</title>
+
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
+        <!-- Question 19 Section 2.6/3.1 -->
+        <exercise>
+            <introduction>
+                <p>
+                    This problem asks you to investigate some invertible
+                    matrices whose inverse has a special property.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Explain why the <m>2 \times 2</m> identity matrix,
+                        <m>I_{2}</m>, is invertible and why its inverse is
+                        itself.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="2.5in">
+                <statement>
+                    <p>
+                        Find 2 other <m>2 \times 2</m> matrices <m>B</m> and
+                        <m>C</m> such that <m>A</m>, <m>B</m>, <m>C</m>, and
+                        <m>I_{2}</m> are four different matrices and each matrix
+                        has the property that the matrix is invertible and its
+                        inverse is itself.
+                        Write to explain your thinking for how you found
+                        <m>B</m> and <m>C</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="2in">
+                <statement>
+                    <p>
+                        Give an example, with justification, of an invertible
+                        <m>3 \times 3</m> matrix <m>M</m> such that <m>M</m> is
+                        not <m>I_{3}</m> and <m>M^{-1}= M</m>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+</worksheet>
