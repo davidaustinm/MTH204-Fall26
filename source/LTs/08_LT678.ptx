@@ -3,14 +3,9 @@
 <worksheet component="quiz">
     <title>Learning Target 6,7,8 Quiz - MTH 204</title>
 
-     <page>
-              <p>
-            This quiz covers course learning target #5, #6, and #7.
-            Read all <term>DIRECTIONS</term> carefully.
-            Good luck!
-        </p>
+    <page>
         <p>
-            This quiz covers course learning target #5, #6, and #7.
+            This quiz covers course learning target #6, #7, and #8.
             Read all <term>DIRECTIONS</term> carefully.
             Good luck!
         </p>
@@ -21,26 +16,51 @@
 
             <introduction>
                 <p>
-                    I can determine if a matrix is invertible, find an inverse, and use inverses to solve matrix equations. 
+                    I can determine if a matrix is invertible, find an inverse,
+                    and use inverses to solve matrix equations.
+                </p>
+
+                <p>
+                    Consider the matrix
+                    <md>
+                        A = \begin{bmatrix}1&amp;-1&amp;1 \\ 2&amp;1&amp;0\\ -1&amp;1&amp;1\end{bmatrix}
+                    </md>.
                 </p>
             </introduction>
 
             <task>
                 <statement>
                     <p>
-                      
+                        Explain how you know <m>A</m> is invertible.
+                        (Do not use the commands A.inverse() or A^(-1).)
                     </p>
                 </statement>
             </task>
 
-          
+            <task>
+                <statement>
+                    <p>
+                        Find <m>A^{-1}</m>, using Sage.
+                        Write down the inverse below, as well as the command you
+                        used.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Use your inverse to solve the equation
+                        <m>A \xvec = \threevec{\phantom{-}10}{-2}{-12}</m> and
+                        explain your process.
+                    </p>
+                </statement>
+            </task>
         </exercise>
     </page>
 
-
     <page>
-   <!-- Need to revise the following Learning Target 7 (Attempt 3) -->
-
+        <!-- Need to revise the following Learning Target 7 (Attempt 3) -->
         <exercise workspace="1in">
             <!-- Learning Target 7 (Attempt 3) -->
             <title>Learning Target 7, Last Attempt</title>
@@ -57,10 +77,9 @@
             <task>
                 <statement>
                     <p>
-                        Let <m>T:\mathbb{R}^{2}\to\mathbb{R}^{2}</m> that
-                        reflects vectors across the <m>y</m>-axis.
-                        Find the matrix <m>A</m> such that
-                        <m>T({\xvec}) = A{\xvec}</m>.
+                        Let <m>R:\mathbb{R}^{2}\to\mathbb{R}^{2}</m> that
+                        rotates vectors by <m>90^\circ</m> counterclockwise. Find 
+                        the matrix <m>A</m> that defines <m>T</m>.
                     </p>
                 </statement>
             </task>
@@ -68,8 +87,7 @@
             <task>
                 <statement>
                     <p>
-                        Find <m>T\left( \twovec{3}{4}\right)</m> using your
-                        answer from part (a).
+                       Use your answer from the first part to find <m>R\left(\twovec{-5}{2}\right)</m>.
                     </p>
                 </statement>
             </task>
@@ -79,7 +97,7 @@
                     <p>
                         Let <m>S:\mathbb{R}^{2} \to \mathbb{R}^{2}</m> be
                         defined by <m>S({\xvec}) = B{\xvec}</m>.
-                        Is the matrix representing <m>S\circ T</m> equal to
+                        Is the matrix representing <m>S\circ R</m> equal to
                         <m>AB</m> or <m>BA</m>?
                         Explain.
                     </p>
@@ -109,53 +127,46 @@
                         sure it matches what you want it to represent.</em>
                 </p>
 
-               
+                <p>
+                    Consider the four vectors
+                                        <md>\vvec_{1} = \threevec{\phantom{-}1}{\phantom{-}1}{-1},
+                                        \vvec_{2} = \threevec{\phantom{-}2}{\phantom{-}3}{-4},
+                                        \vvec_{3} = \threevec{\phantom{-}3}{\phantom{-}5}{-7}, \text{ and }
+                                        \vvec_{4} = \threevec{\phantom{-}0}{\phantom{-}1}{\phantom{-}2}</md>.
+                </p>
             </introduction>
 
             <task>
                 <statement>
-               <p>
-                                  
-                                  <m>\{\vvec_{1}, \vvec_{2}, \vvec_{3}\}</m> where
-                                  <m>\vvec_{1} = \begin{bmatrix}1 \\ 2 \\ 3\end{bmatrix}</m>,
-                                  <m>\vvec_{2} = \begin{bmatrix}4 \\ 5 \\ 6\end{bmatrix}</m> and
-                                  <m>\vvec_{3} = \begin{bmatrix}2 \\ 1 \\ 0\end{bmatrix}</m> linearly
-                                  dependent or independent?
-                                  Why?
-                              </p>
+                    <p>
+                        Is the set of four vectors <m>\vvec_{1}</m>, <m>\vvec_{2}</m>, <m>\vvec_{3}</m>,
+                                                and <m>\vvec_{4}</m> linearly independent or linearly dependent?
+                                                Why?
+                    </p>
+                </statement>
+            </task>
 
-                            </statement>
-                        </task>
-                <task>
+            <task>
                 <statement>
-                              <p>
-                                  
-                                  Is the set of vectors
-                                  <m>\{\wvec_{1}, \wvec_{2}, \wvec_{3}\}</m> where
-                                  <m>\wvec_{1} = \begin{bmatrix}0 \\ 1 \\ 5\end{bmatrix}</m>,
-                                  <m>\wvec_{2} = \begin{bmatrix}1 \\ 2 \\ 8\end{bmatrix}</m>, and
-                                  <m>\wvec_{3} = \begin{bmatrix}4 \\ -1 \\ 0\end{bmatrix}</m> linearly
-                                  dependent or linearly independent?
-                                  Why?
-                              </p>
-               
-                                 </statement>
-                        </task>
-                        <task>
-                            <statement>
+                    <p>
+                       What is the largest collection of linearly independent vectors you can find from
+                                               among <m>\vvec_{1}</m>, <m>\vvec_{2}</m>, <m>\vvec_{3}</m>, and
+                                               <m>\vvec_{4}</m>?
+                                               Why?
+                    </p>
+                </statement>
+            </task>
 
-        
-                              <p>
-                                  The set
-                                  <m>\{\vvec_{1}, \vvec_{2}, \vvec_{3}, \wvec_{1}\}</m>
-                                  (using the ones given in #1 and #2) is linearly dependent.
-                                  Show this by writing one of the vectors as a linear combination of the other
-                                  vectors.
-                              </p>
+            <task>
+                <statement>
+                    <p>
+                    Is it possible to write one of <m>\vvec_{1}</m>, <m>\vvec_{2}</m>,
+                                            <m>\vvec_{3}</m>, and <m>\vvec_{4}</m> as a linear combination of two or more of
+                                            the other vectors?
+                                            If yes, state such a linear combination; if not, explain why not.
+                    </p>
                 </statement>
             </task>
         </exercise>
     </page>
-
-    
 </worksheet>
