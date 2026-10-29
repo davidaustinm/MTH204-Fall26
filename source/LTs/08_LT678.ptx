@@ -23,7 +23,7 @@
                 <p>
                     Consider the matrix
                     <md>
-                        A = \begin{bmatrix}1&amp;-1&amp;1 \\ 2&amp;1&amp;0\\ -1&amp;1&amp;1\end{bmatrix}
+                        A = \begin{bmatrix}\phantom{-}1&amp;-1&amp;\phantom{-}1 \\ \phantom{-}2&amp;\phantom{-}1&amp;\phantom{-}0\\ -1&amp;\phantom{-}1&amp;\phantom{-}1\end{bmatrix}
                     </md>.
                 </p>
             </introduction>
@@ -32,7 +32,7 @@
                 <statement>
                     <p>
                         Explain how you know <m>A</m> is invertible.
-                        (Do not use the commands A.inverse() or A^(-1).)
+                        (Do not actually find the inverse or use the inverse commands in Sage on this one.)
                     </p>
                 </statement>
             </task>
@@ -63,7 +63,7 @@
         <!-- Need to revise the following Learning Target 7 (Attempt 3) -->
         <exercise workspace="1in">
             <!-- Learning Target 7 (Attempt 3) -->
-            <title>Learning Target 7, Last Attempt</title>
+            <title>Learning Target 7, Second Attempt</title>
 
             <introduction>
                 <p>
