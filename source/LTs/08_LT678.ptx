@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 6,7,8 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #6, #7, and #8.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise workspace="1in">
+            <!-- Learning Target 8 (Attempt 1) -->
+            <title>Learning Target 8, First Attempt</title>
+
+            <introduction>
+                <p>
+                    I can determine if a matrix is invertible, find an inverse,
+                    and use inverses to solve matrix equations.
+                </p>
+
+                <p>
+                    Consider the matrix
+                    <md>
+                        A = \begin{bmatrix}\phantom{-}1&amp;-1&amp;\phantom{-}1 \\ \phantom{-}2&amp;\phantom{-}1&amp;\phantom{-}0\\ -1&amp;\phantom{-}1&amp;\phantom{-}1\end{bmatrix}
+                    </md>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain how you know <m>A</m> is invertible.
+                        (Do not actually find the inverse or use the inverse commands in Sage on this one.)
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find <m>A^{-1}</m>, using Sage.
+                        Write down the inverse below, as well as the command you
+                        used.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Use your inverse to solve the equation
+                        <m>A \xvec = \threevec{\phantom{-}10}{-2}{-12}</m> and
+                        explain your process.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <!-- Need to revise the following Learning Target 7 (Attempt 3) -->
+        <exercise workspace="1in">
+            <!-- Learning Target 7 (Attempt 3) -->
+            <title>Learning Target 7, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can find the matrix of a linear transformation using
+                    elementary vectors, apply a transformation to a vector or
+                    shape, and compose transformations using matrix
+                    multiplication.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>R:\mathbb{R}^{2}\to\mathbb{R}^{2}</m> that
+                        rotates vectors by <m>90^\circ</m> counterclockwise. Find 
+                        the matrix <m>A</m> that defines <m>T</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                       Use your answer from the first part to find <m>R\left(\twovec{-5}{2}\right)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Let <m>S:\mathbb{R}^{2} \to \mathbb{R}^{2}</m> be
+                        defined by <m>S({\xvec}) = B{\xvec}</m>.
+                        Is the matrix representing <m>S\circ R</m> equal to
+                        <m>AB</m> or <m>BA</m>?
+                        Explain.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <!-- Learning Target 6 (Attempt 2) -->
+            <title>Learning Target 6, Last Attempt</title>
+
+            <introduction>
+                <p>
+                    I can reformulate and answer questions about linearly
+                    dependent or linearly independent vectors using appropriate
+                    computations, and explain the meaning of the results of
+                    computations in the language of linear combinations.
+                </p>
+
+                <p>
+                    <alert><em>Note</em></alert>: In this problem, if you make a
+                    small entry error in Sage, you will likely radically change
+                    the conclusions you make.
+                    <em>Be certain to double check what you enter in Sage to make 
+                        sure it matches what you want it to represent.</em>
+                </p>
+
+                <p>
+                    Consider the four vectors
+                                        <md>\vvec_{1} = \threevec{\phantom{-}1}{\phantom{-}1}{-1},
+                                        \vvec_{2} = \threevec{\phantom{-}2}{\phantom{-}3}{-4},
+                                        \vvec_{3} = \threevec{\phantom{-}3}{\phantom{-}5}{-7}, \text{ and }
+                                        \vvec_{4} = \threevec{\phantom{-}0}{\phantom{-}1}{\phantom{-}2}</md>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Is the set of four vectors <m>\vvec_{1}</m>, <m>\vvec_{2}</m>, <m>\vvec_{3}</m>,
+                                                and <m>\vvec_{4}</m> linearly independent or linearly dependent?
+                                                Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                       What is the largest collection of linearly independent vectors you can find from
+                                               among <m>\vvec_{1}</m>, <m>\vvec_{2}</m>, <m>\vvec_{3}</m>, and
+                                               <m>\vvec_{4}</m>?
+                                               Why?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                    Is it possible to write one of <m>\vvec_{1}</m>, <m>\vvec_{2}</m>,
+                                            <m>\vvec_{3}</m>, and <m>\vvec_{4}</m> as a linear combination of two or more of
+                                            the other vectors?
+                                            If yes, state such a linear combination; if not, explain why not.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>
