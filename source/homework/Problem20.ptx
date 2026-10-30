@@ -51,15 +51,6 @@
             <task workspace="1in">
                 <statement>
                     <p>
-                        If <m>A</m> is a square matrix whose diagonal entries
-                        are all nonzero, then <m>A</m> is invertible.
-                    </p>
-                </statement>
-            </task>
-
-            <task workspace="1in">
-                <statement>
-                    <p>
                         If <m>A</m> is an invertible <m>n\times n</m> matrix,
                         then span of the columns of <m>A</m> is
                         <m>\mathbb{R}^{n}</m>.
