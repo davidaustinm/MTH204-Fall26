@@ -29,6 +29,20 @@
                     <m>\vvec_2=\twovec12</m> form a basis for <m>\real^2</m>.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    If we put <m>\vvec_1</m> and <m>\vvec_2</m> as the columns
+                    of a matrix and perform Gaussian Elimination, we arrive at
+                    the <m>2\times 2</m> identity matrix <m>I_2</m>.
+                    Since there is a pivot in every row, <m>\vvec_1</m> and
+                    <m>\vvec_2</m> span <m>\mathbb{R}^2</m>.
+                    Since there is a pivot in every columns, the vectors are
+                    linearly independent.
+                    Therefore, <m>\vvec_1</m> and <m>\vvec_2</m> are a basis for
+                    <m>\mathbb{R}^2</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -38,6 +52,17 @@
                     <m>\evec_3</m> form a basis for <m>\real^3</m>.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    If we put <m>\evec_1</m>, <m>\evec_2</m>, and <m>\evec_3</m>
+                    as columns of a matrix, it is already in reduced row echelon
+                    form as <m>I_3</m>.
+                    Therefore <m>\evec_1</m>, <m>\evec_2</m>, and <m>\evec_3</m>
+                    are linearly independent and span <m>\mathbb{R}^3</m> and
+                    thus, are a basis for <m>\mathbb{R}^3</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -45,11 +70,22 @@
                 <p>
                     Do the vectors <m>\vvec_1=\threevec111</m>,
                     <m>\vvec_2=\threevec{0}{1}{-1}</m>,
-                    <m>\vvec_3 = \threevec{1}{0}{[1}</m> form a basis for
+                    <m>\vvec_3 = \threevec{1}{0}{1}</m> form a basis for
                     <m>\mathbb{R}^3</m>?
                     Why or why not?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    If we put the three vectors as the columns of a matrix and
+                    row reduce, we arrive at <m>I_3</m>.
+                    Since there is a pivot in every row and column, the three
+                    vectors are linearly independent and span
+                    <m>\mathbb{R}^3</m> and thus, form a basis for
+                    <m>\mathbb{R}^3</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -57,13 +93,22 @@
                 <p>
                     Do the vectors <m>\vvec_1=\threevec111</m>,
                     <m>\vvec_2=\threevec{0}{1}{-1}</m>,
-                    <m>\vvec_3 = \threevec{1}{0}{[1}</m>,
+                    <m>\vvec_3 = \threevec{1}{0}{1}</m>,
                     <m>\vvec_4=\threevec123</m> form a basis for
                     <m>\mathbb{R}^3</m>?
                     Why or why not?
                     How could you do this problem without row reducing?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    No, 4 vectors in <m>\mathbb{R}^3</m> can't be linearly
+                    independent as there will be a column without a pivot.
+                    Therefore, 4 vectors cannot be a basis of
+                    <m>\mathbb{R}^3</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -75,6 +120,17 @@
                     <m>\real^n</m>?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    Exactly 12 vectors will be in a basis for <m>\real^{12}</m>.
+                    This is because we need to have a pivot in every row and
+                    column and therefore, need the same number of vectors as
+                    entries in each vector.
+                    Therefore, in general, there will be exactly <m>n</m>
+                    vectors in a basis for <m>\real^n</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -87,6 +143,16 @@
                     <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> in exactly one way.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    Since <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> span
+                    <m>\real^n</m>, we know that there is at least 1 way to
+                    write <m>\bvec</m> for every <m>\bvec</m> in <m>\real^n</m>.
+                    Since <m>\vvec_1,\vvec_2,\ldots,\vvec_n</m> are linearly
+                    independent, there will only be one way.
+                </p>
+            </solution>
         </task>
 
         <task workspace=".6in">
@@ -97,6 +163,14 @@
                     <m>A = [\vvec_1\,\, \vvec_2\, \, \ldots\, \, \vvec_n]</m>?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    <m>A</m> must row reduce to the <m>n\times n</m> identity
+                    matrix <m>I_n</m> because we need a pivot in every row and
+                    column.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -106,6 +180,13 @@
                     <m>A</m> if its columns form a basis?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    <m>A</m> is invertible since it row reduces to the identity
+                    matrix!
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -286,6 +367,29 @@
                     Does your answer seem reasonable based on the figure?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    To do this, we consider the linear combination
+                    <m>c_1\vvec_1 + c_2\vvec_2 = \twovec{-4}{1}</m>.
+                    If we set this up as an augmented matrix and row reduce, we
+                    have
+                    <md>
+                        \left[\begin{array}{rr|r} 
+                    2 \amp 1 \amp -4 \\
+                    1 \amp 2 \amp 1 \\
+                     \end{array}\right] \sim \left[\begin{array}{rr|r} 
+                                         1 \amp 0 \amp -3 \\
+                                         0 \amp 1 \amp 2 \\
+                                          \end{array}\right]
+                    </md>
+                    Therefore,
+                    <m>\coords{\twovec{-4}1}{\bcal} = \twovec{-3}{2}.</m> This
+                    makes sense using the figure, because if we trace using the
+                    <q>diamond coordinates,</q> we get to the point (-4,1) on
+                    the standard grid.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1/2in">
@@ -294,20 +398,36 @@
                     On the figure, draw vector <m>\xvec</m> so that
                     <m>\coords{\xvec}{\bcal} =
   \twovec2{-3}</m>.
-                    
                     Then find <m>\xvec</m> uisng algebra/Sage.
-                    (Notice this is ``opposite" from question (a).)
+                    (Notice this is "opposite" from question (a).)
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    <m>\xvec = 2\vvec_1 - 3\vvec_2 = \twovec{1}{-4}.</m> This
+                    matches following the diamond grid!
+                </p>
+            </solution>
         </task>
 
         <task workspace="1/2in">
             <statement>
                 <p>
                     Suppose that <m>A=\left[\vvec_1 \ \vvec_2 \right]</m>.
-                    What is <m>A\twovec{-2}3</m>? Can you use the grid to determine this?
+                    What is <m>A\twovec{-2}3</m>?
+                    Can you use the grid to determine this?
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    Yes, this is just a linear combination of the columns of
+                    <m>A</m>!
+                    Therefore this is the vector
+                    <m>\xvec = A\twovec{-2}3 = -2\vvec_1 + 3\vvec_2 = \twovec{-1}{4}.</m>
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -330,6 +450,16 @@
                     <m>\real^3</m>.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    If we put the 3 vectors as columns of a matrix and row
+                    reduce, we get the identity matrix.
+                    Therefore, there is a pivot in every row (spans
+                    <m>\mathbb{R}^3</m> ) and every column (linearly
+                    independent), meaning it is a basis for <m>\mathbb{R}^3</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -340,6 +470,33 @@
   \threevec2{-1}{-2}</m>.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    To find <m>\xvec</m>, we take the basis
+                    <m>\mathcal{B} = \{\vvec_1, \vvec_2, \vvec_3\}</m> and put
+                    the vectors as columns to form
+                    <md>
+                        P_{\mathcal{B}} = \left[\begin{array}{rrr}
+                    1 \amp -2 \amp 1 \\
+                    0 \amp 1 \amp 1 \\
+                    -2 \amp 0 \amp 2 \\
+                    \end{array}
+                    \right].
+                    </md>
+                    Then, <m>\xvec = P_{\mathcal{B}}\coords{\xvec}{\bcal}:</m>
+                    <md>
+                        \left[\begin{array}{rrr}
+                                        1 \amp -2 \amp 1 \\
+                                        0 \amp 1 \amp 1 \\
+                                        -2 \amp 0 \amp 2 \\
+                                        \end{array}
+                                        \right] \threevec2{-1}{-2} = \threevec2{-3}{-8}.
+                    </md>
+                    These are the <q>standard basis coordinates.</q> The
+                    <q>normal</q> ones!
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -349,6 +506,34 @@
                     <m>\coords{\threevec{-2}{1}{-8}}{\bcal}</m>.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    To find <m>\coords{\xvec}{\bcal}</m> for
+                    <m>\xvec = \threevec{-2}{1}{-8}</m>, we take the basis
+                    <m>\mathcal{B} = \{\vvec_1, \vvec_2, \vvec_3\}</m> and put
+                    the vectors as columns to form
+                    <md>
+                        P_{\mathcal{B}} = \left[\begin{array}{rrr}
+                                        1 \amp -2 \amp 1 \\
+                                        0 \amp 1 \amp 1 \\
+                                        -2 \amp 0 \amp 2 \\
+                                        \end{array}
+                                        \right].
+                    </md>
+                    Then, we need to find its inverse such that
+                    <m>\coords{\xvec}{\bcal} = P_{\mathcal{B}}^{-1}\xvec:</m>
+                    <md>
+                        \left[\begin{array}{rrr}
+                                                            1 \amp -2 \amp 1 \\
+                                                            0 \amp 1 \amp 1 \\
+                                                            -2 \amp 0 \amp 2 \\
+                                                            \end{array}
+                                                            \right]^{-1} \threevec2{1}{-8} = \threevec3{2}{-1}.
+                    </md>
+                    These are the "diamond grid coordinates."
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -357,12 +542,17 @@
                     Explain how to convert <m>\{\xvec\}_\mathcal{B}</m>, the
                     representation of a vector <m>\xvec</m> in the coordinates
                     defined by <m>\mathcal{B}</m>, into <m>\xvec</m>, its
-                    representation in the standard coordinate
-                    system.<fn>The representation in the standard
-                    coordinate system is with the standard basis vectors
-                    <m>e_1,\dots, e_n</m>.</fn>
+                    representation in the standard coordinate system.
+                    (The representation in the standard coordinate system is
+                    with the standard basis vectors <m>e_1,\dots, e_n</m>.)
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    <m>\xvec = P_{\mathcal{B}}\coords{\xvec}{\bcal}.</m>
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -373,6 +563,12 @@
                     coordinate system defined by <m>\mathcal{B}</m>.
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    <m>\coords{\xvec}{\bcal} = P_{\mathcal{B}}^{-1}\xvec</m>.
+                </p>
+            </solution>
         </task>
 
         <task>
@@ -381,21 +577,44 @@
                     Read and explain <xref ref="prop-3-2-basisconversion"/>
                 </p>
             </statement>
+
+            <solution component="17-solutions">
+                <p>
+                    We know that if <m>\mathcal{B}</m> is a basis, then
+                    <m>\xvec</m> can be written as a linear combination of these
+                    vectors.
+                    If we put these basis vectors as the columns of the matrix
+                    <m>P_{\mathcal{B}}</m>, then
+                    <m>P_{\mathcal{B}} \{\xvec\}_{\mathcal{B}}</m> is exactly
+                    this linear combination as the matrix vector multiplication
+                    gives a linear combination of the column vectors of
+                    <m>P_{\mathcal{B}}</m>, which are the basis vectors!
+                </p>
+
+                <p>
+                    Then, for the second equation, we know that
+                    <m>P_{\mathcal{B}}</m> is invertible since its columns are
+                    basis vectors and thus, the reduced row echelon form is the
+                    identity matrix.
+                    Therefore, if we multiply the first equation by its inverse,
+                    we have
+                    <m>\{\xvec\}_{\mathcal{B}} = I\{\xvec\}_{\mathcal{B}} = P_{\mathcal{B}}^{-1}P_{\mathcal{B}}\{\xvec\}_{\mathcal{B}} = P_{\mathcal{B}}^{-1}\xvec</m>
+                </p>
+            </solution>
         </task>
     </exercise>
 
     <proposition xml:id="prop-3-2-basisconversion" workspace="1in">
         <statement>
             <p>
-                If <m>\mathcal{B}</m> is a basis and <m>P_\mathcal{B}</m> the matrix whose columns are the basis vectors, then
+                If <m>\mathcal{B}</m> is a basis and <m>P_\mathcal{B}</m> the
+                matrix whose columns are the basis vectors, then
                 <md>
                     \xvec = P_{\mathcal{B}} \{\xvec\}_{\mathcal{B}}
                 </md>
-                
                 <md>
                     \{\xvec\}_{\mathcal{B}} = P_{\mathcal{B}}^{-1}\xvec
                 </md>
-                
             </p>
         </statement>
     </proposition>
