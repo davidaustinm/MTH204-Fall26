@@ -288,6 +288,14 @@ c \amp d
                 </md>
             </p>
         </statement>
+        <solution component="19-solutions">
+            <p>
+                The determinant of the upper triangular matrix <m>U</m> is the product of its diagonal entries:
+                <md>
+                    \det(U) = 3 \cdot (-2) \cdot 5 = -30.
+                </md>
+            </p>
+        </solution>
     </exercise>
 
     <exercise workspace="1in">

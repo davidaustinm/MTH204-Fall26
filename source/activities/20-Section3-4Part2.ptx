@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>Section 3.4 - Determinants using Cofactor Expansion - Part 2</title>
+  <title>Section 3.4 - Part 2 - Determinants using Cofactor Expansion</title>
  
 <page>
   
@@ -15,6 +15,20 @@
 	\end{bmatrix} = -36. </md>
 You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.</p>
     </statement>
+    <solution component="20-solutions">
+      <p>
+        Using a cofactor expansion along the second column, we have:
+        <md>
+          \det(A) = 0 + 
+          1 \cdot \det\left(\begin{bmatrix} 2 \amp -1 \\ -2\amp -3 \end{bmatrix}\right) + 
+          4 \cdot \det\left(\begin{bmatrix} 2 \amp -1 \\ 3 \amp 2 \end{bmatrix}\right).
+        </md>
+      Using that the determinant of a 2x2 matrix is given by <m>ad - bc</m>, we have:
+        <md>
+          \det(A) = 0 + 1 \cdot (2(-3) - (-1)(-2)) + 4 \cdot (2(2) - (-1)(3)) = -6 + 4(7) = -6 + 28 = 22.
+        </md>
+      </p>
+    </solution>
   </exercise>
 </page>
 
