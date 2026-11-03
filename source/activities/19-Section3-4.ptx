@@ -37,6 +37,11 @@
                     <m>I_2 = \begin{bmatrix} 1 \amp0 \\ 0 \amp1 \end{bmatrix}</m>.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the identity matrix is <m>1</m> as the area of the <m>1\times 1</m> square is 1.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -56,6 +61,18 @@
                     <fn> Diagonal means the only non-zero entries are on the diagonal.</fn>
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the matrix is <m>-1</m> as the area of the parallelogram (rectangle in this case)
+                    formed by the column vectors is 1, but the orientation is negative. When there are only non-zero entries
+                    on the diagonal, the matrix transformation streches the <m>1\times 1</m> square by the upper left entry
+                    in the horizontal direction and by the lower right entry in the vertical direction (and possibly a 
+                    reflection over the <m>x</m>-axis or the <m>y</m>-axis). The area of the resulting
+                    parallelogram (rectangle) is just the product of the base and the height, which in this case are exactly
+                    the diagonal entries. So, the important takeaway is that the
+    determinant of a diagonal matrix is the product of the diagonal entries.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -72,6 +89,15 @@
                     defined by this matrix?
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the matrix is <m>-1</m> as the area of the parallelogram (square in this case)
+                    formed by the column vectors is 1, but the orientation is negative. The matrix transformation
+                    swaps the <m>x</m> and <m>y</m> axes, which is a reflection over the line <m>y=x</m>. That doesn't change
+                    the area of the parallelogram, but it does change the orientation, so the determinant is negative.
+            
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -88,6 +114,18 @@
                     defined by this matrix?
                 </p>
             </statement>
+
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the matrix is <m>2</m> as the area of the parallelogram
+                    formed by the column vectors is 2. Notice the base of this parallelogram is 2 and the height is 1, 
+                    so the area is <m>2\cdot 1 = 2</m>. 
+                    The upper right entry in the matrixskews the <m>1\times 1</m> square (which doesn't change the area of the
+                    parallelogram), even though it does change the shape. 
+                    The transformation also scales in the <m>x</m> direction by a factor of 2, which doubles the area
+                    so we get an area of 2 and a determinant of 2 (since the orientation is positive).
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -108,6 +146,13 @@
                     upper triangular matrix in general?
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The <m>b</m> in the upper right just changes the amount of skew (and if negative, the orientation of the vectors).
+                    Since the <m>b</m> doesn't have an effect on the area, the determinant of any upper triangular matrix is the product of its diagonal entries. 
+            
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -124,6 +169,15 @@
                     that has linearly dependent columns?
                 </p>
             </statement>
+
+            <solution component="19-solutions">
+                <p>
+                    The determinate of this matrix is <m>0</m> as the paralleogram that is formed has zero area. 
+                    In general, a matrix has linearly dependent columns, its determinant is 0. 
+                    In the <m>2\times 2</m> case, this is because the column vectors lie on the same line, 
+                    forming a parallelogram with zero area.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -147,6 +201,14 @@ B =\begin{bmatrix}
                     <m>\det B</m>?
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of <m>A</m> is <m>-4</m>, the determinant of <m>B</m> is <m>2</m>, 
+                    and the determinant of <m>AB</m> is <m>-8</m>. Note that we find these areas by using the Pythagorean theorem
+                    to find the height and width of the parallelogram.
+                    This suggests that <m>\det(AB) = \det A \det B</m>.
+                </p>
+            </solution>
         </task>
 
         <conclusion>
@@ -245,6 +307,12 @@ c \amp d
                 </md>
             </p>
         </statement>
+
+        <solution component="19-solutions">
+            <p>
+                The determinant of the matrix <m>B</m> is <m>14</m>. We write <m>\det(B) = 14</m>.
+            </p>
+        </solution>
     </exercise>
 
     <exercise>
@@ -275,6 +343,15 @@ c \amp d
                     matrix is nonzero.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the matrix with two rows interchanged is <m>-14</m>, 
+                    which is the negative of <m>\det(B)</m>. T
+                This suggests interchanging two rows changes the sign of the determinant, but not the absolute value. 
+                So, if a matrix <m>A</m> has a nonzero determinant and we interchange two rows, 
+                the determinant of the new matrix is also nonzero.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -292,6 +369,15 @@ c \amp d
                     the new matrix is nonzero.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the matrix with the first row scaled by 3 is <m>42</m>, 
+                    which is 3 times <m>\det(B)</m>. This suggests scaling a row by a nonzero number multiplies 
+                    the determinant by that number.
+                    So, if a matrix <m>B</m> has a nonzero determinant and we scale a row by a nonzero number, 
+                    the determinant of the new matrix is also nonzero.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -311,6 +397,14 @@ c \amp d
                     determinant of the new matrix is nonzero.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of the matrix when doing a row replacement operation is <m>14</m>, 
+                    which is the same as <m>\det(B)</m>. This suggests that performing a row replacement operation does not change the determinant.
+                    So, if a matrix <m>B</m> has a nonzero determinant and we perform a row replacement operation, 
+                    the determinant of the new matrix is also nonzero.
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -331,6 +425,14 @@ c \amp d
                     Explain your thinking.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    If a matrix <m>A</m> has a nonzero determinant, 
+                    then its row echelon form will also have a nonzero determinant. 
+                    This is because row operations do not change the determinant from nonzero to zero, as 
+                    seen in the previous question.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1.25in">
@@ -360,6 +462,12 @@ c \amp d
                     need Sage to do this).
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant of <m>R_1</m> is <m>0</m> because the product of the diagonal entries is <m>0</m>.
+                    The determinant of <m>R_2</m> is <m>1</m> because the product of the diagonal entries is <m>1</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1.5in">
@@ -372,6 +480,13 @@ c \amp d
                     Explain your thinking.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    Since <m>A</m> has a nonzero determinant, 
+                    its reduced row echelon form must also have nonzero determinant. 
+                    Therefore, the row rduced echelon form could be <m>R_2</m>, but not <m>R_1</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1.85in">
@@ -382,6 +497,13 @@ c \amp d
                     <m>A</m>?
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    If <m>A</m> is a matrix with nonzero determinant, 
+                    then its reduced row echelon form must also have a nonzero determinant. 
+                    Therefore, the reduced row echelon form of <m>A</m> must be the identity matrix.
+                </p>
+            </solution>
         </task>
 
         <task workspace="1.95in">
@@ -391,6 +513,12 @@ c \amp d
                     explain why <m>A</m> is invertible.
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    If <m>A</m> is a square matrix with a nonzero determinant, then the reduced row echelon form of <m>A</m> 
+                    is the identity matrix. Therefore, <m>A</m> is invertible.
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -415,6 +543,14 @@ c \amp d
                     </md>
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The vectors form a basis for <m>\mathbb{R}^3</m> if the matrix formed by these vectors as columns 
+                    row reduces to the identity matrix. Another way to check if the matrix row reduces to the identity matrix is 
+                    to check if the determinant of the matrix is nonzero. So we find the determinant of the matrix is nonzero
+                    and these vectors form a basis for <m>\mathbb{R}^3</m>.
+                </p>
+            </solution>
         </task>
 
         <task workspace=".75in">
@@ -428,6 +564,13 @@ c \amp d
                     </md>
                 </p>
             </statement>
+            <solution component="19-solutions">
+                <p>
+                    The determinant is zero because the columns of the matrix are linearly dependent. 
+                    Specifically, the second column is a scalar multiple of the first column, which means
+                    this won't row reduce to the identity matrix and the determinant is zero.
+                </p>
+            </solution>
         </task>
     </exercise>
 
