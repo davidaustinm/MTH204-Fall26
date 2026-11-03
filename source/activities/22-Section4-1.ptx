@@ -4,9 +4,6 @@
     <title>Section 4.1 - An introduction to eigenvectors and eigenvalues</title>
 
     <introduction>
-        <p>
-            \\
-        </p>
 
         <p>
             If <m>A</m> is an <m>n\times n</m> matrix, we say that a nonzero
@@ -64,7 +61,7 @@
                 <p>
                     If you multiply your eigenvector <m>\vvec</m> by the scalar
                     2, do you still have an eigenvector?
-                    If so, what is the associated eigenvector?
+                    If so, what is the associated eigenvalue?
                 </p>
             </statement>
         </task>
@@ -99,7 +96,7 @@
         </task>
     </exercise>
 
-    <exercise workspace="1.25in">
+    <exercise workspace="1.5in">
         <statement>
             <p>
                 Now consider the matrix
