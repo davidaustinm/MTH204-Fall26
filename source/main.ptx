@@ -91,6 +91,7 @@
             <xi:include href="./labs/LAB2.ptx"/>
             <xi:include href="./labs/LAB3.ptx"/>
             <xi:include href="./labs/LAB4.ptx"/>
+            <xi:include href="./labs/LAB4-LDK.ptx"/>
         </chapter>
 
         <chapter xml:id="homework">
