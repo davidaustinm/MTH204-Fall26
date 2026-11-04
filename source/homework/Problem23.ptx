@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 23 - Written Homework</title>
+    <title>Problem 23 - Written Homework - MTH 204</title>
 
-    <page>
+   <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
         <!-- Question 23 Section 3.2 -->
         <exercise>
             <introduction>
@@ -16,7 +30,11 @@
                     form the crystalline structure shown below.
                 </p>
 
-                <image source="images/ex-graphite.eps"/>
+                <image source="images/ex-graphite.pdf" width="50%">
+                <shortdescription>
+                    Visual of graphite.
+                </shortdescription>
+            </image>
                 <p>
                     The origin of the coordinate is at the carbon atom labeled
                     by <q>0.</q> It is convenient to choose the basis
@@ -32,7 +50,7 @@
                     </p>
                 </introduction>
 
-                <task>
+                <task workspace="1in">
                     <statement>
                         <p>
                             <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}1 \\ 0\end{array}\right]</m>.
@@ -40,7 +58,7 @@
                     </statement>
                 </task>
 
-                <task>
+                <task workspace="1in">
                     <statement>
                         <p>
                             <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}0 \\ 1\end{array}\right]</m>.
@@ -48,7 +66,7 @@
                     </statement>
                 </task>
 
-                <task>
+                <task workspace="1in">
                     <statement>
                         <p>
                             <m>\{{\vec x}\}_{{\cal B}}= \left[\begin{array}{c}2 \\ 1\end{array}\right]</m>.
@@ -57,7 +75,7 @@
                 </task>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Find the coordinates in the basis <m>{\cal B}</m> of the
@@ -66,7 +84,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Find the coordinates of the center of the hexagon
@@ -75,7 +93,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Find the coordinates of the atom labeled <q>1.</q>
@@ -83,5 +101,4 @@
                 </statement>
             </task>
         </exercise>
-    </page>
 </worksheet>

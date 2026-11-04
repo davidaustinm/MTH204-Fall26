@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 22 - Written Homework</title>
+    <title>Problem 22 - Written Homework - MTH 204</title>
 
-    <page>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
         <!-- Question 22 Section 3.1 and 3.2 -->
         <exercise>
             <introduction>
@@ -13,7 +27,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         Suppose you have a linearly independent set of <m>m</m>
@@ -25,7 +39,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         Suppose you have a set of 10 vectors
@@ -40,7 +54,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="2in">
                 <statement>
                     <p>
                         Suppose <m>A</m> is a <m>15\times15</m> matrix and that
@@ -52,5 +66,4 @@
                 </statement>
             </task>
         </exercise>
-    </page>
 </worksheet>
