@@ -425,9 +425,6 @@
                     The JPEG compression algorithm uses the
                     <em>discrete Fourier transform</em> which is defined using a
                     basis that measures the amount of variation in a vector.
-                    The basis looks intimidating, but it is just using the
-                    cosine funcion to produce waves.
-                    E.g., notice the first vector is the all ones vector.
                 </p>
             </introduction>
 
@@ -439,7 +436,7 @@
                         and to see the basis vectors for the discrete Fourier
                         transform.
                         The basis looks intimidating, but it is just using the
-                        cosine funcion to produce waves.
+                        cosine funcion to produce waves to represent the variation.
                         E.g., notice the first vector is the all ones vector.
                         Complete parts a, b, and c of Activity 3.1.2 and answer
                         part d here: If the components of <m>\xvec</m> vary
@@ -561,11 +558,13 @@
 
         <p>
             It turns out we can, in fact, do better than this. Once one has
-            found the <m>8\times</m> block of Fourier coefficients for the given
+            found the <m>8\times 8</m> block of Fourier coefficients for the given
             block of luminance values, it turns out the value in the rows don't
             differe much from one another. So we find the Fourier coefficients of
             the rows of that matrix.  If you are curious about more of the math, 
-            you can read Section 3.3 of your book!
+            you can read Section 3.3 of your book! In that example, we can keep
+            only about <m>20\%</m> of the Fourier coefficients. and be able to
+            reconstrut the luminance values with relatively small error.
         </p>
 
 
