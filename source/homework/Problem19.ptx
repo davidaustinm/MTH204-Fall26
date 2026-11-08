@@ -41,8 +41,8 @@
                 <statement>
                     <p>
                         Find 2 other <m>2 \times 2</m> matrices <m>B</m> and
-                        <m>C</m> such that <m>A</m>, <m>B</m>, <m>C</m>, and
-                        <m>I_{2}</m> are four different matrices and each matrix
+                        <m>C</m> such that <m>B</m>, <m>C</m>, and
+                        <m>I_{2}</m> are three different matrices and each matrix
                         has the property that the matrix is invertible and its
                         inverse is itself.
                         Write to explain your thinking for how you found
