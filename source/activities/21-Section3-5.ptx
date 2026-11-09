@@ -42,8 +42,8 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Explain why the line on the left is not a subspace of
-                    <m>\mathbb{R}^2</m>, and the line on the right is.
+                    Explain why the line on the right is not a subspace of
+                    <m>\mathbb{R}^2</m>, and the line on the left is.
                 </p>
 
                 <figure xml:id="figure-lines-r2">
