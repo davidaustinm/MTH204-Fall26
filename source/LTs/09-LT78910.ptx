@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 7,8,9,10 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #7, #8, #9, and #10.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+               <exercise workspace="2in">
+            <title>Learning Target 10, First Attempt</title>
+            <introduction>
+                <p>
+                   I can convert a vector given in the standard basis into a
+                    vector in another basis and vice versa. 
+                </p>
+
+                <p>
+                    Let <m>\mathcal{B}=\{\vvec_{1},\vvec_{2}\}</m> be a basis for <m>\mathbb{R}^{2}</m> where 
+                    <m>\vvec_{1}=\twovec{-3}{1}</m> and <m>\vvec_{2}=\twovec{5}{3}</m>.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Find <m>\xvec</m> in <m>\mathbb{R}^2</m> if <m>\{ \xvec \} _{\mathcal{B}} = \twovec{2}{1}</m>. 
+                        Show your work (including noting anything you did in Sage) and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find <m>\{ \yvec \} _{\mathcal{B}}</m> if <m>\yvec = \twovec{1}{-19}</m>. 
+                        Show your work (including noting anything you did in Sage) and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+    <page>
+
+        <exercise workspace="1in">
+            <title>Learning Target 9, First Attempt</title>
+            <introduction>
+                <p>
+                    I can determine whether or not a set of vectors is a basis
+                    for <m>\mathbb{R}^n</m>, and give examples and non-examples
+                    of bases. 
+                </p>   
+                
+            <p>
+                Consider the vectors
+                                <md>
+                                    \vvec_{1}=\threevec101,~~~ \vvec_{2}=\threevec2{-3}1,~~~ \vvec_{3}=\threevec{4}{-3}3.
+                                </md>
+            </p>
+            </introduction>
+                                      
+                                               
+
+            <task>
+                <statement>
+                    <p>
+                         Does the set of vectors <m>\{\vvec_{1},\vvec_{2}\}</m> form a
+                                                basis for <m>\mathbb{R}^{3}</m>?
+                                                Explain your thinking using the definition of basis.
+                                     
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                       Does the set of vectors <m>\{\vvec_{1},\vvec_{2},\vvec_{3}\}</m>
+                                                form a basis for <m>\mathbb{R}^{3}</m>?
+                                                Explain your thinking using the definition of basis.
+                    </p>
+                </statement>
+            </task>
+                <task>
+                    <statement>
+                        <p>
+                             Suppose that <m>\wvec_{1}=\twovec11</m>.
+                                                Choose another vector <m>\wvec_{2}</m> so that
+                                                <m>\{\wvec_{1},\wvec_{2}\}</m> forms a basis for
+                                                <m>\mathbb{R}^{2}</m> and give a justification for why you have
+                                                created a basis.
+                                     
+                        </p>
+                    </statement>
+                </task>
+            
+     
+        </exercise>
+    </page>
+    <page>
+
+        <exercise workspace="1in">
+            <!-- Learning Target 8 (Attempt 1) -->
+            <title>Learning Target 8, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can determine if a matrix is invertible, find an inverse,
+                    and use inverses to solve matrix equations.
+                </p>
+
+                <p>
+                    Consider the matrix
+                           <m>A = \begin{bmatrix}2 &amp; -6 \\ -5 &amp; k\end{bmatrix}</m>.
+                </p>
+            
+            </introduction>
+            <task>  
+                <statement>
+                    <p>
+                         For what values(s) of <m>k</m> is <m>A</m> invertible?
+                           Explain your thinking.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Find <m>A^{-1}</m> for one of the values of <m>k</m> that
+                        makes <m>A</m> invertible. Write down the <m>k</m> value you chose
+                        and  the inverse below,
+                        as well as the command you used.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement> 
+                    <p>
+                        Use your inverse to solve the equation
+                        <m>A \xvec = \twovec{1}{-1}</m> and explain your process.
+                    </p>
+                </statement>
+            </task>
+        </exercise> 
+             </page>
+
+    <page>
+        <!-- Need to revise the following Learning Target 7 (Attempt 3) -->
+        <exercise workspace="1in">
+            <!-- Learning Target 7 (Attempt 3) -->
+            <title>Learning Target 7, Last Attempt</title>
+
+            <introduction>
+                <p>
+                    I can find the matrix of a linear transformation using
+                    elementary vectors, apply a transformation to a vector or
+                    shape, and compose transformations using matrix
+                    multiplication.
+                </p>
+
+                 <p>
+                    Suppose you have matrix transformations
+                    <m>T:\mathbb{R}^2\to\mathbb{R}^2</m> and
+                    <m>S:\mathbb{R}^2\to\mathbb{R}^2</m> and that
+                    <md>
+                        T\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 1 \\ 0 \end{bmatrix},\quad
+        T\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} 0 \\ -1 \end{bmatrix},\quad
+        S\left(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\right) = \begin{bmatrix} 0 \\ -1 \end{bmatrix},\quad
+        S\left(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\right) = \begin{bmatrix} 1 \\ 0 \end{bmatrix}.
+                    </md>
+                </p>
+            </introduction>
+
+         
+            <task>
+                <statement>
+                    <p>
+                        Find the matrices <m>B</m> and <m>C</m> that define
+                        <m>T</m> and <m>S</m> respectively.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If
+                        <m>\mathbf{v} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}</m>,
+                        find <m>T(\mathbf{v})</m> and <m>S(\mathbf{v})</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Determine the composition <m>(T\circ S)(\mathbf{w})</m>
+                        where
+                        <m>\mathbf{w} = \begin{bmatrix} 11 \\ -17 \end{bmatrix}</m>
+                        and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+  
+</worksheet>
