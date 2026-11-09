@@ -3,10 +3,6 @@
 <worksheet>
     <title>Section 3.5 - Subspaces of <m>\real^p</m></title>
 
-
-
-    
-
     <introduction>
         <definition xml:id="def-3-5-subspace">
             <statement>
@@ -312,7 +308,7 @@
         <task workspace=".6in">
             <statement>
                 <p>
-                    Is <m>\laspan\left{\bvec_1\right} = \laspan\left{\fourvec1000\right}</m>?
+                    Is <m>\laspan{\bvec_1} = \laspan{\fourvec1000}</m>?
                 </p>
             </statement>
         </task>
@@ -371,7 +367,7 @@
             <definition xml:id="def-3-5-null">
               <statement>
                 <p>
-                  If <m>A</m> is an <m>m\times n</m> matrix we call the subset of vectors <m>\xvec</m> in <m>\mathbb{R}^n</m> satisfying <m>A\xvec={\bf 0}</m> the <term>null space</term> of <m>A</m> and denote it by <m>\nul(A)</m>.
+                  If <m>A</m> is an <m>m\times n</m> matrix we call the subset of vectors <m>\xvec</m> in <m>\mathbb{R}^n</m> satisfying <m>{A\xvec={\bf 0}}</m> the <term>null space</term> of <m>A</m> and denote it by <m>\nul(A)</m>.
                 </p>
               </statement>
             </definition>
