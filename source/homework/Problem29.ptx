@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 29 - Written Homework</title>
+    <title>Problem 29 - Written Homework - MTH 204</title>
 
-    <page>
+<p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+
         <exercise>
             <!-- Question 29 Section 4.2/4.3 -->
             <introduction>
@@ -17,7 +31,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         After computing <m>A - 8I</m>, the student row-reduces
@@ -31,7 +45,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         After computing <m>A + 5I</m>, the student row-reduces
@@ -45,7 +59,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Is <m>A</m> diagonalizable?
@@ -54,7 +68,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         Suppose that there was an error in the work in (b), and
@@ -69,7 +83,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1in">
                 <statement>
                     <p>
                         What impact, if any, does the result of (d) have on your
@@ -79,5 +93,4 @@
                 </statement>
             </task>
         </exercise>
-    </page>
 </worksheet>

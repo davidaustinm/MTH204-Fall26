@@ -1,65 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Problem 25 - Written Homework</title>
+    <title>Problem 25 - Written Homework - MTH 204</title>
 
-    <page>
-        <!-- Question 25 Section 3.5 -->
-        <exercise>
-            <introduction>
+    <p>
+        You should write up solutions neatly to all problems, making sure to
+        show all your work and follow the homework policies (see Blackboard
+        document for details).
+        You will turn in the hand-written assignment in person during Wednesday
+        class time.
+        The solutions you turn in should be your own work and written in your
+        own words.
+        You cannot use any resources outside of discussing with your professor
+        or classmates and/or your textbook.
+        At the top of your first page of solutions, please list the names of any
+        students who you worked with on the assignment.
+        Don't forget to put your name at the top of the first page!
+    </p>
+    <!-- Question 25 Section 3.5 -->
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>B</m> is a matrix
+                <m>B = \begin{bmatrix}{\vec v}_{1}&amp;{\vec v}_{2}&amp;{\vec v}_{3}&amp;{\vec v}_{4}&amp;{\vec v}_{5}\end{bmatrix}</m>
+                and that its reduced row echelon form is
+                <md>
+                    B \sim \begin{bmatrix}1 &amp; -3 &amp; 0 &amp; -7 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 6 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\end{bmatrix}.
+                </md>
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
                 <p>
-                    Suppose that <m>B</m> is a matrix
-                    <m>B = \begin{bmatrix}{\vec v}_{1}&amp;{\vec v}_{2}&amp;{\vec v}_{3}&amp;{\vec v}_{4}&amp;{\vec v}_{5}\end{bmatrix}</m>
-                    and that its reduced row echelon form is
-                    <md>
-                        B \sim \begin{bmatrix}1 &amp; -3 &amp; 0 &amp; -7 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 6 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\end{bmatrix}.
-                    </md>
+                    If <m>{\vec x}</m> is a solution to the equation
+                    <m>{B{\vec x} = {\vec 0}}</m>, what is the dimension of the
+                    vector <m>{\vec x}</m> and why?
+                    (i.e., how many entries does <m>{\vec x}</m> have?)
                 </p>
-            </introduction>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        If <m>{\vec x}</m> is a solution to the equation
-                        <m>B{\vec x} = {\vec 0}</m>, what is the dimension of
-                        the vector <m>{\vec x}</m> and why?
-                        (i.e.
-                        How many entries does <m>{\vec x}</m> have?)
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Give a parametric vector description of the solution set to
+                    the equation <m>{B{\vec x} = {\vec 0}}</m>.
+                    Show your steps.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Give a parametric vector description of the solution set
-                        to the equation <m>B{\vec x} = {\vec 0}</m>.
-                        Show your steps.
-                    </p>
-                </statement>
-            </task>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find a basis for the null space <m>\text{Nul}(B)</m>.
+                    Be sure to explain why your set of vectors is a basis for
+                    <m>\text{Nul}(B)</m>.
+                </p>
+            </statement>
+        </task>
 
-            <task>
-                <statement>
-                    <p>
-                        Find a basis for the null space <m>\text{Nul}(B)</m>.
-                        Be sure to explain why your set of vectors is a basis
-                        for <m>\text{Nul}(B)</m>.
-                    </p>
-                </statement>
-            </task>
-
-            <task>
-                <statement>
-                    <p>
-                        Among the vectors <m>{\vec v}_{1}</m>,
-                        <m>{\vec v}_{2}</m>, <m>{\vec v}_{3}</m>,
-                        <m>{\vec v}_{4}</m>, and <m>{\vec v}_{5}</m>, what is
-                        the largest linearly independent set you can find and
-                        why?
-                    </p>
-                </statement>
-            </task>
-        </exercise>
-    </page>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Among the vectors <m>{\vec v}_{1}</m>, <m>{\vec v}_{2}</m>,
+                    <m>{\vec v}_{3}</m>, <m>{\vec v}_{4}</m>, and
+                    <m>{\vec v}_{5}</m>, what is the largest linearly
+                    independent set you can find and why?
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>
