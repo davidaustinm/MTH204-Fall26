@@ -1942,7 +1942,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.4 - Part 2 - Determinants using Cofactor Expansion",
-  "body": " Section 3.4 - Part 2 - Determinants using Cofactor Expansion     Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.        Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)        Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.        How do we think about the determinant of a 2x2 matrix algebraically?  What is co-factor expansion for?   How do we apply cofactor expansion?    "
+  "body": " Section 3.4 - Part 2 - Determinants using Cofactor Expansion     Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.    Using a cofactor expansion along the second column, we have: Using that the determinant of a 2x2 matrix is given by , we have:         Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)    Using a co-factor expansion along the third column, we have:         Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.    Starting with a cofactor expansion along the first row, we have: which simplifies to   Then we can do a cofactor expansion along the first row of the resulting 3x3 matrix (keeping track of the factor from the previous step): which simplifies to   Finally, we can compute the determinant of the resulting 2x2 matrix:         How do we think about the determinant of a 2x2 matrix algebraically?  What is co-factor expansion for?   How do we apply cofactor expansion?    "
 },
 {
   "id": "activities-23-2-1",
@@ -1951,7 +1951,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.   "
+  "body": "  Using a cofactor expansion, show the following: You can choose any row or column to create the expansion, but the choice of a particular row or column may simplify the computation.    Using a cofactor expansion along the second column, we have: Using that the determinant of a 2x2 matrix is given by , we have:    "
 },
 {
   "id": "activities-23-3-1",
@@ -1960,7 +1960,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)   "
+  "body": "  Find the determinant of the matrix using a cofactor expansion: (You can check your work with Sage.)    Using a co-factor expansion along the third column, we have:    "
 },
 {
   "id": "activities-23-4-1",
@@ -1969,7 +1969,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.   "
+  "body": "  Use a cofactor expansion to find the determinant of Explain how the cofactor expansion technique shows that the determinant of a triangular matrix is equal to the product of its diagonal entries.    Starting with a cofactor expansion along the first row, we have: which simplifies to   Then we can do a cofactor expansion along the first row of the resulting 3x3 matrix (keeping track of the factor from the previous step): which simplifies to   Finally, we can compute the determinant of the resulting 2x2 matrix:    "
 },
 {
   "id": "activities-23-5",
@@ -1987,7 +1987,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Section 3.5 - Subspaces of <span class=\"process-math\">\\(\\real^p\\)<\/span>",
-  "body": " Section 3.5 - Subspaces of     A subspace of is a subset of that is the span of a set of vectors.    In this section we will look at some important subspaces.      Let's start by understanding a few things about subspaces.     If is a set of vectors in , explain why the zero vector can be expressed as a linear combination of these vectors. Usse this fact to explain why belongs to any subspace in .      Explain why the line on the left is not a subspace of , and the line on the right is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.                A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.                     Suppose that , , , and are four vectors in and that Give a description of the subspace of .       The first important subspace we'll look at is called the column space of and denoted as . It's just the span of the columns of .    If is an matrix we call the span of its columns the column space of and denote it as . That is       Consider the matrix      Give an example of a vector in .      Is in ? Is in ?      Fill in the blanks: is a subspace of because   .      Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Describe geometrically.      Since and span and are linearly independent, we say they form a basis for . The dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of (denoted )?         A basis for a subspace of is a set of vectors in that are linearly independent and whose span is . We say that the dimension of the subspace , denoted is the number of vectors in any basis.      Suppose we have a matrix      What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Fill in the blanks: is a -dimensional subspace of where           Generally speaking, what is the relationship between the dimension and the number of pivots in ?    The second subspace we'll look at is called the null space of and is denoted . It's just the solution set of the equation .    If is an matrix we call the subset of vectors in satisfying the null space of and denote it by .      Let's now go back to the matrix from , rewritten here:      Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?         Let's go back to the matrix from , rewritten below      Find a basis for .      Complete the sentence: is a -dimensional subspace of where  .       Suppose that is a matrix with 30 pivots.      is a -dimensional subspace of where  .       is a -dimensional subspace of where  .         The rank of a matrix is the number of pivot positions in and is denoted by .      Let's make further connections between topics and new vocabulary.     How can we use information about the pivots to get a basis for ?      What is the relationship between the rank of a matrix and the dimension of ?      If is an invertible matrix, what can you say about ?      Suppose that is an matrix and . If is an 8-dimensional vector, what can you say about the equation .      Say is an matrix. Fill in the blank:         Make sure you can answer the following questions:     What is the definition of a subspace? How can we tell if something is a subspace?    What is the dimension of a subspace? How do we find it?    How do we find the null space of a matrix?    How do we find the column space of a matrix?    What is the relationship between the dimension of the column space and the dimension of the null space?     "
+  "body": " Section 3.5 - Subspaces of     A subspace of is a subset of that is the span of a set of vectors.    In this section we will look at some important subspaces.      Let's start by understanding a few things about subspaces.     If is a set of vectors in , explain why the zero vector can be expressed as a linear combination of these vectors. Usse this fact to explain why belongs to any subspace in .      Explain why the line on the right is not a subspace of , and the line on the left is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.                A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.                     Suppose that , , , and are four vectors in and that Give a description of the subspace of .       The first important subspace we'll look at is called the column space of and denoted as . It's just the span of the columns of .    If is an matrix we call the span of its columns the column space of and denote it as . That is       Consider the matrix      Give an example of a vector in .      Is in ? Is in ?      Fill in the blanks: is a subspace of because   .      Are the vectors linearly independent or dependent?      Write and as a linear combination of and .      Explain why .      Explain why and form a linearly independent set of vectors.      Describe geometrically.      Since and span and are linearly independent, we say they form a basis for . The dimension of a subspace is denoted and is the number of vectors in a basis for that subspace. is a subspace of - What is the dimension of (denoted )?         A basis for a subspace of is a set of vectors in that are linearly independent and whose span is . We say that the dimension of the subspace , denoted is the number of vectors in any basis.      Suppose we have a matrix      What is the shape of ; that is, how many rows and columns does it have?      Is ?      In this case, the column space . Are these five vectors linearly independent?      How can we form a basis for ?      Fill in the blanks: is a -dimensional subspace of where           Generally speaking, what is the relationship between the dimension and the number of pivots in ?    The second subspace we'll look at is called the null space of and is denoted . It's just the solution set of the equation .    If is an matrix we call the subset of vectors in satisfying the null space of and denote it by .      Let's now go back to the matrix from , rewritten here:      Write the solution set to the equation as a parametric description.      Use this parametric description to find two vectors and for which .      Explain why and form a linearly independent set of vectors.      Do and form a basis for ?      In this case, since vectors in are in , is a subspace of . What is the dimension of , that is what is ?         Let's go back to the matrix from , rewritten below      Find a basis for .      Complete the sentence: is a -dimensional subspace of where  .       Suppose that is a matrix with 30 pivots.      is a -dimensional subspace of where  .       is a -dimensional subspace of where  .         The rank of a matrix is the number of pivot positions in and is denoted by .      Let's make further connections between topics and new vocabulary.     How can we use information about the pivots to get a basis for ?      What is the relationship between the rank of a matrix and the dimension of ?      If is an invertible matrix, what can you say about ?      Suppose that is an matrix and . If is an 8-dimensional vector, what can you say about the equation .      Say is an matrix. Fill in the blank:         Make sure you can answer the following questions:     What is the definition of a subspace? How can we tell if something is a subspace?    What is the dimension of a subspace? How do we find it?    How do we find the null space of a matrix?    How do we find the column space of a matrix?    What is the relationship between the dimension of the column space and the dimension of the null space?     "
 },
 {
   "id": "def-3-5-subspace",
@@ -2005,7 +2005,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let's start by understanding a few things about subspaces.     If is a set of vectors in , explain why the zero vector can be expressed as a linear combination of these vectors. Usse this fact to explain why belongs to any subspace in .      Explain why the line on the left is not a subspace of , and the line on the right is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.                A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.                     Suppose that , , , and are four vectors in and that Give a description of the subspace of .    "
+  "body": "  Let's start by understanding a few things about subspaces.     If is a set of vectors in , explain why the zero vector can be expressed as a linear combination of these vectors. Usse this fact to explain why belongs to any subspace in .      Explain why the line on the right is not a subspace of , and the line on the left is.   Two lines in , one of which is a subspace and one of which is not.    A line in two dimensions that does not pass through the origin.   A line in two dimensions that does not pass through the origin.                A line in two dimensions that does passes through the origin.   A line in two dimensions that does passes through the origin.                     Suppose that , , , and are four vectors in and that Give a description of the subspace of .    "
 },
 {
   "id": "activities-24-4-1",
@@ -3444,26 +3444,17 @@ var ptx_lunr_docs = [
   "url": "homework-25.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 24 - Written Homework",
-  "body": " Problem 24 - Written Homework      Consider the matrix defined in terms of the parameter . Compute . Show your work.         Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?      "
+  "title": "Problem 24 - Written Homework - MTH 204",
+  "body": " Problem 24 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Consider the matrix defined in terms of the parameter . Compute . Show your work.    "
 },
 {
-  "id": "homework-25-2-1",
+  "id": "homework-25-3",
   "level": "2",
-  "url": "homework-25.html#homework-25-2-1",
+  "url": "homework-25.html#homework-25-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Consider the matrix defined in terms of the parameter . Compute . Show your work.   "
-},
-{
-  "id": "homework-25-3-1",
-  "level": "2",
-  "url": "homework-25.html#homework-25-3-1",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
 },
 {
   "id": "homework-26",
@@ -3471,17 +3462,17 @@ var ptx_lunr_docs = [
   "url": "homework-26.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 25 - Written Homework",
-  "body": " Problem 25 - Written Homework      Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?      "
+  "title": "Problem 25 - Written Homework - MTH 204",
+  "body": " Problem 25 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e., how many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?     "
 },
 {
-  "id": "homework-26-2-1",
+  "id": "homework-26-3",
   "level": "2",
-  "url": "homework-26.html#homework-26-2-1",
+  "url": "homework-26.html#homework-26-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e. How many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
+  "body": "  Suppose that is a matrix and that its reduced row echelon form is      If is a solution to the equation , what is the dimension of the vector and why? (i.e., how many entries does have?)      Give a parametric vector description of the solution set to the equation . Show your steps.      Find a basis for the null space . Be sure to explain why your set of vectors is a basis for .      Among the vectors , , , , and , what is the largest linearly independent set you can find and why?    "
 },
 {
   "id": "homework-27",
@@ -3489,13 +3480,13 @@ var ptx_lunr_docs = [
   "url": "homework-27.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 26 - Written Homework",
-  "body": " Problem 26 - Written Homework      Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.      "
+  "title": "Problem 26 - Written Homework - MTH 204",
+  "body": " Problem 26 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Suppose that is the matrix      Is the column space of equal to ? Why or why not?      Determine a basis for Col . Clearly justify your choice.      Find a nonzero vector in that is not equal to one of your basis vectors in (b) such that is in Col( ). Explain how you found .      Find a vector in such that is not in Col( ), or explain why no such vector exists.     "
 },
 {
-  "id": "homework-27-2-1",
+  "id": "homework-27-3",
   "level": "2",
-  "url": "homework-27.html#homework-27-2-1",
+  "url": "homework-27.html#homework-27-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3507,13 +3498,13 @@ var ptx_lunr_docs = [
   "url": "homework-28.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 27 - Written Homework",
-  "body": " Problem 27 - Written Homework      Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul        "
+  "title": "Problem 27 - Written Homework - MTH 204",
+  "body": " Problem 27 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Let .  ( Note : If you go to https:\/\/gvsu.edu\/s\/2EY you'll find the Sage code to enter the matrix given here and you can copy and paste it to ensure you have no entry errors.)     Complete each of the following sentences, with a brief explanation of why:     Nul is a subspace of for  , because      Col is a subspace of for  , because       With clear justification and labeling of your results (one short sentence of justification for each of the following items), determine each of the following:     A basis for Col       A basis for Nul       The dimension of Col       The dimension of Nul       "
 },
 {
-  "id": "homework-28-2-1",
+  "id": "homework-28-3",
   "level": "2",
-  "url": "homework-28.html#homework-28-2-1",
+  "url": "homework-28.html#homework-28-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3525,17 +3516,17 @@ var ptx_lunr_docs = [
   "url": "homework-29.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 28 - Written Homework",
-  "body": " Problem 28 - Written Homework      This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)        "
+  "title": "Problem 28 - Written Homework - MTH 204",
+  "body": " Problem 28 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .  Consider the following three vectors:   Write each of the vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      "
 },
 {
-  "id": "homework-29-2-1",
+  "id": "homework-29-3",
   "level": "2",
-  "url": "homework-29.html#homework-29-2-1",
+  "url": "homework-29.html#homework-29-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Write each of the following vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .      the three vectors to find and sketch: (i) (ii) (iii)     "
+  "body": "  This should be completed entirely by hand, with no use of Sage or other technology. For each question, write enough that you demonstrate that you are doing the work by hand.     Let . Verify that and are eigenvectors of and determine the corresponding eigenvalue for each.      Let . Determine the characteristic equation of and then use it to explain why has no real eigenvalues.      Suppose is a matrix whose eigenvectors are the vectors and in the given figure. Suppose further that the corresponding eigenvalues of are and .  Consider the following three vectors:   Write each of the vectors as a linear combination of and (clearly showing how you obtained these linear combinations), and then sketch the three resulting vectors on the figure (with labels). Note that there is no scale given in the figure; write all of your results in terms of and .    "
 },
 {
   "id": "homework-30",
@@ -3543,13 +3534,13 @@ var ptx_lunr_docs = [
   "url": "homework-30.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 29 - Written Homework",
-  "body": " Problem 29 - Written Homework      Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.      "
+  "title": "Problem 29 - Written Homework - MTH 204",
+  "body": " Problem 29 - Written Homework - MTH 204  You should write up solutions neatly to all problems, making sure to show all your work and follow the homework policies (see Blackboard document for details). You will turn in the hand-written assignment in person during Wednesday class time. The solutions you turn in should be your own work and written in your own words. You cannot use any resources outside of discussing with your professor or classmates and\/or your textbook. At the top of your first page of solutions, please list the names of any students who you worked with on the assignment. Don't forget to put your name at the top of the first page!     Suppose that is a matrix with eigenvalues and , where one eigenvalue has multiplicity 2. A student is in the process of determining a basis for each eigenspace of ; your task is to finish their work.     After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      After computing , the student row-reduces and finds that Determine a basis for . Show your thinking clearly.      Is diagonalizable? Why or why not?      Suppose that there was an error in the work in (b), and that actually after computing , the student correctly row-reduces and finds that Determine a basis for . Show your thinking clearly.      What impact, if any, does the result of (d) have on your conclusions in (c)? Explain.     "
 },
 {
-  "id": "homework-30-2-1",
+  "id": "homework-30-3",
   "level": "2",
-  "url": "homework-30.html#homework-30-2-1",
+  "url": "homework-30.html#homework-30-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -3561,17 +3552,17 @@ var ptx_lunr_docs = [
   "url": "homework-31.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Problem 30 - Written Homework",
-  "body": " Problem 30 - Written Homework     This final homework exercise invites you to reflect on your learning in the course. To earn an S , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, copy and paste your essay onto Blackboard under this homework problem.     "
+  "title": "Problem 30 - Written Homework - MTH 204",
+  "body": " Problem 30 - Written Homework - MTH 204    This final homework exercise invites you to reflect on your learning in the course. To earn an E , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, print your essay and staple it to this page.    "
 },
 {
-  "id": "homework-31-2-1",
+  "id": "homework-31-2",
   "level": "2",
-  "url": "homework-31.html#homework-31-2-1",
+  "url": "homework-31.html#homework-31-2",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This final homework exercise invites you to reflect on your learning in the course. To earn an S , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, copy and paste your essay onto Blackboard under this homework problem.   "
+  "body": "  This final homework exercise invites you to reflect on your learning in the course. To earn an E , you need to follow the directions and show honest effort and introspection, and of course write in your own words. Here's the prompt:   What's something about linear algebra you learned in MTH 204 that you found compelling, interesting, creative, or surprising? Are you curious about learning more? If so, what topics are you curious about? If not, why not?   You should type a 250-500 word essay in response (that's roughly 1\/2 to 3\/4 of a page of single-spaced text). Proof-read your work; collegiate-quality writing is expected. When you are finished, print your essay and staple it to this page.   "
 },
 {
   "id": "homework-32",
