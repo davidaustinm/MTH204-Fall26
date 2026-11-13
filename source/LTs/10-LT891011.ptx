@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 8, 9, 10, 11 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #8, #9, #10, and #11.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise workspace="2in">
+            <title>Learning Target 11, First Attempt</title>
+
+            <introduction>
+                <p>
+                    I can find the determinant of a given matrix using cofactor
+                    expansion and explain what information this tells us about
+                    the invertibility of a matrix.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Use a cofactor expansion to find the determinant of the
+                        matrix
+                        <md>
+                            A = \left[\begin{array}{rrr} 0 \amp 3 \amp 0 \\ 1 \amp 2 \amp k \\ -2 \amp 0 \amp 6 \end{array}\right]
+                        </md>
+                        Your result should depend on <m>k</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="0.5in">
+                <statement>
+                    <p>
+                        If <m>B</m> is a square invertible matrix, what do we
+                        know about <m>\det(B)</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="0.5in">
+                <statement>
+                    <p>
+                        For the first matrix, <m>A</m>, what values of <m>k</m>,
+                        if any, cause the matrix to be invertible?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="2in">
+            <title>Learning Target 10, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can convert a vector given in the standard basis into a
+                    vector in another basis and vice versa.
+                </p>
+
+                <p>
+                    Let <m>\mathcal{B}=\{\vvec_{1},\vvec_{2}\}</m> be a basis
+                    for <m>\mathbb{R}^{2}</m> where
+                    <m>\vvec_{1}=\twovec{1}{1}</m> and
+                    <m>\vvec_{2}=\twovec{3}{2}</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Find <m>\xvec</m> in <m>\mathbb{R}^2</m> if
+                        <m>\{ \xvec \} _{\mathcal{B}} = \twovec{3}{-2}</m>.
+                        Show your work (including noting anything you did in
+                        Sage) and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find <m>\{ \yvec \} _{\mathcal{B}}</m> if
+                        <m>\yvec = \twovec{5}{-4}</m>.
+                        Show your work (including noting anything you did in
+                        Sage) and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        If <m>\mathcal{C}</m> is the basis of
+                        <m>\mathbb{R}^2</m> formed by <m>\uvec</m> and
+                        <m>\vvec</m> shown below, find
+                        <m>\{ \bvec \} _{\mathcal{C}}</m>.
+                    </p>
+
+                    <image source="images/quiz10.png" width="50%"/>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <title>Learning Target 9, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can determine whether or not a set of vectors is a basis
+                    for <m>\mathbb{R}^n</m>, and give examples and non-examples
+                    of bases.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain how you know that the columns of the
+                        <m>3 \times 3</m> identity matrix form a basis for
+                        <m>\mathbb{R}^3</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Give an example of a basis for <m>\mathbb{R}^3</m> in
+                        which none of the vectors has more than 1 component that
+                        is 0.
+                        How do you know you've found a basis?
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Give an example of three vectors in <m>\mathbb{R}^3</m>
+                        that do NOT form a basis and explain how you know that
+                        this set is not a basis.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <title>Learning Target 8, Last Attempt</title>
+
+            <introduction>
+                <p>
+                    I can determine if a matrix is invertible, find an inverse,
+                    and use inverses to solve matrix equations.
+                </p>
+
+                <p>
+                    Consider the matrix
+                    <m>A = \left[\begin{array}{rrr}1 \amp 2 \amp -2 \\ 1 \amp 1 \amp 1 \\ 2 \amp -1 \amp 1 \end{array}\right]</m>.
+                </p>
+            </introduction>
+
+            <task>
+                <statement>
+                    <p>
+                        Explain how you know <m>A</m> is invertible.
+                        (Do not actually find the inverse or use the inverse
+                        commands in Sage on this one.)
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Find <m>A^{-1}</m>, using Sage.
+                        Write down the inverse below, as well as the command you
+                        used.
+                    </p>
+                </statement>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Use your inverse to solve the equation
+                        <m>A \xvec = \threevec{-8}{5}{9}</m> and explain your
+                        process.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+</worksheet>
