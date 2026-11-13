@@ -72,7 +72,7 @@
                 </p>
             </introduction>
 
-            <task>
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         Find <m>\xvec</m> in <m>\mathbb{R}^2</m> if
@@ -83,7 +83,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="1.5in">
                 <statement>
                     <p>
                         Find <m>\{ \yvec \} _{\mathcal{B}}</m> if
@@ -94,7 +94,7 @@
                 </statement>
             </task>
 
-            <task>
+            <task workspace="0.5in">
                 <statement>
                     <p>
                         If <m>\mathcal{C}</m> is the basis of
@@ -103,7 +103,7 @@
                         <m>\{ \bvec \} _{\mathcal{C}}</m>.
                     </p>
 
-                    <image source="images/quiz10.png" width="50%"/>
+                    <image source="images/quiz10.png" width="40%"/>
                 </statement>
             </task>
         </exercise>
