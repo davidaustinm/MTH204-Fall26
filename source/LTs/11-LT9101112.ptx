@@ -6,7 +6,7 @@
     <page>
         <p>
             This quiz covers course learning target #9, #10, #11, and #12.
-            Read all <term>DIRECTIONS</term> carefully.
+            Read all <term>DIRECTIONS</term> carefully. Show work for full credit.
             Good luck!
         </p>
 
@@ -40,10 +40,10 @@
                     </p>
             </introduction>
 
-            <task workspace="1in">
+            <task workspace="3in">
                 <statement>
                     <p>
-                        Find a basis for the column space <m>\col(A)</m>.
+                        Give a basis for the column space of <m>A</m>, <m>\col(A)</m>.
                     </p>
                 </statement>
             </task>
@@ -51,12 +51,12 @@
             <task workspace="3in">
                 <statement>
                     <p>
-                       Find a basis for the null space <m>\nul(A)</m>.
+                       Give a basis for the null space of <m>A</m>, <m>\nul(A)</m>.
                     </p>
                 </statement>
             </task>
 
-            <task workspace="0.5in">
+            <task workspace=".25in">
                 <statement>
                     <p>
                         Complete the sentences:
