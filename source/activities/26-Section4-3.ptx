@@ -197,10 +197,10 @@
                 <p>
                     Suppose that there are a total of 1000 trucks so that the
                     initial state vector <m>{\xvec_0 = \twovec PQ}</m> where
-                    <m>P+Q = 1000</m>.
+                    <m>{P+Q = 1000}</m>.
                     What happens to the distribution of cars after a very long
                     time
-                    <m>\lim_\limits{k\to\infty} A^k \xvec_0 = \lim_\limits{k\to\infty} A^k\twovec PQ</m>?
+                    <m>{\lim_\limits{k\to\infty} A^k \xvec_0 = \lim_\limits{k\to\infty} A^k\twovec PQ}</m>?
                 </p>
             </statement>
         </task>
