@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet component="quiz">
+    <title>Learning Target 9, 10, 11, 12 Quiz - MTH 204</title>
+
+    <page>
+        <p>
+            This quiz covers course learning target #9, #10, #11, and #12.
+            Read all <term>DIRECTIONS</term> carefully.
+            Good luck!
+        </p>
+
+        <exercise workspace="2in">
+            <title>Learning Target 12, First Attempt</title>
+
+            <introduction>
+                <p>
+                    I can find and clearly justify bases for the null space and
+                    the column space of a matrix (including why the set of
+                    vectors is a basis, i.e., why it is linearly independent and
+                    spans the relevant spaces) and thus their dimensions.
+                </p>
+
+                <p>
+                        Consider the matrix
+                        <md>
+                            A = \left[\begin{array}{rrrrrr} 
+                            0 \amp 2 \amp 0 \amp -4 \amp 0 \amp 6 \\
+                            0 \amp -4 \amp -1 \amp 7 \amp 0 \amp -16 \\
+                            0 \amp 6 \amp 0 \amp -12 \amp 3 \amp 15 \\
+                            0 \amp 4 \amp -1 \amp -9 \amp 0 \amp 8
+                             \end{array}\right] \sim 
+                             \left[\begin{array}{rrrrrr} 
+                            0 \amp 1 \amp 0 \amp -2 \amp 0 \amp 3 \\
+                            0 \amp 0 \amp 1 \amp 1 \amp 0 \amp 4 \\
+                            0 \amp 0 \amp 0 \amp 0 \amp 1 \amp -1 \\
+                            0 \amp 0 \amp 0 \amp 0 \amp 0 \amp 0 
+                            \end{array}\right].
+                        </md>
+                    </p>
+            </introduction>
+
+            <task workspace="2.5in">
+                <statement>
+                    <p>
+                        Find a basis for the column space <m>\col(A)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="2.5in">
+                <statement>
+                    <p>
+                       Find a basis for the null space <m>\nul(A)</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="0.5in">
+                <statement>
+                    <p>
+                        Complete the sentences:
+                    </p>
+                    <p>
+                        <m>\col(A)</m> is a
+                        <fillin characters="5"/>-dimensional subspace of
+                        <m>\real^p</m> where <m>p=</m> <fillin characters="5"/>.
+                    </p>
+                    <p>
+                        <m>\nul(A)</m> is a
+                        <fillin characters="5"/>-dimensional subspace of
+                        <m>\real^p</m> where <m>p=</m> <fillin characters="5"/>.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="2in">
+            <title>Learning Target 11, Second Attempt</title>
+
+            <introduction>
+                <p>
+                    I can find the determinant of a given matrix using cofactor
+                    expansion and explain what information this tells us about
+                    the invertibility of a matrix.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Use a cofactor expansion to find the determinant of the
+                        matrix
+                        <md>
+                            A = \left[\begin{array}{rrr} 2 \amp 1 \amp 0 \\ 1 \amp 2 \amp 1 \\ -1 \amp 0 \amp k \end{array}\right]
+                        </md>
+                        Your result should depend on <m>k</m>.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="0.5in">
+                <statement>
+                    <p>
+                        For what values of <m>k</m>, if any, is <m>A</m>
+                        invertible?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="2in">
+            <title>Learning Target 10, Last Attempt</title>
+
+            <introduction>
+                <p>
+                    I can convert a vector given in the standard basis into a
+                    vector in another basis and vice versa.
+                </p>
+
+                <p>
+                    Let <m>\mathcal{B}=\{\vvec_{1},\vvec_{2}\}</m> be a basis
+                    for <m>\mathbb{R}^{2}</m> where
+                    <m>\vvec_{1}=\twovec{2}{1}</m> and
+                    <m>\vvec_{2}=\twovec{0}{-1}</m>.
+                </p>
+            </introduction>
+
+            <task workspace="1.5in">
+                <statement>
+                    <p>
+                        Find <m>\xvec</m> in <m>\mathbb{R}^2</m> if
+                        <m>\{ \xvec \} _{\mathcal{B}} = \twovec{3}{-2}</m>.
+                        Show your work (including noting anything you did in
+                        Sage) and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1.5in">
+                <statement>
+                    <p>
+                        Find <m>\{ \yvec \} _{\mathcal{B}}</m> if
+                        <m>\yvec = \twovec{8}{0}</m>.
+                        Show your work (including noting anything you did in
+                        Sage) and explain your thinking.
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <title>Learning Target 9, Last Attempt</title>
+
+            <statement>
+                <p>
+                    I can determine whether or not a set of vectors is a basis
+                    for <m>\mathbb{R}^n</m>, and give examples and non-examples
+                    of bases.
+                </p>
+                <p>
+                    Find a set of vectors from among
+                    <md>
+                    \vvec_1 = \threevec{2}{-4}{0}, 
+                    \vvec_2 = \threevec{0}{-1}{-1},
+                    \vvec_3 = \threevec{-4}{7}{-1},
+                    \vvec_4 = \threevec{3}{4}{1}
+                    </md>
+                    that form a basis for <m>\mathbb{R}^3</m>.
+                    </p>
+            </statement>
+        </exercise>
+    </page>
+</worksheet>
