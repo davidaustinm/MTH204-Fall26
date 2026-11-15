@@ -69,7 +69,7 @@
                     <p>
                         <m>\nul(A)</m> is a
                         <fillin characters="5"/>-dimensional subspace of
-                        <m>\real^p</m> where <m>p=</m> <fillin characters="5"/>.
+                        <m>\real^q</m> where <m>q=</m> <fillin characters="5"/>.
                     </p>
                 </statement>
             </task>
