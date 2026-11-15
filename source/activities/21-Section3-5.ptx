@@ -18,103 +18,118 @@
         </p>
     </introduction>
 
-        <page>
-    <exercise>
-        <introduction>
-            <p>
-                Let's start by understanding a few things about subspaces.
-            </p>
-        </introduction>
-
-        <task workspace="1in">
-            <statement>
+    <page>
+        <exercise>
+            <introduction>
                 <p>
-                    If <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is a set of
-                    vectors in <m>\mathbb{R}^m</m>, explain why the zero vector
-                    <m>{\bf 0}</m> can be expressed as a linear combination of
-                    these vectors.
-                    Use this fact to explain why <m>{\bf 0}</m> belongs to any
-                    subspace in <m>\mathbb{R}^m</m>.
+                    Let's start by understanding a few things about subspaces.
                 </p>
-            </statement>
-        </task>
+            </introduction>
 
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Which line below is a subspace of
-                    <m>\mathbb{R}^2</m>? Explain your reasoning.
-                </p>
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        If <m>\vvec_1, \vvec_2, \dots, \vvec_n</m> is a set of
+                        vectors in <m>\mathbb{R}^m</m>, explain why the zero
+                        vector <m>{\bf 0}</m> can be expressed as a linear
+                        combination of these vectors.
+                        Use this fact to explain why <m>{\bf 0}</m> belongs to
+                        any subspace in <m>\mathbb{R}^m</m>.
+                    </p>
+                </statement>
 
-                <figure xml:id="figure-lines-r2">
-                    <caption>
-                        Two lines in <m>\real^2</m>, one of which is a subspace
-                        and one of which is not.
-                    </caption>
+                <solution component="21-solutions">
+                    <p>
+                        <m>0\vvec_1 + 0\vvec_2 + \cdots + \vvec_n = \zerovec</m>
+                        is a linear combination of
+                        <m>\vvec_1, \vvec_2, \ldots, \vvec_n</m> with weights
+                        all zero.
+                        Therefore, <m>\zerovec</m> is in the span of any set of
+                        vectors.
+                    </p>
+                </solution>
+            </task>
 
-                    <sidebyside widths="40% 40%" margins="5% 5%">
-                        <image>
-                            <shortdescription>
-                                A line in two dimensions that does not pass
-                                through the origin.
-                            </shortdescription>
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Which line below is a subspace of <m>\mathbb{R}^2</m>?
+                        Explain your reasoning.
+                    </p>
 
-                            <description>
-                                <p>
+                    <figure xml:id="figure-lines-r2">
+                        <caption>
+                            Two lines in <m>\real^2</m>, one of which is a
+                            subspace and one of which is not.
+                        </caption>
+
+                        <sidebyside widths="40% 40%" margins="5% 5%">
+                            <image>
+                                <shortdescription>
+                                    A line in two dimensions that does pass
+                                    through the origin.
+                                </shortdescription>
+
+                                <description>
+                                    <p>
+                                        A line in two dimensions that does pass
+                                        through the origin.
+                                    </p>
+                                </description>
+                                <prefigure xmlns="https://prefigure.org" label="pf-subspace-line-skew">
+                                    <diagram xmlns="https://prefigure.org" dimensions="(200, 200)" margins="5">
+                                        <coordinates bbox="(-4,-4,4,4)">
+                                            <grid-axes decorations="no"/>
+                                            <line at="line" endpoints="((0,0),(2,1))" stroke="blue" infinite="yes"/>
+                                        </coordinates>
+                                    </diagram>
+                                </prefigure>
+                            </image>
+
+                            <image>
+                                <shortdescription>
                                     A line in two dimensions that does not pass
                                     through the origin.
-                                </p>
-                            </description>
-                            <prefigure xmlns="https://prefigure.org" label="pf-subspace-line-skew">
-                                <diagram xmlns="https://prefigure.org" dimensions="(200, 200)" margins="5">
-                                    <coordinates bbox="(-4,-4,4,4)">
-                                        <grid-axes decorations="no"/>
-                                        <line at="line" endpoints="((0,0),(2,1))" stroke="blue" infinite="yes"/>
-                                    </coordinates>
-                                    <annotations text="A line passing through negative two, negative one and two one">
-                                        <annotation ref="line" text="The line"/>
-                                    </annotations>
-                                </diagram>
-                            </prefigure>
-                        </image>
+                                </shortdescription>
 
-                        <image>
-                            <shortdescription>
-                                A line in two dimensions that does passes
-                                through the origin.
-                            </shortdescription>
+                                <description>
+                                    <p>
+                                        A line in two dimensions that does not
+                                        pass through the origin.
+                                    </p>
+                                </description>
+                                <prefigure xmlns="https://prefigure.org" label="pf-subspace-line-origin">
+                                    <diagram xmlns="https://prefigure.org" dimensions="(200, 200)" margins="5">
+                                        <coordinates bbox="(-4,-4,4,4)">
+                                            <grid-axes decorations="no"/>
+                                            <line at="line" endpoints="((0,1),(2,2))" stroke="blue" infinite="yes"/>
+                                        </coordinates>
+                                    </diagram>
+                                </prefigure>
+                            </image>
+                        </sidebyside>
+                    </figure>
+                </statement>
 
-                            <description>
-                                <p>
-                                    A line in two dimensions that does passes
-                                    through the origin.
-                                </p>
-                            </description>
-                            <prefigure xmlns="https://prefigure.org" label="pf-subspace-line-origin">
-                                <diagram xmlns="https://prefigure.org" dimensions="(200, 200)" margins="5">
-                                    <coordinates bbox="(-4,-4,4,4)">
-                                        <grid-axes decorations="no"/>
-                                        <line at="line" endpoints="((0,1),(2,2))" stroke="blue" infinite="yes"/>
-                                    </coordinates>
-                                    <annotations text="A line passing through negative two, negative one and two one">
-                                        <annotation ref="line" text="The line"/>
-                                    </annotations>
-                                </diagram>
-                            </prefigure>
-                        </image>
-                    </sidebyside>
-                </figure>
-            </statement>
-        </task>
+                <solution component="21-solutions">
+                    <p>
+                        The line on the left passes through the origin, so it is
+                        a subspace <ndash/> it is the
+                        <m>\laspan{\twovec{2}{1}}</m>.
+                        The line on the right does not pass through the origin,
+                        so it cannot be a subspace.
+                    </p>
+                </solution>
+            </task>
 
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Suppose that <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m>,
-                    and <m>\vvec_4</m> are four vectors in <m>\real^3</m> and
-                    that
-                    <md>
-                        \begin{bmatrix}
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Suppose that <m>\vvec_1</m>, <m>\vvec_2</m>,
+                        <m>\vvec_3</m>, and <m>\vvec_4</m> are four vectors in
+                        <m>\real^3</m> and that
+                        <md>
+                            \begin{bmatrix}
 		  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
 		  \end{bmatrix}
 		  \sim
@@ -123,461 +138,820 @@
 		  0 \amp 0 \amp 1 \amp 1 \\
 		  0 \amp 0 \amp 0 \amp 0 \\
 		  \end{bmatrix}.
-                    </md>
-                    Give a description of the subspace
-                    <m>S=\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m> of
-                    <m>\real^3</m>.
-                </p>
-            </statement>
-        </task>
-    </exercise>
+                        </md>
+                        Give a description of the subspace
+                        <m>S=\laspan{\vvec_1,\vvec_2,\vvec_3,\vvec_4}</m> of
+                        <m>\real^3</m>.
+                    </p>
+                </statement>
 
+                <solution component="21-solutions">
+                    <p>
+                        If we put the vectors <m>\vvec_1, \vvec_2, \vvec_3</m>
+                        as the columns of a matrix, we have that its reduced row
+                        echelon form is <m>I_3</m>.
+                        Therefore, because there is a pivot in every row, these
+                        vectors span <m>\mathbb{R}^3</m>, meaning that
+                        <m>S = \mathbb{R}^3</m>.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
     </page>
 
     <page>
-        
-    <p>
-        The first important subspace we'll look at is called the <term>column space</term>
-        of <m>A</m> and denoted as <m>\operatorname{Col}(A)</m>.
-        It's just the span of the columns of <m>A</m>.
-    </p>
+        <p>
+            The first important subspace we'll look at is called the
+            <term>column space</term> of <m>A</m> and denoted as
+            <m>\operatorname{Col}(A)</m>.
+            It's just the span of the columns of <m>A</m>.
+        </p>
 
         <definition xml:id="def-3-5-colspace">
-          <statement>
-            <p>
-              If <m>A</m> is an <m>m\times n</m> matrix we call the span of its columns the <term>column space</term> of <m>A</m> and denote it as <m>col(A)</m>. That is 
-              <md>
-            \operatorname{Col}(A) = \laspan{\vvec_1, \vvec_2,
-  \vvec_3, \vvec_4}.
-        </md>
-            </p>
-          </statement>
-        </definition>
-        
-
-    <exercise xml:id="exer-3-5-col">
-        <introduction>
-            <p>
-                Consider the matrix
-                <md>
-                    A = \begin{bmatrix}
-  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
-\end{bmatrix}
-= 
-\begin{bmatrix}
-  2 \amp -1 \amp 2 \amp 3 \\
-  1 \amp 0 \amp 0 \amp 2 \\
-  -2 \amp 2 \amp -4 \amp -2 \\
-\end{bmatrix}
-\sim
-\begin{bmatrix}
-  1 \amp 0 \amp 0 \amp 2 \\
-  0 \amp 1 \amp -2 \amp 1 \\
-  0 \amp 0 \amp 0 \amp 0 \\
-\end{bmatrix}
-                </md>
-            </p>
-        </introduction>
-
-        <task workspace="1in">
-          <statement>
-            <p>
-              Give an example of a vector in <m>\col(A)</m>.
-            </p>
-          </statement>
-        </task>
-
-        <task workspace="1in">
-          <statement>
-            <p>
-              Is <m>\bvec = \threevec{15}{9}{-12}</m> in <m>\col(A)</m>? Is <m>\cvec = \fourvec1111</m> in <m>\col(A)</m>?
-            </p>
-          </statement>
-        </task>
-
-        <task>
-          <statement>
-            <p>
-              Fill in the blanks: <m>\col(A)</m> is a subspace of <fillin characters="10" /> because
-            </p>
-            <p>
-                 <fillin characters="80" />.
-            </p>
-          </statement>
-        </task>
-        <task workspace="1in">
             <statement>
                 <p>
-                    Are the vectors <m>\vvec_1,\ldots,\vvec_4</m> linearly
-                    independent or dependent?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Write <m>\vvec_3</m> and <m>\vvec_4</m> as a linear
-                    combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Explain why
-                    <m>\col(A) = \laspan{\vvec_1, \vvec_2, \vvec_3, \vvec_4} =
-  \laspan{\vvec_1, \vvec_2}</m>.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1.5in">
-            <statement>
-                <p>
-                    Explain why <m>\vvec_1</m> and <m>\vvec_2</m> form a
-                    linearly independent set of vectors.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1.25in">
-          <statement>
-            <p>
-             Describe <m>\col(A)</m> geometrically.
-            </p>
-          </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Since <m>\vvec_1</m> and <m>\vvec_2</m> span <m>\col(A)</m>
-                    and are linearly independent, we say they form a <term> basis </term> for
-                    <m>\col(A)</m>.
-                    The <term>dimension</term> of a subspace <m>S</m> is
-                    denoted <m>\dim S</m> and is the number of vectors in a
-                    basis for that subspace.
-                    <m>\col(A)</m> is a subspace of <m>\real^3</m>- What is the
-                    dimension of <m>\col(A)</m> (denoted <m>\dim \col(A)</m> )?
-                </p>
-            </statement>
-        </task>
-    </exercise>
-
-        </page>
-
-    <page>
-    <definition xml:id="def-3-5-basisdim">
-      <statement>
-        <p>
-          A <term>basis</term> for a subspace <m>S</m> of <m>\mathbb{R}^p</m> is a set of vectors in <m>S</m> that are linearly independent and whose span is <m>S</m>. We say that the <term>dimension</term> of the subspace <m>S</m>, denoted <m>\dim S</m> is the number of vectors in any basis.
-        </p>
-      </statement>
-    </definition>
-
-    <exercise xml:id="exer-3-5-colB">
-        <introduction>
-            <p>
-                Suppose we have a matrix
-                <md>
-                    B = \begin{bmatrix}
-    \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
-  \end{bmatrix}
-  \sim
-  \begin{bmatrix}
-    1 \amp -2 \amp 0 \amp 3 \amp 0 \\
-    0 \amp 0 \amp 1 \amp -1 \amp 0 \\
-    0 \amp 0 \amp 0 \amp 0 \amp 1 \\
-    0 \amp 0 \amp 0 \amp 0 \amp 0 \\
-  \end{bmatrix}.
-                </md>
-            </p>
-        </introduction>
-
-        <task workspace=".6in">
-            <statement>
-                <p>
-                    What is the shape of <m>B</m>; that is, how many rows and
-                    columns does it have?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace=".6in">
-            <statement>
-                <p>
-                    Is <m>\laspan{\bvec_1} = \laspan{\fourvec1000}</m>?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace=".7in">
-            <statement>
-                <p>
-                    In this case, the column space
-                    <m>\col(B) = \laspan{\bvec_1, \bvec_2,
-    \bvec_3, \bvec_4, \bvec_5}</m>.
-                    Are these five vectors linearly independent?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace=".7in">
-            <statement>
-                <p>
-                    How can we form a basis for <m>\col(B)</m>?
-                </p>
-            </statement>
-        </task>
-
-        <task>
-            <statement>
-                <p>
-                    Fill in the blanks: <m>\col(B)</m> is a
-                   <fillin characters="5" />-dimensional subspace of <m>\real^p</m> where
-                    <m>p=</m> <fillin characters="5" />
-                </p>
-            </statement>
-        </task>
-    </exercise>
-        </page>
-
-    <page>
-
-    <exercise workspace="1in">
-        <statement>
-            <p>
-                Generally speaking, what is the relationship between the
-                dimension <m>\col(C)</m> and the number of pivots in <m>C</m>?
-            </p>
-        </statement>
-    </exercise>
-
-              <p>
-                The second subspace we'll look at is called the
-                <term> null
-    space</term> of <m>A</m> and is denoted
-                <m>\nul(A)</m>.
-                It's just the solution set of the equation
-                <m>A\xvec = \zerovec</m>.
-            </p>
-
-            <definition xml:id="def-3-5-null">
-              <statement>
-                <p>
-                  If <m>A</m> is an <m>m\times n</m> matrix we call the subset of vectors <m>\xvec</m> in <m>\mathbb{R}^n</m> satisfying <m>{A\xvec={\bf 0}}</m> the <term>null space</term> of <m>A</m> and denote it by <m>\nul(A)</m>.
-                </p>
-              </statement>
-            </definition>
- 
-
-    <exercise>
-        <introduction>
-            <p>
-                Let's now go back to the matrix <m>A</m> from <xref ref="exer-3-5-col"/>, rewritten here:
-                <md>
-                    A = \begin{bmatrix}
-  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
-\end{bmatrix}
-= 
-\begin{bmatrix}
-  2 \amp -1 \amp 2 \amp 3 \\
-  1 \amp 0 \amp 0 \amp 2 \\
-  -2 \amp 2 \amp -4 \amp -2 \\
-\end{bmatrix}
-\sim
-\begin{bmatrix}
-  1 \amp 0 \amp 0 \amp 2 \\
-  0 \amp 1 \amp -2 \amp 1 \\
-  0 \amp 0 \amp 0 \amp 0 \\
-\end{bmatrix}
-                </md>
-            </p>
-        </introduction>
-
-        <task workspace="2in">
-            <statement>
-                <p>
-                    Write the solution set to the equation
-                    <m>A\xvec = \zerovec</m> as a parametric description.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Use this parametric description to find two vectors
-                    <m>\wvec_1</m> and <m>\wvec_2</m> for which
-                    <m>\nul(A) = \laspan{\wvec_1,\wvec_2}</m>.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Explain why <m>\wvec_1</m> and <m>\wvec_2</m> form a
-                    linearly independent set of vectors.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Do <m>\wvec_1</m> and <m>\wvec_2</m> form a basis for
-                    <m>\nul(A)</m>?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    In this case, since vectors in <m>\nul(A)</m> are in
-                    <m>\real^4</m>, <m>\nul(A)</m> is a subspace of
-                    <m>\real^4</m>.
-                    What is the dimension of <m>\nul(A)</m>, that is what is
-                    <m>\dim \nul(A)</m>?
-                </p>
-            </statement>
-        </task>
-    </exercise>
-  </page>
-    <page>
-        
-  
-
-    <exercise>
-        <introduction>
-            <p>
-                Let's go back to the matrix <m>B</m> from <xref ref="exer-3-5-colB"/>, rewritten below
-                <md>
-                    B = \begin{bmatrix}
-    \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
-  \end{bmatrix}
-  \sim
-  \begin{bmatrix}
-    1 \amp -2 \amp 0 \amp 3 \amp 0 \\
-    0 \amp 0 \amp 1 \amp -1 \amp 0 \\
-    0 \amp 0 \amp 0 \amp 0 \amp 1 \\
-    0 \amp 0 \amp 0 \amp 0 \amp 0 \\
-  \end{bmatrix}.
-                </md>
-            </p>
-        </introduction>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Find a basis for <m>\nul(B)</m>.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Complete the sentence: <m>\nul(B)</m> is a
-                    <fillin characters="5" />-dimensional subspace of <m>\real^p</m> where
-                    <m>p=</m> <fillin characters="5" />.
-                </p>
-            </statement>
-        </task>
-    </exercise>
-
-    <exercise>
-        <introduction>
-            <p>
-                Suppose that <m>C</m> is a <m>50\times 100</m> matrix with 30
-                pivots.
-            </p>
-        </introduction>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    <m>\col(C)</m> is a <fillin characters="5" />-dimensional subspace of
-                    <m>\real^p</m> where <m>p=</m> <fillin characters="5" />.
-                </p>
-            </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    <m>\nul(C)</m> is a <fillin characters="5" />-dimensional subspace of
-                    <m>\real^p</m> where <m>p=</m> <fillin characters="5" />.
-                </p>
-            </statement>
-        </task>
-    </exercise>
-
-        </page>
-
-    <page>
-    <definition xml:id="def-3-5-rank">
-      <statement>
-        <p>
-          The <term>rank</term> of a matrix <m>A</m> is the number of pivot positions in <m>A</m> and is denoted by <m>\rank(A)</m>.
-        </p>
-      </statement>
-    </definition>
-    <exercise>
-        <introduction>
-            <p>
-                Let's make further connections between topics and new vocabulary.
-            </p>
-        </introduction>
-        <task workspace=".5in">
-          <statement>
-            <p>
-              How can we use information about the pivots to get a basis for <m>\col(C)</m>?
-            </p>
-          </statement>
-        </task>
-        <task workspace=".3in">
-            <statement>
-                <p>
-                    What is the relationship between the rank of a matrix
-                    <m>A</m> and the dimension of <m>\col(A)</m>?
-                </p>
-            </statement>
-        </task>
-
-        <task workspace=".5in">
-          <statement>
-            <p>
-              If <m>A</m> is an invertible <m>9\times 9</m> matrix, what can you say about <m>\col(A)</m>?
-            </p>
-          </statement>
-        </task>
-
-        <task workspace=".5in">
-          <statement>
-            <p>
-              Suppose that <m>A</m> is an <m>8\times 10</m> matrix and <m>\col(A)=\mathbb{R}^8</m>. If <m>\bvec</m> is an 8-dimensional vector, what can you say about the equation <m>A\xvec=\bvec</m>.
-            </p>
-          </statement>
-        </task>
-
-        <task workspace="1in">
-            <statement>
-                <p>
-                    Say <m>A</m> is an <m>m\times n</m> matrix.
-                    Fill in the blank:
+                    If <m>A</m> is an <m>m\times n</m> matrix we call the span
+                    of its columns the <term>column space</term> of <m>A</m> and
+                    denote it as <m>col(A)</m>.
+                    That is
                     <md>
-                        \dim \nul(A) + \dim \col(A) = \underline{\hspace{.5in}}
+                        \operatorname{Col}(A) = \laspan{\vvec_1, \vvec_2,
+  \vvec_3, \vvec_4}.
                     </md>
                 </p>
             </statement>
-        </task>
-    </exercise>
+        </definition>
 
-        </page>
+        <exercise xml:id="exer-3-5-col">
+            <introduction>
+                <p>
+                    Consider the matrix
+                    <md>
+                        A = \begin{bmatrix}
+  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  2 \amp -1 \amp 2 \amp 3 \\
+  1 \amp 0 \amp 0 \amp 2 \\
+  -2 \amp 2 \amp -4 \amp -2 \\
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+  1 \amp 0 \amp 0 \amp 2 \\
+  0 \amp 1 \amp -2 \amp 1 \\
+  0 \amp 0 \amp 0 \amp 0 \\
+\end{bmatrix}
+                    </md>
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Give an example of a vector in <m>\col(A)</m>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        A vector in the column space is any linear combination
+                        of the columns of <m>A</m>.
+                        Therefore, one example is
+                        <m>{\vvec_1 + \vvec_2 + \vvec_3 + \vvec_4 = \threevec{6}{3}{-6}.}</m>
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Is <m>\bvec = \threevec{15}{9}{-12}</m> in
+                        <m>\col(A)</m>?
+                        Is <m>\cvec = \fourvec1111</m> in <m>\col(A)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        If we augment <m>A</m> with <m>\bvec</m> and row reduce,
+                        we have
+                        <md>
+                            \left[A | \bvec \right] \sim \left[\begin{array}{rrrr|r}
+                   1 \amp 0 \amp 0 \amp 2 \amp 9 \\
+                   0 \amp 1 \amp -2 \amp 1 \amp 3 \\
+                   0 \amp 0 \amp 0 \amp 0 \amp 0 \end{array}\right].
+                        </md>
+                        This is consistent such that
+                        <m>{9\vvec_1 + 3\vvec_2 = \bvec.}</m> Therefore,
+                        <m>\bvec</m> is in <m>\col(A)</m>.
+                    </p>
+
+                    <p>
+                        <m>\cvec</m> is not in <m>\col(A)</m> because a vector
+                        with 4 entries cannot be in the span of vectors with
+                        only 3 entries.
+                        We can't create a fourth entry using vector addition and
+                        scalar multiplication!
+                    </p>
+                </solution>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Fill in the blanks: <m>\col(A)</m> is a subspace of
+                        <fillin characters="10"/> because
+                    </p>
+
+                    <p>
+                        <fillin characters="80"/>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\col(A)</m> is a subspace of <m>\mathbb{R}^3</m>
+                        because <m>A</m> has 3 rows meaning that each column has
+                        3 entries and thus lives in <m>\mathbb{R}^3</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Are the vectors <m>\vvec_1,\ldots,\vvec_4</m> linearly
+                        independent or dependent?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        There is not a pivot in every column, thus the vectors
+                        <m>\vvec_1,\ldots,\vvec_4</m> are linearly dependent.
+                        Specifically, <m>\vvec_3</m> and <m>\vvec_4</m> can be
+                        written as a linear combination of <m>\vvec_1</m> and
+                        <m>\vvec_2</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Write <m>\vvec_3</m> and <m>\vvec_4</m> as a linear
+                        combination of <m>\vvec_1</m> and <m>\vvec_2</m>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        From the RREF( <m>A</m> ), we have that
+                        <m>{\vvec_3 = -2\vvec_2}</m> and
+                        <m>{\vvec_4 = 2\vvec_1 + \vvec_2.}</m>
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Explain why
+                        <m>\col(A) = \laspan{\vvec_1, \vvec_2, \vvec_3, \vvec_4} =
+  \laspan{\vvec_1, \vvec_2}</m>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        Since <m>\vvec_3</m> and <m>\vvec_4</m> are linear
+                        combinations of <m>\vvec_1</m> and <m>\vvec_2</m>, the
+                        <m>{\laspan{\vvec_1, \vvec_2, \vvec_3, \vvec_4} =
+                      \laspan{\vvec_1, \vvec_2}}</m>
+                        by definition.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1.5in">
+                <statement>
+                    <p>
+                        Explain why <m>\vvec_1</m> and <m>\vvec_2</m> form a
+                        linearly independent set of vectors.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        Taking these as the columns of a matrix, there is a
+                        pivot in every column and thus, <m>\vvec_1</m> and
+                        <m>\vvec_2</m> are linearly independent.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1.25in">
+                <statement>
+                    <p>
+                        Describe <m>\col(A)</m> geometrically.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        Geometrically, <m>\col(A)</m> is a plane in
+                        <m>\mathbb{R}^3</m> that goes through the origin.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Since <m>\vvec_1</m> and <m>\vvec_2</m> span
+                        <m>\col(A)</m> and are linearly independent, we say they
+                        form a <term> basis </term> for <m>\col(A)</m>.
+                        The <term>dimension</term> of a subspace <m>S</m> is
+                        denoted <m>\dim S</m> and is the number of vectors in a
+                        basis for that subspace.
+                        <m>\col(A)</m> is a subspace of <m>\real^3</m>- What is
+                        the dimension of <m>\col(A)</m> (denoted
+                        <m>\dim \col(A)</m> )?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        Since the basis of <m>\col(A)</m> is made up of 2
+                        vectors, <m>\vvec_1</m> and <m>\vvec_2</m>,
+                        <m>{\dim \col(A) = 2}</m>.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <definition xml:id="def-3-5-basisdim">
+            <statement>
+                <p>
+                    A <term>basis</term> for a subspace <m>S</m> of
+                    <m>\mathbb{R}^p</m> is a set of vectors in <m>S</m> that are
+                    linearly independent and whose span is <m>S</m>.
+                    We say that the <term>dimension</term> of the subspace
+                    <m>S</m>, denoted <m>\dim S</m> is the number of vectors in
+                    any basis.
+                </p>
+            </statement>
+        </definition>
+
+        <exercise xml:id="exer-3-5-colB">
+            <introduction>
+                <p>
+                    Suppose we have a matrix
+                    <md>
+                        B = \begin{bmatrix}
+    \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
+  \end{bmatrix}
+  \sim
+  \begin{bmatrix}
+    1 \amp -2 \amp 0 \amp 3 \amp 0 \\
+    0 \amp 0 \amp 1 \amp -1 \amp 0 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+  \end{bmatrix}.
+                    </md>
+                </p>
+            </introduction>
+
+            <task workspace=".6in">
+                <statement>
+                    <p>
+                        What is the shape of <m>B</m>; that is, how many rows
+                        and columns does it have?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>B</m> is size <m>4 \times 5</m>, i.e., has 4 rows and
+                        5 columns.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace=".6in">
+                <statement>
+                    <p>
+                        Is <m>\laspan{\bvec_1} = \laspan{\fourvec1000}</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        No!
+                        We always need to look back at the original matrix when
+                        considering the column space and span.
+                        <m>\laspan{\bvec_1}</m> is a line through the vector
+                        <m>\bvec_1</m>, while <m>\laspan{\fourvec1000}</m> is
+                        the <m>x</m>-axis.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace=".7in">
+                <statement>
+                    <p>
+                        In this case, the column space
+                        <m>{\col(B) = \laspan{\bvec_1, \bvec_2,
+    \bvec_3, \bvec_4, \bvec_5}}</m>.
+                        Are these five vectors linearly independent?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        No because there isn't a pivot in every column!
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace=".7in">
+                <statement>
+                    <p>
+                        How can we form a basis for <m>\col(B)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        We can take the column from <m>B</m> that contain pivots
+                        in the reduced row echelon form.
+                        This would be columns <m>\bvec_1, \bvec_3,</m> and
+                        <m>\bvec_5</m> such that
+                        <m>{\col(B) = \laspan{\bvec_1, \bvec_3, \bvec_5}.}</m>
+                    </p>
+                </solution>
+            </task>
+
+            <task>
+                <statement>
+                    <p>
+                        Fill in the blanks: <m>\col(B)</m> is a
+                        <fillin characters="5"/>-dimensional subspace of
+                        <m>\real^p</m> where <m>p=</m> <fillin characters="5"/>
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\col(B)</m> is a 3-dimensional subspace of
+                        <m>\real^p</m> where <m>p=4</m>.
+                        This is because there are 3 linearly independent columns
+                        that form the basis of <m>\col(B)</m> and each of these
+                        vectors lives in <m>\mathbb{R}^4</m> because they have 4
+                        entries (also, <m>B</m> has 4 rows).
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise workspace="1in">
+            <statement>
+                <p>
+                    Generally speaking, what is the relationship between the
+                    dimension <m>\col(C)</m> and the number of pivots in
+                    <m>C</m>?
+                </p>
+            </statement>
+
+            <solution component="21-solutions">
+                <p>
+                    <m>\dim \col(C) = \#</m> of pivots in the reduced row echelon
+                    form of <m>C</m>.
+                    A basis for <m>\col(C)</m> is the columns from <m>C</m> that
+                    are pivot columns in the reduced row echelon form of
+                    <m>C</m>.
+                </p>
+            </solution>
+        </exercise>
+
+        <p>
+            The second subspace we'll look at is called the
+            <term> null
+    space</term> of <m>A</m> and is denoted
+            <m>\nul(A)</m>.
+            It's just the solution set of the equation <m>{A\xvec = \zerovec}</m>.
+        </p>
+
+        <definition xml:id="def-3-5-null">
+            <statement>
+                <p>
+                    If <m>A</m> is an <m>m\times n</m> matrix we call the subset
+                    of vectors <m>\xvec</m> in <m>\mathbb{R}^n</m> satisfying
+                    <m>{A\xvec={\bf 0}}</m> the <term>null space</term> of
+                    <m>A</m> and denote it by <m>\nul(A)</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <exercise>
+            <introduction>
+                <p>
+                    Let's now go back to the matrix <m>A</m> from
+                    <xref ref="exer-3-5-col"/>, rewritten here:
+                    <md>
+                        A = \begin{bmatrix}
+  \vvec_1 \amp \vvec_2 \amp \vvec_3 \amp \vvec_4
+\end{bmatrix}
+= 
+\begin{bmatrix}
+  2 \amp -1 \amp 2 \amp 3 \\
+  1 \amp 0 \amp 0 \amp 2 \\
+  -2 \amp 2 \amp -4 \amp -2 \\
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+  1 \amp 0 \amp 0 \amp 2 \\
+  0 \amp 1 \amp -2 \amp 1 \\
+  0 \amp 0 \amp 0 \amp 0 \\
+\end{bmatrix}
+                    </md>
+                </p>
+            </introduction>
+
+            <task workspace="2in">
+                <statement>
+                    <p>
+                        Write the solution set to the equation
+                        <m>A\xvec = \zerovec</m> as a parametric description.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        From the first row, we have <m>{x_1 + 2x_4 = 0}</m> and
+                        the second row gives <m>{x_2 - 2x_3 + x_4 = 0}</m>.
+                        Putting the basic variables on the left hand side of
+                        each equation and the free variables on the right, we
+                        have <m>{x_1 = -2x_4}</m> and <m>{x_2 = 2x_3 - x_4}</m>.
+                        Using these relationships for a general solution
+                        <m>\xvec</m> we have:
+                        <md>
+                            <mrow>
+                    \xvec = \amp \fourvec{x_1}{x_2}{x_3}{x_4} 
+                    </mrow>
+                            <mrow>
+                    = \amp \fourvec{-2x_4}{2x_3 - x_4}{x_3}{x_4} 
+                    </mrow>
+                            <mrow>
+                    = \amp \fourvec{0}{2x_3}{x_3}{0} + \fourvec{-2x_4}{-x_4}{0}{x_4}
+                    </mrow>
+                            <mrow>
+                    = \amp x_3\fourvec{0}{2}{1}{0} + x_4\fourvec{-2}{-1}{0}{1}
+                    </mrow>
+                        </md>
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Use this parametric description to find two vectors
+                        <m>\wvec_1</m> and <m>\wvec_2</m> for which
+                        <m>\nul(A) = \laspan{\wvec_1,\wvec_2}</m>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        From above, we have that
+                        <m>\wvec_1 = \fourvec{0}{2}{1}{0}</m> and
+                        <m>\wvec_2 = \fourvec{-2}{-1}{0}{1}</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Explain why <m>\wvec_1</m> and <m>\wvec_2</m> form a
+                        linearly independent set of vectors.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        If we put these vectors as columns of a matrix, both
+                        columns have pivots after row reducing.
+                        Thus, they are linearly independent.
+                        The vectors that you find in the parametric description
+                        of solutions to <m>{A\xvec = \zerovec}</m> are always
+                        linearly independent!
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Do <m>\wvec_1</m> and <m>\wvec_2</m> form a basis for
+                        <m>\nul(A)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        Yes!
+                        <m>\wvec_1</m> and <m>\wvec_2</m> are linearly
+                        independent.
+                        Additionally, anything in <m>\nul(A)</m> is a linear
+                        combination of <m>\wvec_1</m> and <m>\wvec_2</m>.
+                        Therefore, <m>\wvec_1</m> and <m>\wvec_2</m> span
+                        <m>\nul(A)</m>.
+                        This means they are a basis for <m>\nul(A)</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        In this case, since vectors in <m>\nul(A)</m> are in
+                        <m>\real^4</m>, <m>\nul(A)</m> is a subspace of
+                        <m>\real^4</m>.
+                        What is the dimension of <m>\nul(A)</m>, that is what is
+                        <m>\dim \nul(A)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\nul(A)</m> is a 2-dimensional subspace of
+                        <m>\mathbb{R}^4</m>.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <exercise>
+            <introduction>
+                <p>
+                    Let's go back to the matrix <m>B</m> from
+                    <xref ref="exer-3-5-colB"/>, rewritten below
+                    <md>
+                        B = \begin{bmatrix}
+    \bvec_1 \amp \bvec_2 \amp \bvec_3 \amp \bvec_4 \amp \bvec_5
+  \end{bmatrix}
+  \sim
+  \begin{bmatrix}
+    1 \amp -2 \amp 0 \amp 3 \amp 0 \\
+    0 \amp 0 \amp 1 \amp -1 \amp 0 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 1 \\
+    0 \amp 0 \amp 0 \amp 0 \amp 0 \\
+  \end{bmatrix}.
+                    </md>
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Find a basis for <m>\nul(B)</m>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        From the reduced row echelon form we have
+                        <m>{x_1 - 2x_2 + 3x_4 = 0}</m>, <m>{x_3 - x_4 = 0}</m>, and
+                        <m>{x_5 = 0}</m>.
+                        Putting these into a general solution vector
+                        <m>\xvec</m> we have:
+                        <md>
+                            <mrow>
+                    \xvec = \amp \left[\begin{array}{r} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{array}\right] 
+                    </mrow>
+                            <mrow>
+                    = \amp \left[\begin{array}{c} 2x_2-3x_4 \\ x_2 \\ x_4 \\ x_4 \\ 0\end{array}\right]
+                    </mrow>
+                            <mrow>
+                    = \amp \left[\begin{array}{c} 2x_2 \\ x_2 \\ 0 \\ 0 \\ 0\end{array}\right] + \left[\begin{array}{c} -3x_4 \\ 0 \\ x_4 \\ x_4 \\ 0 \end{array}\right]
+                    </mrow>
+                            <mrow>
+                    = \amp x_2\left[\begin{array}{r} 2 \\ 1 \\ 0 \\ 0 \\ 0\end{array}\right] + x_4\left[\begin{array}{r} -3 \\ 0 \\ 1 \\ 1 \\ 0 \end{array}\right]
+                    </mrow>
+                        </md>
+                        which gives the two basis vectors for <m>\nul(B)</m> of
+                        <m>\left[\begin{array}{r} 2 \\ 1 \\ 0 \\ 0 \\ 0 \end{array}\right]</m> and
+                        <m>\left[\begin{array}{r} -3 \\ 0 \\ 1 \\ 1 \\ 0 \end{array}\right]</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Complete the sentence: <m>\nul(B)</m> is a
+                        <fillin characters="5"/>-dimensional subspace of
+                        <m>\real^p</m> where <m>p=</m> <fillin characters="5"/>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\nul(B)</m> is a 2-dimensional subspace of
+                        <m>\real^p</m> where <m>p=5</m>.
+                        This is because there are 2 basis vectors, where each
+                        vector has 5 entries.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+
+        <exercise>
+            <introduction>
+                <p>
+                    Suppose that <m>C</m> is a <m>50\times 100</m> matrix with
+                    30 pivots.
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        <m>\col(C)</m> is a <fillin characters="5"/>-dimensional
+                        subspace of <m>\real^p</m> where <m>p=</m>
+                        <fillin characters="5"/>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\col(C)</m> is a 30-dimensional subspace of
+                        <m>\real^p</m> where <m>p=50</m>.
+                        This is because the dimension is equal to the number of
+                        pivots and the space they live is the number of entries
+                        in each column, which is the number of rows of <m>C</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        <m>\nul(C)</m> is a <fillin characters="5"/>-dimensional
+                        subspace of <m>\real^p</m> where <m>p=</m>
+                        <fillin characters="5"/>.
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\nul(C)</m> is a 70-dimensional subspace of
+                        <m>\real^p</m> where <m>p=100</m>.
+                        That is because the number of basis vectors for the
+                        nullspace is equal to the number of free variables.
+                        We find the number of free variables by taking the
+                        number of columns and subtracting the number of pivots.
+                        Here, there are 100 columns and 30 pivots, and therefore
+                        70 free variables.
+                        The vectors for the nullspace have one entry for each
+                        column of the original matrix and thus, these vectors
+                        live in <m>\mathbb{R}^{100}</m>.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+    </page>
+
+    <page>
+        <definition xml:id="def-3-5-rank">
+            <statement>
+                <p>
+                    The <term>rank</term> of a matrix <m>A</m> is the number of
+                    pivot positions in <m>A</m> and is denoted by
+                    <m>\rank(A)</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <exercise>
+            <introduction>
+                <p>
+                    Let's make further connections between topics and new
+                    vocabulary.
+                </p>
+            </introduction>
+
+            <task workspace=".5in">
+                <statement>
+                    <p>
+                        How can we use information about the pivots to get a
+                        basis for <m>\col(C)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        The number of pivots is the number of basis vectors for
+                        <m>\col(C)</m>.
+                        The pivot columns correspond to the columns we need to
+                        take from <m>C</m> to form the basis.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace=".3in">
+                <statement>
+                    <p>
+                        What is the relationship between the rank of a matrix
+                        <m>A</m> and the dimension of <m>\col(A)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m>\rank(A) = \dim \col(A)</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace=".5in">
+                <statement>
+                    <p>
+                        If <m>A</m> is an invertible <m>9\times 9</m> matrix,
+                        what can you say about <m>\col(A)</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        Since <m>A</m> is invertible, we know that the reduced
+                        row echelon form has a pivot in every row and column.
+                        Therefore, <m>\rank(A) = 9 = \dim \col(A)</m>.
+                        <m>\col(A)</m> is the span of all 9 columns of <m>A</m>.
+                        Additionally, <m>\col(A) = \mathbb{R}^9.</m>
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace=".5in">
+                <statement>
+                    <p>
+                        Suppose that <m>A</m> is an <m>8\times 10</m> matrix and
+                        <m>\col(A)=\mathbb{R}^8</m>.
+                        If <m>\bvec</m> is an 8-dimensional vector, what can you
+                        say about the equation <m>A\xvec=\bvec</m>?
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        If <m>\col(A)=\mathbb{R}^8</m> we know that there are 8
+                        pivots in the reduced row echelon form of <m>A</m> and
+                        that there is a pivot in every row of the reduced row
+                        echelon form of <m>A</m>.
+                        This means that the system is consistent for every
+                        <m>\bvec</m> in <m>\mathbb{R}^8</m>.
+                        Therefore, there is a solution <m>\xvec</m> to
+                        <m>A\xvec=\bvec</m> for every <m>\bvec</m> in
+                        <m>\mathbb{R}^8</m>.
+                    </p>
+                </solution>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        Say <m>A</m> is an <m>m\times n</m> matrix.
+                        Fill in the blank:
+                        <md>
+                            \dim \nul(A) + \dim \col(A) = \underline{\hspace{.5in}}
+                        </md>
+                    </p>
+                </statement>
+
+                <solution component="21-solutions">
+                    <p>
+                        <m> \dim \nul(A) + \dim \col(A) = \#</m> of columns of
+                        <m>A</m>.
+                        This is because <m> \dim \nul(A)</m> is the number of
+                        free variables and <m>\dim \col(A)</m> is the number of
+                        pivots and these add up to the total number of
+                        variables, where the number of variables corresponds to
+                        the columns of <m>A</m>.
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+    </page>
 
     <outcomes>
         <introduction>
