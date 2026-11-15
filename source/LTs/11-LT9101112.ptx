@@ -40,7 +40,7 @@
                     </p>
             </introduction>
 
-            <task workspace="2.5in">
+            <task workspace="1in">
                 <statement>
                     <p>
                         Find a basis for the column space <m>\col(A)</m>.
@@ -48,7 +48,7 @@
                 </statement>
             </task>
 
-            <task workspace="2.5in">
+            <task workspace="3in">
                 <statement>
                     <p>
                        Find a basis for the null space <m>\nul(A)</m>.
