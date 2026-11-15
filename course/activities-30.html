@@ -244,7 +244,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">Section 3.5 - Subspaces of <span class="process-math">\(\real^p\)</span></span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">Section 4.1 - An introduction to eigenvectors and eigenvalues</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues Part 2</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">Section 4.4 - Dynamical Systems</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">Section 4.3 - Diagonalizability</span></a></div></li>
 <li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">Make Connections - Eigen Review</span></a></div></li>
@@ -342,138 +342,147 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Make Connections - Eigen Review</span><div class="print-links"><a href="?printpreview=activities-30" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<article class="objectives goal-like" id="activities-30-2"><h2 class="heading"><span class="type">Objectives</span></h2>
-<div class="introduction" id="activities-30-2-1">
-<div class="para" id="activities-30-2-1-1">\begin{enumerate} \item How do eigenvalues relate to the invertibility of a matrix? \end{enumerate}<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="activities-30-2">
+<div class="para logical" id="activities-30-2-1">
+<div class="para">Two convenient Sage tools. If <code class="code-inline tex2jax_ignore">A</code> is a square matrix, then</div>
+<ul class="disc" id="activities-30-2-1-2">
+<li id="activities-30-2-1-2-1">
+<div class="para" id="activities-30-2-1-2-1-1">
+<code class="code-inline tex2jax_ignore">A.eigenvalues()</code> gives a list of the eigenvalues, and<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Objectives"><a tabindex="-1" href="#activities-30-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div>
-</article>
-<section class="introduction" id="activities-30-3">
-<div class="para" id="activities-30-3-1">\\<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="activities-30-3-2">Two convenient Sage tools.  If <code class="code-inline tex2jax_ignore">A</code> is a square matrix, then<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<ul class="disc" id="activities-30-3-3">
-<li id="activities-30-3-3-1">
-<div class="para" id="activities-30-3-3-1-1">
-<code class="code-inline tex2jax_ignore">A.eigenvalues()</code> gives a list of the eigenvalues, and<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activities-30-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activities-30-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="activities-30-3-3-2">
-<div class="para" id="activities-30-3-3-2-1">
-<code class="code-inline tex2jax_ignore">(A - lambda*identity\_matrix(n)).right\_kernel()</code> gives a basis of the null space <span class="process-math">\(\nul(A-\lambda I)\)</span> if <span class="process-math">\(n\)</span> is the number of rows and columns of <span class="process-math">\(A\)</span> and <span class="process-math">\(\lambda\)</span> is an eigenvalue.  How does this help you find eigenvectors?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="activities-30-2-1-2-2">
+<div class="para" id="activities-30-2-1-2-2-1">
+<code class="code-inline tex2jax_ignore">(A - lambda*identity_matrix(n)).right_kernel()</code> gives a basis of the null space <span class="process-math">\(\nul(A-\lambda I)\)</span> if <span class="process-math">\(n\)</span> is the number of rows and columns of <span class="process-math">\(A\)</span> and <span class="process-math">\(\lambda\)</span> is an eigenvalue. How does this help you find eigenvectors?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activities-30-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activities-30-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-</ul></section>
-<article class="exercise exercise-like" id="activities-30-4"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="introduction" id="activities-30-4-1">
-<div class="para" id="activities-30-4-1-1">Consider the matrix <span class="process-math">\(A = \begin{bmatrix}
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="exercise exercise-like" id="activities-30-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="activities-30-3-1">
+<div class="para" id="activities-30-3-1-1">Consider the matrix <span class="process-math">\(A = \left[\begin{array}{rr}
 -2 \amp 8 \\
 2 \amp -2 \\
-\end{bmatrix}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+\end{array}\right]\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="activities-30-3-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="activities-30-3-2-1-1">Find the eigenvalues of <span class="process-math">\(A\)</span> and a basis for each of the eigenspaces.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#activities-30-3-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-30-3-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="activities-30-3-3-1-1">Is <span class="process-math">\(A\)</span> diagonalizable? If so, find <span class="process-math">\(P\)</span> and <span class="process-math">\(D\)</span> and verify that <span class="process-math">\(A = PDP^{-1}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#activities-30-3-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-30-3-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="activities-30-3-4-1-1">Find a diagonalization of <span class="process-math">\(A^3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#activities-30-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-30-3-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="activities-30-3-5-1-1">Find a diagonalization of <span class="process-math">\(A^{-1}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#activities-30-3-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-30-3-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<div class="para" id="activities-30-3-6-1-1">Find <span class="process-math">\(\det(A)\)</span> and explain why <span class="process-math">\(\det(A)\)</span> equals the product of the eigenvalues of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.e"><a tabindex="-1" href="#activities-30-3-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-30-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-30-4"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="activities-30-4-1">
+<div class="para" id="activities-30-4-1-1">We know that the eigenvalues of <span class="process-math">\(A\)</span> are the roots of the characteristic equation <span class="process-math">\({\det(A-\lambda I) = 0}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-30-4-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activities-30-4-2-1-1">Find the eigenvalues of <span class="process-math">\(A\)</span> and a basis for each of the eigenspaces.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-30-4-2-1-1">If <span class="process-math">\(\lambda = 0\)</span> is an eigenvalue, what does this say about <span class="process-math">\(\det(A)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#activities-30-4-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-30-4-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-30-4-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activities-30-4-3-1-1">Is <span class="process-math">\(A\)</span> diagonalizable?  If so, find <span class="process-math">\(P\)</span> and <span class="process-math">\(D\)</span> and verify that <span class="process-math">\(A = PDP^{-1}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-30-4-3-1-1">What does this say about the invertibility of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#activities-30-4-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activities-30-4-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-30-4-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
-<div class="para" id="activities-30-4-4-1-1">Find a diagonalization of <span class="process-math">\(A^3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-30-4-4-1-1">How do the eigenvalues of a matrix tell us about its invertibility?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#activities-30-4-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#activities-30-4-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activities-30-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-30-4-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
-<div class="para" id="activities-30-4-5-1-1">Find a diagonalization of <span class="process-math">\(A^{-1}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#activities-30-4-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-30-4-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
-<div class="para" id="activities-30-4-6-1-1">Find <span class="process-math">\(\det(A)\)</span> and explain why <span class="process-math">\(\det(A)\)</span> equals the product of the eigenvalues of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.e"><a tabindex="-1" href="#activities-30-4-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-30-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activities-30-5"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<article class="exercise exercise-like" id="activities-30-5"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="introduction" id="activities-30-5-1">
-<div class="para" id="activities-30-5-1-1">We know that the eigenvalues of <span class="process-math">\(A\)</span> are the roots of the characteristic equation <span class="process-math">\(\det(A-\lambda I) = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-<article class="task exercise-like" id="activities-30-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activities-30-5-2-1-1">If <span class="process-math">\(\lambda = 0\)</span> is an eigenvalue, what does this say about <span class="process-math">\(\det(A)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-30-5-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-30-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activities-30-5-3-1-1">What does this say about the invertibility of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activities-30-5-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-30-5-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
-<div class="para" id="activities-30-5-4-1-1">How do the eigenvalues of a matrix tell us about its invertibility?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#activities-30-5-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activities-30-5" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activities-30-6"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="introduction" id="activities-30-6-1">
-<div class="para logical" id="activities-30-6-1-1">
-<div class="para">Last class we looked at the transition matrix <span class="process-math">\(A=\left[\begin{array}{cc}0.8\amp0.6\\0.2\amp0.4\end{array}\right]\)</span> applied to trucks at two locations.  We wanted to know the long-term behavior of an initial state <span class="process-math">\(\xvec_0\)</span> that evolves as <span class="process-math">\(\xvec_{k+1}=A\xvec_k\text{.}\)</span>  In other words, what happened to <span class="process-math">\(A^k\xvec_0\)</span> as <span class="process-math">\(k\)</span> grows large.   We found that <span class="process-math">\(A\)</span> had eigenvalues <span class="process-math">\(1\)</span> and <span class="process-math">\(0.2\text{,}\)</span> and the <span class="process-math">\(\lim_{k\rightarrow\infty} A^k = \left[\begin{array}{cc}0.75\amp0.75\\0.25\amp0.25\end{array}\right]\text{.}\)</span>  So if we start with 1000 trucks total so that <span class="process-math">\(P+Q=1000\text{,}\)</span> then in the long-term we have</div>
-<div class="displaymath process-math" id="activities-30-6-1-1-11">
-\begin{equation*}
-\lim_{k\rightarrow\infty} A^k = \left[\begin{array}{cc}0.75\amp0.75\\0.25\amp0.25\end{array}\right]\twovec{P}{Q} = P\twovec{0.75}{0.25}+Q\twovec{0.75}{0.25} = 1000\twovec{0.75}{0.25} =\twovec{750}{250},
-\end{equation*}
+<div class="para logical" id="activities-30-5-1-1">
+<div class="para">Last class we looked at the transition matrix <span class="process-math">\(A=\left[\begin{array}{cc}0.8\amp0.6\\0.2\amp0.4\end{array}\right]\)</span> applied to trucks at two locations. We wanted to know the long-term behavior of an initial state <span class="process-math">\(\xvec_0\)</span> that evolves as <span class="process-math">\(\xvec_{k+1}=A\xvec_k\text{.}\)</span> In other words, what happened to <span class="process-math">\(A^k\xvec_0\)</span> as <span class="process-math">\(k\)</span> grows large. We found that <span class="process-math">\(A\)</span> had eigenvalues <span class="process-math">\(1\)</span> and <span class="process-math">\(0.2\text{,}\)</span> and the <span class="process-math">\(\lim_\limits{k\rightarrow\infty} A^k = \left[\begin{array}{cc}0.75\amp0.75\\0.25\amp0.25\end{array}\right]\text{.}\)</span> So if we start with 1000 trucks total so that <span class="process-math">\(P+Q=1000\text{,}\)</span> then in the long-term we have</div>
+<div class="displaymath process-math" id="activities-30-5-1-1-11">
+\begin{align*}
+\lim_{k\rightarrow\infty} A^k = \amp \left[\begin{array}{cc}0.75\amp0.75\\0.25\amp0.25\end{array}\right]\twovec{P}{Q} \\
+= \amp P\twovec{0.75}{0.25}+Q\twovec{0.75}{0.25} \\
+= \amp 1000\twovec{0.75}{0.25} \\
+= \amp \twovec{750}{250},
+\end{align*}
 </div>
 <div class="para">so there will be 750 trucks at location <span class="process-math">\(P\)</span> and 250 at location <span class="process-math">\(Q\text{.}\)</span>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="activities-30-6-1-2">Let’s look at a different transition matrix: <span class="process-math">\(B = \begin{bmatrix}
+</div>
+<article class="task exercise-like" id="activities-30-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="activities-30-5-2-1-1">Let’s look at a different transition matrix: <span class="process-math">\(B = \begin{bmatrix}
 0 \amp 1 \\
 1 \amp 0 \\
-\end{bmatrix}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-<article class="task exercise-like" id="activities-30-6-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activities-30-6-2-1-1">Find the eigenvalues of <span class="process-math">\(B\)</span> and bases for its eigenspaces.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+\end{bmatrix}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-30-5-2-1-2">Find the eigenvalues of <span class="process-math">\(B\)</span> and bases for its eigenspaces.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-30-6-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-30-5-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-30-6-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activities-30-6-3-1-1">Find a diagonalization of <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activities-30-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="activities-30-5-3-1-1">Find a diagonalization of <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-30-6-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-30-5-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-30-6-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
-<div class="para" id="activities-30-6-4-1-1">What happens when you look at <span class="process-math">\(B^k\)</span> as <span class="process-math">\(k\)</span> grows?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activities-30-5-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="activities-30-5-4-1-1">What happens when you look at <span class="process-math">\(B^k\)</span> as <span class="process-math">\(k\)</span> grows?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#activities-30-6-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#activities-30-5-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
 </article>
-<article class="task exercise-like" id="activities-30-6-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
-<div class="para" id="activities-30-6-5-1-1">What is different about the eigenvalues of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> that distinguishes the long-term behavior?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="activities-30-5-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="activities-30-5-5-1-1">What is different about the eigenvalues of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> that distinguishes the long-term behavior?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.d"><a tabindex="-1" href="#activities-30-6-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-30-6" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.d"><a tabindex="-1" href="#activities-30-5-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-30-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="outcomes goal-like" id="activities-30-6"><h2 class="heading"><span class="type">Outcomes</span></h2>
+<div class="introduction" id="activities-30-6-1">
+<div class="para" id="activities-30-6-1-1">Make sure you can answer the following questions:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-30-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul class="disc" id="activities-30-6-2">
+<li id="activities-30-6-2-1">
+<div class="para" id="p-derived-activities-30-6-2-1">How do eigenvalues relate to the invertibility of a matrix?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Outcome"><a tabindex="-1" href="#activities-30-6-2-1" title="Copy heading and permalink for Outcome" aria-label="Copy heading and permalink for Outcome">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Outcomes"><a tabindex="-1" href="#activities-30-6" title="Copy heading and permalink for Outcomes" aria-label="Copy heading and permalink for Outcomes">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Make Connections - Eigen Review"><a tabindex="-1" href="#activities-30" title="Copy heading and permalink for Worksheet: Make Connections - Eigen Review" aria-label="Copy heading and permalink for Worksheet: Make Connections - Eigen Review">🔗</a></div>
 </section>
 </div>

@@ -244,7 +244,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">Section 3.5 - Subspaces of <span class="process-math">\(\real^p\)</span></span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">Section 4.1 - An introduction to eigenvectors and eigenvalues</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues Part 2</span></a></div></li>
 <li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">Section 4.4 - Dynamical Systems</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">Section 4.3 - Diagonalizability</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">Make Connections - Eigen Review</span></a></div></li>
@@ -343,13 +343,11 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 4.4 - Dynamical Systems</span><div class="print-links"><a href="?printpreview=activities-28" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
 <section class="introduction" id="activities-28-2">
-<div class="para" id="activities-28-2-1">\\<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-2-1">Suppose we have two species <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> that interact with one another and that we record the change in their populations from year to year. When we begin our study, the populations, measured in thousands, are <span class="process-math">\(R_0\)</span> and <span class="process-math">\(S_0\text{;}\)</span> after <span class="process-math">\(k\)</span> years, the populations are <span class="process-math">\(R_k\)</span> and <span class="process-math">\(S_k\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="activities-28-2-2">Suppose we have two species <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> that interact with one another and that we record the change in their populations from year to year. When we begin our study, the populations, measured in thousands, are <span class="process-math">\(R_0\)</span> and <span class="process-math">\(S_0\text{;}\)</span> after <span class="process-math">\(k\)</span> years, the populations are <span class="process-math">\(R_k\)</span> and <span class="process-math">\(S_k\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="activities-28-2-3">
+<div class="para logical" id="activities-28-2-2">
 <div class="para">Knowing the populations in one year, we find their populations the next year:</div>
-<div class="displaymath process-math" id="activities-28-2-3-1">
+<div class="displaymath process-math" id="activities-28-2-2-1">
 \begin{equation*}
 \begin{aligned}
 R_{k+1}\amp= 0.9R_k + 0.8S_k \\
@@ -357,8 +355,8 @@ S_{k+1}\amp= 0.2R_k + 0.9S_k. \\
 \end{aligned}
 \end{equation*}
 </div>
-<div class="para">We will combine the populations into a vector <span class="process-math">\(\xvec_k=\twovec{R_k}{S_k}\)</span> and write <span class="process-math">\(\xvec_{k+1}=A\xvec_k\)</span> where</div>
-<div class="displaymath process-math" id="activities-28-2-3-4">
+<div class="para">We will combine the populations into a vector <span class="process-math">\({\xvec_k=\twovec{R_k}{S_k}}\)</span> and write <span class="process-math">\({\xvec_{k+1}=A\xvec_k}\)</span> where</div>
+<div class="displaymath process-math" id="activities-28-2-2-4">
 \begin{equation*}
 A =
 \left[
@@ -369,14 +367,14 @@ A =
 \right].
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="exercise exercise-like" id="activities-28-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para logical" id="activities-28-3-1-1">
 <div class="para">Verify that</div>
 <div class="displaymath process-math" id="activities-28-3-1-1-1">
 \begin{equation*}
-{\bf v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \qquad {\bf v}_2 = \begin{bmatrix} -2 \\ 1 \end{bmatrix} 
+{\bf v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \qquad {\bf v}_2 = \begin{bmatrix} -2 \\ 1 \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">are eigenvectors of <span class="process-math">\(A\)</span> and find their respective eigenvalues.</div>
@@ -392,25 +390,25 @@ A =
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activities-28-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-28-5"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-28-5-1-1">Write the vectors <span class="process-math">\({\bf x}_1\text{,}\)</span> <span class="process-math">\({\bf x}_2\text{,}\)</span> and <span class="process-math">\({\bf x}_3\)</span> as a linear combination of eigenvectors <span class="process-math">\({\bf v}_1\)</span> and <span class="process-math">\({\bf v}_2\text{.}\)</span> Use linearity of matrix multiplication!  (If you have powers of eigenvalues, might I suggest not simplifying those... You should have <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> in your answers.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-5-1-1">Write the vectors <span class="process-math">\({\bf x}_1\text{,}\)</span> <span class="process-math">\({\bf x}_2\text{,}\)</span> and <span class="process-math">\({\bf x}_3\)</span> as a linear combination of eigenvectors <span class="process-math">\({\bf v}_1\)</span> and <span class="process-math">\({\bf v}_2\text{.}\)</span> Use linearity of matrix multiplication! (If you have powers of eigenvalues, might I suggest not simplifying those... You should have <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> in your answers.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-28-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-28-6"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-28-6-1-1">Do you see a pattern?  Can you find a formula for some general <span class="process-math">\(\xvec_{k}\)</span> as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{?}\)</span>  Hint: there might be powers of <span class="process-math">\(k\)</span> in your answer<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-6-1-1">Do you see a pattern? Can you find a formula for some general <span class="process-math">\(\xvec_{k}\)</span> as a linear combination of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{?}\)</span> Hint: there might be powers of <span class="process-math">\(k\)</span> in your answer<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-28-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-28-7"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-28-7-1-1">When <span class="process-math">\(k\)</span> becomes very large (that is <span class="process-math">\(k\rightarrow \infty\)</span>), what part of the expression for <span class="process-math">\(\xvec_k\)</span> goes to 0?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-7-1-1">When <span class="process-math">\(k\)</span> becomes very large (that is <span class="process-math">\(k\rightarrow \infty\)</span> ), what part of the expression for <span class="process-math">\(\xvec_k\)</span> goes to 0?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#activities-28-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-28-8"><h2 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-28-8-1-1">When <span class="process-math">\(k\)</span> becomes very large (that is <span class="process-math">\(k\rightarrow\infty\)</span>), what happens to the ratio of the populations <span class="process-math">\(R_k/S_k\text{?}\)</span>  (Recall <span class="process-math">\(\xvec_k = \twovec{R_k}{S_k}\text{.}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-8-1-1">When <span class="process-math">\(k\)</span> becomes very large (that is <span class="process-math">\(k\rightarrow\infty\)</span> ), what happens to the ratio of the populations <span class="process-math">\(R_k/S_k\text{?}\)</span> (Recall <span class="process-math">\(\xvec_k = \twovec{R_k}{S_k}\text{.}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#activities-28-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
@@ -430,13 +428,13 @@ A =
 <article class="exercise exercise-like" id="activities-28-11"><h2 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-28-11-1-1">After a very long time, by approximately what factor does the population of <span class="process-math">\(R\)</span> grow every year? By approximately what factor does the population of <span class="process-math">\(S\)</span> grow every year?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="activities-28-11-1-2">Note that if <span class="process-math">\(R_k\)</span> and <span class="process-math">\(S_k\)</span> didn’t live in the same region we would have <span class="process-math">\(R_{k+1}= 0.9R_k\)</span> and <span class="process-math">\(S_{k+1} = .9S_k\)</span> which would mean both populations would eventually go extinct. Instead, these species are ``cooperative" which means they benefit from each other (these are the ``off diagonal" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-11-1-2">Note that if <span class="process-math">\(R_k\)</span> and <span class="process-math">\(S_k\)</span> didn’t live in the same region we would have <span class="process-math">\({R_{k+1}= 0.9R_k}\)</span> and <span class="process-math">\({S_{k+1} = .9S_k}\)</span> which would mean both populations would eventually go extinct. Instead, these species are "cooperative" which means they benefit from each other (these are the "off diagonal" terms in the matrix). Eventually the population converges to one of the eigenvectors, independent of the initial condition. In this case we can tell the ratio of the species and by about how much the population grows each year.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 9"><a tabindex="-1" href="#activities-28-11" title="Copy heading and permalink for Worksheet Exercise 9" aria-label="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-28-12"><h2 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-28-12-1-1">Challenge: Can you give an example of a dynamic system in which species <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are competitive, that is both compete for resources and ``hurt’’ the other species instead of benefiting them?  Can you give an example of a ``predator-prey’’ dynamic system in which species <span class="process-math">\(R\)</span> is the prey, and species <span class="process-math">\(S\)</span> is the predator?  (Who would benefit from interactions, and who wouldn’t in that case?)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-28-12-1-1">Challenge: Can you give an example of a dynamic system in which species <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are competitive, that is both compete for resources and "hurt" the other species instead of benefiting them? Can you give an example of a "predator-prey" dynamic system in which species <span class="process-math">\(R\)</span> is the prey, and species <span class="process-math">\(S\)</span> is the predator? (Who would benefit from interactions, and who wouldn’t in that case?)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-28-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 10"><a tabindex="-1" href="#activities-28-12" title="Copy heading and permalink for Worksheet Exercise 10" aria-label="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div>

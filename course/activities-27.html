@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Section 4.2. - Finding eigenvectors and eigenvalues</title>
+<title>Section 4.2. - Finding eigenvectors and eigenvalues Part 2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -244,7 +244,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">Section 3.5 - Subspaces of <span class="process-math">\(\real^p\)</span></span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">Section 4.1 - An introduction to eigenvectors and eigenvalues</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues Part 2</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">Section 4.4 - Dynamical Systems</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">Section 4.3 - Diagonalizability</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">Make Connections - Eigen Review</span></a></div></li>
@@ -340,7 +340,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <section class="worksheet" id="activities-27" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues</span><div class="print-links"><a href="?printpreview=activities-27" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 4.2. - Finding eigenvectors and eigenvalues Part 2</span><div class="print-links"><a href="?printpreview=activities-27" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
 <section class="introduction" id="activities-27-2">
 <div class="para" id="activities-27-2-1">If <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times m\)</span> matrix, we would like to know if there is a basis of <span class="process-math">\(\real^m\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -350,12 +350,12 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="activities-27-2-3">
 <ul class="disc" id="activities-27-2-3-1">
 <li id="activities-27-2-3-1-1">
-<div class="para" id="activities-27-2-3-1-1-1">The eigenvalues of <span class="process-math">\(A\)</span> are the roots of the charactertic polynomial <span class="process-math">\(\det(A-\lambda I) = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-27-2-3-1-1-1">The eigenvalues of <span class="process-math">\(A\)</span> are the roots of the charactertic polynomial <span class="process-math">\({\det(A-\lambda I) = 0}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activities-27-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="activities-27-2-3-1-2">
-<div class="para" id="activities-27-2-3-1-2-1">The set of eigenvectors associated to <span class="process-math">\(\lambda\)</span> forms the eigenspace <span class="process-math">\(E_\lambda\text{,}\)</span> which is the solution space of the equation <span class="process-math">\((A-\lambda I)\xvec=\zerovec\)</span> or, in other words, <span class="process-math">\(E_\lambda = \nul(A-\lambda I)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-27-2-3-1-2-1">The set of eigenvectors associated to <span class="process-math">\(\lambda\)</span> forms the eigenspace <span class="process-math">\(E_\lambda\text{,}\)</span> which is the solution space of the equation <span class="process-math">\({(A-\lambda I)\xvec=\zerovec}\)</span> or, in other words, <span class="process-math">\({E_\lambda = \nul(A-\lambda I)}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#activities-27-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -363,7 +363,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="activities-27-2-4">
-<dfn class="terminology">Handy:</dfn> Here’s a handy Sage command. If <code class="code-inline tex2jax_ignore">A</code> is a square matrix, then <code class="code-inline tex2jax_ignore">A.fcp('x')</code> will tell you the ``factored characteristic polynomial’’ expressed in terms of a variable <code class="code-inline tex2jax_ignore">x</code>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<dfn class="terminology">Handy:</dfn> Here’s a handy Sage command. If <code class="code-inline tex2jax_ignore">A</code> is a square matrix, then <code class="code-inline tex2jax_ignore">A.fcp('x')</code> will tell you the "factored characteristic polynomial" expressed in terms of a variable <code class="code-inline tex2jax_ignore">x</code>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="exercise exercise-like" id="activities-27-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="introduction" id="activities-27-3-1">
@@ -401,18 +401,18 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Consider the matrix</div>
 <div class="displaymath process-math" id="activities-27-4-1-1-1">
 \begin{equation*}
-A = \begin{bmatrix}
+A = \left[\begin{array}{rrr}
 -1 \amp 0 \amp 2 \\
 -2 \amp -2 \amp -4 \\
 0 \amp 0 \amp -2 \\
-\end{bmatrix}.
+\end{array}\right].
 \end{equation*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-27-4-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activities-27-4-2-1-1">Find factored characteristic polynomial of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-27-4-2-1-1">Find the factored characteristic polynomial of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-27-4-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
@@ -436,24 +436,24 @@ A = \begin{bmatrix}
 <div class="para">Now consider the matrix</div>
 <div class="displaymath process-math" id="activities-27-5-1-1-1">
 \begin{equation*}
-B = \begin{bmatrix}
+B = \left[\begin{array}{rrr}
 -5 \amp -2 \amp -6 \\
 -2 \amp -2 \amp -4 \\
 2 \amp 1 \amp 2 \\
-\end{bmatrix}.
+\end{array}\right].
 \end{equation*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-27-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activities-27-5-2-1-1">Find factored characteristic polynomial of <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-27-5-2-1-1">Find the factored characteristic polynomial of <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-27-5-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-27-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activities-27-5-3-1-1">For each eigenvalue, find a basis for its associated eigenspace and its dimension.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-27-5-3-1-1">For each eigenvalue, find a basis for its associated eigenspace and the dimension of that eigenspace.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-27-5-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
@@ -467,13 +467,20 @@ B = \begin{bmatrix}
 </article>
 <article class="exercise exercise-like" id="activities-27-6"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="introduction" id="activities-27-6-1">
-<div class="para" id="activities-27-6-1-1">Remember that the determinant of a triangular matrix, such as <span class="process-math">\(A =
-\begin{bmatrix}
+<div class="para logical" id="activities-27-6-1-1">
+<div class="para">Remember that the determinant of a triangular matrix, such as</div>
+<div class="displaymath process-math" id="activities-27-6-1-1-1">
+\begin{equation*}
+A =
+\left[\begin{array}{rrr}
 2 \amp -4 \amp -19 \\
 0 \amp 4 \amp 7 \\
 0 \amp 0 \amp -3
-\end{bmatrix}
-\text{,}\)</span> is the product of the diagonal entries.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+\end{array}\right]\text{,}
+\end{equation*}
+</div>
+<div class="para">is the product of the diagonal entries.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-27-6-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
@@ -513,7 +520,7 @@ B = \begin{bmatrix}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="activities-27-7-1-2">Based on the examples we’ve seen, do you think there will be a basis of <span class="process-math">\(\real^m\)</span> consisting of eigenvectors of <span class="process-math">\(C\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-27-7-1-2">Based on the examples we’ve seen, do you think there will be a basis of <span class="process-math">\(\real^m\)</span> consisting of eigenvectors of <span class="process-math">\(C\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-27-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#activities-27-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
@@ -531,7 +538,7 @@ B = \begin{bmatrix}
 </li>
 </ul>
 <div class="autopermalink" aria-hidden="true" data-description="Outcomes"><a tabindex="-1" href="#activities-27-8" title="Copy heading and permalink for Outcomes" aria-label="Copy heading and permalink for Outcomes">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Section 4.2. - Finding eigenvectors and eigenvalues"><a tabindex="-1" href="#activities-27" title="Copy heading and permalink for Worksheet: Section 4.2. - Finding eigenvectors and eigenvalues" aria-label="Copy heading and permalink for Worksheet: Section 4.2. - Finding eigenvectors and eigenvalues">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Section 4.2. - Finding eigenvectors and eigenvalues Part 2"><a tabindex="-1" href="#activities-27" title="Copy heading and permalink for Worksheet: Section 4.2. - Finding eigenvectors and eigenvalues Part 2" aria-label="Copy heading and permalink for Worksheet: Section 4.2. - Finding eigenvectors and eigenvalues Part 2">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
