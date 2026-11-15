@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Section 4.2. - Finding eigenvectors and eigenvalues</title>
+    <title>Section 4.2. - Finding eigenvectors and eigenvalues Part 2</title>
 
     <introduction>
-
         <p>
             If <m>A</m> is an <m>m\times m</m> matrix, we would like to know if
             there is a basis of <m>\real^m</m> consisting of eigenvectors of
@@ -20,7 +19,7 @@
                 <li>
                     <p>
                         The eigenvalues of <m>A</m> are the roots of the
-                        charactertic polynomial <m>\det(A-\lambda I) = 0</m>.
+                        charactertic polynomial <m>{\det(A-\lambda I) = 0}</m>.
                     </p>
                 </li>
 
@@ -29,8 +28,8 @@
                         The set of eigenvectors associated to <m>\lambda</m>
                         forms the eigenspace <m>E_\lambda</m>, which is the
                         solution space of the equation
-                        <m>(A-\lambda I)\xvec=\zerovec</m> or, in other words,
-                        <m>E_\lambda = \nul(A-\lambda I)</m>.
+                        <m>{(A-\lambda I)\xvec=\zerovec}</m> or, in other words,
+                        <m>{E_\lambda = \nul(A-\lambda I)}</m>.
                     </p>
                 </li>
             </ul>
@@ -39,7 +38,7 @@
         <p>
             <term>Handy:</term> Here's a handy Sage command.
             If <c>A</c> is a square matrix, then <c>A.fcp('x')</c> will tell you
-            the ``factored characteristic polynomial'' expressed in terms of a
+            the "factored characteristic polynomial" expressed in terms of a
             variable <c>x</c>.
         </p>
     </introduction>
@@ -93,11 +92,11 @@
             <p>
                 Consider the matrix
                 <md>
-                    A = \begin{bmatrix}
+                    A = \left[\begin{array}{rrr}
     -1 \amp 0 \amp 2 \\
     -2 \amp -2 \amp -4 \\
     0 \amp 0 \amp -2 \\
-  \end{bmatrix}.
+  \end{array}\right].
                 </md>
             </p>
         </introduction>
@@ -105,7 +104,7 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Find factored characteristic polynomial of <m>A</m>.
+                    Find the factored characteristic polynomial of <m>A</m>.
                 </p>
             </statement>
         </task>
@@ -134,11 +133,11 @@
             <p>
                 Now consider the matrix
                 <md>
-                    B = \begin{bmatrix}
+                    B = \left[\begin{array}{rrr}
     -5 \amp -2 \amp -6 \\
     -2 \amp -2 \amp -4 \\
     2 \amp 1 \amp 2 \\
-  \end{bmatrix}.
+  \end{array}\right].
                 </md>
             </p>
         </introduction>
@@ -146,7 +145,7 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Find factored characteristic polynomial of <m>B</m>.
+                    Find the factored characteristic polynomial of <m>B</m>.
                 </p>
             </statement>
         </task>
@@ -155,7 +154,7 @@
             <statement>
                 <p>
                     For each eigenvalue, find a basis for its associated
-                    eigenspace and its dimension.
+                    eigenspace and the dimension of that eigenspace.
                 </p>
             </statement>
         </task>
@@ -175,14 +174,14 @@
         <introduction>
             <p>
                 Remember that the determinant of a triangular matrix, such as
-                <m>
+                <md>
   A =
-  \begin{bmatrix}
+  \left[\begin{array}{rrr}
     2 \amp -4 \amp -19 \\
     0 \amp 4 \amp 7 \\
     0 \amp 0 \amp -3
-  \end{bmatrix}
-  </m>,
+  \end{array}\right]
+  </md>,
                 is the product of the diagonal entries.
             </p>
         </introduction>
@@ -236,7 +235,7 @@
 
             <p>
                 Based on the examples we've seen, do you think there will be a
-                basis of <m>\real^m</m> consisting of eigenvectors of <m>C</m>
+                basis of <m>\real^m</m> consisting of eigenvectors of <m>C</m>?
             </p>
         </statement>
     </exercise>
@@ -256,5 +255,5 @@
                 </p>
             </li>
         </ul>
-      </outcomes>
+    </outcomes>
 </worksheet>

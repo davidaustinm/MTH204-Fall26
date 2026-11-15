@@ -33,7 +33,7 @@
                     vectors in <m>\mathbb{R}^m</m>, explain why the zero vector
                     <m>{\bf 0}</m> can be expressed as a linear combination of
                     these vectors.
-                    Usse this fact to explain why <m>{\bf 0}</m> belongs to any
+                    Use this fact to explain why <m>{\bf 0}</m> belongs to any
                     subspace in <m>\mathbb{R}^m</m>.
                 </p>
             </statement>
@@ -42,8 +42,8 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    Explain why the line on the right is not a subspace of
-                    <m>\mathbb{R}^2</m>, and the line on the left is.
+                    Which line below is a subspace of
+                    <m>\mathbb{R}^2</m>? Explain your reasoning.
                 </p>
 
                 <figure xml:id="figure-lines-r2">
