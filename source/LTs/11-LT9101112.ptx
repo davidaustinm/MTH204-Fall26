@@ -44,6 +44,7 @@
                 <statement>
                     <p>
                         Give a basis for the column space of <m>A</m>, <m>\col(A)</m>.
+                        Make sure to justify your solution.
                     </p>
                 </statement>
             </task>
@@ -52,6 +53,7 @@
                 <statement>
                     <p>
                        Give a basis for the null space of <m>A</m>, <m>\nul(A)</m>.
+                       Make sure to justify your solution.
                     </p>
                 </statement>
             </task>
@@ -59,7 +61,7 @@
             <task workspace=".25in">
                 <statement>
                     <p>
-                        Complete the sentences:
+                        Complete the sentences and explain:
                     </p>
                     <p>
                         <m>\col(A)</m> is a
