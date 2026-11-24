@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Problem 30 - Written Homework - MTH 204</title>
+
+    <exercise>
+        <statement>
+            <p>
+                This final homework exercise is a good studying tool for the final exam.
+                Throughout the semester, we've used memes to explain topics in linear algebra.
+                Here is a google slide deck with some of those memes: <url href="https://gvsu.edu/s/3Vd"></url>.
+                Pick 4 of the memes from the slide deck and explain them. </p>
+
+            <p>
+               Each meme explanation should 
+                
+                <ol>
+                    <li>
+                        <p>
+                           include the number of the meme
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                           be 4-5 complete sentences
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                          answer the following questions  
+                        </p>
+                    
+                    </li>
+                    <li>
+                    <ol>
+                        <li>
+                            <p>
+                                What topic in linear algebra does this relate to? (You might use a chapter title
+                                or section title from the textbook.)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is the math behind the meme? Think of explaining to someone 
+                                in a different linear algebra class who has seen the content before this topic,
+                                but not this topic, what they need to know to understand the meme.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Why is the meme funny? (Or, if you don't find it funny, what is intended to be the joke?)
+                            </p>
+                        </li>
+
+                    </ol>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
