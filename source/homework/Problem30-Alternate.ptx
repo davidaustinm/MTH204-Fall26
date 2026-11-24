@@ -3,8 +3,6 @@
 <worksheet>
     <title>Problem 30 - Written Homework - MTH 204</title>
 
-    <exercise>
-        <statement>
             <p>
                 This final homework exercise is a good studying tool for the final exam.
                 Throughout the semester, we've used memes to explain topics in linear algebra.
@@ -17,22 +15,20 @@
                 <ol>
                     <li>
                         <p>
-                           include the number of the meme
+                           include the number of the meme.
                         </p>
                     </li>
                     <li>
                         <p>
-                           be 4-5 complete sentences
+                           be 4-5 complete sentences.
                         </p>
                     </li>
 
+                    
                     <li>
                         <p>
-                          answer the following questions  
-                        </p>
-                    
-                    </li>
-                    <li>
+                            answer the following questions.
+                       
                     <ol>
                         <li>
                             <p>
@@ -52,11 +48,46 @@
                                 Why is the meme funny? (Or, if you don't find it funny, what is intended to be the joke?)
                             </p>
                         </li>
-
                     </ol>
+                                        </p>
+
                     </li>
                 </ol>
             </p>
-        </statement>
-    </exercise>
+<exercise workspace="2in">
+    
+
+
+    <task>
+        <title>Meme # <fillin characters="5" /></title>
+        <p>
+            Explanation:
+        </p>
+    </task>
+
+
+    <task>
+        <title>Meme # <fillin characters="5" /></title>
+        <statement>
+       
+         <p>
+            Explanation:
+        </p>
+     </statement>
+    </task>
+
+   <task>
+        <title>Meme # <fillin characters="5" /></title>
+        <p>
+            Explanation:
+        </p>
+    </task>
+
+    <task>
+        <title>Meme # <fillin characters="5" /></title>
+        <p>
+            Explanation:
+        </p>
+    </task>
+</exercise>
 </worksheet>
