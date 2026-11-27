@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Lab 5, Due: December ??, 2026</title>
+    
+    <introduction>
+        <p>
+            <term>Instructions:</term> Complete the following exercises in your
+            groups.
+            For the write up:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Include descriptions of your work in Sage.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        You only need to hand in one report for your group.
+                        Only include the names of students who contributed.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This lab is graded out of 30 points.
+                        The number of points for each part 
+                        are indicated next to the problem. You earn full credit 
+                        by including your reasoning, following all
+                        directions, and making only minor errors.
+                    </p>
+                </li>
+            </ul>
+        </p>
+<p>
+    In Lab 2, we modeled the distribution of
+    bicycles between two locations in Grand Rapids, given probabilities that a
+    bike rented from one location was returned to one location or the other.
+    In so doing, we found that we could represent the distribution of bikes on
+    day <m>k</m> by the vector <m>\xvec_{k}</m>, and that we could determine a
+    matrix <m>A</m> so that the distribution of bikes on the next day was given
+    by
+</p>
+
+<p>
+    <md>
+        \xvec_{k+1}= A \xvec_{k}
+    </md>
+</p>
+
+<p>
+    We call the matrix <m>A</m> a <em>transition matrix</em>, and the equation
+    <m>\xvec_{k+1}= A \xvec_{k}</m> a <em>discrete dynamical system</em>.
+    Note that the matrix <m>A</m> enables us to move from <q>state</q>
+    <m>x_{k}</m> to <q>state</q> <m>x_{k+1}</m> by simply multiplying by
+    <m>A</m>.
+    In this lab activity, we explore discrete dynamical systems that model how
+    two species of animals interact with one another, and study how the
+    eigenvalues and eigenvectors of <m>A</m> enable us to understand and predict
+    long-range behavior of populations.
+</p>
+
+<p>
+    A famous example in mathematical biology involves the interactions of moose and wolves on Isle Royale
+    <url href="https://isleroyalewolf.org/overview/overview/at_a_glance.html">
+    </url>
+    in Lake Superior.
+    If we let <m>R_{k}</m> be the number of moose on the island in year <m>k</m>
+    and <m>S_{k}</m> the number of wolves in year <m>k</m>, it makes sense that
+    the numbers of each in the next year, <m>R_{k+1}</m> and <m>S_{k+1}</m>
+    should depend on some combination of <m>R_{k}</m> and <m>S_{k}</m>.
+    This leads us to think about the equations
+    <md alignment="align">
+        <mrow>R_{k+1} &amp; = &amp; aR_k + bS_k</mrow>
+        <mrow>S_{k+1} &amp; = &amp; cR_k + dS_k</mrow>
+    </md>
+    for some constants <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> that depend on
+    how the species <m>R</m> and <m>S</m> interact with each other.
+    If we let
+    <md>
+        \xvec_{k} = \twovec{R_k}{S_k}\ \mbox{and}\ A = \left[\begin{array}{rr}a &amp; b \\ c &amp; d\end{array} \right],
+    </md>
+    then we see that we can express the equations for <m>R_{k+1}</m> and
+    <m>S_{k+1}</m> in matrix-vector form by writing
+    <md>
+        \xvec_{k+1}= A\xvec_{k}
+    </md>
+</p>
+
+<p>
+    In the simplest scenario, we may have two species <m>R</m> and <m>S</m> that
+    don't interact with one another.
+    Some species can grow on their own without any support, while other species
+    may die off.
+    As one example, suppose that the populations of <m>R</m> and <m>S</m> are
+    modeled by the dynamical system
+    <md>
+        \xvec_{k+1}= \left[\begin{array}{rr}1.2 &amp; 0 \\ 0 &amp; 0.9\end{array} \right]\xvec_{k}
+    </md>
+    and say the initial populations are given by
+    <m>\xvec_{0} = \twovec{100}{200}</m>.
+</p>
+
+<p>
+    This tells us that
+    <md>
+        \xvec_{1} = Ax_{0} = \left[\begin{array}{rr}1.2 &amp; 0 \\ 0 &amp; 0.9\end{array} \right] \twovec{100}{200}= \twovec{100 \cdot 1.2}{200 \cdot 0.9}
+    </md>
+    and thus
+    <md>
+        \xvec_{2} = Ax_{1} = \left[\begin{array}{rr}1.2 &amp; 0 \\ 0 &amp; 0.9\end{array} \right] \twovec{100 \cdot 1.2}{200 \cdot 0.9}= \twovec{100 \cdot 1.2^2}{200 \cdot 0.9^2}
+    </md>
+    It is quickly apparent that
+    <md>
+        \xvec_{k+1}= Ax_{k} = \left[\begin{array}{rr}1.2 &amp; 0 \\ 0 &amp; 0.9\end{array} \right] \twovec{100 \cdot 1.2^{k-1}}{200 \cdot 0.9^{k-1}}= \twovec{100 \cdot 1.2^k}{200 \cdot 0.9^k}
+    </md>
+</p>
+
+<p>
+    Observe further that if we focus on the components of <m>\xvec_{k+1}</m>, we
+    see that
+    <md>
+        \xvec_{k+1}= \twovec{R_{k+1}}{S_{k+1}}= \twovec{100 \cdot 1.2^k}{200 \cdot 0.9^k}
+    </md>
+    from which we see that as <m>k \to \infty</m>, <m>R_{k+1}</m> grows without
+    bound (since <m>1.2^{k}</m> grows exponentially), while <m>S_{k+1}\to 0</m>,
+    since <m>0.9^{k}</m> decays exponentially to <m>0</m>.
+</p>
+
+<p>
+    Note that the dynamical system above can also be viewed as saying that
+    <m>\xvec_{k+1}= A\xvec_{k} = A(A\xvec_{k-1}) = A^{2} \xvec_{k-1}= \cdots = A^{k} \xvec_{0}</m>,
+    so in some sense we are interested in powers of the matrix <m>A</m>.
+    In this first example above, those powers are easy to understand because the
+    matrix <m>A</m> is diagonal <ndash/> its only nonzero entries are on the
+    diagonal.
+</p>
+
+<p>
+    For a matrix <m>A</m> that is not diagonal (nor triangular), its powers are
+    more complicated; we can instead use the eigenvalues and eigenvectors of the
+    matrix to help us understand the long-term behavior of the dynamical system.
+</p>
+
+</introduction>
+
+<page>
+
+<exercise >
+    <introduction>
+            <p>
+                Consider two species <m>R</m> and <m>S</m> that are modeled by
+                the discrete dynamical system
+                <md alignment="align">
+                    <mrow>R_{k+1} &amp; = &amp; 0.9R_k + 0.8S_k</mrow>
+                    <mrow>S_{k+1} &amp; = &amp; 0.2R_k + 0.9S_k</mrow>
+                </md>
+                so that the system is given by <m>\xvec_{k+1}= A\xvec_{k}</m>
+                where
+                <m>A = \left[\begin{array}{rr}0.9 &amp; 0.8 \\ 0.2 &amp; 0.9\end{array} \right]</m>.
+            </p>
+            </introduction>
+                    <task workspace="2in">
+                        <statement>
+                        <p>
+                            (2) Verify that <m>\vvec_{1} = \twovec21</m> and
+                            <m>\vvec_{2} = \twovec{-2}{1}</m> are eigenvectors
+                            of the matrix <m>A</m>, and find their corresponding
+                            eigenvalues.
+                        </p>
+                    </statement>
+                    </task>
+
+                    <task workspace="1in">
+                        <statement>
+                        <p>
+                            (2) Consider the initial population state
+                            <m>\xvec_{0} = \twovec{100}{100}</m>, and write
+                            <m>\xvec_{0}</m> as a linear combination of
+                            <m>\vvec_{1} = \twovec21</m> and
+                            <m>\vvec_{2} = \twovec{-2}{1}</m>.
+                        </p>
+                    </statement>
+                    </task>
+
+                    <task workspace="2in">
+                        <p>
+                            (2) Use the linearity of matrix-vector
+                            multiplication (that is, the fact that
+                            <m>A(c_{1} \vvec_{1} + c_{2} \vvec_{2}) = c_{1} A\vvec_{1} + c_{2} A\vvec_{2}</m>)
+                            along with your results in (b) to write
+                            <m>\xvec_{1} = A\xvec_{0}</m> as a linear
+                            combination* of <m>\vvec_{1}</m> and
+                            <m>\vvec_{2}</m>.
+                            Do likewise for <m>\xvec_{2} = A\xvec_{1}</m>.
+                            (* - in both of these, it's best <em>not</em> to
+                            multiply the weights from (b) by the other constants
+                            that arise, as this will help you see key patterns.)
+                        </p>
+
+                   
+                    </task>
+
+                    <task workspace="2in">
+                        <p>
+                            (2) Use your work in (c) to generalize the pattern
+                            and write <m>\xvec_{k+1}</m> as a linear combination
+                            of <m>\vvec_{1}</m> and <m>\vvec_{2}</m>.
+                            State your formula for <m>\xvec_{k+1}</m> below.
+                            What part of this expression will approach 0 as
+                            <m>k \to \infty</m>?
+                            Why?
+                        </p>
+
+                       
+                    </task>
+
+                    <task workspace="2in">
+                        <p>
+                            (3) Use your result in (d) to compute
+                            <m>\xvec_{k} = \twovec{R_k}{S_k}</m> for
+                            <m>k = 4, 5, 6</m> and state those vectors clearly
+                            below, writing them both as linear combinations of
+                            <m>\vvec_{1}</m> and <m>\vvec_{2}</m> <em>and</em>
+                            as a single vector with numerical entries.
+                            What do you observe about the ratio of <m>R_{k}</m>
+                            to <m>S_{k}</m> as <m>k</m> increases?
+                            How is this connected to the eigenvalues and
+                            eigenvector of <m>A</m>?
+                        </p>
+
+                      
+                    </task>
+
+                    <task workspace="1in">
+                        <p>
+                            (2) Now revisit the original equations,
+                            <md alignment="align">
+                                <mrow>R_{k+1} &amp; = &amp; 0.9R_k + 0.8S_k</mrow>
+                                <mrow>S_{k+1} &amp; = &amp; 0.2R_k + 0.9S_k</mrow>
+                            </md>
+                            Why do these equations tell us that these
+                            populations have a symbiotic relationship (that is,
+                            one where they help one another)?
+                            How is this connected to the long-term behavior of
+                            each?
+                        </p>
+
+                     
+                    </task>
+    
+                </exercise>
+            </page>
+            <page>
+
+        <exercise >
+            <introduction>
+               <p> Next, consider two different species <m>R</m> and <m>S</m> that
+                are modeled by
+                <md alignment="align">
+                    <mrow>R_{k+1} &amp; = &amp; 0.7R_k + 0.5S_k</mrow>
+                    <mrow>S_{k+1} &amp; = &amp; -0.4R_k + 1.6S_k</mrow>
+                </md>
+                so that the system is given by <m>\xvec_{k+1}= A\xvec_{k}</m>
+                where
+                <m>A = \left[\begin{array}{rr}0.7 &amp; 0.5 \\ -0.4 &amp; 1.6\end{array} \right]</m>.
+            </p>
+        </introduction>
+
+        
+                    <task workspace="1in">
+                        <statement>
+                        <p>
+                            (2) Explain why we call this a <q>predator-prey</q>
+                            system.
+                            Which species, <m>R</m> or <m>S</m>, is the
+                            predator?
+                            Which is the prey?
+                            Explain by discussing which species <q>helps</q> the
+                            other, and which species <q>hurts</q> the other.
+                        </p>
+
+                    </statement>
+                    </task>
+
+                    <task workspace="1in">
+                        <statement>
+                        <p>
+                            (2) Show that <m>\vvec_{1} = \twovec11</m> and
+                            <m>\vvec_{2} = \twovec{5}{4}</m> are eigenvectors of
+                            the matrix <m>A</m>, and find their corresponding
+                            eigenvalues.
+                        </p>
+
+                    </statement>
+                    </task>
+
+                    <task workspace="1in">
+                         <statement>
+                        <p>
+                            (1) Based on the eigenvalues and eigenvectors of
+                            <m>A</m> and the work you did in question #1, do you
+                            think that the populations <m>R</m> and <m>S</m> are
+                            going to both grow, both die out, or have one grow
+                            and the other die out?
+                            Why?
+                        </p>
+                    </statement>
+                    </task>
+
+                    <task workspace="1in">
+                         <statement>
+                        <p>
+                            (2) Consider the initial population state
+                            <m>\xvec_{0} = \twovec{150}{140}</m>, and write
+                            <m>\xvec_{0}</m> as a linear combination of
+                            <m>\vvec_{1} = \twovec11</m> and
+                            <m>\vvec_{2} = \twovec{5}{4}</m>.
+                        </p>
+                    </statement>
+                     
+                    </task>
+
+                    <task workspace="1in">
+                         <statement>
+                        <p>
+                            (2) Use the linearity of matrix-vector
+                            multiplication along with your results in (b) and
+                            (d) to write <m>\xvec_{1} = A\xvec_{0}</m> as a
+                            linear combination* of <m>\vvec_{1}</m> and
+                            <m>\vvec_{2}</m>.
+                            Do likewise for <m>\xvec_{2} = A\xvec_{1}</m>.
+                            (* - in both of these, it's best <em>not</em> to
+                            multiply the weights from (d) by the other constants
+                            that arise, as this will help you see key patterns.)
+                        </p>
+
+                    </statement>
+                    </task>
+
+                    <task workspace="1in">
+                         <statement>
+                        <p>
+                            (3) Use your work in (e) to generalize the pattern
+                            and write <m>\xvec_{k+1}</m> as a linear combination
+                            of <m>\vvec_{1}</m> and <m>\vvec_{2}</m>.
+                            State your formula for <m>\xvec_{k+1}</m> below.
+                            What will be the long-term behavior of both
+                            populations?
+                            Why?
+                        </p>
+
+                    </statement>
+                    </task>
+
+                    <task workspace="1in">
+                         <statement>
+                        <p>
+                            (5) Finally, suppose that instead of the
+                            coefficients in the original predator-prey system of
+                            this question, which were:
+                            <md alignment="align">
+                                <mrow>R_{k+1} &amp; = &amp; 0.7R_k + 0.5S_k</mrow>
+                                <mrow>S_{k+1} &amp; = &amp; -0.4R_k + 1.6S_k</mrow>
+                            </md>
+                            we have
+                            <md alignment="align">
+                                <mrow>R_{k+1} &amp; = &amp; 0.5R_k + 0.2S_k</mrow>
+                                <mrow>S_{k+1} &amp; = &amp; -0.4R_k + 1.1S_k</mrow>
+                            </md>
+                            For the matrix
+                            <m>A = \left[\begin{array}{rr}0.5 &amp; 0.2 \\ -0.4 &amp; 1.1\end{array} \right]</m>,
+                            it turns out that the eigenvectors are
+                            <m>\vvec_{1} = \twovec12</m> and
+                            <m>\vvec_{2} = \twovec11</m> with corresponding
+                            eigenvalues <m>\lambda_{1} = 0.9</m> and
+                            <m>\lambda_{2} = 0.7</m>.
+                        </p>
+
+                        <p>
+                            For an initial population distribution of
+                            <m>\xvec_{0} = \twovec{200}{300}</m>, write
+                            <m>\xvec_{0}</m> as a linear combination of the
+                            eigenvectors and find an expression for
+                            <m>\xvec_{k+1}</m> in terms of the eigenvalues and
+                            eigenvectors of <m>A</m>.
+                            What will be the long-term behavior of the
+                            populations for this particular scenario?
+                            Why?
+                        </p>
+                    </statement>
+                    </task>
+                </exercise>
+            </page>
+</worksheet>
