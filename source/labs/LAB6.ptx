@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Lab 6, Due: December ??, 2026</title>
+
+    <introduction>
+        <p>
+            <term>Instructions:</term> Complete the following exercises in your
+            groups.
+            For the write up:
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Include descriptions of your work in Sage.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        You only need to hand in one report for your group.
+                        Only include the names of students who contributed.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        This lab is graded out of 30 points.
+                        The number of points for each part are indicated next to
+                        the problem.
+                        You earn full credit by including your reasoning,
+                        following all directions, and making only minor errors.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Today we'll look at the linear algebra behind Google's wildly
+            successful search engine.
+            Back when Google used to tell you the number of search results,
+            I googled the phrase <q>linear algebra.</q> Google tells me that it
+            knows of about 170 <em>million</em> (!) pages that contain those two
+            words, and that the Wikipedia page is likely to be useful to me.
+            So how does it determine which ones to list first?
+        </p>
+
+        <p>
+            According to Wikipedia, in 1996 Larry Page and Sergey Brin developed
+            an algorithm at Stanford University as part of a research project
+            about a new kind of search engine.
+            As computer science PhD students they had the idea that information
+            on the web could be ordered in a hierarchy by <q>link popularity</q>: a
+            page ranks higher if there are more links to it.
+            So basically Google's first algorithm computes a quantity called
+            <em>PageRank</em> <trademark/> for each page on the Internet.
+            Pages with a higher PageRank are deemed to be more valuable.
+            The key to computing PageRank lies in an algorithm involving
+            eigenvectors that we'll study in this lab.
+        </p>
+
+        <p>
+            As a note, many of the linear algebra ideas needed for their
+            algorithm to work were already discovered prior to 1996.
+            Ideas of eigenvectors go back to the 18th century, and the
+            Perron-Frobenius Theorem is from 1907 and 1912.
+            Of course, Google now uses additional techniques, with many of them
+            AI driven.
+            AI techniques like machine learning also have their roots in linear
+            algebra.
+            (So, IMHO, it is always good to learn more mathematics.)
+        </p>
+
+        <p>
+            While one could determine the importance of a web page by allowing
+            people to vote for their favorite web pages, Google wants their
+            rankings to be free of any human bias so it examines the structure
+            of the Internet itself to rank pages.
+            Here's the idea: if my home page is valuable, many other pages will
+            link to it.
+            To guard against gaming the rankings by creating lots of pages that
+            link to my home page, Google views a page as being more valuable
+            when valuable pages link to it.
+            For instance, if three of my friends link to my home page, that
+            means three people think I have a valuable page.
+            But if <em>nytimes.com</em>, <em>amazon.com</em>, and
+            <em>beyonce.com</em> link to me, that probably means more people
+            will find my page to be valuable so I should have a higher PageRank.
+        </p>
+
+        <p>
+            Before we begin, there are a few terms and ideas are required for
+            this lab that build on earlier ideas in the course.
+            Each of these will be referred to in some way in the lab that
+            follows, so if you see an unfamiliar term, you can refer here to
+            make sense of it.
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        A vector whose entries are nonnegative and add to 1 is
+                        called a <em>probability vector</em>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A square matrix whose columns are probability vectors is
+                        called a <em>stochastic matrix</em>.
+                        For example, the matrix
+                        <m>A = \left[\begin{array}{rr}0.9 &amp; 0.3 \\ 0.1 &amp; 0.7 \\\end{array}\right]</m>
+                        is a stochastic matrix since each of its columns is a
+                        probability vector.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A <em>Markov chain</em> is a dynamical system
+                        <m>\xvec_{k+1}= A\xvec_{k}</m> for which the matrix
+                        <m>A</m> is a stochastic matrix.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        If a stochastic matrix has an eigenvector <m>\qvec</m>
+                        with corresponding eigenvalue <m>\lambda = 1</m>, it
+                        follows that <m>A \qvec = \qvec</m>, and we call
+                        <m>\qvec</m> a <em>steady-state vector</em> (also known
+                        as a <em>stationary vector</em>).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        We say that a matrix <m>A</m> is <em>positive</em> if
+                        either <m>A</m> or some power <m>A^{k}</m> has all
+                        positive entries.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Finally, a famous theorem (The Perron-Frobenius Theorem)
+                        tells us some powerful fact about positive stochastic
+                        matrices
+                        <q>If <m>A</m> is a positive stochastic matrix then one eigenvalue of <m>A</m> is <m>\lambda = 1</m> with a corresponding eigenvector <m>\qvec</m> having all positive entries, and every other eigenvalue of <m>A</m> satisfies <m>|\lambda_{j}| &lt; 1</m>.</q>
+                        This means that if <m>A</m> is a positive stochastic
+                        matrix, the Markov chain <m>\xvec_{k+1}= A\xvec_{k}</m>
+                        will converge to <m>\qvec</m> regardless of the initial
+                        vector <m>\xvec_{0}</m>.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Here's the basic idea for how to compute PageRank.
+            Each webpage has a certain amount of PageRank that we denote by
+            <m>x_{i}</m>.
+            Each page divides its PageRank into equal portions, one for each
+            outgoing link.
+            Each page then gives one portion of its PageRank to each page it
+            links to.
+            A page's PageRank is then the sum of all the PageRank it receives
+            from pages that link to it.
+        </p>
+
+        <p>
+            One super valuable math skill is to consider a simpler problem.
+            So, suppose that the entire internet is composed of only three web
+            pages and the web pages contain links to one another as shown below.
+        </p>
+
+        <image source="images/lab6-cyclicweb.png" width="50%"/>
+
+
+        <p>
+            The PageRank of page <m>i</m> will be denoted by <m>x_{i}</m>.
+            PageRank is both <q>given away</q> and <q>earned</q> by linking to
+            other web pages.
+            In particular,
+            <ul>
+                <li>
+                    <p>
+                        If web page <m>i</m> links to <m>m</m> other pages, then
+                        its PageRank <m>x_{i}</m> is divided into <m>m</m> equal
+                        units of <m>x_{i}/m</m>.
+                        It therefore gives <m>x_{i}/m</m> to each of the pages
+                        it links to.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The PageRank <m>x_{i}</m> is also the sum of all the
+                        PageRanks it collects from the pages that link to it.
+                        For instance, in the figure above,
+                        <md>
+                            x_{1} = x_{2} + \frac{1}{2} x_{3},
+                        </md>
+                        since Page 2 links only to Page 1 (Page 2 thus gives all
+                        of its rank - <m>x_{2}</m> - to Page 1), while Page 3
+                        gives half of its rank - <m>\frac{1}{2}x_{3}</m> - to
+                        Page 1 since Page 3 links to both Page 1 and Page 2.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </introduction>
+
+    <exercise>
+        <statement>
+            <p>
+                (2) Write the individual equations for <m>x_{2}</m> and
+                <m>x_{3}</m> for the web on the previous page, and then write
+                the three equations involving <m>x_{1}</m>, <m>x_{2}</m>, and
+                <m>x_{3}</m> in matrix-vector form <m>\vec{x} = G\vec{x}</m> (clearly
+                identifying <m>G</m>), where
+                <m>\vec{x}=\left[\begin{array}{c}x_1\\x_2\\x_3\end{array}\right]</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                (2) You should notice that <m>G</m>, the <q>Google</q> matrix
+                in #1, is a stochastic matrix.
+                Explain why this will always be the case (regardless of whether
+                there are 3 or 3,000,000,000 web pages considered), referring
+                explicitly to how PageRanks are assigned and what it means for a
+                matrix to be stochastic.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                (3) The PageRank vector <m>\vec{x}</m> satisfies the equation
+                <m>\vec{x} = G\vec{x}</m>, so <m>\xvec</m> is the steady-state vector of
+                this stochastic matrix.
+                For the Google matrix, <m>G</m>, for the 3-page example of the
+                Internet you considered in #1 and #2, find the steady-state
+                vector by solving the equation <m>\vec{x} = G\vec{x}</m> (only using
+                Sage to row reduce a matrix).
+                Show your work in the space below.
+                What is the page with the highest PageRank?
+                How does your result compare to your prediction in #2?
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        <em>Here is some more key perspective to read before answering subsequent questions</em>.
+        This steady-state (or stationary) vector <m>\vec{x}</m> that satisfies
+        <m>\xvec = G\xvec</m> is typically called the <q>PageRank vector</q>
+        since the entries in it are the PageRanks of the various pages.
+        It has also been called <q>The 25 Billion Dollar Eigenvector,</q> since
+        it is the vector that made Google so much of its initial money.
+    </p>
+
+    <p>
+        Any scalar multiple of <m>\vec{x}</m> is also a stationary vector (because
+        if <m>A\vvec=\vvec</m> then <m>A(k\vvec) = k(A\vvec)=k\vvec</m>).
+        When dealing with stochastic matrices, we usually require that the
+        entries in <m>\vec{x}</m> add up to 1 since we think of them as
+        probabilities.
+        In this case, there is really no need to impose that restriction.
+        What's important is the relative size of the numbers.
+    </p>
+
+    <p>
+        Further, remember that Google is working with <em>the</em> Internet, the
+        world-wide web which contains over a one billion websites and over 130
+        trillion individual web pages.
+        This means it is not feasible to compute the stationary vector by
+        finding all of the solutions to <m>(G-I)\vec{x} = \vec{0}</m>.
+        Instead, the Google PageRank algorithm creates a Markov chain and
+        iterates.
+        For instance, the algorithm begins with any initial guess for the
+        PageRank, say,
+        <md>
+            \vec{x}_{0}=\left[\begin{array}{c}1 \\ 0 \\ \vdots \\ 0\end{array}\right]
+        </md>
+        and creates <m>\vec{x}_{1}=G\vec{x}_{0}</m>, <m>\vec{x}_{2}=G\vec{x}_{1}</m>,
+        <m>\ldots</m>, and in general, <m>\vec{x}_{k+1}=G\vec{x}_{k}</m>.
+        These vectors will typically
+        <fn>Note that technically we need every entry in some power of the matrix <m>G</m> 
+                    to be positive in order to guarantee convergence.</fn>
+        converge to the PageRank vector.
+        That is, as <m>k</m> gets large, <m>\vec{x}_{k} \to \vec{x}</m> due to the
+        important theorem from more advanced linear algebra, the
+        Perron-Frobenius Theorem, mentioned at the top of page 2 of this lab.
+    </p>
+
+    <exercise>
+        <statement>
+            <p>
+                (2) If you visit the page
+                <url href="https://gvsu.edu/s/2GC">https://gvsu.edu/s/3dL</url>
+                (scroll down to part (g)), you will find some Sage code that
+                will be helpful for this lab.
+                The command <em>markov<em/>chain(A, x0, N)</em> defines the
+                function that prints <m>N</m> vectors in the Markov chain
+                defined by a stochastic matrix <m>A</m> and initial state vector
+                <m>\xvec_{0}</m>.
+            </p>
+
+            <p>
+                Verify that a Markov chain beginning with
+                <m>\xvec_{0} = \threevec100</m> converges to the PageRank vector
+                <m>\qvec</m> for the 3-page Internet considered in questions #'s
+                1-3.
+            </p>
+
+            <p>
+                To do this, you will need to enter your google matrix <m>G</m>
+                and a vector <m>x_{0}</m>.
+                You can use <em>x0 = vector([1, 0, 0])</em>.
+                What do you find after 20 terms?
+                Report the first, second, and last two vectors in the Markov
+                chain (labeling them <m>\xvec_{1}</m>, <m>\xvec_{2}</m>, and
+                <m>\xvec_{20}</m>), and interpret the meaning of the final
+                vector by writing a sentence about it.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                (5) Now consider the 8-page Internet given by the image below.
+            </p>
+
+            <image source="images/lab6-goodweb.png" width="50%"/>
+
+
+            <p>
+                Determine the PageRank for each of the 8 pages in the Internet
+                in #8 by finding the Google matrix <m>G</m> for this web and
+                creating a Markov chain <m>\vec{x}_{k+1}=G\vec{x}_{k}</m> that uses
+                <em>x0 = vector([1, 0, 0, 0, 0, 0, 0, 0])</em>.
+                Summarize your work and explain your findings below: you must
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    report the <m>8 \times 8</m> matrix <m>G</m>, (I've
+                    provided a grid below to keep you organized, you can enter
+                    just the nonzero numbers)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    report the vectors <m>\xvec_{1}</m> and <m>\xvec_{20}</m>
+                    from the Markov chain (do this by updating your code in the
+                    Sage cell you used earlier), and
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    write at least one sentence of discussion that clearly
+                    describes the rank of the pages.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        When you enter <m>G</m> in Sage, do so exactly (with fractional entries
+        - that is, enter <em>1/3</em> instead of <em>0.33</em>).
+        It is a good idea to print the matrix to check you entered it correctly.
+    </p>
+
+    <figure xml:id="fig-grid-8x8">
+  <caption>An 8 x 8 grid</caption>
+  <image width="50%">
+    <latex-image>
+      \begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (8,8);
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+
+    <exercise>
+        <statement>
+            <p>
+                (4) This question is about when things go wrong.
+                What happens when you consider the following web and construct
+                the Google matrix and a Markov chain to try to find the PageRank
+                vector?
+                Show your work and explain your findings by stating the Google
+                matrix and the results of at least 5 iterations of the Markov
+                chain, plus writing at least one complete sentence.
+                <!--\footnote{  Google uses some interesting linear algebra to help it avoid situations like the one in this problem.  The algorithm actually uses a slightly different matrix, say $G'$, where $G' \approx G$, but $G'$ is guaranteed to be \emph{regular}, which guarantees that the Markov chain used by the algorithm will converge.  The ideas here are connected to the {\tt modified\_markov\_chain} command you see in the Sage Activity 4.5.7 but that we won't be using here.}-->
+            </p>
+
+            <image source="images/lab6-cyclic.png" width="50%"/>
+
+        </statement>
+    </exercise>
+
+        <figure xml:id="fig-grid-5x5">
+  <caption>A 5 × 5 grid</caption>
+  <image width="50%">
+    <latex-image>
+      \begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (5,5);
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+    <exercise>
+        <statement>
+            <p>
+                (2) What do you think the actual PageRank vector should be?
+                Why?
+                Verify using appropriate linear algebra that your conclusion is
+                correct.
+                (You can use the eigenvectors right command here.)
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        Here's another example where things go poorly.
+        This is closely related to an earlier example and you should be able to
+        make a small modification of that Google matrix to obtain the one for
+        this web.
+    </p>
+    <image source="images/lab6-reducible.png" width="50%"/>
+
+    <exercise>
+        <statement>
+            <p>
+                (4) Show the Google matrix and the results of your attempts to
+                find the PageRank vector through the standard Markov chain, and
+                include discussion of what happens.
+            </p>
+        </statement>
+    </exercise>
+
+    <p>
+        Note: Looking at the image below, we see that the pages outside of the
+        box give up all of their PageRank to the pages inside the box.
+        This is not desirable because the PageRanks of the pages outside of the
+        box are found to be zero.
+        As in the previous problem, the Google matrix is not a positive matrix.
+    </p>
+    <image source="images/lab6-reduciblewithbox.png" width="50%"/>
+
+
+    <exercise>
+        <task>
+            <statement>
+                <p>
+                    (3) Google fixes the problems shown in #'s 6 and 7 by
+                    turning the matrix into a positive stochastic matrix.
+                    If there are <m>n</m> pages on the internet, they construct
+                    the matrix <m>H_{n}</m> which is <m>n\times n</m> and all of
+                    the entries are <m>\frac{1}{n}</m>.
+                    Then they create <m>G'</m> a positive stochastic matrix that
+                    mixes the Google matrix and <m>H_{n}</m> together.
+                    That is, <m>G' = \alpha G + (1-\alpha)H_{n}</m> for some
+                    <m>\alpha</m>.
+                    The weight <m>\alpha</m> they use is a trade secret, but
+                    it's thought to be about 0.15.
+                    For this problem, use the code at
+                    <url href="https://gvsu.edu/s/3dM"/>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Consider the original Internet with three pages used in #'s
+                    1-3 and find the PageRank vector using the modified Google
+                    matrix in the Sage cell above.
+                    How does this modified PageRank vector compare to the vector
+                    we found using the original Google matrix?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find the modified PageRank vector for the Internet shown in
+                    #6.
+                    Explain why this vector seems to be the correct one.
+                    You might run 50 iterations instead of 20.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Find the modified PageRank vector for the Internet shown in
+                    #7.
+                    Explain why this modified PageRank vector fixes the problem
+                    that appeared with the original PageRank vector.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                (7) An Internet with 10 pages is described in the table below.
+                Construct a graph of the web (like those given in preceding
+                problems), find and state the Google matrix <m>G</m>, and
+                compute the relevant Markov chain (report the first two and the
+                last two vectors you compute in the Markov chain via Sage), and
+                hence determine the ranking of the 10 pages involved.
+                Explain how the PageRank vector matches what your visual
+                intuition tells you by writing at least one complete sentence.
+            </p>
+
+            <p>
+                For the digraph you draw, put pages 1, 3, 5, 7, 9 across the top
+                row, and pages 2, 4, 6, 8, 10 across the bottom row.
+                For your matrix, I made you a <m>10\times10</m> grid to organize
+                it carefully.
+                Make sure to print it in Sage to make sure it's entered
+                correctly before you execute the Markov chain command.
+            </p>
+        </statement>
+    </exercise>
+
+    <tabular top="minor" left="minor">
+        <col right="minor"/>
+        <col right="minor"/>
+        <row bottom="minor">
+            <cell>page</cell>
+            <cell>links to</cell>
+        </row>
+
+        <row>
+            <cell>1</cell>
+            <cell>2, 5, 6</cell>
+        </row>
+
+        <row>
+            <cell>2</cell>
+            <cell>1, 4, 5, 6</cell>
+        </row>
+
+        <row>
+            <cell>3</cell>
+            <cell>2, 6</cell>
+        </row>
+
+        <row>
+            <cell>4</cell>
+            <cell>2, 6, 10</cell>
+        </row>
+
+        <row>
+            <cell>5</cell>
+            <cell>7, 8</cell>
+        </row>
+
+        <row>
+            <cell>6</cell>
+            <cell>4, 5, 10</cell>
+        </row>
+
+        <row>
+            <cell>7</cell>
+            <cell>6, 9, 10</cell>
+        </row>
+
+        <row>
+            <cell>8</cell>
+            <cell>7, 10</cell>
+        </row>
+
+        <row>
+            <cell>9</cell>
+            <cell>5, 6, 7, 10</cell>
+        </row>
+
+        <row bottom="minor">
+            <cell>10</cell>
+            <cell>4, 7</cell>
+        </row>
+    </tabular>
+
+        <figure xml:id="fig-grid-10x10">
+  <caption>A 10 x 10 grid</caption>
+  <image width="50%">
+    <latex-image>
+      \begin{tikzpicture}
+        \draw[step=1cm] (0,0) grid (10,10);
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+    <p>
+        Would you like to know the PageRank of a given web page?
+        Go here <url href="http://www.checkpagerank.biz/"/> and type in the URL
+        of your web page.
+        This site will report an approximation to your PageRank, since Google
+        does not actually publish a page's true PageRank.
+        The approximation is on a scale from 0 to 10, and it is thought that
+        when your approximate PageRank goes up by one, your actual PageRank goes
+        up by around 10.
+    </p>
+
+    <p>
+        Want to know more?
+        Go here:
+        <url href="http://www.ams.org/featurecolumn/archive/pagerank.html"/>
+    </p>
+</worksheet>
